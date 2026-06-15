@@ -1,0 +1,257 @@
+window.QUESTION_DATA = {
+  subjects: [
+    {
+      id: "podstawy-prawa",
+      name: "Podstawy prawa",
+      icon: "⚖️",
+      description: "Wstęp do nauk prawnych — pytania z zakresu teorii i zasad prawa.",
+      questions: [
+        {
+          id: "pp-001",
+          type: "single",
+          question: "Który akt prawny jest najwyższym źródłem prawa w Polsce?",
+          options: ["Ustawa", "Rozporządzenie", "Konstytucja RP", "Uchwała Sejmu"],
+          correctAnswers: [2],
+          explanation: "Konstytucja Rzeczypospolitej Polskiej z dnia 2 kwietnia 1997 r. jest najwyższym aktem prawnym w hierarchii źródeł prawa powszechnie obowiązującego (art. 8 ust. 1 Konstytucji RP)."
+        },
+        {
+          id: "pp-002",
+          type: "single",
+          question: "Co oznacza zasada „lex retro non agit"?",
+          options: [
+            "Prawo działa tylko na przyszłość",
+            "Prawo nie działa wstecz",
+            "Prawo traci moc po 10 latach",
+            "Prawo obowiązuje wyłącznie obywateli"
+          ],
+          correctAnswers: [1],
+          explanation: "Zasada „lex retro non agit" (łac. prawo nie działa wstecz) oznacza, że nowo uchwalony przepis nie powinien regulować stosunków prawnych powstałych przed jego wejściem w życie. Jest to jedna z fundamentalnych zasad państwa prawa."
+        },
+        {
+          id: "pp-003",
+          type: "multiple",
+          question: "Które z poniższych są źródłami prawa powszechnie obowiązującego w Polsce?",
+          options: [
+            "Konstytucja",
+            "Ustawy",
+            "Zarządzenia ministrów",
+            "Ratyfikowane umowy międzynarodowe",
+            "Regulaminy wewnętrzne",
+            "Rozporządzenia"
+          ],
+          correctAnswers: [0, 1, 3, 5],
+          explanation: "Zgodnie z art. 87 Konstytucji RP, źródłami prawa powszechnie obowiązującego są: Konstytucja, ustawy, ratyfikowane umowy międzynarodowe oraz rozporządzenia. Zarządzenia i regulaminy mają charakter wewnętrzny."
+        },
+        {
+          id: "pp-004",
+          type: "open",
+          question: "Jak nazywa się zasada prawna mówiąca, że prawo szczegółowe ma pierwszeństwo przed prawem ogólnym?",
+          options: [],
+          correctAnswers: ["lex specialis derogat legi generali"],
+          explanation: "Zasada „lex specialis derogat legi generali" oznacza, że przepis szczegółowy uchyla (wyłącza) stosowanie przepisu ogólnego w zakresie, w jakim reguluje daną materię w sposób odmienny."
+        },
+        {
+          id: "pp-005",
+          type: "single",
+          question: "Który organ w Polsce sprawuje wymiar sprawiedliwości?",
+          options: ["Sejm", "Sądy", "Rada Ministrów", "Prezydent RP"],
+          correctAnswers: [1],
+          explanation: "Zgodnie z art. 175 Konstytucji RP wymiar sprawiedliwości w Rzeczypospolitej Polskiej sprawują sądy: Sąd Najwyższy, sądy powszechne, sądy administracyjne oraz sądy wojskowe."
+        },
+        {
+          id: "pp-006",
+          type: "multiple",
+          question: "Które z poniższych zasad są zasadami prawa karnego?",
+          options: [
+            "Zasada domniemania niewinności",
+            "Zasada swobody umów",
+            "Zasada nullum crimen sine lege",
+            "Zasada humanitaryzmu",
+            "Zasada superficies solo cedit",
+            "Zasada winy"
+          ],
+          correctAnswers: [0, 2, 3, 5],
+          explanation: "Zasady prawa karnego to m.in.: domniemanie niewinności (art. 5 KPK), nullum crimen sine lege (art. 1 KK), humanitaryzm (art. 3 KK) oraz zasada winy (art. 1 § 3 KK). Swoboda umów to zasada prawa cywilnego, a superficies solo cedit — prawa rzeczowego."
+        },
+        {
+          id: "pp-007",
+          type: "single",
+          question: "Ile lat wynosi kadencja Prezydenta RP?",
+          options: ["4 lata", "5 lat", "6 lat", "7 lat"],
+          correctAnswers: [1],
+          explanation: "Zgodnie z art. 127 ust. 2 Konstytucji RP, Prezydent Rzeczypospolitej jest wybierany na pięcioletnią kadencję i może być ponownie wybrany tylko raz."
+        },
+        {
+          id: "pp-008",
+          type: "open",
+          question: "Jak nazywa się proces uchylania obowiązującej normy prawnej przez nową normę prawną?",
+          options: [],
+          correctAnswers: ["derogacja"],
+          explanation: "Derogacja to proces uchylania (znoszenia) obowiązywania normy prawnej przez inną normę. Wyróżniamy derogację wyraźną (expressis verbis) oraz dorozumianą (per desuetudinem)."
+        },
+        {
+          id: "pp-009",
+          type: "single",
+          question: "Co to jest vacatio legis?",
+          options: [
+            "Okres między ogłoszeniem a wejściem w życie aktu prawnego",
+            "Okres obowiązywania ustawy",
+            "Procedura uchwalania ustaw",
+            "Nazwa sądu apelacyjnego"
+          ],
+          correctAnswers: [0],
+          explanation: "Vacatio legis (łac. „spoczywanie ustawy") to okres między opublikowaniem aktu normatywnego a jego wejściem w życie. Standardowy okres vacatio legis wynosi 14 dni, chyba że akt stanowi inaczej."
+        },
+        {
+          id: "pp-010",
+          type: "multiple",
+          question: "Które z poniższych są gałęziami prawa prywatnego?",
+          options: [
+            "Prawo cywilne",
+            "Prawo karne",
+            "Prawo handlowe",
+            "Prawo administracyjne",
+            "Prawo pracy",
+            "Prawo rodzinne"
+          ],
+          correctAnswers: [0, 2, 5],
+          explanation: "Do gałęzi prawa prywatnego zaliczamy m.in. prawo cywilne, prawo handlowe (gospodarcze prywatne) i prawo rodzinne. Prawo karne i administracyjne to gałęzie prawa publicznego. Prawo pracy ma charakter mieszany, ale tradycyjnie jest zaliczane do prawa prywatnego — w tym teście przyjęto klasyfikację ścisłą."
+        }
+      ]
+    },
+    {
+      id: "ekonomia",
+      name: "Mikroekonomia",
+      icon: "📊",
+      description: "Podstawy mikroekonomii — popyt, podaż, struktury rynkowe i teoria konsumenta.",
+      questions: [
+        {
+          id: "ek-001",
+          type: "single",
+          question: "Co przedstawia prawo popytu?",
+          options: [
+            "Wzrost ceny powoduje wzrost popytu",
+            "Spadek ceny powoduje spadek popytu",
+            "Wzrost ceny powoduje spadek wielkości popytu, ceteris paribus",
+            "Cena nie ma wpływu na popyt"
+          ],
+          correctAnswers: [2],
+          explanation: "Prawo popytu mówi, że przy założeniu ceteris paribus (pozostałe czynniki bez zmian), wzrost ceny dobra prowadzi do spadku wielkości zapotrzebowania (popytu) na to dobro. Relacja ta jest odwrotna (ujemna)."
+        },
+        {
+          id: "ek-002",
+          type: "single",
+          question: "Czym jest koszt alternatywny (koszt utraconych możliwości)?",
+          options: [
+            "Koszt produkcji kolejnej jednostki dobra",
+            "Wartość najlepszej niezrealizowanej alternatywy",
+            "Całkowity koszt poniesiony przez producenta",
+            "Koszt wynikający z inflacji"
+          ],
+          correctAnswers: [1],
+          explanation: "Koszt alternatywny (opportunity cost) to wartość najlepszej alternatywy, z której zrezygnowano dokonując danego wyboru. Jest to jedno z kluczowych pojęć w ekonomii, podkreślające problem rzadkości zasobów."
+        },
+        {
+          id: "ek-003",
+          type: "multiple",
+          question: "Które z poniższych czynników mogą przesunąć krzywą popytu w prawo?",
+          options: [
+            "Wzrost dochodów konsumentów (dla dóbr normalnych)",
+            "Spadek ceny danego dobra",
+            "Wzrost ceny dobra substytucyjnego",
+            "Zmiana gustów konsumentów na korzyść danego dobra",
+            "Spadek ceny dobra komplementarnego",
+            "Wzrost podatku od sprzedaży"
+          ],
+          correctAnswers: [0, 2, 3, 4],
+          explanation: "Krzywą popytu przesuwają czynniki pozacenowe: wzrost dochodów (dla dóbr normalnych), wzrost ceny substytutów, korzystna zmiana preferencji oraz spadek ceny dóbr komplementarnych. Spadek ceny danego dobra to ruch WZDŁUŻ krzywej, a nie jej przesunięcie."
+        },
+        {
+          id: "ek-004",
+          type: "open",
+          question: "Jak nazywa się punkt, w którym krzywa popytu przecina się z krzywą podaży?",
+          options: [],
+          correctAnswers: ["punkt równowagi rynkowej"],
+          explanation: "Punkt równowagi rynkowej (equilibrium) to punkt przecięcia krzywej popytu i krzywej podaży. W tym punkcie wielkość popytu równa się wielkości podaży, a cena ustala się na poziomie równowagi."
+        },
+        {
+          id: "ek-005",
+          type: "single",
+          question: "Gdy elastyczność cenowa popytu wynosi -2, oznacza to, że:",
+          options: [
+            "Wzrost ceny o 1% powoduje spadek popytu o 2%",
+            "Wzrost ceny o 2% powoduje spadek popytu o 1%",
+            "Popyt jest sztywny cenowo",
+            "Popyt jest jednostkowo elastyczny"
+          ],
+          correctAnswers: [0],
+          explanation: "Elastyczność cenowa popytu = %ΔQd / %ΔP. Wartość -2 oznacza, że jednoprocentowy wzrost ceny powoduje dwuprocentowy spadek wielkości popytu. Popyt jest w tym przypadku elastyczny (|Ed| > 1)."
+        },
+        {
+          id: "ek-006",
+          type: "multiple",
+          question: "Które cechy charakteryzują konkurencję doskonałą?",
+          options: [
+            "Duża liczba sprzedających i kupujących",
+            "Homogeniczny (jednorodny) produkt",
+            "Bariery wejścia na rynek",
+            "Doskonała informacja rynkowa",
+            "Możliwość ustalania ceny przez producenta",
+            "Swoboda wejścia i wyjścia z rynku"
+          ],
+          correctAnswers: [0, 1, 3, 5],
+          explanation: "Konkurencja doskonała cechuje się: dużą liczbą uczestników, homogenicznym produktem, doskonałą informacją rynkową oraz swobodą wejścia i wyjścia. Producenci są cenobiorcami (price-takers), nie mogą ustalać cen, a bariery wejścia nie istnieją."
+        },
+        {
+          id: "ek-007",
+          type: "single",
+          question: "Co to jest PKB (Produkt Krajowy Brutto)?",
+          options: [
+            "Suma wszystkich dochodów obywateli danego kraju",
+            "Wartość wszystkich dóbr i usług finalnych wytworzonych na terenie danego kraju w określonym czasie",
+            "Suma eksportu i importu danego kraju",
+            "Wartość wszystkich aktywów finansowych w danym kraju"
+          ],
+          correctAnswers: [1],
+          explanation: "PKB (GDP) to miara wartości rynkowej wszystkich dóbr i usług finalnych wytworzonych na terenie danego kraju w określonym okresie (zazwyczaj roku). Jest najczęściej stosowanym wskaźnikiem wielkości gospodarki."
+        },
+        {
+          id: "ek-008",
+          type: "open",
+          question: "Jak nazywa się ekonomista, który sformułował teorię „niewidzialnej ręki rynku"?",
+          options: [],
+          correctAnswers: ["Adam Smith"],
+          explanation: "Adam Smith (1723–1790), szkocki filozof i ekonomista, w swoim dziele „Badania nad naturą i przyczynami bogactwa narodów" (1776) sformułował koncepcję „niewidzialnej ręki" — mechanizmu rynkowego, który prowadzi do efektywnej alokacji zasobów."
+        },
+        {
+          id: "ek-009",
+          type: "single",
+          question: "Inflacja to:",
+          options: [
+            "Spadek ogólnego poziomu cen",
+            "Wzrost wartości pieniądza",
+            "Utrzymujący się wzrost ogólnego poziomu cen",
+            "Stagnacja gospodarcza"
+          ],
+          correctAnswers: [2],
+          explanation: "Inflacja to proces utrzymującego się wzrostu ogólnego (przeciętnego) poziomu cen dóbr i usług w gospodarce. Prowadzi do spadku siły nabywczej pieniądza. Przeciwieństwem inflacji jest deflacja."
+        },
+        {
+          id: "ek-010",
+          type: "multiple",
+          question: "Które z poniższych to narzędzia polityki monetarnej banku centralnego?",
+          options: [
+            "Stopy procentowe",
+            "Podatki",
+            "Operacje otwartego rynku",
+            "Wydatki budżetowe",
+            "Rezerwy obowiązkowe",
+            "Dotacje dla przedsiębiorstw"
+          ],
+          correctAnswers: [0, 2, 4],
+          explanation: "Główne narzędzia polityki monetarnej (pieniężnej) banku centralnego to: stopy procentowe, operacje otwartego rynku (zakup/sprzedaż papierów wartościowych) oraz rezerwy obowiązkowe. Podatki, wydatki budżetowe i dotacje to narzędzia polityki fiskalnej prowadzonej przez rząd."
+        }
+      ]
+    }
+  ]
+};

@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizezee — Przygotowanie do egzaminów</title>
+    <meta name="description" content="Nowoczesna aplikacja do przygotowania się do egzaminów uniwersyteckich." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg-primary:#0a0e1a;--bg-secondary:#111827;--bg-card:#1a2035;--bg-card-hover:#212b45;--bg-input:#151c2e;
+  --surface-glass:rgba(255,255,255,0.04);--surface-glass-hover:rgba(255,255,255,0.07);
+  --border-glass:rgba(255,255,255,0.08);--border-glass-active:rgba(255,255,255,0.15);
+  --text-primary:#f0f2f8;--text-secondary:#8892b0;--text-muted:#5a6380;
+  --accent-primary:#6c63ff;--accent-primary-glow:rgba(108,99,255,0.25);
+  --accent-secondary:#00d4aa;--accent-gradient:linear-gradient(135deg,#6c63ff,#00d4aa);
+  --success:#00d68f;--success-bg:rgba(0,214,143,0.1);--success-border:rgba(0,214,143,0.3);
+  --error:#ff4d6a;--error-bg:rgba(255,77,106,0.1);--error-border:rgba(255,77,106,0.3);
+  --warning:#ffb347;--warning-bg:rgba(255,179,71,0.1);--warning-border:rgba(255,179,71,0.3);
+  --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px;
+  --shadow-sm:0 2px 8px rgba(0,0,0,0.15);--shadow-md:0 4px 20px rgba(0,0,0,0.25);
+  --shadow-lg:0 8px 40px rgba(0,0,0,0.35);--shadow-glow:0 0 30px var(--accent-primary-glow);
+  --transition-fast:0.15s ease;--transition-normal:0.25s ease;--transition-slow:0.4s cubic-bezier(0.4,0,0.2,1);
+}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg-primary);color:var(--text-primary);min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at 20% 50%,rgba(108,99,255,0.06) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(0,212,170,0.04) 0%,transparent 50%),radial-gradient(ellipse at 50% 80%,rgba(255,107,107,0.03) 0%,transparent 50%);pointer-events:none;z-index:0}
+#root{position:relative;z-index:1;min-height:100vh}
+
+@keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes scaleIn{from{opacity:0;transform:scale(0.92)}to{opacity:1;transform:scale(1)}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+@keyframes confettiPop{0%{transform:scale(0) rotate(0deg);opacity:0}50%{transform:scale(1.2) rotate(180deg);opacity:1}100%{transform:scale(1) rotate(360deg);opacity:1}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+
+.animate-fade-in-up{animation:fadeInUp 0.5s ease both}
+.animate-fade-in{animation:fadeIn 0.4s ease both}
+.animate-scale-in{animation:scaleIn 0.35s ease both}
+.animate-slide-down{animation:slideDown 0.4s ease both}
+
+.app-container{max-width:960px;margin:0 auto;padding:24px 20px 80px}
+.app-header{text-align:center;padding:48px 0 40px;animation:fadeInUp 0.6s ease both}
+.app-logo{display:inline-flex;align-items:center;gap:12px;margin-bottom:12px}
+.logo-icon{width:48px;height:48px;background:var(--accent-gradient);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:var(--shadow-glow)}
+.logo-text{font-size:2rem;font-weight:800;background:var(--accent-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.03em}
+.app-subtitle{color:var(--text-secondary);font-size:1rem;font-weight:400;max-width:440px;margin:0 auto;line-height:1.6}
+
+.nav-back{display:inline-flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:0.875rem;font-weight:500;cursor:pointer;padding:10px 18px;border-radius:var(--radius-md);border:1px solid var(--border-glass);background:var(--surface-glass);transition:all var(--transition-normal);margin-bottom:24px;backdrop-filter:blur(8px)}
+.nav-back:hover{color:var(--text-primary);border-color:var(--border-glass-active);background:var(--surface-glass-hover);transform:translateX(-2px)}
+
+.settings-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:16px 20px;background:var(--surface-glass);border:1px solid var(--border-glass);border-radius:var(--radius-lg);margin-bottom:24px;backdrop-filter:blur(12px);animation:fadeInUp 0.5s ease 0.1s both}
+.settings-left{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.settings-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
+.stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px;animation:fadeInUp 0.5s ease 0.15s both}
+.stats-strip-card{background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-md);padding:18px 16px;text-align:center;transition:all var(--transition-normal)}
+.stats-strip-card:hover{border-color:var(--border-glass-active);transform:translateY(-2px)}
+.stats-strip-value{font-size:1.5rem;font-weight:800;margin-bottom:2px}
+.stats-strip-label{font-size:0.7rem;color:var(--text-muted);font-weight:500;text-transform:uppercase;letter-spacing:0.05em}
+.stats-strip-value.purple{color:var(--accent-primary)}
+.stats-strip-value.green{color:var(--success)}
+.stats-strip-value.cyan{color:var(--accent-secondary)}
+.stats-strip-value.orange{color:var(--warning)}
+
+.toggle-wrapper{display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
+.toggle-track{width:48px;height:26px;border-radius:13px;background:var(--bg-input);border:2px solid var(--border-glass);position:relative;transition:all var(--transition-normal)}
+.toggle-track.active{background:var(--accent-primary);border-color:var(--accent-primary)}
+.toggle-knob{width:18px;height:18px;border-radius:50%;background:var(--text-primary);position:absolute;top:2px;left:2px;transition:transform var(--transition-normal);box-shadow:0 2px 4px rgba(0,0,0,0.3)}
+.toggle-track.active .toggle-knob{transform:translateX(22px)}
+.toggle-label-text{font-size:0.875rem;color:var(--text-secondary);font-weight:500;transition:color var(--transition-fast)}
+.toggle-wrapper:hover .toggle-label-text{color:var(--text-primary)}
+
+.subjects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.subject-card{position:relative;background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-lg);padding:28px 24px;cursor:pointer;transition:all var(--transition-normal);overflow:hidden}
+.subject-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent-gradient);opacity:0;transition:opacity var(--transition-normal)}
+.subject-card:hover{border-color:var(--border-glass-active);background:var(--bg-card-hover);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.subject-card:hover::before{opacity:1}
+.subject-card.empty-card{cursor:default;opacity:0.55}
+.subject-card.empty-card:hover{transform:none;box-shadow:none;background:var(--bg-card)}
+.subject-card.empty-card::before{display:none}
+.subject-icon{font-size:2.5rem;margin-bottom:16px;display:block}
+.subject-name{font-size:1.25rem;font-weight:700;margin-bottom:8px;color:var(--text-primary)}
+.subject-description{font-size:0.875rem;color:var(--text-secondary);line-height:1.55;margin-bottom:18px}
+.subject-meta{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid var(--border-glass)}
+.subject-count{font-size:0.8rem;color:var(--text-muted);font-weight:500}
+.subject-arrow{width:32px;height:32px;border-radius:50%;background:var(--surface-glass);display:flex;align-items:center;justify-content:center;color:var(--accent-primary);font-size:1rem;transition:all var(--transition-normal)}
+.subject-card:hover:not(.empty-card) .subject-arrow{background:var(--accent-primary);color:white;transform:translateX(2px)}
+.subject-empty-badge{display:inline-flex;align-items:center;gap:5px;font-size:0.7rem;font-weight:600;padding:4px 10px;border-radius:12px;background:var(--warning-bg);border:1px solid var(--warning-border);color:var(--warning);margin-top:4px;margin-bottom:4px}
+
+.progress-container{margin-top:12px}
+.progress-bar-outer{width:100%;height:6px;background:var(--bg-input);border-radius:3px;overflow:hidden}
+.progress-bar-inner{height:100%;background:var(--accent-gradient);border-radius:3px;transition:width 0.6s cubic-bezier(0.4,0,0.2,1);position:relative}
+.progress-bar-inner::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);background-size:200% 100%;animation:shimmer 2s infinite}
+.progress-text{font-size:0.75rem;color:var(--text-muted);margin-top:6px;text-align:right;font-weight:500}
+
+.setup-panel{background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-xl);padding:36px 32px;animation:scaleIn 0.4s ease both}
+.setup-title{font-size:1.5rem;font-weight:700;margin-bottom:6px}
+.setup-subtitle{font-size:0.9rem;color:var(--text-secondary);margin-bottom:28px;line-height:1.5}
+.mode-selector{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px}
+.mode-option{position:relative;padding:22px 18px;border:2px solid var(--border-glass);border-radius:var(--radius-lg);cursor:pointer;text-align:center;transition:all var(--transition-normal);background:var(--surface-glass)}
+.mode-option:hover{border-color:var(--border-glass-active);background:var(--surface-glass-hover)}
+.mode-option.selected{border-color:var(--accent-primary);background:var(--accent-primary-glow);box-shadow:0 0 20px var(--accent-primary-glow)}
+.mode-icon{font-size:1.75rem;margin-bottom:8px;display:block}
+.mode-name{font-size:0.95rem;font-weight:600;color:var(--text-primary)}
+.mode-desc{font-size:0.8rem;color:var(--text-secondary);margin-top:4px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:'Inter',sans-serif;font-weight:600;font-size:0.95rem;border:none;cursor:pointer;border-radius:var(--radius-md);padding:14px 28px;transition:all var(--transition-normal);letter-spacing:-0.01em}
+.btn-primary{background:var(--accent-gradient);color:white;box-shadow:var(--shadow-glow);width:100%}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 40px var(--accent-primary-glow),var(--shadow-md)}
+.btn-primary:active{transform:translateY(0)}
+.btn-primary:disabled{opacity:0.4;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-secondary{background:var(--surface-glass);color:var(--text-primary);border:1px solid var(--border-glass);width:100%;backdrop-filter:blur(8px)}
+.btn-secondary:hover{border-color:var(--border-glass-active);background:var(--surface-glass-hover);transform:translateY(-1px)}
+.btn-success{background:linear-gradient(135deg,#00d68f,#00b377);color:white;width:100%;box-shadow:0 0 20px rgba(0,214,143,0.2)}
+.btn-success:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(0,214,143,0.3)}
+.btn-sm{padding:8px 16px;font-size:0.8rem;width:auto;border-radius:var(--radius-sm)}
+.btn-danger{background:var(--error-bg);color:var(--error);border:1px solid var(--error-border);width:auto}
+.btn-danger:hover{background:rgba(255,77,106,0.2)}
+
+.quiz-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:12px}
+.quiz-progress-text{font-size:0.85rem;color:var(--text-muted);font-weight:500}
+.quiz-progress-text span{color:var(--accent-primary);font-weight:700}
+.quiz-type-badge{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;padding:6px 14px;border-radius:20px}
+.quiz-type-badge.type-single{color:#6c63ff;border:1px solid rgba(108,99,255,0.3);background:rgba(108,99,255,0.08)}
+.quiz-type-badge.type-multiple{color:#00d4aa;border:1px solid rgba(0,212,170,0.3);background:rgba(0,212,170,0.08)}
+.quiz-type-badge.type-open{color:#ffa07a;border:1px solid rgba(255,160,122,0.3);background:rgba(255,160,122,0.08)}
+.quiz-progress-bar{width:100%;height:4px;background:var(--bg-input);border-radius:2px;margin-bottom:32px;overflow:hidden}
+.quiz-progress-fill{height:100%;background:var(--accent-gradient);border-radius:2px;transition:width 0.5s cubic-bezier(0.4,0,0.2,1)}
+.quiz-card{background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-xl);padding:36px 32px;animation:fadeInUp 0.45s ease both}
+.question-text{font-size:1.2rem;font-weight:600;line-height:1.55;margin-bottom:28px;color:var(--text-primary)}
+
+.options-list{display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
+.option-item{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border:2px solid var(--border-glass);border-radius:var(--radius-md);cursor:pointer;transition:all var(--transition-normal);background:var(--surface-glass);user-select:none}
+.option-item:hover:not(.locked){border-color:var(--border-glass-active);background:var(--surface-glass-hover)}
+.option-item.selected:not(.locked){border-color:var(--accent-primary);background:rgba(108,99,255,0.08)}
+.option-item.locked{cursor:default;opacity:0.95}
+.option-item.correct{border-color:var(--success);background:var(--success-bg)}
+.option-item.incorrect{border-color:var(--error);background:var(--error-bg)}
+.option-item.missed-correct{border-color:var(--success);background:var(--success-bg);opacity:0.7}
+.option-indicator{width:22px;height:22px;min-width:22px;border-radius:50%;border:2px solid var(--text-muted);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;transition:all var(--transition-normal);margin-top:1px;color:var(--text-muted)}
+.option-item.selected:not(.locked) .option-indicator{border-color:var(--accent-primary);background:var(--accent-primary);color:white}
+.option-indicator.checkbox{border-radius:6px}
+.option-item.correct .option-indicator{border-color:var(--success);background:var(--success);color:white}
+.option-item.incorrect .option-indicator{border-color:var(--error);background:var(--error);color:white}
+.option-item.missed-correct .option-indicator{border-color:var(--success);background:transparent;color:var(--success)}
+.option-text{font-size:0.95rem;line-height:1.5;color:var(--text-primary);flex:1}
+
+.open-input-wrapper{margin-bottom:28px}
+.open-textarea{width:100%;min-height:100px;padding:16px 18px;border:2px solid var(--border-glass);border-radius:var(--radius-md);background:var(--bg-input);color:var(--text-primary);font-family:'Inter',sans-serif;font-size:0.95rem;line-height:1.5;resize:vertical;transition:all var(--transition-normal);outline:none}
+.open-textarea:focus{border-color:var(--accent-primary);box-shadow:0 0 0 3px var(--accent-primary-glow)}
+.open-textarea:disabled{opacity:0.7;cursor:not-allowed}
+.open-textarea.correct{border-color:var(--success);background:var(--success-bg)}
+.open-textarea.incorrect{border-color:var(--error);background:var(--error-bg)}
+.open-expected-answer{margin-top:12px;padding:14px 16px;background:var(--success-bg);border:1px solid var(--success-border);border-radius:var(--radius-md);font-size:0.875rem;color:var(--success);font-weight:500;animation:slideDown 0.3s ease both}
+.open-expected-label{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:4px}
+
+.explanation-box{margin-top:20px;padding:20px 22px;background:var(--surface-glass);border:1px solid var(--border-glass);border-radius:var(--radius-md);animation:slideDown 0.4s ease both;border-left:3px solid var(--accent-primary)}
+.explanation-title{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--accent-primary);margin-bottom:8px}
+.explanation-text{font-size:0.9rem;color:var(--text-secondary);line-height:1.65}
+
+.result-indicator{display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:var(--radius-md);margin-bottom:16px;font-weight:600;font-size:0.9rem;animation:scaleIn 0.3s ease both}
+.result-indicator.correct{background:var(--success-bg);border:1px solid var(--success-border);color:var(--success)}
+.result-indicator.incorrect{background:var(--error-bg);border:1px solid var(--error-border);color:var(--error)}
+.result-icon{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.result-icon.correct{background:var(--success);color:white}
+.result-icon.incorrect{background:var(--error);color:white}
+.quiz-actions{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+
+.completion-screen{text-align:center;padding:60px 24px;animation:scaleIn 0.5s ease both}
+.completion-emoji{font-size:4rem;margin-bottom:20px;animation:confettiPop 0.6s ease both}
+.completion-title{font-size:1.75rem;font-weight:800;background:var(--accent-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px}
+.completion-subtitle{font-size:1rem;color:var(--text-secondary);margin-bottom:32px;line-height:1.5}
+.completion-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
+.stat-card{padding:20px 16px;background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-lg)}
+.stat-value{font-size:1.75rem;font-weight:800}.stat-label{font-size:0.75rem;color:var(--text-muted);font-weight:500;margin-top:4px}
+.stat-value.green{color:var(--success)}.stat-value.red{color:var(--error)}.stat-value.purple{color:var(--accent-primary)}
+.completion-actions{display:flex;flex-direction:column;gap:12px;max-width:360px;margin:0 auto}
+
+.modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.65);backdrop-filter:blur(6px);z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;animation:fadeIn 0.2s ease both}
+.modal-content{background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-xl);padding:32px;max-width:640px;width:100%;max-height:85vh;overflow-y:auto;animation:scaleIn 0.3s ease both;box-shadow:var(--shadow-lg)}
+.modal-title{font-size:1.25rem;font-weight:700;margin-bottom:6px}
+.modal-subtitle{font-size:0.85rem;color:var(--text-secondary);margin-bottom:20px;line-height:1.5}
+.modal-actions{display:flex;gap:12px;margin-top:20px}.modal-actions .btn{flex:1}
+.json-textarea{width:100%;min-height:200px;padding:16px;border:2px solid var(--border-glass);border-radius:var(--radius-md);background:var(--bg-input);color:var(--text-primary);font-family:'Courier New',monospace;font-size:0.85rem;line-height:1.5;resize:vertical;outline:none;transition:border-color var(--transition-normal)}
+.json-textarea:focus{border-color:var(--accent-primary);box-shadow:0 0 0 3px var(--accent-primary-glow)}
+.import-format-hint{margin-top:12px;padding:14px 16px;background:var(--surface-glass);border:1px solid var(--border-glass);border-radius:var(--radius-md);font-size:0.78rem;color:var(--text-muted);line-height:1.6}
+.import-format-hint code{background:rgba(255,255,255,0.06);padding:2px 6px;border-radius:4px;font-family:'Courier New',monospace;color:var(--text-secondary);font-size:0.75rem}
+
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:12px 24px;border-radius:var(--radius-md);font-size:0.875rem;font-weight:600;z-index:200;animation:fadeInUp 0.3s ease both;box-shadow:var(--shadow-md)}
+.toast.success{background:var(--success);color:white}.toast.error{background:var(--error);color:white}
+.toast.hide{animation:fadeOut 0.3s ease both}
+
+.manage-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px}
+.manage-title{font-size:1.3rem;font-weight:700}
+.manage-card{background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px;transition:all var(--transition-normal)}
+.manage-card:hover{border-color:var(--border-glass-active)}
+.manage-card-header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.manage-card-left{display:flex;align-items:center;gap:14px}
+.manage-card-icon{font-size:1.5rem}
+.manage-card-name{font-size:1rem;font-weight:600}
+.manage-card-count{font-size:0.8rem;color:var(--text-muted)}
+.manage-card-actions{display:flex;gap:8px}
+
+.kbd{display:inline-flex;align-items:center;justify-content:center;padding:2px 7px;background:rgba(255,255,255,0.06);border:1px solid var(--border-glass);border-radius:4px;font-size:0.65rem;font-family:'Inter',sans-serif;color:var(--text-muted);margin-left:6px;font-weight:500;line-height:1.4}
+
+@media(max-width:640px){
+  .app-container{padding:16px 16px 60px}
+  .app-header{padding:32px 0 28px}
+  .logo-text{font-size:1.6rem}
+  .app-subtitle{font-size:0.9rem}
+  .settings-bar{flex-direction:column;align-items:flex-start;gap:12px;padding:14px 16px}
+  .subjects-grid{grid-template-columns:1fr}
+  .setup-panel{padding:28px 20px}
+  .quiz-card{padding:24px 18px}
+  .question-text{font-size:1.05rem}
+  .mode-selector{grid-template-columns:1fr}
+  .completion-stats{grid-template-columns:1fr;gap:12px}
+  .quiz-header{flex-direction:column;align-items:flex-start}
+  .modal-content{padding:24px 18px}
+  .manage-card-header{flex-direction:column;align-items:flex-start}
+  .stats-strip{grid-template-columns:repeat(2,1fr)}
+  .kbd{display:none}
+}
+@media(min-width:641px) and (max-width:960px){.subjects-grid{grid-template-columns:repeat(2,1fr)}}
+
+.global-exam-card{background:linear-gradient(135deg,rgba(108,99,255,0.12),rgba(0,212,170,0.12));border:1px solid rgba(108,99,255,0.25);border-radius:var(--radius-lg);padding:24px 28px;cursor:pointer;display:flex;align-items:center;gap:20px;transition:all var(--transition-normal);margin-bottom:28px;animation:fadeInUp 0.5s ease 0.15s both;backdrop-filter:blur(12px)}
+.global-exam-card:hover{border-color:rgba(108,99,255,0.5);background:linear-gradient(135deg,rgba(108,99,255,0.2),rgba(0,212,170,0.2));transform:translateY(-4px);box-shadow:var(--shadow-lg),0 0 20px rgba(108,99,255,0.15)}
+.global-exam-icon{font-size:2.8rem;display:flex;align-items:center;justify-content:center}
+.global-exam-details{flex:1}
+.global-exam-title{font-size:1.3rem;font-weight:800;color:var(--text-primary);margin-bottom:4px}
+.global-exam-desc{font-size:0.875rem;color:var(--text-secondary)}
+.global-exam-arrow{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;color:var(--accent-primary);transition:all var(--transition-normal)}
+.global-exam-card:hover .global-exam-arrow{background:var(--accent-primary);color:white;transform:translateX(4px)}
+
+.modules-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:32px}
+.module-card{background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-lg);padding:24px;cursor:pointer;transition:all var(--transition-normal);display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.module-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent-gradient);opacity:0;transition:opacity var(--transition-normal)}
+.module-card:hover{border-color:var(--border-glass-active);background:var(--bg-card-hover);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.module-card:hover::before{opacity:1}
+.module-name{font-size:1.1rem;font-weight:700;margin-bottom:8px;color:var(--text-primary)}
+.module-meta{display:flex;align-items:center;justify-content:space-between;margin-top:16px;padding-top:12px;border-top:1px solid var(--border-glass);flex-wrap:wrap;gap:8px}
+.module-qcount{font-size:0.8rem;color:var(--text-muted)}
+.module-start-btn{color:var(--accent-primary);font-size:0.85rem;font-weight:600;display:flex;align-items:center;gap:4px;margin-left:auto}
+.module-card:hover .module-start-btn{color:var(--accent-secondary)}
+
+.exam-panel{background:linear-gradient(180deg,var(--bg-card),rgba(26,32,53,0.5));border:1px solid var(--border-glass);border-radius:var(--radius-xl);padding:32px;margin-top:24px;border-left:4px solid var(--warning);animation:fadeInUp 0.5s ease both}
+.exam-title{font-size:1.25rem;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.exam-desc{font-size:0.9rem;color:var(--text-secondary);margin-bottom:20px}
+.exam-setup-row{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.exam-setup-col{flex:1;min-width:200px}
+.exam-label{font-size:0.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;margin-bottom:8px;display:block}
+.exam-select{width:100%;padding:10px 14px;border-radius:var(--radius-md);background:var(--bg-input);border:1px solid var(--border-glass);color:var(--text-primary);outline:none;font-weight:500;transition:border-color var(--transition-fast)}
+.exam-select:focus{border-color:var(--accent-primary)}
+.exam-input{width:100%;max-width:120px;padding:10px 14px;border-radius:var(--radius-md);background:var(--bg-input);border:1px solid var(--border-glass);color:var(--text-primary);outline:none;font-weight:500;transition:border-color var(--transition-fast)}
+.exam-input:focus{border-color:var(--accent-primary)}
+
+.review-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:12px}
+.review-title{font-size:1.1rem;font-weight:700}
+.review-actions-row{display:flex;justify-content:space-between;gap:12px;margin-top:24px}
+.review-btn{display:flex;align-items:center;gap:6px;padding:12px 20px;border-radius:var(--radius-md);border:1px solid var(--border-glass);background:var(--surface-glass);color:var(--text-primary);cursor:pointer;font-weight:600;font-size:0.9rem;transition:all var(--transition-normal)}
+.review-btn:hover:not(:disabled){border-color:var(--border-glass-active);background:var(--surface-glass-hover)}
+.review-btn:disabled{opacity:0.3;cursor:not-allowed}
+.review-badge-user{display:inline-flex;align-items:center;gap:6px;font-size:0.8rem;font-weight:600;padding:6px 12px;border-radius:6px;margin-bottom:14px}
+.review-badge-user.correct{background:var(--success-bg);color:var(--success);border:1px solid var(--success-border)}
+.review-badge-user.incorrect{background:var(--error-bg);color:var(--error);border:1px solid var(--error-border)}
+
+.quiz-card{position:relative}
+.difficulty-star{position:absolute;top:22px;right:24px;background:transparent;border:none;color:var(--text-muted);font-size:1.4rem;cursor:pointer;transition:all var(--transition-fast);display:flex;align-items:center;justify-content:center;padding:4px;border-radius:50%;z-index:5}
+.difficulty-star:hover{color:var(--warning);transform:scale(1.15);background:rgba(255,179,71,0.06)}
+.difficulty-star.active{color:var(--warning);text-shadow:0 0 10px rgba(255,179,71,0.4)}
+
+.module-errors{font-size:0.75rem;color:var(--error);background:var(--error-bg);border:1px solid var(--error-border);padding:2px 8px;border-radius:10px;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+
+/* Two-column layout for subject modules */
+.subject-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.subject-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.incorrect-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  animation: fadeInUp 0.5s ease both;
+}
+.incorrect-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--error);
+}
+.incorrect-modules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+.incorrect-module-card {
+  background: rgba(255, 77, 106, 0.02);
+  border: 1px solid rgba(255, 77, 106, 0.12);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all var(--transition-normal);
+}
+.incorrect-module-card:hover {
+  border-color: rgba(255, 77, 106, 0.25);
+  background: rgba(255, 77, 106, 0.05);
+}
+.incorrect-module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+.incorrect-module-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+.incorrect-module-count {
+  font-size: 0.75rem;
+  color: var(--error);
+  background: var(--error-bg);
+  border: 1px solid var(--error-border);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.success-empty-card {
+  background: rgba(0, 214, 143, 0.02);
+  border: 1px solid rgba(0, 214, 143, 0.12);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  color: var(--success);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.success-empty-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.success-empty-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+@media(max-width:768px){
+  .subject-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" data-type="module">
+
+const DEFAULT_SUBJECTS = [
+  {
+    id: "sieci-komputerowe",
+    name: "Sieci Komputerowe",
+    icon: "🌐",
+    description: "Architektura sieci, protokoły komunikacyjne, model OSI/TCP-IP i bezpieczeństwo sieciowe.",
+    modules: [
+      {
+        id: "sk-m1",
+        name: "Model OSI i podstawy",
+        questions: [
+          {
+            id: "sk-001", type: "single",
+            question: "Ile warstw zawiera model OSI?",
+            options: ["4", "5", "7", "6"],
+            correctAnswers: [2],
+            explanation: "Model OSI (Open Systems Interconnection) składa się z 7 warstw: fizycznej, łącza danych, sieciowej, transportowej, sesji, prezentacji i aplikacji."
+          },
+          {
+            id: "sk-002", type: "multiple",
+            question: "Które z poniższych protokołów działają w warstwie transportowej modelu OSI?",
+            options: ["TCP", "HTTP", "UDP", "IP", "FTP", "SCTP"],
+            correctAnswers: [0, 2, 5],
+            explanation: "W warstwie transportowej działają protokoły TCP, UDP i SCTP. HTTP i FTP to protokoły warstwy aplikacji, a IP — warstwy sieciowej."
+          }
+        ]
+      },
+      {
+        id: "sk-m2",
+        name: "Protokoły aplikacji i porty",
+        questions: [
+          {
+            id: "sk-003", type: "open",
+            question: "Jaki jest domyślny numer portu dla protokołu HTTP?",
+            options: [],
+            correctAnswers: ["80"],
+            explanation: "Domyślny port HTTP to 80, natomiast HTTPS używa portu 443."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "jezyki-skryptowe",
+    name: "Języki skryptowe",
+    icon: "💻",
+    description: "Programowanie w językach skryptowych — Python, JavaScript, Bash i automatyzacja.",
+    modules: [
+      {
+        id: "js-m1",
+        name: "JavaScript w przeglądarce",
+        questions: [
+          {
+            id: "js-001", type: "single",
+            question: "Który język skryptowy jest domyślnym językiem przeglądarek internetowych?",
+            options: ["Python", "Ruby", "JavaScript", "PHP"],
+            correctAnswers: [2],
+            explanation: "JavaScript jest jedynym językiem programowania obsługiwanym natywnie przez wszystkie nowoczesne przeglądarki internetowe."
+          }
+        ]
+      },
+      {
+        id: "js-m2",
+        name: "Python i podstawy skryptów",
+        questions: [
+          {
+            id: "js-002", type: "multiple",
+            question: "Które z poniższych są językami skryptowymi?",
+            options: ["Python", "Java", "Bash", "C++", "Perl", "Ruby"],
+            correctAnswers: [0, 2, 4, 5],
+            explanation: "Python, Bash, Perl i Ruby to języki skryptowe (interpretowane). Java i C++ są językami kompilowanymi."
+          },
+          {
+            id: "js-003", type: "open",
+            question: "Jak nazywa się funkcja w Pythonie, która wyświetla tekst w konsoli?",
+            options: [],
+            correctAnswers: ["print"],
+            explanation: "Funkcja print() w Pythonie służy do wyświetlania tekstu i wartości w konsoli (standardowym wyjściu)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "systemy-dynamiczne",
+    name: "Systemy dynamiczne",
+    icon: "⚙️",
+    description: "Analiza i modelowanie systemów dynamicznych — równania stanu, stabilność i sterowanie.",
+    modules: [
+      {
+        id: "sd-m1",
+        name: "Stabilność układów",
+        questions: [
+          {
+            id: "sd-001", type: "single",
+            question: "Jakie kryterium stabilności używa biegunów transmitancji do oceny stabilności układu?",
+            options: [
+              "Kryterium Nyquista",
+              "Kryterium Bodego",
+              "Kryterium położenia biegunów (BIBO)",
+              "Kryterium Routha-Hurwitza"
+            ],
+            correctAnswers: [2],
+            explanation: "Kryterium BIBO (Bounded-Input Bounded-Output) opiera się na analizie położenia biegunów transmitancji — układ jest stabilny, gdy wszystkie bieguny leżą w lewej półpłaszczyźnie zespolonej."
+          },
+          {
+            id: "sd-002", type: "multiple",
+            question: "Które z poniższych są metodami analizy stabilności systemów dynamicznych?",
+            options: [
+              "Kryterium Routha-Hurwitza",
+              "Metoda simpleks",
+              "Kryterium Nyquista",
+              "Metoda Monte Carlo",
+              "Funkcja Lapunowa",
+              "Analiza wskaźników Lapunowa"
+            ],
+            correctAnswers: [0, 2, 4, 5],
+            explanation: "Metody analizy stabilności to m.in.: Routha-Hurwitza, Nyquista, funkcje Lapunowa i wskaźniki Lapunowa. Metoda simpleks dotyczy programowania liniowego, a Monte Carlo — symulacji stochastycznych."
+          }
+        ]
+      },
+      {
+        id: "sd-m2",
+        name: "Modelowanie i analiza",
+        questions: [
+          {
+            id: "sd-003", type: "open",
+            question: "Jak nazywa się przekształcenie matematyczne powszechnie stosowane do analizy systemów liniowych ciągłych?",
+            options: [],
+            correctAnswers: ["transformata Laplace'a", "transformata laplace'a", "laplace"],
+            explanation: "Transformata Laplace'a przekształca równania różniczkowe w równania algebraiczne, co znacznie ułatwia analizę systemów liniowych ciągłych."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "podstawy-programowania",
+    name: "Podstawy programowania",
+    icon: "🖥️",
+    description: "Fundamenty programowania — algorytmy, struktury danych, paradygmaty i złożoność obliczeniowa.",
+    modules: [
+      {
+        id: "pp-m1",
+        name: "Algorytmy i złożoność",
+        questions: [
+          {
+            id: "pp-001", type: "single",
+            question: "Jaka jest złożoność czasowa algorytmu wyszukiwania binarnego?",
+            options: ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+            correctAnswers: [1],
+            explanation: "Wyszukiwanie binarne ma złożoność O(log n), ponieważ w każdym kroku dzieli zakres przeszukiwania na połowę."
+          }
+        ]
+      },
+      {
+        id: "pp-m2",
+        name: "Struktury i paradygmaty",
+        questions: [
+          {
+            id: "pp-002", type: "multiple",
+            question: "Które z poniższych są paradygmatami programowania?",
+            options: [
+              "Programowanie obiektowe",
+              "Programowanie równoległe",
+              "Programowanie funkcyjne",
+              "Programowanie bazodanowe",
+              "Programowanie imperatywne",
+              "Programowanie logiczne"
+            ],
+            correctAnswers: [0, 2, 4, 5],
+            explanation: "Główne paradygmaty programowania to: obiektowe, funkcyjne, imperatywne i logiczne. Programowanie równoległe to model wykonywania, a bazodanowe nie jest uznanym paradygmatem."
+          },
+          {
+            id: "pp-003", type: "open",
+            question: "Jak nazywa się struktura danych typu LIFO (Last In, First Out)?",
+            options: [],
+            correctAnswers: ["stos", "stack"],
+            explanation: "Stos (stack) to struktura danych, w której ostatni dodany element jest usuwany jako pierwszy (LIFO — Last In, First Out)."
+          }
+        ]
+      }
+    ]
+  }
+];
+
+const STORAGE_KEY_SUBJECTS = "studypro_subjects";
+const STORAGE_KEY_PROGRESS = "studypro_progress";
+const STORAGE_KEY_DIFFICULT = "studypro_difficult";
+const STORAGE_KEY_INCORRECT = "studypro_incorrect";
+
+const { useState, useEffect, useCallback } = React;
+
+function shuffleArray(arr) {
+  const s = [...arr];
+  for (let i = s.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [s[i], s[j]] = [s[j], s[i]];
+  }
+  return s;
+}
+
+function getSubjectQuestions(subject) {
+  if (!subject.modules) return [];
+  return subject.modules.reduce((acc, m) => [...acc, ...m.questions], []);
+}
+
+function getAllQuestions(subjectsList) {
+  return subjectsList.reduce((acc, s) => [...acc, ...getSubjectQuestions(s)], []);
+}
+
+function loadFromStorage(key, fallback) {
+  try { const r = localStorage.getItem(key); return r ? JSON.parse(r) : fallback; }
+  catch (e) { return fallback; }
+}
+
+function saveToStorage(key, data) {
+  try { localStorage.setItem(key, JSON.stringify(data)); } catch (e) {}
+}
+
+function CheckIcon() {
+  return (<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="2.5 7 5.5 10 11.5 4"/></svg>);
+}
+function CrossIcon() {
+  return (<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg>);
+}
+function ArrowIcon() {
+  return (<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>);
+}
+function BackIcon() {
+  return (<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 2 4 7 9 12"/></svg>);
+}
+function GearIcon() {
+  return (<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="8" cy="8" r="2.5"/><path d="M13.3 9.7a1.2 1.2 0 00.24 1.32l.04.04a1.44 1.44 0 11-2.04 2.04l-.04-.04a1.2 1.2 0 00-1.32-.24 1.2 1.2 0 00-.72 1.1v.12a1.44 1.44 0 01-2.88 0v-.06a1.2 1.2 0 00-.78-1.1 1.2 1.2 0 00-1.32.24l-.04.04a1.44 1.44 0 11-2.04-2.04l.04-.04a1.2 1.2 0 00.24-1.32 1.2 1.2 0 00-1.1-.72H1.44a1.44 1.44 0 010-2.88h.06a1.2 1.2 0 001.1-.78 1.2 1.2 0 00-.24-1.32l-.04-.04a1.44 1.44 0 112.04-2.04l.04.04a1.2 1.2 0 001.32.24h.06a1.2 1.2 0 00.72-1.1V1.44a1.44 1.44 0 012.88 0v.06a1.2 1.2 0 00.72 1.1 1.2 1.2 0 001.32-.24l.04-.04a1.44 1.44 0 112.04 2.04l-.04.04a1.2 1.2 0 00-.24 1.32v.06a1.2 1.2 0 001.1.72h.12a1.44 1.44 0 010 2.88h-.06a1.2 1.2 0 00-1.1.72z"/></svg>);
+}
+function PlusIcon() {
+  return (<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="7" y1="2" x2="7" y2="12"/><line x1="2" y1="7" x2="12" y2="7"/></svg>);
+}
+function TrashIcon() {
+  return (<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="2 3.5 12 3.5"/><path d="M4.5 3.5V2.5a1 1 0 011-1h3a1 1 0 011 1v1"/><path d="M11 3.5v8a1 1 0 01-1 1H4a1 1 0 01-1-1v-8"/></svg>);
+}
+function DownloadIcon() {
+  return (<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 1.5v8"/><polyline points="3.5 6 7 9.5 10.5 6"/><path d="M1.5 11.5h11"/></svg>);
+}
+
+function Toggle({ checked, onChange, label }) {
+  return (
+    <div className="toggle-wrapper" onClick={() => onChange(!checked)}>
+      <div className={"toggle-track" + (checked ? " active" : "")}><div className="toggle-knob"/></div>
+      <span className="toggle-label-text">{label}</span>
+    </div>
+  );
+}
+
+function ProgressBar({ current, total }) {
+  const pct = total > 0 ? Math.round((current / total) * 100) : 0;
+  return (
+    <div className="progress-container">
+      <div className="progress-bar-outer"><div className="progress-bar-inner" style={{ width: pct + "%" }}/></div>
+      <div className="progress-text">{current} / {total} ({pct}%)</div>
+    </div>
+  );
+}
+
+function Toast({ message, type, onDone }) {
+  const [hiding, setHiding] = useState(false);
+  useEffect(() => {
+    const t1 = setTimeout(() => setHiding(true), 2500);
+    const t2 = setTimeout(onDone, 2800);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
+  }, []);
+  return <div className={"toast " + type + (hiding ? " hide" : "")}>{message}</div>;
+}
+
+function StatsStrip({ subjects, progressData, progressEnabled }) {
+  const allQs = getAllQuestions(subjects);
+  const totalQuestions = allQs.length;
+  const totalCorrect = progressEnabled ? allQs.filter(q => progressData[q.id]).length : 0;
+  const pct = totalQuestions > 0 ? Math.round((totalCorrect / totalQuestions) * 100) : 0;
+
+  return (
+    <div className="stats-strip">
+      <div className="stats-strip-card">
+        <div className="stats-strip-value purple">{subjects.length}</div>
+        <div className="stats-strip-label">Przedmioty</div>
+      </div>
+      <div className="stats-strip-card">
+        <div className="stats-strip-value cyan">{totalQuestions}</div>
+        <div className="stats-strip-label">Pytania</div>
+      </div>
+      <div className="stats-strip-card">
+        <div className="stats-strip-value green">{progressEnabled ? totalCorrect : "—"}</div>
+        <div className="stats-strip-label">Opanowane</div>
+      </div>
+      <div className="stats-strip-card">
+        <div className="stats-strip-value orange">{progressEnabled ? pct + "%" : "—"}</div>
+        <div className="stats-strip-label">Postęp</div>
+      </div>
+    </div>
+  );
+}
+
+function ImportModal({ subjectId, moduleId, subjectName, onImport, onClose }) {
+  const [jsonText, setJsonText] = useState("");
+  const [error, setError] = useState("");
+
+  const handleImport = () => {
+    setError("");
+    try {
+      const parsed = JSON.parse(jsonText);
+      if (!Array.isArray(parsed)) {
+        setError("Oczekiwano tablicy w formacie JSON.");
+        return;
+      }
+      if (parsed.length === 0) {
+        setError("Tablica jest pusta.");
+        return;
+      }
+      
+      const isModular = parsed[0].questions !== undefined;
+      
+      if (isModular) {
+        for (let i = 0; i < parsed.length; i++) {
+          const mod = parsed[i];
+          if (!mod.id || !mod.name || !Array.isArray(mod.questions)) {
+            setError("Moduł #" + (i+1) + " — brak wymaganych pól (id, name, questions) lub 'questions' nie jest tablicą.");
+            return;
+          }
+          for (let j = 0; j < mod.questions.length; j++) {
+            const q = mod.questions[j];
+            if (!q.id || !q.type || !q.question || !q.correctAnswers) {
+              setError(`Moduł "${mod.name}", pytanie #${j+1} — brak pól (id, type, question, correctAnswers).`);
+              return;
+            }
+            if (!["single","multiple","open"].includes(q.type)) {
+              setError(`Moduł "${mod.name}", pytanie #${j+1} — nieprawidłowy typ: "${q.type}".`);
+              return;
+            }
+          }
+        }
+      } else {
+        for (let i = 0; i < parsed.length; i++) {
+          const q = parsed[i];
+          if (!q.id || !q.type || !q.question || !q.correctAnswers) {
+            setError("Pytanie #" + (i+1) + " — brak wymaganych pól (id, type, question, correctAnswers).");
+            return;
+          }
+          if (!["single","multiple","open"].includes(q.type)) {
+            setError("Pytanie #" + (i+1) + " — nieprawidłowy typ: \"" + q.type + "\".");
+            return;
+          }
+        }
+      }
+      onImport(subjectId, moduleId, parsed);
+    } catch (e) { setError("Błąd parsowania JSON: " + e.message); }
+  };
+
+  return (
+    <div className="modal-overlay" onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
+      <div className="modal-content">
+        <h3 className="modal-title">Importuj pytania — {subjectName}</h3>
+        <p className="modal-subtitle">Wklej poniżej zestaw w formacie JSON (płaska lista pytań lub tablica modułów).</p>
+        <textarea className="json-textarea" value={jsonText} onChange={(e) => setJsonText(e.target.value)}
+          placeholder={'[\n  {\n    "id": "q-001",\n    "type": "single",\n    "question": "Treść pytania?",\n    "options": ["A", "B", "C", "D"],\n    "correctAnswers": [0],\n    "explanation": "Wyjaśnienie..."\n  }\n]'}
+        />
+        {error && (
+          <div style={{ marginTop:"10px", padding:"10px 14px", background:"var(--error-bg)", border:"1px solid var(--error-border)", borderRadius:"var(--radius-sm)", color:"var(--error)", fontSize:"0.825rem" }}>
+            {error}
+          </div>
+        )}
+        <div className="import-format-hint">
+          Wymagane pola dla pytania: <code>id</code>, <code>type</code> (<code>single</code>/<code>multiple</code>/<code>open</code>), <code>question</code>, <code>correctAnswers</code>, <code>explanation</code>.<br/>
+          Dla <code>single</code>/<code>multiple</code> dodaj <code>options</code> (tablica).
+        </div>
+        <div className="modal-actions">
+          <button className="btn btn-secondary" onClick={onClose}>Anuluj</button>
+          <button className="btn btn-primary" onClick={handleImport} disabled={!jsonText.trim()}>Importuj</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ManageView({ subjects, onBack, onImport, onClearQuestions, onResetAll, onExport, onAddModule, onClearModuleQuestions, onExportModule }) {
+  const total = subjects.reduce((s, sub) => s + getSubjectQuestions(sub).length, 0);
+  return (
+    <div>
+      <button className="nav-back" onClick={onBack}><BackIcon/> Powrót</button>
+      <div className="manage-header">
+        <h2 className="manage-title">⚙️ Zarządzaj bazami pytań</h2>
+        <span style={{ fontSize:"0.8rem", color:"var(--text-muted)" }}>Łącznie: {total} pytań</span>
+      </div>
+      {subjects.map((subject) => {
+        const subjectQs = getSubjectQuestions(subject);
+        return (
+          <div className="manage-card animate-fade-in-up" key={subject.id} style={{ marginBottom: "24px" }}>
+            <div className="manage-card-header" style={{ borderBottom: "1px solid var(--border-glass)", paddingBottom: "14px", marginBottom: "14px" }}>
+              <div className="manage-card-left">
+                <span className="manage-card-icon">{subject.icon}</span>
+                <div>
+                  <div className="manage-card-name">{subject.name}</div>
+                  <div className="manage-card-count">{subjectQs.length} pytań, {subject.modules ? subject.modules.length : 0} modułów</div>
+                </div>
+              </div>
+              <div className="manage-card-actions">
+                <button className="btn btn-sm btn-secondary" onClick={() => onAddModule(subject.id)}><PlusIcon/> Dodaj moduł</button>
+                <button className="btn btn-sm btn-secondary" onClick={() => onExport(subject.id)} disabled={subjectQs.length === 0}><DownloadIcon/></button>
+                <button className="btn btn-sm btn-danger" onClick={() => onClearQuestions(subject.id)} disabled={subjectQs.length === 0}><TrashIcon/></button>
+              </div>
+            </div>
+            
+            <div className="manage-modules-list" style={{ display: "flex", flexDirection: "column", gap: "10px", paddingLeft: "12px" }}>
+              {(subject.modules || []).map(mod => (
+                <div key={mod.id} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: "rgba(255,255,255,0.02)", padding: "8px 12px", borderRadius: "var(--radius-sm)", border: "1px solid var(--border-glass)" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span style={{ fontSize: "0.85rem", fontWeight: 600 }}>{mod.name}</span>
+                    <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>({mod.questions.length} pytań)</span>
+                  </div>
+                  <div style={{ display: "flex", gap: "6px" }}>
+                    <button className="btn btn-sm btn-primary" style={{ padding: "4px 8px", fontSize: "0.7rem" }} onClick={() => onImport(subject.id, mod.id)}><PlusIcon/> Importuj</button>
+                    <button className="btn btn-sm btn-secondary" style={{ padding: "4px 8px", fontSize: "0.7rem" }} onClick={() => onExportModule(subject.id, mod.id)} disabled={mod.questions.length === 0}><DownloadIcon/></button>
+                    <button className="btn btn-sm btn-danger" style={{ padding: "4px 8px", fontSize: "0.7rem" }} onClick={() => onClearModuleQuestions(subject.id, mod.id)} disabled={mod.questions.length === 0}><TrashIcon/></button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+      <div style={{ marginTop:"32px", borderTop:"1px solid var(--border-glass)", paddingTop:"24px" }}>
+        <button className="btn btn-danger btn-sm" onClick={onResetAll} style={{ width:"auto" }}>
+          <TrashIcon/> Resetuj wszystko do domyślnych
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function SubjectCard({ subject, progressEnabled, progressData, onClick, animDelay }) {
+  const questions = getSubjectQuestions(subject);
+  const total = questions.length;
+  const correct = progressEnabled ? questions.filter(q => progressData[q.id]).length : 0;
+  const isEmpty = total === 0;
+  return (
+    <div className={"subject-card animate-fade-in-up" + (isEmpty ? " empty-card" : "")}
+      style={{ animationDelay: animDelay + "ms" }}
+      onClick={isEmpty ? undefined : onClick}
+      id={"subject-" + subject.id}>
+      <span className="subject-icon">{subject.icon}</span>
+      <h2 className="subject-name">{subject.name}</h2>
+      <p className="subject-description">{subject.description}</p>
+      {isEmpty && <div className="subject-empty-badge">⚠️ Brak pytań — dodaj w ustawieniach</div>}
+      {progressEnabled && !isEmpty && <ProgressBar current={correct} total={total}/>}
+      <div className="subject-meta">
+        <span className="subject-count">{total} pytań</span>
+        {!isEmpty && <div className="subject-arrow"><ArrowIcon/></div>}
+      </div>
+    </div>
+  );
+}
+
+function SubjectModulesView({ 
+  subject, 
+  progressEnabled, 
+  progressData, 
+  incorrectData = {}, 
+  onSelectModule, 
+  onStartSubjectExam, 
+  onStartIncorrectExam, 
+  onStartModuleIncorrectQuiz, 
+  onBack 
+}) {
+  const subjectQs = getSubjectQuestions(subject);
+  const totalQuestions = subjectQs.length;
+  const incorrectQuestions = subjectQs.filter(q => incorrectData[q.id]);
+  const totalIncorrect = incorrectQuestions.length;
+  const [examMode, setExamMode] = useState("random");
+
+  return (
+    <div className="animate-fade-in">
+      <button className="nav-back" onClick={onBack}><BackIcon/> Powrót</button>
+      <div className="setup-panel" style={{ marginBottom: "28px" }}>
+        <div style={{ fontSize:"2.5rem", marginBottom:"16px" }}>{subject.icon}</div>
+        <h2 className="setup-title">{subject.name}</h2>
+        <p className="setup-subtitle">{subject.description}</p>
+      </div>
+
+      <div className="subject-layout">
+        {/* Left Column: Learning Modules & Final Exam */}
+        <div className="subject-column">
+          <div>
+            <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "16px" }}>Moduły nauki</h3>
+            <div className="modules-grid" style={{ gridTemplateColumns: "1fr", gap: "16px", marginBottom: 0 }}>
+              {(subject.modules || []).map((mod) => {
+                const modQs = mod.questions;
+                const modTotal = modQs.length;
+                const modCorrect = progressEnabled ? modQs.filter(q => progressData[q.id]).length : 0;
+                const isEmpty = modTotal === 0;
+                
+                return (
+                  <div 
+                    key={mod.id} 
+                    className={"module-card animate-fade-in-up" + (isEmpty ? " empty-card" : "")}
+                    onClick={isEmpty ? undefined : () => onSelectModule(mod)}
+                  >
+                    <div>
+                      <h4 className="module-name">{mod.name}</h4>
+                      {progressEnabled && !isEmpty && <ProgressBar current={modCorrect} total={modTotal}/>}
+                    </div>
+                    <div className="module-meta">
+                      <span className="module-qcount">{modTotal} pytań</span>
+                      {!isEmpty && (
+                        <span className="module-start-btn">
+                          Ćwicz <ArrowIcon/>
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {totalQuestions > 0 && (
+            <div className="exam-panel" style={{ marginTop: 0 }}>
+              <h3 className="exam-title">🏆 Egzamin Końcowy Przedmiotu</h3>
+              <p className="exam-desc">Test wiedzy zawierający pytania ze wszystkich modułów przedmiotu {subject.name}.</p>
+              
+              <div className="exam-setup-row">
+                <div className="exam-setup-col">
+                  <label className="exam-label">Tryb pytań</label>
+                  <div className="mode-selector" style={{ gridTemplateColumns: "1fr 1fr", margin: 0 }}>
+                    <div className={"mode-option" + (examMode === "sequential" ? " selected" : "")} style={{ padding: "12px" }} onClick={() => setExamMode("sequential")}>
+                      <div className="mode-name" style={{ fontSize: "0.85rem" }}>Po kolei</div>
+                    </div>
+                    <div className={"mode-option" + (examMode === "random" ? " selected" : "")} style={{ padding: "12px" }} onClick={() => setExamMode("random")}>
+                      <div className="mode-name" style={{ fontSize: "0.85rem" }}>Losowo</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "24px" }}>
+                <button className="btn btn-success" style={{ flex: 1, minWidth: "200px" }} onClick={() => onStartSubjectExam(examMode)}>
+                  Uruchom Egzamin Końcowy <ArrowIcon/>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Right Column: Incorrect Questions Section */}
+        <div className="subject-column">
+          <div className="incorrect-section">
+            <h3 className="incorrect-section-title">
+              <span>❌ Błędne pytania</span>
+            </h3>
+            
+            {totalIncorrect === 0 ? (
+              <div className="success-empty-card">
+                <span style={{ fontSize: "2rem" }}>🎉</span>
+                <div className="success-empty-title">Wszystko zaliczone!</div>
+                <div className="success-empty-desc">Brak błędnych pytań w tym przedmiocie.</div>
+              </div>
+            ) : (
+              <div>
+                <button 
+                  className="btn btn-danger" 
+                  style={{ 
+                    background: "linear-gradient(135deg,#ff4d6a,#ff1a40)", 
+                    boxShadow: "0 0 20px rgba(255,77,106,0.2)",
+                    width: "100%",
+                    marginBottom: "16px"
+                  }} 
+                  onClick={onStartIncorrectExam}
+                >
+                  Test Wszystkich Błędów ({totalIncorrect}) <ArrowIcon/>
+                </button>
+                
+                <h4 style={{ fontSize: "0.9rem", fontWeight: 700, color: "var(--text-secondary)", marginBottom: "12px" }}>
+                  Błędy według modułów:
+                </h4>
+                
+                <div className="incorrect-modules-list">
+                  {(subject.modules || []).map(mod => {
+                    const modIncorrect = mod.questions.filter(q => incorrectData[q.id]).length;
+                    if (modIncorrect === 0) return null;
+                    return (
+                      <div key={mod.id} className="incorrect-module-card animate-fade-in-up">
+                        <div className="incorrect-module-header">
+                          <span className="incorrect-module-name">{mod.name}</span>
+                          <span className="incorrect-module-count">{modIncorrect}</span>
+                        </div>
+                        <button 
+                          className="btn btn-danger btn-sm" 
+                          style={{ width: "100%", padding: "8px 12px", fontSize: "0.8rem", marginTop: "4px" }} 
+                          onClick={() => onStartModuleIncorrectQuiz(mod)}
+                        >
+                          Ćwicz błędy (❌)
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function QuizSetup({ title, subtitle, icon, questionsList = [], difficultData = {}, incorrectData = {}, onStart, onBack }) {
+  const [onlyDifficult, setOnlyDifficult] = useState(false);
+  const [onlyIncorrect, setOnlyIncorrect] = useState(false);
+  const [mode, setMode] = useState("sequential");
+  
+  const difficultQuestions = questionsList.filter(q => difficultData[q.id]);
+  const hasDifficult = difficultQuestions.length > 0;
+  
+  const incorrectQuestions = questionsList.filter(q => incorrectData[q.id]);
+  const hasIncorrect = incorrectQuestions.length > 0;
+
+  return (
+    <div>
+      <button className="nav-back" onClick={onBack}><BackIcon/> Powrót</button>
+      <div className="setup-panel">
+        <div style={{ fontSize:"2.5rem", marginBottom:"16px" }}>{icon}</div>
+        <h2 className="setup-title">{title}</h2>
+        <p className="setup-subtitle">{subtitle}</p>
+        
+        {(hasDifficult || hasIncorrect) && (
+          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "28px" }}>
+            {hasDifficult && (
+              <div style={{ padding: "12px 16px", background: "rgba(255,179,71,0.06)", border: "1px solid rgba(255,179,71,0.25)", borderRadius: "var(--radius-md)", display: "flex", alignItems: "center", gap: "10px" }}>
+                <input 
+                  type="checkbox" 
+                  id="setup-only-difficult" 
+                  checked={onlyDifficult} 
+                  onChange={(e) => {
+                    setOnlyDifficult(e.target.checked);
+                    if (e.target.checked) setOnlyIncorrect(false);
+                  }}
+                  style={{ width: "18px", height: "18px", accentColor: "var(--warning)", cursor: "pointer" }}
+                />
+                <label htmlFor="setup-only-difficult" style={{ fontSize: "0.9rem", fontWeight: 600, color: "var(--warning)", cursor: "pointer", display: "flex", alignItems: "center", gap: "4px" }}>
+                  Tylko trudne (⭐) <span style={{ fontSize: "0.8rem", color: "var(--text-secondary)" }}>({difficultQuestions.length})</span>
+                </label>
+              </div>
+            )}
+            {hasIncorrect && (
+              <div style={{ padding: "12px 16px", background: "rgba(255,77,106,0.06)", border: "1px solid rgba(255,77,106,0.25)", borderRadius: "var(--radius-md)", display: "flex", alignItems: "center", gap: "10px" }}>
+                <input 
+                  type="checkbox" 
+                  id="setup-only-incorrect" 
+                  checked={onlyIncorrect} 
+                  onChange={(e) => {
+                    setOnlyIncorrect(e.target.checked);
+                    if (e.target.checked) setOnlyDifficult(false);
+                  }}
+                  style={{ width: "18px", height: "18px", accentColor: "var(--error)", cursor: "pointer" }}
+                />
+                <label htmlFor="setup-only-incorrect" style={{ fontSize: "0.9rem", fontWeight: 600, color: "var(--error)", cursor: "pointer", display: "flex", alignItems: "center", gap: "4px" }}>
+                  Tylko błędne (❌) <span style={{ fontSize: "0.8rem", color: "var(--text-secondary)" }}>({incorrectQuestions.length})</span>
+                </label>
+              </div>
+            )}
+          </div>
+        )}
+
+        <div style={{ display: "flex", gap: "24px", flexWrap: "wrap", marginBottom: "28px" }}>
+          <div style={{ flex: 1, minWidth: "200px" }}>
+            <label className="settings-label" style={{ marginBottom:"10px", display:"block", fontSize:"0.875rem", color:"var(--text-secondary)", fontWeight:500 }}>
+              Tryb ćwiczenia
+            </label>
+            <div className="mode-selector" style={{ gridTemplateColumns: "1fr 1fr", margin: 0 }}>
+              <div className={"mode-option" + (mode === "sequential" ? " selected" : "")} onClick={() => setMode("sequential")}>
+                <span className="mode-icon">📋</span>
+                <div className="mode-name">Po kolei</div>
+              </div>
+              <div className={"mode-option" + (mode === "random" ? " selected" : "")} onClick={() => setMode("random")}>
+                <span className="mode-icon">🎲</span>
+                <div className="mode-name">Losowo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button className="btn btn-primary" onClick={() => onStart(mode, onlyDifficult, onlyIncorrect)}>Rozpocznij ćwiczenie <ArrowIcon/></button>
+      </div>
+    </div>
+  );
+}
+
+function QuestionView({ question, questionIndex, totalQuestions, onNext, onRecordAnswer, progressEnabled, isAlreadyCorrect, isDifficult, onToggleDifficult }) {
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [openAnswer, setOpenAnswer] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+
+  useEffect(() => {
+    setSelectedOptions([]); setOpenAnswer(""); setIsSubmitted(false); setIsCorrect(false);
+  }, [question.id]);
+
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === "Enter" && !e.shiftKey && !isSubmitted && canSubmit) {
+        e.preventDefault(); handleSubmit();
+      }
+      if ((e.key === "ArrowRight" || e.key === "Enter") && isSubmitted) {
+        e.preventDefault(); onNext();
+      }
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  });
+
+  const handleOptionToggle = (index) => {
+    if (isSubmitted) return;
+    if (question.type === "single") setSelectedOptions([index]);
+    else setSelectedOptions(prev => prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]);
+  };
+
+  const handleSubmit = () => {
+    if (isSubmitted) return;
+    let correct = false;
+    if (question.type === "open") {
+      const norm = openAnswer.trim().toLowerCase();
+      correct = question.correctAnswers.some(a => a.toLowerCase() === norm);
+    } else {
+      const ss = [...selectedOptions].sort();
+      const sc = [...question.correctAnswers].sort();
+      correct = ss.length === sc.length && ss.every((v, i) => v === sc[i]);
+    }
+    setIsCorrect(correct); setIsSubmitted(true);
+    onRecordAnswer(question.id, selectedOptions, openAnswer, correct);
+  };
+
+  const canSubmit = question.type === "open" ? openAnswer.trim().length > 0 : selectedOptions.length > 0;
+
+  const badge = question.type === "single"
+    ? { label: "Wybierz jedną odpowiedź", cls: "type-single" }
+    : question.type === "multiple"
+    ? { label: "Wybierz kilka odpowiedzi", cls: "type-multiple" }
+    : { label: "Wpisz odpowiedź", cls: "type-open" };
+
+  const progressPct = ((questionIndex + 1) / totalQuestions) * 100;
+
+  const getOptionClass = (i) => {
+    if (!isSubmitted) return "option-item" + (selectedOptions.includes(i) ? " selected" : "");
+    const sel = selectedOptions.includes(i), ans = question.correctAnswers.includes(i);
+    if (sel && ans) return "option-item locked correct";
+    if (sel && !ans) return "option-item locked incorrect";
+    if (!sel && ans) return "option-item locked missed-correct";
+    return "option-item locked";
+  };
+
+  const getIndicator = (i) => {
+    if (!isSubmitted) return selectedOptions.includes(i) ? <CheckIcon/> : null;
+    const sel = selectedOptions.includes(i), ans = question.correctAnswers.includes(i);
+    if (sel && ans) return <CheckIcon/>;
+    if (sel && !ans) return <CrossIcon/>;
+    if (!sel && ans) return <CheckIcon/>;
+    return null;
+  };
+
+  return (
+    <div>
+      <div className="quiz-header">
+        <span className="quiz-progress-text">Pytanie <span>{questionIndex + 1}</span> z <span>{totalQuestions}</span></span>
+        <span className={"quiz-type-badge " + badge.cls}>{badge.label}</span>
+      </div>
+      <div className="quiz-progress-bar"><div className="quiz-progress-fill" style={{ width: progressPct + "%" }}/></div>
+      <div className="quiz-card" key={question.id}>
+        <button className={"difficulty-star" + (isDifficult ? " active" : "")} onClick={onToggleDifficult} title="Oznacz jako trudne">★</button>
+        {isAlreadyCorrect && progressEnabled && (
+          <div className="result-indicator correct" style={{ marginBottom:"16px" }}>
+            <div className="result-icon correct"><CheckIcon/></div>Już odpowiedziano poprawnie
+          </div>
+        )}
+        <p className="question-text">{question.question}</p>
+        {question.type !== "open" ? (
+          <div className="options-list">
+            {question.options.map((opt, idx) => (
+              <div key={idx} className={getOptionClass(idx)} onClick={() => handleOptionToggle(idx)}>
+                <div className={"option-indicator" + (question.type === "multiple" ? " checkbox" : "")}>{getIndicator(idx)}</div>
+                <span className="option-text">{opt}</span>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="open-input-wrapper">
+            <textarea className={"open-textarea" + (isSubmitted ? (isCorrect ? " correct" : " incorrect") : "")}
+              value={openAnswer} onChange={(e) => setOpenAnswer(e.target.value)}
+              placeholder="Wpisz swoją odpowiedź tutaj..." disabled={isSubmitted}/>
+            {isSubmitted && !isCorrect && (
+              <div className="open-expected-answer animate-slide-down">
+                <div className="open-expected-label">Prawidłowa odpowiedź</div>{question.correctAnswers[0]}
+              </div>
+            )}
+          </div>
+        )}
+        {isSubmitted && (
+          <div className="animate-slide-down">
+            <div className={"result-indicator " + (isCorrect ? "correct" : "incorrect")}>
+              <div className={"result-icon " + (isCorrect ? "correct" : "incorrect")}>{isCorrect ? <CheckIcon/> : <CrossIcon/>}</div>
+              {isCorrect ? "Poprawna odpowiedź!" : "Niepoprawna odpowiedź"}
+            </div>
+            <div className="explanation-box">
+              <div className="explanation-title">Wyjaśnienie</div>
+              <p className="explanation-text">{question.explanation}</p>
+            </div>
+          </div>
+        )}
+        <div className="quiz-actions">
+          {!isSubmitted ? (
+            <button className="btn btn-primary" onClick={handleSubmit} disabled={!canSubmit}>
+              Sprawdź <span className="kbd">Enter</span>
+            </button>
+          ) : (
+            <button className="btn btn-success" onClick={onNext}>
+              {questionIndex + 1 < totalQuestions ? "Następne pytanie →" : "Zakończ ćwiczenie →"}
+              <span className="kbd">→</span>
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CompletionScreen({ correctCount, totalCount, onRestart, onHome, onReview }) {
+  const pct = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
+  const inc = totalCount - correctCount;
+  let emoji, msg;
+  if (pct === 100) { emoji = "🏆"; msg = "Perfekcyjny wynik! Jesteś gotowy na egzamin!"; }
+  else if (pct >= 80) { emoji = "🎉"; msg = "Świetna robota! Jeszcze trochę i będziesz mistrzem!"; }
+  else if (pct >= 50) { emoji = "💪"; msg = "Dobry start! Kontynuuj naukę, aby poprawić wynik."; }
+  else { emoji = "📚"; msg = "Nie poddawaj się! Powtórz materiał i spróbuj ponownie."; }
+
+  return (
+    <div className="completion-screen">
+      <div className="completion-emoji">{emoji}</div>
+      <h2 className="completion-title">Ćwiczenie zakończone!</h2>
+      <p className="completion-subtitle">{msg}</p>
+      <div className="completion-stats">
+        <div className="stat-card animate-fade-in-up" style={{ animationDelay:"0.1s" }}><div className="stat-value green">{correctCount}</div><div className="stat-label">Poprawne</div></div>
+        <div className="stat-card animate-fade-in-up" style={{ animationDelay:"0.2s" }}><div className="stat-value red">{inc}</div><div className="stat-label">Niepoprawne</div></div>
+        <div className="stat-card animate-fade-in-up" style={{ animationDelay:"0.3s" }}><div className="stat-value purple">{pct}%</div><div className="stat-label">Wynik</div></div>
+      </div>
+      <div className="completion-actions" style={{ maxWidth: "400px" }}>
+        <button className="btn btn-primary" onClick={onReview}>Przejrzyj odpowiedzi</button>
+        <button className="btn btn-secondary" onClick={onRestart}>Rozpocznij ponownie</button>
+        <button className="btn btn-secondary" onClick={onHome}><BackIcon/> Powrót do listy</button>
+      </div>
+    </div>
+  );
+}
+
+function ReviewView({ questions, sessionAnswers, onBack, difficultData, onToggleDifficult }) {
+  const [currentRI, setCurrentRI] = useState(0);
+
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        handlePrev();
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        handleNext();
+      }
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  });
+
+  const handlePrev = () => {
+    if (currentRI > 0) {
+      setCurrentRI(p => p - 1);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const handleNext = () => {
+    if (currentRI + 1 < questions.length) {
+      setCurrentRI(p => p + 1);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const question = questions[currentRI];
+  const ans = sessionAnswers[currentRI] || { selectedOptions: [], openAnswer: "", isCorrect: false };
+  
+  const badge = question.type === "single"
+    ? { label: "Pytanie jednokrotnego wyboru", cls: "type-single" }
+    : question.type === "multiple"
+    ? { label: "Pytanie wielokrotnego wyboru", cls: "type-multiple" }
+    : { label: "Pytanie otwarte", cls: "type-open" };
+
+  const progressPct = ((currentRI + 1) / questions.length) * 100;
+
+  const getOptionClass = (i) => {
+    const sel = ans.selectedOptions.includes(i), isCorrectAns = question.correctAnswers.includes(i);
+    if (sel && isCorrectAns) return "option-item locked correct";
+    if (sel && !isCorrectAns) return "option-item locked incorrect";
+    if (!sel && isCorrectAns) return "option-item locked missed-correct";
+    return "option-item locked";
+  };
+
+  const getIndicator = (i) => {
+    const sel = ans.selectedOptions.includes(i), isCorrectAns = question.correctAnswers.includes(i);
+    if (sel && isCorrectAns) return <CheckIcon/>;
+    if (sel && !isCorrectAns) return <CrossIcon/>;
+    if (!sel && isCorrectAns) return <CheckIcon/>;
+    return null;
+  };
+
+  return (
+    <div className="animate-fade-in">
+      <div className="review-header">
+        <span className="quiz-progress-text">Przegląd: Pytanie <span>{currentRI + 1}</span> z <span>{questions.length}</span></span>
+        <span className={"quiz-type-badge " + badge.cls}>{badge.label}</span>
+      </div>
+      <div className="quiz-progress-bar">
+        <div className="quiz-progress-fill" style={{ width: progressPct + "%" }}/>
+      </div>
+      <div className="quiz-card">
+        <button className={"difficulty-star" + (difficultData[question.id] ? " active" : "")} onClick={() => onToggleDifficult(question.id)} title="Oznacz jako trudne">★</button>
+        <div className={"review-badge-user " + (ans.isCorrect ? "correct" : "incorrect")}>
+          {ans.isCorrect ? <CheckIcon/> : <CrossIcon/>} {ans.isCorrect ? "Udzielono poprawnej odpowiedzi" : "Udzielono błędnej odpowiedzi"}
+        </div>
+        
+        <p className="question-text">{question.question}</p>
+        
+        {question.type !== "open" ? (
+          <div className="options-list">
+            {question.options.map((opt, idx) => (
+              <div key={idx} className={getOptionClass(idx)}>
+                <div className={"option-indicator" + (question.type === "multiple" ? " checkbox" : "")}>{getIndicator(idx)}</div>
+                <span className="option-text">{opt}</span>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="open-input-wrapper">
+            <textarea 
+              className={"open-textarea " + (ans.isCorrect ? "correct" : "incorrect")} 
+              value={ans.openAnswer} 
+              disabled 
+              placeholder="Brak odpowiedzi"
+            />
+            {!ans.isCorrect && (
+              <div className="open-expected-answer">
+                <div className="open-expected-label">Prawidłowa odpowiedź</div>
+                {question.correctAnswers[0]}
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="explanation-box">
+          <div className="explanation-title">Wyjaśnienie</div>
+          <p className="explanation-text">{question.explanation}</p>
+        </div>
+
+        <div className="review-actions-row">
+          <button className="review-btn" onClick={handlePrev} disabled={currentRI === 0}>
+            ← Poprzednie
+          </button>
+          {currentRI + 1 < questions.length ? (
+            <button className="review-btn" onClick={handleNext}>
+              Następne →
+            </button>
+          ) : (
+            <button className="btn btn-secondary btn-sm" onClick={onBack}>
+              Powrót do podsumowania
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  const [subjects, setSubjects] = useState(() => {
+    const saved = loadFromStorage(STORAGE_KEY_SUBJECTS, null);
+    const data = saved || DEFAULT_SUBJECTS;
+    const needsMigration = data.some(s => !s.modules);
+    if (!needsMigration) return data;
+    return data.map(s => {
+      if (s.modules) return s;
+      return {
+        ...s,
+        modules: [
+          {
+            id: s.id + "-m-default",
+            name: "Domyślny moduł",
+            questions: s.questions || []
+          }
+        ]
+      };
+    });
+  });
+  const [view, setView] = useState("home");
+  const [selectedSubject, setSelectedSubject] = useState(null);
+  const [selectedModule, setSelectedModule] = useState(null);
+  const [quizType, setQuizType] = useState("module"); // "module" | "subject_exam" | "global"
+  const [quizMode, setQuizMode] = useState("sequential");
+  const [currentQI, setCurrentQI] = useState(0);
+  const [questions, setQuestions] = useState([]);
+  const [progressEnabled, setProgressEnabled] = useState(true);
+  const [progressData, setProgressData] = useState(loadFromStorage(STORAGE_KEY_PROGRESS, {}));
+  const [sessionAnswers, setSessionAnswers] = useState([]);
+  const [toast, setToast] = useState(null);
+  const [importTarget, setImportTarget] = useState(null);
+  const [difficultData, setDifficultData] = useState(() => loadFromStorage(STORAGE_KEY_DIFFICULT, {}));
+  const [incorrectData, setIncorrectData] = useState(() => loadFromStorage(STORAGE_KEY_INCORRECT, {}));
+  const [quizOnlyDifficult, setQuizOnlyDifficult] = useState(false);
+  const [quizOnlyIncorrect, setQuizOnlyIncorrect] = useState(false);
+
+  useEffect(() => { saveToStorage(STORAGE_KEY_SUBJECTS, subjects); }, [subjects]);
+  useEffect(() => { if (progressEnabled) saveToStorage(STORAGE_KEY_PROGRESS, progressData); }, [progressData, progressEnabled]);
+  useEffect(() => { saveToStorage(STORAGE_KEY_DIFFICULT, difficultData); }, [difficultData]);
+  useEffect(() => { saveToStorage(STORAGE_KEY_INCORRECT, incorrectData); }, [incorrectData]);
+
+  const showToast = (message, type) => setToast({ message, type, key: Date.now() });
+
+  const handleSelectSubject = (s) => {
+    setSelectedSubject(s);
+    setView("subject-modules");
+  };
+
+  const handleSelectModule = (m) => {
+    setSelectedModule(m);
+    setQuizType("module");
+    setView("setup");
+  };
+
+  const handleStartSubjectExam = (mode) => {
+    setSelectedModule(null);
+    setQuizType("subject_exam");
+    setQuizMode(mode);
+    setQuizOnlyDifficult(false);
+    setQuizOnlyIncorrect(false);
+    const subQs = getSubjectQuestions(selectedSubject);
+    const pool = mode === "random" ? shuffleArray(subQs) : [...subQs];
+    setQuestions(pool);
+    setCurrentQI(0);
+    setSessionAnswers([]);
+    setView("quiz");
+  };
+
+  const handleStartIncorrectExam = () => {
+    setSelectedModule(null);
+    setQuizType("subject_exam");
+    setQuizMode("random");
+    setQuizOnlyDifficult(false);
+    setQuizOnlyIncorrect(true);
+    const subQs = getSubjectQuestions(selectedSubject);
+    const pool = subQs.filter(q => incorrectData[q.id]);
+    setQuestions(shuffleArray(pool));
+    setCurrentQI(0);
+    setSessionAnswers([]);
+    setView("quiz");
+  };
+
+  const handleStartModuleIncorrectQuiz = (m) => {
+    setSelectedModule(m);
+    setQuizType("module");
+    setQuizMode("random");
+    setQuizOnlyDifficult(false);
+    setQuizOnlyIncorrect(true);
+    const pool = m.questions.filter(q => incorrectData[q.id]);
+    setQuestions(shuffleArray(pool));
+    setCurrentQI(0);
+    setSessionAnswers([]);
+    setView("quiz");
+  };
+
+  const handleStartGlobalExamSetup = () => {
+    setSelectedSubject(null);
+    setSelectedModule(null);
+    setQuizType("global");
+    setView("setup");
+  };
+
+  const handleStartQuiz = (mode, onlyDifficult, onlyIncorrect) => {
+    setQuizMode(mode);
+    setQuizOnlyDifficult(onlyDifficult);
+    setQuizOnlyIncorrect(onlyIncorrect);
+    let pool = [];
+    if (quizType === "module") {
+      pool = selectedModule.questions;
+    } else if (quizType === "global") {
+      pool = getAllQuestions(subjects);
+    }
+    if (onlyDifficult) {
+      pool = pool.filter(q => difficultData[q.id]);
+    } else if (onlyIncorrect) {
+      pool = pool.filter(q => incorrectData[q.id]);
+    }
+    const finalPool = mode === "random" ? shuffleArray(pool) : [...pool];
+    setQuestions(finalPool);
+    setCurrentQI(0);
+    setSessionAnswers([]);
+    setView("quiz");
+  };
+
+  const handleRecordAnswer = (questionId, selectedOptions, openAnswer, isCorrect) => {
+    if (isCorrect) {
+      if (progressEnabled) {
+        setProgressData(p => ({ ...p, [questionId]: true }));
+      }
+      setIncorrectData(prev => {
+        const next = { ...prev };
+        delete next[questionId];
+        return next;
+      });
+    } else {
+      setIncorrectData(prev => ({ ...prev, [questionId]: true }));
+    }
+
+    setSessionAnswers(prev => {
+      const next = [...prev];
+      next[currentQI] = { selectedOptions, openAnswer, isCorrect };
+      return next;
+    });
+  };
+
+  const handleNextQuestion = () => {
+    if (currentQI + 1 < questions.length) {
+      setCurrentQI(p => p + 1);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      setView("complete");
+    }
+  };
+
+  const handleRestart = () => {
+    let pool = [];
+    if (quizType === "module") {
+      pool = selectedModule.questions;
+    } else if (quizType === "subject_exam") {
+      pool = getSubjectQuestions(selectedSubject);
+    } else if (quizType === "global") {
+      pool = getAllQuestions(subjects);
+    }
+    
+    if (quizOnlyDifficult) {
+      pool = pool.filter(q => difficultData[q.id]);
+    } else if (quizOnlyIncorrect) {
+      pool = pool.filter(q => incorrectData[q.id]);
+    }
+    
+    const finalPool = quizMode === "random" ? shuffleArray(pool) : [...pool];
+    setQuestions(finalPool);
+    setCurrentQI(0);
+    setSessionAnswers([]);
+    setView("quiz");
+  };
+
+  const handleGoHome = () => {
+    setSelectedSubject(null);
+    setSelectedModule(null);
+    setView("home");
+  };
+
+  const handleGoBackFromSetup = () => {
+    if (quizType === "module") setView("subject-modules");
+    else setView("home");
+  };
+
+  const handleToggleProgress = (en) => {
+    setProgressEnabled(en);
+    if (!en) { setProgressData({}); localStorage.removeItem(STORAGE_KEY_PROGRESS); }
+  };
+
+  const handleAddModule = (subjectId) => {
+    const name = prompt("Wpisz nazwę nowego modułu:");
+    if (!name || !name.trim()) return;
+    setSubjects(prev => prev.map(s => {
+      if (s.id !== subjectId) return s;
+      const newId = s.id + "-m" + (s.modules.length + 1);
+      return {
+        ...s,
+        modules: [...s.modules, { id: newId, name: name.trim(), questions: [] }]
+      };
+    }));
+    showToast("Dodano moduł \"" + name + "\".", "success");
+  };
+
+  const handleImportQuestions = (subjectId, moduleId, importedData) => {
+    setSubjects(prev => prev.map(s => {
+      if (s.id !== subjectId) return s;
+      const isModular = Array.isArray(importedData) && importedData.length > 0 && importedData[0].questions !== undefined;
+      
+      if (isModular) {
+        const updatedModules = [...s.modules];
+        importedData.forEach(importedMod => {
+          const existingMod = updatedModules.find(m => m.id === importedMod.id || m.name === importedMod.name);
+          if (existingMod) {
+            const existingIds = new Set(existingMod.questions.map(q => q.id));
+            existingMod.questions = [
+              ...existingMod.questions,
+              ...importedMod.questions.filter(q => !existingIds.has(q.id))
+            ];
+          } else {
+            updatedModules.push(importedMod);
+          }
+        });
+        return { ...s, modules: updatedModules };
+      } else {
+        if (!moduleId) {
+          let updatedModules = [...s.modules];
+          let importMod = updatedModules.find(m => m.id === "imported" || m.name === "Zaimportowane pytania");
+          if (!importMod) {
+            importMod = { id: "imported", name: "Zaimportowane pytania", questions: [] };
+            updatedModules.push(importMod);
+          }
+          const existingIds = new Set(getSubjectQuestions(s).map(q => q.id));
+          importMod.questions = [
+            ...importMod.questions,
+            ...importedData.filter(q => !existingIds.has(q.id))
+          ];
+          return { ...s, modules: updatedModules };
+        } else {
+          const updatedModules = s.modules.map(m => {
+            if (m.id !== moduleId) return m;
+            const existingIds = new Set(m.questions.map(q => q.id));
+            return {
+              ...m,
+              questions: [
+                ...m.questions,
+                ...importedData.filter(q => !existingIds.has(q.id))
+              ]
+            };
+          });
+          return { ...s, modules: updatedModules };
+        }
+      }
+    }));
+    setImportTarget(null);
+    showToast("Zaimportowano pytania!", "success");
+  };
+
+  const handleClearQuestions = (subjectId) => {
+    const subj = subjects.find(s => s.id === subjectId);
+    if (!subj || !getSubjectQuestions(subj).length || !confirm("Czy na pewno chcesz usunąć wszystkie pytania z przedmiotu \"" + subj.name + "\"?")) return;
+    setSubjects(prev => prev.map(s => s.id === subjectId ? { ...s, modules: s.modules.map(m => ({ ...m, questions: [] })) } : s));
+    showToast("Usunięto pytania z \"" + subj.name + "\".", "success");
+  };
+
+  const handleClearModuleQuestions = (subjectId, moduleId) => {
+    const subj = subjects.find(s => s.id === subjectId);
+    const mod = subj ? subj.modules.find(m => m.id === moduleId) : null;
+    if (!subj || !mod || !mod.questions.length || !confirm("Czy na pewno chcesz usunąć wszystkie pytania z modułu \"" + mod.name + "\"?")) return;
+    setSubjects(prev => prev.map(s => {
+      if (s.id !== subjectId) return s;
+      return {
+        ...s,
+        modules: s.modules.map(m => m.id === moduleId ? { ...m, questions: [] } : m)
+      };
+    }));
+    showToast("Usunięto pytania z modułu \"" + mod.name + "\".", "success");
+  };
+
+  const handleExport = (subjectId) => {
+    const subj = subjects.find(s => s.id === subjectId);
+    if (!subj) return;
+    const blob = new Blob([JSON.stringify(subj.modules, null, 2)], { type: "application/json" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+    a.download = subj.id + "_modules.json"; a.click();
+    showToast("Wyeksportowano przedmioty z \"" + subj.name + "\".", "success");
+  };
+
+  const handleExportModule = (subjectId, moduleId) => {
+    const subj = subjects.find(s => s.id === subjectId);
+    const mod = subj ? subj.modules.find(m => m.id === moduleId) : null;
+    if (!subj || !mod) return;
+    const blob = new Blob([JSON.stringify(mod.questions, null, 2)], { type: "application/json" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+    a.download = subj.id + "_" + mod.id + "_questions.json"; a.click();
+    showToast("Wyeksportowano pytania z modułu \"" + mod.name + "\".", "success");
+  };
+
+  const handleResetAll = () => {
+    if (!confirm("Resetować wszystkie bazy pytań do domyślnych? Zaimportowane pytania zostaną utracone.")) return;
+    setSubjects(DEFAULT_SUBJECTS); setProgressData({});
+    localStorage.removeItem(STORAGE_KEY_PROGRESS);
+    showToast("Zresetowano do ustawień domyślnych.", "success");
+  };
+
+  const importSubject = importTarget ? subjects.find(s => s.id === importTarget.subjectId) : null;
+  const sessionCorrect = sessionAnswers.filter(a => a && a.isCorrect).length;
+
+  return (
+    <div className="app-container">
+      <header className="app-header">
+        <div className="app-logo">
+          <div className="logo-icon">📖</div>
+          <span className="logo-text">Quizezee</span>
+        </div>
+        <p className="app-subtitle">Przygotuj się do egzaminów z interaktywnymi zestawami pytań</p>
+      </header>
+
+      {view === "home" && (
+        <div className="animate-fade-in">
+          <div className="settings-bar">
+            <div className="settings-left">
+              <Toggle checked={progressEnabled} onChange={handleToggleProgress} label="Zapisuj postęp"/>
+            </div>
+            <div className="settings-right">
+              <button className="btn btn-sm btn-secondary" onClick={() => setView("manage")}>
+                <GearIcon/> Zarządzaj
+              </button>
+            </div>
+          </div>
+          <StatsStrip subjects={subjects} progressData={progressData} progressEnabled={progressEnabled}/>
+          
+          {getAllQuestions(subjects).length > 0 && (
+            <div className="global-exam-card animate-fade-in-up" onClick={handleStartGlobalExamSetup}>
+              <div className="global-exam-icon">🏆</div>
+              <div className="global-exam-details">
+                <h3 className="global-exam-title">Egzamin Globalny</h3>
+                <p className="global-exam-desc">Wielki test wiedzy ze wszystkich przedmiotów i modułów</p>
+              </div>
+              <div className="global-exam-arrow"><ArrowIcon/></div>
+            </div>
+          )}
+
+          <div className="subjects-grid">
+            {subjects.map((s, idx) => (
+              <SubjectCard key={s.id} subject={s} progressEnabled={progressEnabled} progressData={progressData}
+                onClick={() => handleSelectSubject(s)} animDelay={idx * 80}/>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {view === "subject-modules" && selectedSubject && (
+        <SubjectModulesView 
+          subject={selectedSubject} 
+          progressEnabled={progressEnabled} 
+          progressData={progressData}
+          incorrectData={incorrectData}
+          onSelectModule={handleSelectModule}
+          onStartSubjectExam={handleStartSubjectExam}
+          onStartIncorrectExam={handleStartIncorrectExam}
+          onStartModuleIncorrectQuiz={handleStartModuleIncorrectQuiz}
+          onBack={handleGoHome}
+        />
+      )}
+
+      {view === "manage" && (
+        <ManageView 
+          subjects={subjects} 
+          onBack={handleGoHome} 
+          onImport={(subId, modId) => setImportTarget({ subjectId: subId, moduleId: modId })}
+          onClearQuestions={handleClearQuestions} 
+          onResetAll={handleResetAll} 
+          onExport={handleExport}
+          onAddModule={handleAddModule}
+          onClearModuleQuestions={handleClearModuleQuestions}
+          onExportModule={handleExportModule}
+        />
+      )}
+      
+      {view === "setup" && (
+        <QuizSetup 
+          title={quizType === "global" ? "Egzamin Globalny" : selectedModule ? selectedModule.name : ""}
+          subtitle={quizType === "global" ? "Test wiedzy ze wszystkich przedmiotów." : "Wybierz parametry ćwiczenia dla tego modułu."}
+          icon={quizType === "global" ? "🏆" : selectedSubject ? selectedSubject.icon : "🌐"}
+          questionsList={quizType === "global" ? getAllQuestions(subjects) : selectedModule ? selectedModule.questions : []}
+          difficultData={difficultData}
+          incorrectData={incorrectData}
+          onStart={handleStartQuiz} 
+          onBack={handleGoBackFromSetup}
+        />
+      )}
+      
+      {view === "quiz" && questions.length > 0 && (
+        <QuestionView question={questions[currentQI]} questionIndex={currentQI} totalQuestions={questions.length}
+          onNext={handleNextQuestion} onRecordAnswer={handleRecordAnswer} progressEnabled={progressEnabled}
+          isAlreadyCorrect={progressData[questions[currentQI] && questions[currentQI].id]}
+          isDifficult={!!difficultData[questions[currentQI]?.id]}
+          onToggleDifficult={() => {
+            const qid = questions[currentQI]?.id;
+            if (!qid) return;
+            setDifficultData(prev => {
+              const next = { ...prev };
+              if (next[qid]) delete next[qid];
+              else next[qid] = true;
+              return next;
+            });
+          }}
+        />
+      )}
+      
+      {view === "complete" && (
+        <CompletionScreen correctCount={sessionCorrect} totalCount={questions.length} onRestart={handleRestart} onHome={handleGoHome} onReview={() => setView("review")}/>
+      )}
+
+      {view === "review" && questions.length > 0 && (
+        <ReviewView 
+          questions={questions} 
+          sessionAnswers={sessionAnswers} 
+          onBack={() => setView("complete")}
+          difficultData={difficultData}
+          onToggleDifficult={(qid) => {
+            setDifficultData(prev => {
+              const next = { ...prev };
+              if (next[qid]) delete next[qid];
+              else next[qid] = true;
+              return next;
+            });
+          }}
+        />
+      )}
+
+      {importTarget && importSubject && (
+        <ImportModal 
+          subjectId={importTarget.subjectId} 
+          moduleId={importTarget.moduleId} 
+          subjectName={importSubject.name} 
+          onImport={handleImportQuestions} 
+          onClose={() => setImportTarget(null)}
+        />
+      )}
+      
+      {toast && <Toast key={toast.key} message={toast.message} type={toast.type} onDone={() => setToast(null)}/>}
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App/>);
+    </script>
+</body>
+</html>
