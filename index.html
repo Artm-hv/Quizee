@@ -868,21 +868,70 @@ function SubjectModulesView({
   const incorrectQuestions = subjectQs.filter(q => incorrectData[q.id]);
   const totalIncorrect = incorrectQuestions.length;
   const [examMode, setExamMode] = useState("random");
+  const [activeTab, setActiveTab] = useState("modules");
+
+  // Reset active tab to modules if there are no incorrect questions
+  useEffect(() => {
+    if (totalIncorrect === 0) {
+      setActiveTab("modules");
+    }
+  }, [totalIncorrect]);
 
   return (
     <div className="animate-fade-in">
       <button className="nav-back" onClick={onBack}><BackIcon/> Powrót</button>
-      <div className="setup-panel" style={{ marginBottom: "28px" }}>
-        <div style={{ fontSize:"2.5rem", marginBottom:"16px" }}>{subject.icon}</div>
-        <h2 className="setup-title">{subject.name}</h2>
-        <p className="setup-subtitle">{subject.description}</p>
+      
+      {/* Clean header with title and description */}
+      <div style={{ marginBottom: "28px" }}>
+        <h2 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: "6px", display: "flex", alignItems: "center", gap: "12px" }}>
+          <span>{subject.icon}</span>
+          <span>{subject.name}</span>
+        </h2>
+        <p style={{ color: "var(--text-secondary)", fontSize: "0.9rem", lineHeight: "1.5" }}>{subject.description}</p>
       </div>
 
-      <div className="subject-layout">
-        {/* Left Column: Learning Modules & Final Exam */}
+      {/* Tabs selector (only visible if there are incorrect questions) */}
+      {totalIncorrect > 0 && (
+        <div className="tab-container" style={{ display: "flex", gap: "12px", borderBottom: "1px solid var(--border-glass)", paddingBottom: "12px", marginBottom: "24px" }}>
+          <button 
+            className={`tab-btn ${activeTab === "modules" ? "active" : ""}`} 
+            onClick={() => setActiveTab("modules")}
+            style={{
+              background: activeTab === "modules" ? "var(--accent-primary-glow)" : "transparent",
+              color: activeTab === "modules" ? "var(--text-primary)" : "var(--text-secondary)",
+              border: "none",
+              padding: "8px 16px",
+              borderRadius: "var(--radius-md)",
+              fontWeight: 600,
+              cursor: "pointer",
+              transition: "all var(--transition-fast)"
+            }}
+          >
+            📚 Moduły nauki
+          </button>
+          <button 
+            className={`tab-btn ${activeTab === "incorrect" ? "active" : ""}`} 
+            onClick={() => setActiveTab("incorrect")}
+            style={{
+              background: activeTab === "incorrect" ? "var(--error-bg)" : "transparent",
+              color: activeTab === "incorrect" ? "var(--error)" : "var(--text-secondary)",
+              border: "none",
+              padding: "8px 16px",
+              borderRadius: "var(--radius-md)",
+              fontWeight: 600,
+              cursor: "pointer",
+              transition: "all var(--transition-fast)"
+            }}
+          >
+            ❌ Błędne pytania ({totalIncorrect})
+          </button>
+        </div>
+      )}
+
+      {/* Content depending on active tab */}
+      {activeTab === "modules" ? (
         <div className="subject-column">
           <div>
-            <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "16px" }}>Moduły nauki</h3>
             <div className="modules-grid" style={{ gridTemplateColumns: "1fr", gap: "16px", marginBottom: 0 }}>
               {(subject.modules || []).map((mod) => {
                 const modQs = mod.questions;
@@ -915,91 +964,89 @@ function SubjectModulesView({
           </div>
 
           {totalQuestions > 0 && (
-            <div className="exam-panel" style={{ marginTop: 0 }}>
-              <h3 className="exam-title">🏆 Egzamin Końcowy Przedmiotu</h3>
-              <p className="exam-desc">Test wiedzy zawierający pytania ze wszystkich modułów przedmiotu {subject.name}.</p>
+            <div className="exam-panel" style={{ marginTop: "12px", padding: "20px", borderLeft: "4px solid var(--success)" }}>
+              <h3 className="exam-title" style={{ fontSize: "1.15rem" }}>🏆 Egzamin Końcowy Przedmiotu</h3>
+              <p className="exam-desc" style={{ fontSize: "0.85rem", marginBottom: "16px" }}>Generuje test ze wszystkich pytań we wszystkich modułach przedmiotu.</p>
               
-              <div className="exam-setup-row">
-                <div className="exam-setup-col">
-                  <label className="exam-label">Tryb pytań</label>
-                  <div className="mode-selector" style={{ gridTemplateColumns: "1fr 1fr", margin: 0 }}>
-                    <div className={"mode-option" + (examMode === "sequential" ? " selected" : "")} style={{ padding: "12px" }} onClick={() => setExamMode("sequential")}>
-                      <div className="mode-name" style={{ fontSize: "0.85rem" }}>Po kolei</div>
-                    </div>
-                    <div className={"mode-option" + (examMode === "random" ? " selected" : "")} style={{ padding: "12px" }} onClick={() => setExamMode("random")}>
-                      <div className="mode-name" style={{ fontSize: "0.85rem" }}>Losowo</div>
-                    </div>
-                  </div>
+              <div style={{ display: "flex", gap: "16px", alignItems: "center", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", gap: "6px" }}>
+                  <button 
+                    className={`btn btn-sm ${examMode === "sequential" ? "btn-primary" : "btn-secondary"}`}
+                    onClick={() => setExamMode("sequential")}
+                    style={{ padding: "8px 16px", fontSize: "0.8rem" }}
+                  >
+                    Po kolei
+                  </button>
+                  <button 
+                    className={`btn btn-sm ${examMode === "random" ? "btn-primary" : "btn-secondary"}`}
+                    onClick={() => setExamMode("random")}
+                    style={{ padding: "8px 16px", fontSize: "0.8rem" }}
+                  >
+                    Losowo
+                  </button>
                 </div>
-              </div>
-
-              <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "24px" }}>
-                <button className="btn btn-success" style={{ flex: 1, minWidth: "200px" }} onClick={() => onStartSubjectExam(examMode)}>
-                  Uruchom Egzamin Końcowy <ArrowIcon/>
+                <button className="btn btn-success btn-sm" onClick={() => onStartSubjectExam(examMode)} style={{ width: "auto", padding: "8px 20px" }}>
+                  Uruchom Egzamin <ArrowIcon/>
                 </button>
               </div>
             </div>
           )}
         </div>
-
-        {/* Right Column: Incorrect Questions Section */}
-        <div className="subject-column">
-          <div className="incorrect-section">
-            <h3 className="incorrect-section-title">
-              <span>❌ Błędne pytania</span>
-            </h3>
-            
-            {totalIncorrect === 0 ? (
-              <div className="success-empty-card">
-                <span style={{ fontSize: "2rem" }}>🎉</span>
-                <div className="success-empty-title">Wszystko zaliczone!</div>
-                <div className="success-empty-desc">Brak błędnych pytań w tym przedmiocie.</div>
-              </div>
-            ) : (
-              <div>
-                <button 
-                  className="btn btn-danger" 
-                  style={{ 
-                    background: "linear-gradient(135deg,#ff4d6a,#ff1a40)", 
-                    boxShadow: "0 0 20px rgba(255,77,106,0.2)",
-                    width: "100%",
-                    marginBottom: "16px"
-                  }} 
-                  onClick={onStartIncorrectExam}
-                >
-                  Test Wszystkich Błędów ({totalIncorrect}) <ArrowIcon/>
-                </button>
-                
-                <h4 style={{ fontSize: "0.9rem", fontWeight: 700, color: "var(--text-secondary)", marginBottom: "12px" }}>
-                  Błędy według modułów:
-                </h4>
-                
-                <div className="incorrect-modules-list">
-                  {(subject.modules || []).map(mod => {
-                    const modIncorrect = mod.questions.filter(q => incorrectData[q.id]).length;
-                    if (modIncorrect === 0) return null;
-                    return (
-                      <div key={mod.id} className="incorrect-module-card animate-fade-in-up">
-                        <div className="incorrect-module-header">
-                          <span className="incorrect-module-name">{mod.name}</span>
-                          <span className="incorrect-module-count">{modIncorrect}</span>
-                        </div>
-                        <button 
-                          className="btn btn-danger btn-sm" 
-                          style={{ width: "100%", padding: "8px 12px", fontSize: "0.8rem", marginTop: "4px" }} 
-                          onClick={() => onStartModuleIncorrectQuiz(mod)}
-                        >
-                          Ćwicz błędy (❌)
-                        </button>
-                      </div>
-                    );
-                  })}
+      ) : (
+        <div className="subject-column animate-fade-in">
+          <button 
+            className="btn btn-danger" 
+            style={{ 
+              color: "#fff",
+              background: "linear-gradient(135deg,#ff4d6a,#ff1a40)", 
+              boxShadow: "0 4px 15px rgba(255,77,106,0.2)",
+              width: "100%",
+              padding: "14px 28px",
+              border: "none"
+            }} 
+            onClick={onStartIncorrectExam}
+          >
+            Test Wszystkich Błędów ({totalIncorrect}) <ArrowIcon/>
+          </button>
+          
+          <h4 style={{ fontSize: "1rem", fontWeight: 700, color: "var(--text-secondary)", marginTop: "12px", marginBottom: "4px" }}>
+            Błędy według modułów:
+          </h4>
+          
+          <div className="modules-grid" style={{ gridTemplateColumns: "1fr", gap: "16px" }}>
+            {(subject.modules || []).map(mod => {
+              const modIncorrect = mod.questions.filter(q => incorrectData[q.id]).length;
+              if (modIncorrect === 0) return null;
+              return (
+                <div key={mod.id} className="module-card animate-fade-in-up" style={{ borderLeft: "4px solid var(--error)" }}>
+                  <div>
+                    <h4 className="module-name">{mod.name}</h4>
+                    <span style={{ fontSize: "0.825rem", color: "var(--error)", fontWeight: 600 }}>
+                      Liczba błędów: {modIncorrect}
+                    </span>
+                  </div>
+                  <div className="module-meta">
+                    <button 
+                      className="btn btn-danger btn-sm" 
+                      style={{ 
+                        color: "#fff",
+                        background: "linear-gradient(135deg,#ff4d6a,#ff1a40)", 
+                        border: "none",
+                        padding: "8px 16px", 
+                        fontSize: "0.8rem",
+                        width: "auto"
+                      }} 
+                      onClick={() => onStartModuleIncorrectQuiz(mod)}
+                    >
+                      Ćwicz błędy (❌)
+                    </button>
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })}
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
@@ -1711,16 +1758,7 @@ function App() {
           </div>
           <StatsStrip subjects={subjects} progressData={progressData} progressEnabled={progressEnabled}/>
           
-          {getAllQuestions(subjects).length > 0 && (
-            <div className="global-exam-card animate-fade-in-up" onClick={handleStartGlobalExamSetup}>
-              <div className="global-exam-icon">🏆</div>
-              <div className="global-exam-details">
-                <h3 className="global-exam-title">Egzamin Globalny</h3>
-                <p className="global-exam-desc">Wielki test wiedzy ze wszystkich przedmiotów i modułów</p>
-              </div>
-              <div className="global-exam-arrow"><ArrowIcon/></div>
-            </div>
-          )}
+
 
           <div className="subjects-grid">
             {subjects.map((s, idx) => (
