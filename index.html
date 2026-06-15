@@ -425,7 +425,7 @@ const DEFAULT_SUBJECTS = [
       }
     ]
   },
-  {
+    {
     id: "jezyki-skryptowe",
     name: "Języki skryptowe",
     icon: "💻",
@@ -439,37 +439,37 @@ const DEFAULT_SUBJECTS = [
             id: "js-wyk-001", type: "multiple",
             question: "W języku Python cechą każdego obiektu jest:",
             options: [
-              "unikalny identyfikator (id)",
-              "zdefiniowana nazwa zmiennej (name)",
-              "wartość (value)",
-              "typ danych (type)"
+              "identyfikator",
+              "nazwa",
+              "wartość",
+              "typ"
             ],
             correctAnswers: [0, 2, 3],
-            explanation: "Każdy obiekt w Pythonie posiada unikalną tożsamość (identyfikator), typ określający dopuszczalne operacje oraz wartość. Nazwa zmiennej nie jest cechą samego obiektu — wiele zmiennych może wskazywać na ten sam obiekt, a obiekty tymczasowe mogą w ogóle nie mieć nazwy."
+            explanation: "Każdy obiekt w Pythonie posiada unikalny identyfikator (funkcja id()), typ (klasę) określający jego zachowanie oraz wartość. Nazwa (zmienna) nie jest cechą samego obiektu."
           },
           {
             id: "js-wyk-002", type: "multiple",
-            question: "Język Python charakteryzuje się typowaniem:",
+            question: "Język Python posiada typowanie:",
             options: [
-              "statycznym",
-              "dynamicznym",
-              "słabym",
-              "silnym"
+              "statyczne",
+              "dynamiczne",
+              "słabe",
+              "silne"
             ],
             correctAnswers: [1, 3],
-            explanation: "Python ma typowanie dynamiczne (typy są powiązane z wartościami/obiektami, a nie ze zmiennymi i są sprawdzane w czasie wykonania) oraz silne (interpreter nie pozwala na niejawne operacje między niezgodnymi typami bez jawnej konwersji, np. dodanie liczby do tekstu zgłasza błąd)."
+            explanation: "Python ma typowanie dynamiczne (typy są sprawdzane w czasie wykonania) oraz silne (brak niejawnej konwersji typów)."
           },
           {
             id: "js-wyk-003", type: "multiple",
-            question: "Wybierz prawdziwe zdania na temat identyfikatorów obiektów (zwracanych przez funkcję id()) w języku Python:",
+            question: "Wybierz zdania prawdziwe na temat identyfikatorów obiektów (funkcja id()) w języku Python:",
             options: [
-              "unikalność identyfikatorów jest gwarantowana dla wszystkich obiektów o rozłącznym czasie życia",
+              "unikalność identyfikatorów jest gwarantowana dla obiektów o rozłącznym czasie życia",
               "unikalność identyfikatorów jest gwarantowana dla obiektów o zachodzącym na siebie czasie życia",
               "identyfikatory mogą nie być unikalne dla obiektów o rozłącznym czasie życia",
               "identyfikatory mogą nie być unikalne dla obiektów o zachodzącym na siebie czasie życia"
             ],
             correctAnswers: [1, 2],
-            explanation: "Funkcja id() zwraca unikalny adres pamięci obiektu. Dwa istniejące jednocześnie obiekty muszą mieć różne identyfikatory. Jednak jeśli czas życia obiektów jest rozłączny (np. pierwszy zostanie usunięty przed utworzeniem drugiego), adres pamięci może zostać zwolniony i przypisany nowemu obiektowi, przez co ich id() będzie identyczne."
+            explanation: "Identyfikatory (adresy pamięci) są unikalne dla obiektów istniejących jednocześnie. Obiekty o rozłącznych czasach życia mogą współdzielić ten sam identyfikator."
           },
           {
             id: "js-wyk-004", type: "single",
@@ -478,60 +478,60 @@ const DEFAULT_SUBJECTS = [
               "bezpośrednio wartości prymitywnych typów danych lub referencje do obiektów",
               "bezpośrednio wartości prymitywnych typów danych",
               "bezpośrednio obiekty",
-              "referencje (odniesienia) do obiektów"
+              "referencje do obiektów"
             ],
             correctAnswers: [3],
-            explanation: "W Pythonie zmienne nie przechowują wartości bezpośrednio ani nie rezerwują miejsca na cały obiekt. Zamiast tego są etykietami (wskaźnikami) przechowującymi referencje (odniesienia) do obiektów umieszczonych w pamięci."
+            explanation: "Wszystkie zmienne w Pythonie przechowują wskaźniki (referencje) do obiektów umieszczonych w stercie pamięci."
           },
           {
             id: "js-wyk-005", type: "multiple",
-            question: "Wybierz zdania prawdziwe na temat typu danych tuple (krotka) w języku Python:",
+            question: "Wybierz zdania prawdziwe na temat typu danych tuple w języku Python:",
             options: [
-              "indeksowanie elementów rozpoczyna się od 0",
-              "krotka może przechowywać elementy heterogeniczne (różnych typów)",
-              "krotka należy do typów sekwencyjnych",
-              "krotka jest typem modyfikowalnym (mutable)",
-              "poszczególne elementy w deklaracji krotki są oddzielone średnikami",
-              "jedna z postaci składni deklarowania krotki korzysta z nawiasów okrągłych"
+              "indeksowanie rozpoczyna się od indeksu 1",
+              "może przechowywać elementy heterogeniczne pod względem typu danych",
+              "jest typem sekwencyjnym",
+              "jest typem zmiennym",
+              "w jego składni deklarowania poszczególne elementy są oddzielone średnikami",
+              "jedna z postaci jego składni deklarowania korzysta z nawiasów okrągłych"
             ],
             correctAnswers: [1, 2, 5],
-            explanation: "Krotka (tuple) to niemodyfikowalny (immutable) typ sekwencyjny, który pozwala przechowywać elementy różnych typów. Elementy są indeksowane od 0 i oddzielane przecinkami. Krotki można deklarować za pomocą nawiasów okrągłych, np. (1, 'abc', 3.0), lub po prostu samymi przecinkami, np. 1, 2, 3."
+            explanation: "Krotka (tuple) to niemodyfikowalny (immutable) typ sekwencyjny pozwalający na elementy heterogeniczne (różnych typów). Indeksowanie zaczyna się od 0, a składnia dopuszcza nawiasy okrągłe."
           },
           {
             id: "js-wyk-006", type: "multiple",
-            question: "Wybierz zdania prawdziwe na temat typu danych dict (słownik) w języku Python:",
+            question: "Wybierz zdania prawdziwe na temat typu danych dict w języku Python:",
             options: [
-              "jako kluczy należy używać obiektów typów niezmiennych (immutable), natomiast wartości mogą być dowolnego typu",
-              "wartości w słowniku muszą być unikalne",
-              "słownik przechowuje pary klucz-wartość, a klucze muszą być obiektami hashowalnymi",
-              "w nowoczesnym Pythonie kolejność wstawiania elementów nie jest zapamiętywana"
+              "jako kluczy najlepiej używać obiektów typów niezmiennych, natomiast wartości mogą być dowolnego typu",
+              "wartości muszą być unikalne",
+              "przechowuje pary klucz-wartość, przy czym w przypadku kluczy używana jest ich funkcja skrótu (hash)",
+              "w nowoczesnym Pythonie kolejność wstawiania elementów nie jest zachowywana"
             ],
             correctAnswers: [0, 2],
-            explanation: "Klucze słownika muszą być unikalne i hashowalne (czyli niemodyfikowalne, jak str, int, tuple). Wartości mogą się powtarzać i być dowolnego typu. Od wersji Pythona 3.7 słowniki gwarantują zachowanie kolejności wstawiania elementów."
+            explanation: "Klucze w dict muszą być hashowalne (immutable), wartości mogą być dowolne. Klucze są wyszukiwane przez ich hash."
           },
           {
             id: "js-wyk-007", type: "multiple",
             question: "Wybierz zdania prawdziwe na temat sekwencyjnych typów danych (ang. sequence types) w języku Python:",
             options: [
-              "umożliwiają odczytanie elementu o określonym indeksie za pomocą składni [index]",
+              "umożliwiają odczytanie elementu o określonym indeksie",
               "w przeciwieństwie do typów mapujących nie mogą być modyfikowalne",
-              "wszystkie typy sekwencyjne w Pythonie są niemodyfikowalne",
-              "przykładami typów sekwencyjnych są listy (list), krotki (tuple) oraz napisy (str)"
+              "wszystkie typy sekwencyjne są modyfikowalne",
+              "krotka (tuple) i napis (str) to przykłady typów sekwencyjnych"
             ],
             correctAnswers: [0, 3],
-            explanation: "Typy sekwencyjne reprezentują uporządkowane kolekcje indeksowane liczbami całkowitymi od 0. Należą do nich listy (modyfikowalne), krotki (niemodyfikowalne) oraz napisy (niemodyfikowalne)."
+            explanation: "Sekwencje pozwalają na indeksowanie. Listy są sekwencjami modyfikowalnymi, natomiast krotki i napisy są niemodyfikowalnymi sekwencjami."
           },
           {
             id: "js-wyk-008", type: "multiple",
-            question: "Wskaż prawdziwe zdania na temat operatora mnożenia sekwencji (*) w języku Python:",
+            question: "Wybierz zdania prawdziwe na temat operatora * w kontekście typów danych języka Python:",
             options: [
-              "służy do replikacji (powielania) elementów sekwencji",
-              "pozwala na dodawanie elementów na początku sekwencji",
-              "dla list powoduje płytkie powielenie referencji do elementów w nowej liście",
-              "modyfikuje oryginalną sekwencję w miejscu"
+              "dodawanie elementów na początku",
+              "replikacja elementów",
+              "modyfikacja wartości elementów",
+              "powielanie referencji do elementów w przypadku list"
             ],
-            correctAnswers: [0, 2],
-            explanation: "Operator * stosowany na sekwencji i liczbie całkowitej tworzy nową sekwencję, powielając elementy wskazanej liczby razy (np. [1, 2] * 2 -> [1, 2, 1, 2]). Jest to kopia płytka, co oznacza, że powielane zijn referencje do obiektów, a nie same obiekty."
+            correctAnswers: [1, 3],
+            explanation: "Mnożenie sekwencji (*) powiela jej elementy w nowej sekwencji (replikacja). W przypadku list jest to kopia płytka (powielenie referencji)."
           },
           {
             id: "js-wyk-009", type: "multiple",
@@ -543,91 +543,93 @@ const DEFAULT_SUBJECTS = [
               "krok (step) nie może być wartością ujemną"
             ],
             correctAnswers: [0, 2],
-            explanation: "Wycinanie tworzy nową sekwencję (nie modyfikuje oryginalnej w miejscu). Składnia to [start:stop:step], gdzie zakres jest prawostronnie otwarty (stop nie jest brany pod uwagę). Krok może być ujemny, co służy m.in. do odwracania sekwencji (np. [::-1])."
+            explanation: "Wycinanie tworzy nową sekwencję (nie modyfikuje jej w miejscu). Składnia to [start:stop:step], a zakres jest prawostronnie otwarty (bez stop). Krok może być ujemny."
           },
           {
             id: "js-wyk-010", type: "multiple",
-            question: "Mechanizmowi niejawnej konkatenacji (ang. implicit concatenation) łańcuchów znaków podlegają w języku Python:",
+            question: "Mechanizmowi niejawnej konkatenacji (ang. implicit concatenation) znaków podlegają w języku Python:",
             options: [
-              "dowolne zmienne wskazujące na łańcuchy znaków umieszczone obok siebie",
-              "wyłącznie sąsiadujące literale łańcuchowe (napisy ujęte w cudzysłowy/apostrofy)",
-              "wyrażenia tekstowe rozdzielone operatorem +",
-              "sąsiadujące literale tekstowe rozdzielone wyłącznie spacjami lub innymi znakami białymi (w tym nowej linii w nawiasach)"
+              "łańcuchy znaków",
+              "łańcuchy znaków, które znajdują się w tym samym wyrażeniu",
+              "zmienne wskazujące na łańcuchy znaków",
+              "łańcuchy znaków, które są od siebie oddzielone tylko spacjami",
+              "łańcuchy znaków, które są od siebie oddzielone tylko znakami tabulacji",
+              "łańcuchy znaków, które są od siebie oddzielone tylko znakami nowej linii"
             ],
-            correctAnswers: [1, 3],
-            explanation: "Python automatycznie łączy sąsiadujące ze sobą literale tekstowe (np. 'Hello' 'World' daje 'HelloWorld'). Działa to tylko dla stałych literali tekstowych, a nie dla zmiennych czy wyrażeń."
+            correctAnswers: [1, 3, 4, 5],
+            explanation: "Niejawna konkatenacja łączy ze sobą sąsiadujące literale napisowe oddzielone spacjami, tabulacją lub znakami nowej linii (np. w nawiasach)."
           },
           {
             id: "js-wyk-011", type: "multiple",
-            question: "Wybierz zdania prawdziwe na temat formatowania wcięć (indentacji) w języku Python zgodnie ze standardem PEP 8:",
+            question: "Wybierz zdania prawdziwe na temat formatowania kodu i instrukcji warunkowych w języku Python:",
             options: [
-              "preferowanym sposobem wcięć kodu jest wykorzystanie znaków tabulacji",
-              "preferowanym sposobem wcięć kodu jest wykorzystanie spacji",
-              "zalecaną szerokością jednego poziomu wcięcia są 4 spacje",
-              "stosowanie wcięć ma charakter wyłącznie estetyczny i nie wpływa na działanie programu"
+              "kaskada alternatywnych warunków instrukcji warunkowej realizowana z użyciem słowa kluczowego else",
+              "preferowanym sposobem formatowania wcięć kodu instrukcji jest wykorzystanie znaków spacji",
+              "blok kodu, który zostanie wykonany gdy wszystkie warunki są fałszywe, jest poprzedzony klauzulą else",
+              "blok kodu, który zostanie wykonany jeśli warunek instrukcji jest prawdziwy, jest otwierany z użyciem znaku dwukropka"
             ],
-            correctAnswers: [1, 2],
-            explanation: "Standard PEP 8 zdecydowanie zaleca stosowanie spacji (dokładnie 4 spacji na poziom wcięcia) zamiast tabulacji. Wcięcia w Pythonie są częścią składni języka i definiują bloki kodu, więc wpływają bezpośrednio na wykonanie programu."
+            correctAnswers: [1, 3],
+            explanation: "Zgodnie z PEP 8 preferuje się spacje (4 na poziom) do wcięć. Bloki kodu w instrukcjach warunkowych otwierane zijn dwukropkiem (:). Kaskada warunków korzysta z 'elif' (a nie 'else')."
           },
           {
             id: "js-wyk-012", type: "multiple",
             question: "Wskaż prawdziwe zdania na temat roli znaku dwukropka (:) w składni języka Python:",
             options: [
-              "jest używany do otwierania bloków kodu w instrukcjach złożonych (np. if, for, def, try)",
+              "jest używany do otwierania bloków kodu w instrukcjach złożonych (np. if, for, def)",
               "służy do zamykania bloku kodu (odpowiednik klamry zamykającej)",
-              "jest obowiązkowy na końcu linii definiującej nagłówek instrukcji warunkowej (np. po warunku if, elif, else)",
-              "jest wymagany wyłącznie po nazwach funkcji w definicjach def"
+              "jest obowiązkowy po każdym warunku w instrukcji if oraz elif",
+              "jest opcjonalny, jeśli kod w bloku jest zapisany w tej samej linii"
             ],
             correctAnswers: [0, 2],
-            explanation: "Dwukropek w Pythonie sygnalizuje rozpoczęcie nowego wciętego bloku instrukcji (suite). Jest wymagany na końcu linii w nagłówkach instrukcji złożonych, takich jak definicje funkcji, pętle czy instrukcje warunkowe."
+            explanation: "Znak dwukropka w Pythonie jest wymagany do otwierania wciętych bloków instrukcji złożonych, w tym po if/elif."
           },
           {
             id: "js-wyk-013", type: "multiple",
-            question: "Wybierz zdania prawdziwe na temat instrukcji warunkowych w języku Python:",
+            question: "Wybierz zdania prawdziwe na temat instrukcji warunkowej (if) w języku Python:",
             options: [
               "kaskada alternatywnych warunków jest realizowana z użyciem słowa kluczowego elif",
-              "blok kodu, który zostanie wykonany, gdy wszystkie warunki są fałszywe, jest poprzedzony klauzulą else:",
-              "blok kodu instrukcji warunkowej otwierany jest średnikiem",
-              "klauzula else jest obowiązkowym elementem każdej instrukcji warunkowej"
+              "blok kodu, który zostanie wykonany gdy wszystkie warunki są fałszywe, jest poprzedzony klauzulą else:",
+              "blok kodu, który zostanie wykonany gdy warunek instrukcji jest prawdziwy, jest otwierany z użyciem znaku średnika",
+              "preferowanym sposobem formatowania poziomów indentacji kodu jest wykorzystanie znaków tabulacji"
             ],
             correctAnswers: [0, 1],
-            explanation: "W Pythonie instrukcja warunkowa składa się z nagłówka 'if', opcjonalnych gałęzi 'elif' (dla kaskadowych testów) oraz opcjonalnej gałęzi 'else', wykonywanej gdy wszystkie warunki są fałszywe. Bloki kodu otwiera się dwukropkiem."
+            explanation: "Kaskada warunków if/elif/else kończy się blokiem else. Bloki otwiera się dwukropkiem (:), a PEP 8 preferuje spacje zamiast tabulacji."
           },
           {
             id: "js-wyk-014", type: "multiple",
-            question: "Wybierz zdania prawdziwe na temat wyrażenia warunkowego (ang. conditional expression) w języku Python:",
+            question: "Wybierz zdania prawdziwe na temat wyrażenia warunkowego (ang. conditional expression) języka Python:",
             options: [
-              "zwraca jedną z trzech wartości w zależności od warunku",
-              "jest nazywane inaczej operatorem trójargumentowym (ternary operator)",
-              "jego składnia wygląda następująco: condition ? x : y",
-              "jego składnia wygląda następująco: x if condition else y"
+              "zwraca jedną z trzech wartości, w zależności od tego czy warunek w wyrażeniu jest prawdziwy, czy fałszywy",
+              "jest nazywane inaczej operatorem trójargumentowym",
+              "jego postać wygląda następująco: condition ? x : y",
+              "jego postać wygląda następująco: x if condition else y"
             ],
             correctAnswers: [1, 3],
-            explanation: "Wyrażenie warunkowe w Pythonie zwraca jedną z dwóch wartości i ma postać 'x if condition else y'. Jest to odpowiednik operatora trójargumentowego '?' z innych języków programowania."
+            explanation: "Wyrażenie warunkowe w Pythonie ma składnię 'x if condition else y' i zachowuje się jak operator trójargumentowy (ternary operator)."
           },
           {
             id: "js-wyk-015", type: "multiple",
             question: "Wskaż prawdziwe zdania na temat priorytetu operatorów wyrażenia warunkowego w języku Python:",
             options: [
-              "wyrażenie warunkowe ma wyższy priorytet niż operatory porównania",
-              "wyrażenie warunkowe (poza operatorem przypisania) ma najniższy priorytet wśród wszystkich operatorów",
+              "wyrażenie warunkowe ma wyższy priorytet niż operatory arytmetyczne",
+              "pomijając operator przypisania i operatory skrótu (ang. shorthand operators), ma najniższy priorytet wśród operatorów",
               "ma niższy priorytet niż operatory logiczne and oraz or",
               "jego priorytet jest równy priorytetowi operatora dodawania +"
             ],
             correctAnswers: [1, 2],
-            explanation: "Wyrażenie warunkowe w Pythonie ma niezwykle niski priorytet wykonania. Znajduje się niemal na samym dole hierarchii operatorów (niżej niż or, and czy operatory porównania), ustępując pierwszeństwa jedynie przypisaniu."
+            explanation: "Wyrażenie warunkowe ma bardzo niski priorytet w Pythonie, niższy niż operatory logiczne 'and' i 'or'."
           },
           {
             id: "js-wyk-016", type: "multiple",
-            question: "Wskaż prawdziwe zdania na temat typu i obiektów range w języku Python:",
+            question: "Wybierz zdania prawdziwe na temat range w języku Python:",
             options: [
-              "klasa range reprezentuje niezmienny (immutable) ciąg liczb całkowitych",
-              "kolejność parametrów w pełnej wersji to range(step, start, stop)",
-              "obiekty tego typu są bardzo często wykorzystywane do sterowania pętlami for",
-              "obiekty range generują wszystkie wartości natychmiast i przechowują je jako pełną listę w pamięci"
+              "kolejność parametrów range to range(step, start, stop)",
+              "jest to typ sekwencyjny",
+              "obiekty tego typu są często używane w pętli",
+              "obiekty tego typu generują wartości leniwie"
             ],
-            correctAnswers: [0, 2],
-            explanation: "range reprezentuje niemodyfikowalną sekwencję liczb. Obiekty range nie generują wszystkich liczb na raz (co oszczędza pamięć), lecz wyliczają je dynamicznie (leniwie) przy każdej iteracji."
+            correctAnswers: [1, 2, 3],
+            explanation: "range() reprezentuje niezmienną sekwencję liczb generowaną leniwie (lazy evaluation), bardzo popularną w pętlach for. Parametry to range(start, stop, step)."
           },
           {
             id: "js-wyk-017", type: "multiple",
@@ -639,19 +641,20 @@ const DEFAULT_SUBJECTS = [
               "krok (step) w funkcji range może być wartością ujemną"
             ],
             correctAnswers: [0, 2, 3],
-            explanation: "range(start, stop, step) wyznacza przedział prawostronnie otwarty. range(10) generuje liczby od 0 do 9. range(1, 10, 2) generuje co drugą liczbę (1, 3, 5, 7, 9). Krok może być ujemny (np. range(5, 0, -1) generuje 5, 4, 3, 2, 1)."
+            explanation: "range(stop) generuje od 0 do stop-1. range(start, stop, step) wyznacza przedział prawostronnie otwarty. Krok może być ujemny."
           },
           {
             id: "js-wyk-018", type: "multiple",
-            question: "Wybierz zdania prawdziwe na temat operatora zawierania in w języku Python:",
+            question: "Wybierz zdania prawdziwe na temat operatorów zawierania (ang. membership operators) języka Python:",
             options: [
-              "w przypadku słowników (dict) sprawdza obecność obiektu wśród wartości",
-              "w przypadku słowników (dict) sprawdza obecność obiektu wśród kluczy",
-              "w przypadku zbiorów (set) i typów sekwencyjnych sprawdza obecność elementu w kolekcji",
-              "działa z taką samą złożonością obliczeniową O(1) dla list oraz dla zbiorów"
+              "w przypadku typów mapujących weryfikują obecność obiektu wśród wartości kolekcji",
+              "operator not in zwraca prawdę jeśli pewien obiekt nie jest w innym obiekcie (nie jest jego członkiem)",
+              "w przypadku typów sekwencyjnych i zbiorów weryfikują obecność pewnego obiektu wśród elementów kolekcji",
+              "operator not in zwraca fałsz jeśli pewien obiekt jest w innym obiekcie (jest jego członkiem)",
+              "w przypadku znaków weryfikują, czy pewien łańcuch jest anagramem innego łańcucha"
             ],
-            correctAnswers: [1, 2],
-            explanation: "Operator 'in' w słownikach szuka kluczy (nie wartości). W zbiorach (set) wyszukiwanie odbywa się w czasie stałym O(1), natomiast w listach wyszukiwanie wymaga przejścia przez całą strukturę, co daje złożoność liniową O(n)."
+            correctAnswers: [1, 2, 3],
+            explanation: "Operatory in/not in sprawdzają przynależność elementu do sekwencji/zbioru lub klucza w mapowaniu (dict). not in zwraca True, jeśli elementu nie ma, i False, jeśli element jest obecny."
           },
           {
             id: "js-wyk-019", type: "multiple",
@@ -659,35 +662,35 @@ const DEFAULT_SUBJECTS = [
             options: [
               "zwraca True, jeśli sprawdzany obiekt nie znajduje się w kolekcji",
               "zwraca False, jeśli sprawdzany obiekt znajduje się w kolekcji",
-              "zwraca błąd TypeError, gdy kolekcja nie zawiera żadnego elementu",
-              "jest operatorem dwuargumentowym (wymaga lewego i prawego operandu)"
+              "zwraca błąd TypeError, gdy kolekcja jest pusta",
+              "jest operatorem dwuargumentowym"
             ],
             correctAnswers: [0, 1, 3],
-            explanation: "Operator 'not in' jest dwuargumentowy (np. 'x not in y'). Działa na puste kolekcje (zwracając True, bez błędu) i jest logicznym zaprzeczeniem operatora 'in'."
+            explanation: "Operator not in jest dwuargumentowy. Zwraca True dla braku elementu i False dla obecności. Nie zgłasza błędu na pustej kolekcji."
           },
           {
             id: "js-wyk-020", type: "multiple",
             question: "Wskaż cechy i paradygmaty programowania wspierane przez język Python:",
             options: [
-              "Python w pełni wspiera programowanie obiektowe (OOP) oraz imperatywne",
-              "Python wspiera elementy programowania funkcyjnego (np. funkcje pierwszej klasy, lambda, map, filter)",
+              "Python wspiera programowanie obiektowe (OOP) oraz imperatywne",
+              "Python wspiera elementy programowania funkcyjnego (np. funkcje pierwszej klasy, lambda)",
               "Python jest językiem czysto funkcyjnym i nie pozwala na mutowanie zmiennych",
               "funkcje w Pythonie nie mogą być przekazywane jako argumenty do innych funkcji"
             ],
             correctAnswers: [0, 1],
-            explanation: "Python to język wieloparadygmatowy — wspiera programowanie obiektowe, strukturalne/imperatywne oraz funkcyjne. Funkcje są obiektami pierwszej klasy (first-class citizens), więc można je przekazywać jako parametry i zwracać z innych funkcji."
+            explanation: "Python to język wieloparadygmatowy ze wsparciem dla OOP, imperatywnego oraz funkcyjnego programowania (funkcje zijn first-class objects)."
           },
           {
             id: "js-wyk-021", type: "multiple",
-            question: "Wskaż cechy rekurencji i funkcji wyższego rzędu w języku Python:",
+            question: "Wskaż własności paradygmatu programowania, którymi cechuje się język Python:",
             options: [
-              "Python obsługuje rekurencję, ale posiada domyślny limit głębokości stosu wywołań",
-              "funkcje wyższego rzędu (ang. higher-order functions) to takie, które operują na innych funkcjach (przyjmują je lub zwracają)",
-              "funkcje anonimowe lambda nie mogą być wywoływane rekurencyjnie",
-              "interpreter Pythona automatycznie optymalizuje wywołania rekursji ogonowej"
+              "obsługa funkcji pierwszej klasy",
+              "obsługa zmiennych (mutowalnych) typów danych",
+              "obsługa funkcji wyższego rzędu, które operują na funkcjach",
+              "obsługa rekurencji"
             ],
-            correctAnswers: [0, 1],
-            explanation: "Python wspiera rekurencję, ale ma sztywny limit stosu (standardowo ok. 1000 wywołań) i nie stosuje optymalizacji rekurencji ogonowej (tail call optimization). Funkcje wyższego rzędu to standardowe funkcje, np. sorted() z parametrem key."
+            correctAnswers: [0, 2, 3],
+            explanation: "Python posiada funkcje pierwszej klasy i funkcje wyższego rzędu, a także pozwala na wywołania rekurencyjne."
           },
           {
             id: "js-wyk-022", type: "multiple",
@@ -695,15 +698,15 @@ const DEFAULT_SUBJECTS = [
             options: [
               "klauzula except zostanie wykonana, gdy zgłoszony wyjątek jest typu określonego w tej klauzuli lub typu z nim zgodnego (dziedziczącego po nim)",
               "klauzula except bez podanego typu wyjątku (tzw. bare except) przechwyci absolutnie każdy wyjątek (w tym SystemExit, KeyboardInterrupt)",
-              "klauzula except wykonuje się zawsze na końcu bloku try, nawet jika błąd nie wystąpił",
+              "klauzula except wykonuje się zawsze na końcu bloku try, nawet jeśli błąd nie wystąpił",
               "możliwe jest zdefiniowanie tylko jednej klauzuli except dla pojedynczego bloku try"
             ],
             correctAnswers: [0, 1],
-            explanation: "Klauzula except przechwytuje wyjątek określonego typu lub dowolny jego podtyp. Zapis 'except:' bez klasy przechwytuje wszystko (niezalecane, lepiej użyć 'except Exception:'). Blok może posiadać wiele klauzul except obsługujących różne wyjątki."
+            explanation: "Klauzula except przechwytuje wyjątek danego typu oraz jego podklasy. Zapis except: (bez klasy) przechwytuje wszystkie wyjątki."
           },
           {
             id: "js-wyk-023", type: "multiple",
-            question: "Pamiętając o standardowej składni obsługi wyjątków w języku Python, wskaż poprawny zapis struktury bloku try:",
+            question: "Pamiętając o tym, że:\n- suite to blok kodu\n- nawiasy kwadratowe informują o opcjonalności fragmentu\n- nawiasy okrągłe grupują elementy\n- znak plus informuje, że fragment w nawiasach okrągłych może zostać powtórzony co najmniej raz\nwskaż poprawną składnię mechanizmu obsługi wyjątków w języku Python:",
             options: [
               "try: suite (except [expression [as identifier]]: suite)+ [else: suite] [finally: suite]",
               "try: suite [except [expression]: suite]* else: suite",
@@ -711,7 +714,7 @@ const DEFAULT_SUBJECTS = [
               "try: suite else: suite"
             ],
             correctAnswers: [0, 2],
-            explanation: "Blok try w Pythonie wymaga albo przynajmniej jednej klauzuli 'except', albo klauzuli 'finally' (albo obu). Opcjonalna klauzula 'else' może się pojawić tylko wtedy, gdy zdefiniowano chociaż jedną 'except'."
+            explanation: "Poprawna pełna składnia obsługi wyjątków to try-except (jedna lub więcej) z opcjonalnymi else i finally, lub samo try-finally."
           },
           {
             id: "js-wyk-024", type: "multiple",
@@ -723,7 +726,7 @@ const DEFAULT_SUBJECTS = [
               "klauzula finally służy wyłącznie do przechwytywania wyjątków krytycznych"
             ],
             correctAnswers: [0, 2],
-            explanation: "Klauzula 'else' wykonuje się, jeśli blok 'try' przebiegł pomyślnie (bez błędów). Z kolei 'finally' wykonuje się zawsze (np. do zwalniania zasobów, zamykania połączeń), niezależnie od przebiegu obsługi błędów."
+            explanation: "else w bloku try-except uruchamia się przy braku wyjątków. finally uruchamia się bezwzględnie zawsze po wyjściu z try-except."
           },
           {
             id: "js-wyk-025", type: "multiple",
@@ -735,7 +738,7 @@ const DEFAULT_SUBJECTS = [
               "wyrażenia lambda mogą zawierać instrukcje warunkowe if-elif-else w pełnej postaci"
             ],
             correctAnswers: [0, 2],
-            explanation: "Funkcje lambda są anonimowe. Ich ciało ogranicza się do jednego wyrażenia (expression), a nie zestawu instrukcji (statements). Nie mogą zawierać słów kluczowych takich jak return czy pętli, ale dopuszczają proste wyrażenia warunkowe (np. x if x > 0 else 0)."
+            explanation: "Funkcje lambda są anonimowe, mogą przyjmować wiele parametrów, ale ich ciało może zawierać tylko jedno wyrażenie zwracające wartość."
           },
           {
             id: "js-wyk-026", type: "multiple",
@@ -747,7 +750,7 @@ const DEFAULT_SUBJECTS = [
               "lambda x: return x * 2"
             ],
             correctAnswers: [0, 1, 2],
-            explanation: "Opcja 1 dodaje dwa argumenty, opcja 2 używa wyrażenia warunkowego, opcja 3 to funkcja bezargumentowa wywołująca print(). Opcja 4 jest błędna, ponieważ instrukcja 'return' jest niedozwolona w ciele lambda (zwracanie wartości jest niejawne)."
+            explanation: "Opcja 4 jest niepoprawna syntaktycznie, ponieważ instrukcja return nie może pojawić się w ciele wyrażenia lambda."
           },
           {
             id: "js-wyk-027", type: "multiple",
@@ -759,7 +762,7 @@ const DEFAULT_SUBJECTS = [
               "kod źródłowy Pythona jest bezpośrednio tłumaczony na instrukcje procesora (kod maszynowy)"
             ],
             correctAnswers: [0, 1],
-            explanation: "Python automatycznie kompiluje kod źródłowy (.py) do kodu bajtowego (.pyc) i przekazuje go do wykonania wirtualnej maszynie (PVM). Proces ten zachodzi niejawnie przy uruchomieniu programu."
+            explanation: "Interpreter Pythona automatycznie kompiluje kod do kodu bajtowego (bytecode, pliki .pyc) przed przekazaniem go do interpretacji przez PVM."
           },
           {
             id: "js-wyk-028", type: "multiple",
@@ -771,56 +774,56 @@ const DEFAULT_SUBJECTS = [
               "wykonanie kodu przez PVM jest zazwyczaj tak samo szybkie jak uruchomienie skompilowanego pliku binarnego C++"
             ],
             correctAnswers: [0, 2],
-            explanation: "PVM interpretuje kod bajtowy (bytecode), a nie bezpośredni kod źródłowy. Zapewnia to przenośność kodu na różne platformy, lecz wiąże się z narzutem wydajnościowym w porównaniu do natywnie kompilowanych języków jak C++."
+            explanation: "Wirtualna maszyna Pythona (PVM) interpretuje i wykonuje instrukcje kodu bajtowego, co daje wieloplatformowość kosztem wydajności."
           },
           {
             id: "js-wyk-029", type: "open",
-            question: "Scharakteryzuj mechanizm menedżerów kontekstu (ang. context managers) w języku Python. Przedstaw, jak można z niego skorzystać, zarówno w celu bezpiecznego zamykania zasobów, jak i do innych celów. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
+            question: "Scharakteryzuj mechanizm logowania zdarzeń (ang. logging) w języku Python. Przedstaw jego zastosowanie. Jak można z niego skorzystać, zarówno w celu zapisywania zdarzeń, jak i ich odczytywania? Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
             options: [],
-            correctAnswers: ["with"],
-            explanation: "Menedżery kontekstu (wywoływane przez instrukcję 'with') służą do bezpiecznego zarządzania zasobami (np. plikami, blokadami). Gwarantują zwolnienie zasobu po wyjściu z bloku kodu, nawet w przypadku błędu. Metody __enter__() oraz __exit__() w protokole menedżera odpowiadają odpowiednio za inicjalizację i czyszczenie zasobów. Przykład:\n\nwith open('plik.txt', 'w') as f:\n    f.write('dane')"
+            correctAnswers: ["logging"],
+            explanation: "Moduł logging w Pythonie służy do śledzenia zdarzeń w aplikacji. Pozwala konfigurować poziomy logowania (DEBUG, INFO, WARNING, ERROR, CRITICAL) oraz kierować logi do różnych wyjść (np. plik, konsola) przy użyciu obiektów Logger, Handler i Formatter."
           },
           {
             id: "js-wyk-030", type: "open",
-            question: "Scharakteryzuj mechanizm formatowania łańcuchów znaków typu f-string w języku Python. Przedstaw jego zalety oraz zastosowanie. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
+            question: "Scharakteryzuj literał string w języku Python, ponadto jego zastosowania. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
             options: [],
-            correctAnswers: ["f-string"],
-            explanation: "Napisy formatowane f-string (wprowadzone w Python 3.6) deklaruje się prefiksem 'f' przed cudzysłowem (np. f'Wartość: {x}'). Umożliwiają wbudowywanie zmiennych oraz wyrażeń bezpośrednio w tekst przy użyciu nawiasów klamrowych {}. Są czytelniejsze i znacznie szybsze niż starsze metody formatowania (.format() lub operator %)."
+            correctAnswers: ["str"],
+            explanation: "Literały string reprezentują napisy. Są ujęte w pojedyncze/podwójne cudzysłowy (np. 'tekst' lub \"tekst\"), potrójne cudzysłowy dla wielolinijkowych napisów (multiline) lub z prefiksami (r'raw string', f'f-string', b'bytes string'). Służą do przechowywania i manipulacji tekstem."
           },
           {
             id: "js-wyk-031", type: "open",
             question: "Opisz co najmniej dwa sposoby zastępowania w języku Python fragmentów łańcuchów znaków innymi znakami/łańcuchami. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
             options: [],
             correctAnswers: ["replace"],
-            explanation: "Główne metody zastępowania tekstów to:\n1) Metoda str.replace(stary, nowy, [liczba_wystapien]), która podmienia podłańcuchy w tekście.\n2) Funkcja re.sub(wzorzec, zamiennik, tekst) z modułu re, wykorzystująca wyrażenia regularne do wyszukiwania wzorców.\n\nPrzykład:\nnapis = 'baza danych'\nnowy = napis.replace('baza', 'struktura')  # 'struktura danych'"
+            explanation: "Zastępowanie fragmentów tekstu można wykonać za pomocą wbudowanej metody str.replace('stary', 'nowy') lub przy użyciu wyrażeń regularnych przez funkcję re.sub(wzorzec, zamiennik, tekst) z biblioteki standardowej re."
           },
           {
             id: "js-wyk-032", type: "open",
             question: "Podaj definicję i scharakteryzuj obiekt iterowalny (ang. iterable object) w języku Python. Przedstaw jego zastosowania. Wymień co najmniej 3 przykładowe typy danych, których obiekty instancji są obiektami iterowalnymi. Ponadto wskaż dwa przypadki, w których obiekty instancji klas zdefiniowanych przez użytkownika mogą być traktowane jako obiekty iterowalne.",
             options: [],
             correctAnswers: ["iterable"],
-            explanation: "Obiekt iterowalny (iterable) to każdy obiekt, z którego można utworzyć iterator (za pomocą funkcji iter()). Typy wbudowane to np. list, tuple, dict, set, str. Zastosowaniem jest m.in. pętla for, składanie list (list comprehension) czy przekazywanie do funkcji agregujących (np. sum()). Klasy użytkownika stają się iterowalne, gdy:\n1) Zaimplementują metodę __iter__(), zwracającą iterator.\n2) Zaimplementują metodę __getitem__() ze wsparciem dla indeksowania od zera."
+            explanation: "Obiekt iterowalny to obiekt pozwalający na pobranie iteratora (np. przez funkcję iter()). Należą do nich listy, krotki, napisy. Obiekty zdefiniowane przez użytkownika są iterowalne, jika mają zdefiniowaną metodę __iter__() lub __getitem__()."
           },
           {
             id: "js-wyk-033", type: "open",
-            question: "Scharakteryzuj typ danych <class 'set'> (zbiór) dostępny w języku Python. Przedstaw co najmniej 2 sposoby deklarowania oraz podstawowe operacje oferowane przez ten typ danych. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
+            question: "Scharakteryzuj typ danych <class 'set'> dostępny w języku Python. Przedstaw co najmniej 2 sposoby deklarowania oraz podstawowe operacje oferowane przez ten typ danych. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
             options: [],
             correctAnswers: ["set"],
-            explanation: "Zbiór (set) to nieuporządkowana kolekcja unikalnych, hashowalnych elementów. Sposoby deklarowania:\n1) Użycie nawiasów klamrowych z elementami, np. s = {1, 2, 3}.\n2) Funkcja set(iterable), np. s = set([1, 2]). Pusty zbiór deklaruje się wyłącznie jako set() (zapis {} tworzy słownik).\nPodstawowe operacje: suma (|), iloczyn (&), różnica (-), różnica symetryczna (^) oraz metody .add() i .remove()."
+            explanation: "Zbiór (set) to nieuporządkowana kolekcja unikalnych, hashowalnych elementów. Deklaracja następuje przez klamry s = {1, 2} lub set(). Operacje to m.in. suma (|), iloczyn (&), różnica (-), różnica symetryczna (^)."
           },
           {
             id: "js-wyk-034", type: "open",
             question: "Opisz mechanizm zawierania przez wyjątki w języku Python informacji nazywanych argumentami wyjątków. Przedstaw jak można z niego skorzystać, zarówno w celu przekazania argumentów do wyjątku, jak i późniejszego ich odczytywania. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
             options: [],
             correctAnswers: ["args"],
-            explanation: "Podczas zgłaszania wyjątku (raise) można przekazać do konstruktora klasy wyjątku argumenty opisujące błąd (np. raise ValueError('Niepoprawna wartość', 404)). Informacje te są zapisywane w krotce pod atrybutem .args instancji wyjątku. W bloku except możemy przechwycić wyjątek jako zmienną i odczytać te dane. Przykład:\n\ntry:\n    raise Exception('Błąd', 123)\nexcept Exception as e:\n    print(e.args)  # wypisze ('Błąd', 123)"
+            explanation: "W Pythonie argumenty przekazane do konstruktora wyjątku (np. raise Exception('komunikat', 404)) są zapisywane w krotce e.args. Można je odczytać w bloku except przez odwołanie do tej krotki."
           },
           {
             id: "js-wyk-035", type: "open",
-            question: "Wymień i scharakteryzuj przesłanki (korzyści) przemawiające za stosowaniem funkcji w języku Python. Ponadto przedstaw podstawowy sposób wczytywania w języku Python wartości od użytkownika i zilustruj go przykładowymi fragmentami kodu.",
+            question: "Wymień i scharakteryzuj przesłanki przemawiające za stosowaniem funkcji w języku Python. Przedstaw podstawowy sposób wczytywania w języku Python wartości od użytkownika. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
             options: [],
             correctAnswers: ["def"],
-            explanation: "Główne korzyści ze stosowania funkcji to: modularność (podział programu na mniejsze części), reużywalność kodu (brak powtórzeń - reguła DRY), poprawa czytelności oraz ułatwione testowanie i debugowanie.\nPodstawowym sposobem wczytywania danych od użytkownika jest funkcja input(prompt), która pobiera wejście jako łańcuch znaków (str). Przykład:\n\ndef przywitaj(imie):\n    print(f'Witaj {imie}!')\n\nuser_input = input('Podaj imię: ')\nprzywitaj(user_input)"
+            explanation: "Stosowanie funkcji promuje ponowne użycie kodu (DRY), modularność, czytelność oraz ułatwia testowanie. Do wczytywania danych od użytkownika służy wbudowana funkcja input(prompt), która zwraca str."
           }
         ]
       }
@@ -1537,6 +1540,11 @@ function QuestionView({ question, questionIndex, totalQuestions, onNext, onRecor
     onRecordAnswer(question.id, selectedOptions, openAnswer, correct);
   };
 
+  const handleSkip = () => {
+    onRecordAnswer(question.id, selectedOptions, openAnswer, false);
+    onNext();
+  };
+
   const canSubmit = question.type === "open" ? openAnswer.trim().length > 0 : selectedOptions.length > 0;
 
   const badge = question.type === "single"
@@ -1618,9 +1626,14 @@ function QuestionView({ question, questionIndex, totalQuestions, onNext, onRecor
         )}
         <div className="quiz-actions">
           {!isSubmitted ? (
-            <button className="btn btn-primary" onClick={handleSubmit} disabled={!canSubmit}>
-              Sprawdź <span className="kbd">Enter</span>
-            </button>
+            <>
+              <button className="btn btn-primary" onClick={handleSubmit} disabled={!canSubmit}>
+                Sprawdź <span className="kbd">Enter</span>
+              </button>
+              <button className="btn btn-secondary" onClick={handleSkip} style={{ marginTop: "4px" }}>
+                Pomiń pytanie
+              </button>
+            </>
           ) : (
             <button className="btn btn-success" onClick={onNext}>
               {questionIndex + 1 < totalQuestions ? "Następne pytanie →" : "Zakończ ćwiczenie →"}
