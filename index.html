@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizezee — Przygotowanie do egzaminów</title>
+    <title>Quizee</title>
     <meta name="description" content="Nowoczesna aplikacja do przygotowania się do egzaminów uniwersyteckich." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -569,10 +569,10 @@ const DEFAULT_SUBJECTS = [
   }
 ];
 
-const STORAGE_KEY_SUBJECTS = "studypro_subjects";
-const STORAGE_KEY_PROGRESS = "studypro_progress";
-const STORAGE_KEY_DIFFICULT = "studypro_difficult";
-const STORAGE_KEY_INCORRECT = "studypro_incorrect";
+const STORAGE_KEY_SUBJECTS = "quizee_subjects";
+const STORAGE_KEY_PROGRESS = "quizee_progress";
+const STORAGE_KEY_DIFFICULT = "quizee_difficult";
+const STORAGE_KEY_INCORRECT = "quizee_incorrect";
 
 const { useState, useEffect, useCallback } = React;
 
@@ -595,8 +595,16 @@ function getAllQuestions(subjectsList) {
 }
 
 function loadFromStorage(key, fallback) {
-  try { const r = localStorage.getItem(key); return r ? JSON.parse(r) : fallback; }
-  catch (e) { return fallback; }
+  try {
+    let r = localStorage.getItem(key);
+    if (!r) {
+      const oldKey = key.replace("quizee_", "studypro_");
+      r = localStorage.getItem(oldKey);
+    }
+    return r ? JSON.parse(r) : fallback;
+  } catch (e) {
+    return fallback;
+  }
 }
 
 function saveToStorage(key, data) {
@@ -1685,9 +1693,8 @@ function App() {
       <header className="app-header">
         <div className="app-logo">
           <div className="logo-icon">📖</div>
-          <span className="logo-text">Quizezee</span>
+          <span className="logo-text">Quizee</span>
         </div>
-        <p className="app-subtitle">Przygotuj się do egzaminów z interaktywnymi zestawami pytań</p>
       </header>
 
       {view === "home" && (

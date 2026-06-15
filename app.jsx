@@ -11,7 +11,7 @@ function shuffleArray(arr) {
 
 function loadProgress() {
   try {
-    const raw = localStorage.getItem("studypro_progress");
+    const raw = localStorage.getItem("quizee_progress");
     return raw ? JSON.parse(raw) : {};
   } catch {
     return {};
@@ -20,7 +20,7 @@ function loadProgress() {
 
 function saveProgress(data) {
   try {
-    localStorage.setItem("studypro_progress", JSON.stringify(data));
+    localStorage.setItem("quizee_progress", JSON.stringify(data));
   } catch {}
 }
 
@@ -498,7 +498,7 @@ function App() {
     setProgressEnabled(enabled);
     if (!enabled) {
       setProgressData({});
-      localStorage.removeItem("studypro_progress");
+      localStorage.removeItem("quizee_progress");
     }
   };
 
@@ -507,11 +507,8 @@ function App() {
       <header className="app-header">
         <div className="app-logo">
           <div className="logo-icon">📖</div>
-          <span className="logo-text">Quizezee</span>
+          <span className="logo-text">Quizee</span>
         </div>
-        <p className="app-subtitle">
-          Przygotuj się do egzaminów z interaktywnymi zestawami pytań
-        </p>
       </header>
 
       {view === "home" && (
