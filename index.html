@@ -932,7 +932,7 @@ function SubjectModulesView({
       {activeTab === "modules" ? (
         <div className="subject-column">
           <div>
-            <div className="modules-grid" style={{ gridTemplateColumns: "1fr", gap: "16px", marginBottom: 0 }}>
+            <div className="modules-grid" style={{ marginBottom: 0 }}>
               {(subject.modules || []).map((mod) => {
                 const modQs = mod.questions;
                 const modTotal = modQs.length;
@@ -1013,7 +1013,7 @@ function SubjectModulesView({
             Błędy według modułów:
           </h4>
           
-          <div className="modules-grid" style={{ gridTemplateColumns: "1fr", gap: "16px" }}>
+          <div className="modules-grid">
             {(subject.modules || []).map(mod => {
               const modIncorrect = mod.questions.filter(q => incorrectData[q.id]).length;
               if (modIncorrect === 0) return null;
@@ -1133,7 +1133,7 @@ function QuizSetup({ title, subtitle, icon, questionsList = [], difficultData = 
   );
 }
 
-function QuestionView({ question, questionIndex, totalQuestions, onNext, onRecordAnswer, progressEnabled, isAlreadyCorrect, isDifficult, onToggleDifficult }) {
+function QuestionView({ question, questionIndex, totalQuestions, onNext, onRecordAnswer, progressEnabled, isAlreadyCorrect, isDifficult, onToggleDifficult, onQuit }) {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [openAnswer, setOpenAnswer] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -1207,6 +1207,9 @@ function QuestionView({ question, questionIndex, totalQuestions, onNext, onRecor
 
   return (
     <div>
+      <button className="nav-back" onClick={onQuit} style={{ marginBottom: "16px" }} id="btn-back-quiz">
+        <BackIcon/> Przerwij test
+      </button>
       <div className="quiz-header">
         <span className="quiz-progress-text">Pytanie <span>{questionIndex + 1}</span> z <span>{totalQuestions}</span></span>
         <span className={"quiz-type-badge " + badge.cls}>{badge.label}</span>
@@ -1612,6 +1615,20 @@ function App() {
     else setView("home");
   };
 
+  const handleQuitQuiz = () => {
+    if (confirm("Czy na pewno chcesz przerwać test? Twój postęp w tej sesji zostanie utracony.")) {
+      if (quizType === "module") {
+        setView("subject-modules");
+      } else if (quizType === "subject_exam") {
+        setView("subject-modules");
+      } else if (quizType === "global") {
+        setView("home");
+      } else {
+        setView("home");
+      }
+    }
+  };
+
   const handleToggleProgress = (en) => {
     setProgressEnabled(en);
     if (!en) { setProgressData({}); localStorage.removeItem(STORAGE_KEY_PROGRESS); }
@@ -1825,6 +1842,7 @@ function App() {
               return next;
             });
           }}
+          onQuit={handleQuitQuiz}
         />
       )}
       
