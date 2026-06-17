@@ -1118,7 +1118,7 @@ function App() {
         if (s.id === "jezyki-skryptowe") {
           const defaultJs = DEFAULT_SUBJECTS.find(ds => ds.id === "jezyki-skryptowe");
           const currentModule = s.modules && s.modules[0];
-          if (defaultJs && (!s.modules || s.modules.length !== 1 || currentModule.id !== "js-wyk-zadania-v3")) {
+          if (defaultJs && (!s.modules || s.modules.length < 2 || !s.modules.some(m => m.id === "js-mod-generowane"))) {
             console.log("Migrated 'jezyki-skryptowe' module database.");
             return defaultJs;
           }
