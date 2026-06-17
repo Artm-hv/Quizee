@@ -1156,7 +1156,22 @@ function App() {
   const [quizType, setQuizType] = useState("module"); // "module" | "subject_exam" | "global"
   const [quizMode, setQuizMode] = useState("sequential");
   const [currentQI, setCurrentQI] = useState(0);
-  const [questions, setQuestions] = useState([]);
+  const [questions, rawSetQuestions] = useState([]);
+  const setQuestions = useCallback((pool) => {
+    const shuffledPool = pool.map(q => {
+      if (q.type === "open" || !q.options || q.options.length === 0) {
+        return q;
+      }
+      const indices = q.options.map((_, idx) => idx);
+      const shuffledIndices = shuffleArray(indices);
+      return {
+        ...q,
+        options: shuffledIndices.map(idx => q.options[idx]),
+        correctAnswers: q.correctAnswers.map(c => shuffledIndices.indexOf(c)).filter(idx => idx !== -1)
+      };
+    });
+    rawSetQuestions(shuffledPool);
+  }, []);
   const [progressEnabled, setProgressEnabled] = useState(true);
   const [progressData, setProgressData] = useState(loadFromStorage(STORAGE_KEY_PROGRESS, {}));
   const [sessionAnswers, setSessionAnswers] = useState([]);
