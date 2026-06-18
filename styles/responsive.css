@@ -1,0 +1,83 @@
+/* responsive.css */
+
+@media(max-width:640px) {
+
+  .app-container {
+    padding:16px 16px 60px
+  }
+
+  .app-header {
+    padding:32px 0 28px
+  }
+
+  .logo-text {
+    font-size:1.6rem
+  }
+
+  .app-subtitle {
+    font-size:0.9rem
+  }
+
+  .settings-bar {
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+    padding:14px 16px
+  }
+
+  .subjects-grid {
+    grid-template-columns:1fr
+  }
+
+  .setup-panel {
+    padding:28px 20px
+  }
+
+  .quiz-card {
+    padding:24px 18px
+  }
+
+  .question-text {
+    font-size:1.05rem
+  }
+
+  .mode-selector {
+    grid-template-columns:1fr
+  }
+
+  .completion-stats {
+    grid-template-columns:1fr;
+    gap:12px
+  }
+
+  .quiz-header {
+    flex-direction:column;
+    align-items:flex-start
+  }
+
+  .modal-content {
+    padding:24px 18px
+  }
+
+  .manage-card-header {
+    flex-direction:column;
+    align-items:flex-start
+  }
+
+  .stats-strip {
+    grid-template-columns:repeat(2,1fr)
+  }
+
+  .kbd {
+    display:none
+  }
+
+}
+
+@media(min-width:641px) and (max-width:960px) {
+  .subjects-grid {
+    grid-template-columns:repeat(2,1fr)
+  }
+
+}
+
