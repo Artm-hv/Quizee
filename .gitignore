@@ -1,11 +1,6 @@
 .gemini/
 .git/
 *.log
-ocr_results.json
-ocr_results_lines.json
 
-# Subject source material directories
-Języki skryptowe/
-Sieci Komputerowe/
-Systemy dynamiczne/
-Podstawy programowania/
+# Subject source materials and OCR results
+src/data/sources/
