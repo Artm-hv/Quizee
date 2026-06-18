@@ -402,6 +402,406 @@ const systemyDynamiczneData = {
             ]
         },
         {
+            "id": "sd-mod-w1",
+            "name": "Wykład 1: Optymalizacja statyczna i identyfikacja",
+            "questions": [
+                {
+                    "id": "sd-w1-001",
+                    "type": "single",
+                    "question": "Co jest celem optymalizacji statycznej?",
+                    "options": [
+                        "Wyznaczenie optymalnych rozwiązań zadań o parametrach niezmiennych w czasie (dla procesów w stanie ustalonym)",
+                        "Wyznaczenie przebiegu czasowego sygnału wyjściowego układu dynamicznego w stanie nieustalonym",
+                        "Minimalizacja liczby zmiennych stanu układu dynamicznego",
+                        "Analiza stabilności BIBO układu o sprzężeniu zwrotnym"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Optymalizacja statyczna polega na wyznaczeniu optymalnych rozwiązań zadań o parametrach niezmiennych w czasie, dotyczących procesów w stanie ustalonym."
+                },
+                {
+                    "id": "sd-w1-002",
+                    "type": "single",
+                    "question": "Do jakiej grupy metod optymalizacji statycznej zaliczamy metodę Neldera-Meada?",
+                    "options": [
+                        "Do metod bezgradientowych (jest to metoda simplex bez ograniczeń)",
+                        "Do metod gradientowych (opartych na pochodnej wskaźnika jakości)",
+                        "Do analitycznych metod programowania liniowego (metoda simpleks)",
+                        "Do metod programowania kwadratowego"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Metoda Neldera-Meada (metoda simplex poszukiwania bezpośredniego) to numeryczna metoda bezgradientowa stosowana do zadań bez ograniczeń."
+                },
+                {
+                    "id": "sd-w1-003",
+                    "type": "multiple",
+                    "question": "Które z wymienionych metod zalicza się do metod gradientowych optymalizacji statycznej?",
+                    "options": [
+                        "Metoda gradientu prostego i największego spadku",
+                        "Metoda Davida-Fletchera-Powella (DFP) i Fletchera-Reevesa",
+                        "Metoda Neldera-Meada i Boxa (complex)",
+                        "Metoda Hooke'a-Jeevesa i Rosenbrocka"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Metody gradientowe to m.in. gradient prosty, największy spadek, Fletcher-Reeves, gradient sprzężony, Davidon-Fletcher-Powell (DFP). Rosenbrock, Hooke-Jeeves, Nelder-Mead i Box to metody bezgradientowe."
+                },
+                {
+                    "id": "sd-w1-004",
+                    "type": "single",
+                    "question": "W jakich przypadkach zadanie programowania liniowego (PL) można rozwiązać metodą graficzną?",
+                    "options": [
+                        "Gdy występują co najwyżej 2 zmienne decyzyjne (x1, x2)",
+                        "Gdy wskaźnik jakości jest funkcją kwadratową",
+                        "Gdy wszystkie ograniczenia są równościami stopnia drugiego",
+                        "Tylko gdy funkcja celu nie posiada ekstremów globalnych"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Metoda graficzna rozwiązywania zadań programowania liniowego jest stosowana, gdy występują co najwyżej dwie zmienne decyzyjne."
+                },
+                {
+                    "id": "sd-w1-005",
+                    "type": "single",
+                    "question": "Jakie są three główne etapy identyfikacji obiektów sterowania (w kolejności)?",
+                    "options": [
+                        "Wybór struktury modelu, wyznaczenie wartości współczynników (parametrów), weryfikacja modelu",
+                        "Pomiar sygnałów, uczenie sieci neuronowej, synteza regulatora PID",
+                        "Linearyzacja układu nieliniowego, wyznaczenie transmitancji, badanie stabilności Hurwitza",
+                        "Inicjalizacja populacji, krzyżowanie jednopunktowe, mutacja bitowa"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Klasyczny proces identyfikacji dzieli się na etapy: 1) Wybór struktury modelu, 2) Wyznaczenie parametrów (współczynników), 3) Weryfikacja modelu."
+                },
+                {
+                    "id": "sd-w1-006",
+                    "type": "multiple",
+                    "question": "Co oznacza określenie 'struktury modelu' w procesie identyfikacji?",
+                    "options": [
+                        "Typ modelu (np. liniowy, stacjonarny, ciągły/dyskretny)",
+                        "Rząd modelu (np. rząd równania różniczkowego lub stopień transmitancji)",
+                        "Wymiarowość układu (liczba wejść i wyjść)",
+                        "Dokładne wartości stałych czasowych i współczynników wzmocnienia"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "explanation": "Wybór struktury modelu określa typ (np. liniowy, stacjonarny), rząd (równań różniczkowych/transmitancji) oraz wymiarowość (liczba wejść/wyjść). Konkretne wartości parametrów (np. stałe czasowe, wzmocnienia) są wyznaczane w kolejnym etapie."
+                },
+                {
+                    "id": "sd-w1-007",
+                    "type": "single",
+                    "question": "W celu znalezienia ekstremum globalnego za pomocą numerycznych metod optymalizacji statycznej należy:",
+                    "options": [
+                        "Powtarzać procedurę optymalizacji z różnych punktów startowych",
+                        "Zwiększać krok różniczkowania do nieskończoności",
+                        "Stosować wyłącznie ograniczenia równościowe",
+                        "Zawsze stosować metodę graficzną"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Numeryczne metody optymalizacji lokalnej mogą utknąć w ekstremach lokalnych, dlatego ogólna zasada poszukiwania optimum globalnego wymaga powtarzania optymalizacji z różnych punktów startowych."
+                },
+                {
+                    "id": "sd-w1-008",
+                    "type": "single",
+                    "question": "W programowaniu liniowym (PL) funkcje ograniczeń i wskaźnik jakości muszą być:",
+                    "options": [
+                        "Wyłącznie liniowe",
+                        "Kwadratowe",
+                        "Różniczkowalne co najmniej dwukrotnie",
+                        "Bezwzględnie dodatnie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Programowanie liniowe zakłada, że zarówno wskaźnik jakości (funkcja celu), jak i funkcje ograniczeń są liniowe."
+                },
+                {
+                    "id": "sd-w1-009",
+                    "type": "multiple",
+                    "question": "Do metod bezgradientowych optymalizacji statycznej zaliczamy:",
+                    "options": [
+                        "Metodę Rosenbrocka i Gaussa-Seidla",
+                        "Metodę Hooke'a-Jeevesa i Powella",
+                        "Metodę Boxa (Complex) i Neldera-Meada",
+                        "Metodę największego spadku i Fletchera-Reevesa"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "explanation": "Metody bezgradientowe to m.in. Gauss-Seidel, Rosenbrock, Nelder-Mead, Box (Complex), Powell, Hooke-Jeeves. Metody gradientowe to m.in. największy spadek, Fletcher-Reeves, DFP."
+                },
+                {
+                    "id": "sd-w1-010",
+                    "type": "multiple",
+                    "question": "Co może stanowić wskaźnik jakości (funkcję celu) przy identyfikacji parametrów modelu dynamicznego (np. członu inercyjnego)?",
+                    "options": [
+                        "Błąd średniokwadratowy różnicy między wyjściem obiektu a wyjściem modelu",
+                        "Suma bezwzględnych uchybów w dyskretnych chwilach czasu",
+                        "Czas i koszt obliczeń optymalizacyjnych",
+                        "Wartość stałej czasowej T"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Wskaźnikiem jakości przy identyfikacji jest zazwyczaj miara dopasowania wyjść modelu do obiektu, np. błąd średniokwadratowy lub suma uchybów. Parametry modelu (np. T) są zmiennymi decyzyjnymi, a nie wskaźnikiem jakości."
+                },
+                {
+                    "id": "sd-w1-011",
+                    "type": "single",
+                    "question": "Na czym polega etap weryfikacji modelu w procesie identyfikacji?",
+                    "options": [
+                        "Na ocenie, czy model właściwie opisuje obiekt, m.in. przez porównanie charakterystyk czasowych modelu i obiektu",
+                        "Na losowaniu populacji startowej chromosomów",
+                        "Na analitycznym rozwiązaniu równania charakterystycznego det(sI-A)=0",
+                        "Na automatycznym wyznaczeniu struktury modelu przy pomocy metody najmniejszych kwadratów"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Etap weryfikacji ocenia adekwatność modelu, analizując czy jego charakterystyki czasowe zgadzają się z zachowaniem rzeczywistego obiektu."
+                },
+                {
+                    "id": "sd-w1-012",
+                    "type": "single",
+                    "question": "Programowanie całkowitoliczbowe (PC) oraz programowanie zerojedynkowe zalicza się do:",
+                    "options": [
+                        "Programowania liniowego (PL)",
+                        "Metod gradientowych optymalizacji nieliniowej",
+                        "Optymalizacji dynamicznej Bellmana",
+                        "Metod identyfikacji on-line"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Zgodnie z wykładem 1, programowanie całkowitoliczbowe i zerojedynkowe są zaliczane do problemów programowania liniowego (PL)."
+                }
+            ]
+        },
+        {
+            "id": "sd-mod-w2",
+            "name": "Wykład 2: Projektowanie algorytmów genetycznych",
+            "questions": [
+                {
+                    "id": "sd-w2-001",
+                    "type": "multiple",
+                    "question": "Czym charakteryzuje się reprezentacja binarna osobników w algorytmach genetycznych?",
+                    "options": [
+                        "Osobniki reprezentowane są przez ciągi zerojedynkowe o określonej długości",
+                        "Allele mogą przyjmować wartości '0' lub '1'",
+                        "Długość ciągu binarnego zależy od wymaganego przedziału poszukiwań i żądanej dokładności",
+                        "Reprezentacja ta nie pozwala na kodowanie parametrów rzeczywistych"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "explanation": "W kodowaniu binarnym geny (allele) przyjmują wartości 0 lub 1. Długość pojedynczego ciągu binarnego dla zmiennej zależy od przedziału [Ai, Bi] oraz zadanej dokładności l. Reprezentacja binarna jak najbardziej służy do kodowania parametrów rzeczywistych."
+                },
+                {
+                    "id": "sd-w2-002",
+                    "type": "single",
+                    "question": "Zgodnie z regułą minimalnego alfabetu w algorytmach genetycznych:",
+                    "options": [
+                        "Należy stosować alfabet o jak najmniejszej liczbie symboli (np. binarny)",
+                        "Długość chromosomu powinna być minimalna",
+                        "Mutacja powinna zachodzić z prawdopodobieństwem bliskim zero",
+                        "Liczba osobników w populacji musi być mniejsza niż 10"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Reguła minimalnego alfabetu mówi, że należy wybrać alfabet o jak najmniejszej liczbie symboli (zazwyczaj kod binarny {0,1}), co daje maksymalną liczbę schematów przetwarzanych w populacji."
+                },
+                {
+                    "id": "sd-w2-003",
+                    "type": "single",
+                    "question": "Jaka jest typowa wartość prawdopodobieństwa krzyżowania (pk) w klasycznych algorytmach genetycznych?",
+                    "options": [
+                        "Stosunkowo duża, zwykle w granicach od 0.1 do 1.0 (np. 0.6 - 0.9)",
+                        "Bardzo mała, w granicach 0.001 - 0.01",
+                        "Zawsze równa dokładnie 0.5",
+                        "Powinna wynosić 0.0, aby nie niszczyć dobrze przystosowanych osobników"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Krzyżowanie jest głównym operatorem poszukiwań, stąd jego prawdopodobieństwo pk jest duże (zwykle w przedziale 0.6 - 0.9, ogólnie 0.1 - 1.0)."
+                },
+                {
+                    "id": "sd-w2-004",
+                    "type": "single",
+                    "question": "Wskaż cechę mutacji w klasycznych algorytmach genetycznych:",
+                    "options": [
+                        "Prawdopodobieństwo mutacji (pm) jest małe (zwykle 0.001 - 0.1), ponieważ zbyt częsta mutacja zniszczyłaby dobre cechy osobników",
+                        "Mutacja służy jako główny operator poszukiwawczy i zachodzi u każdego osobnika",
+                        "Mutacja jest całkowicie zbędna, jeśli zastosowano selekcję turniejową",
+                        "Mutacja polega wyłącznie na zamianie miejscami dwóch losowych genów w chromosomie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Mutacja zachodzi rzadko (typowo pm w przedziale 0.001 - 0.1). Wprowadza ona nowy materiał genetyczny i zapobiega utknięciu w minimach lokalnych, ale zbyt wysokie pm zamienia algorytm w ślepe błądzenie losowe."
+                },
+                {
+                    "id": "sd-w2-005",
+                    "type": "single",
+                    "question": "Na czym polega selekcja turniejowa?",
+                    "options": [
+                        "Wybiera się losowo grupę osobników, z której do nowej populacji przechodzi osobnik najlepiej przystosowany",
+                        "Przypisuje się osobnikom sektory koła proporcjonalne do funkcji przystosowania",
+                        "Sortuje się osobników według rankingu i losuje na podstawie rangi",
+                        "Dokonuje się liniowej kombinacji wektorów rodzicielskich"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Selekcja turniejowa polega na losowym wyborze podgrupy osobników (np. 2 lub 3) i wyłonieniu z niej osobnika o najlepiej przystosowanym. Proces powtarza się do zapełnienia nowej populacji."
+                },
+                {
+                    "id": "sd-w2-006",
+                    "type": "single",
+                    "question": "Co to jest 'przedwczesna zbieżność' (premature convergence) algorytmu genetycznego?",
+                    "options": [
+                        "Sytuacja, w której populacja zostaje zdominowana przez osobniki o zbliżonych genotypach reprezentujących optimum lokalne, co uniemożliwia znalezienie optimum globalnego",
+                        "Sytuacja, w której algorytm kończy działanie przed wykonaniem pierwszej iteracji",
+                        "Zbyt szybkie znalezienie optimum globalnego, powodujące błędy weryfikacji modelu",
+                        "Problem związany z brakiem pamięci w wieloetapowych procesach Markowa"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przedwczesna zbieżność występuje, gdy osobniki o wysokim (ale nie globalnie optymalnym) przystosowaniu szybko zdominują populację, a brak różnorodności genetycznej uniemożliwia dalsze poszukiwania."
+                },
+                {
+                    "id": "sd-w2-007",
+                    "type": "multiple",
+                    "question": "Wskaż właściwe informacje dotyczące selekcji metodą koła ruletki:",
+                    "options": [
+                        "Każdemu osobnikowi odpowiada sektor proporcjonalny do jego wartości funkcji przystosowania",
+                        "Funkcja przystosowania musi przyjmować wyłącznie wartości nieujemne",
+                        "Istnieje ryzyko, że silne osobniki szybko zdominują populację, prowadząc do przedwczesnej zbieżności",
+                        "Metoda ta gwarantuje, że najsłabszy osobnik nigdy nie zostanie wybrany"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "explanation": "Koło ruletki dzieli prawdopodobieństwo wyboru proporcjonalnie do przystosowania, co wymaga Fp >= 0. Silne osobniki mogą je zdominować (ryzyko przedwczesnej zbieżności). Nawet najsłabszy osobnik ma jednak niezerową szansę wylosowania, więc nie jest bezwzględnie zdyskwalifikowany."
+                },
+                {
+                    "id": "sd-w2-008",
+                    "type": "multiple",
+                    "question": "Czym jest 'schemat' (schema) w teorii algorytmów genetycznych i jak definiuje się jego rząd o(H) oraz rozpiętość (długość definiującą) d(H)?",
+                    "options": [
+                        "Schemat to wzorzec określający podzbiór ciągów binarnych o podobnych wartościach na ustalonych pozycjach (z użyciem znaku maski *)",
+                        "Rząd schematu o(H) to liczba ściśle określonych (ustalonych) pozycji w schemacie",
+                        "Rozpiętość schematu d(H) to odległość między skrajnymi ustalonymi pozycjami w schemacie",
+                        "Rząd schematu o(H) określa długość ciągu binarnego chromosomu"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "explanation": "Schemat (np. *10*1) reprezentuje podobieństwo ciągów. Rząd o(H) to liczba bitów ustalonych (dla *10*1 wynosi 3). Rozpiętość d(H) to odległość skrajnych pozycji (dla *10*1 pozycje 2 i 5, rozpiętość 5 - 2 = 3)."
+                },
+                {
+                    "id": "sd-w2-009",
+                    "type": "single",
+                    "question": "Jak brzmi hipoteza bloków budujących (building block hypothesis) Goldberga?",
+                    "options": [
+                        "Krótkie (o małej rozpiętości), niskiego rzędu i dobrze przystosowane schematy (bloki budujące) rozprzestrzeniają się w populacji wykładniczo i łączą się, tworząc rozwiązania optymalne",
+                        "Bloki budujące to macierze dynamiczne A, B, C, D, które należy połączyć szeregowo",
+                        "Każdy chromosom musi składać się z równej liczby bloków o wartościach wyłącznie dodatnich",
+                        "Najdłuższe schematy o wysokim rzędzie wykazują największą odporność na niszczące działanie krzyżowania"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Hipoteza bloków budujących mówi, że krótkie, niskiego rzędu, dobrze przystosowane schematy (cegiełki) przeżywają krzyżowanie i łącząc się dają optymalne rozwiązania."
+                },
+                {
+                    "id": "sd-w2-010",
+                    "type": "single",
+                    "question": "Ile wynosi całkowita liczba schematów dla chromosomu o długości ciągów m przy alfabecie złożonym z k symboli?",
+                    "options": [
+                        "(k + 1)^m",
+                        "k^m",
+                        "2^m",
+                        "m^k"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Zgodnie z formułą Hollanda, liczba możliwych schematów dla ciągu o długości m i alfabecie o rozmiarze k wynosi (k+1)^m (ponieważ na każdej pozycji może być jeden z k symboli lub symbol wieloznaczny *)."
+                },
+                {
+                    "id": "sd-w2-011",
+                    "type": "single",
+                    "question": "Krzyżowanie arytmetyczne stosowane w kodowaniu zmiennopozycyjnym polega na:",
+                    "options": [
+                        "Wyznaczeniu potomków jako kombinacji liniowej dwóch wektorów rodzicielskich: x' = a * x1 + (1-a) * x2",
+                        "Zamianie losowo wybranego bitu w ciągu binarnego chromosomu na przeciwny",
+                        "Losowaniu nowej wartości rzeczywistej z rozkładu normalnego wokół wartości rodzica",
+                        "Wyborze jednego punktu podziału w chromosomie i zamianie ogonów rodziców"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Krzyżowanie arytmetyczne to kombinacja liniowa wektorów rzeczywistych. Jeśli a jest stałe, jest to krzyżowanie jednorodne, jeśli zmienne - niejednorodne."
+                },
+                {
+                    "id": "sd-w2-012",
+                    "type": "single",
+                    "question": "Które z metod selekcji w algorytmie genetycznym promują osobników najsilniejszych na podstawie ich względnego położenia w uszeregowanej populacji, zamiast bezpośrednio używać bezwzględnych wartości funkcji przystosowania?",
+                    "options": [
+                        "Selekcja rankingowa",
+                        "Selekcja koła ruletki",
+                        "Selekcja stochastyczna z resztą",
+                        "Selekcja naturalna bez ograniczeń"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Selekcja rankingowa szereguje (sortuje) osobników według przystosowania, a szansa wyboru zależy od ich pozycji (rangi) w rankingu, co zapobiega dominacji super-osobnika o gigantycznej bezwzględnej wartości funkcji przystosowania."
+                },
+                {
+                    "id": "sd-w2-013",
+                    "type": "multiple",
+                    "question": "Do metod ekstrakcji końcowego wyniku działania algorytmu genetycznego zalicza się:",
+                    "options": [
+                        "Podejście 'best-so-far' (zapisywanie najlepszego osobnika ze wszystkich pokoleń)",
+                        "Wybór najlepszego osobnika wyłącznie z ostatniego pokolenia",
+                        "Średnia arytmetyczna ze wszystkich osobników w populacji początkowej",
+                        "Najgorszy osobnik z całej ewolucji w celu weryfikacji stabilności"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Wynik działania AG wyznacza się zazwyczaj dwiema metodami: zapamiętując najlepszego osobnika napotkanego podczas całej ewolucji ('best-so-far') lub biorąc najlepszego osobnika z ostatniego pokolenia."
+                }
+            ]
+        },
+        {
             "id": "sd-mod-w3",
             "name": "Wykład 3: Przestrzeń stanu i stabilność",
             "questions": [

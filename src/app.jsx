@@ -30,8 +30,8 @@ function App() {
         }
         if (s.id === "systemy-dynamiczne") {
           const defaultSd = DEFAULT_SUBJECTS.find(ds => ds.id === "systemy-dynamiczne");
-          if (defaultSd && (!s.modules || s.modules.length < 5 || !s.modules.some(m => m.id === "sd-mod-w3"))) {
-            console.log("Migrated 'systemy-dynamiczne' module database.");
+          if (defaultSd && (!s.modules || s.modules.length < 7 || !s.modules.some(m => m.id === "sd-mod-w1"))) {
+            console.log("Migrated 'systemy-dynamiczne' module database to include Wykład 1 and 2.");
             return defaultSd;
           }
         }
