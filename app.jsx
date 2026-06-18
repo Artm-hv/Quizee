@@ -1112,7 +1112,7 @@ function App() {
     const saved = loadFromStorage(STORAGE_KEY_SUBJECTS, null);
     let data = saved || DEFAULT_SUBJECTS;
     
-    // Auto-migration: update 'jezyki-skryptowe' and 'sieci-komputerowe' if they have been updated in DEFAULT_SUBJECTS
+    // Auto-migration: update 'jezyki-skryptowe', 'sieci-komputerowe' and 'systemy-dynamiczne' if they have been updated in DEFAULT_SUBJECTS
     if (saved) {
       data = data.map(s => {
         if (s.id === "jezyki-skryptowe") {
@@ -1128,6 +1128,13 @@ function App() {
           if (defaultSk && (!s.modules || s.modules.length < 5)) {
             console.log("Migrated 'sieci-komputerowe' module database to 16 modules.");
             return defaultSk;
+          }
+        }
+        if (s.id === "systemy-dynamiczne") {
+          const defaultSd = DEFAULT_SUBJECTS.find(ds => ds.id === "systemy-dynamiczne");
+          if (defaultSd && (!s.modules || s.modules.length !== 1 || s.modules[0].id !== "sd-mod-lab")) {
+            console.log("Migrated 'systemy-dynamiczne' module database.");
+            return defaultSd;
           }
         }
         return s;
