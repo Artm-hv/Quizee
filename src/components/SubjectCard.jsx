@@ -14,7 +14,7 @@ function SubjectCard({ subject, progressEnabled, progressData, onClick, animDela
       {progressEnabled && total > 0 && (
         <ProgressBar current={correct} total={total} />
       )}
-      <div className="subject-arrow">Rozpocznij naukę <ArrowIcon/></div>
+      <div className="subject-arrow"><ArrowIcon/></div>
     </div>
   );
 }
