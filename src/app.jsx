@@ -30,7 +30,7 @@ function App() {
         }
         if (s.id === "systemy-dynamiczne") {
           const defaultSd = DEFAULT_SUBJECTS.find(ds => ds.id === "systemy-dynamiczne");
-          if (defaultSd && (!s.modules || s.modules.length !== 1 || s.modules[0].id !== "sd-mod-lab")) {
+          if (defaultSd && (!s.modules || s.modules.length < 5 || !s.modules.some(m => m.id === "sd-mod-w3"))) {
             console.log("Migrated 'systemy-dynamiczne' module database.");
             return defaultSd;
           }
