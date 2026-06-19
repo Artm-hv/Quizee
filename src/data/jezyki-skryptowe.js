@@ -2237,6 +2237,413 @@ const jezykiSkryptoweData = {
                     "explanation": "Program zgłosi wyjątekNameError, ponieważ Python nie rozpoznaje nazwyprin. Python nie rozpoznaje, że najprawdopodobniej próbujesz użyć słowaprint, a nieprin."
                 }
             ]
+        },
+        {
+            "id": "js-pe1-m3",
+            "name": "PE1: Moduł 3 — Wartości logiczne, pętle, listy",
+            "questions": [
+                {
+                    "id": "js-pe1-m3-001",
+                    "type": "single",
+                    "question": "Operator, który może sprawdzić, czy dwie wartości są sobie równe, jest zapisywany jako:",
+                    "options": [
+                        "==",
+                        "=",
+                        "===",
+                        "!="
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-002",
+                    "type": "single",
+                    "question": "Wartość ostatecznie przypisana do x jest równa:",
+                    "options": [
+                        "Prawda",
+                        "Fałsz",
+                        "0",
+                        "1"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-003",
+                    "type": "single",
+                    "question": "Ile gwiazdek (*) zostanie wyświetlonych na konsoli po uruchomieniu następującego kodu?",
+                    "options": [
+                        "dwa",
+                        "jeden",
+                        "zero",
+                        "trzy"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-004",
+                    "type": "single",
+                    "question": "Ile gwiazdek (*) zostanie wyświetlonych w konsoli po uruchomieniu tego kodu?",
+                    "options": [
+                        "jeden",
+                        "dwa",
+                        "trzy",
+                        "zero"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-005",
+                    "type": "single",
+                    "question": "Ile kratek (#) zostanie wyświetlonych w konsoli po uruchomieniu następującego kodu?",
+                    "options": [
+                        "dwa",
+                        "jeden",
+                        "trzy",
+                        "zero"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-006",
+                    "type": "single",
+                    "question": "Jaka wartość zostanie przypisana do zmiennejx?",
+                    "options": [
+                        "Prawda",
+                        "Fałsz",
+                        "1",
+                        "Tak"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-007",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?",
+                    "options": [
+                        "2",
+                        "1",
+                        "3",
+                        "0"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-008",
+                    "type": "single",
+                    "question": "Drugie przypisanie:",
+                    "options": [
+                        "odwraca listę",
+                        "skraca listę",
+                        "rozszerza listę",
+                        "nie zmienia listy"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-009",
+                    "type": "single",
+                    "question": "Po uruchomieniu poniższego fragmentu kodu, suma wszystkich elementówvalsbędzie wynosić:",
+                    "options": [
+                        "4",
+                        "3",
+                        "2",
+                        "5"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-010",
+                    "type": "multiple",
+                    "question": "Spójrz na fragment i wybierz stwierdzenie które sąprawdziwe: (Wybierzdwieodpowiedzi)",
+                    "options": [
+                        "numsivalssą tej samej długości1 of 4",
+                        "numsjest dłuższe niżvals2 of 4",
+                        "numsjest replikowane i przypisane dovals3 of 4",
+                        "numsivalsodnoszą się do tej samej listy4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        3
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-011",
+                    "type": "multiple",
+                    "question": "Wybierz które stwierdzenia sąprawdziwe(Wybierzdwieodpowiedzi)",
+                    "options": [
+                        "numsjest dłuższe niżvals1 of 4",
+                        "numsivalssą tej samej długości2 of 4",
+                        "valsjest dłuższe niżnums3 of 4",
+                        "numsivalsto dwie różne listy4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        3
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-012",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania poniższego kodu?",
+                    "options": [
+                        "[1, 1, 1, 1, 2, 3]",
+                        "[1, 2, 3, 3, 2, 1]",
+                        "[1, 2, 3, 1, 2, 3]",
+                        "[3, 2, 1, 1, 2, 3]"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-013",
+                    "type": "single",
+                    "question": "Z ilu elementów składa się listamy_list?",
+                    "options": [
+                        "trzy",
+                        "dwa",
+                        "cztery",
+                        "jeden"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-014",
+                    "type": "single",
+                    "question": "Jaki będzie wynik działania poniższego kodu?",
+                    "options": [
+                        "ten fragment kodu spowoduje błąd wykonania (Runtime error)",
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                }
+            ]
+        },
+        {
+            "id": "js-pe1-m4",
+            "name": "PE1: Moduł 4 — Funkcje, krotki, słowniki, wyjątki",
+            "questions": [
+                {
+                    "id": "js-pe1-m4-001",
+                    "type": "single",
+                    "question": "Który z poniższych wierszy prawidłowo rozpoczyna definicję funkcji bezparametrowej?",
+                    "options": [
+                        "def fun ():",
+                        "def fun:",
+                        "function fun():",
+                        "fun function():"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Poprawny sposób deklaracji funkcji w Pythonie polega na użyciu zastrzeżonego słowa kluczowegodef, po którym następujenazwa funkcji,nawiasy ()oraz dwukropek :. Ponieważ nie ma parametrów, nawiasy są puste."
+                },
+                {
+                    "id": "js-pe1-m4-002",
+                    "type": "multiple",
+                    "question": "Funkcja zdefiniowana w następujący sposób: (Wybierzdwieodpowiedzi)",
+                    "options": [
+                        "może zostać wywołana bez żadnych argumentów1 of 4",
+                        "może zostać wywołana z dokładnie jednym argumentem2 of 4",
+                        "musi zostać wywołana z dokładnie jednym argumentem3 of 4",
+                        "musi zostać wywołana bez żadnych argumentów4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Funkcja ma z góry określoną wartość parametrux, dlatego może być wywoływana zarówno z jego podaniem, jak i bez niego. Jednak więcej niż jeden argument wygeneruje błąd czasu wykonania (runtime error)"
+                },
+                {
+                    "id": "js-pe1-m4-003",
+                    "type": "single",
+                    "question": "Funkcja wbudowana to taka funkcja, która:",
+                    "options": [
+                        "jest dostarczana wraz z Pythonem i stanowi jego integralną część",
+                        "została umieszczona w kodzie przez innego programistę",
+                        "musi zostać zaimportowana przed użyciem",
+                        "jest ukryta przed programistami"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Funkcje wbudowane są zintegrowane z Pythonem. Po zainstalowaniu Pythona są dostępne i mogą być używane."
+                },
+                {
+                    "id": "js-pe1-m4-004",
+                    "type": "single",
+                    "question": "Przynależność krotek do typów danych sekwencyjnych oznacza, że:",
+                    "options": [
+                        "mogą być indeksowane i wycinane w sposób podobny do list",
+                        "mogą zostać przedłużone za pomocą metody.append()",
+                        "można je modyfikować za pomocą instrukcjidel",
+                        "w rzeczywistości są to listy"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Krotki sąobiektami niemodyfikowalnymi, dlatego mogą być indeksowane i dzielone (slicing) w sposób analogiczny do list. Jednak w trakcie działania nie można ich rozszerzać ani modyfikować. TO NIE są listy."
+                },
+                {
+                    "id": "js-pe1-m4-005",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?",
+                    "options": [
+                        "6",
+                        "3",
+                        "1",
+                        "kod jest błędny"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:Funkcjafjest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennejx.warunekif porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcjifz argumentem 2.warunekif porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcjifz argumentem całkowitym 1.warunekif dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany.funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcjifz argumentem liczby całkowitej 0,warunekifporównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
+                },
+                {
+                    "id": "js-pe1-m4-006",
+                    "type": "single",
+                    "question": "Jaki kod należy wstawić zamiast komentarza, aby uzyskać oczekiwane dane wyjściowe?",
+                    "options": [
+                        "print(k[0])",
+                        "print(k['0'])",
+                        "print(k)",
+                        "print(k[\"0\"])"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:zostaje utworzony pustysłownik,a następnie lista o nazwiemy_listz elementami ['a', 'b', 'c', 'd'],pętlaforw zakresie długości listy pomniejszonej o jeden (od 0 do 3) jest inicjowana, a wartości przez które iteruje zmiennai, to a, b, c, ddla każdej iteracji, para klucz-wartość zostanie wstawiona do słownika. Kluczem jest ciąg znaków, a wartość jest jednoelementowa krotka,Powstaje w ten sposób następujący słownik: {'a': ('a',), 'b': ('b',), 'c': ('c',)}inicjowana jest kolejna pętlafor, a zmiennaiiteruje po posortowanych kluczach słownika,zmiennakprzechowuje wartość dla każdego klucza,ponieważ jest to krotka, konieczne jest wybranie opcji print(k[0]) w celu wyświetlenia pierwszego i jedynego elementu."
+                },
+                {
+                    "id": "js-pe1-m4-007",
+                    "type": "single",
+                    "question": "Następujący fragment:",
+                    "options": [
+                        "jest błędny",
+                        "wyświetli w oknie konsoli wynik4",
+                        "wyświetli w oknie konsoli wynik2",
+                        "zwróciNone"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Fragment kodu jest błędny, ponieważ funkcja jest wywoływana z jednym argumentem, podczas gdy potrzebne są dwa, ponieważ oba parametry nie mają wartości domyślnych."
+                },
+                {
+                    "id": "js-pe1-m4-008",
+                    "type": "single",
+                    "question": "Która z poniższych linii poprawnie inicjuje funkcję z dwoma parametrami, oba z domyślnymi wartościami równymi zero?",
+                    "options": [
+                        "def fun(a=0, b=0):",
+                        "def fun(a=b=0):",
+                        "fun fun(a=0, b):",
+                        "fun fun(a, b=0):"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Poprawny sposób definiowania parametrów z wartościami domyślnymi polega na wskazaniu nazwy zmiennej, znaku przypisania (=) oraz wartości domyślnej, np. a=0. Jeśli istnieje więcej wartości domyślnych, oddziel je przecinkami."
+                },
+                {
+                    "id": "js-pe1-m4-009",
+                    "type": "multiple",
+                    "question": "Które z poniższych stwierdzeń jest prawdziwe? (Wybierz dwie odpowiedzi)",
+                    "options": [
+                        "WartośćNonemoże być przypisywana do zmiennych.1 of 4",
+                        "WartośćNonemoże być porównywana ze zmiennymi.2 of 4",
+                        "WartośćNonenie może być używana poza funkcjami.3 of 4",
+                        "WartośćNonemoże być używana jako argument operatorów arytmetycznych.4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Wartość None może zostać przypisana do dowolnej zmiennej, zarówno wewnątrz, jak i na zewnątrz funkcji. Może być również używana w wyrażeniach warunkowych i pętlach. Nie można jej jednak używać w operacjach arytmetycznych."
+                },
+                {
+                    "id": "js-pe1-m4-010",
+                    "type": "single",
+                    "question": "Zakładając, żemy_tuplejest poprawnie utworzoną krotką, fakt, że krotki są niemutowalne oznacza, że poniższa instrukcja:",
+                    "options": [
+                        "jest niedozwolona",
+                        "może zostać wykonana wtedy i tylko wtedy gdy krotka przechowuje przynajmniej dwa elementy",
+                        "jest w pełni poprawna",
+                        "może być niedozwolona, jeśli krotka zawiera zawiera łańcuchy znaków"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Operacja jest nielegalna, ponieważ obiekt 'tuple' nie obsługuje przypisania wartości do elementu."
+                },
+                {
+                    "id": "js-pe1-m4-011",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania poniższego kodu?",
+                    "options": [
+                        "two",
+                        "three",
+                        "one",
+                        "('one', 'two', 'three')"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:Zdefiniowany zostaje następującysłownik: dictionary = {'jeden': 'dwa', 'trzy': 'jeden', 'dwa': 'trzy'}zmiennavprzechowuje wartość klucza „jeden”, czyli „dwa”,pętlaforjest inicjowana w zakresie długości słownika. Iteracja zostanie wykonana 3 razy,w pierwszej iteracji zmiennavbędzie przechowywać wartość klucza „dwa”, czyli „trzy”,w drugiej iteracji zmiennavbędzie przechowywać wartość klucza „three”, czyli „jeden”,w trzeciej iteracji zmiennavbędzie przechowywać wartość klucza „jeden”, czyli „dwa”,Pętla „for” zostaje zakończona, a funkcja „print” wyświetla na konsoli wartość „dwa”."
+                },
+                {
+                    "id": "js-pe1-m4-012",
+                    "type": "multiple",
+                    "question": "Wybierzprawdziwestwierdzenia dotyczące blokutry-except w odniesieniu do poniższego przykładu (Zaznaczdwieodpowiedzi).",
+                    "options": [
+                        "Jeśli podejrzewasz, że fragment kodu może spowodować wystąpienie wyjątku, powinieneś umieścić go w blokutry.1 of 4",
+                        "Kod, który znajduje się po instrukcjiexcept, zostanie wykonany, jeśli kod w blokutrynapotka błąd.2 of 4",
+                        "Jeśli w kodzie znajdującym się w blokutrywystąpi błąd składniowy, gałąźexceptnie będzie w staniego obsłużyć, a zamiast tego zostanie zgłoszony wyjątekSyntaxError.3 of 4",
+                        "Kod który następuje po instrukcjitryzostanie wykonany, jeśli kod w blokuexceptnapotka błąd.4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Jeśli kod umieszczony wewnątrz blokutryzgłosi wyjątek, następujące wiersze kodu w obrębie bloku nie zostaną wykonane, a wyjątki zdefiniowane poniżej spróbują obsłużyć wygenerowany błąd."
+                }
+            ]
         }
     ]
 };
