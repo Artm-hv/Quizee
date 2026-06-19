@@ -2132,7 +2132,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m1-004",
                     "type": "multiple",
-                    "question": "Które stwierdzenia na temat kompilacji sąprawdziwe? (Wybierzdwieodpowiedzi)",
+                    "question": "Które stwierdzenia na temat kompilacji są **prawdziwe**? (Wybierz **dwie** odpowiedzi)",
                     "options": [
                         "Kod jest konwertowany bezpośrednio na kod maszynowy wykonywalny przez procesor1 of 4",
                         "Zwykle jest szybsza niż interpretacja2 of 4",
@@ -2148,7 +2148,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m1-005",
                     "type": "single",
-                    "question": "Jaka jest najlepsza definicjaskryptu?",
+                    "question": "Jaka jest najlepsza definicja **skryptu?**",
                     "options": [
                         "Jest to plik tekstowy zawierający ciągi zer i jedynek",
                         "Jest to komunikat o błędzie generowany przez kompilator",
@@ -2163,7 +2163,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m1-006",
                     "type": "multiple",
-                    "question": "Które stwierdzenia sąprawdziwe? (Wybierzdwieodpowiedzi)",
+                    "question": "Które stwierdzenia są **prawdziwe**? (Wybierz **dwie** odpowiedzi)",
                     "options": [
                         "Python 3 jest wstecznie kompatybilny z Pythonem 21 of 4",
                         "Python to dobry wybór do tworzenia i wykonywania testów dla aplikacji2 of 4",
@@ -2179,7 +2179,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m1-007",
                     "type": "single",
-                    "question": "Czym jestCPython?",
+                    "question": "Czym jest **CPython**?",
                     "options": [
                         "To domyślna, referencyjna implementacja Pythona, napisana w języku C",
                         "To język programowania będący nadzbiorem Pythona, zaprojektowany tak, aby osiągać wydajność zbliżoną do języka C przy użyciu kodu pisanego w Pythonie",
@@ -2209,7 +2209,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m1-009",
                     "type": "single",
-                    "question": "Jakie jest oczekiwane zachowanie następującego programu?print(\"Hello!\")",
+                    "question": "Jakie jest oczekiwane zachowanie następującego programu?\n\n```python\nprint(\"Hello!\")\n```",
                     "options": [
                         "Program wyświetli„Hello!”",
                         "Program wyświetli komunikat o błędzie",
@@ -2224,7 +2224,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m1-010",
                     "type": "single",
-                    "question": "Jakie jest oczekiwane zachowanie następującego programu?prin(\"Goodbye\")",
+                    "question": "Jakie jest oczekiwane zachowanie następującego programu?\n\n```python\nprin(\"Goodbye\")\n```",
                     "options": [
                         "Program wyświetli na ekranie(„Goodbye”)",
                         "Program wyświetli„Goodbye”na ekranie",
@@ -2239,18 +2239,326 @@ const jezykiSkryptoweData = {
             ]
         },
         {
+            "id": "js-pe1-m2",
+            "name": "PE1: Moduł 2 — Typy danych, zmienne, operatory, wejście-wyjście",
+            "questions": [
+                {
+                    "id": "js-pe1-m2-001",
+                    "type": "single",
+                    "question": "**** Znak  `\\n`  powoduje, że funkcja  `print()` :",
+                    "options": [
+                        "przełamie linię wyjściową",
+                        "wyświetli dokładnie dwa znaki:\\in",
+                        "zduplikuje znak obok niego",
+                        "zatrzyma jego wykonywanie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Dwuznak, zwanyznakiem nowej linii, powoduje, że bieżący wiersz kończy się w punkcie przez niego wskazanymi tworzy nowy wiersz, który zaczyna się zaraz za nim."
+                },
+                {
+                    "id": "js-pe1-m2-002",
+                    "type": "single",
+                    "question": "****Znaczenie**parametru kluczowego** jest określone przez:",
+                    "options": [
+                        "nazwę argumentu określoną razem z jego wartością",
+                        "jego pozycję w liście argumentów",
+                        "związek tego argumentu z istniejącymi zmiennymi",
+                        "wartość przypisaną do tego argumentu"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Parametry słowa kluczowego (zwane takżeparametrami nazwanymi) to parametry, których wartości są określane przez słowo kluczowe, po którym następuje znak równości (=)i wartość domyślna przypisana do tego słowa kluczowego. Przykład argumentu słowa kluczowego:def my_function(x=1):."
+                },
+                {
+                    "id": "js-pe1-m2-003",
+                    "type": "single",
+                    "question": "**** Wartość **dwadzieścia przecinek dwanaście razy dziesięć podniesioną do potęgi ósmej** należy zapisać jako:",
+                    "options": [
+                        "20.12E8",
+                        "20.12*10^8",
+                        "20.12E8.0",
+                        "20E12.8"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Pamiętając, że Python wybiera najbardziej efektywny format do przedstawiania liczb, a literaEoznacza\"razy dziesięć do potęgi\"w notacji naukowej, prawidłowy sposób zapisywania liczby20.12 × 108to20.12E8."
+                },
+                {
+                    "id": "js-pe1-m2-004",
+                    "type": "single",
+                    "question": "**** Przedrostek  `0o`  oznacza, że liczba po nim jest zapisana w systemie:",
+                    "options": [
+                        "ósemkowym",
+                        "binarnym",
+                        "dziesiętnym",
+                        "szesnastkowym"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Jeśli liczba całkowita jest poprzedzona0olub0O, będzie ona traktowana jako wartość ósemkowa. Na przykład:0o246to liczba ósemkowa, której wartość dziesiętna to166.Jeśli liczba całkowita jest poprzedzona0xlub0X, będzie ona traktowana jako wartość szesnastkowa. Na przykład:0x246to liczba szesnastkowa, której wartość dziesiętna to582.Na koniec, jeśli liczba całkowita jest poprzedzona przez0blub0B, będzie ona traktowana jako wartość binarna. Na przykład:0b1111to liczba binarna, której wartość dziesiętna to15."
+                },
+                {
+                    "id": "js-pe1-m2-005",
+                    "type": "single",
+                    "question": "**** Operator  `**` :",
+                    "options": [
+                        "wykonuje potęgowanie",
+                        "nie istnieje",
+                        "wykonuje mnożenie liczby zmiennoprzecinkowej",
+                        "wykonuje zduplikowane mnożenie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Operator**wykonuje operację potęgowania w Pythonie. Jest on również nazywanyoperatorem potęgowania."
+                },
+                {
+                    "id": "js-pe1-m2-006",
+                    "type": "single",
+                    "question": "Wynik następującego podziału:\n\n```python\n1 / 1\n```",
+                    "options": [
+                        "jest równy1.0",
+                        "jest równy1",
+                        "nie może zostać obliczony",
+                        "nie da się go przewidzieć"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Operator/jest jednym z dwóch rodzajów operatora dzielenia w Pythonie , który dzieli lewy operand przez prawy operand orazzwraca wartość zmiennoprzecinkową (float).Operator//, zwany operatoremdzielenia całkowitoliczbowego (floor division), wykonuje podobną operację, ale wyniki zaokrągla w dół i zwraca liczbę całkowitą."
+                },
+                {
+                    "id": "js-pe1-m2-007",
+                    "type": "multiple",
+                    "question": "Które z następujących stwierdzeń są **prawdziwe**? (Wybierz **dwie** odpowiedzi)",
+                    "options": [
+                        "Prawym argumentem operatora%nie może być zero.1 of 4",
+                        "Operator**używa prawostronnego łączenia.2 of 4",
+                        "Wynikiem działania operatora/jest zawsze wartość całkowita.3 of 4",
+                        "Dodanie poprzedza mnożenie.4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Operator%(modulo) zwraca resztę z dzielenia, a ponieważ nie można dzielić przez zero, prawy operand musi być liczbą różną od zera. W przeciwnym razie zostanie zgłoszony ZeroDivisionException.Operator**wykorzystuje prawostronne wiązanie, co oznacza, że wyrażenie2**2**3jest obliczane od prawej do lewej:2**3 = 8i2**8 = 256."
+                },
+                {
+                    "id": "js-pe1-m2-008",
+                    "type": "single",
+                    "question": "Wiązanie lewostronne określa, że wynik następującego wyrażenia:\n\n```python\n1 // 2 * 3\n```",
+                    "options": [
+                        "0",
+                        "4.5",
+                        "0.0",
+                        "0.16666666666666666"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Lewostronne wiązanie oznacza, że wyrażenie jest obliczane od lewej do prawej:1 // 2 = 0i0 * 3 = 0."
+                },
+                {
+                    "id": "js-pe1-m2-009",
+                    "type": "multiple",
+                    "question": "Które z poniższych nazw zmiennych są **niedozwolone**? (Wybierz **dwie** odpowiedzi)",
+                    "options": [
+                        "True1 of 4",
+                        "oraz2 of 4",
+                        "true3 of 4",
+                        "PRAWDA4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Trueorazandto słowa kluczowe w Pythonie (słowa zastrzeżone) i nie mogą być używane jako nazwy zmiennych. Ponieważ Python rozróżnia wielkość liter, nazwytrueiTRUEsą całkowicie dozwolone, ale nie są one najlepszym wyborem."
+                },
+                {
+                    "id": "js-pe1-m2-010",
+                    "type": "single",
+                    "question": "**** Funkcja  `print()`  może wyświetlać następujące wartości:",
+                    "options": [
+                        "dowolna liczba argumentów (włącznie z zerem)",
+                        "dowolna liczba argumentów (z wyjątkiem zera)",
+                        "tylko jeden argument",
+                        "nie więcej niż pięć argumentów"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Funkcjaprint()może nie przyjmować żadnych argumentów (np.print()), trzy argumenty (np.print(„one”, „two”, „three”) lub trzy tysiące trzysta trzydzieści trzy... (choć tak naprawdę tego nie sprawdziliśmy!)."
+                },
+                {
+                    "id": "js-pe1-m2-011",
+                    "type": "single",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\nx = 1\ny = 2\nz = x\nx = y\ny = z\nprint(x, y)\n \n```",
+                    "options": [
+                        "2 1",
+                        "1 2",
+                        "1 1",
+                        "2 2"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy następujący przykład:Wartość1zostaje przypisana do zmiennejx, a zmiennaxzostaje zainicjowana (czylix = 1)wartość2zostaje przypisana do zmiennejy, a zmiennayzostaje zainicjowana (więcy = 2)wartość przypisana do zmiennejxjest przypisana do zmiennejz, a zmiennazzostaje zainicjowana (więcz = 1)zmiennaxotrzymuje wartość, która jest przypisana do zmiennej y (a więcx = 2)zmiennayotrzymuje wartość, która jest przypisana do zmiennej z (a więcy = 1)wartości przypisane do zmiennychxiysą teraz wyświetlane, co daje następujący wynik:2 1(uwaga: funkcjaprint()oddziela wyświetlane wartości spacją)"
+                },
+                {
+                    "id": "js-pe1-m2-012",
+                    "type": "single",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\nx = input()\ny = input()\nprint(x + y)\n \n```",
+                    "options": [
+                        "16",
+                        "2",
+                        "4",
+                        "6"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy następujący przykład:funkcjainput()odczytuje argumenty wprowadzone przez użytkownika (odpowiednio2i4) ikonwertuje je na ciągi,do zmiennychxiyprzypisywane są ciągi znaków wprowadzone przez użytkownika,funkcjaprint()wyświetla na ekranie wynik operacjikonkatenacji(proces łączenia ciągów):„2” + „4”; operator+powoduje dodanie ciągu znaków do innego ciągu i daje wynik24."
+                },
+                {
+                    "id": "js-pe1-m2-013",
+                    "type": "single",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\nx = int(input())\ny = int(input())\n \nx = x // y\ny = y // x\n \nprint(y)\n \n```",
+                    "options": [
+                        "Kod spowoduje błąd wykonania (Runtime error)",
+                        "2.0",
+                        "4.0",
+                        "8.0"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy następujący przykład:zmiennejxprzypisywana jest wartość całkowita2(2jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint()zmiennejyjest przypisywana wartość całkowita4(4jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())wykonywana jest operacja, w wyniku której zmiennejxjest przypisywana wartość0(2 // 4=0)operacja jest wykonywana, ale został zgłoszony ZeroDivisionException, ponieważ operator//nie może zaakceptować0jako prawego operandu. Program zostanie zakończony."
+                },
+                {
+                    "id": "js-pe1-m2-014",
+                    "type": "single",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\nx = int(input())\ny = int(input())\n \nx = x / y\ny = y / x\n \nprint(y)\n \n```",
+                    "options": [
+                        "8.0",
+                        "4.0",
+                        "2.0",
+                        "Kod spowoduje błąd wykonania (Runtime error)"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy następujący przykład:zmiennejxprzypisywana jest wartość całkowita2(2jest wprowadzane przez użytkownika, konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())zmiennejyjest przypisywana wartość całkowita4(4jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())wykonywana jest operacja, w wyniku której zmiennejxjest przypisywana wartość0.5(2 / 4 = 0.5)wykonywana jest operacja, w wyniku której zmiennejyprzypisywana jest wartość8.0(4 / 0.5 = 8.0)wartość przypisana do zmiennejy(8.0) jest wyświetlana na ekranie."
+                },
+                {
+                    "id": "js-pe1-m2-015",
+                    "type": "single",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające kolejno 11 i 4?\n\n```python\nx = int(input())\ny = int(input())\n \nx = x % y\nx = x % y\ny = y % x\n \nprint(y)\n \n```",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy następujący przykład:zmiennejxprzypisywana jest wartość całkowita11(11jest wprowadzane przez użytkownika, konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())zmiennejyjest przypisywana wartość całkowita4(4jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())wykonywana jest operacja, w wyniku której zmiennejxprzypisywana jest wartość3(3% 4 = 3)wykonywana jest operacja, w wyniku której zmiennejxprzypisywana jest wartość0(3% 11 = 0)wykonywana jest operacja, w wyniku której zmiennejyprzypisywana jest wartość1(4% 3 = 1)wartość przypisana do zmiennejy(1) jest wyświetlana na ekranie."
+                },
+                {
+                    "id": "js-pe1-m2-016",
+                    "type": "single",
+                    "question": "Jaki będzie wynik wykonania poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające kolejno 3 i 6?\n\n```python\nx = input()\ny = int(input())\n \nprint(x * y)\n \n```",
+                    "options": [
+                        "333333",
+                        "18",
+                        "666",
+                        "36"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy następujący przykład:zmiennaxotrzymuje wartość„3”(3jest wprowadzane przez użytkownika i konwertowane na ciąg przez funkcjęinput())zmiennayotrzymuje wartość6(6jest wprowadzane przez użytkownika, konwertowane na ciąg przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())funkcjaprint()zwraca wynik następującego mnożenia ciągu:„3” * 6, czyli333333"
+                },
+                {
+                    "id": "js-pe1-m2-017",
+                    "type": "single",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\nz = y = x = 1\nprint(x, y, z, sep='*')\n \n```",
+                    "options": [
+                        "1*1*1",
+                        "1 1 1",
+                        "x*y*z",
+                        "x y z"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy przykład:zmiennez,yixsą zadeklarowane i zainicjowane, a wartość1jest przypisywana do każdego z nich za pomocą mechanizmu przypisywania tej samej wartości do wielu zmiennych,wartości przypisane do trzech zmiennych są wyświetlane na ekranie i oddzielone symbolem*za pomocą słowa kluczowegosep."
+                },
+                {
+                    "id": "js-pe1-m2-018",
+                    "type": "single",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\ny = 2 + 3 * 5.\nprint(Y)\n \n```",
+                    "options": [
+                        "fragment kodu spowoduje błąd wykonania",
+                        "25.",
+                        "17",
+                        "17,0"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Python rozróżniana wielkość liter, dlategoyiYto dwie różne zmienne. Ponieważ program próbuje wyświetlić na ekranie wartość powiązaną ze zmienną, która nie istnieje w lokalnej przestrzeni nazw, Python nie rozpoznaje jej i zgłaszany jest wyjątekNameError."
+                },
+                {
+                    "id": "js-pe1-m2-019",
+                    "type": "single",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\nx = 1 / 2 + 3 // 3 + 4 ** 2\nprint(x)\n \n```",
+                    "options": [
+                        "17,5",
+                        "17",
+                        "8",
+                        "8,5"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Tutaj obowiązuje zasada pierwszeństwa operatorów (kolejność wykonywania operacji). Zobaczmy, co się tutaj wydarzy:najpierw zostaje obliczone wyrażenie4 ** 2, dając wynik16.następnie zostaje obliczone wyrażenie1 / 2, dając wynik0.5.jako trzecie zostaje obliczone wyrażenie3 // 3, dając wynik1.na koniec trzy wartości są dodawane (0.5 + 1 + 16), a ich wynik (17.5) jest przypisywana do zmiennejxi wyświetlany na ekranie."
+                },
+                {
+                    "id": "js-pe1-m2-020",
+                    "type": "single",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\nx = int(input())\ny = int(input())\n \nprint(x + y)\n \n```",
+                    "options": [
+                        "6",
+                        "16",
+                        "2",
+                        "4"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Wartości2i4są wprowadzane przez użytkownika, konwertowane z ciągów na liczby całkowite i przypisywane odpowiednio do zmiennychxiy. Funkcjaprint()wyświetla na ekranie wynik dodawania liczb całkowitych (2 + 4)."
+                }
+            ]
+        },
+        {
             "id": "js-pe1-m3",
             "name": "PE1: Moduł 3 — Wartości logiczne, pętle, listy",
             "questions": [
                 {
                     "id": "js-pe1-m3-001",
                     "type": "single",
-                    "question": "Operator, który może sprawdzić, czy dwie wartości są sobie równe, jest zapisywany jako:",
+                    "question": "Który z poniższych wierszy prawidłowo rozpoczyna definicję funkcji bezparametrowej?",
                     "options": [
-                        "==",
-                        "=",
-                        "===",
-                        "!="
+                        "def fun ():",
+                        "def fun:",
+                        "function fun():",
+                        "fun function():"
                     ],
                     "correctAnswers": [
                         0
@@ -2259,28 +2567,29 @@ const jezykiSkryptoweData = {
                 },
                 {
                     "id": "js-pe1-m3-002",
-                    "type": "single",
-                    "question": "Wartość ostatecznie przypisana do x jest równa:",
+                    "type": "multiple",
+                    "question": "Funkcja zdefiniowana w następujący sposób: (Wybierz **dwie** odpowiedzi)\n\n```python\ndef function(x=0):\n    return x\n \n```",
                     "options": [
-                        "Prawda",
-                        "Fałsz",
-                        "0",
-                        "1"
+                        "może zostać wywołana bez żadnych argumentów1 of 4",
+                        "może zostać wywołana z dokładnie jednym argumentem2 of 4",
+                        "musi zostać wywołana z dokładnie jednym argumentem3 of 4",
+                        "musi zostać wywołana bez żadnych argumentów4 of 4"
                     ],
                     "correctAnswers": [
-                        0
+                        0,
+                        1
                     ],
                     "explanation": ""
                 },
                 {
                     "id": "js-pe1-m3-003",
                     "type": "single",
-                    "question": "Ile gwiazdek (*) zostanie wyświetlonych na konsoli po uruchomieniu następującego kodu?",
+                    "question": "Funkcja wbudowana to taka funkcja, która:",
                     "options": [
-                        "dwa",
-                        "jeden",
-                        "zero",
-                        "trzy"
+                        "jest dostarczana wraz z Pythonem i stanowi jego integralną część",
+                        "została umieszczona w kodzie przez innego programistę",
+                        "musi zostać zaimportowana przed użyciem",
+                        "jest ukryta przed programistami"
                     ],
                     "correctAnswers": [
                         0
@@ -2290,12 +2599,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m3-004",
                     "type": "single",
-                    "question": "Ile gwiazdek (*) zostanie wyświetlonych w konsoli po uruchomieniu tego kodu?",
+                    "question": "Przynależność krotek do typów danych sekwencyjnych oznacza, że:",
                     "options": [
-                        "jeden",
-                        "dwa",
-                        "trzy",
-                        "zero"
+                        "mogą być indeksowane i wycinane w sposób podobny do list",
+                        "mogą zostać przedłużone za pomocą metody.append()",
+                        "można je modyfikować za pomocą instrukcjidel",
+                        "w rzeczywistości są to listy"
                     ],
                     "correctAnswers": [
                         0
@@ -2305,12 +2614,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m3-005",
                     "type": "single",
-                    "question": "Ile kratek (#) zostanie wyświetlonych w konsoli po uruchomieniu następującego kodu?",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef f(x):\n    if x == 0:\n  &nbsp     return 0\n    return x + f(x - 1)\n \n \nprint(f(3))\n \n```",
                     "options": [
-                        "dwa",
-                        "jeden",
-                        "trzy",
-                        "zero"
+                        "6",
+                        "3",
+                        "1",
+                        "kod jest błędny"
                     ],
                     "correctAnswers": [
                         0
@@ -2320,12 +2629,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m3-006",
                     "type": "single",
-                    "question": "Jaka wartość zostanie przypisana do zmiennejx?",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x):\n    x += 1\n    return x\n \n \nx = 2\nx = fun(x + 1)\nprint(x)\n \n```",
                     "options": [
-                        "Prawda",
-                        "Fałsz",
-                        "1",
-                        "Tak"
+                        "4",
+                        "5",
+                        "3",
+                        "kod jest błędny"
                     ],
                     "correctAnswers": [
                         0
@@ -2335,12 +2644,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m3-007",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?",
+                    "question": "Jaki kod należy wstawić zamiast komentarza, aby uzyskać oczekiwane dane wyjściowe?\n\n```python\ndictionary = {}\nmy_list = ['a', 'b', 'c', 'd']\n \nfor i in range(len(my_list) - 1):\n    dictionary[my_list[i]] = (my_list[i], )\n \nfor i in sorted(dictionary.keys()):\n    k = dictionary[i]\n    # Insert your code here.\n \n```",
                     "options": [
-                        "2",
-                        "1",
-                        "3",
-                        "0"
+                        "print(k[0])",
+                        "print(k['0'])",
+                        "print(k)",
+                        "print(k[\"0\"])"
                     ],
                     "correctAnswers": [
                         0
@@ -2350,12 +2659,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m3-008",
                     "type": "single",
-                    "question": "Drugie przypisanie:",
+                    "question": "Następujący fragment:\n\n```python\ndef func(a, b):\n    return a ** a\n \n \nprint(func(2))\n \n```",
                     "options": [
-                        "odwraca listę",
-                        "skraca listę",
-                        "rozszerza listę",
-                        "nie zmienia listy"
+                        "jest błędny",
+                        "wyświetli w oknie konsoli wynik4",
+                        "wyświetli w oknie konsoli wynik2",
+                        "zwróciNone"
                     ],
                     "correctAnswers": [
                         0
@@ -2365,12 +2674,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m3-009",
                     "type": "single",
-                    "question": "Po uruchomieniu poniższego fragmentu kodu, suma wszystkich elementówvalsbędzie wynosić:",
+                    "question": "Następujący fragment:\n\n```python\ndef func_1(a):\n    return a ** a\n \n \ndef func_2(a):\n    return func_1(a) * func_1(a)\n \n \nprint(func_2(2))\n \n```",
                     "options": [
-                        "4",
-                        "3",
-                        "2",
-                        "5"
+                        "wyświetli16",
+                        "wyświetli4",
+                        "wyświetli2",
+                        "jest błędny"
                     ],
                     "correctAnswers": [
                         0
@@ -2379,45 +2688,44 @@ const jezykiSkryptoweData = {
                 },
                 {
                     "id": "js-pe1-m3-010",
-                    "type": "multiple",
-                    "question": "Spójrz na fragment i wybierz stwierdzenie które sąprawdziwe: (Wybierzdwieodpowiedzi)",
+                    "type": "single",
+                    "question": "Która z poniższych linii poprawnie inicjuje funkcję z dwoma parametrami, oba z domyślnymi wartościami równymi zero?",
                     "options": [
-                        "numsivalssą tej samej długości1 of 4",
-                        "numsjest dłuższe niżvals2 of 4",
-                        "numsjest replikowane i przypisane dovals3 of 4",
-                        "numsivalsodnoszą się do tej samej listy4 of 4"
+                        "def fun(a=0, b=0):",
+                        "def fun(a=b=0):",
+                        "fun fun(a=0, b):",
+                        "fun fun(a, b=0):"
                     ],
                     "correctAnswers": [
-                        0,
-                        3
+                        0
                     ],
                     "explanation": ""
                 },
                 {
                     "id": "js-pe1-m3-011",
                     "type": "multiple",
-                    "question": "Wybierz które stwierdzenia sąprawdziwe(Wybierzdwieodpowiedzi)",
+                    "question": "Które z poniższych stwierdzeń jest prawdziwe?   (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "numsjest dłuższe niżvals1 of 4",
-                        "numsivalssą tej samej długości2 of 4",
-                        "valsjest dłuższe niżnums3 of 4",
-                        "numsivalsto dwie różne listy4 of 4"
+                        "WartośćNonemoże być przypisywana do zmiennych.1 of 4",
+                        "WartośćNonemoże być porównywana ze zmiennymi.2 of 4",
+                        "WartośćNonenie może być używana poza funkcjami.3 of 4",
+                        "WartośćNonemoże być używana jako argument operatorów arytmetycznych.4 of 4"
                     ],
                     "correctAnswers": [
                         0,
-                        3
+                        1
                     ],
                     "explanation": ""
                 },
                 {
                     "id": "js-pe1-m3-012",
                     "type": "single",
-                    "question": "Jaki jest wynik działania poniższego kodu?",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x):\n    if x % 2 == 0:\n        return 1\n    else:\n        return\n \n \nprint(fun(fun(2)) + 1)\n \n```",
                     "options": [
-                        "[1, 1, 1, 1, 2, 3]",
-                        "[1, 2, 3, 3, 2, 1]",
-                        "[1, 2, 3, 1, 2, 3]",
-                        "[3, 2, 1, 1, 2, 3]"
+                        "Kod spowoduje błąd wykonania (Runtime error)",
+                        "1",
+                        "2",
+                        "None"
                     ],
                     "correctAnswers": [
                         0
@@ -2427,12 +2735,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m3-013",
                     "type": "single",
-                    "question": "Z ilu elementów składa się listamy_list?",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x):\n    global y\n    y = x * x\n    return y\n \n \nfun(2)\nprint(y)\n \n```",
                     "options": [
-                        "trzy",
-                        "dwa",
-                        "cztery",
-                        "jeden"
+                        "4",
+                        "2",
+                        "None",
+                        "Kod spowoduje błąd wykonania (Runtime error)"
                     ],
                     "correctAnswers": [
                         0
@@ -2442,12 +2750,133 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m3-014",
                     "type": "single",
-                    "question": "Jaki będzie wynik działania poniższego kodu?",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef any():\n    print(var + 1, end='')\n \n \nvar = 1\nany()\nprint(var)\n \n```",
                     "options": [
-                        "ten fragment kodu spowoduje błąd wykonania (Runtime error)",
+                        "21",
+                        "12",
+                        "11",
+                        "22"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-015",
+                    "type": "single",
+                    "question": "Zakładając, że `my_tuple`  jest poprawnie utworzoną krotką, fakt, że krotki są niemutowalne oznacza, że poniższa instrukcja:\n\n```python\nmy_tuple[1] = my_tuple[1] + my_tuple[0]\n \n```",
+                    "options": [
+                        "jest niedozwolona",
+                        "może zostać wykonana wtedy i tylko wtedy gdy krotka przechowuje przynajmniej dwa elementy",
+                        "jest w pełni poprawna",
+                        "może być niedozwolona, jeśli krotka zawiera zawiera łańcuchy znaków"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-016",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\nmy_list =  ['Mary', 'had', 'a', 'little', 'lamb']\n \n \ndef my_list(my_list):\n    del my_list[3]\n    my_list[3] = 'ram'\n \n \nprint(my_list(my_list))\n \n```",
+                    "options": [
+                        "brak wyniku, ten fragment kodu jest błędny",
+                        "['Mary', 'had', 'a', 'little', 'lamb']",
+                        "['Mary', 'had', 'a', 'lamb']",
+                        "['Mary', 'had', 'a', 'ram']"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-017",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x, y, z):\n    return x + 2 * y + 3 * z\n \n \nprint(fun(0, z=1, y=3))\n \n```",
+                    "options": [
+                        "9",
                         "0",
-                        "1",
-                        "2"
+                        "3",
+                        "fragment kodu jest błędny"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-018",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(inp=2, out=3):\n    return inp * out\n \n \nprint(fun(out=2))\n \n```",
+                    "options": [
+                        "4",
+                        "6",
+                        "2",
+                        "fragment kodu jest błędny"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-019",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\ndictionary = {'one': 'two', 'three': 'one', 'two': 'three'}\nv = dictionary['one']\n \nfor k in range(len(dictionary)):\n    v = dictionary[v]\n \nprint(v)\n \n```",
+                    "options": [
+                        "two",
+                        "three",
+                        "one",
+                        "('one', 'two', 'three')"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-020",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\ntup = (1, 2, 4, 8)\ntup = tup[1:-1]\ntup = tup[0]\nprint(tup)\n \n```",
+                    "options": [
+                        "2",
+                        "(2)",
+                        "(2, )",
+                        "ten fragment kodu jest błędny"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-021",
+                    "type": "multiple",
+                    "question": "Wybierz **prawdziwe** stwierdzenia dotyczące bloku *try-except  w odniesieniu do poniższego przykładu (Zaznacz **dwie** odpowiedzi).*\n\n```python\ntry:\n    # Some code is here...\nexcept:\n    # Some code is here...\n \n```",
+                    "options": [
+                        "Jeśli podejrzewasz, że fragment kodu może spowodować wystąpienie wyjątku, powinieneś umieścić go w blokutry.1 of 4",
+                        "Kod, który znajduje się po instrukcjiexcept, zostanie wykonany, jeśli kod w blokutrynapotka błąd.2 of 4",
+                        "Jeśli w kodzie znajdującym się w blokutrywystąpi błąd składniowy, gałąźexceptnie będzie w staniego obsłużyć, a zamiast tego zostanie zgłoszony wyjątekSyntaxError.3 of 4",
+                        "Kod który następuje po instrukcjitryzostanie wykonany, jeśli kod w blokuexceptnapotka błąd.4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-m3-022",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\ntry:\n    value = input(\"Enter a value: \")\n    print(value/value)\nexcept ValueError:\n    print(\"Bad input...\")\nexcept ZeroDivisionError:\n    print(\"Very bad input...\")\nexcept TypeError:\n    print(\"Very very bad input...\")\nexcept:\n    print(\"Booo!\")\n```",
+                    "options": [
+                        "Bardzo, bardzo złe dane wejściowe...",
+                        "Bardzo złe dane wejściowe...",
+                        "Złe dane wejściowe...",
+                        "Buuuu!"
                     ],
                     "correctAnswers": [
                         0
@@ -2478,7 +2907,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-002",
                     "type": "multiple",
-                    "question": "Funkcja zdefiniowana w następujący sposób: (Wybierzdwieodpowiedzi)",
+                    "question": "Funkcja zdefiniowana w następujący sposób: (Wybierz **dwie** odpowiedzi)\n\n```python\ndef function(x=0):\n    return x\n \n```",
                     "options": [
                         "może zostać wywołana bez żadnych argumentów1 of 4",
                         "może zostać wywołana z dokładnie jednym argumentem2 of 4",
@@ -2524,7 +2953,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-005",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef f(x):\n    if x == 0:\n  &nbsp     return 0\n    return x + f(x - 1)\n \n \nprint(f(3))\n \n```",
                     "options": [
                         "6",
                         "3",
@@ -2539,7 +2968,22 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-006",
                     "type": "single",
-                    "question": "Jaki kod należy wstawić zamiast komentarza, aby uzyskać oczekiwane dane wyjściowe?",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x):\n    x += 1\n    return x\n \n \nx = 2\nx = fun(x + 1)\nprint(x)\n \n```",
+                    "options": [
+                        "4",
+                        "5",
+                        "3",
+                        "kod jest błędny"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:zmiennaxjest przypisana do wartości całkowitej2,funkcjafunjest wywoływana z argumentem (2 + 1), a wynik zostanie przypisany do zmiennejx,Wykonanie funkcji fun rozpoczyna się, przyjmując wartość3, następnie inkrementuje ją o1i zwraca4.zmiennaxotrzymuje liczbę całkowitą4,zmiennaxzostaje wyświetlona na konsoli."
+                },
+                {
+                    "id": "js-pe1-m4-007",
+                    "type": "single",
+                    "question": "Jaki kod należy wstawić zamiast komentarza, aby uzyskać oczekiwane dane wyjściowe?\n\n```python\ndictionary = {}\nmy_list = ['a', 'b', 'c', 'd']\n \nfor i in range(len(my_list) - 1):\n    dictionary[my_list[i]] = (my_list[i], )\n \nfor i in sorted(dictionary.keys()):\n    k = dictionary[i]\n    # Insert your code here.\n \n```",
                     "options": [
                         "print(k[0])",
                         "print(k['0'])",
@@ -2552,9 +2996,9 @@ const jezykiSkryptoweData = {
                     "explanation": "Przeanalizujmy ten kod:zostaje utworzony pustysłownik,a następnie lista o nazwiemy_listz elementami ['a', 'b', 'c', 'd'],pętlaforw zakresie długości listy pomniejszonej o jeden (od 0 do 3) jest inicjowana, a wartości przez które iteruje zmiennai, to a, b, c, ddla każdej iteracji, para klucz-wartość zostanie wstawiona do słownika. Kluczem jest ciąg znaków, a wartość jest jednoelementowa krotka,Powstaje w ten sposób następujący słownik: {'a': ('a',), 'b': ('b',), 'c': ('c',)}inicjowana jest kolejna pętlafor, a zmiennaiiteruje po posortowanych kluczach słownika,zmiennakprzechowuje wartość dla każdego klucza,ponieważ jest to krotka, konieczne jest wybranie opcji print(k[0]) w celu wyświetlenia pierwszego i jedynego elementu."
                 },
                 {
-                    "id": "js-pe1-m4-007",
+                    "id": "js-pe1-m4-008",
                     "type": "single",
-                    "question": "Następujący fragment:",
+                    "question": "Następujący fragment:\n\n```python\ndef func(a, b):\n    return a ** a\n \n \nprint(func(2))\n \n```",
                     "options": [
                         "jest błędny",
                         "wyświetli w oknie konsoli wynik4",
@@ -2567,7 +3011,22 @@ const jezykiSkryptoweData = {
                     "explanation": "Fragment kodu jest błędny, ponieważ funkcja jest wywoływana z jednym argumentem, podczas gdy potrzebne są dwa, ponieważ oba parametry nie mają wartości domyślnych."
                 },
                 {
-                    "id": "js-pe1-m4-008",
+                    "id": "js-pe1-m4-009",
+                    "type": "single",
+                    "question": "Następujący fragment:\n\n```python\ndef func_1(a):\n    return a ** a\n \n \ndef func_2(a):\n    return func_1(a) * func_1(a)\n \n \nprint(func_2(2))\n \n```",
+                    "options": [
+                        "wyświetli16",
+                        "wyświetli4",
+                        "wyświetli2",
+                        "jest błędny"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:funkcjafunc_2jest wywoływana z liczbą całkowitą 2 jako argumentem,funkcjafunc_2zwraca iloczynfunc_1 (2) * func_1 (2)funkcja func_1jest wywoływana dwa razy z argumentem całkowitym równym 2,funkcja func_1zwraca 2*2, czyli 4,funkcjafunc_2zwraca iloczyn liczby4 * 4, czyli 16,Wynik zostaje wyświetlony na konsoli."
+                },
+                {
+                    "id": "js-pe1-m4-010",
                     "type": "single",
                     "question": "Która z poniższych linii poprawnie inicjuje funkcję z dwoma parametrami, oba z domyślnymi wartościami równymi zero?",
                     "options": [
@@ -2582,9 +3041,9 @@ const jezykiSkryptoweData = {
                     "explanation": "Poprawny sposób definiowania parametrów z wartościami domyślnymi polega na wskazaniu nazwy zmiennej, znaku przypisania (=) oraz wartości domyślnej, np. a=0. Jeśli istnieje więcej wartości domyślnych, oddziel je przecinkami."
                 },
                 {
-                    "id": "js-pe1-m4-009",
+                    "id": "js-pe1-m4-011",
                     "type": "multiple",
-                    "question": "Które z poniższych stwierdzeń jest prawdziwe? (Wybierz dwie odpowiedzi)",
+                    "question": "Które z poniższych stwierdzeń jest prawdziwe?   (Wybierz dwie odpowiedzi)",
                     "options": [
                         "WartośćNonemoże być przypisywana do zmiennych.1 of 4",
                         "WartośćNonemoże być porównywana ze zmiennymi.2 of 4",
@@ -2598,9 +3057,54 @@ const jezykiSkryptoweData = {
                     "explanation": "Wartość None może zostać przypisana do dowolnej zmiennej, zarówno wewnątrz, jak i na zewnątrz funkcji. Może być również używana w wyrażeniach warunkowych i pętlach. Nie można jej jednak używać w operacjach arytmetycznych."
                 },
                 {
-                    "id": "js-pe1-m4-010",
+                    "id": "js-pe1-m4-012",
                     "type": "single",
-                    "question": "Zakładając, żemy_tuplejest poprawnie utworzoną krotką, fakt, że krotki są niemutowalne oznacza, że poniższa instrukcja:",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x):\n    if x % 2 == 0:\n        return 1\n    else:\n        return\n \n \nprint(fun(fun(2)) + 1)\n \n```",
+                    "options": [
+                        "Kod spowoduje błąd wykonania (Runtime error)",
+                        "1",
+                        "2",
+                        "None"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:nawiasy wewnętrzne w funkcji drukowania są wykonywane w pierwszej kolejności,funkcjafunjest wywoływana z liczbą całkowitą2jako argumentem,warunek if2% 2 == 0zwracaTrue, czyli funkcjafunzwraca1,funkcjafunjest wywoływana z liczbą całkowitą 1 jako argumentem,warunek if1 % 2 == 0zwracaFalse, czyli funkcjafunzwracaNone,Podjęto próbę wykonania operacji arytmetycznejNone + 1,Wygenerowany zostanie błąd wykonania:TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'."
+                },
+                {
+                    "id": "js-pe1-m4-013",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x):\n    global y\n    y = x * x\n    return y\n \n \nfun(2)\nprint(y)\n \n```",
+                    "options": [
+                        "4",
+                        "2",
+                        "None",
+                        "Kod spowoduje błąd wykonania (Runtime error)"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:funkcjafunjest wywoływana z liczbą całkowitą2jako argumentem,funkcjafunprzekształca zmiennąyw zmienną globalną, której można używać zarówno wewnątrz, jak i na zewnątrz funkcji,wykonywana jest operacjay = 2 * 2, a wynikiem jest liczba całkowita4,funkcja zwraca wartość zmiennejy,instrukcja print(y) wyświetla na konsoli liczbę całkowitą4."
+                },
+                {
+                    "id": "js-pe1-m4-014",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef any():\n    print(var + 1, end='')\n \n \nvar = 1\nany()\nprint(var)\n \n```",
+                    "options": [
+                        "21",
+                        "12",
+                        "11",
+                        "22"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:Zmiennavarjest przypisana do wartości całkowitej 1.funkcjaany&zostaje wywołana, wykonuje operację arytmetyczną 1 + 1 i wyświetla wynik2na konsoli. Instrukcjaend=''zapobiega przeskokowi do nowej linii,instrukcja print(var) powoduje wyświetlenie się liczby1na konsoli."
+                },
+                {
+                    "id": "js-pe1-m4-015",
+                    "type": "single",
+                    "question": "Zakładając, że `my_tuple`  jest poprawnie utworzoną krotką, fakt, że krotki są niemutowalne oznacza, że poniższa instrukcja:\n\n```python\nmy_tuple[1] = my_tuple[1] + my_tuple[0]\n \n```",
                     "options": [
                         "jest niedozwolona",
                         "może zostać wykonana wtedy i tylko wtedy gdy krotka przechowuje przynajmniej dwa elementy",
@@ -2613,9 +3117,54 @@ const jezykiSkryptoweData = {
                     "explanation": "Operacja jest nielegalna, ponieważ obiekt 'tuple' nie obsługuje przypisania wartości do elementu."
                 },
                 {
-                    "id": "js-pe1-m4-011",
+                    "id": "js-pe1-m4-016",
                     "type": "single",
-                    "question": "Jaki jest wynik działania poniższego kodu?",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\nmy_list =  ['Mary', 'had', 'a', 'little', 'lamb']\n \n \ndef my_list(my_list):\n    del my_list[3]\n    my_list[3] = 'ram'\n \n \nprint(my_list(my_list))\n \n```",
+                    "options": [
+                        "brak wyniku, ten fragment kodu jest błędny",
+                        "['Mary', 'had', 'a', 'little', 'lamb']",
+                        "['Mary', 'had', 'a', 'lamb']",
+                        "['Mary', 'had', 'a', 'ram']"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:zostaje utworzona listamy_list,zostaje utworzona funkcja o nazwiemy_list,funkcjaprintpróbuje wywołać funkcjęmy_list, przekazując listęmy_listjako argument Jednak listamy_listjuż nie istnieje, ponieważ funkcja ma taką samą nazwę, a funkcja zastępuje listę,kod zakończy się wystąpieniem błędu runtime error, ponieważ funkcja nie obsługuje usuwania elementów."
+                },
+                {
+                    "id": "js-pe1-m4-017",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x, y, z):\n    return x + 2 * y + 3 * z\n \n \nprint(fun(0, z=1, y=3))\n \n```",
+                    "options": [
+                        "9",
+                        "0",
+                        "3",
+                        "fragment kodu jest błędny"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:funkcjafunjest wywoływana, a argumenty przyjmują następujące wartości: x = 0, y = 3, z = 1. Pamiętaj, że argumenty pozycyjne powinny być umieszczane przed argumentami kluczowymi.funkcjafunzwraca wynik operacji arytmetycznej: 0 + 2 * 3 + 3 * 1,produkty są realizowane w pierwszej kolejności: 0 + 6 + 3,wykonywane jest dodawanie, a wynikiem jest 9,funkcja print wyświetla w konsoli liczbę 9."
+                },
+                {
+                    "id": "js-pe1-m4-018",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(inp=2, out=3):\n    return inp * out\n \n \nprint(fun(out=2))\n \n```",
+                    "options": [
+                        "4",
+                        "6",
+                        "2",
+                        "fragment kodu jest błędny"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:wywoływana jest funkcjafun, a użytym tutaj argumentem jestout = 2, co zastępuje wstępnie zdefiniowaną wartośćout = 3,funkcjafunprzyjmuje wstępnie ustaloną wartośćinp = 2, ponieważ nie jest ona zdefiniowana w wywołaniu funkcji,funkcjafunwykonuje operację 2*2 i zwraca jej wynik,funkcja print wyświetli 4 na konsoli."
+                },
+                {
+                    "id": "js-pe1-m4-019",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\ndictionary = {'one': 'two', 'three': 'one', 'two': 'three'}\nv = dictionary['one']\n \nfor k in range(len(dictionary)):\n    v = dictionary[v]\n \nprint(v)\n \n```",
                     "options": [
                         "two",
                         "three",
@@ -2628,9 +3177,24 @@ const jezykiSkryptoweData = {
                     "explanation": "Przeanalizujmy ten kod:Zdefiniowany zostaje następującysłownik: dictionary = {'jeden': 'dwa', 'trzy': 'jeden', 'dwa': 'trzy'}zmiennavprzechowuje wartość klucza „jeden”, czyli „dwa”,pętlaforjest inicjowana w zakresie długości słownika. Iteracja zostanie wykonana 3 razy,w pierwszej iteracji zmiennavbędzie przechowywać wartość klucza „dwa”, czyli „trzy”,w drugiej iteracji zmiennavbędzie przechowywać wartość klucza „three”, czyli „jeden”,w trzeciej iteracji zmiennavbędzie przechowywać wartość klucza „jeden”, czyli „dwa”,Pętla „for” zostaje zakończona, a funkcja „print” wyświetla na konsoli wartość „dwa”."
                 },
                 {
-                    "id": "js-pe1-m4-012",
+                    "id": "js-pe1-m4-020",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\ntup = (1, 2, 4, 8)\ntup = tup[1:-1]\ntup = tup[0]\nprint(tup)\n \n```",
+                    "options": [
+                        "2",
+                        "(2)",
+                        "(2, )",
+                        "ten fragment kodu jest błędny"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:zdefiniowana zostaje krotka o nazwietupz następującymi elementami: (1, 2, 4, 8)krotkatupzostaje zastąpiona krótszą wersją samej siebie. Indeksy to [1:-1], co oznacza, że zacznie się od pozycji 1 i obejmie wszystkie elementy aż do przedostatniego elementu krotki. Nowa krotka to (2, 4)krotkatupjest ponownie zastępowana tylko pierwszym elementem: tup[0], a wynik nie jest już krotką,funkcja print wyświetla na konsoli liczbę 2."
+                },
+                {
+                    "id": "js-pe1-m4-021",
                     "type": "multiple",
-                    "question": "Wybierzprawdziwestwierdzenia dotyczące blokutry-except w odniesieniu do poniższego przykładu (Zaznaczdwieodpowiedzi).",
+                    "question": "Wybierz **prawdziwe** stwierdzenia dotyczące bloku *try-except  w odniesieniu do poniższego przykładu (Zaznacz **dwie** odpowiedzi).*\n\n```python\ntry:\n    # Some code is here...\nexcept:\n    # Some code is here...\n \n```",
                     "options": [
                         "Jeśli podejrzewasz, że fragment kodu może spowodować wystąpienie wyjątku, powinieneś umieścić go w blokutry.1 of 4",
                         "Kod, który znajduje się po instrukcjiexcept, zostanie wykonany, jeśli kod w blokutrynapotka błąd.2 of 4",
@@ -2642,6 +3206,489 @@ const jezykiSkryptoweData = {
                         1
                     ],
                     "explanation": "Jeśli kod umieszczony wewnątrz blokutryzgłosi wyjątek, następujące wiersze kodu w obrębie bloku nie zostaną wykonane, a wyjątki zdefiniowane poniżej spróbują obsłużyć wygenerowany błąd."
+                },
+                {
+                    "id": "js-pe1-m4-022",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\ntry:\n    value = input(\"Enter a value: \")\n    print(value/value)\nexcept ValueError:\n    print(\"Bad input...\")\nexcept ZeroDivisionError:\n    print(\"Very bad input...\")\nexcept TypeError:\n    print(\"Very very bad input...\")\nexcept:\n    print(\"Booo!\")\n```",
+                    "options": [
+                        "Bardzo, bardzo złe dane wejściowe...",
+                        "Bardzo złe dane wejściowe...",
+                        "Złe dane wejściowe...",
+                        "Buuuu!"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Przeanalizujmy ten kod:zmiennavaluebędzie przechowywać dowolne dane wprowadzone przez użytkownika jako ciąg znaków,Funkcja print spróbuje podzielić wartość przez siebie samą,ponieważ ciągi znaków nie mogą być dzielone, zostaje zgłoszony wyjątekTypeError,wyjątekTypeErrorbędzie porównywany sekwencyjnie z wcześniej zdefiniowanymi wyjątkami,kiedy dotrze do blokuexcept TypeError, funkcja print wyświetli na konsoli komunikat:Bardzo, bardzo złe dane wejściowe..."
+                }
+            ]
+        },
+        {
+            "id": "js-pe1-final",
+            "name": "PE1: Test końcowy",
+            "questions": [
+                {
+                    "id": "js-pe1-final-001",
+                    "type": "single",
+                    "question": "Spójrz na poniższy fragment kodu. Jaka będzie zawartość  `my_numbers`\n\n```python\nmy_numbers = [10, 20, 30, 40, 50]\n \nfor i in range(4):\n    my_numbers.insert(i, my_numbers[-1])\n \nprint(my_numbers)\n \n```",
+                    "options": [
+                        "[50, 10, 50, 20, 50, 30, 50, 40]",
+                        "[10, 50, 20, 30, 40, 50, 50, 50]",
+                        "[10, 20, 30, 40, 50, 50, 50, 50]",
+                        "[10, 20, 30, 50, 50, 50, 50, 40]"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-002",
+                    "type": "single",
+                    "question": "W kontekście wywołania funkcji w Pythonie, co decyduje o znaczeniu argumentu pozycyjnego?",
+                    "options": [
+                        "Jego pozycja na liście argumentów",
+                        "Jego wartość",
+                        "Nazwa argumentu podana wraz z jego wartością",
+                        "Jego powiązanie z istniejącymi zmiennymi"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-003",
+                    "type": "single",
+                    "question": "Przeanalizuj następujący fragment kodu:\n\n```python\nalpha = [4, 8, 15, 16, 23, 42]\nbeta = alpha[:]\nbeta[2] = 99\n```",
+                    "options": [
+                        "alfaibetato dwie nazwy tej samej listy; w związku z tym w obu listach liczba99znajduje się na trzecim miejscu.1 of 4",
+                        "alfaibetato osobne listy;alphapo modyfikacji pozostaje niezmieniona.2 of 4",
+                        "Listabetajest krótsza niżalpha, ponieważ element został zmodyfikowany.3 of 4",
+                        "Listaalphajest tej samej długości co listabetaale ich zawartość nie jest identyczna.4 of 4"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-004",
+                    "type": "single",
+                    "question": "Operator sprawdzający czy dwie wartości **nie są sobie równe** jest zapisywany jako:",
+                    "options": [
+                        "<>",
+                        "!=",
+                        "not ==",
+                        "=/="
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-005",
+                    "type": "single",
+                    "question": "Biorąc pod uwagę poniższy segment kodu Python:\n\n```python\ndef compute_square(x):\n    return x * x\n \n \ndef compute_quad(x):\n    return compute_square(x) * compute_square(None)\n \n \nprint(compute_quad(4))\n \n```",
+                    "options": [
+                        "Wyświetlone zostanie 256.",
+                        "Wyświetlone zostanie 16.",
+                        "Kod spowoduje wystąpienie runtime error.",
+                        "Wyświetlone zostanie 64."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-006",
+                    "type": "single",
+                    "question": "Wynik poniższego dzielenia:\n\n```python\n1 // 2\n```",
+                    "options": [
+                        "jest równy0.0",
+                        "jest trudny do przewidzenia",
+                        "jest równy0",
+                        "jest róny0,5"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-007",
+                    "type": "single",
+                    "question": "Rozważ poniżej zdefiniowaną funkcję w Pythonie.\n\n```python\ndef raise_power(base, exponent):\n    return base ** exponent\n \n \nprint(raise_power(exponent=3, 2))\n \n```",
+                    "options": [
+                        "Kod zwróci 8.",
+                        "Kod jest błędny i nie może zostać wykonany.",
+                        "Kod zwróci None.",
+                        "Kod zwróci 9."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-008",
+                    "type": "single",
+                    "question": "Jaka wartość zostanie przypisana do zmiennej  `x` ?\n\n```python\nz = 0\ny = 10\nx = y < z and z > y or y < z and z < y\n \n```",
+                    "options": [
+                        "1",
+                        "True",
+                        "0",
+                        "False"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-009",
+                    "type": "single",
+                    "question": "Przejrzyj następujące identyfikatory i wybierz te, które są zarezerwowanymi słowami kluczowymi w Pythonie i spowodowałyby błąd składniowy, jeśli zostałyby użyte jako nazwy zmiennych. (wybierz **dwie** odpowiedzi)",
+                    "options": [
+                        "class1 of 4",
+                        "true2 of 4",
+                        "continue3 of 4",
+                        "function4 of 4"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-010",
+                    "type": "single",
+                    "question": "Jakie jest oczekiwany wynik działania poniższego kodu napisanego w języku Python?\n\n```python\nmy_values = [3 * i for i in range(5)]\n \n \ndef modify_list(values):\n    del values[values[2] // 3]\n    return values\n \n \nprint(modify_list(my_values))\n \n```",
+                    "options": [
+                        "[0, 3, 9, 12]",
+                        "[0, 6, 9, 12]",
+                        "[3, 6, 9, 12]",
+                        "[0, 3, 6, 12]"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-011",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\nx = 1\ny = 2\nx, y, z = x, x, y\nz, y, z = x, y, z\n \nprint(x, y, z)\n \n```",
+                    "options": [
+                        "1 2 1",
+                        "1 1 2",
+                        "1 2 2",
+                        "2 1 2"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-012",
+                    "type": "single",
+                    "question": "Jaki będzie wynik działania następującego fragmentu kodu?\n\n```python\na = 1\nb = 0\na = a ^ b\nb = a ^ b\na = a ^ b\n \nprint(a, b)\n \n```",
+                    "options": [
+                        "0 0",
+                        "0 1",
+                        "1 0",
+                        "1 1"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-013",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\ndef custom_function(value):\n    if value % 3 == 0:\n        return 1\n    else:\n        return 2\n \n \nprint(custom_function(custom_function(4)))\n \n```",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-014",
+                    "type": "single",
+                    "question": "Zapoznaj się z poniższym fragmentem kodu w języku Python i ustal które zdanie jest poprawne.\n\n```python\ninventory = ['apple', 'banana', 'cherry']\nbackup_inventory = inventory\ndel backup_inventory[:]\n \n```",
+                    "options": [
+                        "inventoryzawiera więcej elementów niżbackup_inventory.",
+                        "backup_inventoryzawiera więcej elementów niżinventory.",
+                        "Zarównoinventoryjak ibackup_inventoryzawierają taką samą liczbę elementów.",
+                        "Kod spowoduje wystąpienie błędu runtime error."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-015",
+                    "type": "single",
+                    "question": "Rozważmy poniższy kod Python, gdzie dozwolone są tylko liczby całkowite jako dane wejściowe:\n\n```python\nfirst_integer = int(input(\"Enter an integer: \"))\nsecond_integer = int(input(\"Enter another integer: \"))\nfirst_integer = first_integer % second_integer\nfirst_integer = first_integer % second_integer\nsecond_integer = second_integer % first_integer\nprint(second_integer)\n \n```",
+                    "options": [
+                        "Wartość początkowafirst_integernie może być wielokrotnościąsecond_integer.",
+                        "second_integermusi być większa niżfirst_integer.",
+                        "first_integermusi zostać zainicjowana do zera.",
+                        "zmiennasecond_integerrónież musi zostać zainicjowana do zera."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-016",
+                    "type": "single",
+                    "question": "Zakładając, że użytkownik wprowadzi  `8`  w pierwszym wierszu oraz   `5`  w drugim wierszu, jaki jest wynik następującego kodu Python?\n\n```python\nfirst_input = input(\"Enter first number: \")\nsecond_input = input(\"Enter second number: \")\nprint(second_input + first_input)\n \n```",
+                    "options": [
+                        "85",
+                        "13",
+                        "5",
+                        "58"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-017",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania poniższego fragmentu kodu?\n\n```python\nprint(\"a\", \"b\", \"c\", sep=\"sep\")\n \n```",
+                    "options": [
+                        "asepbsepcsep",
+                        "a b c",
+                        "abc",
+                        "asepbsepc"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-018",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\nx = 1 // 5 + 1 / 5\nprint(x)\n \n```",
+                    "options": [
+                        "0",
+                        "0.5",
+                        "0.4",
+                        "0.2"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-019",
+                    "type": "single",
+                    "question": "Jaki będzie wynik próby wykonania poniższego fragmentu kodu, jeśli  `sample_tuple`  to krotka, która została wcześniej zdefiniowana i zawiera co najmniej dwa elementy?\n\n```python\nsample_tuple[0] = 5\nprint(sample_tuple)\n \n```",
+                    "options": [
+                        "Zostanie zgłoszony błąd TypeError, ponieważ elementy krotki nie mogą być przypisane na nowo.",
+                        "Kod zostanie wykonany pomyślnie, przypisując wartość 5 do pierwszego elementu krotki.",
+                        "Kod zostanie wykonany tylko wtedy, gdy wszystkie elementy wsample_tuplebędą liczbami całkowitymi.",
+                        "Kod zadziała bezbłędnie tylko wtedy, gdysample_tuplezawiera więcej niż dwa elementy."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-020",
+                    "type": "single",
+                    "question": "Jaki wynik zostanie zwrócony przez poniższy kod, jeśli użytkownik wprowadzi dwie linie danych zawierające odpowiednio  `2`  i  `4` ?\n\n```python\nx = float(input())\ny = float(input())\nprint(y ** (1 / x))\n \n```",
+                    "options": [
+                        "1.0",
+                        "0.0",
+                        "2.0",
+                        "4.2"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-021",
+                    "type": "single",
+                    "question": "Jaki jest oczekiwany wynik działania następującego kodu?\n\n```python\ndictionary = {'alpha': 'beta', 'gamma': 'alpha', 'beta': 'gamma'}\nvalue = dictionary['gamma']\n \nfor key in range(len(dictionary)):\n    value = dictionary[value]\n \nprint(value)\n \n```",
+                    "options": [
+                        "(„alfa”, „beta”, „gamma”)",
+                        "alpha",
+                        "gamma",
+                        "beta"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-022",
+                    "type": "single",
+                    "question": "Ile elementów znajduje się w liście  `values` ?\n\n```python\nvalues = [i for i in range(-1, -3, -1)]\n \n```",
+                    "options": [
+                        "Jeden",
+                        "Trzy",
+                        "Dwa",
+                        "Zero"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-023",
+                    "type": "single",
+                    "question": "Które z poniższych wywołań funkcji **poprawnie** wywołuje funkcję zdefiniowaną poniżej? (wybierz **dwie** odpowiedzi)\n\n```python\ndef custom_function(x, y, z=0):\n    # Body of the function.\n \n```",
+                    "options": [
+                        "custom_function(y=2, x=1)1 of 4",
+                        "custom_function(x=3)2 of 4",
+                        "custom_function(4, 5, 6)3 of 4",
+                        "custom_function()4 of 4"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-024",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x, y):\n    if x == y:\n        return x\n    else:\n        return fun(x, y-1)\n \n \nprint(fun(0, 3))\n \n```",
+                    "options": [
+                        "1",
+                        "ten fragment kodu spowoduje wystąpienie Runtime error",
+                        "2",
+                        "0"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-025",
+                    "type": "single",
+                    "question": "Ile gwiazdek ( `*` ) zostanie wyświetlonych w konsoli po uruchomieniu następującego kodu?\n\n```python\ni = 0\nwhile i < i + 2 :\n    i += 1\n    print(\"*\")\nelse:\n    print(\"*\")\n \n```",
+                    "options": [
+                        "jeden",
+                        "dwa",
+                        "Ten fragment spowoduje wejście w nieskończoną pętlę, wyświetlając jedną gwiazdkę w każdej linii",
+                        "zero"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-026",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\nmy_tuple = (10, 20, 30, 40, 50)\nmy_tuple = my_tuple[-3:-1]\nmy_tuple = my_tuple[-1]\nprint(my_tuple)\n \n```",
+                    "options": [
+                        "30",
+                        "20",
+                        "40",
+                        "50"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-027",
+                    "type": "single",
+                    "question": "Biorąc pod uwagę poniższy kod:\n\n```python\nmy_dict = {\"apple\": 1, \"banana\": 2, \"cherry\": 3}\n \n```",
+                    "options": [
+                        "for value in my_dict.values():print(value)",
+                        "for key in my_dict:print(value)",
+                        "for item in my_dict:print(item)",
+                        "for val in my_dict.vals():print(val)"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-028",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndct = {}\ndct['1'] = (1, 2)\ndct['2'] = (2, 1)\n \nfor x in dct.keys():\n    print(dct[x][1], end=\"\")\n \n```",
+                    "options": [
+                        "21",
+                        "(2,1)",
+                        "(1,2)",
+                        "12"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-029",
+                    "type": "single",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(inp=2, out=3):\n    return inp * out\n \n \nprint(fun(out=2))\n \n```",
+                    "options": [
+                        "6",
+                        "4",
+                        "ten fragment kodu jest błędny i spowoduje wystąpienie SyntaxError (błędu składniowego)",
+                        "2"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-030",
+                    "type": "single",
+                    "question": "Ile razy znak  `#`  zostanie wyświetlony w konsoli po uruchomieniu następującego kodu?\n\n```python\nmatrix = [[x for x in range(3)] for y in range(3)]\n \ncount = 0\nfor row in matrix:\n    for element in row:\n        if element % 2 != 0:\n            count += 1\nprint(count)\n \n```",
+                    "options": [
+                        "Zero",
+                        "Jeden",
+                        "Dwa",
+                        "Trzy"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-031",
+                    "type": "single",
+                    "question": "Jaki jest wynik następującego kodu, jeśli użytkownik wprowadzi  `0` ?\n\n```python\ntry:\n    value = input(\"Enter a value: \")\n    print(int(value)/len(value))\nexcept ValueError:\n    print(\"Bad input...\")\nexcept ZeroDivisionError:\n    print(\"Very bad input...\")\nexcept TypeError:\n    print(\"Very very bad input...\")\nexcept:\n    print(\"Booo!\")\n \n```",
+                    "options": [
+                        "Buuuu!",
+                        "1.0",
+                        "0.0",
+                        "Bardzo, bardzo złe dane wejściowe...",
+                        "Złe dane wejściowe...",
+                        "Bardzo złe dane wejściowe..."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-032",
+                    "type": "single",
+                    "question": "Jakie jest oczekiwane zachowanie poniższego programu w języku Python?\n\n```python\ntry:\n    print(10 / 0)\n    break\nexcept ZeroDivisionError::\n    print(\"Zero division error occurred...\")\nexcept (ValueError, TypeError):\n    print(\"Value or type error occurred..\")\nexcept:\n    print(\"Unknown error occurred...\")\n \n```",
+                    "options": [
+                        "Program spowoduje wyjątek SyntaxError.",
+                        "Program spowoduje wystąpienie wyjątku ZeroDivisionError i wyświetli komunikat: \"Wystąpił błąd dzielenia przez zero...\"",
+                        "Program spowoduje wystąpienie wyjątku ValueError lub TypeError i wyświetli komunikat: \"Wystąpił błąd wartości lub typu...\".",
+                        "\"Program spowoduje wyjątek wsytąpienia nieznanego błędu i wyświetli komunikat 'Unknown error occurred...' w konsoli.\""
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-033",
+                    "type": "single",
+                    "question": "Jakie jest oczekiwane zachowanie tego programu?\n\n```python\nfoo = (1, 2, 3)\nfoo.index(0)\n \n```",
+                    "options": [
+                        "Program spowoduje wyjątekAttributeError.",
+                        "Program spowoduje wyjątekValueError.",
+                        "Program spowoduje wyjątekTypeError.",
+                        "Program spowoduje wyjątekSyntaxError.",
+                        "Program wyświetli 1 na ekranie."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-034",
+                    "type": "single",
+                    "question": "Który z poniższych fragmentów kodu pokazuje prawidłowy sposób obsługi wielu wyjątków w jednej *klauzuli except*?\n\n```python\n# A:\nexcept (TypeError, ValueError, ZeroDivisionError):\n    # Some code.\n \n# B:\nexcept TypeError, ValueError, ZeroDivisionError:\n    # Some code.\n \n# C:\nexcept: (TypeError, ValueError, ZeroDivisionError)\n    # Some code.\n \n# D:\nexcept: TypeError, ValueError, ZeroDivisionError\n    # Some code.\n \n# E:\nexcept (TypeError, ValueError, ZeroDivisionError)\n    # Some code.\n \n# F:\nexcept TypeError, ValueError, ZeroDivisionError\n    # Some code.\n \n```",
+                    "options": [
+                        "Tylko A",
+                        "A i B",
+                        "B oraz C",
+                        "D i E",
+                        "Tylko F",
+                        "A, C i D",
+                        "A i F"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe1-final-035",
+                    "type": "single",
+                    "question": "Co się stanie, gdy spróbujesz uruchomić następujący kod?\n\n```python\nprint(3 + \"5\")\n \n```",
+                    "options": [
+                        "Kod spowoduje zgłoszenie wyjątku AttributeError.",
+                        "8 zostanie wyświetlone na ekranie.",
+                        "Kod spowoduje zgłoszenie wyjątku ValueError.",
+                        "Kod spowoduje zgłoszenie wyjątku SyntaxError.",
+                        "Kod spowoduje zgłoszenie wyjątku TypeError."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
                 }
             ]
         }
