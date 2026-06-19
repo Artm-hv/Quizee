@@ -3691,6 +3691,1427 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 }
             ]
+        },
+        {
+            "id": "js-pe2-m1",
+            "name": "PE2: Moduł 1 — Pakiety, PIP, charakterystyka i wyjątki",
+            "questions": [
+                {
+                    "id": "js-pe2-m1-001",
+                    "type": "single",
+                    "question": "Entering the  `try:`  block implies that:",
+                    "options": [
+                        "all of the instructions from this block will be executed",
+                        "the block will be omitted",
+                        "none of the instructions from this block will be executed",
+                        "some of the instructions from this block may not be executed"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-002",
+                    "type": "single",
+                    "question": "The unnamed  `except:`  block:",
+                    "options": [
+                        "can be placed anywhere",
+                        "must be the first one",
+                        "cannot be used if any named block has been used",
+                        "must be the last one"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-003",
+                    "type": "single",
+                    "question": "The top‑most Python exception is called:",
+                    "options": [
+                        "BaseException",
+                        "Exception",
+                        "PythonException",
+                        "TopException"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-004",
+                    "type": "single",
+                    "question": "The following statement:\n\n```python\nassert var == 0\n \n```",
+                    "options": [
+                        "has no effect",
+                        "is erroneous",
+                        "will stop the program whenvar == 0",
+                        "will stop the program whenvar != 0"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-005",
+                    "type": "single",
+                    "question": "What is the expected output of the following code?\n\n```python\ntry:\n    print(\"5\"/0)\nexcept ArithmeticError:\n    print(\"arith\")\nexcept ZeroDivisionError:\n    print(\"zero\")\nexcept:\n    print(\"some\")\n \n```",
+                    "options": [
+                        "zero",
+                        "arith",
+                        "some",
+                        "0"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-006",
+                    "type": "single",
+                    "question": "Which of the following are examples of built-in **concrete** Python exceptions? (Select **two** answers)",
+                    "options": [
+                        "ArithmeticError1 of 4",
+                        "BaseException2 of 4",
+                        "IndexError3 of 4",
+                        "ImportError4 of 4"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-007",
+                    "type": "single",
+                    "question": "ASCII is:",
+                    "options": [
+                        "short forAmerican Standard Code for Information Interchange",
+                        "a standard Python module name",
+                        "a predefined Python variable name",
+                        "a character name"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-008",
+                    "type": "single",
+                    "question": "UTF‑8 is:",
+                    "options": [
+                        "a Python version name",
+                        "a synonym forbyte",
+                        "a form of encoding Unicode code points",
+                        "the 9th version of the UTF standard"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-009",
+                    "type": "single",
+                    "question": "UNICODE is a standard:",
+                    "options": [
+                        "honored by the whole universe",
+                        "used by coders from universities",
+                        "for coding floating-point numbers",
+                        "like ASCII, but much more expansive"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-010",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nx = '\\''\nprint(len(x))\n \n```",
+                    "options": [
+                        "20",
+                        "2",
+                        "1",
+                        "3"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-011",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint(ord('c') - ord('a'))\n \n```",
+                    "options": [
+                        "0",
+                        "3",
+                        "1",
+                        "2"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-012",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint(chr(ord('z') ‑ 2))\n \n```",
+                    "options": [
+                        "z",
+                        "y",
+                        "x",
+                        "a"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-013",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint(3 * 'abc' + 'xyz')\n \n```",
+                    "options": [
+                        "abcabcabcxyz",
+                        "abcabcxyzxyz",
+                        "abcxyzxyzxyz",
+                        "xyzxyzxyzxyz"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-014",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint('Mike' > \"Mikey\")\n \n```",
+                    "options": [
+                        "True",
+                        "False",
+                        "0",
+                        "1"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m1-015",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint(float(\"1, 3\"))\n \n```",
+                    "options": [
+                        "prints1,3",
+                        "raises aValueErrorexception",
+                        "prints1.3",
+                        "prints13"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                }
+            ]
+        },
+        {
+            "id": "js-pe2-m2",
+            "name": "PE2: Moduł 2 — Łańcuchy znaków, operacje na znakach, metody",
+            "questions": [
+                {
+                    "id": "js-pe2-m2-001",
+                    "type": "single",
+                    "question": "Entering the  `try:`  block implies that:",
+                    "options": [
+                        "some of the instructions from this block may not be executed",
+                        "all of the instructions from this block will be executed",
+                        "none of the instructions from this block will be executed",
+                        "the block will be omitted"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Remember that the instructions inside atryblock are executed sequentially. If an instruction generates an exception, the execution jumps to theexceptstatements. Therefore, the remaining instructions within the try block are not executed."
+                },
+                {
+                    "id": "js-pe2-m2-002",
+                    "type": "single",
+                    "question": "The unnamed  `except:`  block:",
+                    "options": [
+                        "must be the last one",
+                        "can be placed anywhere",
+                        "must be the first one",
+                        "cannot be used if any named block has been used"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "The excepts within atry expectblock should be listed from the specific exceptions to the general exceptions. This assures that in case of an error, the error will fall under the suitable exception. The unnamed exception must be the last exception listed because it is the most general exception."
+                },
+                {
+                    "id": "js-pe2-m2-003",
+                    "type": "single",
+                    "question": "The top‑most Python exception is called:",
+                    "options": [
+                        "BaseException",
+                        "Exception",
+                        "PythonException",
+                        "TopException"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Remember that the BaseException class is, as the name suggests,the base class for all built-in exceptions in Python."
+                },
+                {
+                    "id": "js-pe2-m2-004",
+                    "type": "single",
+                    "question": "The following statement:\n\n```python\nassert var == 0\n \n```",
+                    "options": [
+                        "will stop the program whenvar != 0",
+                        "will stop the program whenvar == 0",
+                        "is erroneous",
+                        "has no effect"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Remember that theassertkeyword tests if a condition is true. If it is not, the program will raise anAssertionError."
+                },
+                {
+                    "id": "js-pe2-m2-005",
+                    "type": "single",
+                    "question": "What is the expected output of the following code?\n\n```python\ntry:\n    print(\"5\"/0)\nexcept ArithmeticError:\n    print(\"arith\")\nexcept ZeroDivisionError:\n    print(\"zero\")\nexcept:\n    print(\"some\")\n \n```",
+                    "options": [
+                        "some",
+                        "arith",
+                        "zero",
+                        "0"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Let’s analyze this code snippet:Theprintfunction inside the try block is executed.If you look closely, “5” is a string, and it is divided by an integer zero.No ArithmeticError nor ZeroDivisionError is raised.Instead, a TypeError exception is raised, which will fall under the nameless except.The word some is printed in the console."
+                },
+                {
+                    "id": "js-pe2-m2-006",
+                    "type": "multiple",
+                    "question": "Which of the following are examples of built-in **concrete** Python exceptions? (Select **two** answers)",
+                    "options": [
+                        "IndexError1 of 4",
+                        "ImportError2 of 4",
+                        "ArithmeticError3 of 4",
+                        "BaseException4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Remember that concrete exceptions in Python are build-in exceptions that inherit directly from the Exception class. IndexError and ImportError are such cases."
+                },
+                {
+                    "id": "js-pe2-m2-007",
+                    "type": "single",
+                    "question": "ASCII is:",
+                    "options": [
+                        "short forAmerican Standard Code for Information Interchange",
+                        "a standard Python module name",
+                        "a predefined Python variable name",
+                        "a character name"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Remember thatASCIIstands for American Standard Code for Information Interchange. It is a 7-bit character code developed in the 19-60s to represent English-language characters."
+                },
+                {
+                    "id": "js-pe2-m2-008",
+                    "type": "single",
+                    "question": "UTF‑8 is:",
+                    "options": [
+                        "a form of encoding Unicode code points",
+                        "a Python version name",
+                        "a synonym forbyte",
+                        "the 9th version of the UTF standard"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Remember thatUTF-8is the most popular type of Unicode encoding. It uses 1 bit for English characters, 2 bits for Latin and Middle Eastern characters, and 3 bits for Asian characters."
+                },
+                {
+                    "id": "js-pe2-m2-009",
+                    "type": "single",
+                    "question": "UNICODE is a standard:",
+                    "options": [
+                        "like ASCII, but much more expansive",
+                        "for coding floating-point numbers",
+                        "used by coders from universities",
+                        "honored by the whole universe"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Remember thatUNICODEis a universal character encoding standard. It supports characters from all the languages in the world."
+                },
+                {
+                    "id": "js-pe2-m2-010",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nx = '\\''\nprint(len(x))\n \n```",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "20"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Let’s analyze this code snippet:A string variable namedxis defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
+                },
+                {
+                    "id": "js-pe2-m2-011",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint(ord('c') - ord('a'))\n \n```",
+                    "options": [
+                        "2",
+                        "1",
+                        "3",
+                        "0"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "The ord() function in Python returns the Unicode code of the given character. A lower-casecreturns 99, and a lower-caseareturns 97. Therefore, 99 minus 97 equals 2. This is what is printed in the console."
+                },
+                {
+                    "id": "js-pe2-m2-012",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint(chr(ord('z') ‑ 2))\n \n```",
+                    "options": [
+                        "x",
+                        "y",
+                        "z",
+                        "a"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "The ord() function in Python returns the Unicode code of the given character. A lower-casezreturns a 122. Then 2 is subtracted from 122, which results in 120. Finally, the 120 value is converted to its Unicode characterxusing the chr() function. So,xis printed in the console."
+                },
+                {
+                    "id": "js-pe2-m2-013",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint(3 * 'abc' + 'xyz')\n \n```",
+                    "options": [
+                        "abcabcabcxyz",
+                        "abcabcxyzxyz",
+                        "abcxyzxyzxyz",
+                        "xyzxyzxyzxyz"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "The*and+operators replicate and concatenate when used with strings. The first operation3 * 'abc'returns a string that containsabcabcabc. Then the second operation+ 'xyz'concatenatesxyzto the previous string. The resulting stringabcabcabcxyzis printed in the console."
+                },
+                {
+                    "id": "js-pe2-m2-014",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint('Mike' > \"Mikey\")\n \n```",
+                    "options": [
+                        "False",
+                        "True",
+                        "0",
+                        "1"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "The>operator, when used with strings, compares character for character. This means characters in the same positions are compared from both the strings. SinceMikeis shorter thanMikey, it cannot be greater. Therefore, the answer is False."
+                },
+                {
+                    "id": "js-pe2-m2-015",
+                    "type": "single",
+                    "question": "The following code:\n\n```python\nprint(float(\"1, 3\"))\n \n```",
+                    "options": [
+                        "raises aValueErrorexception",
+                        "prints1.3",
+                        "prints1,3",
+                        "prints13"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Thefloatfunction tries to convert the1, 3string into a floating-point value. Since it contains a comma and a whitespace, aValueErrorexception is raised because it cannot be converted."
+                }
+            ]
+        },
+        {
+            "id": "js-pe2-m3",
+            "name": "PE2: Moduł 3 — Programowanie zorientowane obiektowo (OOP)",
+            "questions": [
+                {
+                    "id": "js-pe2-m3-001",
+                    "type": "single",
+                    "question": "What keyword would you use to define an anonymous function?",
+                    "options": [
+                        "yield",
+                        "afun",
+                        "def",
+                        "lambda"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-002",
+                    "type": "single",
+                    "question": "Select the true statements. (Select two answers)",
+                    "options": [
+                        "Thelambdafunction can evaluateonly oneexpression1 of 4",
+                        "Thelambdafunction can accepta maximum of twoarguments2 of 4",
+                        "Thelambdafunction can acceptany numberof arguments3 of 4",
+                        "Thelambdafunction can evaluatemultipleexpressions4 of 4"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-003",
+                    "type": "single",
+                    "question": "Look at the code below:\n\n```python\nmy_list = [1, 2, 3]\n# Insert line of code here.\nprint(foo)\n \n```",
+                    "options": [
+                        "foo = list(map(lambda x: x*x, my_list))",
+                        "foo = list(map(lambda x: x**x, my_list))",
+                        "foo = tuple(map(lambda x: x**x, my_list))",
+                        "foo = tuple(map(lambda x: x*x, my_list))"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-004",
+                    "type": "single",
+                    "question": "Look at the code below:\n\n```python\nmy_tuple = (0, 1, 2, 3, 4, 5, 6)\n# Insert line of code here.\nprint(foo)\n \n```",
+                    "options": [
+                        "foo = tuple(filter(lambda x: x-0 and x-1, my_tuple))",
+                        "foo = tuple(filter(lambda x: x>1, my_tuple))",
+                        "foo = list(filter(lambda x: x==0 and x==1, my_tuple))",
+                        "foo = list(filter(lambda x: x-0 and x-1, my_tuple))"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-005",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\ndef I():\n    s = 'abcdef'\n    for c in s[::2]:\n        yield c\n \n \nfor x in I():\n    print(x, end='')\n \n```",
+                    "options": [
+                        "It will printabcdef",
+                        "It will print an empty line",
+                        "It will printace",
+                        "It will printbdf"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-006",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\ndef fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n \n \nfor x in fun(2):\n    print(x, end='');\n \n```",
+                    "options": [
+                        "It will print+",
+                        "It will print++++++",
+                        "It will print+++",
+                        "It will print++"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-007",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\ndef o(p):\n    def q():\n        return '*' * p\n    return q\n \n \nr = o(1)\ns = o(2)\nprint(r() + s())\n \n```",
+                    "options": [
+                        "It will print***",
+                        "It will print*",
+                        "It will print****",
+                        "It will print**"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-008",
+                    "type": "single",
+                    "question": "Which of the following open modes allow you to perform **read** operations? (Select two answers)",
+                    "options": [
+                        "a1 of 4",
+                        "r+2 of 4",
+                        "r3 of 4",
+                        "w4 of 4"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-009",
+                    "type": "single",
+                    "question": "What is the meaning of the value represented by  `errno.EEXIST`  ?",
+                    "options": [
+                        "Bad file number",
+                        "File exists",
+                        "Permission denied",
+                        "File doesn't exist"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-010",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nb = bytearray(3)\nprint(b)\n \n```",
+                    "options": [
+                        "bytearray(b'3')",
+                        "bytearray(b'\\x00\\x00\\x00')",
+                        "bytearray(0, 0, 0)",
+                        "3"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-011",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nimport os\n \nos.mkdir('pictures')\nos.chdir('pictures')\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\nos.mkdir('tmp')\nos.chdir('../')\n \nprint(os.getcwd())\n \n```",
+                    "options": [
+                        "It prints the path to thetmpdirectory",
+                        "It prints the path to thethumbnailsdirectory",
+                        "It prints the path to therootdirectory",
+                        "It prints the path to thepicturesdirectory"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-012",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nimport os\n \nos.mkdir('thumbnails')\nos.chdir('thumbnails')\n \nsizes = ['small', 'medium', 'large']\n \nfor size in sizes:\n    os.mkdir(size)\n \nprint(os.listdir())\n \n```",
+                    "options": [
+                        "['large', 'small', 'medium']",
+                        "['.', '..', 'large', 'small', 'medium']",
+                        "['.', 'large', 'small', 'medium']",
+                        "[]"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-013",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import date\n \ndate_1 = date(1992, 1, 16)\ndate_2 = date(1991, 2, 5)\n \nprint(date_1 - date_2)\n \n```",
+                    "options": [
+                        "345 days",
+                        "345",
+                        "345, 0:00:00",
+                        "345 days, 0:00:00"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-014",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import datetime\n \ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%y/%B/%d %H:%M:%S'))\n \n```",
+                    "options": [
+                        "2019/11/27 11:27:22",
+                        "19/11/27 11:27:22",
+                        "2019/Nov/27 11:27:22",
+                        "19/November/27 11:27:22"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-015",
+                    "type": "single",
+                    "question": "Which program will produce the following output:\n\n```python\nMo Tu We Th Fr Sa Su\n```",
+                    "options": [
+                        "D",
+                        "B",
+                        "C",
+                        "A"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-m3-016",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nimport calendar\n \nc = calendar.Calendar()\n \nfor weekday in c.iterweekdays():\n    print(weekday, end=\" \")\n \n```",
+                    "options": [
+                        "1 2 3 4 5 6 7",
+                        "0 1 2 3 4 5 6",
+                        "Mo Tu We Th Fr Sa Su",
+                        "Su Mo Tu We Th Fr Sa"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                }
+            ]
+        },
+        {
+            "id": "js-pe2-m4",
+            "name": "PE2: Moduł 4 — Generatory, domknięcia i operacje na plikach",
+            "questions": [
+                {
+                    "id": "js-pe2-m4-001",
+                    "type": "single",
+                    "question": "What keyword would you use to define an anonymous function?",
+                    "options": [
+                        "lambda",
+                        "def",
+                        "afun",
+                        "yield"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Remember that in Python, a lambda function is a single line function declared with no name – in other words anonymous."
+                },
+                {
+                    "id": "js-pe2-m4-002",
+                    "type": "multiple",
+                    "question": "Select the true statements. (Select two answers)",
+                    "options": [
+                        "Thelambdafunction can acceptany numberof arguments1 of 4",
+                        "Thelambdafunction can evaluateonly oneexpression2 of 4",
+                        "Thelambdafunction can accepta maximum of twoarguments3 of 4",
+                        "Thelambdafunction can evaluatemultipleexpressions4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Remember that a lambda function can have any number of arguments, but it can only evaluate a single expression."
+                },
+                {
+                    "id": "js-pe2-m4-003",
+                    "type": "single",
+                    "question": "Look at the code below:\n\n```python\nmy_list = [1, 2, 3]\n# Insert line of code here.\nprint(foo)\n \n```",
+                    "options": [
+                        "foo = tuple(map(lambda x: x**x, my_list))",
+                        "foo = list(map(lambda x: x**x, my_list))",
+                        "foo = tuple(map(lambda x: x*x, my_list))",
+                        "foo = list(map(lambda x: x*x, my_list))"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "In order to obtain the tuple mentioned, a map function is used. It takes the lambda functionlambda x: x**xand the listmy_listas arguments. It performs the exponentiation operationx**xdefined within the lambda function with each of the lists elements[1, 2, 3]. The result is cast to a tuple and printed in the console."
+                },
+                {
+                    "id": "js-pe2-m4-004",
+                    "type": "single",
+                    "question": "Look at the code below:\n\n```python\nmy_tuple = (0, 1, 2, 3, 4, 5, 6)\n# Insert line of code here.\nprint(foo)\n \n```",
+                    "options": [
+                        "foo = list(filter(lambda x: x-0 and x-1, my_tuple))",
+                        "foo = tuple(filter(lambda x: x-0 and x-1, my_tuple))",
+                        "foo = tuple(filter(lambda x: x>1, my_tuple))",
+                        "foo = list(filter(lambda x: x==0 and x==1, my_tuple))"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "In order to obtain the list mentioned, a filter function is used. It takes the lambda functionlambda x: x-0 and x-1and the tuplemy_tupleas arguments. It performs the operationx: x-0 and x-1defined within the lambda function, filtering the tuple elements in the index positions0 and 1, meaning that they are not shown. The result is cast to a list and printed on the console."
+                },
+                {
+                    "id": "js-pe2-m4-005",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\ndef I():\n    s = 'abcdef'\n    for c in s[::2]:\n        yield c\n \n \nfor x in I():\n    print(x, end='')\n \n```",
+                    "options": [
+                        "It will printace",
+                        "It will printbdf",
+                        "It will printabcdef",
+                        "It will print an empty line"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Let’s analyze this code snippet:The code begins by executing thefor x in I():loop.It uses thexvariable to iterate through whatI():yields, and outputs it on the same line due to theend=''argument in the print function.Once theI():iterator is invoked, it initializes a string that contains the characterss = 'abcdef'.A for loop iterates though the characters within thesstring using thecvariable.Due to the[::2]notation, the loop will only iterate through every two characters, yielding one on each iteration. In other words, it begins on the first character, skips to the third, and finally to the fifth.Since there is no seventh character, the execution comes to an end.The charactersaceare printed in the console."
+                },
+                {
+                    "id": "js-pe2-m4-006",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\ndef fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n \n \nfor x in fun(2):\n    print(x, end='');\n \n```",
+                    "options": [
+                        "It will print++++++",
+                        "It will print+",
+                        "It will print++",
+                        "It will print+++"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Let’s analyze this code snippet:The code begins by executing thefor x in fun(2):loop.It uses thexvariable to iterate through whatfun(2):yields, and outputs it on the same line due to theend=''argument in the print function.Once thefun(2):iterator is invoked, it initializes a string that contains the characters = '+'.A for loop uses the range function with 2 as its argument, which was sent to the iterator when it was invoked. The for loop will iterate twice (the values for theivariable are 0 and 1).In the first iteration, thes += soperation is applied to the string, and the new strings = '++'is yielded and outputted in the console.In the second iteration, thes += soperation is again applied to the last produced string, and the new strings = '++++'is yielded and outputted in the console.The final result shown in the console is++++++."
+                },
+                {
+                    "id": "js-pe2-m4-007",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\ndef o(p):\n    def q():\n        return '*' * p\n    return q\n \n \nr = o(1)\ns = o(2)\nprint(r() + s())\n \n```",
+                    "options": [
+                        "It will print***",
+                        "It will print**",
+                        "It will print*",
+                        "It will print****"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "This code snippet implements Closures, which are inner functions enclosed within an outer function. Let’s analyze this code snippet:The code begins by creating a Closure namedrby invoking the outer functiono(1). The Closure contains the inner functionq()that will return the result of the operation'*' * 1, which is*.A second Closure namedsis created by invoking the outer functiono(2). The Closure contains the inner functionq()that will return the result of the operation'*' * 2, which is**.Finally, both closures are invoked within a print function concatenating their results. Therefore, the console output is***."
+                },
+                {
+                    "id": "js-pe2-m4-008",
+                    "type": "multiple",
+                    "question": "Which of the following open modes allow you to perform **read** operations? (Select two answers)",
+                    "options": [
+                        "r1 of 4",
+                        "r+2 of 4",
+                        "w3 of 4",
+                        "a4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "These are the open modes in Python:r - opens a file for reading.w - opens a file for writing.a - opens a file for appending at the end. Creates a new file if it does not exist.t - opens in text mode.b - opens in binary mode.+ - opens a file for updating (reading and writing)."
+                },
+                {
+                    "id": "js-pe2-m4-009",
+                    "type": "single",
+                    "question": "What is the meaning of the value represented by  `errno.EEXIST`  ?",
+                    "options": [
+                        "File exists",
+                        "File doesn't exist",
+                        "Bad file number",
+                        "Permission denied"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Remember thaterrno.EEXISTmeans that the file or directory trying to be created already exists."
+                },
+                {
+                    "id": "js-pe2-m4-010",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nb = bytearray(3)\nprint(b)\n \n```",
+                    "options": [
+                        "bytearray(b'\\x00\\x00\\x00')",
+                        "bytearray(0, 0, 0)",
+                        "bytearray(b'3')",
+                        "3"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Remember that thebytearray()function creates an array of bytes. Since 3 is specified as an argument, thebbytearray will consist of 3 empty bytes. Then, the print function outputs them to console:bytearray(b'\\x00\\x00\\x00')."
+                },
+                {
+                    "id": "js-pe2-m4-011",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nimport os\n \nos.mkdir('pictures')\nos.chdir('pictures')\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\nos.mkdir('tmp')\nos.chdir('../')\n \nprint(os.getcwd())\n \n```",
+                    "options": [
+                        "It prints the path to thepicturesdirectory",
+                        "It prints the path to thethumbnailsdirectory",
+                        "It prints the path to thetmpdirectory",
+                        "It prints the path to therootdirectory"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Let’s analyze this code snippet:The first line imports the os module, which handles functions that interact with the Operating System.The second line creates a directory namedpictures.The third line changes the current working directory to thepicturesfolder.The fourth line creates a directory namedthumbnails.The fifth line changes the current working directory to thethumbnailsfolder.The sixth line creates a directory namedtmp.The seventh line exits the current working directory.The eighth line prints the path to the current working directory which is now thepicturesfolder."
+                },
+                {
+                    "id": "js-pe2-m4-012",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nimport os\n \nos.mkdir('thumbnails')\nos.chdir('thumbnails')\n \nsizes = ['small', 'medium', 'large']\n \nfor size in sizes:\n    os.mkdir(size)\n \nprint(os.listdir())\n \n```",
+                    "options": [
+                        "['large', 'small', 'medium']",
+                        "['.', 'large', 'small', 'medium']",
+                        "['.', '..', 'large', 'small', 'medium']",
+                        "[]"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Let’s analyze this code snippet:The first line imports the os module, which handles functions that interact with the Operating System.The second line creates a directory namedthumbnails.The third line changes the current working directory to thethumbnailsfolder.The fourth line creates a list namedsizesthat contains three elements'small', 'medium', and 'large'.The fifth and sixth lines are a for loop that iterates through thesizeslist and creates three folders within the current working directory. Each folder is named after each element in thesizelist.The seventh line prints the existing directories (in a list format) within the current working directory, which is thethumbnailsfolder.The output is['large', 'small', 'medium']."
+                },
+                {
+                    "id": "js-pe2-m4-013",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import date\n \ndate_1 = date(1992, 1, 16)\ndate_2 = date(1991, 2, 5)\n \nprint(date_1 - date_2)\n \n```",
+                    "options": [
+                        "345 days, 0:00:00",
+                        "345 days",
+                        "345",
+                        "345, 0:00:00"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Let’s analyze this code snippet:The first line imports the datetime function from the date module.The second line creates a date object nameddate_1. The set date is January 16, 1992.The third line creates a date object nameddate_2. The set date is February 5, 1991.The fourth line is a print function that outputs the difference betweendate_1anddate_2using the-operator.The result is show in the console. Remember, the output format expresses days, hours, minutes and seconds, since they can also be specified."
+                },
+                {
+                    "id": "js-pe2-m4-014",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import datetime\n \ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%y/%B/%d %H:%M:%S'))\n \n```",
+                    "options": [
+                        "19/November/27 11:27:22",
+                        "2019/Nov/27 11:27:22",
+                        "2019/11/27 11:27:22",
+                        "19/11/27 11:27:22"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Let’s analyze this code snippet:The first line imports the datetime function from the datetime module.The second line creates a datetime object nameddatetime. The arguments represent the year, month, day, hours, minutes, and seconds.The third line formats the date using thestrftimemethod.The%yargument formats the year without the century digits, and the result is19.The%Bargument formats the month to its full name, and the result isNovember.The%dargument formats the day to two digits. In this case, the result stays the same, which is27.The%Hargument formats the hours to a 24 hour format. In this case, the result stays the same, which is11.The%Margument formats the minutes to two digits. In this case, the result stays the same, which is27.The%Sargument formats the seconds to two digits. In this case, the result stays the same, which is22.The arguments are separated by slashes and colons. The output printed in the console is19/November/27 11:27:22."
+                },
+                {
+                    "id": "js-pe2-m4-015",
+                    "type": "single",
+                    "question": "Which program will produce the following output:\n\n```python\nMo Tu We Th Fr Sa Su\n```",
+                    "options": [
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "The requested output represents the weekdays with onlytwo letters. Therefore, thecalendar.weekheader()methodmustreceive2as an argument."
+                },
+                {
+                    "id": "js-pe2-m4-016",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nimport calendar\n \nc = calendar.Calendar()\n \nfor weekday in c.iterweekdays():\n    print(weekday, end=\" \")\n \n```",
+                    "options": [
+                        "0 1 2 3 4 5 6",
+                        "1 2 3 4 5 6 7",
+                        "Mo Tu We Th Fr Sa Su",
+                        "Su Mo Tu We Th Fr Sa"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Let’s analyze the code:Line 1: thecalendarmodule is imported.Line 3: acobject is created from theCalendar()class provided by thecalendarmodule. TheCalendar()class constructor takes no optionalfirstweekdayparameter, which means its value is equal to0by default (0is equal toMonday).Lines 5 and 6: theforloop and theCalendar()class method namediterweekdaysare used to iterate through the days of the week, and return an iterator for each week day number, starting from0(Monday), to6(Sunday). The values are printed to the console."
+                }
+            ]
+        },
+        {
+            "id": "js-pe2-final",
+            "name": "PE2: Test końcowy",
+            "questions": [
+                {
+                    "id": "js-pe2-final-001",
+                    "type": "single",
+                    "question": "Knowing that a function named  `fun()`  resides in a module named  `mod` , and was imported using the following statement:\n\n```python\nfrom mod import fun\n\n\n \n```",
+                    "options": [
+                        "fun()",
+                        "mod.fun()",
+                        "mod:fun()",
+                        "mod::fun()"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-002",
+                    "type": "single",
+                    "question": "Given the Python code snippet below:\n\n```python\nimport random\nprint(len(dir(random)))\n \n```",
+                    "options": [
+                        "A list of attributes belonging to therandommodule.",
+                        "The number of attributes in therandommodule.",
+                        "A TypeError becausedircannot be used with modules.",
+                        "The documentation string of therandommodule."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-003",
+                    "type": "single",
+                    "question": "The compiled Python bytecode is stored in files which have their names ending with:",
+                    "options": [
+                        "pyc",
+                        "py",
+                        "pyb",
+                        "pc"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-004",
+                    "type": "single",
+                    "question": "Assuming that the following three files:  `a.py` ,  `b.py` , and  `c.py`  reside in the same directory, what will be the output produced after running the  `c.py`  file?\n\n```python\n# file a.py\nprint(\"a\", end='')\n \n# file b.py\nimport a\nprint(\"b\", end='')\n \n# file c.py\nprint(\"c\", end='')\nimport a\nimport b\n \n```",
+                    "options": [
+                        "cab",
+                        "bc",
+                        "bac",
+                        "cba"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-005",
+                    "type": "single",
+                    "question": "If the following line of code is at the end of a Python script named  `calculator.py` , what will be the output when this script is run directly?\n\n```python\nprint(__name__)\n \n```",
+                    "options": [
+                        "__calculator__",
+                        "calculator",
+                        "__main__",
+                        "main"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-006",
+                    "type": "single",
+                    "question": "Consider the following Python import statement in a script:\n\n```python\nfrom data.processing.analysis.v1 import compute_metrics as cm\n \n```",
+                    "options": [
+                        "Imports thecompute_metricsfunction from thev1.pyscript, which is part of theanalysissubpackage in theprocessingpackage inside thedatapackage, and renames it tocm.",
+                        "Imports thev1package from theanalysissubmodule, which is part of theprocessingfunction inside the data module, and renames it tocompute_metrics.",
+                        "Imports thedatamodule from theprocessingpackage, which is part of theanalysissubpackage inside thev1package, and renames it tocm.",
+                        "Imports the entiredatapackage and renames it tocompute_metrics, allowing all functions and classes within to be accessed using the prefixcm."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-007",
+                    "type": "single",
+                    "question": "Given the following Python code segment:\n\n```python\ntry:\n   # Code that may raise an exception\n   risky_call()\nexcept ValueError:\n   print(\"Caught ValueError\")\nexcept TypeError:\n   print(\"Caught TypeError\")\nexcept Exception:\n   print(\"Caught a different exception\")\n \n```",
+                    "options": [
+                        "One or moreexcept:blocks will be executed.",
+                        "Not more than oneexcept:block will be executed.",
+                        "None of theexcept:blocks will be executed.",
+                        "Exactly oneexcept:block will be executed."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-008",
+                    "type": "single",
+                    "question": "Consider the following Python code:\n\n```python\ntry:\n    raise Exception(\"An error occurred\")\nexcept ValueError as ve:\n    print(\"ValueError:\", str(ve))\nexcept BaseException as be:\n    print(\"BaseException:\", str(be))\nexcept:\n    print(\"Caught some other exception\")\n \n```",
+                    "options": [
+                        "ValueError: An error occurred",
+                        "BaseException: An error occurred",
+                        "Caught some other exception",
+                        "No output; an unhandled exception will terminate the program"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-009",
+                    "type": "single",
+                    "question": "Review the Python code below:\n\n```python\ntry:\n    raise Exception(\"An error has occurred\")\nexcept Exception:\n    print(\"a\")\nexcept:\n    print(\"b\")\nexcept BaseException:\n    print(\"c\")\n \n```",
+                    "options": [
+                        "The code will print \"c\"",
+                        "The code will print \"a\"",
+                        "The code will print \"b\"",
+                        "The code will cause a syntax error"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-010",
+                    "type": "single",
+                    "question": "Analyze the Python statement below:\n\n```python\nwith open('data.csv', 'r') as file:\n    for record in file:\n \n```",
+                    "options": [
+                        "The code is valid because theopenfunction with'r'mode returns an iterable file object.",
+                        "The code may be valid ifrecordis predefined as a list before the loop.",
+                        "The code is invalid because theopenfunction with'r'mode returns nothing.",
+                        "The code is invalid because theopenfunction with'r'mode returns a non-iterable object."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-011",
+                    "type": "single",
+                    "question": "Examine the Python assertion statement provided:\n\n```python\nassert var > 0\n \n```",
+                    "options": [
+                        "It will raise an AssertionError ifvaris less than or equal to 0.",
+                        "It will raise an AssertionError ifvaris greater than 0.",
+                        "It will do nothing regardless of the value ofvar.",
+                        "It will output the value ofvarif it is greater than 0."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-012",
+                    "type": "single",
+                    "question": "Given the Python code segment below:\n\n```python\nx = r\"\\\"\nprint(len(x))\n \n```",
+                    "options": [
+                        "The code will print 3, as the raw string treats backslashes as literal characters.",
+                        "The code will print 1, as the triple backslash in a raw string represents a single backslash.",
+                        "The code will cause a syntax error due to the unescaped sequence at the end of the raw string.",
+                        "The code will print 4, as the raw string preserves the backslashes and the ending double quote is considered part of the string."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-013",
+                    "type": "single",
+                    "question": "Given the Python code segment below:\n\n```python\nx = \"\\//\nprint(len(x))\n \n```",
+                    "options": [
+                        "The code will output 4, as there are four characters in the string, with the backslash escaping the following forward slash.",
+                        "The code will output 3, recognizing the sequence of two backslashes as a single escaped backslash and two forward slashes.",
+                        "The code will output 2, as the double backslash represents a single backslash and the double forward slashes are combined.",
+                        "The code will cause a syntax error due to an improper sequence of escape characters."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-014",
+                    "type": "single",
+                    "question": "Consider the Python code provided below:\n\n```python\nprint(chr(ord('a') + 1))\n \n```",
+                    "options": [
+                        "The code will print \"b\" as it takes the Unicode code point of 'a', adds 1, and converts it back to a character.",
+                        "The code will print \"A\" because the addition operation converts the lowercase 'a' to an uppercase 'A' without changing its position in the alphabet.",
+                        "The code will print \"a\" because the addition operation does not affect the character.",
+                        "The code will cause a syntax error because you cannot add a number to a character'sord()value."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-015",
+                    "type": "single",
+                    "question": "Consider the following Python code snippet:\n\n```python\nprint(int(\"1.0\"))\n \n```",
+                    "options": [
+                        "The code will print 1 because it converts the string \"1.0\" to an integer.",
+                        "The code will print 1.0 as it maintains the floating-point format.",
+                        "The code will cause a ValueError because \"1.0\" is not a valid literal for theint()constructor without prior conversion to a float.",
+                        "The code will cause a TypeError because strings cannot be converted to integers directly when they represent a float."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-016",
+                    "type": "single",
+                    "question": "If the class constructor is declared in the following way:\n\n```python\nclass Class:\n    def __init__(self, val=0):\n        pass\n \n```",
+                    "options": [
+                        "object = Class(1, 2)",
+                        "object = Class(None)",
+                        "object = Class(1)",
+                        "object = Class()"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-017",
+                    "type": "single",
+                    "question": "Consider the Python class  `CustomNumber`  and the subsequent operations performed on its instance:\n\n```python\nclass CustomNumber:\n    def __init__(self, value=1.5):\n        self.value = value\n \n    def increment(self, increase=2):\n        self.value -= increase\n        return self.value\n \n \nnum_instance = CustomNumber()\nnum_alias = num_instance\nnum_alias.increment()\n \nprint(num_instance.value)\n \n```",
+                    "options": [
+                        "0.5",
+                        "-0.5",
+                        "3.5",
+                        "A TypeError is raised."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-018",
+                    "type": "single",
+                    "question": "What is the expected output of the following code?\n\n```python\nclass A:\n    A = 1\n    def __init__(self):\n        self.a = 0\n \n \nprint(hasattr(A, 'a'))\n \n```",
+                    "options": [
+                        "False",
+                        "True",
+                        "0",
+                        "1"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-019",
+                    "type": "single",
+                    "question": "What will the following Python code output?\n\n```python\nclass Parent:\n    pass\n \nclass Uncle(Parent):\n    pass\n \nclass Child(Uncle):\n    pass\n \nclass Cousin(Parent):\n    pass\n \n \nprint(issubclass(Child, Cousin), issubclass(Cousin, Uncle))\n```",
+                    "options": [
+                        "True, True",
+                        "True, False",
+                        "False, True",
+                        "False, False"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-020",
+                    "type": "single",
+                    "question": "What is the  `sys.stdout`  stream in Python typically associated with?",
+                    "options": [
+                        "The screen",
+                        "The keyboard",
+                        "A null device",
+                        "The printer"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-021",
+                    "type": "single",
+                    "question": "What will be the result of running the following code?\n\n```python\nclass A:\n    def __init__(self, v):\n        self.__a = v + 1\n \nclass B(A):\n    def __init__(self, v):\n        super().__init__(v)\n        self.__a += 1\n \nb = B(0)\nprint(b._A__a)\n \n```",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "AttributeError is raised"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-022",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\nclass A:\n    def __init__(self):\n        pass\n \n \na = A(1)\nprint(hasattr(a, 'A'))\n \n```",
+                    "options": [
+                        "The code will raise an exception",
+                        "The code will printTrue",
+                        "The code will printFalse",
+                        "The code will print1"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-023",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\nclass A:\n    def a(self):\n        print('a')\n \n \nclass B:\n    def a(self):\n        print('b')\n \n \nclass C(B, A):\n    def c(self):\n        self.a()\n \n \no = C()\no.c()\n \n```",
+                    "options": [
+                        "The code will printb",
+                        "The code will printc",
+                        "The code will printa",
+                        "The code will raise an exception"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-024",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\ntry:\n    raise Exception(1, 2, 3, (4), \"A\",)\nexcept Exception as e:\n     print(len(e.args))\n \n```",
+                    "options": [
+                        "5",
+                        "4",
+                        "6",
+                        "An exception will be raised"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-025",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\ndef my_fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n \n \nfor x in my_fun(2):\n    print(x, end='')\n \n```",
+                    "options": [
+                        "The code will print++++++",
+                        "The code will print+++",
+                        "The code will print++",
+                        "The code will print+"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-026",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following code?\n\n```python\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n \n    def __iter__(self):\n        return self\n \n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n \n \nfor x in I():\n    print(x, end='')\n \n```",
+                    "options": [
+                        "The code will printabc",
+                        "The code will print012",
+                        "The code will printcba",
+                        "The code will print210"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-027",
+                    "type": "single",
+                    "question": "What will be the output of the following code?\n\n```python\ndef generate_pattern(n):\n    def create_pattern():\n        return '**' * n\n \n    return create_pattern\n \npattern1 = generate_pattern(1)\npattern2 = generate_pattern(2)\nprint(pattern1() + pattern2())\n \n```",
+                    "options": [
+                        "**",
+                        "***",
+                        "****",
+                        "******"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-028",
+                    "type": "single",
+                    "question": "If  `s`  is a stream opened in *read* mode, the following line of code do?\n\n```python\nq = s.read(-1)\n \n```",
+                    "options": [
+                        "It reads the entire contents of the streams.",
+                        "It reads nothing from the streams.",
+                        "It reads one character from the streams.",
+                        "It raises an error because a negative value is provided as an argument."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-029",
+                    "type": "single",
+                    "question": "Assuming that the  `open()`  invocation has gone successfully, the following snippet:\n\n```python\nfor x in open('file', 'rt'):\n    print(x)\n \n```",
+                    "options": [
+                        "read the file line by line",
+                        "read the file character by character",
+                        "read the whole file at once",
+                        "cause an exception"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-030",
+                    "type": "single",
+                    "question": "If you want to fill a byte array with data read in from a stream, which method can you use?",
+                    "options": [
+                        "Thereadinto()method",
+                        "Thereadbytes()method",
+                        "Thereadfrom()method",
+                        "Theread()method"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-031",
+                    "type": "single",
+                    "question": "Which of the following commands would you use to check  `pip` 's version? (Select **two** answers)",
+                    "options": [
+                        "pip --version1 of 4",
+                        "pip3 --version2 of 4",
+                        "pip version3 of 4",
+                        "pip-version4 of 4"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-032",
+                    "type": "single",
+                    "question": "Which of the following commands can be used with pip to uninstall a specific Python package?",
+                    "options": [
+                        "pip uninstallpackage_name",
+                        "pip erasepackage_name",
+                        "pip deletepackage_name",
+                        "pip --removepackage_name"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-033",
+                    "type": "single",
+                    "question": "Look at the following code:\n\n```python\nnumbers = [0, 2, 7, 9, 10]\n# Insert line of code here.\nprint(list(foo))\n \n```",
+                    "options": [
+                        "foo = map(lambda num: num ** 2, numbers)",
+                        "foo = filter(lambda num: num ** 2, numbers)",
+                        "foo = lambda num: num ** 2, numbers",
+                        "foo = lambda num: num * 2, numbers)"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-034",
+                    "type": "single",
+                    "question": "Look at the following code:\n\n```python\nnumbers = [i*i for i in range(5)]\n# Insert line of code here.\nprint(foo)\n \n```",
+                    "options": [
+                        "foo = list(filter(lambda x: x % 2, numbers))",
+                        "foo = list(map(lambda x: x % 2, numbers))",
+                        "foo = list(filter(lambda x: x / 2, numbers))",
+                        "foo = list(map(lambda x: x // 2, numbers))"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-035",
+                    "type": "single",
+                    "question": "Look at the code below:\n\n```python\nimport random\n \n#\n# Insert lines of code here.\n#\n \nprint(a, b, c)\n \n```",
+                    "options": [
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-036",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nimport os\n \nos.mkdir('pictures')\nos.chdir('pictures')\n \nprint(os.getcwd())\n \n```",
+                    "options": [
+                        "The code will print the path to the created directory",
+                        "The code will print the name of the created directory",
+                        "The code will print the content of the created directory",
+                        "The code will print the owner of the created directory"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-037",
+                    "type": "single",
+                    "question": "What information can be read using the  `uname`  function provided by the  `os`  module? (Select **two** answers)",
+                    "options": [
+                        "Operating system name1 of 4",
+                        "Hardware identifier2 of 4",
+                        "Last login date3 of 4",
+                        "Current path4 of 4"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-038",
+                    "type": "single",
+                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import datetime\n \ndatetime_1 = datetime(2019, 11, 27, 11, 27, 22)\ndatetime_2 = datetime(2019, 11, 27, 0, 0, 0)\n \nprint(datetime_1 - datetime_2)\n \n```",
+                    "options": [
+                        "11:27:22",
+                        "0 days, 11:27:22",
+                        "11 hours, 27 minutes, 22 seconds",
+                        "0 days"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-039",
+                    "type": "single",
+                    "question": "If you want to calculate the date that is 30 days after the current date, which of the following code snippets would you use?",
+                    "options": [
+                        "current_date + timedelta(days=30)",
+                        "current_date + timedelta(days-=30)",
+                        "current_date + timedelta(30)",
+                        "current_date + timedelta(-30)"
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-pe2-final-040",
+                    "type": "single",
+                    "question": "What is the expected result of executing the following Python code?\n\n```python\nimport calendar\n \ncalendar.setfirstweekday(calendar.FRIDAY)\nprint(calendar.weekheader(2))\n \n```",
+                    "options": [
+                        "It will only print the names of the first two days of the week starting with Friday.",
+                        "It will only print the names of the days of the week from Friday to Sunday.",
+                        "It will raise an error becausecalendar.weekheader()does not accept arguments.",
+                        "It will print the names of all the days of the week in a shorter format."
+                    ],
+                    "correctAnswers": [],
+                    "explanation": ""
+                }
+            ]
         }
     ]
 };
