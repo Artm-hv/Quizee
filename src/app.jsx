@@ -16,8 +16,8 @@ function App() {
       data = data.map(s => {
         if (s.id === "jezyki-skryptowe") {
           const defaultJs = DEFAULT_SUBJECTS.find(ds => ds.id === "jezyki-skryptowe");
-          if (defaultJs && (!s.modules || s.modules.length < 2 || !s.modules.some(m => m.id === "js-mod-generowane"))) {
-            console.log("Migrated 'jezyki-skryptowe' module database.");
+          if (defaultJs && (!s.modules || s.modules.length < 3 || !s.modules.some(m => m.id === "js-pe1-m1"))) {
+            console.log("Migrated 'jezyki-skryptowe' module database to include PE1 Module 1.");
             return defaultJs;
           }
         }

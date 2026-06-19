@@ -2079,6 +2079,164 @@ const jezykiSkryptoweData = {
                     "explanation": "GIL (Global Interpreter Lock) to mechanizm w CPythonie uniemożliwiający jednoczesne wykonywanie kodu Pythona na wielu rdzeniach procesora przez różne wątki w ramach jednego procesu (sprawia, że wielowątkowość w Pythonie nie przyspiesza zadań CPU-bound)."
                 }
             ]
+        },
+        {
+            "id": "js-pe1-m1",
+            "name": "PE1: Moduł 1 — Wprowadzenie",
+            "questions": [
+                {
+                    "id": "js-pe1-m1-001",
+                    "type": "single",
+                    "question": "Czym jest kod maszynowy?",
+                    "options": [
+                        "To język programowania wysokiego poziomu, składający się z listy instrukcji, które są zrozumiałe dla człowieka",
+                        "To język programowania średniego poziomu składający się z kodu z asemblera przeznaczonego dla procesora komputera",
+                        "To język programowania niskiego poziomu składający się z cyfr szesnastkowych, które tworzą instrukcje języka wysokiego poziomu",
+                        "To język programowania niskiego poziomu składający się z cyfr/bitów, które komputer odczytuje i rozumie"
+                    ],
+                    "correctAnswers": [
+                        3
+                    ],
+                    "explanation": "Kod maszynowy to program napisany w języku maszynowym, który składa się z sekwencji liczb binarnych:0i1."
+                },
+                {
+                    "id": "js-pe1-m1-002",
+                    "type": "single",
+                    "question": "Jakie są cztery podstawowe elementy, które składają się na język?",
+                    "options": [
+                        "Alfabet, morfologia, fonetyka i semantyka",
+                        "Alfabet, leksyka, fonetyka i semantyka",
+                        "Alfabet, leksyka, składnia i semantyka",
+                        "Alfabet, fonetyka, fonologia i semantyka"
+                    ],
+                    "correctAnswers": [
+                        2
+                    ],
+                    "explanation": "Każdy język, czy to język maszynowy, czy język naturalny, składa się z alfabetu, leksyki, składni i semantyki."
+                },
+                {
+                    "id": "js-pe1-m1-003",
+                    "type": "single",
+                    "question": "Jak nazywa się plik zawierający program napisany w języku programowania wysokiego poziomu?",
+                    "options": [
+                        "Plik docelowy",
+                        "Plik maszynowy",
+                        "Plik kodu",
+                        "Plik źródłowy"
+                    ],
+                    "correctAnswers": [
+                        3
+                    ],
+                    "explanation": "Plik źródłowy to plik, który zawiera kod źródłowy, czyli instrukcje programu."
+                },
+                {
+                    "id": "js-pe1-m1-004",
+                    "type": "multiple",
+                    "question": "Które stwierdzenia na temat kompilacji sąprawdziwe? (Wybierzdwieodpowiedzi)",
+                    "options": [
+                        "Kod jest konwertowany bezpośrednio na kod maszynowy wykonywalny przez procesor1 of 4",
+                        "Zwykle jest szybsza niż interpretacja2 of 4",
+                        "Zwykle jest wolniejsza niż interpretacja3 of 4",
+                        "Zarówno Ty, jak i użytkownik końcowy musicie posiadać kompilator, aby uruchomić kod4 of 4"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Kompilator tłumaczy (kompiluje) program źródłowy (zbiór instrukcji w języku wysokiego poziomu) na kod maszynowy (niższy poziom reprezentacji programu źródłowego). Sekwencja0s i1s może być następnie wykonana przez procesor. Wykonanie skompilowanego kodu jest zazwyczaj szybsze niż interpretacja."
+                },
+                {
+                    "id": "js-pe1-m1-005",
+                    "type": "single",
+                    "question": "Jaka jest najlepsza definicjaskryptu?",
+                    "options": [
+                        "Jest to plik tekstowy zawierający ciągi zer i jedynek",
+                        "Jest to komunikat o błędzie generowany przez kompilator",
+                        "Jest to komunikat o błędzie generowany przez tłumacza",
+                        "Jest to plik tekstowy zawierający instrukcje składające się na program w języku Python"
+                    ],
+                    "correctAnswers": [
+                        3
+                    ],
+                    "explanation": "Skrypt to zestaw poleceń w języku wysokiego poziomu zapisanych w pliku, zorganizowanych w sposób umożliwiający ich wykonanie jak programu. Skrypt w języku Python to plik zawierający kod napisany w języku Python."
+                },
+                {
+                    "id": "js-pe1-m1-006",
+                    "type": "multiple",
+                    "question": "Które stwierdzenia sąprawdziwe? (Wybierzdwieodpowiedzi)",
+                    "options": [
+                        "Python 3 jest wstecznie kompatybilny z Pythonem 21 of 4",
+                        "Python to dobry wybór do tworzenia i wykonywania testów dla aplikacji2 of 4",
+                        "Python jest dobrym wyborem do programowania niskopoziomowego, na przykład gdy chcesz zaimplementować wydajny sterownik3 of 4",
+                        "Python jest darmowy, jest programem typu open source i jest wieloplatformowy4 of 4"
+                    ],
+                    "correctAnswers": [
+                        1,
+                        3
+                    ],
+                    "explanation": "Python to darmowy język programowania typu open source, dostępny dla każdego. Jest to język wieloplatformowy, co oznacza, że program napisany w Pythonie na systemie Linux będzie działał na Macu i odwrotnie.Ponieważ Python jest stosunkowo łatwy do nauczenia i posiada prostą składnię, jest dobrym wyborem dla testerów."
+                },
+                {
+                    "id": "js-pe1-m1-007",
+                    "type": "single",
+                    "question": "Czym jestCPython?",
+                    "options": [
+                        "To domyślna, referencyjna implementacja Pythona, napisana w języku C",
+                        "To język programowania będący nadzbiorem Pythona, zaprojektowany tak, aby osiągać wydajność zbliżoną do języka C przy użyciu kodu pisanego w Pythonie",
+                        "To język programowania będący nadzbiorem języka C, zaprojektowany tak, aby osiągać wydajność zbliżoną do Pythona przy kodzie napisanym w C",
+                        "To domyślna, referencyjna implementacja w języku C, napisana w Pythonie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "CPython to oryginalna (tradycyjna) implementacja w języku Python napisana w języku C, w przeciwieństwie do innych, niedomyślnych implementacji, takich jak Jython, implementowanych w języku Java, które pojawiły się później. CPython jest implementacją języka Python dostępną do pobrania ze stronywww.python.orgi pierwszą, w której wprowadzono nowe funkcje. Pojawia się ona we wszystkich kolejnych wersjach Pythona."
+                },
+                {
+                    "id": "js-pe1-m1-008",
+                    "type": "single",
+                    "question": "Jak nazywa się interpreter wiersza poleceń, który umożliwia interakcję z systemem operacyjnym i wykonywanie poleceń i skryptów Pythona?",
+                    "options": [
+                        "Konsola",
+                        "Jython",
+                        "Edytor",
+                        "Kompilator"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Konsola Pythona to interpreter wiersza poleceń, który umożliwia wykonywanie poleceń, instrukcji i skryptów Pythona wiersz po wierszu. Dokładnie tak, jak tutaj:www.python.org/shell."
+                },
+                {
+                    "id": "js-pe1-m1-009",
+                    "type": "single",
+                    "question": "Jakie jest oczekiwane zachowanie następującego programu?print(\"Hello!\")",
+                    "options": [
+                        "Program wyświetli„Hello!”",
+                        "Program wyświetli komunikat o błędzie",
+                        "Program wyświetliHello!",
+                        "Program wyświetli(„Hello!”)"
+                    ],
+                    "correctAnswers": [
+                        2
+                    ],
+                    "explanation": "Program wyświetli„Hello!”Funkcjaprintwypisuje sprecyzowaną przez nas wiadomość, w tym przypadku„Hello!”."
+                },
+                {
+                    "id": "js-pe1-m1-010",
+                    "type": "single",
+                    "question": "Jakie jest oczekiwane zachowanie następującego programu?prin(\"Goodbye\")",
+                    "options": [
+                        "Program wyświetli na ekranie(„Goodbye”)",
+                        "Program wyświetli„Goodbye”na ekranie",
+                        "Program wyświetli na ekranie komunikat o błędzie",
+                        "Program wyświetliGoodbye!na ekranie"
+                    ],
+                    "correctAnswers": [
+                        2
+                    ],
+                    "explanation": "Program zgłosi wyjątekNameError, ponieważ Python nie rozpoznaje nazwyprin. Python nie rozpoznaje, że najprawdopodobniej próbujesz użyć słowaprint, a nieprin."
+                }
+            ]
         }
     ]
 };
