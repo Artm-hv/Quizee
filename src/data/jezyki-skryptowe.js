@@ -2097,7 +2097,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": "Kod maszynowy to program napisany w języku maszynowym, który składa się z sekwencji liczb binarnych:0i1."
+                    "explanation": "Kod maszynowy to program napisany w języku maszynowym, który składa się z sekwencji liczb binarnych: 0 i 1."
                 },
                 {
                     "id": "js-pe1-m1-002",
@@ -2143,7 +2143,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": "Kompilator tłumaczy (kompiluje) program źródłowy (zbiór instrukcji w języku wysokiego poziomu) na kod maszynowy (niższy poziom reprezentacji programu źródłowego). Sekwencja0s i1s może być następnie wykonana przez procesor. Wykonanie skompilowanego kodu jest zazwyczaj szybsze niż interpretacja."
+                    "explanation": "Kompilator tłumaczy (kompiluje) program źródłowy (zbiór instrukcji w języku wysokiego poziomu) na kod maszynowy (niższy poziom reprezentacji programu źródłowego). Sekwencja 0s i 1s może być następnie wykonana przez procesor. Wykonanie skompilowanego kodu jest zazwyczaj szybsze niż interpretacja."
                 },
                 {
                     "id": "js-pe1-m1-005",
@@ -2174,7 +2174,7 @@ const jezykiSkryptoweData = {
                         1,
                         3
                     ],
-                    "explanation": "Python to darmowy język programowania typu open source, dostępny dla każdego. Jest to język wieloplatformowy, co oznacza, że program napisany w Pythonie na systemie Linux będzie działał na Macu i odwrotnie.Ponieważ Python jest stosunkowo łatwy do nauczenia i posiada prostą składnię, jest dobrym wyborem dla testerów."
+                    "explanation": "Python to darmowy język programowania typu open source, dostępny dla każdego. Jest to język wieloplatformowy, co oznacza, że program napisany w Pythonie na systemie Linux będzie działał na Macu i odwrotnie. Ponieważ Python jest stosunkowo łatwy do nauczenia i posiada prostą składnię, jest dobrym wyborem dla testerów."
                 },
                 {
                     "id": "js-pe1-m1-007",
@@ -2189,7 +2189,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "CPython to oryginalna (tradycyjna) implementacja w języku Python napisana w języku C, w przeciwieństwie do innych, niedomyślnych implementacji, takich jak Jython, implementowanych w języku Java, które pojawiły się później. CPython jest implementacją języka Python dostępną do pobrania ze stronywww.python.orgi pierwszą, w której wprowadzono nowe funkcje. Pojawia się ona we wszystkich kolejnych wersjach Pythona."
+                    "explanation": "CPython to oryginalna (tradycyjna) implementacja w języku Python napisana w języku C, w przeciwieństwie do innych, niedomyślnych implementacji, takich jak Jython, implementowanych w języku Java, które pojawiły się później. CPython jest implementacją języka Python dostępną do pobrania ze strony www.python.org i pierwszą, w której wprowadzono nowe funkcje. Pojawia się ona we wszystkich kolejnych wersjach Pythona."
                 },
                 {
                     "id": "js-pe1-m1-008",
@@ -2219,7 +2219,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": "Program wyświetli„Hello!”Funkcjaprintwypisuje sprecyzowaną przez nas wiadomość, w tym przypadku„Hello!”."
+                    "explanation": "Program wyświetli „Hello!”. Funkcja print wypisuje sprecyzowaną przez nas wiadomość, w tym przypadku„Hello!”."
                 },
                 {
                     "id": "js-pe1-m1-010",
@@ -2234,7 +2234,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": "Program zgłosi wyjątekNameError, ponieważ Python nie rozpoznaje nazwyprin. Python nie rozpoznaje, że najprawdopodobniej próbujesz użyć słowaprint, a nieprin."
+                    "explanation": "Program zgłosi wyjątek NameError, ponieważ Python nie rozpoznaje nazwy prin. Python nie rozpoznaje, że najprawdopodobniej próbujesz użyć słowa print, a nie prin."
                 }
             ]
         },
@@ -2255,7 +2255,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Dwuznak, zwanyznakiem nowej linii, powoduje, że bieżący wiersz kończy się w punkcie przez niego wskazanymi tworzy nowy wiersz, który zaczyna się zaraz za nim."
+                    "explanation": "Dwuznak, zwany znakiem nowej linii, powoduje, że bieżący wiersz kończy się w punkcie przez niego wskazanym i tworzy nowy wiersz, który zaczyna się zaraz za nim."
                 },
                 {
                     "id": "js-pe1-m2-002",
@@ -2270,7 +2270,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Parametry słowa kluczowego (zwane takżeparametrami nazwanymi) to parametry, których wartości są określane przez słowo kluczowe, po którym następuje znak równości (=)i wartość domyślna przypisana do tego słowa kluczowego. Przykład argumentu słowa kluczowego:def my_function(x=1):."
+                    "explanation": "Parametry słowa kluczowego (zwane także parametrami nazwanymi) to parametry, których wartości są określane przez słowo kluczowe, po którym następuje znak równości (=) i wartość domyślna przypisana do tego słowa kluczowego. Przykład argumentu słowa kluczowego: def my_function(x=1):"
                 },
                 {
                     "id": "js-pe1-m2-003",
@@ -2285,7 +2285,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Pamiętając, że Python wybiera najbardziej efektywny format do przedstawiania liczb, a literaEoznacza\"razy dziesięć do potęgi\"w notacji naukowej, prawidłowy sposób zapisywania liczby20.12 × 108to20.12E8."
+                    "explanation": "Pamiętając, że Python wybiera najbardziej efektywny format do przedstawiania liczb, a litera E oznacza\"razy dziesięć do potęgi\"w notacji naukowej, prawidłowy sposób zapisywania liczby 20.12 × 10^8 to 20.12E8."
                 },
                 {
                     "id": "js-pe1-m2-004",
@@ -2300,7 +2300,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Jeśli liczba całkowita jest poprzedzona0olub0O, będzie ona traktowana jako wartość ósemkowa. Na przykład:0o246to liczba ósemkowa, której wartość dziesiętna to166.Jeśli liczba całkowita jest poprzedzona0xlub0X, będzie ona traktowana jako wartość szesnastkowa. Na przykład:0x246to liczba szesnastkowa, której wartość dziesiętna to582.Na koniec, jeśli liczba całkowita jest poprzedzona przez0blub0B, będzie ona traktowana jako wartość binarna. Na przykład:0b1111to liczba binarna, której wartość dziesiętna to15."
+                    "explanation": "Jeśli liczba całkowita jest poprzedzona 0o lub 0O, będzie ona traktowana jako wartość ósemkowa. Na przykład: 0o246 to liczba ósemkowa, której wartość dziesiętna to 166. Jeśli liczba całkowita jest poprzedzona 0x lub 0X, będzie ona traktowana jako wartość szesnastkowa. Na przykład: 0x246 to liczba szesnastkowa, której wartość dziesiętna to 582. Na koniec, jeśli liczba całkowita jest poprzedzona przez 0b lub 0B, będzie ona traktowana jako wartość binarna. Na przykład: 0b1111 to liczba binarna, której wartość dziesiętna to 15."
                 },
                 {
                     "id": "js-pe1-m2-005",
@@ -2315,7 +2315,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Operator**wykonuje operację potęgowania w Pythonie. Jest on również nazywanyoperatorem potęgowania."
+                    "explanation": "Operator ** wykonuje operację potęgowania w Pythonie. Jest on również nazywany operatorem potęgowania."
                 },
                 {
                     "id": "js-pe1-m2-006",
@@ -2330,7 +2330,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Operator/jest jednym z dwóch rodzajów operatora dzielenia w Pythonie , który dzieli lewy operand przez prawy operand orazzwraca wartość zmiennoprzecinkową (float).Operator//, zwany operatoremdzielenia całkowitoliczbowego (floor division), wykonuje podobną operację, ale wyniki zaokrągla w dół i zwraca liczbę całkowitą."
+                    "explanation": "Operator/jest jednym z dwóch rodzajów operatora dzielenia w Pythonie, który dzieli lewy operand przez prawy operand oraz zwraca wartość zmiennoprzecinkową (float).Operator //, zwany operatorem dzielenia całkowitoliczbowego (floor division), wykonuje podobną operację, ale wyniki zaokrągla w dół i zwraca liczbę całkowitą."
                 },
                 {
                     "id": "js-pe1-m2-007",
@@ -2346,7 +2346,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": "Operator%(modulo) zwraca resztę z dzielenia, a ponieważ nie można dzielić przez zero, prawy operand musi być liczbą różną od zera. W przeciwnym razie zostanie zgłoszony ZeroDivisionException.Operator**wykorzystuje prawostronne wiązanie, co oznacza, że wyrażenie2**2**3jest obliczane od prawej do lewej:2**3 = 8i2**8 = 256."
+                    "explanation": "Operator % (modulo) zwraca resztę z dzielenia, a ponieważ nie można dzielić przez zero, prawy operand musi być liczbą różną od zera. W przeciwnym razie zostanie zgłoszony ZeroDivisionException.Operator**wykorzystuje prawostronne wiązanie, co oznacza, że wyrażenie 2**2**3jest obliczane od prawej do lewej:2**3 = 8 i 2**8 = 256."
                 },
                 {
                     "id": "js-pe1-m2-008",
@@ -2361,7 +2361,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Lewostronne wiązanie oznacza, że wyrażenie jest obliczane od lewej do prawej:1 // 2 = 0i0 * 3 = 0."
+                    "explanation": "Lewostronne wiązanie oznacza, że wyrażenie jest obliczane od lewej do prawej: 1 // 2 = 0 i 0 * 3 = 0."
                 },
                 {
                     "id": "js-pe1-m2-009",
@@ -2377,7 +2377,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": "Trueorazandto słowa kluczowe w Pythonie (słowa zastrzeżone) i nie mogą być używane jako nazwy zmiennych. Ponieważ Python rozróżnia wielkość liter, nazwytrueiTRUEsą całkowicie dozwolone, ale nie są one najlepszym wyborem."
+                    "explanation": "True oraz and to słowa kluczowe w Pythonie (słowa zastrzeżone) i nie mogą być używane jako nazwy zmiennych. Ponieważ Python rozróżnia wielkość liter, nazwytrue i TRUE są całkowicie dozwolone, ale nie są one najlepszym wyborem."
                 },
                 {
                     "id": "js-pe1-m2-010",
@@ -2392,7 +2392,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Funkcjaprint()może nie przyjmować żadnych argumentów (np.print()), trzy argumenty (np.print(„one”, „two”, „three”) lub trzy tysiące trzysta trzydzieści trzy... (choć tak naprawdę tego nie sprawdziliśmy!)."
+                    "explanation": "Funkcja print() może nie przyjmować żadnych argumentów (np. print()), trzy argumenty (np. print(„one”, „two”, „three”) lub trzy tysiące trzysta trzydzieści trzy... (choć tak naprawdę tego nie sprawdziliśmy!)."
                 },
                 {
                     "id": "js-pe1-m2-011",
@@ -2407,7 +2407,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy następujący przykład:Wartość1zostaje przypisana do zmiennejx, a zmiennaxzostaje zainicjowana (czylix = 1)wartość2zostaje przypisana do zmiennejy, a zmiennayzostaje zainicjowana (więcy = 2)wartość przypisana do zmiennejxjest przypisana do zmiennejz, a zmiennazzostaje zainicjowana (więcz = 1)zmiennaxotrzymuje wartość, która jest przypisana do zmiennej y (a więcx = 2)zmiennayotrzymuje wartość, która jest przypisana do zmiennej z (a więcy = 1)wartości przypisane do zmiennychxiysą teraz wyświetlane, co daje następujący wynik:2 1(uwaga: funkcjaprint()oddziela wyświetlane wartości spacją)"
+                    "explanation": "Przeanalizujmy następujący przykład: Wartość 1 zostaje przypisana do zmiennejx, a zmienna x zostaje zainicjowana (czylix = 1)wartość2zostaje przypisana do zmiennejy, a zmienna y zostaje zainicjowana (więc y = 2); wartość przypisana do zmiennej x jest przypisana do zmiennejz, a zmiennej z zostaje zainicjowana (więc z = 1); zmienna x otrzymuje wartość, która jest przypisana do zmiennej y (a więc x = 2); zmienna y otrzymuje wartość, która jest przypisana do zmiennej z (a więc y = 1); wartości przypisane do zmiennych x i y są teraz wyświetlane, co daje następujący wynik: 2 1 (uwaga: funkcja print() oddziela wyświetlane wartości spacją)"
                 },
                 {
                     "id": "js-pe1-m2-012",
@@ -2422,7 +2422,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy następujący przykład:funkcjainput()odczytuje argumenty wprowadzone przez użytkownika (odpowiednio2i4) ikonwertuje je na ciągi,do zmiennychxiyprzypisywane są ciągi znaków wprowadzone przez użytkownika,funkcjaprint()wyświetla na ekranie wynik operacjikonkatenacji(proces łączenia ciągów):„2” + „4”; operator+powoduje dodanie ciągu znaków do innego ciągu i daje wynik24."
+                    "explanation": "Przeanalizujmy następujący przykład: funkcja input() odczytuje argumenty wprowadzone przez użytkownika (odpowiednio 2 i 4) i konwertuje je na ciągi, do zmiennych x i y przypisywane są ciągi znaków wprowadzone przez użytkownika, funkcja print() wyświetla na ekranie wynik operacji konkatenacji (proces łączenia ciągów):„2” + „4”; operator+powoduje dodanie ciągu znaków do innego ciągu i daje wynik 24."
                 },
                 {
                     "id": "js-pe1-m2-013",
@@ -2437,7 +2437,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy następujący przykład:zmiennejxprzypisywana jest wartość całkowita2(2jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint()zmiennejyjest przypisywana wartość całkowita4(4jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())wykonywana jest operacja, w wyniku której zmiennejxjest przypisywana wartość0(2 // 4=0)operacja jest wykonywana, ale został zgłoszony ZeroDivisionException, ponieważ operator//nie może zaakceptować0jako prawego operandu. Program zostanie zakończony."
+                    "explanation": "Przeanalizujmy następujący przykład: zmiennej x przypisywana jest wartość całkowita 2 (2 jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcję input(), a następnie konwertowane na liczbę całkowitą przez funkcję int()); zmiennej y jest przypisywana wartość całkowita 4 (4 jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcję input(), a następnie konwertowane na liczbę całkowitą przez funkcję int()); wykonywana jest operacja, w wyniku której zmiennej x jest przypisywana wartość 0 (2 // 4 = 0); operacja jest wykonywana, ale został zgłoszony ZeroDivisionException, ponieważ operator // nie może zaakceptować 0 jako prawego operandu. Program zostanie zakończony."
                 },
                 {
                     "id": "js-pe1-m2-014",
@@ -2452,7 +2452,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy następujący przykład:zmiennejxprzypisywana jest wartość całkowita2(2jest wprowadzane przez użytkownika, konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())zmiennejyjest przypisywana wartość całkowita4(4jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())wykonywana jest operacja, w wyniku której zmiennejxjest przypisywana wartość0.5(2 / 4 = 0.5)wykonywana jest operacja, w wyniku której zmiennejyprzypisywana jest wartość8.0(4 / 0.5 = 8.0)wartość przypisana do zmiennejy(8.0) jest wyświetlana na ekranie."
+                    "explanation": "Przeanalizujmy następujący przykład: zmiennej x przypisywana jest wartość całkowita 2 (2 jest wprowadzane przez użytkownika, konwertowane na ciąg znaków przez funkcję input(), a następnie konwertowane na liczbę całkowitą przez funkcję int()); zmiennej y jest przypisywana wartość całkowita 4 (4 jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcję input(), a następnie konwertowane na liczbę całkowitą przez funkcję int()); wykonywana jest operacja, w wyniku której zmiennej x jest przypisywana wartość 0.5 (2 / 4 = 0.5); wykonywana jest operacja, w wyniku której zmiennej y przypisywana jest wartość 8.0 (4 / 0.5 = 8.0); wartość przypisana do zmiennej y (8.0) jest wyświetlana na ekranie."
                 },
                 {
                     "id": "js-pe1-m2-015",
@@ -2467,7 +2467,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy następujący przykład:zmiennejxprzypisywana jest wartość całkowita11(11jest wprowadzane przez użytkownika, konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())zmiennejyjest przypisywana wartość całkowita4(4jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())wykonywana jest operacja, w wyniku której zmiennejxprzypisywana jest wartość3(3% 4 = 3)wykonywana jest operacja, w wyniku której zmiennejxprzypisywana jest wartość0(3% 11 = 0)wykonywana jest operacja, w wyniku której zmiennejyprzypisywana jest wartość1(4% 3 = 1)wartość przypisana do zmiennejy(1) jest wyświetlana na ekranie."
+                    "explanation": "Przeanalizujmy następujący przykład: zmiennej x przypisywana jest wartość całkowita 11 (11 jest wprowadzane przez użytkownika, konwertowane na ciąg znaków przez funkcję input(), a następnie konwertowane na liczbę całkowitą przez funkcję int()); zmiennej y jest przypisywana wartość całkowita 4 (4 jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcję input(), a następnie konwertowane na liczbę całkowitą przez funkcję int()); wykonywana jest operacja, w wyniku której zmiennej x przypisywana jest wartość 3 (3 % 4 = 3); wykonywana jest operacja, w wyniku której zmiennej x przypisywana jest wartość 0 (3 % 11 = 0); wykonywana jest operacja, w wyniku której zmiennej y przypisywana jest wartość 1 (4 % 3 = 1); wartość przypisana do zmiennej y (1) jest wyświetlana na ekranie."
                 },
                 {
                     "id": "js-pe1-m2-016",
@@ -2482,7 +2482,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy następujący przykład:zmiennaxotrzymuje wartość„3”(3jest wprowadzane przez użytkownika i konwertowane na ciąg przez funkcjęinput())zmiennayotrzymuje wartość6(6jest wprowadzane przez użytkownika, konwertowane na ciąg przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())funkcjaprint()zwraca wynik następującego mnożenia ciągu:„3” * 6, czyli333333"
+                    "explanation": "Przeanalizujmy następujący przykład: zmienna x otrzymuje wartość „3” (3 jest wprowadzane przez użytkownika i konwertowane na ciąg przez funkcję input()); zmienna y otrzymuje wartość 6 (6 jest wprowadzane przez użytkownika, konwertowane na ciąg przez funkcję input(), a następnie konwertowane na liczbę całkowitą przez funkcję int()); funkcja print() zwraca wynik następującego mnożenia ciągu: „3” * 6, czyli 333333"
                 },
                 {
                     "id": "js-pe1-m2-017",
@@ -2497,7 +2497,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy przykład:zmiennez,yixsą zadeklarowane i zainicjowane, a wartość1jest przypisywana do każdego z nich za pomocą mechanizmu przypisywania tej samej wartości do wielu zmiennych,wartości przypisane do trzech zmiennych są wyświetlane na ekranie i oddzielone symbolem*za pomocą słowa kluczowegosep."
+                    "explanation": "Przeanalizujmy przykład: zmienne z, y i x są zadeklarowane i zainicjowane, a wartość 1 jest przypisywana do każdego z nich za pomocą mechanizmu przypisywania tej samej wartości do wielu zmiennych; wartości przypisane do trzech zmiennych są wyświetlane na ekranie i oddzielone symbolem * za pomocą słowa kluczowego sep."
                 },
                 {
                     "id": "js-pe1-m2-018",
@@ -2512,7 +2512,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Python rozróżniana wielkość liter, dlategoyiYto dwie różne zmienne. Ponieważ program próbuje wyświetlić na ekranie wartość powiązaną ze zmienną, która nie istnieje w lokalnej przestrzeni nazw, Python nie rozpoznaje jej i zgłaszany jest wyjątekNameError."
+                    "explanation": "Python rozróżniana wielkość liter, dlatego y i Y to dwie różne zmienne. Ponieważ program próbuje wyświetlić na ekranie wartość powiązaną ze zmienną, która nie istnieje w lokalnej przestrzeni nazw, Python nie rozpoznaje jej i zgłaszany jest wyjątek NameError."
                 },
                 {
                     "id": "js-pe1-m2-019",
@@ -2527,7 +2527,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Tutaj obowiązuje zasada pierwszeństwa operatorów (kolejność wykonywania operacji). Zobaczmy, co się tutaj wydarzy:najpierw zostaje obliczone wyrażenie4 ** 2, dając wynik16.następnie zostaje obliczone wyrażenie1 / 2, dając wynik0.5.jako trzecie zostaje obliczone wyrażenie3 // 3, dając wynik1.na koniec trzy wartości są dodawane (0.5 + 1 + 16), a ich wynik (17.5) jest przypisywana do zmiennejxi wyświetlany na ekranie."
+                    "explanation": "Tutaj obowiązuje zasada pierwszeństwa operatorów (kolejność wykonywania operacji). Zobaczmy, co się tutaj wydarzy:najpierw zostaje obliczone wyrażenie 4 ** 2, dając wynik 16. Następnie zostaje obliczone wyrażenie 1 / 2, dając wynik 0.5. Jako trzecie zostaje obliczone wyrażenie 3 // 3, dając wynik 1. Na koniec trzy wartości są dodawane (0.5 + 1 + 16), a ich wynik (17.5) jest przypisywany do zmiennej x i wyświetlany na ekranie."
                 },
                 {
                     "id": "js-pe1-m2-020",
@@ -2542,7 +2542,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Wartości2i4są wprowadzane przez użytkownika, konwertowane z ciągów na liczby całkowite i przypisywane odpowiednio do zmiennychxiy. Funkcjaprint()wyświetla na ekranie wynik dodawania liczb całkowitych (2 + 4)."
+                    "explanation": "Wartości 2 i 4 są wprowadzane przez użytkownika, konwertowane z ciągów na liczby całkowite i przypisywane odpowiednio do zmiennych x i y. Funkcja print() wyświetla na ekranie wynik dodawania liczb całkowitych (2 + 4)."
                 }
             ]
         },
