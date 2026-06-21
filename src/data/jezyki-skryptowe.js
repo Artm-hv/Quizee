@@ -2781,7 +2781,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Poprawny sposób deklaracji funkcji w Pythonie polega na użyciu zastrzeżonego słowa kluczowego def , po którym następuje nazwa funkcji, nawiasy () oraz dwukropek :. Ponieważ nie ma parametrów, nawiasy są puste."
                 },
                 {
                     "id": "js-pe1-m4-002",
@@ -2797,7 +2797,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Funkcja ma z góry określoną wartość parametru x, dlatego może być wywoływana zarówno z jego podaniem, jak i bez niego. Jednak więcej niż jeden argument wygeneruje błąd czasu wykonania (runtime error)"
                 },
                 {
                     "id": "js-pe1-m4-003",
@@ -2812,7 +2812,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Funkcje wbudowane są zintegrowane z Pythonem. Po zainstalowaniu Pythona są dostępne i mogą być używane."
                 },
                 {
                     "id": "js-pe1-m4-004",
@@ -2827,7 +2827,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Krotki są obiektami niemodyfikowalnymi, dlatego mogą być indeksowane i dzielone (slicing) w sposób analogiczny do list. Jednak w trakcie działania nie można ich rozszerzać ani modyfikować. TO NIE są listy."
                 },
                 {
                     "id": "js-pe1-m4-005",
@@ -2842,7 +2842,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-006",
@@ -2857,7 +2857,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-007",
@@ -2872,7 +2872,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:zostaje utworzony pusty słownik,a następnie lista o nazwie my_list z elementami ['a', 'b', 'c', 'd'],pętla for w zakresie długości listy pomniejszonej o jeden (od 0 do 3) jest inicjowana, a wartości przez które iteruje zmienna i, to a, b, c, d dla każdej iteracji, para klucz-wartość zostanie wstawiona do słownika. Kluczem jest ciąg znaków, a wartość jest jednoelementowa krotka,Powstaje w ten sposób następujący słownik: {'a': ('a',), 'b': ('b',), 'c': ('c',)}inicjowana jest kolejna pętla for, a zmienna i iteruje po posortowanych kluczach słownika,zmienna k przechowuje wartość dla każdego klucza,ponieważ jest to krotka, konieczne jest wybranie opcji print(k[0]) w celu wyświetlenia pierwszego i jedynego elementu."
                 },
                 {
                     "id": "js-pe1-m4-008",
@@ -2887,7 +2887,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Fragment kodu jest błędny, ponieważ funkcja jest wywoływana z jednym argumentem, podczas gdy potrzebne są dwa, ponieważ oba parametry nie mają wartości domyślnych."
                 },
                 {
                     "id": "js-pe1-m4-009",
@@ -2902,7 +2902,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Fragment kodu jest błędny, ponieważ funkcja jest wywoływana z jednym argumentem, podczas gdy potrzebne są dwa, ponieważ oba parametry nie mają wartości domyślnych."
                 },
                 {
                     "id": "js-pe1-m4-010",
@@ -2917,7 +2917,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Poprawny sposób definiowania parametrów z wartościami domyślnymi polega na wskazaniu nazwy zmiennej, znaku przypisania (=) oraz wartości domyślnej, np. a=0. Jeśli istnieje więcej wartości domyślnych, oddziel je przecinkami."
                 },
                 {
                     "id": "js-pe1-m4-011",
@@ -2933,7 +2933,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Wartość None może zostać przypisana do dowolnej zmiennej, zarówno wewnątrz, jak i na zewnątrz funkcji. Może być również używana w wyrażeniach warunkowych i pętlach. Nie można jej jednak używać w operacjach arytmetycznych."
                 },
                 {
                     "id": "js-pe1-m4-012",
@@ -2948,7 +2948,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-013",
@@ -2963,7 +2963,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-014",
@@ -2978,7 +2978,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-015",
@@ -2993,7 +2993,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Operacja jest nielegalna, ponieważ obiekt 'tuple' nie obsługuje przypisania wartości do elementu."
                 },
                 {
                     "id": "js-pe1-m4-016",
@@ -3008,7 +3008,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-017",
@@ -3023,7 +3023,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-018",
@@ -3038,7 +3038,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-019",
@@ -3053,7 +3053,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Zdefiniowany zostaje następujący słownik : dictionary = {'jeden': 'dwa', 'trzy': 'jeden', 'dwa': 'trzy'}zmienna v przechowuje wartość klucza „jeden\", czyli „dwa\", pętla for jest inicjowana w zakresie długości słownika. Iteracja zostanie wykonana 3 razy,w pierwszej iteracji zmienna v będzie przechowywać wartość klucza „dwa\", czyli „trzy\",w drugiej iteracji zmienna v będzie przechowywać wartość klucza „three\", czyli „jeden\",w trzeciej iteracji zmienna v będzie przechowywać wartość klucza „jeden\", czyli „dwa\",Pętla „for\" zostaje zakończona, a funkcja „print\" wyświetla na konsoli wartość „dwa\"."
                 },
                 {
                     "id": "js-pe1-m4-020",
@@ -3068,7 +3068,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Zdefiniowany zostaje następujący słownik : dictionary = {'jeden': 'dwa', 'trzy': 'jeden', 'dwa': 'trzy'}zmienna v przechowuje wartość klucza „jeden\", czyli „dwa\", pętla for jest inicjowana w zakresie długości słownika. Iteracja zostanie wykonana 3 razy,w pierwszej iteracji zmienna v będzie przechowywać wartość klucza „dwa\", czyli „trzy\",w drugiej iteracji zmienna v będzie przechowywać wartość klucza „three\", czyli „jeden\",w trzeciej iteracji zmienna v będzie przechowywać wartość klucza „jeden\", czyli „dwa\",Pętla „for\" zostaje zakończona, a funkcja „print\" wyświetla na konsoli wartość „dwa\"."
                 },
                 {
                     "id": "js-pe1-m4-021",
@@ -3084,7 +3084,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Jeśli kod umieszczony wewnątrz bloku try zgłosi wyjątek, następujące wiersze kodu w obrębie bloku nie zostaną wykonane, a wyjątki zdefiniowane poniżej spróbują obsłużyć wygenerowany błąd."
                 },
                 {
                     "id": "js-pe1-m4-022",
@@ -3099,7 +3099,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy ten kod:Zdefiniowany zostaje następujący słownik : dictionary = {'jeden': 'dwa', 'trzy': 'jeden', 'dwa': 'trzy'}zmienna v przechowuje wartość klucza „jeden\", czyli „dwa\", pętla for jest inicjowana w zakresie długości słownika. Iteracja zostanie wykonana 3 razy,w pierwszej iteracji zmienna v będzie przechowywać wartość klucza „dwa\", czyli „trzy\",w drugiej iteracji zmienna v będzie przechowywać wartość klucza „three\", czyli „jeden\",w trzeciej iteracji zmienna v będzie przechowywać wartość klucza „jeden\", czyli „dwa\",Pętla „for\" zostaje zakończona, a funkcja „print\" wyświetla na konsoli wartość „dwa\"."
                 }
             ]
         },
@@ -3588,7 +3588,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that to import specific functions from a module, the keyword from followed by the module's name is used. Afterward, specify function names after the import keyword, separated by commas."
                 },
                 {
                     "id": "js-pe2-m1-002",
@@ -3603,7 +3603,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "If the entire module is imported, function invocation must use the following syntax module_name.funcion_name()."
                 },
                 {
                     "id": "js-pe2-m1-003",
@@ -3618,7 +3618,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the dir() function returns all properties and methods of a specified object, including built-in properties."
                 },
                 {
                     "id": "js-pe2-m1-004",
@@ -3633,7 +3633,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that pyc files are created by the Python interpreter using py files. They contain the compiled bytecode of the source code."
                 },
                 {
                     "id": "js-pe2-m1-005",
@@ -3648,7 +3648,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "When a module in Python is imported, the entire file is executed once implicitly in order to assure no errors are present in the module."
                 },
                 {
                     "id": "js-pe2-m1-006",
@@ -3663,7 +3663,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "The __name__ variable (two underscores before and after) is a special Python variable. When a module is imported, it will contain the module's filename."
                 },
                 {
                     "id": "js-pe2-m1-007",
@@ -3678,7 +3678,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "When using the notation from a.b import c, c identifies the entity or function being imported, b identifies the module (source file), and a the package (folder)."
                 },
                 {
                     "id": "js-pe2-m1-008",
@@ -3693,7 +3693,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet: The math module is imported. The result variable will contain the logical result of != (the not equal operation). The math.e value is a constant that equals 2.718281828459045. The result of math.pow(2, 4) is 2 to the power of 4, which is 16.0. The result is a floating-point number. Since 2.718281828459045 is NOT equal to 16.0, the answer is True. Using the print function, the answer is shown in the console converted into an integer value, which is 1."
                 },
                 {
                     "id": "js-pe2-m1-009",
@@ -3708,7 +3708,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:The randint method is imported from the random module. It will return an integer number selected from the specified range.The loop for i in range(2) is initialized and will iterate twice.The print(randint(1, 2), end='') invocation will output 1 or 2 in the console and will stay in the same line due to the end argument.The print(randint(1, 2), end='') invocation is executed again because it is inside the loop and will output 1 or 2 in the console. The loop is exited.The possible outputs are 11, 12, 21, and 22."
                 },
                 {
                     "id": "js-pe2-m1-010",
@@ -3724,7 +3724,7 @@ const jezykiSkryptoweData = {
                         1,
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "The platform module recovers OS information from your system. The version function returns a string with your OS version, and the system function returns a string with the name of your OS."
                 },
                 {
                     "id": "js-pe2-m1-011",
@@ -3739,7 +3739,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that __pycache__ is a directory that contains bytecode (.pyc) cache files that are automatically generated by Python."
                 },
                 {
                     "id": "js-pe2-m1-012",
@@ -3754,7 +3754,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The #! helps specify the type of program to call to run the entire script file in Unix-type systems. It is always used on the first line of any file."
                 },
                 {
                     "id": "js-pe2-m1-013",
@@ -3769,7 +3769,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The show command displays metadata information about a package such as version, description, author, license information, summary and dependencies."
                 },
                 {
                     "id": "js-pe2-m1-014",
@@ -3784,7 +3784,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the pip list command returns the list of packages installed in the current local environment."
                 },
                 {
                     "id": "js-pe2-m1-015",
@@ -3800,7 +3800,7 @@ const jezykiSkryptoweData = {
                         0,
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the pip search command is used to search the index and identify packages that match the search terms through all the PyPI packages. Therefore, it requires an Internet connection to work."
                 },
                 {
                     "id": "js-pe2-m1-016",
@@ -3816,7 +3816,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that to install a specific version of a Python package you can use pip install package_name==package_version. The --user option changes the scope of the installation to the user's home directory rather than the default system-wide installation."
                 },
                 {
                     "id": "js-pe2-m1-017",
@@ -3831,7 +3831,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the -U, --upgrade option upgrades all packages installed to the newest available version."
                 },
                 {
                     "id": "js-pe2-m1-018",
@@ -3846,7 +3846,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the option removes the installed package from the environment."
                 }
             ]
         },
@@ -3867,7 +3867,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the instructions inside a try block are executed sequentially. If an instruction generates an exception, the execution jumps to the except statements. Therefore, the remaining instructions within the try block are not executed."
                 },
                 {
                     "id": "js-pe2-m2-002",
@@ -3882,7 +3882,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The excepts within a try expect block should be listed from the specific exceptions to the general exceptions. This assures that in case of an error, the error will fall under the suitable exception. The unnamed exception must be the last exception listed because it is the most general exception."
                 },
                 {
                     "id": "js-pe2-m2-003",
@@ -3897,7 +3897,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the BaseException class is, as the name suggests, the base class for all built-in exceptions in Python."
                 },
                 {
                     "id": "js-pe2-m2-004",
@@ -3912,7 +3912,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the assert keyword tests if a condition is true. If it is not, the program will raise an AssertionError."
                 },
                 {
                     "id": "js-pe2-m2-005",
@@ -3927,7 +3927,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:The print function inside the try block is executed.If you look closely, \"5\" is a string, and it is divided by an integer zero. No ArithmeticError nor ZeroDivisionError is raised.Instead, a TypeError exception is raised, which will fall under the nameless except.The word some is printed in the console."
                 },
                 {
                     "id": "js-pe2-m2-006",
@@ -3943,7 +3943,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that concrete exceptions in Python are build-in exceptions that inherit directly from the Exception class. IndexError and ImportError are such cases."
                 },
                 {
                     "id": "js-pe2-m2-007",
@@ -3958,7 +3958,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that ASCII stands for American Standard Code for Information Interchange. It is a 7-bit character code developed in the 19-60s to represent English-language characters."
                 },
                 {
                     "id": "js-pe2-m2-008",
@@ -3973,7 +3973,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that UTF-8 is the most popular type of Unicode encoding. It uses 1 bit for English characters, 2 bits for Latin and Middle Eastern characters, and 3 bits for Asian characters."
                 },
                 {
                     "id": "js-pe2-m2-009",
@@ -3988,7 +3988,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that UNICODE is a universal character encoding standard. It supports characters from all the languages in the world."
                 },
                 {
                     "id": "js-pe2-m2-010",
@@ -4003,7 +4003,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
                 },
                 {
                     "id": "js-pe2-m2-011",
@@ -4018,7 +4018,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
                 },
                 {
                     "id": "js-pe2-m2-012",
@@ -4033,7 +4033,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
                 },
                 {
                     "id": "js-pe2-m2-013",
@@ -4048,7 +4048,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
                 },
                 {
                     "id": "js-pe2-m2-014",
@@ -4063,7 +4063,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
                 },
                 {
                     "id": "js-pe2-m2-015",
@@ -4078,7 +4078,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
                 }
             ]
         },
@@ -4099,7 +4099,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "A stack is an object designed to store data using the LIFO (Last-In-First-Out) model, and LIFO is a method for handling data structures in which the first element is processed last, and the last element is processed first."
                 },
                 {
                     "id": "js-pe2-m3-002",
@@ -4114,7 +4114,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The object = Class() assignment creates an object of class Class, and the __init__ method is automatically called when that object is created. The __init__ constructor has the obligatory parameter self, no attributes, and it does not do anything because a placeholder statement – pass – is executed. The object = Class(object) assignment will result in a TypeError exception, because the __init__() method should take only one positional argument (self), not two (self and object).The object = Class(self) assignment will result in a NameError exception, because the name self has not been defined anywhere.The object = Class assignment declares the object variable and assigns Class to it, but it does not initialize an object of class Class."
                 },
                 {
                     "id": "js-pe2-m3-003",
@@ -4129,7 +4129,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The example shows a superclass named A, which defines its own constructor. The A class is then used as a base to create a subclass named B, which defines its own constructor. The B class constructor should now invoke the constructor from the A class, which can be done like this: A.__init__(self)."
                 },
                 {
                     "id": "js-pe2-m3-004",
@@ -4144,7 +4144,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The following code will result in the AttributeError exception, because the A object does not have the attribute __a. The __a variable is a private instance variable, and an attempt to access or modify it from outside the class will result in an AttributeError.Modifying the private attribute __a and changing it to public (a) will result in the following output: 1."
                 },
                 {
                     "id": "js-pe2-m3-005",
@@ -4159,7 +4159,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze the code:The A class constructor creates an instance variable named v equal to the default value passed to the constructor's parameter v, which is 1.The set method creates its own v variable, and returns the value passed to it.The a object is created, and the set method is called, which returns the v value equal to 1 + 1.The result 2 is printed to the console."
                 },
                 {
                     "id": "js-pe2-m3-006",
@@ -4174,7 +4174,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze the code:The A class constructor creates an instance variable named v equal to the default value passed to the constructor's parameter v, which is 1.The set method creates its own v variable, and returns the value passed to it.The a object is created, and the set method is called, which returns the v value equal to 1 + 1.The result 2 is printed to the console."
                 },
                 {
                     "id": "js-pe2-m3-007",
@@ -4189,7 +4189,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze the code:The A class constructor creates an instance variable named v equal to the default value passed to the constructor's parameter v, which is 1.The set method creates its own v variable, and returns the value passed to it.The a object is created, and the set method is called, which returns the v value equal to 1 + 1.The result 2 is printed to the console."
                 },
                 {
                     "id": "js-pe2-m3-008",
@@ -4204,7 +4204,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 },
                 {
                     "id": "js-pe2-m3-009",
@@ -4219,7 +4219,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 },
                 {
                     "id": "js-pe2-m3-010",
@@ -4234,7 +4234,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 },
                 {
                     "id": "js-pe2-m3-011",
@@ -4249,7 +4249,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 },
                 {
                     "id": "js-pe2-m3-012",
@@ -4264,7 +4264,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 },
                 {
                     "id": "js-pe2-m3-013",
@@ -4279,7 +4279,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 },
                 {
                     "id": "js-pe2-m3-014",
@@ -4294,7 +4294,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 },
                 {
                     "id": "js-pe2-m3-015",
@@ -4309,7 +4309,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 },
                 {
                     "id": "js-pe2-m3-016",
@@ -4324,7 +4324,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 },
                 {
                     "id": "js-pe2-m3-017",
@@ -4339,7 +4339,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
                 }
             ]
         },
@@ -4360,7 +4360,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that in Python, a lambda function is a single line function declared with no name – in other words anonymous."
                 },
                 {
                     "id": "js-pe2-m4-002",
@@ -4376,7 +4376,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that a lambda function can have any number of arguments, but it can only evaluate a single expression."
                 },
                 {
                     "id": "js-pe2-m4-003",
@@ -4391,7 +4391,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "In order to obtain the tuple mentioned, a map function is used. It takes the lambda function lambda x: x**x and the list my_list as arguments. It performs the exponentiation operation x**x defined within the lambda function with each of the lists elements [1, 2, 3]. The result is cast to a tuple and printed in the console."
                 },
                 {
                     "id": "js-pe2-m4-004",
@@ -4406,7 +4406,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "In order to obtain the tuple mentioned, a map function is used. It takes the lambda function lambda x: x**x and the list my_list as arguments. It performs the exponentiation operation x**x defined within the lambda function with each of the lists elements [1, 2, 3]. The result is cast to a tuple and printed in the console."
                 },
                 {
                     "id": "js-pe2-m4-005",
@@ -4421,7 +4421,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:The code begins by executing the for x in I(): loop.It uses the x variable to iterate through what I(): yields, and outputs it on the same line due to the end='' argument in the print function.Once the I(): iterator is invoked, it initializes a string that contains the characters s = 'abcdef'.A for loop iterates though the characters within the s string using the c variable.Due to the [::2] notation, the loop will only iterate through every two characters, yielding one on each iteration. In other words, it begins on the first character, skips to the third, and finally to the fifth.Since there is no seventh character, the execution comes to an end.The characters ace are printed in the console."
                 },
                 {
                     "id": "js-pe2-m4-006",
@@ -4436,7 +4436,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:The code begins by executing the for x in I(): loop.It uses the x variable to iterate through what I(): yields, and outputs it on the same line due to the end='' argument in the print function.Once the I(): iterator is invoked, it initializes a string that contains the characters s = 'abcdef'.A for loop iterates though the characters within the s string using the c variable.Due to the [::2] notation, the loop will only iterate through every two characters, yielding one on each iteration. In other words, it begins on the first character, skips to the third, and finally to the fifth.Since there is no seventh character, the execution comes to an end.The characters ace are printed in the console."
                 },
                 {
                     "id": "js-pe2-m4-007",
@@ -4451,7 +4451,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Let's analyze this code snippet:The code begins by executing the for x in I(): loop.It uses the x variable to iterate through what I(): yields, and outputs it on the same line due to the end='' argument in the print function.Once the I(): iterator is invoked, it initializes a string that contains the characters s = 'abcdef'.A for loop iterates though the characters within the s string using the c variable.Due to the [::2] notation, the loop will only iterate through every two characters, yielding one on each iteration. In other words, it begins on the first character, skips to the third, and finally to the fifth.Since there is no seventh character, the execution comes to an end.The characters ace are printed in the console."
                 },
                 {
                     "id": "js-pe2-m4-008",
@@ -4467,7 +4467,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "These are the open modes in Python:r - opens a file for reading.w - opens a file for writing.a - opens a file for appending at the end. Creates a new file if it does not exist.t - opens in text mode.b - opens in binary mode.+ - opens a file for updating (reading and writing)."
                 },
                 {
                     "id": "js-pe2-m4-009",
@@ -4482,7 +4482,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that errno.EEXIST means that the file or directory trying to be created already exists."
                 },
                 {
                     "id": "js-pe2-m4-010",
@@ -4497,7 +4497,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-011",
@@ -4512,7 +4512,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-012",
@@ -4527,7 +4527,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-013",
@@ -4542,7 +4542,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-014",
@@ -4557,7 +4557,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-015",
@@ -4572,7 +4572,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "The requested output represents the weekdays with only two letters. Therefore, the calendar.weekheader() method must receive 2 as an argument."
                 },
                 {
                     "id": "js-pe2-m4-016",
@@ -4587,7 +4587,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
                 }
             ]
         },
@@ -5118,5 +5118,5 @@ const jezykiSkryptoweData = {
             ]
         }
     ],
-    "dbVersion": 3
+    "dbVersion": 4
 };

@@ -63,5 +63,5 @@ const podstawyProgramowaniaData = {
             ]
         }
     ],
-    "dbVersion": 3
+    "dbVersion": 4
 };
