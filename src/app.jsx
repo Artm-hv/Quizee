@@ -18,8 +18,10 @@ function App() {
           const defaultJs = DEFAULT_SUBJECTS.find(ds => ds.id === "jezyki-skryptowe");
           const m1 = s.modules ? s.modules.find(m => m.id === "js-pe2-m1") : null;
           const m3 = s.modules ? s.modules.find(m => m.id === "js-pe2-m3") : null;
-          if (defaultJs && (!s.modules || s.modules.length < 12 || !s.modules.some(m => m.id === "js-pe2-final") || !m1 || m1.questions.length !== 18 || !m3 || m3.questions.length !== 17)) {
-            console.log("Migrated 'jezyki-skryptowe' module database to include PE1 and PE2 modules with correct question counts.");
+          const pe1m1 = s.modules ? s.modules.find(m => m.id === "js-pe1-m1") : null;
+          const hasExplanations = pe1m1 && pe1m1.questions.some(q => q.explanation && q.explanation.trim());
+          if (defaultJs && (!s.modules || s.modules.length < 12 || !s.modules.some(m => m.id === "js-pe2-final") || !m1 || m1.questions.length !== 18 || !m3 || m3.questions.length !== 17 || !hasExplanations)) {
+            console.log("Migrated 'jezyki-skryptowe' module database to include PE1 and PE2 modules with explanations and correct question counts.");
             return defaultJs;
           }
         }

@@ -2097,7 +2097,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Kod maszynowy to program napisany w języku maszynowym, który składa się z sekwencji liczb binarnych:0i1."
                 },
                 {
                     "id": "js-pe1-m1-002",
@@ -2112,7 +2112,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Każdy język, czy to język maszynowy, czy język naturalny, składa się z alfabetu, leksyki, składni i semantyki."
                 },
                 {
                     "id": "js-pe1-m1-003",
@@ -2127,7 +2127,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Plik źródłowy to plik, który zawiera kod źródłowy, czyli instrukcje programu."
                 },
                 {
                     "id": "js-pe1-m1-004",
@@ -2143,7 +2143,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Kompilator tłumaczy (kompiluje) program źródłowy (zbiór instrukcji w języku wysokiego poziomu) na kod maszynowy (niższy poziom reprezentacji programu źródłowego). Sekwencja0s i1s może być następnie wykonana przez procesor. Wykonanie skompilowanego kodu jest zazwyczaj szybsze niż interpretacja."
                 },
                 {
                     "id": "js-pe1-m1-005",
@@ -2158,7 +2158,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Skrypt to zestaw poleceń w języku wysokiego poziomu zapisanych w pliku, zorganizowanych w sposób umożliwiający ich wykonanie jak programu. Skrypt w języku Python to plik zawierający kod napisany w języku Python."
                 },
                 {
                     "id": "js-pe1-m1-006",
@@ -2174,7 +2174,7 @@ const jezykiSkryptoweData = {
                         1,
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Python to darmowy język programowania typu open source, dostępny dla każdego. Jest to język wieloplatformowy, co oznacza, że program napisany w Pythonie na systemie Linux będzie działał na Macu i odwrotnie.Ponieważ Python jest stosunkowo łatwy do nauczenia i posiada prostą składnię, jest dobrym wyborem dla testerów."
                 },
                 {
                     "id": "js-pe1-m1-007",
@@ -2189,7 +2189,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "CPython to oryginalna (tradycyjna) implementacja w języku Python napisana w języku C, w przeciwieństwie do innych, niedomyślnych implementacji, takich jak Jython, implementowanych w języku Java, które pojawiły się później. CPython jest implementacją języka Python dostępną do pobrania ze stronywww.python.orgi pierwszą, w której wprowadzono nowe funkcje. Pojawia się ona we wszystkich kolejnych wersjach Pythona."
                 },
                 {
                     "id": "js-pe1-m1-008",
@@ -2204,7 +2204,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Konsola Pythona to interpreter wiersza poleceń, który umożliwia wykonywanie poleceń, instrukcji i skryptów Pythona wiersz po wierszu. Dokładnie tak, jak tutaj:www.python.org/shell."
                 },
                 {
                     "id": "js-pe1-m1-009",
@@ -2219,7 +2219,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Program wyświetli„Hello!”Funkcjaprintwypisuje sprecyzowaną przez nas wiadomość, w tym przypadku„Hello!”."
                 },
                 {
                     "id": "js-pe1-m1-010",
@@ -2234,7 +2234,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Program zgłosi wyjątekNameError, ponieważ Python nie rozpoznaje nazwyprin. Python nie rozpoznaje, że najprawdopodobniej próbujesz użyć słowaprint, a nieprin."
                 }
             ]
         },
@@ -2255,7 +2255,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Dwuznak, zwanyznakiem nowej linii, powoduje, że bieżący wiersz kończy się w punkcie przez niego wskazanymi tworzy nowy wiersz, który zaczyna się zaraz za nim."
                 },
                 {
                     "id": "js-pe1-m2-002",
@@ -2270,7 +2270,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Parametry słowa kluczowego (zwane takżeparametrami nazwanymi) to parametry, których wartości są określane przez słowo kluczowe, po którym następuje znak równości (=)i wartość domyślna przypisana do tego słowa kluczowego. Przykład argumentu słowa kluczowego:def my_function(x=1):."
                 },
                 {
                     "id": "js-pe1-m2-003",
@@ -2285,7 +2285,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Pamiętając, że Python wybiera najbardziej efektywny format do przedstawiania liczb, a literaEoznacza\"razy dziesięć do potęgi\"w notacji naukowej, prawidłowy sposób zapisywania liczby20.12 × 108to20.12E8."
                 },
                 {
                     "id": "js-pe1-m2-004",
@@ -2300,7 +2300,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Jeśli liczba całkowita jest poprzedzona0olub0O, będzie ona traktowana jako wartość ósemkowa. Na przykład:0o246to liczba ósemkowa, której wartość dziesiętna to166.Jeśli liczba całkowita jest poprzedzona0xlub0X, będzie ona traktowana jako wartość szesnastkowa. Na przykład:0x246to liczba szesnastkowa, której wartość dziesiętna to582.Na koniec, jeśli liczba całkowita jest poprzedzona przez0blub0B, będzie ona traktowana jako wartość binarna. Na przykład:0b1111to liczba binarna, której wartość dziesiętna to15."
                 },
                 {
                     "id": "js-pe1-m2-005",
@@ -2315,12 +2315,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Operator**wykonuje operację potęgowania w Pythonie. Jest on również nazywanyoperatorem potęgowania."
                 },
                 {
                     "id": "js-pe1-m2-006",
                     "type": "single",
-                    "question": "Wynik następującego podziału:\n\n```python\n1 / 1\n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Wynik następującego podziału:\n\n```python\n\n1 / 1\n```",
                     "options": [
                         "jest równy 1.0",
                         "jest równy 1",
@@ -2330,7 +2330,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Operator/jest jednym z dwóch rodzajów operatora dzielenia w Pythonie , który dzieli lewy operand przez prawy operand orazzwraca wartość zmiennoprzecinkową (float).Operator//, zwany operatoremdzielenia całkowitoliczbowego (floor division), wykonuje podobną operację, ale wyniki zaokrągla w dół i zwraca liczbę całkowitą."
                 },
                 {
                     "id": "js-pe1-m2-007",
@@ -2346,12 +2346,12 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Operator%(modulo) zwraca resztę z dzielenia, a ponieważ nie można dzielić przez zero, prawy operand musi być liczbą różną od zera. W przeciwnym razie zostanie zgłoszony ZeroDivisionException.Operator**wykorzystuje prawostronne wiązanie, co oznacza, że wyrażenie2**2**3jest obliczane od prawej do lewej:2**3 = 8i2**8 = 256."
                 },
                 {
                     "id": "js-pe1-m2-008",
                     "type": "single",
-                    "question": "Wiązanie lewostronne określa, że wynik następującego wyrażenia:\n\n```python\n1 // 2 * 3\n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Wiązanie lewostronne określa, że wynik następującego wyrażenia:\n\n```python\n\n1 // 2 * 3\n```",
                     "options": [
                         "0",
                         "4.5",
@@ -2361,7 +2361,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Lewostronne wiązanie oznacza, że wyrażenie jest obliczane od lewej do prawej:1 // 2 = 0i0 * 3 = 0."
                 },
                 {
                     "id": "js-pe1-m2-009",
@@ -2377,7 +2377,7 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Trueorazandto słowa kluczowe w Pythonie (słowa zastrzeżone) i nie mogą być używane jako nazwy zmiennych. Ponieważ Python rozróżnia wielkość liter, nazwytrueiTRUEsą całkowicie dozwolone, ale nie są one najlepszym wyborem."
                 },
                 {
                     "id": "js-pe1-m2-010",
@@ -2392,12 +2392,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Funkcjaprint()może nie przyjmować żadnych argumentów (np.print()), trzy argumenty (np.print(„one”, „two”, „three”) lub trzy tysiące trzysta trzydzieści trzy... (choć tak naprawdę tego nie sprawdziliśmy!)."
                 },
                 {
                     "id": "js-pe1-m2-011",
                     "type": "single",
-                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\nx = 1\n                    \n                \n                    \n                        y = 2\n                    \n                \n                    \n                        z = x\n                    \n                \n                    \n                        x = y\n                    \n                \n                    \n                        y = z\n                    \n                \n                    \n                        print(x, y)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\n\nx = 1\n\n\n\n                        y = 2\n\n\n\n                        z = x\n\n\n\n                        x = y\n\n\n\n                        y = z\n\n\n\n                        print(x, y)\n```",
                     "options": [
                         "2 1",
                         "1 2",
@@ -2407,12 +2407,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy następujący przykład:Wartość1zostaje przypisana do zmiennejx, a zmiennaxzostaje zainicjowana (czylix = 1)wartość2zostaje przypisana do zmiennejy, a zmiennayzostaje zainicjowana (więcy = 2)wartość przypisana do zmiennejxjest przypisana do zmiennejz, a zmiennazzostaje zainicjowana (więcz = 1)zmiennaxotrzymuje wartość, która jest przypisana do zmiennej y (a więcx = 2)zmiennayotrzymuje wartość, która jest przypisana do zmiennej z (a więcy = 1)wartości przypisane do zmiennychxiysą teraz wyświetlane, co daje następujący wynik:2 1(uwaga: funkcjaprint()oddziela wyświetlane wartości spacją)"
                 },
                 {
                     "id": "js-pe1-m2-012",
                     "type": "single",
-                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\nx = input()\n                    \n                \n                    \n                        y = input()\n                    \n                \n                    \n                        print(x + y)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\n\nx = input()\n\n\n\n                        y = input()\n\n\n\n                        print(x + y)\n```",
                     "options": [
                         "16",
                         "2",
@@ -2422,12 +2422,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy następujący przykład:funkcjainput()odczytuje argumenty wprowadzone przez użytkownika (odpowiednio2i4) ikonwertuje je na ciągi,do zmiennychxiyprzypisywane są ciągi znaków wprowadzone przez użytkownika,funkcjaprint()wyświetla na ekranie wynik operacjikonkatenacji(proces łączenia ciągów):„2” + „4”; operator+powoduje dodanie ciągu znaków do innego ciągu i daje wynik24."
                 },
                 {
                     "id": "js-pe1-m2-013",
                     "type": "single",
-                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\nx = int(input())\n                    \n                \n                    \n                        y = int(input())\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        x = x // y\n                    \n                \n                    \n                        y = y // x\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(y)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\n\nx = int(input())\n\n\n\n                        y = int(input())\n\n\n\n\n\n\n\n                        x = x // y\n\n\n\n                        y = y // x\n\n\n\n\n\n\n\n                        print(y)\n```",
                     "options": [
                         "Kod spowoduje błąd wykonania (Runtime error)",
                         "2.0",
@@ -2437,12 +2437,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy następujący przykład:zmiennejxprzypisywana jest wartość całkowita2(2jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint()zmiennejyjest przypisywana wartość całkowita4(4jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())wykonywana jest operacja, w wyniku której zmiennejxjest przypisywana wartość0(2 // 4=0)operacja jest wykonywana, ale został zgłoszony ZeroDivisionException, ponieważ operator//nie może zaakceptować0jako prawego operandu. Program zostanie zakończony."
                 },
                 {
                     "id": "js-pe1-m2-014",
                     "type": "single",
-                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\nx = int(input())\n                    \n                \n                    \n                        y = int(input())\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        x = x / y\n                    \n                \n                    \n                        y = y / x\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(y)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\n\nx = int(input())\n\n\n\n                        y = int(input())\n\n\n\n\n\n\n\n                        x = x / y\n\n\n\n                        y = y / x\n\n\n\n\n\n\n\n                        print(y)\n```",
                     "options": [
                         "8.0",
                         "4.0",
@@ -2452,12 +2452,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy następujący przykład:zmiennejxprzypisywana jest wartość całkowita2(2jest wprowadzane przez użytkownika, konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())zmiennejyjest przypisywana wartość całkowita4(4jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())wykonywana jest operacja, w wyniku której zmiennejxjest przypisywana wartość0.5(2 / 4 = 0.5)wykonywana jest operacja, w wyniku której zmiennejyprzypisywana jest wartość8.0(4 / 0.5 = 8.0)wartość przypisana do zmiennejy(8.0) jest wyświetlana na ekranie."
                 },
                 {
                     "id": "js-pe1-m2-015",
                     "type": "single",
-                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające kolejno 11 i 4?\n\n```python\nx = int(input())\n                    \n                \n                    \n                        y = int(input())\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        x = x % y\n                    \n                \n                    \n                        x = x % y\n                    \n                \n                    \n                        y = y % x\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(y)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające kolejno 11 i 4?\n\n```python\n\nx = int(input())\n\n\n\n                        y = int(input())\n\n\n\n\n\n\n\n                        x = x % y\n\n\n\n                        x = x % y\n\n\n\n                        y = y % x\n\n\n\n\n\n\n\n                        print(y)\n```",
                     "options": [
                         "1",
                         "2",
@@ -2467,12 +2467,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy następujący przykład:zmiennejxprzypisywana jest wartość całkowita11(11jest wprowadzane przez użytkownika, konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())zmiennejyjest przypisywana wartość całkowita4(4jest wprowadzane przez użytkownika i konwertowane na ciąg znaków przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())wykonywana jest operacja, w wyniku której zmiennejxprzypisywana jest wartość3(3% 4 = 3)wykonywana jest operacja, w wyniku której zmiennejxprzypisywana jest wartość0(3% 11 = 0)wykonywana jest operacja, w wyniku której zmiennejyprzypisywana jest wartość1(4% 3 = 1)wartość przypisana do zmiennejy(1) jest wyświetlana na ekranie."
                 },
                 {
                     "id": "js-pe1-m2-016",
                     "type": "single",
-                    "question": "Jaki będzie wynik wykonania poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające kolejno 3 i 6?\n\n```python\nx = input()\n                    \n                \n                    \n                        y = int(input())\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(x * y)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające kolejno 3 i 6?\n\n```python\n\nx = input()\n\n\n\n                        y = int(input())\n\n\n\n\n\n\n\n                        print(x * y)\n```",
                     "options": [
                         "333333",
                         "18",
@@ -2482,12 +2482,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy następujący przykład:zmiennaxotrzymuje wartość„3”(3jest wprowadzane przez użytkownika i konwertowane na ciąg przez funkcjęinput())zmiennayotrzymuje wartość6(6jest wprowadzane przez użytkownika, konwertowane na ciąg przez funkcjęinput(), a następnie konwertowane na liczbę całkowitą przez funkcjęint())funkcjaprint()zwraca wynik następującego mnożenia ciągu:„3” * 6, czyli333333"
                 },
                 {
                     "id": "js-pe1-m2-017",
                     "type": "single",
-                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\nz = y = x = 1\n                    \n                \n                    \n                        print(x, y, z, sep='*')\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\n\nz = y = x = 1\n\n\n\n                        print(x, y, z, sep='*')\n```",
                     "options": [
                         "1*1*1",
                         "1 1 1",
@@ -2497,12 +2497,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeanalizujmy przykład:zmiennez,yixsą zadeklarowane i zainicjowane, a wartość1jest przypisywana do każdego z nich za pomocą mechanizmu przypisywania tej samej wartości do wielu zmiennych,wartości przypisane do trzech zmiennych są wyświetlane na ekranie i oddzielone symbolem*za pomocą słowa kluczowegosep."
                 },
                 {
                     "id": "js-pe1-m2-018",
                     "type": "single",
-                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\ny = 2 + 3 * 5.\n                    \n                \n                    \n                        print(Y)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\n\ny = 2 + 3 * 5.\n\n\n\n                        print(Y)\n```",
                     "options": [
                         "fragment kodu spowoduje błąd wykonania",
                         "25.",
@@ -2512,12 +2512,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Python rozróżniana wielkość liter, dlategoyiYto dwie różne zmienne. Ponieważ program próbuje wyświetlić na ekranie wartość powiązaną ze zmienną, która nie istnieje w lokalnej przestrzeni nazw, Python nie rozpoznaje jej i zgłaszany jest wyjątekNameError."
                 },
                 {
                     "id": "js-pe1-m2-019",
                     "type": "single",
-                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\nx = 1 / 2 + 3 // 3 + 4 ** 2\n                    \n                \n                    \n                        print(x)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu?\n\n```python\n\nx = 1 / 2 + 3 // 3 + 4 ** 2\n\n\n\n                        print(x)\n```",
                     "options": [
                         "17,5",
                         "17",
@@ -2527,12 +2527,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Tutaj obowiązuje zasada pierwszeństwa operatorów (kolejność wykonywania operacji). Zobaczmy, co się tutaj wydarzy:najpierw zostaje obliczone wyrażenie4 ** 2, dając wynik16.następnie zostaje obliczone wyrażenie1 / 2, dając wynik0.5.jako trzecie zostaje obliczone wyrażenie3 // 3, dając wynik1.na koniec trzy wartości są dodawane (0.5 + 1 + 16), a ich wynik (17.5) jest przypisywana do zmiennejxi wyświetlany na ekranie."
                 },
                 {
                     "id": "js-pe1-m2-020",
                     "type": "single",
-                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\nx = int(input())\n                    \n                \n                    \n                        y = int(input())\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(x + y)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik poniższego fragmentu kodu, jeśli użytkownik wprowadzi dwa wiersze zawierające odpowiednio 2 i 4?\n\n```python\n\nx = int(input())\n\n\n\n                        y = int(input())\n\n\n\n\n\n\n\n                        print(x + y)\n```",
                     "options": [
                         "6",
                         "16",
@@ -2542,7 +2542,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Wartości2i4są wprowadzane przez użytkownika, konwertowane z ciągów na liczby całkowite i przypisywane odpowiednio do zmiennychxiy. Funkcjaprint()wyświetla na ekranie wynik dodawania liczb całkowitych (2 + 4)."
                 }
             ]
         },
@@ -2786,7 +2786,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-002",
                     "type": "multiple",
-                    "question": "Funkcja zdefiniowana w następujący sposób: (Wybierz dwie odpowiedzi)\n\n```python\ndef function(x=0):\n                    \n                \n                    \n                            return x\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Funkcja zdefiniowana w następujący sposób: (Wybierz dwie odpowiedzi)\n\n```python\n\ndef function(x=0):\n\n\n\n                            return x\n```",
                     "options": [
                         "może zostać wywołana bez żadnych argumentów  \n 1 of 4",
                         "może zostać wywołana z dokładnie jednym argumentem  \n 2 of 4",
@@ -2832,7 +2832,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-005",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef f(x):\n                    \n                \n                    \n                            if x == 0:\n                    \n                \n                    \n                                return 0\n                    \n                \n                    \n                            return x + f(x - 1)\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(f(3))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndef f(x):\n\n\n\n                            if x == 0:\n\n\n\n                                return 0\n\n\n\n                            return x + f(x - 1)\n\n\n\n\n\n\n\n\n\n\n\n                        print(f(3))\n```",
                     "options": [
                         "6",
                         "3",
@@ -2847,7 +2847,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-006",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x):\n                    \n                \n                    \n                            x += 1\n                    \n                \n                    \n                            return x\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        x = 2\n                    \n                \n                    \n                        x = fun(x + 1)\n                    \n                \n                    \n                        print(x)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndef fun(x):\n\n\n\n                            x += 1\n\n\n\n                            return x\n\n\n\n\n\n\n\n\n\n\n\n                        x = 2\n\n\n\n                        x = fun(x + 1)\n\n\n\n                        print(x)\n```",
                     "options": [
                         "4",
                         "5",
@@ -2862,7 +2862,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-007",
                     "type": "single",
-                    "question": "Jaki kod należy wstawić zamiast komentarza, aby uzyskać oczekiwane dane wyjściowe?\n\n```python\ndictionary = {}\n                    \n                \n                    \n                        my_list = ['a', 'b', 'c', 'd']\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        for i in range(len(my_list) - 1):\n                    \n                \n                    \n                            dictionary[my_list[i]] = (my_list[i], )\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        for i in sorted(dictionary.keys()):\n                    \n                \n                    \n                            k = dictionary[i]\n                    \n                \n                    \n                            # Insert your code here.\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki kod należy wstawić zamiast komentarza, aby uzyskać oczekiwane dane wyjściowe?\n\n```python\n\ndictionary = {}\n\n\n\n                        my_list = ['a', 'b', 'c', 'd']\n\n\n\n\n\n\n\n                        for i in range(len(my_list) - 1):\n\n\n\n                            dictionary[my_list[i]] = (my_list[i], )\n\n\n\n\n\n\n\n                        for i in sorted(dictionary.keys()):\n\n\n\n                            k = dictionary[i]\n\n\n\n                            # Insert your code here.\n```",
                     "options": [
                         "print(k[0])",
                         "print(k['0'])",
@@ -2877,7 +2877,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-008",
                     "type": "single",
-                    "question": "Następujący fragment:\n\n```python\ndef func(a, b):\n                    \n                \n                    \n                            return a ** a\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(func(2))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Następujący fragment:\n\n```python\n\ndef func(a, b):\n\n\n\n                            return a ** a\n\n\n\n\n\n\n\n\n\n\n\n                        print(func(2))\n```",
                     "options": [
                         "jest błędny",
                         "wyświetli w oknie konsoli wynik 4",
@@ -2892,7 +2892,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-009",
                     "type": "single",
-                    "question": "Następujący fragment:\n\n```python\ndef func_1(a):\n                    \n                \n                    \n                            return a ** a\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        def func_2(a):\n                    \n                \n                    \n                            return func_1(a) * func_1(a)\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(func_2(2))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Następujący fragment:\n\n```python\n\ndef func_1(a):\n\n\n\n                            return a ** a\n\n\n\n\n\n\n\n\n\n\n\n                        def func_2(a):\n\n\n\n                            return func_1(a) * func_1(a)\n\n\n\n\n\n\n\n\n\n\n\n                        print(func_2(2))\n```",
                     "options": [
                         "wyświetli 16",
                         "wyświetli 4",
@@ -2938,7 +2938,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-012",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x):\n                    \n                \n                    \n                            if x % 2 == 0:\n                    \n                \n                    \n                                return 1\n                    \n                \n                    \n                            else:\n                    \n                \n                    \n                                return\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(fun(fun(2)) + 1)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndef fun(x):\n\n\n\n                            if x % 2 == 0:\n\n\n\n                                return 1\n\n\n\n                            else:\n\n\n\n                                return\n\n\n\n\n\n\n\n\n\n\n\n                        print(fun(fun(2)) + 1)\n```",
                     "options": [
                         "Kod spowoduje błąd wykonania (Runtime error)",
                         "1",
@@ -2953,7 +2953,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-013",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x):\n                    \n                \n                    \n                            global y\n                    \n                \n                    \n                            y = x * x\n                    \n                \n                    \n                            return y\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        fun(2)\n                    \n                \n                    \n                        print(y)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndef fun(x):\n\n\n\n                            global y\n\n\n\n                            y = x * x\n\n\n\n                            return y\n\n\n\n\n\n\n\n\n\n\n\n                        fun(2)\n\n\n\n                        print(y)\n```",
                     "options": [
                         "4",
                         "2",
@@ -2968,7 +2968,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-014",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef any():\n                    \n                \n                    \n                            print(var + 1, end='')\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        var = 1\n                    \n                \n                    \n                        any()\n                    \n                \n                    \n                        print(var)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndef any():\n\n\n\n                            print(var + 1, end='')\n\n\n\n\n\n\n\n\n\n\n\n                        var = 1\n\n\n\n                        any()\n\n\n\n                        print(var)\n```",
                     "options": [
                         "21",
                         "12",
@@ -2983,7 +2983,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-015",
                     "type": "single",
-                    "question": "Zakładając, że my_tuple jest poprawnie utworzoną krotką, fakt, że krotki są niemutowalne oznacza, że poniższa instrukcja:\n\n```python\nmy_tuple[1] = my_tuple[1] + my_tuple[0]\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Zakładając, że my_tuple jest poprawnie utworzoną krotką, fakt, że krotki są niemutowalne oznacza, że poniższa instrukcja:\n\n```python\n\nmy_tuple[1] = my_tuple[1] + my_tuple[0]\n```",
                     "options": [
                         "jest niedozwolona",
                         "może zostać wykonana wtedy i tylko wtedy gdy krotka przechowuje przynajmniej dwa elementy",
@@ -2998,7 +2998,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-016",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\nmy_list =  ['Mary', 'had', 'a', 'little', 'lamb']\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        def my_list(my_list):\n                    \n                \n                    \n                            del my_list[3]\n                    \n                \n                    \n                            my_list[3] = 'ram'\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(my_list(my_list))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\nmy_list =  ['Mary', 'had', 'a', 'little', 'lamb']\n\n\n\n\n\n\n\n\n\n\n\n                        def my_list(my_list):\n\n\n\n                            del my_list[3]\n\n\n\n                            my_list[3] = 'ram'\n\n\n\n\n\n\n\n\n\n\n\n                        print(my_list(my_list))\n```",
                     "options": [
                         "brak wyniku, ten fragment kodu jest błędny",
                         "['Mary', 'had', 'a', 'little', 'lamb']",
@@ -3013,7 +3013,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-017",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x, y, z):\n                    \n                \n                    \n                            return x + 2 * y + 3 * z\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(fun(0, z=1, y=3))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndef fun(x, y, z):\n\n\n\n                            return x + 2 * y + 3 * z\n\n\n\n\n\n\n\n\n\n\n\n                        print(fun(0, z=1, y=3))\n```",
                     "options": [
                         "9",
                         "0",
@@ -3028,7 +3028,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-018",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(inp=2, out=3):\n                    \n                \n                    \n                            return inp * out\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(fun(out=2))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndef fun(inp=2, out=3):\n\n\n\n                            return inp * out\n\n\n\n\n\n\n\n\n\n\n\n                        print(fun(out=2))\n```",
                     "options": [
                         "4",
                         "6",
@@ -3043,7 +3043,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-019",
                     "type": "single",
-                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\ndictionary = {'one': 'two', 'three': 'one', 'two': 'three'}\n                    \n                \n                    \n                        v = dictionary['one']\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        for k in range(len(dictionary)):\n                    \n                \n                    \n                            v = dictionary[v]\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(v)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\n\ndictionary = {'one': 'two', 'three': 'one', 'two': 'three'}\n\n\n\n                        v = dictionary['one']\n\n\n\n\n\n\n\n                        for k in range(len(dictionary)):\n\n\n\n                            v = dictionary[v]\n\n\n\n\n\n\n\n                        print(v)\n```",
                     "options": [
                         "two",
                         "three",
@@ -3058,7 +3058,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-020",
                     "type": "single",
-                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\ntup = (1, 2, 4, 8)\n                    \n                \n                    \n                        tup = tup[1:-1]\n                    \n                \n                    \n                        tup = tup[0]\n                    \n                \n                    \n                        print(tup)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\n\ntup = (1, 2, 4, 8)\n\n\n\n                        tup = tup[1:-1]\n\n\n\n                        tup = tup[0]\n\n\n\n                        print(tup)\n```",
                     "options": [
                         "2",
                         "(2)",
@@ -3073,7 +3073,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-021",
                     "type": "multiple",
-                    "question": "Wybierz prawdziwe stwierdzenia dotyczące bloku try-except w odniesieniu do poniższego przykładu (Zaznacz dwie odpowiedzi).\n\n```python\ntry:\n                    \n                \n                    \n                            # Some code is here...\n                    \n                \n                    \n                        except:\n                    \n                \n                    \n                            # Some code is here...\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Wybierz prawdziwe stwierdzenia dotyczące bloku try-except w odniesieniu do poniższego przykładu (Zaznacz dwie odpowiedzi).\n\n```python\n\ntry:\n\n\n\n                            # Some code is here...\n\n\n\n                        except:\n\n\n\n                            # Some code is here...\n```",
                     "options": [
                         "Jeśli podejrzewasz, że fragment kodu może spowodować wystąpienie wyjątku, powinieneś umieścić go w bloku try .  \n 1 of 4",
                         "Kod, który znajduje się po instrukcji except , zostanie wykonany, jeśli kod w bloku try napotka błąd.  \n 2 of 4",
@@ -3089,7 +3089,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-m4-022",
                     "type": "single",
-                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\ntry:\n                    \n                \n                    \n                            value = input(\"Enter a value: \")\n                    \n                \n                    \n                            print(value/value)\n                    \n                \n                    \n                        except ValueError:\n                    \n                \n                    \n                            print(\"Bad input...\")\n                    \n                \n                    \n                        except ZeroDivisionError:\n                    \n                \n                    \n                            print(\"Very bad input...\")\n                    \n                \n                    \n                        except TypeError:\n                    \n                \n                    \n                            print(\"Very very bad input...\")\n                    \n                \n                    \n                        except:\n                    \n                \n                    \n                            print(\"Booo!\")\n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania poniższego kodu?\n\n```python\n\ntry:\n\n\n\n                            value = input(\"Enter a value: \")\n\n\n\n                            print(value/value)\n\n\n\n                        except ValueError:\n\n\n\n                            print(\"Bad input...\")\n\n\n\n                        except ZeroDivisionError:\n\n\n\n                            print(\"Very bad input...\")\n\n\n\n                        except TypeError:\n\n\n\n                            print(\"Very very bad input...\")\n\n\n\n                        except:\n\n\n\n                            print(\"Booo!\")\n```",
                     "options": [
                         "Bardzo, bardzo złe dane wejściowe...",
                         "Bardzo złe dane wejściowe...",
@@ -3110,7 +3110,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-001",
                     "type": "single",
-                    "question": "Spójrz na poniższy fragment kodu. Jaka będzie zawartość my_numbers\n\n```python\nmy_numbers = [10, 20, 30, 40, 50]\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        for i in range(4):\n                    \n                \n                    \n                            my_numbers.insert(i, my_numbers[-1])\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(my_numbers)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Spójrz na poniższy fragment kodu. Jaka będzie zawartość my_numbers\n\n```python\n\nmy_numbers = [10, 20, 30, 40, 50]\n\n\n\n\n\n\n\n                        for i in range(4):\n\n\n\n                            my_numbers.insert(i, my_numbers[-1])\n\n\n\n\n\n\n\n                        print(my_numbers)\n```",
                     "options": [
                         "[50, 10, 50, 20, 50, 30, 50, 40]",
                         "[10, 50, 20, 30, 40, 50, 50, 50]",
@@ -3136,7 +3136,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-003",
                     "type": "single",
-                    "question": "Przeanalizuj następujący fragment kodu:\n\n```python\nalpha = [4, 8, 15, 16, 23, 42]\n                    \n                \n                    \n                        beta = alpha[:]\n                    \n                \n                    \n                        beta[2] = 99\n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Przeanalizuj następujący fragment kodu:\n\n```python\n\nalpha = [4, 8, 15, 16, 23, 42]\n\n\n\n                        beta = alpha[:]\n\n\n\n                        beta[2] = 99\n```",
                     "options": [
                         "alfa i beta to dwie nazwy tej samej listy; w związku z tym w obu listach liczba 99 znajduje się na trzecim miejscu.  \n 1 of 4",
                         "alfa i beta to osobne listy; alpha po modyfikacji pozostaje niezmieniona.  \n 2 of 4",
@@ -3162,7 +3162,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-005",
                     "type": "single",
-                    "question": "Biorąc pod uwagę poniższy segment kodu Python:\n\n```python\ndef compute_square(x):\n                    \n                \n                    \n                            return x * x\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        def compute_quad(x):\n                    \n                \n                    \n                            return compute_square(x) * compute_square(None)\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(compute_quad(4))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Biorąc pod uwagę poniższy segment kodu Python:\n\n```python\n\ndef compute_square(x):\n\n\n\n                            return x * x\n\n\n\n\n\n\n\n\n\n\n\n                        def compute_quad(x):\n\n\n\n                            return compute_square(x) * compute_square(None)\n\n\n\n\n\n\n\n\n\n\n\n                        print(compute_quad(4))\n```",
                     "options": [
                         "Wyświetlone zostanie 256.",
                         "Wyświetlone zostanie 16.",
@@ -3175,7 +3175,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-006",
                     "type": "single",
-                    "question": "Wynik poniższego dzielenia:\n\n```python\n1 // 2\n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Wynik poniższego dzielenia:\n\n```python\n\n1 // 2\n```",
                     "options": [
                         "jest równy 0.0",
                         "jest trudny do przewidzenia",
@@ -3188,7 +3188,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-007",
                     "type": "single",
-                    "question": "Rozważ poniżej zdefiniowaną funkcję w Pythonie.\n\n```python\ndef raise_power(base, exponent):\n                    \n                \n                    \n                            return base ** exponent\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(raise_power(exponent=3, 2))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Rozważ poniżej zdefiniowaną funkcję w Pythonie.\n\n```python\n\ndef raise_power(base, exponent):\n\n\n\n                            return base ** exponent\n\n\n\n\n\n\n\n\n\n\n\n                        print(raise_power(exponent=3, 2))\n```",
                     "options": [
                         "Kod zwróci 8.",
                         "Kod jest błędny i nie może zostać wykonany.",
@@ -3201,7 +3201,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-008",
                     "type": "single",
-                    "question": "Jaka wartość zostanie przypisana do zmiennej x ?\n\n```python\nz = 0\n                    \n                \n                    \n                        y = 10\n                    \n                \n                    \n                        x = y < z and z > y or y < z and z < y\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaka wartość zostanie przypisana do zmiennej x ?\n\n```python\n\nz = 0\n\n\n\n                        y = 10\n\n\n\n                        x = y < z and z > y or y < z and z < y\n```",
                     "options": [
                         "1",
                         "True",
@@ -3227,7 +3227,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-010",
                     "type": "single",
-                    "question": "Jakie jest oczekiwany wynik działania poniższego kodu napisanego w języku Python?\n\n```python\nmy_values = [3 * i for i in range(5)]\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        def modify_list(values):\n                    \n                \n                    \n                            del values[values[2] // 3]\n                    \n                \n                    \n                            return values\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(modify_list(my_values))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jakie jest oczekiwany wynik działania poniższego kodu napisanego w języku Python?\n\n```python\n\nmy_values = [3 * i for i in range(5)]\n\n\n\n\n\n\n\n\n\n\n\n                        def modify_list(values):\n\n\n\n                            del values[values[2] // 3]\n\n\n\n                            return values\n\n\n\n\n\n\n\n\n\n\n\n                        print(modify_list(my_values))\n```",
                     "options": [
                         "[0, 3, 9, 12]",
                         "[0, 6, 9, 12]",
@@ -3240,7 +3240,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-011",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\nx = 1\n                    \n                \n                    \n                        y = 2\n                    \n                \n                    \n                        x, y, z = x, x, y\n                    \n                \n                    \n                        z, y, z = x, y, z\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(x, y, z)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\n\nx = 1\n\n\n\n                        y = 2\n\n\n\n                        x, y, z = x, x, y\n\n\n\n                        z, y, z = x, y, z\n\n\n\n\n\n\n\n                        print(x, y, z)\n```",
                     "options": [
                         "1 2 1",
                         "1 1 2",
@@ -3253,7 +3253,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-012",
                     "type": "single",
-                    "question": "Jaki będzie wynik działania następującego fragmentu kodu?\n\n```python\na = 1\n                    \n                \n                    \n                        b = 0\n                    \n                \n                    \n                        a = a ^ b\n                    \n                \n                    \n                        b = a ^ b\n                    \n                \n                    \n                        a = a ^ b\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(a, b)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik działania następującego fragmentu kodu?\n\n```python\n\na = 1\n\n\n\n                        b = 0\n\n\n\n                        a = a ^ b\n\n\n\n                        b = a ^ b\n\n\n\n                        a = a ^ b\n\n\n\n\n\n\n\n                        print(a, b)\n```",
                     "options": [
                         "0 0",
                         "0 1",
@@ -3266,7 +3266,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-013",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\ndef custom_function(value):\n                    \n                \n                    \n                            if value % 3 == 0:\n                    \n                \n                    \n                                return 1\n                    \n                \n                    \n                            else:\n                    \n                \n                    \n                                return 2\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(custom_function(custom_function(4)))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\n\ndef custom_function(value):\n\n\n\n                            if value % 3 == 0:\n\n\n\n                                return 1\n\n\n\n                            else:\n\n\n\n                                return 2\n\n\n\n\n\n\n\n\n\n\n\n                        print(custom_function(custom_function(4)))\n```",
                     "options": [
                         "1",
                         "2",
@@ -3279,7 +3279,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-014",
                     "type": "single",
-                    "question": "Zapoznaj się z poniższym fragmentem kodu w języku Python i ustal które zdanie jest poprawne.\n\n```python\ninventory = ['apple', 'banana', 'cherry']\n                    \n                \n                    \n                        backup_inventory = inventory\n                    \n                \n                    \n                        del backup_inventory[:]\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Zapoznaj się z poniższym fragmentem kodu w języku Python i ustal które zdanie jest poprawne.\n\n```python\n\ninventory = ['apple', 'banana', 'cherry']\n\n\n\n                        backup_inventory = inventory\n\n\n\n                        del backup_inventory[:]\n```",
                     "options": [
                         "inventory zawiera więcej elementów niż backup_inventory .",
                         "backup_inventory zawiera więcej elementów niż inventory .",
@@ -3292,7 +3292,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-015",
                     "type": "single",
-                    "question": "Rozważmy poniższy kod Python, gdzie dozwolone są tylko liczby całkowite jako dane wejściowe:\n\n```python\nfirst_integer = int(input(\"Enter an integer: \"))\n                    \n                \n                    \n                        second_integer = int(input(\"Enter another integer: \"))\n                    \n                \n                    \n                        first_integer = first_integer % second_integer\n                    \n                \n                    \n                        first_integer = first_integer % second_integer\n                    \n                \n                    \n                        second_integer = second_integer % first_integer\n                    \n                \n                    \n                        print(second_integer)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Rozważmy poniższy kod Python, gdzie dozwolone są tylko liczby całkowite jako dane wejściowe:\n\n```python\n\nfirst_integer = int(input(\"Enter an integer: \"))\n\n\n\n                        second_integer = int(input(\"Enter another integer: \"))\n\n\n\n                        first_integer = first_integer % second_integer\n\n\n\n                        first_integer = first_integer % second_integer\n\n\n\n                        second_integer = second_integer % first_integer\n\n\n\n                        print(second_integer)\n```",
                     "options": [
                         "Wartość początkowa first_integer nie może być wielokrotnością second_integer .",
                         "second_integer musi być większa niż first_integer .",
@@ -3305,7 +3305,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-016",
                     "type": "single",
-                    "question": "Zakładając, że użytkownik wprowadzi 8 w pierwszym wierszu oraz 5 w drugim wierszu, jaki jest wynik następującego kodu Python?\n\n```python\nfirst_input = input(\"Enter first number: \")\n                    \n                \n                    \n                        second_input = input(\"Enter second number: \")\n                    \n                \n                    \n                        print(second_input + first_input)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Zakładając, że użytkownik wprowadzi 8 w pierwszym wierszu oraz 5 w drugim wierszu, jaki jest wynik następującego kodu Python?\n\n```python\n\nfirst_input = input(\"Enter first number: \")\n\n\n\n                        second_input = input(\"Enter second number: \")\n\n\n\n                        print(second_input + first_input)\n```",
                     "options": [
                         "85",
                         "13",
@@ -3318,7 +3318,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-017",
                     "type": "single",
-                    "question": "Jaki jest wynik działania poniższego fragmentu kodu?\n\n```python\nprint(\"a\", \"b\", \"c\", sep=\"sep\")\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania poniższego fragmentu kodu?\n\n```python\n\nprint(\"a\", \"b\", \"c\", sep=\"sep\")\n```",
                     "options": [
                         "asepbsepcsep",
                         "a b c",
@@ -3331,7 +3331,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-018",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\nx = 1 // 5 + 1 / 5\n                    \n                \n                    \n                        print(x)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\n\nx = 1 // 5 + 1 / 5\n\n\n\n                        print(x)\n```",
                     "options": [
                         "0",
                         "0.5",
@@ -3344,7 +3344,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-019",
                     "type": "single",
-                    "question": "Jaki będzie wynik próby wykonania poniższego fragmentu kodu, jeśli sample_tuple to krotka, która została wcześniej zdefiniowana i zawiera co najmniej dwa elementy?\n\n```python\nsample_tuple[0] = 5\n                    \n                \n                    \n                        print(sample_tuple)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki będzie wynik próby wykonania poniższego fragmentu kodu, jeśli sample_tuple to krotka, która została wcześniej zdefiniowana i zawiera co najmniej dwa elementy?\n\n```python\n\nsample_tuple[0] = 5\n\n\n\n                        print(sample_tuple)\n```",
                     "options": [
                         "Zostanie zgłoszony błąd TypeError, ponieważ elementy krotki nie mogą być przypisane na nowo.",
                         "Kod zostanie wykonany pomyślnie, przypisując wartość 5 do pierwszego elementu krotki.",
@@ -3357,7 +3357,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-020",
                     "type": "single",
-                    "question": "Jaki wynik zostanie zwrócony przez poniższy kod, jeśli użytkownik wprowadzi dwie linie danych zawierające odpowiednio 2 i 4 ?\n\n```python\nx = float(input())\n                    \n                \n                    \n                        y = float(input())\n                    \n                \n                    \n                        print(y ** (1 / x))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki wynik zostanie zwrócony przez poniższy kod, jeśli użytkownik wprowadzi dwie linie danych zawierające odpowiednio 2 i 4 ?\n\n```python\n\nx = float(input())\n\n\n\n                        y = float(input())\n\n\n\n                        print(y ** (1 / x))\n```",
                     "options": [
                         "1.0",
                         "0.0",
@@ -3370,7 +3370,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-021",
                     "type": "single",
-                    "question": "Jaki jest oczekiwany wynik działania następującego kodu?\n\n```python\ndictionary = {'alpha': 'beta', 'gamma': 'alpha', 'beta': 'gamma'}\n                    \n                \n                    \n                        value = dictionary['gamma']\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        for key in range(len(dictionary)):\n                    \n                \n                    \n                            value = dictionary[value]\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(value)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest oczekiwany wynik działania następującego kodu?\n\n```python\n\ndictionary = {'alpha': 'beta', 'gamma': 'alpha', 'beta': 'gamma'}\n\n\n\n                        value = dictionary['gamma']\n\n\n\n\n\n\n\n                        for key in range(len(dictionary)):\n\n\n\n                            value = dictionary[value]\n\n\n\n\n\n\n\n                        print(value)\n```",
                     "options": [
                         "(„alfa”, „beta”, „gamma”)",
                         "alpha",
@@ -3383,7 +3383,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-022",
                     "type": "single",
-                    "question": "Ile elementów znajduje się w liście values ?\n\n```python\nvalues = [i for i in range(-1, -3, -1)]\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Ile elementów znajduje się w liście values ?\n\n```python\n\nvalues = [i for i in range(-1, -3, -1)]\n```",
                     "options": [
                         "Jeden",
                         "Trzy",
@@ -3396,7 +3396,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-023",
                     "type": "single",
-                    "question": "Które z poniższych wywołań funkcji poprawnie wywołuje funkcję zdefiniowaną poniżej? (wybierz dwie odpowiedzi)\n\n```python\ndef custom_function(x, y, z=0):\n                    \n                \n                    \n                            # Body of the function.\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Które z poniższych wywołań funkcji poprawnie wywołuje funkcję zdefiniowaną poniżej? (wybierz dwie odpowiedzi)\n\n```python\n\ndef custom_function(x, y, z=0):\n\n\n\n                            # Body of the function.\n```",
                     "options": [
                         "custom_function(y=2, x=1)  \n 1 of 4",
                         "custom_function(x=3)  \n 2 of 4",
@@ -3409,7 +3409,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-024",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(x, y):\n                    \n                \n                    \n                            if x == y:\n                    \n                \n                    \n                                return x\n                    \n                \n                    \n                            else:\n                    \n                \n                    \n                                return fun(x, y-1)\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(fun(0, 3))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndef fun(x, y):\n\n\n\n                            if x == y:\n\n\n\n                                return x\n\n\n\n                            else:\n\n\n\n                                return fun(x, y-1)\n\n\n\n\n\n\n\n\n\n\n\n                        print(fun(0, 3))\n```",
                     "options": [
                         "1",
                         "ten fragment kodu spowoduje wystąpienie Runtime error",
@@ -3422,7 +3422,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-025",
                     "type": "single",
-                    "question": "Ile gwiazdek ( * ) zostanie wyświetlonych w konsoli po uruchomieniu następującego kodu?\n\n```python\ni = 0\n                    \n                \n                    \n                        while i < i + 2 :\n                    \n                \n                    \n                            i += 1\n                    \n                \n                    \n                            print(\"*\")\n                    \n                \n                    \n                        else:\n                    \n                \n                    \n                            print(\"*\")\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Ile gwiazdek ( * ) zostanie wyświetlonych w konsoli po uruchomieniu następującego kodu?\n\n```python\n\ni = 0\n\n\n\n                        while i < i + 2 :\n\n\n\n                            i += 1\n\n\n\n                            print(\"*\")\n\n\n\n                        else:\n\n\n\n                            print(\"*\")\n```",
                     "options": [
                         "jeden",
                         "dwa",
@@ -3435,7 +3435,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-026",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\nmy_tuple = (10, 20, 30, 40, 50)\n                    \n                \n                    \n                        my_tuple = my_tuple[-3:-1]\n                    \n                \n                    \n                        my_tuple = my_tuple[-1]\n                    \n                \n                    \n                        print(my_tuple)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego fragmentu kodu?\n\n```python\n\nmy_tuple = (10, 20, 30, 40, 50)\n\n\n\n                        my_tuple = my_tuple[-3:-1]\n\n\n\n                        my_tuple = my_tuple[-1]\n\n\n\n                        print(my_tuple)\n```",
                     "options": [
                         "30",
                         "20",
@@ -3448,7 +3448,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-027",
                     "type": "single",
-                    "question": "Biorąc pod uwagę poniższy kod:\n\n```python\nmy_dict = {\"apple\": 1, \"banana\": 2, \"cherry\": 3}\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Biorąc pod uwagę poniższy kod:\n\n```python\n\nmy_dict = {\"apple\": 1, \"banana\": 2, \"cherry\": 3}\n```",
                     "options": [
                         "for value in my_dict.values():\n print(value)",
                         "for key in my_dict:\n print(value)",
@@ -3461,7 +3461,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-028",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndct = {}\n                    \n                \n                    \n                        dct['1'] = (1, 2)\n                    \n                \n                    \n                        dct['2'] = (2, 1)\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        for x in dct.keys():\n                    \n                \n                    \n                            print(dct[x][1], end=\"\")\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndct = {}\n\n\n\n                        dct['1'] = (1, 2)\n\n\n\n                        dct['2'] = (2, 1)\n\n\n\n\n\n\n\n                        for x in dct.keys():\n\n\n\n                            print(dct[x][1], end=\"\")\n```",
                     "options": [
                         "21",
                         "(2,1)",
@@ -3474,7 +3474,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-029",
                     "type": "single",
-                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\ndef fun(inp=2, out=3):\n                    \n                \n                    \n                            return inp * out\n                    \n                \n                    \n                         \n                    \n                \n                    \n                         \n                    \n                \n                    \n                        print(fun(out=2))\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik działania następującego kodu?\n\n```python\n\ndef fun(inp=2, out=3):\n\n\n\n                            return inp * out\n\n\n\n\n\n\n\n\n\n\n\n                        print(fun(out=2))\n```",
                     "options": [
                         "6",
                         "4",
@@ -3487,7 +3487,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-030",
                     "type": "single",
-                    "question": "Ile razy znak # zostanie wyświetlony w konsoli po uruchomieniu następującego kodu?\n\n```python\nmatrix = [[x for x in range(3)] for y in range(3)]\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        count = 0\n                    \n                \n                    \n                        for row in matrix:\n                    \n                \n                    \n                            for element in row:\n                    \n                \n                    \n                                if element % 2 != 0:\n                    \n                \n                    \n                                    count += 1\n                    \n                \n                    \n                        print(count)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Ile razy znak # zostanie wyświetlony w konsoli po uruchomieniu następującego kodu?\n\n```python\n\nmatrix = [[x for x in range(3)] for y in range(3)]\n\n\n\n\n\n\n\n                        count = 0\n\n\n\n                        for row in matrix:\n\n\n\n                            for element in row:\n\n\n\n                                if element % 2 != 0:\n\n\n\n                                    count += 1\n\n\n\n                        print(count)\n```",
                     "options": [
                         "Zero",
                         "Jeden",
@@ -3500,7 +3500,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-031",
                     "type": "single",
-                    "question": "Jaki jest wynik następującego kodu, jeśli użytkownik wprowadzi 0 ?\n\n```python\ntry:\n                    \n                \n                    \n                            value = input(\"Enter a value: \")\n                    \n                \n                    \n                            print(int(value)/len(value))\n                    \n                \n                    \n                        except ValueError:\n                    \n                \n                    \n                            print(\"Bad input...\")\n                    \n                \n                    \n                        except ZeroDivisionError:\n                    \n                \n                    \n                            print(\"Very bad input...\")\n                    \n                \n                    \n                        except TypeError:\n                    \n                \n                    \n                            print(\"Very very bad input...\")\n                    \n                \n                    \n                        except:\n                    \n                \n                    \n                            print(\"Booo!\")\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jaki jest wynik następującego kodu, jeśli użytkownik wprowadzi 0 ?\n\n```python\n\ntry:\n\n\n\n                            value = input(\"Enter a value: \")\n\n\n\n                            print(int(value)/len(value))\n\n\n\n                        except ValueError:\n\n\n\n                            print(\"Bad input...\")\n\n\n\n                        except ZeroDivisionError:\n\n\n\n                            print(\"Very bad input...\")\n\n\n\n                        except TypeError:\n\n\n\n                            print(\"Very very bad input...\")\n\n\n\n                        except:\n\n\n\n                            print(\"Booo!\")\n```",
                     "options": [
                         "Buuuu!",
                         "1.0",
@@ -3515,7 +3515,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-032",
                     "type": "single",
-                    "question": "Jakie jest oczekiwane zachowanie poniższego programu w języku Python?\n\n```python\ntry:\n                    \n                \n                    \n                            print(10 / 0)\n                    \n                \n                    \n                            break\n                    \n                \n                    \n                        except ZeroDivisionError::\n                    \n                \n                    \n                            print(\"Zero division error occurred...\")\n                    \n                \n                    \n                        except (ValueError, TypeError):\n                    \n                \n                    \n                            print(\"Value or type error occurred..\")\n                    \n                \n                    \n                        except:\n                    \n                \n                    \n                            print(\"Unknown error occurred...\")\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jakie jest oczekiwane zachowanie poniższego programu w języku Python?\n\n```python\n\ntry:\n\n\n\n                            print(10 / 0)\n\n\n\n                            break\n\n\n\n                        except ZeroDivisionError::\n\n\n\n                            print(\"Zero division error occurred...\")\n\n\n\n                        except (ValueError, TypeError):\n\n\n\n                            print(\"Value or type error occurred..\")\n\n\n\n                        except:\n\n\n\n                            print(\"Unknown error occurred...\")\n```",
                     "options": [
                         "Program spowoduje wyjątek SyntaxError.",
                         "Program spowoduje wystąpienie wyjątku ZeroDivisionError i wyświetli komunikat: \"Wystąpił błąd dzielenia przez zero...\"",
@@ -3528,7 +3528,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-033",
                     "type": "single",
-                    "question": "Jakie jest oczekiwane zachowanie tego programu?\n\n```python\nfoo = (1, 2, 3)\n                    \n                \n                    \n                        foo.index(0)\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Jakie jest oczekiwane zachowanie tego programu?\n\n```python\n\nfoo = (1, 2, 3)\n\n\n\n                        foo.index(0)\n```",
                     "options": [
                         "Program spowoduje wyjątek AttributeError .",
                         "Program spowoduje wyjątek ValueError .",
@@ -3542,7 +3542,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-034",
                     "type": "single",
-                    "question": "Który z poniższych fragmentów kodu pokazuje prawidłowy sposób obsługi wielu wyjątków w jednej klauzuli except ?\n\n```python\n# A:\n                    \n                \n                    \n                        except (TypeError, ValueError, ZeroDivisionError):\n                    \n                \n                    \n                            # Some code.\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        # B:\n                    \n                \n                    \n                        except TypeError, ValueError, ZeroDivisionError:\n                    \n                \n                    \n                            # Some code.\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        # C:\n                    \n                \n                    \n                        except: (TypeError, ValueError, ZeroDivisionError)\n                    \n                \n                    \n                            # Some code.\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        # D:\n                    \n                \n                    \n                        except: TypeError, ValueError, ZeroDivisionError\n                    \n                \n                    \n                            # Some code.\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        # E:\n                    \n                \n                    \n                        except (TypeError, ValueError, ZeroDivisionError)\n                    \n                \n                    \n                            # Some code.\n                    \n                \n                    \n                         \n                    \n                \n                    \n                        # F:\n                    \n                \n                    \n                        except TypeError, ValueError, ZeroDivisionError\n                    \n                \n                    \n                            # Some code.\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Który z poniższych fragmentów kodu pokazuje prawidłowy sposób obsługi wielu wyjątków w jednej klauzuli except ?\n\n```python\n\n# A:\n\n\n\n                        except (TypeError, ValueError, ZeroDivisionError):\n\n\n\n                            # Some code.\n\n\n\n\n\n\n\n                        # B:\n\n\n\n                        except TypeError, ValueError, ZeroDivisionError:\n\n\n\n                            # Some code.\n\n\n\n\n\n\n\n                        # C:\n\n\n\n                        except: (TypeError, ValueError, ZeroDivisionError)\n\n\n\n                            # Some code.\n\n\n\n\n\n\n\n                        # D:\n\n\n\n                        except: TypeError, ValueError, ZeroDivisionError\n\n\n\n                            # Some code.\n\n\n\n\n\n\n\n                        # E:\n\n\n\n                        except (TypeError, ValueError, ZeroDivisionError)\n\n\n\n                            # Some code.\n\n\n\n\n\n\n\n                        # F:\n\n\n\n                        except TypeError, ValueError, ZeroDivisionError\n\n\n\n                            # Some code.\n```",
                     "options": [
                         "Tylko A",
                         "A i B",
@@ -3558,7 +3558,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe1-final-035",
                     "type": "single",
-                    "question": "Co się stanie, gdy spróbujesz uruchomić następujący kod?\n\n```python\nprint(3 + \"5\")\n                    \n                \n                    \n                         \n                    \n                \n            .code-container .hljs-number,\n            .code-container .hljs-literal {\n                color: #ae81ff;\n            }\n            .normal-syntax .hljs-number\n            {\n                color:#000 !important;\n            }\n            .normal-syntax.hljs{\n                color: #000!important;\n            }\n            .code-container .hljs-string {\n                color: #a6e22e;\n             }\n\n            p,\n             span{\n                font-style: inherit !important\n             }\n          \n            .code-container .language-python {\n            background-color: transparent !important;\n            }\n            .code-container .language-c {\n                background-color: transparent !important;\n            }\n\n            .code-container .language-javascript {\n            background-color: transparent !important;\n            }\n            .code-container .language-undefined {\n            background-color: transparent !important;\n            color: black !important;\n            \n            }\n\n            .code-container .language-python .hljs-built_in{\n            color: #66d9ef !important;\n            }\n\n            .command {\n            font-size: 1rem;\n            }\n            .highlight-line {\n                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));\n            }\n\n            .code-container .language-cpp {\n                background-color: transparent !important;\n             \n            }\n            .code-container .normal-syntax .hljs-built_in,.code-container .normal-syntax .hljs-comment{\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .code-container .normal-syntax .hljs-string{\n              color: rgb(var(--item-color-inverted)) !important;\n            }\n            \n            .normal-syntax .hljs-keyword {\n                color: rgb(var(--item-color-inverted)) !important;\n            }\n```",
+                    "question": "Co się stanie, gdy spróbujesz uruchomić następujący kod?\n\n```python\n\nprint(3 + \"5\")\n```",
                     "options": [
                         "Kod spowoduje zgłoszenie wyjątku AttributeError.",
                         "8 zostanie wyświetlone na ekranie.",
@@ -3683,7 +3683,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m1-008",
                     "type": "single",
-                    "question": "What is the expected value assigned to the result variable after the following code is executed?\n\n```python\nimport math\n \nresult = math.e != math.pow(2, 4)\nprint(int(result))\n```",
+                    "question": "What is the expected value assigned to the result variable after the following code is executed?\n\n```python\n\nimport math\n\nresult = math.e != math.pow(2, 4)\nprint(int(result))\n```",
                     "options": [
                         "0",
                         "1",
@@ -3698,7 +3698,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m1-009",
                     "type": "single",
-                    "question": "What is the expected output of the following code?\n\n```python\nfrom random import randint\n    \nfor i in range(2):\n   print(randint(1, 2), end='')\n```",
+                    "question": "What is the expected output of the following code?\n\n```python\n\nfrom random import randint\n\nfor i in range(2):\n   print(randint(1, 2), end='')\n```",
                     "options": [
                         "11 , 12 , 21 , or 22",
                         "12",
@@ -3902,7 +3902,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m2-004",
                     "type": "single",
-                    "question": "The following statement:\n\n```python\nassert var == 0\n```",
+                    "question": "The following statement:\n\n```python\n\nassert var == 0\n```",
                     "options": [
                         "will stop the program when var != 0",
                         "will stop the program when var == 0",
@@ -3917,7 +3917,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m2-005",
                     "type": "single",
-                    "question": "What is the expected output of the following code?\n\n```python\ntry:\n    print(\"5\"/0)\nexcept ArithmeticError:\n    print(\"arith\")\nexcept ZeroDivisionError:\n    print(\"zero\")\nexcept:\n    print(\"some\")\n```",
+                    "question": "What is the expected output of the following code?\n\n```python\n\ntry:\n    print(\"5\"/0)\nexcept ArithmeticError:\n    print(\"arith\")\nexcept ZeroDivisionError:\n    print(\"zero\")\nexcept:\n    print(\"some\")\n```",
                     "options": [
                         "some",
                         "arith",
@@ -3993,7 +3993,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m2-010",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nx = '\\''\nprint(len(x))\n```",
+                    "question": "The following code:\n\n```python\n\nx = '\\''\nprint(len(x))\n```",
                     "options": [
                         "1",
                         "2",
@@ -4008,7 +4008,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m2-011",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint(ord('c') - ord('a'))\n```",
+                    "question": "The following code:\n\n```python\n\nprint(ord('c') - ord('a'))\n```",
                     "options": [
                         "2",
                         "1",
@@ -4023,7 +4023,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m2-012",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint(chr(ord('z') ‑ 2))\n```",
+                    "question": "The following code:\n\n```python\n\nprint(chr(ord('z') ‑ 2))\n```",
                     "options": [
                         "x",
                         "y",
@@ -4038,7 +4038,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m2-013",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint(3 * 'abc' + 'xyz')\n```",
+                    "question": "The following code:\n\n```python\n\nprint(3 * 'abc' + 'xyz')\n```",
                     "options": [
                         "abcabcabcxyz",
                         "abcabcxyzxyz",
@@ -4053,7 +4053,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m2-014",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint('Mike' > \"Mikey\")\n```",
+                    "question": "The following code:\n\n```python\n\nprint('Mike' > \"Mikey\")\n```",
                     "options": [
                         "False",
                         "True",
@@ -4068,7 +4068,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m2-015",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint(float(\"1, 3\"))\n```",
+                    "question": "The following code:\n\n```python\n\nprint(float(\"1, 3\"))\n```",
                     "options": [
                         "raises a ValueError exception",
                         "prints 1.3",
@@ -4104,7 +4104,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-002",
                     "type": "single",
-                    "question": "If the class’s constructor is declared as below, which one of the assignments is valid?\n\n```python\nclass Class:\n    def __init__(self):\n        pass\n```",
+                    "question": "If the class’s constructor is declared as below, which one of the assignments is valid?\n\n```python\n\nclass Class:\n    def __init__(self):\n        pass\n```",
                     "options": [
                         "object = Class()",
                         "object = Class(self)",
@@ -4119,7 +4119,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-003",
                     "type": "single",
-                    "question": "If there is a superclass named A and a subclass named B , which one of the presented invocations should you put instead of the comment?\n\n```python\nclass A:\n    def __init__(self):\n        self.a = 1\n \n \nclass B(A):\n    def __init__(self):\n        # Put selected line here.\n        self.b = 2\n```",
+                    "question": "If there is a superclass named A and a subclass named B , which one of the presented invocations should you put instead of the comment?\n\n```python\n\nclass A:\n    def __init__(self):\n        self.a = 1\n\n\nclass B(A):\n    def __init__(self):\n        # Put selected line here.\n        self.b = 2\n```",
                     "options": [
                         "A.__init__(self)",
                         "A.__init__()",
@@ -4134,7 +4134,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-004",
                     "type": "single",
-                    "question": "What will be the effect of running the following code?\n\n```python\nclass A:\n    def __init__(self,v):\n        self.__a = v + 1\n \n \na = A(0)\nprint(a.__a)\n```",
+                    "question": "What will be the effect of running the following code?\n\n```python\n\nclass A:\n    def __init__(self,v):\n        self.__a = v + 1\n\n\na = A(0)\nprint(a.__a)\n```",
                     "options": [
                         "The code will raise an AttributeError exception",
                         "0",
@@ -4149,7 +4149,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-005",
                     "type": "single",
-                    "question": "What will be the output of the following code?\n\n```python\nclass A:\n    def __init__(self,v = 1):\n        self.v = v\n \n    def set(self,v):\n        self.v = v\n        return v\n \n \na = A()\nprint(a.set(a.v + 1))\n```",
+                    "question": "What will be the output of the following code?\n\n```python\n\nclass A:\n    def __init__(self,v = 1):\n        self.v = v\n\n    def set(self,v):\n        self.v = v\n        return v\n\n\na = A()\nprint(a.set(a.v + 1))\n```",
                     "options": [
                         "2",
                         "1",
@@ -4164,7 +4164,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-006",
                     "type": "single",
-                    "question": "What will be the output of the following code?\n\n```python\nclass A:\n    X = 0\n    def __init__(self,v = 0):\n        self.Y = v\n        A.X += v\n \n \na = A()\nb = A(1)\nc = A(2)\nprint(c.X)\n```",
+                    "question": "What will be the output of the following code?\n\n```python\n\nclass A:\n    X = 0\n    def __init__(self,v = 0):\n        self.Y = v\n        A.X += v\n\n\na = A()\nb = A(1)\nc = A(2)\nprint(c.X)\n```",
                     "options": [
                         "3",
                         "1",
@@ -4179,7 +4179,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-007",
                     "type": "single",
-                    "question": "What will be the output of the following code?\n\n```python\nclass A:\n    A = 1\n \n \nprint(hasattr(A,'A'))\n```",
+                    "question": "What will be the output of the following code?\n\n```python\n\nclass A:\n    A = 1\n\n\nprint(hasattr(A,'A'))\n```",
                     "options": [
                         "True",
                         "False",
@@ -4194,7 +4194,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-008",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n     def __init__(self):\n        pass\n \n \na = A(1)\nprint(hasattr(a,'A'))\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\nclass A:\n     def __init__(self):\n        pass\n\n\na = A(1)\nprint(hasattr(a,'A'))\n```",
                     "options": [
                         "it will raise an exception",
                         "1",
@@ -4209,7 +4209,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-009",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    def __str__(self):\n        return 'a'\n \n \nclass B(A):\n    def __str__(self):\n        return 'b'\n \n \nclass C(B):\n    pass\n \n \no = C()\nprint(o)\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\nclass A:\n    def __str__(self):\n        return 'a'\n\n\nclass B(A):\n    def __str__(self):\n        return 'b'\n\n\nclass C(B):\n    pass\n\n\no = C()\nprint(o)\n```",
                     "options": [
                         "it will print b",
                         "it will print a",
@@ -4224,7 +4224,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-010",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    pass\n \n \nclass B(A):\n    pass\n \n \nclass C(B):\n    pass\n \n \nprint(issubclass(C,A))\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\nclass A:\n    pass\n\n\nclass B(A):\n    pass\n\n\nclass C(B):\n    pass\n\n\nprint(issubclass(C,A))\n```",
                     "options": [
                         "it will print True",
                         "it will print False",
@@ -4239,7 +4239,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-011",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    def a(self):\n        print('a')\n \n \nclass B:\n    def a(self):\n        print('b')\n \n \nclass C(B,A):\n    def c(self):\n        self.a()\n \n \no = C()\no.c()\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\nclass A:\n    def a(self):\n        print('a')\n\n\nclass B:\n    def a(self):\n        print('b')\n\n\nclass C(B,A):\n    def c(self):\n        self.a()\n\n\no = C()\no.c()\n```",
                     "options": [
                         "it will print b",
                         "it will print a",
@@ -4254,7 +4254,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-012",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    def __str__(self):\n        return 'a'\n \n \nclass B:\n    def __str__(self):\n        return 'b'\n \n \nclass C(A, B):\n    pass\n \n \no = C()\nprint(o)\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\nclass A:\n    def __str__(self):\n        return 'a'\n\n\nclass B:\n    def __str__(self):\n        return 'b'\n\n\nclass C(A, B):\n    pass\n\n\no = C()\nprint(o)\n```",
                     "options": [
                         "it will print a",
                         "it will print b",
@@ -4269,7 +4269,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-013",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    v = 2\n \n \nclass B(A):\n    v = 1\n \n \nclass C(B):\n    pass\n \n \no = C()\nprint(o.v)\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\nclass A:\n    v = 2\n\n\nclass B(A):\n    v = 1\n\n\nclass C(B):\n    pass\n\n\no = C()\nprint(o.v)\n```",
                     "options": [
                         "it will print 1",
                         "it will print 2",
@@ -4284,7 +4284,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-014",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\ndef f(x):\n    try:\n        x = x / x\n    except:\n        print(\"a\",end='')\n    else:\n        print(\"b\",end='')\n    finally:\n        print(\"c\",end='')\n \n \nf(1)\nf(0)\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\ndef f(x):\n    try:\n        x = x / x\n    except:\n        print(\"a\",end='')\n    else:\n        print(\"b\",end='')\n    finally:\n        print(\"c\",end='')\n\n\nf(1)\nf(0)\n```",
                     "options": [
                         "it will print bcac",
                         "it will print bcbc",
@@ -4299,7 +4299,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-015",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\ntry:\n    raise Exception(1,2,3)\nexcept Exception as e:\n    print(len(e.args))\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\ntry:\n    raise Exception(1,2,3)\nexcept Exception as e:\n    print(len(e.args))\n```",
                     "options": [
                         "it will print 3",
                         "it will print 2",
@@ -4314,7 +4314,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-016",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass Ex(Exception)\n    def __init__(self, msg):\n        Exception.__init__(self, msg + msg)\n        self.args = (msg,)\n \n \ntry:\n    raise Ex('ex')\nexcept Ex as e:\n    print(e)\nexcept Exception as e:\n    print(e)\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\nclass Ex(Exception)\n    def __init__(self, msg):\n        Exception.__init__(self, msg + msg)\n        self.args = (msg,)\n\n\ntry:\n    raise Ex('ex')\nexcept Ex as e:\n    print(e)\nexcept Exception as e:\n    print(e)\n```",
                     "options": [
                         "it will print ex",
                         "it will print exex",
@@ -4329,7 +4329,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-017",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n \n    def __iter__(self):\n        return self\n \n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n \n \nfor x in I():\n    print(x,end='')\n```",
+                    "question": "What will be the result of executing the following code?\n\n```python\n\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n\n\nfor x in I():\n    print(x,end='')\n```",
                     "options": [
                         "it will print abc",
                         "it will print 0",
@@ -4381,7 +4381,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-003",
                     "type": "single",
-                    "question": "Look at the code below:\n\n```python\nmy_list = [1, 2, 3]\n# Insert line of code here.\nprint(foo)\n```",
+                    "question": "Look at the code below:\n\n```python\n\nmy_list = [1, 2, 3]\n# Insert line of code here.\nprint(foo)\n```",
                     "options": [
                         "foo = tuple(map(lambda x: x**x, my_list))",
                         "foo = list(map(lambda x: x**x, my_list))",
@@ -4396,7 +4396,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-004",
                     "type": "single",
-                    "question": "Look at the code below:\n\n```python\nmy_tuple = (0, 1, 2, 3, 4, 5, 6)\n# Insert line of code here.\nprint(foo)\n```",
+                    "question": "Look at the code below:\n\n```python\n\nmy_tuple = (0, 1, 2, 3, 4, 5, 6)\n# Insert line of code here.\nprint(foo)\n```",
                     "options": [
                         "foo = list(filter(lambda x: x-0 and x-1, my_tuple))",
                         "foo = tuple(filter(lambda x: x-0 and x-1, my_tuple))",
@@ -4411,7 +4411,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-005",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ndef I():\n    s = 'abcdef'\n    for c in s[::2]:\n        yield c\n \n \nfor x in I():\n    print(x, end='')\n```",
+                    "question": "What is the expected result of executing the following code?\n\n```python\n\ndef I():\n    s = 'abcdef'\n    for c in s[::2]:\n        yield c\n\n\nfor x in I():\n    print(x, end='')\n```",
                     "options": [
                         "It will print ace",
                         "It will print bdf",
@@ -4426,7 +4426,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-006",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ndef fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n \n \nfor x in fun(2):\n    print(x, end='');\n```",
+                    "question": "What is the expected result of executing the following code?\n\n```python\n\ndef fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n\n\nfor x in fun(2):\n    print(x, end='');\n```",
                     "options": [
                         "It will print ++++++",
                         "It will print +",
@@ -4441,7 +4441,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-007",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ndef o(p):\n    def q():\n        return '*' * p\n    return q\n \n \nr = o(1)\ns = o(2)\nprint(r() + s())\n```",
+                    "question": "What is the expected result of executing the following code?\n\n```python\n\ndef o(p):\n    def q():\n        return '*' * p\n    return q\n\n\nr = o(1)\ns = o(2)\nprint(r() + s())\n```",
                     "options": [
                         "It will print ***",
                         "It will print **",
@@ -4487,7 +4487,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-010",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nb = bytearray(3)\nprint(b)\n```",
+                    "question": "What is the expected result of the following code?\n\n```python\n\nb = bytearray(3)\nprint(b)\n```",
                     "options": [
                         "bytearray(b'\\x00\\x00\\x00')",
                         "bytearray(0, 0, 0)",
@@ -4502,7 +4502,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-011",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nimport os\n \nos.mkdir('pictures')\nos.chdir('pictures')\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\nos.mkdir('tmp')\nos.chdir('../')\n \nprint(os.getcwd())\n```",
+                    "question": "What is the expected result of the following code?\n\n```python\n\nimport os\n\nos.mkdir('pictures')\nos.chdir('pictures')\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\nos.mkdir('tmp')\nos.chdir('../')\n\nprint(os.getcwd())\n```",
                     "options": [
                         "It prints the path to the pictures directory",
                         "It prints the path to the thumbnails directory",
@@ -4517,7 +4517,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-012",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nimport os\n \nos.mkdir('thumbnails')\nos.chdir('thumbnails')\n \nsizes = ['small', 'medium', 'large']\n \nfor size in sizes:\n    os.mkdir(size)\n \nprint(os.listdir())\n```",
+                    "question": "What is the expected result of the following code?\n\n```python\n\nimport os\n\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\n\nsizes = ['small', 'medium', 'large']\n\nfor size in sizes:\n    os.mkdir(size)\n\nprint(os.listdir())\n```",
                     "options": [
                         "['large', 'small', 'medium']",
                         "['.', 'large', 'small', 'medium']",
@@ -4532,7 +4532,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-013",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import date\n \ndate_1 = date(1992, 1, 16)\ndate_2 = date(1991, 2, 5)\n \nprint(date_1 - date_2)\n```",
+                    "question": "What is the expected result of the following code?\n\n```python\n\nfrom datetime import date\n\ndate_1 = date(1992, 1, 16)\ndate_2 = date(1991, 2, 5)\n\nprint(date_1 - date_2)\n```",
                     "options": [
                         "345 days, 0:00:00",
                         "345 days",
@@ -4547,7 +4547,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-014",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import datetime\n \ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%y/%B/%d %H:%M:%S'))\n```",
+                    "question": "What is the expected result of the following code?\n\n```python\n\nfrom datetime import datetime\n\ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%y/%B/%d %H:%M:%S'))\n```",
                     "options": [
                         "19/November/27 11:27:22",
                         "2019/Nov/27 11:27:22",
@@ -4562,7 +4562,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-015",
                     "type": "single",
-                    "question": "Which program will produce the following output:\n\n```python\nMo Tu We Th Fr Sa Su\n```",
+                    "question": "Which program will produce the following output:\n\n```python\n\nMo Tu We Th Fr Sa Su\n```",
                     "options": [
                         "A",
                         "B",
@@ -4577,7 +4577,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-016",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nimport calendar\n \nc = calendar.Calendar()\n \nfor weekday in c.iterweekdays():\n    print(weekday, end=\" \")\n```",
+                    "question": "What is the expected result of the following code?\n\n```python\n\nimport calendar\n\nc = calendar.Calendar()\n\nfor weekday in c.iterweekdays():\n    print(weekday, end=\" \")\n```",
                     "options": [
                         "0 1 2 3 4 5 6",
                         "1 2 3 4 5 6 7",
@@ -4598,7 +4598,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-001",
                     "type": "single",
-                    "question": "Knowing that a function named fun() resides in a module named mod , and was imported using the following statement:\n\n```python\nfrom mod import fun\n```",
+                    "question": "Knowing that a function named fun() resides in a module named mod , and was imported using the following statement:\n\n```python\n\nfrom mod import fun\n```",
                     "options": [
                         "fun()",
                         "mod.fun()",
@@ -4611,7 +4611,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-002",
                     "type": "single",
-                    "question": "Given the Python code snippet below:\n\n```python\nimport random\nprint(len(dir(random)))\n```",
+                    "question": "Given the Python code snippet below:\n\n```python\n\nimport random\nprint(len(dir(random)))\n```",
                     "options": [
                         "A list of attributes belonging to the random module.",
                         "The number of attributes in the random module.",
@@ -4637,7 +4637,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-004",
                     "type": "single",
-                    "question": "Assuming that the following three files: a.py , b.py , and c.py reside in the same directory, what will be the output produced after running the c.py file?\n\n```python\n# file a.py\nprint(\"a\", end='')\n \n# file b.py\nimport a\nprint(\"b\", end='')\n \n# file c.py\nprint(\"c\", end='')\nimport a\nimport b\n```",
+                    "question": "Assuming that the following three files: a.py , b.py , and c.py reside in the same directory, what will be the output produced after running the c.py file?\n\n```python\n\n# file a.py\nprint(\"a\", end='')\n\n# file b.py\nimport a\nprint(\"b\", end='')\n\n# file c.py\nprint(\"c\", end='')\nimport a\nimport b\n```",
                     "options": [
                         "cab",
                         "bc",
@@ -4650,7 +4650,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-005",
                     "type": "single",
-                    "question": "If the following line of code is at the end of a Python script named calculator.py , what will be the output when this script is run directly?\n\n```python\nprint(__name__)\n```",
+                    "question": "If the following line of code is at the end of a Python script named calculator.py , what will be the output when this script is run directly?\n\n```python\n\nprint(__name__)\n```",
                     "options": [
                         "__calculator__",
                         "calculator",
@@ -4663,7 +4663,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-006",
                     "type": "single",
-                    "question": "Consider the following Python import statement in a script:\n\n```python\nfrom data.processing.analysis.v1 import compute_metrics as cm\n```",
+                    "question": "Consider the following Python import statement in a script:\n\n```python\n\nfrom data.processing.analysis.v1 import compute_metrics as cm\n```",
                     "options": [
                         "Imports the compute_metrics function from the v1.py script, which is part of the analysis subpackage in the processing package inside the data package, and renames it to cm .",
                         "Imports the v1 package from the analysis submodule, which is part of the processing function inside the data module, and renames it to compute_metrics .",
@@ -4676,7 +4676,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-007",
                     "type": "single",
-                    "question": "Given the following Python code segment:\n\n```python\ntry:\n   # Code that may raise an exception\n   risky_call()\nexcept ValueError:\n   print(\"Caught ValueError\")\nexcept TypeError:\n   print(\"Caught TypeError\")\nexcept Exception:\n   print(\"Caught a different exception\")\n```",
+                    "question": "Given the following Python code segment:\n\n```python\n\ntry:\n   # Code that may raise an exception\n   risky_call()\nexcept ValueError:\n   print(\"Caught ValueError\")\nexcept TypeError:\n   print(\"Caught TypeError\")\nexcept Exception:\n   print(\"Caught a different exception\")\n```",
                     "options": [
                         "One or more except: blocks will be executed.",
                         "Not more than one except: block will be executed.",
@@ -4689,7 +4689,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-008",
                     "type": "single",
-                    "question": "Consider the following Python code:\n\n```python\ntry:\n    raise Exception(\"An error occurred\")\nexcept ValueError as ve:\n    print(\"ValueError:\", str(ve))\nexcept BaseException as be:\n    print(\"BaseException:\", str(be))\nexcept:\n    print(\"Caught some other exception\")\n```",
+                    "question": "Consider the following Python code:\n\n```python\n\ntry:\n    raise Exception(\"An error occurred\")\nexcept ValueError as ve:\n    print(\"ValueError:\", str(ve))\nexcept BaseException as be:\n    print(\"BaseException:\", str(be))\nexcept:\n    print(\"Caught some other exception\")\n```",
                     "options": [
                         "ValueError: An error occurred",
                         "BaseException: An error occurred",
@@ -4702,7 +4702,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-009",
                     "type": "single",
-                    "question": "Review the Python code below:\n\n```python\ntry:\n    raise Exception(\"An error has occurred\")\nexcept Exception:\n    print(\"a\")\nexcept:\n    print(\"b\")\nexcept BaseException:\n    print(\"c\")\n```",
+                    "question": "Review the Python code below:\n\n```python\n\ntry:\n    raise Exception(\"An error has occurred\")\nexcept Exception:\n    print(\"a\")\nexcept:\n    print(\"b\")\nexcept BaseException:\n    print(\"c\")\n```",
                     "options": [
                         "The code will print \"c\"",
                         "The code will print \"a\"",
@@ -4715,7 +4715,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-010",
                     "type": "single",
-                    "question": "Analyze the Python statement below:\n\n```python\nwith open('data.csv', 'r') as file:\n    for record in file:\n```",
+                    "question": "Analyze the Python statement below:\n\n```python\n\nwith open('data.csv', 'r') as file:\n    for record in file:\n```",
                     "options": [
                         "The code is valid because the open function with 'r' mode returns an iterable file object.",
                         "The code may be valid if record is predefined as a list before the loop.",
@@ -4728,7 +4728,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-011",
                     "type": "single",
-                    "question": "Examine the Python assertion statement provided:\n\n```python\nassert var > 0\n```",
+                    "question": "Examine the Python assertion statement provided:\n\n```python\n\nassert var > 0\n```",
                     "options": [
                         "It will raise an AssertionError if var is less than or equal to 0.",
                         "It will raise an AssertionError if var is greater than 0.",
@@ -4741,7 +4741,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-012",
                     "type": "single",
-                    "question": "Given the Python code segment below:\n\n```python\nx = r\"\\\"\nprint(len(x))\n```",
+                    "question": "Given the Python code segment below:\n\n```python\n\nx = r\"\\\"\nprint(len(x))\n```",
                     "options": [
                         "The code will print 3, as the raw string treats backslashes as literal characters.",
                         "The code will print 1, as the triple backslash in a raw string represents a single backslash.",
@@ -4754,7 +4754,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-013",
                     "type": "single",
-                    "question": "Given the Python code segment below:\n\n```python\nx = \"\\//\nprint(len(x))\n```",
+                    "question": "Given the Python code segment below:\n\n```python\n\nx = \"\\//\nprint(len(x))\n```",
                     "options": [
                         "The code will output 4, as there are four characters in the string, with the backslash escaping the following forward slash.",
                         "The code will output 3, recognizing the sequence of two backslashes as a single escaped backslash and two forward slashes.",
@@ -4767,7 +4767,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-014",
                     "type": "single",
-                    "question": "Consider the Python code provided below:\n\n```python\nprint(chr(ord('a') + 1))\n```",
+                    "question": "Consider the Python code provided below:\n\n```python\n\nprint(chr(ord('a') + 1))\n```",
                     "options": [
                         "The code will print \"b\" as it takes the Unicode code point of 'a', adds 1, and converts it back to a character.",
                         "The code will print \"A\" because the addition operation converts the lowercase 'a' to an uppercase 'A' without changing its position in the alphabet.",
@@ -4780,7 +4780,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-015",
                     "type": "single",
-                    "question": "Consider the following Python code snippet:\n\n```python\nprint(int(\"1.0\"))\n```",
+                    "question": "Consider the following Python code snippet:\n\n```python\n\nprint(int(\"1.0\"))\n```",
                     "options": [
                         "The code will print 1 because it converts the string \"1.0\" to an integer.",
                         "The code will print 1.0 as it maintains the floating-point format.",
@@ -4793,7 +4793,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-016",
                     "type": "single",
-                    "question": "If the class constructor is declared in the following way:\n\n```python\nclass Class:\n    def __init__(self, val=0):\n        pass\n```",
+                    "question": "If the class constructor is declared in the following way:\n\n```python\n\nclass Class:\n    def __init__(self, val=0):\n        pass\n```",
                     "options": [
                         "object = Class(1, 2)",
                         "object = Class(None)",
@@ -4806,7 +4806,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-017",
                     "type": "single",
-                    "question": "Consider the Python class CustomNumber and the subsequent operations performed on its instance:\n\n```python\nclass CustomNumber:\n    def __init__(self, value=1.5):\n        self.value = value\n \n    def increment(self, increase=2):\n        self.value -= increase\n        return self.value\n \n \nnum_instance = CustomNumber()\nnum_alias = num_instance\nnum_alias.increment()\n \nprint(num_instance.value)\n```",
+                    "question": "Consider the Python class CustomNumber and the subsequent operations performed on its instance:\n\n```python\n\nclass CustomNumber:\n    def __init__(self, value=1.5):\n        self.value = value\n\n    def increment(self, increase=2):\n        self.value -= increase\n        return self.value\n\n\nnum_instance = CustomNumber()\nnum_alias = num_instance\nnum_alias.increment()\n\nprint(num_instance.value)\n```",
                     "options": [
                         "0.5",
                         "-0.5",
@@ -4819,7 +4819,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-018",
                     "type": "single",
-                    "question": "What is the expected output of the following code?\n\n```python\nclass A:\n    A = 1\n    def __init__(self):\n        self.a = 0\n \n \nprint(hasattr(A, 'a'))\n```",
+                    "question": "What is the expected output of the following code?\n\n```python\n\nclass A:\n    A = 1\n    def __init__(self):\n        self.a = 0\n\n\nprint(hasattr(A, 'a'))\n```",
                     "options": [
                         "False",
                         "True",
@@ -4832,7 +4832,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-019",
                     "type": "single",
-                    "question": "What will the following Python code output?\n\n```python\nclass Parent:\n    pass\n \nclass Uncle(Parent):\n    pass\n \nclass Child(Uncle):\n    pass\n \nclass Cousin(Parent):\n    pass\n \n \nprint(issubclass(Child, Cousin), issubclass(Cousin, Uncle))\n```",
+                    "question": "What will the following Python code output?\n\n```python\n\nclass Parent:\n    pass\n\nclass Uncle(Parent):\n    pass\n\nclass Child(Uncle):\n    pass\n\nclass Cousin(Parent):\n    pass\n\n\nprint(issubclass(Child, Cousin), issubclass(Cousin, Uncle))\n```",
                     "options": [
                         "True, True",
                         "True, False",
@@ -4858,7 +4858,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-021",
                     "type": "single",
-                    "question": "What will be the result of running the following code?\n\n```python\nclass A:\n    def __init__(self, v):\n        self.__a = v + 1\n \nclass B(A):\n    def __init__(self, v):\n        super().__init__(v)\n        self.__a += 1\n \nb = B(0)\nprint(b._A__a)\n```",
+                    "question": "What will be the result of running the following code?\n\n```python\n\nclass A:\n    def __init__(self, v):\n        self.__a = v + 1\n\nclass B(A):\n    def __init__(self, v):\n        super().__init__(v)\n        self.__a += 1\n\nb = B(0)\nprint(b._A__a)\n```",
                     "options": [
                         "1",
                         "2",
@@ -4871,7 +4871,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-022",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\nclass A:\n    def __init__(self):\n        pass\n \n \na = A(1)\nprint(hasattr(a, 'A'))\n```",
+                    "question": "What is the expected result of executing the following code?\n\n```python\n\nclass A:\n    def __init__(self):\n        pass\n\n\na = A(1)\nprint(hasattr(a, 'A'))\n```",
                     "options": [
                         "The code will raise an exception",
                         "The code will print True",
@@ -4884,7 +4884,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-023",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\nclass A:\n    def a(self):\n        print('a')\n \n \nclass B:\n    def a(self):\n        print('b')\n \n \nclass C(B, A):\n    def c(self):\n        self.a()\n \n \no = C()\no.c()\n```",
+                    "question": "What is the expected result of executing the following code?\n\n```python\n\nclass A:\n    def a(self):\n        print('a')\n\n\nclass B:\n    def a(self):\n        print('b')\n\n\nclass C(B, A):\n    def c(self):\n        self.a()\n\n\no = C()\no.c()\n```",
                     "options": [
                         "The code will print b",
                         "The code will print c",
@@ -4897,7 +4897,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-024",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ntry:\n    raise Exception(1, 2, 3, (4), \"A\",)\nexcept Exception as e:\n     print(len(e.args))\n```",
+                    "question": "What is the expected result of executing the following code?\n\n```python\n\ntry:\n    raise Exception(1, 2, 3, (4), \"A\",)\nexcept Exception as e:\n     print(len(e.args))\n```",
                     "options": [
                         "5",
                         "4",
@@ -4910,7 +4910,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-025",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ndef my_fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n \n \nfor x in my_fun(2):\n    print(x, end='')\n```",
+                    "question": "What is the expected result of executing the following code?\n\n```python\n\ndef my_fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n\n\nfor x in my_fun(2):\n    print(x, end='')\n```",
                     "options": [
                         "The code will print ++++++",
                         "The code will print +++",
@@ -4923,7 +4923,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-026",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n \n    def __iter__(self):\n        return self\n \n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n \n \nfor x in I():\n    print(x, end='')\n```",
+                    "question": "What is the expected result of executing the following code?\n\n```python\n\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n\n\nfor x in I():\n    print(x, end='')\n```",
                     "options": [
                         "The code will print abc",
                         "The code will print 012",
@@ -4936,7 +4936,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-027",
                     "type": "single",
-                    "question": "What will be the output of the following code?\n\n```python\ndef generate_pattern(n):\n    def create_pattern():\n        return '**' * n\n \n    return create_pattern\n \npattern1 = generate_pattern(1)\npattern2 = generate_pattern(2)\nprint(pattern1() + pattern2())\n```",
+                    "question": "What will be the output of the following code?\n\n```python\n\ndef generate_pattern(n):\n    def create_pattern():\n        return '**' * n\n\n    return create_pattern\n\npattern1 = generate_pattern(1)\npattern2 = generate_pattern(2)\nprint(pattern1() + pattern2())\n```",
                     "options": [
                         "**",
                         "***",
@@ -4949,7 +4949,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-028",
                     "type": "single",
-                    "question": "If s is a stream opened in read mode, the following line of code do?\n\n```python\nq = s.read(-1)\n```",
+                    "question": "If s is a stream opened in read mode, the following line of code do?\n\n```python\n\nq = s.read(-1)\n```",
                     "options": [
                         "It reads the entire contents of the stream s .",
                         "It reads nothing from the stream s .",
@@ -4962,7 +4962,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-029",
                     "type": "single",
-                    "question": "Assuming that the open() invocation has gone successfully, the following snippet:\n\n```python\nfor x in open('file', 'rt'):\n    print(x)\n```",
+                    "question": "Assuming that the open() invocation has gone successfully, the following snippet:\n\n```python\n\nfor x in open('file', 'rt'):\n    print(x)\n```",
                     "options": [
                         "read the file line by line",
                         "read the file character by character",
@@ -5014,7 +5014,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-033",
                     "type": "single",
-                    "question": "Look at the following code:\n\n```python\nnumbers = [0, 2, 7, 9, 10]\n# Insert line of code here.\nprint(list(foo))\n```",
+                    "question": "Look at the following code:\n\n```python\n\nnumbers = [0, 2, 7, 9, 10]\n# Insert line of code here.\nprint(list(foo))\n```",
                     "options": [
                         "foo = map(lambda num: num ** 2, numbers)",
                         "foo = filter(lambda num: num ** 2, numbers)",
@@ -5027,7 +5027,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-034",
                     "type": "single",
-                    "question": "Look at the following code:\n\n```python\nnumbers = [i*i for i in range(5)]\n# Insert line of code here.\nprint(foo)\n```",
+                    "question": "Look at the following code:\n\n```python\n\nnumbers = [i*i for i in range(5)]\n# Insert line of code here.\nprint(foo)\n```",
                     "options": [
                         "foo = list(filter(lambda x: x % 2, numbers))",
                         "foo = list(map(lambda x: x % 2, numbers))",
@@ -5040,7 +5040,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-035",
                     "type": "single",
-                    "question": "Look at the code below:\n\n```python\nimport random\n \n#\n# Insert lines of code here.\n#\n \nprint(a, b, c)\n```",
+                    "question": "Look at the code below:\n\n```python\n\nimport random\n\n#\n# Insert lines of code here.\n#\n\nprint(a, b, c)\n```",
                     "options": [
                         "A",
                         "B",
@@ -5053,7 +5053,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-036",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nimport os\n \nos.mkdir('pictures')\nos.chdir('pictures')\n \nprint(os.getcwd())\n```",
+                    "question": "What is the expected result of the following code?\n\n```python\n\nimport os\n\nos.mkdir('pictures')\nos.chdir('pictures')\n\nprint(os.getcwd())\n```",
                     "options": [
                         "The code will print the path to the created directory",
                         "The code will print the name of the created directory",
@@ -5079,7 +5079,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-038",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import datetime\n \ndatetime_1 = datetime(2019, 11, 27, 11, 27, 22)\ndatetime_2 = datetime(2019, 11, 27, 0, 0, 0)\n \nprint(datetime_1 - datetime_2)\n```",
+                    "question": "What is the expected result of the following code?\n\n```python\n\nfrom datetime import datetime\n\ndatetime_1 = datetime(2019, 11, 27, 11, 27, 22)\ndatetime_2 = datetime(2019, 11, 27, 0, 0, 0)\n\nprint(datetime_1 - datetime_2)\n```",
                     "options": [
                         "11:27:22",
                         "0 days, 11:27:22",
@@ -5105,7 +5105,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-040",
                     "type": "single",
-                    "question": "What is the expected result of executing the following Python code?\n\n```python\nimport calendar\n \ncalendar.setfirstweekday(calendar.FRIDAY)\nprint(calendar.weekheader(2))\n```",
+                    "question": "What is the expected result of executing the following Python code?\n\n```python\n\nimport calendar\n\ncalendar.setfirstweekday(calendar.FRIDAY)\nprint(calendar.weekheader(2))\n```",
                     "options": [
                         "It will only print the names of the first two days of the week starting with Friday.",
                         "It will only print the names of the days of the week from Friday to Sunday.",
