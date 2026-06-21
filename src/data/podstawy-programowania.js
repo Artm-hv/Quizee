@@ -62,5 +62,6 @@ const podstawyProgramowaniaData = {
                 }
             ]
         }
-    ]
+    ],
+    "dbVersion": 3
 };

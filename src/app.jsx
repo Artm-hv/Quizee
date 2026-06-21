@@ -14,6 +14,11 @@ function App() {
     // Auto-migration: update 'jezyki-skryptowe', 'sieci-komputerowe' and 'systemy-dynamiczne' if they have been updated in DEFAULT_SUBJECTS
     if (saved) {
       data = data.map(s => {
+        const defaultSubject = DEFAULT_SUBJECTS.find(ds => ds.id === s.id);
+        const currentVer = s.dbVersion || 0;
+        const defaultVer = defaultSubject ? (defaultSubject.dbVersion || 0) : 0;
+        const versionOutdated = defaultVer > currentVer;
+
         if (s.id === "jezyki-skryptowe") {
           const defaultJs = DEFAULT_SUBJECTS.find(ds => ds.id === "jezyki-skryptowe");
           const m1 = s.modules ? s.modules.find(m => m.id === "js-pe2-m1") : null;
@@ -22,7 +27,7 @@ function App() {
           const pe1m2 = s.modules ? s.modules.find(m => m.id === "js-pe1-m2") : null;
           const hasExplanations = pe1m1 && pe1m1.questions.some(q => q.explanation && q.explanation.trim());
           const hasScreenReaders = pe1m2 && pe1m2.questions.some(q => q.options.some(opt => opt.includes("1 of 4")));
-          if (defaultJs && (!s.modules || s.modules.length < 12 || !s.modules.some(m => m.id === "js-pe2-final") || !m1 || m1.questions.length !== 18 || !m3 || m3.questions.length !== 17 || !hasExplanations || hasScreenReaders)) {
+          if (defaultJs && (!s.modules || s.modules.length < 12 || !s.modules.some(m => m.id === "js-pe2-final") || !m1 || m1.questions.length !== 18 || !m3 || m3.questions.length !== 17 || !hasExplanations || hasScreenReaders || versionOutdated)) {
             console.log("Migrated 'jezyki-skryptowe' module database to include PE1 and PE2 modules with explanations, clean formatting and correct question counts.");
             return defaultJs;
           }
@@ -30,17 +35,21 @@ function App() {
         if (s.id === "sieci-komputerowe") {
           const defaultSk = DEFAULT_SUBJECTS.find(ds => ds.id === "sieci-komputerowe");
           const hasSkScreenReaders = s.modules && s.modules.some(m => m.questions.some(q => q.options.some(opt => opt.includes("1 of 4"))));
-          if (defaultSk && (!s.modules || s.modules.length < 5 || hasSkScreenReaders)) {
+          if (defaultSk && (!s.modules || s.modules.length < 5 || hasSkScreenReaders || versionOutdated)) {
             console.log("Migrated 'sieci-komputerowe' module database with clean formatting.");
             return defaultSk;
           }
         }
         if (s.id === "systemy-dynamiczne") {
           const defaultSd = DEFAULT_SUBJECTS.find(ds => ds.id === "systemy-dynamiczne");
-          if (defaultSd && (!s.modules || s.modules.length < 7 || !s.modules.some(m => m.id === "sd-mod-w1"))) {
+          if (defaultSd && (!s.modules || s.modules.length < 7 || !s.modules.some(m => m.id === "sd-mod-w1") || versionOutdated)) {
             console.log("Migrated 'systemy-dynamiczne' module database to include Wykład 1 and 2.");
             return defaultSd;
           }
+        }
+        if (versionOutdated && defaultSubject) {
+          console.log(`Migrated '${s.id}' module database due to version bump.`);
+          return defaultSubject;
         }
         return s;
       });
