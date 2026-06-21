@@ -19,16 +19,19 @@ function App() {
           const m1 = s.modules ? s.modules.find(m => m.id === "js-pe2-m1") : null;
           const m3 = s.modules ? s.modules.find(m => m.id === "js-pe2-m3") : null;
           const pe1m1 = s.modules ? s.modules.find(m => m.id === "js-pe1-m1") : null;
+          const pe1m2 = s.modules ? s.modules.find(m => m.id === "js-pe1-m2") : null;
           const hasExplanations = pe1m1 && pe1m1.questions.some(q => q.explanation && q.explanation.trim());
-          if (defaultJs && (!s.modules || s.modules.length < 12 || !s.modules.some(m => m.id === "js-pe2-final") || !m1 || m1.questions.length !== 18 || !m3 || m3.questions.length !== 17 || !hasExplanations)) {
-            console.log("Migrated 'jezyki-skryptowe' module database to include PE1 and PE2 modules with explanations and correct question counts.");
+          const hasScreenReaders = pe1m2 && pe1m2.questions.some(q => q.options.some(opt => opt.includes("1 of 4")));
+          if (defaultJs && (!s.modules || s.modules.length < 12 || !s.modules.some(m => m.id === "js-pe2-final") || !m1 || m1.questions.length !== 18 || !m3 || m3.questions.length !== 17 || !hasExplanations || hasScreenReaders)) {
+            console.log("Migrated 'jezyki-skryptowe' module database to include PE1 and PE2 modules with explanations, clean formatting and correct question counts.");
             return defaultJs;
           }
         }
         if (s.id === "sieci-komputerowe") {
           const defaultSk = DEFAULT_SUBJECTS.find(ds => ds.id === "sieci-komputerowe");
-          if (defaultSk && (!s.modules || s.modules.length < 5)) {
-            console.log("Migrated 'sieci-komputerowe' module database to 16 modules.");
+          const hasSkScreenReaders = s.modules && s.modules.some(m => m.questions.some(q => q.options.some(opt => opt.includes("1 of 4"))));
+          if (defaultSk && (!s.modules || s.modules.length < 5 || hasSkScreenReaders)) {
+            console.log("Migrated 'sieci-komputerowe' module database with clean formatting.");
             return defaultSk;
           }
         }

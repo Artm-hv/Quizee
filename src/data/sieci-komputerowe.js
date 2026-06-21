@@ -7733,7 +7733,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz4-006",
                     "type": "single",
-                    "question": "6. Technik używa polecenia ping 127.0.0.1. Co technik sprawdza? ",
+                    "question": "6. Technik używa polecenia ping 127.0.0.1. Co technik sprawdza?",
                     "options": [
                         "łączność między komputerem PC a bramą domyślną",
                         "łączność między dwoma sąsiednimi urządzeniami Cisco",
@@ -7811,7 +7811,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz4-011",
                     "type": "single",
-                    "question": "11. Przyjżyj się ilustracji. Firma wdraża w swojej sieci schemat adresowania IPv6. W przedstawionym projekcie widać, że podsieć część określającą podsieci w adresach IPv6 jest wykorzystana do utworzenia nowego projektu sieci hierarchicznej, w której lte - podsekcja identyfikuje geograficznie rozmieszczone lokalizacje firmy, ub-site - sekcja do reprezentowania wielu kampusów w każdym miejscu i ubnet - sekcja wskazująca każdy segment sieci oddzielony routerami. Przy takim schemacie, jaka jest maksymalna możliwa liczba podsieci dostępnych w poszczególnych miejscach ? ",
+                    "question": "11. Przyjżyj się ilustracji. Firma wdraża w swojej sieci schemat adresowania IPv6. W przedstawionym projekcie widać, że podsieć część określającą podsieci w adresach IPv6 jest wykorzystana do utworzenia nowego projektu sieci hierarchicznej, w której lte - podsekcja identyfikuje geograficznie rozmieszczone lokalizacje firmy, ub-site - sekcja do reprezentowania wielu kampusów w każdym miejscu i ubnet - sekcja wskazująca każdy segment sieci oddzielony routerami. Przy takim schemacie, jaka jest maksymalna możliwa liczba podsieci dostępnych w poszczególnych miejscach ?",
                     "options": [
                         "256",
                         "4",
@@ -7930,7 +7930,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz4-019",
                     "type": "single",
-                    "question": "19. Jaka jest długość prefiksu dla maski podsieci 255.255.255.224 ? ",
+                    "question": "19. Jaka jest długość prefiksu dla maski podsieci 255.255.255.224 ?",
                     "options": [
                         "/27",
                         "/26",
@@ -8274,7 +8274,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz5-008",
                     "type": "multiple",
-                    "question": "8. Firma produkcyjna subskrybuje niektóre usługi hostowane do dostawcy usług internetowych. Wymagane usługi obejmują WWW, przesyłanie plików oraz pocztę elektroniczną. Które protokoły reprezentują te trzy główne aplikacje? (Wybierz trzy odpowiedzi) ",
+                    "question": "8. Firma produkcyjna subskrybuje niektóre usługi hostowane do dostawcy usług internetowych. Wymagane usługi obejmują WWW, przesyłanie plików oraz pocztę elektroniczną. Które protokoły reprezentują te trzy główne aplikacje? (Wybierz trzy odpowiedzi)",
                     "options": [
                         "DHCP",
                         "FTP",
@@ -8450,7 +8450,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz5-019",
                     "type": "single",
-                    "question": "20. Która flaga w nagłówku TCP jest używana w odpowiedzi na odebraną flagę FIN w celu zakończenia łączności między dwoma urządzeniami sieciowymi? ",
+                    "question": "20. Która flaga w nagłówku TCP jest używana w odpowiedzi na odebraną flagę FIN w celu zakończenia łączności między dwoma urządzeniami sieciowymi?",
                     "options": [
                         "RST",
                         "SYN",
@@ -8844,7 +8844,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz6-012",
                     "type": "single",
-                    "question": "12. Przyjrzyj się ilustracji. Host H3 ma problemy z komunikowaniem się z hostem H1. Administrator sieci podejrzewa, że istnieje problem ze stacją roboczą H3 i chce udowodnić, że nie ma problemu z konfiguracją R2. Jakie narzędzie może wykorzystać administrator się na routerze R2, aby udowodnić, że istnieje komunikacja do hosta H1 z interfejsu R2, który jest interfejsem używanym przez H3 podczas komunikacji ze zdalnymi sieciami?\n",
+                    "question": "12. Przyjrzyj się ilustracji. Host H3 ma problemy z komunikowaniem się z hostem H1. Administrator sieci podejrzewa, że istnieje problem ze stacją roboczą H3 i chce udowodnić, że nie ma problemu z konfiguracją R2. Jakie narzędzie może wykorzystać administrator się na routerze R2, aby udowodnić, że istnieje komunikacja do hosta H1 z interfejsu R2, który jest interfejsem używanym przez H3 podczas komunikacji ze zdalnymi sieciami?",
                     "options": [
                         "rozszerzony Ping",
                         "show cdp neighbors",
@@ -8859,7 +8859,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz6-013",
                     "type": "single",
-                    "question": "13. Przyjrzyj się zamieszczonemu powyżej schematowi. Administrator sprawdza połączenie ze zdalnym urządzeniem o adresie IP 101.11 oznacza wynik działania tego polecenia? ",
+                    "question": "13. Przyjrzyj się zamieszczonemu powyżej schematowi. Administrator sprawdza połączenie ze zdalnym urządzeniem o adresie IP 101.11 oznacza wynik działania tego polecenia?",
                     "options": [
                         "Router umieszczony na ścieżce nie posiadał trasy do celu.",
                         "Pakiet ping jest blokowany przez urządzenie bezpieczeństwa umieszczone na ścieżce.",
@@ -8889,7 +8889,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz6-015",
                     "type": "single",
-                    "question": "15. Które stwierdzenie jest prawdziwe o wskaźnikach polecenia ping w Cisco IOS? ",
+                    "question": "15. Które stwierdzenie jest prawdziwe o wskaźnikach polecenia ping w Cisco IOS?",
                     "options": [
                         "Kombinacja '.' i '!' wskazuje, że jakiś router wzdłuż ścieżki nie miał trasy do adresu docelowego i odpowiedział komunikatem ICMP nieosiągalności.",
                         "\"!\" wskazuje, że polecenie ping nie powiodło się, a użądzenie może mieć problemy ze znalezieniem serwera DNS.",
@@ -9106,7 +9106,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz6-030",
                     "type": "multiple",
-                    "question": "30.  Podczas konfigurowania SSH na routerze w celu wdrożenia bezpiecznego zarządzania siecią, inżynier sieci wydał polecenia login local i transport input ssh na linii vty. Jakie trzy dodatkowe czynności konfiguracyjne muszą być wykonane, aby zakończyć konfigurację SSH? (Wybierz trzy odpowiedzi) ",
+                    "question": "30.  Podczas konfigurowania SSH na routerze w celu wdrożenia bezpiecznego zarządzania siecią, inżynier sieci wydał polecenia login local i transport input ssh na linii vty. Jakie trzy dodatkowe czynności konfiguracyjne muszą być wykonane, aby zakończyć konfigurację SSH? (Wybierz trzy odpowiedzi)",
                     "options": [
                         "Skonfiguruj poprawną nazwę domeny IP.",
                         "Utwórz lokalną bazę prawidłowych nazw użytkowników i haseł.",
@@ -9168,7 +9168,7 @@ const sieciKomputeroweData = {
                 {
                     "id": "sk-egz6-034",
                     "type": "single",
-                    "question": "34. Otwórz zadanie PKA za pomocą programu Packet Tracer. Wykonaj czynności zawarte w instrukcji do zadania, a następnie odpowiedz na pytanie.\n\nKtóre polecenie musi być skonfigurowane na routerze, aby zakończyć konfigurację SSH?  ",
+                    "question": "34. Otwórz zadanie PKA za pomocą programu Packet Tracer. Wykonaj czynności zawarte w instrukcji do zadania, a następnie odpowiedz na pytanie.\n\nKtóre polecenie musi być skonfigurowane na routerze, aby zakończyć konfigurację SSH?",
                     "options": [
                         "transport input ssh",
                         "service pasword-encryption",

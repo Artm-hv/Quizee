@@ -2134,10 +2134,10 @@ const jezykiSkryptoweData = {
                     "type": "multiple",
                     "question": "Które stwierdzenia na temat kompilacji są prawdziwe ? (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "Kod jest konwertowany bezpośrednio na kod maszynowy wykonywalny przez procesor  \n 1 of 4",
-                        "Zwykle jest szybsza niż interpretacja  \n 2 of 4",
-                        "Zwykle jest wolniejsza niż interpretacja  \n 3 of 4",
-                        "Zarówno Ty, jak i użytkownik końcowy musicie posiadać kompilator, aby uruchomić kod  \n 4 of 4"
+                        "Kod jest konwertowany bezpośrednio na kod maszynowy wykonywalny przez procesor",
+                        "Zwykle jest szybsza niż interpretacja",
+                        "Zwykle jest wolniejsza niż interpretacja",
+                        "Zarówno Ty, jak i użytkownik końcowy musicie posiadać kompilator, aby uruchomić kod"
                     ],
                     "correctAnswers": [
                         0,
@@ -2165,10 +2165,10 @@ const jezykiSkryptoweData = {
                     "type": "multiple",
                     "question": "Które stwierdzenia są prawdziwe ? (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "Python 3 jest wstecznie kompatybilny z Pythonem 2  \n 1 of 4",
-                        "Python to dobry wybór do tworzenia i wykonywania testów dla aplikacji  \n 2 of 4",
-                        "Python jest dobrym wyborem do programowania niskopoziomowego, na przykład gdy chcesz zaimplementować wydajny sterownik  \n 3 of 4",
-                        "Python jest darmowy, jest programem typu open source i jest wieloplatformowy  \n 4 of 4"
+                        "Python 3 jest wstecznie kompatybilny z Pythonem 2",
+                        "Python to dobry wybór do tworzenia i wykonywania testów dla aplikacji",
+                        "Python jest dobrym wyborem do programowania niskopoziomowego, na przykład gdy chcesz zaimplementować wydajny sterownik",
+                        "Python jest darmowy, jest programem typu open source i jest wieloplatformowy"
                     ],
                     "correctAnswers": [
                         1,
@@ -2337,10 +2337,10 @@ const jezykiSkryptoweData = {
                     "type": "multiple",
                     "question": "Które z następujących stwierdzeń są prawdziwe ? (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "Prawym argumentem operatora % nie może być zero.  \n 1 of 4",
-                        "Operator ** używa prawostronnego łączenia.  \n 2 of 4",
-                        "Wynikiem działania operatora / jest zawsze wartość całkowita.  \n 3 of 4",
-                        "Dodanie poprzedza mnożenie.  \n 4 of 4"
+                        "Prawym argumentem operatora % nie może być zero.",
+                        "Operator ** używa prawostronnego łączenia.",
+                        "Wynikiem działania operatora / jest zawsze wartość całkowita.",
+                        "Dodanie poprzedza mnożenie."
                     ],
                     "correctAnswers": [
                         0,
@@ -2368,10 +2368,10 @@ const jezykiSkryptoweData = {
                     "type": "multiple",
                     "question": "Które z poniższych nazw zmiennych są niedozwolone ? (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "True  \n 1 of 4",
-                        "oraz  \n 2 of 4",
-                        "true  \n 3 of 4",
-                        "PRAWDA  \n 4 of 4"
+                        "True",
+                        "oraz",
+                        "true",
+                        "PRAWDA"
                     ],
                     "correctAnswers": [
                         0,
@@ -2788,10 +2788,10 @@ const jezykiSkryptoweData = {
                     "type": "multiple",
                     "question": "Funkcja zdefiniowana w następujący sposób: (Wybierz dwie odpowiedzi)\n\n```python\n\ndef function(x=0):\n\n\n\n                            return x\n```",
                     "options": [
-                        "może zostać wywołana bez żadnych argumentów  \n 1 of 4",
-                        "może zostać wywołana z dokładnie jednym argumentem  \n 2 of 4",
-                        "musi zostać wywołana z dokładnie jednym argumentem  \n 3 of 4",
-                        "musi zostać wywołana bez żadnych argumentów  \n 4 of 4"
+                        "może zostać wywołana bez żadnych argumentów",
+                        "może zostać wywołana z dokładnie jednym argumentem",
+                        "musi zostać wywołana z dokładnie jednym argumentem",
+                        "musi zostać wywołana bez żadnych argumentów"
                     ],
                     "correctAnswers": [
                         0,
@@ -2924,10 +2924,10 @@ const jezykiSkryptoweData = {
                     "type": "multiple",
                     "question": "Które z poniższych stwierdzeń jest prawdziwe? (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "Wartość None może być przypisywana do zmiennych.  \n 1 of 4",
-                        "Wartość None może być porównywana ze zmiennymi.  \n 2 of 4",
-                        "Wartość None nie może być używana poza funkcjami.  \n 3 of 4",
-                        "Wartość None może być używana jako argument operatorów arytmetycznych.  \n 4 of 4"
+                        "Wartość None może być przypisywana do zmiennych.",
+                        "Wartość None może być porównywana ze zmiennymi.",
+                        "Wartość None nie może być używana poza funkcjami.",
+                        "Wartość None może być używana jako argument operatorów arytmetycznych."
                     ],
                     "correctAnswers": [
                         0,
@@ -3075,10 +3075,10 @@ const jezykiSkryptoweData = {
                     "type": "multiple",
                     "question": "Wybierz prawdziwe stwierdzenia dotyczące bloku try-except w odniesieniu do poniższego przykładu (Zaznacz dwie odpowiedzi).\n\n```python\n\ntry:\n\n\n\n                            # Some code is here...\n\n\n\n                        except:\n\n\n\n                            # Some code is here...\n```",
                     "options": [
-                        "Jeśli podejrzewasz, że fragment kodu może spowodować wystąpienie wyjątku, powinieneś umieścić go w bloku try .  \n 1 of 4",
-                        "Kod, który znajduje się po instrukcji except , zostanie wykonany, jeśli kod w bloku try napotka błąd.  \n 2 of 4",
-                        "Jeśli w kodzie znajdującym się w bloku try wystąpi błąd składniowy, gałąź except nie będzie w stanie go obsłużyć, a zamiast tego zostanie zgłoszony wyjątek SyntaxError.  \n 3 of 4",
-                        "Kod który następuje po instrukcji try zostanie wykonany, jeśli kod w bloku except napotka błąd.  \n 4 of 4"
+                        "Jeśli podejrzewasz, że fragment kodu może spowodować wystąpienie wyjątku, powinieneś umieścić go w bloku try .",
+                        "Kod, który znajduje się po instrukcji except , zostanie wykonany, jeśli kod w bloku try napotka błąd.",
+                        "Jeśli w kodzie znajdującym się w bloku try wystąpi błąd składniowy, gałąź except nie będzie w stanie go obsłużyć, a zamiast tego zostanie zgłoszony wyjątek SyntaxError.",
+                        "Kod który następuje po instrukcji try zostanie wykonany, jeśli kod w bloku except napotka błąd."
                     ],
                     "correctAnswers": [
                         0,
@@ -3138,10 +3138,10 @@ const jezykiSkryptoweData = {
                     "type": "single",
                     "question": "Przeanalizuj następujący fragment kodu:\n\n```python\n\nalpha = [4, 8, 15, 16, 23, 42]\n\n\n\n                        beta = alpha[:]\n\n\n\n                        beta[2] = 99\n```",
                     "options": [
-                        "alfa i beta to dwie nazwy tej samej listy; w związku z tym w obu listach liczba 99 znajduje się na trzecim miejscu.  \n 1 of 4",
-                        "alfa i beta to osobne listy; alpha po modyfikacji pozostaje niezmieniona.  \n 2 of 4",
-                        "Lista beta jest krótsza niż alpha , ponieważ element został zmodyfikowany.  \n 3 of 4",
-                        "Lista alpha jest tej samej długości co lista beta ale ich zawartość nie jest identyczna.  \n 4 of 4"
+                        "alfa i beta to dwie nazwy tej samej listy; w związku z tym w obu listach liczba 99 znajduje się na trzecim miejscu.",
+                        "alfa i beta to osobne listy; alpha po modyfikacji pozostaje niezmieniona.",
+                        "Lista beta jest krótsza niż alpha , ponieważ element został zmodyfikowany.",
+                        "Lista alpha jest tej samej długości co lista beta ale ich zawartość nie jest identyczna."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -3216,10 +3216,10 @@ const jezykiSkryptoweData = {
                     "type": "single",
                     "question": "Przejrzyj następujące identyfikatory i wybierz te, które są zarezerwowanymi słowami kluczowymi w Pythonie i spowodowałyby błąd składniowy, jeśli zostałyby użyte jako nazwy zmiennych. (wybierz dwie odpowiedzi)",
                     "options": [
-                        "class  \n 1 of 4",
-                        "true  \n 2 of 4",
-                        "continue  \n 3 of 4",
-                        "function  \n 4 of 4"
+                        "class",
+                        "true",
+                        "continue",
+                        "function"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -3398,10 +3398,10 @@ const jezykiSkryptoweData = {
                     "type": "single",
                     "question": "Które z poniższych wywołań funkcji poprawnie wywołuje funkcję zdefiniowaną poniżej? (wybierz dwie odpowiedzi)\n\n```python\n\ndef custom_function(x, y, z=0):\n\n\n\n                            # Body of the function.\n```",
                     "options": [
-                        "custom_function(y=2, x=1)  \n 1 of 4",
-                        "custom_function(x=3)  \n 2 of 4",
-                        "custom_function(4, 5, 6)  \n 3 of 4",
-                        "custom_function()  \n 4 of 4"
+                        "custom_function(y=2, x=1)",
+                        "custom_function(x=3)",
+                        "custom_function(4, 5, 6)",
+                        "custom_function()"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
