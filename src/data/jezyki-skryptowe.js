@@ -651,7 +651,7 @@ const jezykiSkryptoweData = {
                     "question": "Które z poniższych słów kluczowych służy jako instrukcja pusta (placeholder) w Pythonie?",
                     "options": [
                         "void",
-                        "null",
+                        "None",
                         "pass",
                         "none"
                     ],
@@ -2370,14 +2370,14 @@ const jezykiSkryptoweData = {
                     "options": [
                         "True",
                         "oraz",
-                        "true",
+                        "True",
                         "PRAWDA"
                     ],
                     "correctAnswers": [
                         0,
                         1
                     ],
-                    "explanation": "True oraz and to słowa kluczowe w Pythonie (słowa zastrzeżone) i nie mogą być używane jako nazwy zmiennych. Ponieważ Python rozróżnia wielkość liter, nazwytrue i TRUE są całkowicie dozwolone, ale nie są one najlepszym wyborem."
+                    "explanation": "True oraz and to słowa kluczowe w Pythonie (słowa zastrzeżone) i nie mogą być używane jako nazwy zmiennych. Ponieważ Python rozróżnia wielkość liter, nazwyTrue i TRUE są całkowicie dozwolone, ale nie są one najlepszym wyborem."
                 },
                 {
                     "id": "js-pe1-m2-010",
@@ -2842,7 +2842,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość False, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest False, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to False, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest True, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-006",
@@ -2857,7 +2857,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość False, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest False, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to False, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest True, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-007",
@@ -2948,7 +2948,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość False, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest False, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to False, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest True, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-013",
@@ -2963,7 +2963,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość False, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest False, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to False, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest True, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-014",
@@ -2978,7 +2978,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość False, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest False, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to False, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest True, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-015",
@@ -3008,7 +3008,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość False, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest False, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to False, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest True, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-017",
@@ -3023,7 +3023,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość False, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest False, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to False, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest True, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-018",
@@ -3038,7 +3038,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość false, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest false, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to false, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest true, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
+                    "explanation": "Przeanalizujmy ten kod:Funkcja f jest wywoływana z argumentem typu całkowitego o wartości 3.funkcja rozpoczyna wykonywanie od liczby całkowitej o wartości 3 dla zmiennej x. warunek if porównuje czy 3 == 0, a ponieważ wynik tego porównania to wartość False, blok kodu nie zostaje wykonywany.funkcja dociera do instrukcji return, a wartość całkowita 3 jest przechowywana w pamięci, dodatkowo następuje rekurencyjne wywołanie funkcji f z argumentem 2. warunek if porównuje czy 2 == 0, a jako że wynikiem tego porównania jest False, blok nie zostaje wykonany,funkcja dociera do instrukcji return, a w pamięci przechowywana jest wartość całkowita 2, jak również wywołanie rekurencyjne funkcji f z argumentem całkowitym 1. warunek if dokonuje porównania i sparwdza czy 1 == 0. Jako że wynik tego porównia to False, blok kodu nie zostaje wykonany. funkcja dociera do instrukcji return, a w pamięci przechowywana jest liczba całkowita, plus cykliczne wywoływanie funkcji f z argumentem liczby całkowitej 0,warunek if porównuje czy 0 == 0, a ponieważ wynikiem jest True, wykonywana jest instrukcja return 0, a wywołanie rekurencyjne zostaje przerwaneKażde wywołanie rekurencyjne zwraca swoją wartość, a wynik dodawania jest wypisywany na konsoli, dając wynik 6."
                 },
                 {
                     "id": "js-pe1-m4-019",
@@ -3217,7 +3217,7 @@ const jezykiSkryptoweData = {
                     "question": "Przejrzyj następujące identyfikatory i wybierz te, które są zarezerwowanymi słowami kluczowymi w Pythonie i spowodowałyby błąd składniowy, jeśli zostałyby użyte jako nazwy zmiennych. (wybierz dwie odpowiedzi)",
                     "options": [
                         "class",
-                        "true",
+                        "True",
                         "continue",
                         "function"
                     ],
@@ -3578,22 +3578,22 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m1-001",
                     "type": "single",
-                    "question": "Knowing that a function named fun() resides in a module named mod , choose the correct way to import it.",
+                    "question": "Wiedząc, że funkcja o nazwie fun() znajduje się w module o nazwie mod, wybierz właściwy sposób jej zaimportowania.",
                     "options": [
-                        "import fun from mod",
-                        "import fun",
-                        "from mod import fun",
-                        "from fun import mod"
+                        "importuj zabawę z mod",
+                        "importuj zabawę",
+                        "z mod import zabawy",
+                        "z zabawnego modu importu"
                     ],
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": "Remember that to import specific functions from a module, the keyword from followed by the module's name is used. Afterward, specify function names after the import keyword, separated by commas."
+                    "explanation": "Pamiętaj, że aby zaimportować określone funkcje z modułu, używane jest słowo kluczowe from, po którym następuje nazwa modułu. Następnie po słowie kluczowym import podaj nazwy funkcji, oddzielając je przecinkami."
                 },
                 {
                     "id": "js-pe2-m1-002",
                     "type": "single",
-                    "question": "Knowing that a function named fun() resides in a module named mod , and it has been imported using the following line: \n import mod\n Choose the way it can be invoked in your code.",
+                    "question": "Wiedząc, że funkcja o nazwie fun() znajduje się w module o nazwie mod i została zaimportowana przy użyciu następującej linii: \n zaimportuj mod\n Wybierz sposób, w jaki można go wywołać w kodzie.",
                     "options": [
                         "fun()",
                         "mod‑>fun()",
@@ -3603,12 +3603,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": "If the entire module is imported, function invocation must use the following syntax module_name.funcion_name()."
+                    "explanation": "Jeśli importowany jest cały moduł, wywołanie funkcji musi mieć następującą składnię nazwa_modułu.nazwa_funkcji()."
                 },
                 {
                     "id": "js-pe2-m1-003",
                     "type": "single",
-                    "question": "A function which returns a list of all entities available in a module is called:",
+                    "question": "Funkcja zwracająca listę wszystkich obiektów dostępnych w module nazywa się:",
                     "options": [
                         "dir()",
                         "listmodule()",
@@ -3618,42 +3618,42 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the dir() function returns all properties and methods of a specified object, including built-in properties."
+                    "explanation": "Pamiętaj, że funkcja dir() zwraca wszystkie właściwości i metody określonego obiektu, łącznie z właściwościami wbudowanymi."
                 },
                 {
                     "id": "js-pe2-m1-004",
                     "type": "single",
-                    "question": "A pyc file contains:",
+                    "question": "Plik pyc zawiera:",
                     "options": [
-                        "compiled Python code",
-                        "a Python interpreter",
-                        "a Python compiler",
-                        "Python source code"
+                        "skompilowany kod Pythona",
+                        "interpreter Pythona",
+                        "kompilator Pythona",
+                        "Kod źródłowy Pythona"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that pyc files are created by the Python interpreter using py files. They contain the compiled bytecode of the source code."
+                    "explanation": "Pamiętaj, że pliki pyc są tworzone przez interpreter Pythona przy użyciu plików py. Zawierają skompilowany kod bajtowy kodu źródłowego."
                 },
                 {
                     "id": "js-pe2-m1-005",
                     "type": "single",
-                    "question": "When a module is imported, its contents:",
+                    "question": "Po zaimportowaniu modułu jego zawartość:",
                     "options": [
-                        "may be executed (explicitly)",
-                        "are ignored",
-                        "are executed once (implicitly)",
-                        "are executed as many times as they are imported"
+                        "może zostać wykonany (jawnie)",
+                        "są ignorowane",
+                        "są wykonywane raz (domyślnie)",
+                        "są wykonywane tyle razy, ile są importowane"
                     ],
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": "When a module in Python is imported, the entire file is executed once implicitly in order to assure no errors are present in the module."
+                    "explanation": "Kiedy importowany jest moduł w Pythonie, cały plik jest wykonywany jednokrotnie, niejawnie, aby mieć pewność, że w module nie ma żadnych błędów."
                 },
                 {
                     "id": "js-pe2-m1-006",
                     "type": "single",
-                    "question": "A predefined Python variable that stores the current module name is called:",
+                    "question": "Predefiniowana zmienna Pythona, która przechowuje bieżącą nazwę modułu, nazywa się:",
                     "options": [
                         "__mod__",
                         "__modname__",
@@ -3663,27 +3663,27 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": "The __name__ variable (two underscores before and after) is a special Python variable. When a module is imported, it will contain the module's filename."
+                    "explanation": "Zmienna __name__ (dwa podkreślenia przed i po) jest specjalną zmienną Pythona. Po zaimportowaniu modułu będzie on zawierał nazwę pliku modułu."
                 },
                 {
                     "id": "js-pe2-m1-007",
                     "type": "single",
-                    "question": "The following statement: \n from a.b import c \n causes the import of:",
+                    "question": "Poniższe oświadczenie: \n z a.b import c \n powoduje import:",
                     "options": [
-                        "entity b from module a from package c",
-                        "entity a from module b from package c",
-                        "entity c from module b from package a",
-                        "entity c from module a from package b"
+                        "jednostka b z modułu a z pakietu c",
+                        "jednostka a z modułu b z pakietu c",
+                        "jednostka c z modułu b z pakietu a",
+                        "jednostka c z modułu a z pakietu b"
                     ],
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": "When using the notation from a.b import c, c identifies the entity or function being imported, b identifies the module (source file), and a the package (folder)."
+                    "explanation": "Używając notacji z a.b import c, c identyfikuje importowaną jednostkę lub funkcję, b identyfikuje moduł (plik źródłowy) i pakiet (folder)."
                 },
                 {
                     "id": "js-pe2-m1-008",
                     "type": "single",
-                    "question": "What is the expected value assigned to the result variable after the following code is executed?\n\n```python\nimport math\nresult = math.e != math.pow(2, 4)\nprint(int(result))\n```",
+                    "question": "Jaka jest oczekiwana wartość przypisana do zmiennej wynikowej po wykonaniu poniższego kodu?\n\n```python\nimport math\nresult = math.e != math.pow(2, 4)\nprint(int(result))\n```",
                     "options": [
                         "0",
                         "1",
@@ -3693,43 +3693,43 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": "Let's analyze this code snippet: The math module is imported. The result variable will contain the logical result of != (the not equal operation). The math.e value is a constant that equals 2.718281828459045. The result of math.pow(2, 4) is 2 to the power of 4, which is 16.0. The result is a floating-point number. Since 2.718281828459045 is NOT equal to 16.0, the answer is True. Using the print function, the answer is shown in the console converted into an integer value, which is 1."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Został zaimportowany moduł matematyczny. Zmienna wynikowa będzie zawierać wynik logiczny != (operacja nie równa). Wartość matematyczna jest stałą równą 2,718281828459045. Wynikiem math.pow(2, 4) jest 2 do potęgi 4, czyli 16,0. Wynikiem jest liczba zmiennoprzecinkowa. Ponieważ 2,718281828459045 NIE jest równe 16,0, odpowiedź brzmi Prawda. Korzystając z funkcji print, w konsoli wyświetlana jest odpowiedź przeliczona na wartość całkowitą, czyli 1."
                 },
                 {
                     "id": "js-pe2-m1-009",
                     "type": "single",
-                    "question": "What is the expected output of the following code?\n\n```python\nfrom random import randint\nfor i in range(2):\n   print(randint(1, 2), end='')\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nfrom random import randint\nfor i in range(2):\n   print(randint(1, 2), end='')\n```",
                     "options": [
                         "11 , 12 , 21 , or 22",
                         "12",
-                        "There are millions of possible combinations, and the exact output cannot be predicted.",
+                        "Istnieją miliony możliwych kombinacji i nie można przewidzieć dokładnego wyniku.",
                         "12 , or 21"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:The randint method is imported from the random module. It will return an integer number selected from the specified range.The loop for i in range(2) is initialized and will iterate twice.The print(randint(1, 2), end='') invocation will output 1 or 2 in the console and will stay in the same line due to the end argument.The print(randint(1, 2), end='') invocation is executed again because it is inside the loop and will output 1 or 2 in the console. The loop is exited.The possible outputs are 11, 12, 21, and 22."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Metoda randint jest importowana z modułu random. Zwraca liczbę całkowitą wybraną z określonego zakresu. Pętla dla i w zakresie (2) jest inicjowana i wykona dwukrotnie iterację. Wywołanie print(randint(1, 2), end='') wyświetli w konsoli 1 lub 2 i pozostanie w tym samym wierszu ze względu na argument end. Wywołanie print(randint(1, 2), end='') zostanie wykonane ponownie, ponieważ znajduje się w pętli i wyświetli w konsoli 1 lub 2. Pętla zostaje zamknięta. Możliwe wyjścia to 11, 12, 21 i 22."
                 },
                 {
                     "id": "js-pe2-m1-010",
                     "type": "multiple",
-                    "question": "Choose the true statements. (Select two answers)",
+                    "question": "Wybierz zdania prawdziwe. (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "The processor function from the platform module returns an integer with the number of processes currently running in your OS.",
-                        "The system function from the platform module returns a string with your OS name.",
-                        "The version function from the platform module returns a string with your Python version.",
-                        "The version function from the platform module returns a string with your OS version."
+                        "Funkcja procesora z modułu platformy zwraca liczbę całkowitą określającą liczbę procesów aktualnie uruchomionych w Twoim systemie operacyjnym.",
+                        "Funkcja systemowa z modułu platformy zwraca ciąg znaków zawierający nazwę systemu operacyjnego.",
+                        "Funkcja wersji z modułu platformy zwraca ciąg znaków z wersją Pythona.",
+                        "Funkcja wersji z modułu platformy zwraca ciąg znaków z wersją systemu operacyjnego."
                     ],
                     "correctAnswers": [
                         1,
                         3
                     ],
-                    "explanation": "The platform module recovers OS information from your system. The version function returns a string with your OS version, and the system function returns a string with the name of your OS."
+                    "explanation": "Moduł platformy odzyskuje informacje o systemie operacyjnym z Twojego systemu. Funkcja wersji zwraca ciąg znaków z wersją systemu operacyjnego, a funkcja systemowa zwraca ciąg znaków z nazwą systemu operacyjnego."
                 },
                 {
                     "id": "js-pe2-m1-011",
                     "type": "single",
-                    "question": "During the first import of a module, Python deploys the pyc files in the directory called:",
+                    "question": "Podczas pierwszego importu modułu Python instaluje pliki pyc w katalogu o nazwie:",
                     "options": [
                         "Mymodules",
                         "Hashbang",
@@ -3739,27 +3739,27 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": "Remember that __pycache__ is a directory that contains bytecode (.pyc) cache files that are automatically generated by Python."
+                    "explanation": "Pamiętaj, że __pycache__ to katalog zawierający pliki pamięci podręcznej w kodzie bajtowym (.pyc), które są automatycznie generowane przez Python."
                 },
                 {
                     "id": "js-pe2-m1-012",
                     "type": "single",
-                    "question": "The digraph written as #! is used to:",
+                    "question": "Dwuznak zapisany jako #! jest przyzwyczajony do:",
                     "options": [
-                        "tell a Unix or Unix-like OS how to execute the contents of a Python file",
-                        "create a docstring",
-                        "tell an MS Windows OS how to execute the contents of a Python file",
-                        "make a particular module entity private"
+                        "powiedzieć systemowi operacyjnemu Unix lub podobnemu do Unix, jak wykonać zawartość pliku Python",
+                        "utwórz dokument",
+                        "powiedzieć systemowi operacyjnemu MS Windows, jak wykonać zawartość pliku Python",
+                        "ustawić konkretną jednostkę modułu jako prywatną"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The #! helps specify the type of program to call to run the entire script file in Unix-type systems. It is always used on the first line of any file."
+                    "explanation": "#! pomaga określić typ programu, który należy wywołać w celu uruchomienia całego pliku skryptu w systemach typu Unix. Jest zawsze używany w pierwszej linii dowolnego pliku."
                 },
                 {
                     "id": "js-pe2-m1-013",
                     "type": "single",
-                    "question": "A list of package dependencies can be obtained from pip using a command named:",
+                    "question": "Listę zależności pakietów można uzyskać z pip za pomocą polecenia o nazwie:",
                     "options": [
                         "show",
                         "dir",
@@ -3769,74 +3769,74 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The show command displays metadata information about a package such as version, description, author, license information, summary and dependencies."
+                    "explanation": "Polecenie show wyświetla informacje o metadanych pakietu, takie jak wersja, opis, autor, informacje o licencji, podsumowanie i zależności."
                 },
                 {
                     "id": "js-pe2-m1-014",
                     "type": "single",
-                    "question": "The pip list command presents a list of:",
+                    "question": "Polecenie pip list wyświetla listę:",
                     "options": [
-                        "locally installed packages",
-                        "outdated local packages",
-                        "all packages available at PyPI",
-                        "available pip commands"
+                        "lokalnie zainstalowane pakiety",
+                        "nieaktualne pakiety lokalne",
+                        "wszystkie pakiety dostępne w PyPI",
+                        "dostępne polecenia pip"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the pip list command returns the list of packages installed in the current local environment."
+                    "explanation": "Pamiętaj, że polecenie pip list zwraca listę pakietów zainstalowanych w bieżącym środowisku lokalnym."
                 },
                 {
                     "id": "js-pe2-m1-015",
                     "type": "multiple",
-                    "question": "What is true about the pip search command? (Select two answers)",
+                    "question": "Jaka jest prawda w przypadku polecenia wyszukiwania pip? (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "It needs a working Internet connection to work.",
-                        "All its searches are limited to locally installed packages.",
-                        "It searches through package names only.",
-                        "It searches through all PyPI packages."
+                        "Do pracy potrzebne jest działające połączenie internetowe.",
+                        "Wszystkie jego wyszukiwania ograniczają się do pakietów zainstalowanych lokalnie.",
+                        "Przeszukuje tylko nazwy pakietów.",
+                        "Przeszukuje wszystkie pakiety PyPI."
                     ],
                     "correctAnswers": [
                         0,
                         3
                     ],
-                    "explanation": "Remember that the pip search command is used to search the index and identify packages that match the search terms through all the PyPI packages. Therefore, it requires an Internet connection to work."
+                    "explanation": "Pamiętaj, że polecenie pip search służy do przeszukiwania indeksu i identyfikowania pakietów pasujących do wyszukiwanych haseł we wszystkich pakietach PyPI. Dlatego do działania wymagane jest połączenie z Internetem."
                 },
                 {
                     "id": "js-pe2-m1-016",
                     "type": "multiple",
-                    "question": "What is true about the pip install command? (Select two answers)",
+                    "question": "Jaka jest prawda w przypadku polecenia pip install? (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "It allows the user to install a specific version of the package.",
-                        "It installs a package per user only when the --user option is specified.",
-                        "It installs a package system-wide only when the --system option is specified.",
-                        "It always installs the newest package version and it cannot be changed."
+                        "Umożliwia użytkownikowi zainstalowanie określonej wersji pakietu.",
+                        "Instaluje pakiet na użytkownika tylko wtedy, gdy określono opcję --user.",
+                        "Instaluje pakiet w całym systemie tylko wtedy, gdy określono opcję --system.",
+                        "Zawsze instaluje najnowszą wersję pakietu i nie można jej zmienić."
                     ],
                     "correctAnswers": [
                         0,
                         1
                     ],
-                    "explanation": "Remember that to install a specific version of a Python package you can use pip install package_name==package_version. The --user option changes the scope of the installation to the user's home directory rather than the default system-wide installation."
+                    "explanation": "Pamiętaj, że aby zainstalować konkretną wersję pakietu Pythona, możesz użyć pip install nazwa_pakietu==wersja_pakietu. Opcja --user zmienia zakres instalacji na katalog domowy użytkownika, a nie na domyślną instalację ogólnosystemową."
                 },
                 {
                     "id": "js-pe2-m1-017",
                     "type": "single",
-                    "question": "What is true about updating already installed Python packages?",
+                    "question": "Jaka jest prawda o aktualizowaniu już zainstalowanych pakietów Pythona?",
                     "options": [
-                        "It's an automatic process which doesn't require any user attention.",
-                        "It can be done by reinstalling the package using the reinstall command.",
-                        "It can be done only by uninstalling and installing the packages once again.",
-                        "It's performed by the install command accompanied by the -U option."
+                        "Jest to proces automatyczny, który nie wymaga żadnej uwagi użytkownika.",
+                        "Można to zrobić, instalując ponownie pakiet za pomocą polecenia reinstall.",
+                        "Można to zrobić jedynie poprzez odinstalowanie i ponowne zainstalowanie pakietów.",
+                        "Wykonuje się to za pomocą polecenia install z opcją -U."
                     ],
                     "correctAnswers": [
                         3
                     ],
-                    "explanation": "Remember that the -U, --upgrade option upgrades all packages installed to the newest available version."
+                    "explanation": "Pamiętaj, że opcja -U, --upgrade aktualizuje wszystkie zainstalowane pakiety do najnowszej dostępnej wersji."
                 },
                 {
                     "id": "js-pe2-m1-018",
                     "type": "single",
-                    "question": "Which command can you use pip to remove an installed package?",
+                    "question": "Którego polecenia możesz użyć pip, aby usunąć zainstalowany pakiet?",
                     "options": [
                         "pip uninstall package",
                         "pip remove package",
@@ -3846,7 +3846,7 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the option removes the installed package from the environment."
+                    "explanation": "Pamiętaj, że opcja usuwa zainstalowany pakiet ze środowiska."
                 }
             ]
         },
@@ -3857,37 +3857,37 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m2-001",
                     "type": "single",
-                    "question": "Entering the try: block implies that:",
+                    "question": "Wprowadzenie bloku try: oznacza, że:",
                     "options": [
-                        "some of the instructions from this block may not be executed",
-                        "all of the instructions from this block will be executed",
-                        "none of the instructions from this block will be executed",
-                        "the block will be omitted"
+                        "niektóre instrukcje z tego bloku mogą nie zostać wykonane",
+                        "wszystkie instrukcje z tego bloku zostaną wykonane",
+                        "żadna z instrukcji z tego bloku nie zostanie wykonana",
+                        "blok zostanie pominięty"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the instructions inside a try block are executed sequentially. If an instruction generates an exception, the execution jumps to the except statements. Therefore, the remaining instructions within the try block are not executed."
+                    "explanation": "Pamiętaj, że instrukcje wewnątrz bloku try są wykonywane sekwencyjnie. Jeśli instrukcja generuje wyjątek, wykonanie przechodzi do instrukcji z wyjątkiem. Dlatego pozostałe instrukcje w bloku try nie są wykonywane."
                 },
                 {
                     "id": "js-pe2-m2-002",
                     "type": "single",
-                    "question": "The unnamed except: block:",
+                    "question": "Nienazwany blok z wyjątkiem:",
                     "options": [
-                        "must be the last one",
-                        "can be placed anywhere",
-                        "must be the first one",
-                        "cannot be used if any named block has been used"
+                        "musi być ostatni",
+                        "można umieścić w dowolnym miejscu",
+                        "musi być pierwszy",
+                        "nie można użyć, jeśli użyto dowolnego nazwanego bloku"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The excepts within a try expect block should be listed from the specific exceptions to the general exceptions. This assures that in case of an error, the error will fall under the suitable exception. The unnamed exception must be the last exception listed because it is the most general exception."
+                    "explanation": "Wyjątki w bloku try require powinny być wymienione spośród konkretnych wyjątków od ogólnych wyjątków. Gwarantuje to, że w przypadku błędu będzie on objęty odpowiednim wyjątkiem. Nienazwany wyjątek musi być ostatnim wyjątkiem na liście, ponieważ jest to najbardziej ogólny wyjątek."
                 },
                 {
                     "id": "js-pe2-m2-003",
                     "type": "single",
-                    "question": "The top‑most Python exception is called:",
+                    "question": "Najwyższy wyjątek w Pythonie nazywa się:",
                     "options": [
                         "BaseException",
                         "Exception",
@@ -3897,27 +3897,27 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the BaseException class is, as the name suggests, the base class for all built-in exceptions in Python."
+                    "explanation": "Pamiętaj, że klasa BaseException jest, jak sama nazwa wskazuje, klasą bazową dla wszystkich wbudowanych wyjątków w Pythonie."
                 },
                 {
                     "id": "js-pe2-m2-004",
                     "type": "single",
-                    "question": "The following statement:\n\n```python\nassert var == 0\n```",
+                    "question": "Poniższe oświadczenie:\n\n```python\nassert var == 0\n```",
                     "options": [
                         "will stop the program when var != 0",
                         "will stop the program when var == 0",
-                        "is erroneous",
-                        "has no effect"
+                        "jest błędne",
+                        "nie ma żadnego efektu"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the assert keyword tests if a condition is true. If it is not, the program will raise an AssertionError."
+                    "explanation": "Pamiętaj, że słowo kluczowe Assert sprawdza, czy warunek ma wartość True. Jeżeli tak nie jest, program zgłosi błąd AssertionError."
                 },
                 {
                     "id": "js-pe2-m2-005",
                     "type": "single",
-                    "question": "What is the expected output of the following code?\n\n```python\ntry:\n    print(\"5\"/0)\nexcept ArithmeticError:\n    print(\"arith\")\nexcept ZeroDivisionError:\n    print(\"zero\")\nexcept:\n    print(\"some\")\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\ntry:\n    print(\"5\"/0)\nexcept ArithmeticError:\n    print(\"arith\")\nexcept ZeroDivisionError:\n    print(\"zero\")\nexcept:\n    print(\"some\")\n```",
                     "options": [
                         "some",
                         "arith",
@@ -3927,12 +3927,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:The print function inside the try block is executed.If you look closely, \"5\" is a string, and it is divided by an integer zero. No ArithmeticError nor ZeroDivisionError is raised.Instead, a TypeError exception is raised, which will fall under the nameless except.The word some is printed in the console."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Wykonywana jest funkcja print wewnątrz bloku try. Jeśli przyjrzysz się uważnie, „5” to ciąg znaków podzielony przez liczbę całkowitą zero. Nie jest zgłaszany żaden błąd ArithmeticError ani ZeroDivisionError. Zamiast tego zgłaszany jest wyjątek TypeError, który będzie objęty bezimiennym wyjątkiem. W konsoli zostanie wydrukowane słowo Some."
                 },
                 {
                     "id": "js-pe2-m2-006",
                     "type": "multiple",
-                    "question": "Which of the following are examples of built-in concrete Python exceptions? (Select two answers)",
+                    "question": "Które z poniższych są przykładami wbudowanych konkretnych wyjątków w języku Python? (Wybierz dwie odpowiedzi)",
                     "options": [
                         "IndexError",
                         "ImportError",
@@ -3943,57 +3943,57 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": "Remember that concrete exceptions in Python are build-in exceptions that inherit directly from the Exception class. IndexError and ImportError are such cases."
+                    "explanation": "Pamiętaj, że konkretne wyjątki w Pythonie są wyjątkami wbudowanymi, które dziedziczą bezpośrednio z klasy wyjątków. IndexError i ImportError są takimi przypadkami."
                 },
                 {
                     "id": "js-pe2-m2-007",
                     "type": "single",
-                    "question": "ASCII is:",
+                    "question": "ASCII to:",
                     "options": [
-                        "short for American Standard Code for Information Interchange",
-                        "a standard Python module name",
-                        "a predefined Python variable name",
-                        "a character name"
+                        "skrót od amerykańskiego standardowego kodeksu wymiany informacji",
+                        "standardowa nazwa modułu Pythona",
+                        "predefiniowaną nazwę zmiennej Pythona",
+                        "imię postaci"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that ASCII stands for American Standard Code for Information Interchange. It is a 7-bit character code developed in the 19-60s to represent English-language characters."
+                    "explanation": "Pamiętaj, że ASCII oznacza amerykański standardowy kod wymiany informacji. Jest to 7-bitowy kod znakowy opracowany w latach 19-60 XX wieku w celu reprezentowania znaków anglojęzycznych."
                 },
                 {
                     "id": "js-pe2-m2-008",
                     "type": "single",
-                    "question": "UTF‑8 is:",
+                    "question": "UTF-8 to:",
                     "options": [
-                        "a form of encoding Unicode code points",
-                        "a Python version name",
-                        "a synonym for byte",
-                        "the 9th version of the UTF standard"
+                        "forma kodowania punktów kodowych Unicode",
+                        "nazwa wersji Pythona",
+                        "synonim bajtu",
+                        "9. wersja standardu UTF"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that UTF-8 is the most popular type of Unicode encoding. It uses 1 bit for English characters, 2 bits for Latin and Middle Eastern characters, and 3 bits for Asian characters."
+                    "explanation": "Pamiętaj, że UTF-8 jest najpopularniejszym typem kodowania Unicode. Używa 1 bitu dla znaków angielskich, 2 bity dla znaków łacińskich i bliskowschodnich oraz 3 bity dla znaków azjatyckich."
                 },
                 {
                     "id": "js-pe2-m2-009",
                     "type": "single",
-                    "question": "UNICODE is a standard:",
+                    "question": "UNICODE to standard:",
                     "options": [
-                        "like ASCII, but much more expansive",
-                        "for coding floating-point numbers",
-                        "used by coders from universities",
-                        "honored by the whole universe"
+                        "jak ASCII, ale znacznie bardziej ekspansywny",
+                        "do kodowania liczb zmiennoprzecinkowych",
+                        "używane przez programistów z uniwersytetów",
+                        "honorowany przez cały wszechświat"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that UNICODE is a universal character encoding standard. It supports characters from all the languages in the world."
+                    "explanation": "Pamiętaj, że UNICODE to uniwersalny standard kodowania znaków. Obsługuje znaki ze wszystkich języków świata."
                 },
                 {
                     "id": "js-pe2-m2-010",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nx = '\\''\nprint(len(x))\n```",
+                    "question": "Poniższy kod:\n\n```python\nx = '\\''\nprint(len(x))\n```",
                     "options": [
                         "1",
                         "2",
@@ -4003,12 +4003,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Zdefiniowano zmienną łańcuchową o nazwie x. Pierwszy i ostatni cudzysłów ograniczają zawartość zmiennej i nie są jej częścią. Ukośnik odwrotny jest znakiem zmiany znaczenia, który również nie jest wliczany do treści. Pojedynczy cudzysłów po ukośniku odwrotnym jest jedynym znakiem wchodzącym w skład zawartości zmiennej. Używając funkcji print, w konsoli wyświetlana jest długość zmiennej, a odpowiedzią jest 1."
                 },
                 {
                     "id": "js-pe2-m2-011",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint(ord('c') - ord('a'))\n```",
+                    "question": "Poniższy kod:\n\n```python\nprint(ord('c') - ord('a'))\n```",
                     "options": [
                         "2",
                         "1",
@@ -4018,12 +4018,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Zdefiniowano zmienną łańcuchową o nazwie x. Pierwszy i ostatni cudzysłów ograniczają zawartość zmiennej i nie są jej częścią. Ukośnik odwrotny jest znakiem zmiany znaczenia, który również nie jest wliczany do treści. Pojedynczy cudzysłów po ukośniku odwrotnym jest jedynym znakiem wchodzącym w skład zawartości zmiennej. Używając funkcji print, w konsoli wyświetlana jest długość zmiennej, a odpowiedzią jest 1."
                 },
                 {
                     "id": "js-pe2-m2-012",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint(chr(ord('z') ‑ 2))\n```",
+                    "question": "Poniższy kod:\n\n```python\nprint(chr(ord('z') ‑ 2))\n```",
                     "options": [
                         "x",
                         "y",
@@ -4033,12 +4033,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Zdefiniowano zmienną łańcuchową o nazwie x. Pierwszy i ostatni cudzysłów ograniczają zawartość zmiennej i nie są jej częścią. Ukośnik odwrotny jest znakiem zmiany znaczenia, który również nie jest wliczany do treści. Pojedynczy cudzysłów po ukośniku odwrotnym jest jedynym znakiem wchodzącym w skład zawartości zmiennej. Używając funkcji print, w konsoli wyświetlana jest długość zmiennej, a odpowiedzią jest 1."
                 },
                 {
                     "id": "js-pe2-m2-013",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint(3 * 'abc' + 'xyz')\n```",
+                    "question": "Poniższy kod:\n\n```python\nprint(3 * 'abc' + 'xyz')\n```",
                     "options": [
                         "abcabcabcxyz",
                         "abcabcxyzxyz",
@@ -4048,12 +4048,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Zdefiniowano zmienną łańcuchową o nazwie x. Pierwszy i ostatni cudzysłów ograniczają zawartość zmiennej i nie są jej częścią. Ukośnik odwrotny jest znakiem zmiany znaczenia, który również nie jest wliczany do treści. Pojedynczy cudzysłów po ukośniku odwrotnym jest jedynym znakiem wchodzącym w skład zawartości zmiennej. Używając funkcji print, w konsoli wyświetlana jest długość zmiennej, a odpowiedzią jest 1."
                 },
                 {
                     "id": "js-pe2-m2-014",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint('Mike' > \"Mikey\")\n```",
+                    "question": "Poniższy kod:\n\n```python\nprint('Mike' > \"Mikey\")\n```",
                     "options": [
                         "False",
                         "True",
@@ -4063,22 +4063,22 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Zdefiniowano zmienną łańcuchową o nazwie x. Pierwszy i ostatni cudzysłów ograniczają zawartość zmiennej i nie są jej częścią. Ukośnik odwrotny jest znakiem zmiany znaczenia, który również nie jest wliczany do treści. Pojedynczy cudzysłów po ukośniku odwrotnym jest jedynym znakiem wchodzącym w skład zawartości zmiennej. Używając funkcji print, w konsoli wyświetlana jest długość zmiennej, a odpowiedzią jest 1."
                 },
                 {
                     "id": "js-pe2-m2-015",
                     "type": "single",
-                    "question": "The following code:\n\n```python\nprint(float(\"1, 3\"))\n```",
+                    "question": "Poniższy kod:\n\n```python\nprint(float(\"1, 3\"))\n```",
                     "options": [
-                        "raises a ValueError exception",
-                        "prints 1.3",
-                        "prints 1,3",
-                        "prints 13"
+                        "zgłasza wyjątek ValueError",
+                        "drukuje 1.3",
+                        "drukuje 1,3",
+                        "drukuje 13"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:A string variable named x is defined.The first and last single quotes delimit the contents within the variable, and are not part of the content.The backslash is the escape character, which also does not count as part of the content.The single quote after the backslash is the only character that is part of the variable contents.Using the print function, the character length of the variable is shown in the console, and the answer is 1."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Zdefiniowano zmienną łańcuchową o nazwie x. Pierwszy i ostatni cudzysłów ograniczają zawartość zmiennej i nie są jej częścią. Ukośnik odwrotny jest znakiem zmiany znaczenia, który również nie jest wliczany do treści. Pojedynczy cudzysłów po ukośniku odwrotnym jest jedynym znakiem wchodzącym w skład zawartości zmiennej. Używając funkcji print, w konsoli wyświetlana jest długość zmiennej, a odpowiedzią jest 1."
                 }
             ]
         },
@@ -4089,7 +4089,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m3-001",
                     "type": "single",
-                    "question": "A data structure described as LIFO is actually a:",
+                    "question": "Struktura danych opisana jako LIFO to w rzeczywistości:",
                     "options": [
                         "stack",
                         "heap",
@@ -4099,12 +4099,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "A stack is an object designed to store data using the LIFO (Last-In-First-Out) model, and LIFO is a method for handling data structures in which the first element is processed last, and the last element is processed first."
+                    "explanation": "Stos to obiekt przeznaczony do przechowywania danych z wykorzystaniem modelu LIFO (ang. Last-In-First-Out), natomiast LIFO to metoda obsługi struktur danych, w której pierwszy element przetwarzany jest jako ostatni, a ostatni element przetwarzany jest jako pierwszy."
                 },
                 {
                     "id": "js-pe2-m3-002",
                     "type": "single",
-                    "question": "If the class’s constructor is declared as below, which one of the assignments is valid?\n\n```python\nclass Class:\n    def __init__(self):\n        pass\n```",
+                    "question": "Jeśli konstruktor klasy jest zadeklarowany jak poniżej, które z przypisań jest prawidłowe?\n\n```python\nclass Class:\n    def __init__(self):\n        pass\n```",
                     "options": [
                         "object = Class()",
                         "object = Class(self)",
@@ -4114,12 +4114,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The object = Class() assignment creates an object of class Class, and the __init__ method is automatically called when that object is created. The __init__ constructor has the obligatory parameter self, no attributes, and it does not do anything because a placeholder statement – pass – is executed. The object = Class(object) assignment will result in a TypeError exception, because the __init__() method should take only one positional argument (self), not two (self and object).The object = Class(self) assignment will result in a NameError exception, because the name self has not been defined anywhere.The object = Class assignment declares the object variable and assigns Class to it, but it does not initialize an object of class Class."
+                    "explanation": "Przypisanie object = Class() tworzy obiekt klasy Class, a metoda __init__ jest wywoływana automatycznie podczas tworzenia tego obiektu. Konstruktor __init__ ma obowiązkowy parametr self, nie ma żadnych atrybutów i nic nie robi, ponieważ wykonywana jest instrukcja zastępcza – pass. Przypisanie obiekt = Class(object) spowoduje wyjątek TypeError, ponieważ metoda __init__() powinna przyjmować tylko jeden argument pozycyjny (self), a nie dwa (self i obiekt). Przypisanie obiekt = Class(self) spowoduje wyjątek NameError, ponieważ nazwa self nie została nigdzie zdefiniowana. Przypisanie object = Class deklaruje zmienną obiektu i przypisuje do niej klasę, ale nie inicjuje obiektu klasy Class."
                 },
                 {
                     "id": "js-pe2-m3-003",
                     "type": "single",
-                    "question": "If there is a superclass named A and a subclass named B , which one of the presented invocations should you put instead of the comment?\n\n```python\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        # Put selected line here.\n        self.b = 2\n```",
+                    "question": "Jeśli istnieje nadklasa o nazwie A i podklasa o nazwie B, które z przedstawionych wywołań należy umieścić zamiast komentarza?\n\n```python\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        # Put selected line here.\n        self.b = 2\n```",
                     "options": [
                         "A.__init__(self)",
                         "A.__init__()",
@@ -4129,14 +4129,14 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The example shows a superclass named A, which defines its own constructor. The A class is then used as a base to create a subclass named B, which defines its own constructor. The B class constructor should now invoke the constructor from the A class, which can be done like this: A.__init__(self)."
+                    "explanation": "Przykład pokazuje nadklasę o nazwie A, która definiuje własny konstruktor. Klasa A jest następnie używana jako baza do utworzenia podklasy o nazwie B, która definiuje jej własnego konstruktora. Konstruktor klasy B powinien teraz wywołać konstruktor z klasy A, co można zrobić w następujący sposób: A.__init__(self)."
                 },
                 {
                     "id": "js-pe2-m3-004",
                     "type": "single",
-                    "question": "What will be the effect of running the following code?\n\n```python\nclass A:\n    def __init__(self,v):\n        self.__a = v + 1\n\na = A(0)\nprint(a.__a)\n```",
+                    "question": "Jaki będzie efekt uruchomienia poniższego kodu?\n\n```python\nclass A:\n    def __init__(self,v):\n        self.__a = v + 1\n\na = A(0)\nprint(a.__a)\n```",
                     "options": [
-                        "The code will raise an AttributeError exception",
+                        "Kod zgłosi wyjątek AttributeError",
                         "0",
                         "1",
                         "2"
@@ -4144,12 +4144,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The following code will result in the AttributeError exception, because the A object does not have the attribute __a. The __a variable is a private instance variable, and an attempt to access or modify it from outside the class will result in an AttributeError.Modifying the private attribute __a and changing it to public (a) will result in the following output: 1."
+                    "explanation": "Poniższy kod spowoduje wyjątek AttributeError, ponieważ obiekt A nie ma atrybutu __a. Zmienna __a jest zmienną instancji prywatnej i próba uzyskania dostępu do niej lub zmodyfikowania jej spoza klasy zakończy się błędem AttributeError. Modyfikacja atrybutu prywatnego __a i zmiana go na publiczny (a) spowoduje wyświetlenie następujących wyników: 1."
                 },
                 {
                     "id": "js-pe2-m3-005",
                     "type": "single",
-                    "question": "What will be the output of the following code?\n\n```python\nclass A:\n    def __init__(self,v = 1):\n        self.v = v\n\n    def set(self,v):\n        self.v = v\n        return v\n\na = A()\nprint(a.set(a.v + 1))\n```",
+                    "question": "Jaki będzie wynik poniższego kodu?\n\n```python\nclass A:\n    def __init__(self,v = 1):\n        self.v = v\n\n    def set(self,v):\n        self.v = v\n        return v\n\na = A()\nprint(a.set(a.v + 1))\n```",
                     "options": [
                         "2",
                         "1",
@@ -4159,12 +4159,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze the code:The A class constructor creates an instance variable named v equal to the default value passed to the constructor's parameter v, which is 1.The set method creates its own v variable, and returns the value passed to it.The a object is created, and the set method is called, which returns the v value equal to 1 + 1.The result 2 is printed to the console."
+                    "explanation": "Przeanalizujmy kod: Konstruktor klasy A tworzy zmienną instancji o nazwie v równą wartości domyślnej przekazanej do parametru v konstruktora, czyli 1. Metoda set tworzy własną zmienną v i zwraca do niej przekazaną wartość. Tworzony jest obiekt a i wywoływana jest metoda set, która zwraca wartość v równą 1 + 1. Wynik 2 jest wypisywany na konsolę."
                 },
                 {
                     "id": "js-pe2-m3-006",
                     "type": "single",
-                    "question": "What will be the output of the following code?\n\n```python\nclass A:\n    X = 0\n    def __init__(self,v = 0):\n        self.Y = v\n        A.X += v\n\na = A()\nb = A(1)\nc = A(2)\nprint(c.X)\n```",
+                    "question": "Jaki będzie wynik poniższego kodu?\n\n```python\nclass A:\n    X = 0\n    def __init__(self,v = 0):\n        self.Y = v\n        A.X += v\n\na = A()\nb = A(1)\nc = A(2)\nprint(c.X)\n```",
                     "options": [
                         "3",
                         "1",
@@ -4174,12 +4174,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze the code:The A class constructor creates an instance variable named v equal to the default value passed to the constructor's parameter v, which is 1.The set method creates its own v variable, and returns the value passed to it.The a object is created, and the set method is called, which returns the v value equal to 1 + 1.The result 2 is printed to the console."
+                    "explanation": "Przeanalizujmy kod: Konstruktor klasy A tworzy zmienną instancji o nazwie v równą wartości domyślnej przekazanej do parametru v konstruktora, czyli 1. Metoda set tworzy własną zmienną v i zwraca do niej przekazaną wartość. Tworzony jest obiekt a i wywoływana jest metoda set, która zwraca wartość v równą 1 + 1. Wynik 2 jest wypisywany na konsolę."
                 },
                 {
                     "id": "js-pe2-m3-007",
                     "type": "single",
-                    "question": "What will be the output of the following code?\n\n```python\nclass A:\n    A = 1\n\nprint(hasattr(A,'A'))\n```",
+                    "question": "Jaki będzie wynik poniższego kodu?\n\n```python\nclass A:\n    A = 1\n\nprint(hasattr(A,'A'))\n```",
                     "options": [
                         "True",
                         "False",
@@ -4189,14 +4189,14 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze the code:The A class constructor creates an instance variable named v equal to the default value passed to the constructor's parameter v, which is 1.The set method creates its own v variable, and returns the value passed to it.The a object is created, and the set method is called, which returns the v value equal to 1 + 1.The result 2 is printed to the console."
+                    "explanation": "Przeanalizujmy kod: Konstruktor klasy A tworzy zmienną instancji o nazwie v równą wartości domyślnej przekazanej do parametru v konstruktora, czyli 1. Metoda set tworzy własną zmienną v i zwraca do niej przekazaną wartość. Tworzony jest obiekt a i wywoływana jest metoda set, która zwraca wartość v równą 1 + 1. Wynik 2 jest wypisywany na konsolę."
                 },
                 {
                     "id": "js-pe2-m3-008",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n     def __init__(self):\n        pass\n\na = A(1)\nprint(hasattr(a,'A'))\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\nclass A:\n     def __init__(self):\n        pass\n\na = A(1)\nprint(hasattr(a,'A'))\n```",
                     "options": [
-                        "it will raise an exception",
+                        "zgłosi wyjątek",
                         "1",
                         "True",
                         "False"
@@ -4204,142 +4204,142 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 },
                 {
                     "id": "js-pe2-m3-009",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    def __str__(self):\n        return 'a'\n\nclass B(A):\n    def __str__(self):\n        return 'b'\n\nclass C(B):\n    pass\n\no = C()\nprint(o)\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\nclass A:\n    def __str__(self):\n        return 'a'\n\nclass B(A):\n    def __str__(self):\n        return 'b'\n\nclass C(B):\n    pass\n\no = C()\nprint(o)\n```",
                     "options": [
-                        "it will print b",
-                        "it will print a",
-                        "it will print c",
-                        "it will raise an exception"
+                        "wydrukuje b",
+                        "wydrukuje a",
+                        "wydrukuje c",
+                        "zgłosi wyjątek"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 },
                 {
                     "id": "js-pe2-m3-010",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    pass\n\nclass B(A):\n    pass\n\nclass C(B):\n    pass\n\nprint(issubclass(C,A))\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\nclass A:\n    pass\n\nclass B(A):\n    pass\n\nclass C(B):\n    pass\n\nprint(issubclass(C,A))\n```",
                     "options": [
-                        "it will print True",
-                        "it will print False",
-                        "it will print 1",
-                        "it will raise an exception"
+                        "wydrukuje Prawda",
+                        "wydrukuje Fałsz",
+                        "wydrukuje 1",
+                        "zgłosi wyjątek"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 },
                 {
                     "id": "js-pe2-m3-011",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    def a(self):\n        print('a')\n\nclass B:\n    def a(self):\n        print('b')\n\nclass C(B,A):\n    def c(self):\n        self.a()\n\no = C()\no.c()\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\nclass A:\n    def a(self):\n        print('a')\n\nclass B:\n    def a(self):\n        print('b')\n\nclass C(B,A):\n    def c(self):\n        self.a()\n\no = C()\no.c()\n```",
                     "options": [
-                        "it will print b",
-                        "it will print a",
-                        "it will print c",
-                        "it will raise an exception"
+                        "wydrukuje b",
+                        "wydrukuje a",
+                        "wydrukuje c",
+                        "zgłosi wyjątek"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 },
                 {
                     "id": "js-pe2-m3-012",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    def __str__(self):\n        return 'a'\n\nclass B:\n    def __str__(self):\n        return 'b'\n\nclass C(A, B):\n    pass\n\no = C()\nprint(o)\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\nclass A:\n    def __str__(self):\n        return 'a'\n\nclass B:\n    def __str__(self):\n        return 'b'\n\nclass C(A, B):\n    pass\n\no = C()\nprint(o)\n```",
                     "options": [
-                        "it will print a",
-                        "it will print b",
-                        "it will print c",
-                        "it will raise an exception"
+                        "wydrukuje a",
+                        "wydrukuje b",
+                        "wydrukuje c",
+                        "zgłosi wyjątek"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 },
                 {
                     "id": "js-pe2-m3-013",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass A:\n    v = 2\n\nclass B(A):\n    v = 1\n\nclass C(B):\n    pass\n\no = C()\nprint(o.v)\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\nclass A:\n    v = 2\n\nclass B(A):\n    v = 1\n\nclass C(B):\n    pass\n\no = C()\nprint(o.v)\n```",
                     "options": [
-                        "it will print 1",
-                        "it will print 2",
-                        "it will print an empty line",
-                        "it will raise an exception"
+                        "wydrukuje 1",
+                        "wydrukuje 2",
+                        "wydrukuje pustą linię",
+                        "zgłosi wyjątek"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 },
                 {
                     "id": "js-pe2-m3-014",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\ndef f(x):\n    try:\n        x = x / x\n    except:\n        print(\"a\",end='')\n    else:\n        print(\"b\",end='')\n    finally:\n        print(\"c\",end='')\n\nf(1)\nf(0)\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\ndef f(x):\n    try:\n        x = x / x\n    except:\n        print(\"a\",end='')\n    else:\n        print(\"b\",end='')\n    finally:\n        print(\"c\",end='')\n\nf(1)\nf(0)\n```",
                     "options": [
-                        "it will print bcac",
-                        "it will print bcbc",
-                        "it will print acac",
-                        "it will raise an unhandled exception"
+                        "wydrukuje bcac",
+                        "wydrukuje bcbc",
+                        "wydrukuje wg",
+                        "zgłosi nieobsługiwany wyjątek"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 },
                 {
                     "id": "js-pe2-m3-015",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\ntry:\n    raise Exception(1,2,3)\nexcept Exception as e:\n    print(len(e.args))\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\ntry:\n    raise Exception(1,2,3)\nexcept Exception as e:\n    print(len(e.args))\n```",
                     "options": [
-                        "it will print 3",
-                        "it will print 2",
-                        "it will print 1",
-                        "it will raise an unhandled exception"
+                        "wydrukuje 3",
+                        "wydrukuje 2",
+                        "wydrukuje 1",
+                        "zgłosi nieobsługiwany wyjątek"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 },
                 {
                     "id": "js-pe2-m3-016",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass Ex(Exception)\n    def __init__(self, msg):\n        Exception.__init__(self, msg + msg)\n        self.args = (msg,)\n\ntry:\n    raise Ex('ex')\nexcept Ex as e:\n    print(e)\nexcept Exception as e:\n    print(e)\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\nclass Ex(Exception)\n    def __init__(self, msg):\n        Exception.__init__(self, msg + msg)\n        self.args = (msg,)\n\ntry:\n    raise Ex('ex')\nexcept Ex as e:\n    print(e)\nexcept Exception as e:\n    print(e)\n```",
                     "options": [
-                        "it will print ex",
-                        "it will print exex",
-                        "it will print an empty line",
-                        "it will raise an unhandled exception"
+                        "wydrukuje np",
+                        "wydrukuje exex",
+                        "wydrukuje pustą linię",
+                        "zgłosi nieobsługiwany wyjątek"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 },
                 {
                     "id": "js-pe2-m3-017",
                     "type": "single",
-                    "question": "What will be the result of executing the following code?\n\n```python\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n\nfor x in I():\n    print(x,end='')\n```",
+                    "question": "Jaki będzie wynik wykonania poniższego kodu?\n\n```python\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n\nfor x in I():\n    print(x,end='')\n```",
                     "options": [
-                        "it will print abc",
-                        "it will print 0",
-                        "it will raise an handled exception",
-                        "it will raise an unhandled exception"
+                        "wydrukuje abc",
+                        "wypisze 0",
+                        "zgłosi obsługiwany wyjątek",
+                        "zgłosi nieobsługiwany wyjątek"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The code will raise a TypeError exception, because the __init__() method takes only one argument (self), but two positional arguments are passed upon object a instantiation (self and 1). The print() function is not executed."
+                    "explanation": "Kod zgłosi wyjątek TypeError, ponieważ metoda __init__() przyjmuje tylko jeden argument (self), ale do instancji obiektu przekazywane są dwa argumenty pozycyjne (self i 1). Funkcja print() nie jest wykonywana."
                 }
             ]
         },
@@ -4350,7 +4350,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-m4-001",
                     "type": "single",
-                    "question": "What keyword would you use to define an anonymous function?",
+                    "question": "Jakiego słowa kluczowego użyłbyś do zdefiniowania funkcji anonimowej?",
                     "options": [
                         "lambda",
                         "def",
@@ -4360,28 +4360,28 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that in Python, a lambda function is a single line function declared with no name – in other words anonymous."
+                    "explanation": "Pamiętaj, że w Pythonie funkcja lambda to funkcja jednoliniowa zadeklarowana bez nazwy – innymi słowy anonimowa."
                 },
                 {
                     "id": "js-pe2-m4-002",
                     "type": "multiple",
-                    "question": "Select the true statements. (Select two answers)",
+                    "question": "Wybierz stwierdzenia Prawdziwe. (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "The lambda function can accept any number of arguments",
-                        "The lambda function can evaluate only one expression",
-                        "The lambda function can accept a maximum of two arguments",
-                        "The lambda function can evaluate multiple expressions"
+                        "Funkcja lambda może przyjąć dowolną liczbę argumentów",
+                        "Funkcja lambda może obliczyć tylko jedno wyrażenie",
+                        "Funkcja lambda może przyjąć maksymalnie dwa argumenty",
+                        "Funkcja lambda może oceniać wiele wyrażeń"
                     ],
                     "correctAnswers": [
                         0,
                         1
                     ],
-                    "explanation": "Remember that a lambda function can have any number of arguments, but it can only evaluate a single expression."
+                    "explanation": "Pamiętaj, że funkcja lambda może mieć dowolną liczbę argumentów, ale może ocenić tylko jedno wyrażenie."
                 },
                 {
                     "id": "js-pe2-m4-003",
                     "type": "single",
-                    "question": "Look at the code below:\n\n```python\nmy_list = [1, 2, 3]\n# Insert line of code here.\nprint(foo)\n```",
+                    "question": "Spójrz na poniższy kod:\n\n```python\nmy_list = [1, 2, 3]\n# Insert line of code here.\nprint(foo)\n```",
                     "options": [
                         "foo = tuple(map(lambda x: x**x, my_list))",
                         "foo = list(map(lambda x: x**x, my_list))",
@@ -4391,12 +4391,12 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "In order to obtain the tuple mentioned, a map function is used. It takes the lambda function lambda x: x**x and the list my_list as arguments. It performs the exponentiation operation x**x defined within the lambda function with each of the lists elements [1, 2, 3]. The result is cast to a tuple and printed in the console."
+                    "explanation": "W celu uzyskania wspomnianej krotki wykorzystywana jest funkcja map. Jako argumenty przyjmuje funkcję lambda lambda x: x**x i listę moja_lista. Wykonuje operację potęgowania x**x zdefiniowaną w funkcji lambda dla każdego z elementów listy [1, 2, 3]. Wynik jest rzutowany na krotkę i drukowany w konsoli."
                 },
                 {
                     "id": "js-pe2-m4-004",
                     "type": "single",
-                    "question": "Look at the code below:\n\n```python\nmy_tuple = (0, 1, 2, 3, 4, 5, 6)\n# Insert line of code here.\nprint(foo)\n```",
+                    "question": "Spójrz na poniższy kod:\n\n```python\nmy_tuple = (0, 1, 2, 3, 4, 5, 6)\n# Insert line of code here.\nprint(foo)\n```",
                     "options": [
                         "foo = list(filter(lambda x: x-0 and x-1, my_tuple))",
                         "foo = tuple(filter(lambda x: x-0 and x-1, my_tuple))",
@@ -4406,57 +4406,57 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "In order to obtain the tuple mentioned, a map function is used. It takes the lambda function lambda x: x**x and the list my_list as arguments. It performs the exponentiation operation x**x defined within the lambda function with each of the lists elements [1, 2, 3]. The result is cast to a tuple and printed in the console."
+                    "explanation": "W celu uzyskania wspomnianej krotki wykorzystywana jest funkcja map. Jako argumenty przyjmuje funkcję lambda lambda x: x**x i listę moja_lista. Wykonuje operację potęgowania x**x zdefiniowaną w funkcji lambda dla każdego z elementów listy [1, 2, 3]. Wynik jest rzutowany na krotkę i drukowany w konsoli."
                 },
                 {
                     "id": "js-pe2-m4-005",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ndef I():\n    s = 'abcdef'\n    for c in s[::2]:\n        yield c\n\nfor x in I():\n    print(x, end='')\n```",
+                    "question": "Jaki jest oczekiwany wynik wykonania poniższego kodu?\n\n```python\ndef I():\n    s = 'abcdef'\n    for c in s[::2]:\n        yield c\n\nfor x in I():\n    print(x, end='')\n```",
                     "options": [
-                        "It will print ace",
-                        "It will print bdf",
-                        "It will print abcdef",
-                        "It will print an empty line"
+                        "Wydrukuje asa",
+                        "Wydrukuje bdf",
+                        "Wypisze abcdef",
+                        "Wydrukuje pustą linię"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:The code begins by executing the for x in I(): loop.It uses the x variable to iterate through what I(): yields, and outputs it on the same line due to the end='' argument in the print function.Once the I(): iterator is invoked, it initializes a string that contains the characters s = 'abcdef'.A for loop iterates though the characters within the s string using the c variable.Due to the [::2] notation, the loop will only iterate through every two characters, yielding one on each iteration. In other words, it begins on the first character, skips to the third, and finally to the fifth.Since there is no seventh character, the execution comes to an end.The characters ace are printed in the console."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Kod zaczyna się od wykonania for x w pętli I(): Używa zmiennej x do iteracji po tym, co daje I(): i wyświetla ją w tym samym wierszu ze względu na argument end='' w funkcji print. Po wywołaniu iteratora I(): inicjuje ciąg znaków zawierający znaki s = 'abcdef'. Pętla for iteruje po znakach w ciągu s za pomocą c. Ze względu na notację [::2] pętla będzie iterować tylko co dwa znaki, dając jeden przy każdej iteracji. Innymi słowy, zaczyna się od pierwszego znaku, przechodzi do trzeciego i wreszcie do piątego. Ponieważ nie ma siódmego znaku, wykonanie dobiega końca. As znaków jest drukowany w konsoli."
                 },
                 {
                     "id": "js-pe2-m4-006",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ndef fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n\nfor x in fun(2):\n    print(x, end='');\n```",
+                    "question": "Jaki jest oczekiwany wynik wykonania poniższego kodu?\n\n```python\ndef fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n\nfor x in fun(2):\n    print(x, end='');\n```",
                     "options": [
-                        "It will print ++++++",
-                        "It will print +",
-                        "It will print ++",
-                        "It will print +++"
+                        "Wydrukuje ++++++",
+                        "Wydrukuje +",
+                        "Wydrukuje ++",
+                        "Wydrukuje +++"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:The code begins by executing the for x in I(): loop.It uses the x variable to iterate through what I(): yields, and outputs it on the same line due to the end='' argument in the print function.Once the I(): iterator is invoked, it initializes a string that contains the characters s = 'abcdef'.A for loop iterates though the characters within the s string using the c variable.Due to the [::2] notation, the loop will only iterate through every two characters, yielding one on each iteration. In other words, it begins on the first character, skips to the third, and finally to the fifth.Since there is no seventh character, the execution comes to an end.The characters ace are printed in the console."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Kod zaczyna się od wykonania for x w pętli I(): Używa zmiennej x do iteracji po tym, co daje I(): i wyświetla ją w tym samym wierszu ze względu na argument end='' w funkcji print. Po wywołaniu iteratora I(): inicjuje ciąg znaków zawierający znaki s = 'abcdef'. Pętla for iteruje po znakach w ciągu s za pomocą c. Ze względu na notację [::2] pętla będzie iterować tylko co dwa znaki, dając jeden przy każdej iteracji. Innymi słowy, zaczyna się od pierwszego znaku, przechodzi do trzeciego i wreszcie do piątego. Ponieważ nie ma siódmego znaku, wykonanie dobiega końca. As znaków jest drukowany w konsoli."
                 },
                 {
                     "id": "js-pe2-m4-007",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ndef o(p):\n    def q():\n        return '*' * p\n    return q\n\nr = o(1)\ns = o(2)\nprint(r() + s())\n```",
+                    "question": "Jaki jest oczekiwany wynik wykonania poniższego kodu?\n\n```python\ndef o(p):\n    def q():\n        return '*' * p\n    return q\n\nr = o(1)\ns = o(2)\nprint(r() + s())\n```",
                     "options": [
                         "It will print ***",
                         "It will print **",
-                        "It will print *",
+                        "Wydrukuje*",
                         "It will print ****"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Let's analyze this code snippet:The code begins by executing the for x in I(): loop.It uses the x variable to iterate through what I(): yields, and outputs it on the same line due to the end='' argument in the print function.Once the I(): iterator is invoked, it initializes a string that contains the characters s = 'abcdef'.A for loop iterates though the characters within the s string using the c variable.Due to the [::2] notation, the loop will only iterate through every two characters, yielding one on each iteration. In other words, it begins on the first character, skips to the third, and finally to the fifth.Since there is no seventh character, the execution comes to an end.The characters ace are printed in the console."
+                    "explanation": "Przeanalizujmy ten fragment kodu: Kod zaczyna się od wykonania for x w pętli I(): Używa zmiennej x do iteracji po tym, co daje I(): i wyświetla ją w tym samym wierszu ze względu na argument end='' w funkcji print. Po wywołaniu iteratora I(): inicjuje ciąg znaków zawierający znaki s = 'abcdef'. Pętla for iteruje po znakach w ciągu s za pomocą c. Ze względu na notację [::2] pętla będzie iterować tylko co dwa znaki, dając jeden przy każdej iteracji. Innymi słowy, zaczyna się od pierwszego znaku, przechodzi do trzeciego i wreszcie do piątego. Ponieważ nie ma siódmego znaku, wykonanie dobiega końca. As znaków jest drukowany w konsoli."
                 },
                 {
                     "id": "js-pe2-m4-008",
                     "type": "multiple",
-                    "question": "Which of the following open modes allow you to perform read operations? (Select two answers)",
+                    "question": "Który z poniższych trybów otwartych umożliwia wykonywanie operacji odczytu? (Wybierz dwie odpowiedzi)",
                     "options": [
                         "r",
                         "r+",
@@ -4467,27 +4467,27 @@ const jezykiSkryptoweData = {
                         0,
                         1
                     ],
-                    "explanation": "These are the open modes in Python:r - opens a file for reading.w - opens a file for writing.a - opens a file for appending at the end. Creates a new file if it does not exist.t - opens in text mode.b - opens in binary mode.+ - opens a file for updating (reading and writing)."
+                    "explanation": "Oto tryby otwarcia w Pythonie:r - otwiera plik do odczytu.w - otwiera plik do zapisu.a - otwiera plik do dołączenia na końcu. Tworzy nowy plik jeśli nie istnieje.t - otwiera się w trybie tekstowym.b - otwiera się w trybie binarnym.+ - otwiera plik do aktualizacji (odczytu i zapisu)."
                 },
                 {
                     "id": "js-pe2-m4-009",
                     "type": "single",
-                    "question": "What is the meaning of the value represented by errno.EEXIST ?",
+                    "question": "Jakie jest znaczenie wartości reprezentowanej przez errno.EEXIST?",
                     "options": [
-                        "File exists",
-                        "File doesn't exist",
-                        "Bad file number",
-                        "Permission denied"
+                        "Plik istnieje",
+                        "Plik nie istnieje",
+                        "Zły numer pliku",
+                        "Odmowa pozwolenia"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that errno.EEXIST means that the file or directory trying to be created already exists."
+                    "explanation": "Pamiętaj, że errno.EEXIST oznacza, że ​​plik lub katalog, który chcesz utworzyć, już istnieje."
                 },
                 {
                     "id": "js-pe2-m4-010",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nb = bytearray(3)\nprint(b)\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nb = bytearray(3)\nprint(b)\n```",
                     "options": [
                         "bytearray(b'\\x00\\x00\\x00')",
                         "bytearray(0, 0, 0)",
@@ -4497,72 +4497,72 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
+                    "explanation": "Pamiętaj, że funkcja bytearray() tworzy tablicę bajtów. Ponieważ jako argument podano 3, tablica bajtowa b będzie składać się z 3 pustych bajtów. Następnie funkcja print wysyła je do konsoli: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-011",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nimport os\nos.mkdir('pictures')\nos.chdir('pictures')\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\nos.mkdir('tmp')\nos.chdir('../')\nprint(os.getcwd())\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nimport os\nos.mkdir('pictures')\nos.chdir('pictures')\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\nos.mkdir('tmp')\nos.chdir('../')\nprint(os.getcwd())\n```",
                     "options": [
-                        "It prints the path to the pictures directory",
-                        "It prints the path to the thumbnails directory",
-                        "It prints the path to the tmp directory",
-                        "It prints the path to the root directory"
+                        "Wypisuje ścieżkę do katalogu ze zdjęciami",
+                        "Wypisuje ścieżkę do katalogu miniatur",
+                        "Wypisuje ścieżkę do katalogu tmp",
+                        "Wypisuje ścieżkę do katalogu głównego"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
+                    "explanation": "Pamiętaj, że funkcja bytearray() tworzy tablicę bajtów. Ponieważ jako argument podano 3, tablica bajtowa b będzie składać się z 3 pustych bajtów. Następnie funkcja print wysyła je do konsoli: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-012",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nimport os\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\nsizes = ['small', 'medium', 'large']\nfor size in sizes:\n    os.mkdir(size)\nprint(os.listdir())\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nimport os\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\nsizes = ['small', 'medium', 'large']\nfor size in sizes:\n    os.mkdir(size)\nprint(os.listdir())\n```",
                     "options": [
-                        "['large', 'small', 'medium']",
-                        "['.', 'large', 'small', 'medium']",
-                        "['.', '..', 'large', 'small', 'medium']",
+                        "[„duży”, „mały”, „średni”]",
+                        "['.', 'duży', 'mały', 'średni']",
+                        "['.', '..', 'duży', 'mały', 'średni']",
                         "[]"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
+                    "explanation": "Pamiętaj, że funkcja bytearray() tworzy tablicę bajtów. Ponieważ jako argument podano 3, tablica bajtowa b będzie składać się z 3 pustych bajtów. Następnie funkcja print wysyła je do konsoli: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-013",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import date\ndate_1 = date(1992, 1, 16)\ndate_2 = date(1991, 2, 5)\nprint(date_1 - date_2)\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nfrom datetime import date\ndate_1 = date(1992, 1, 16)\ndate_2 = date(1991, 2, 5)\nprint(date_1 - date_2)\n```",
                     "options": [
                         "345 days, 0:00:00",
-                        "345 days",
+                        "345 dni",
                         "345",
                         "345, 0:00:00"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
+                    "explanation": "Pamiętaj, że funkcja bytearray() tworzy tablicę bajtów. Ponieważ jako argument podano 3, tablica bajtowa b będzie składać się z 3 pustych bajtów. Następnie funkcja print wysyła je do konsoli: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-014",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import datetime\ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%y/%B/%d %H:%M:%S'))\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nfrom datetime import datetime\ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%y/%B/%d %H:%M:%S'))\n```",
                     "options": [
-                        "19/November/27 11:27:22",
-                        "2019/Nov/27 11:27:22",
+                        "19/listopad/27 11:27:22",
+                        "2019/listopad/27 11:27:22",
                         "2019/11/27 11:27:22",
                         "19/11/27 11:27:22"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
+                    "explanation": "Pamiętaj, że funkcja bytearray() tworzy tablicę bajtów. Ponieważ jako argument podano 3, tablica bajtowa b będzie składać się z 3 pustych bajtów. Następnie funkcja print wysyła je do konsoli: bytearray(b'\\x00\\x00\\x00')."
                 },
                 {
                     "id": "js-pe2-m4-015",
                     "type": "single",
-                    "question": "Which program will produce the following output:\n\n```python\nMo Tu We Th Fr Sa Su\n```",
+                    "question": "Który program wygeneruje następujący wynik:\n\n```python\nMo Tu We Th Fr Sa Su\n```",
                     "options": [
                         "A",
                         "B",
@@ -4572,22 +4572,22 @@ const jezykiSkryptoweData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "The requested output represents the weekdays with only two letters. Therefore, the calendar.weekheader() method must receive 2 as an argument."
+                    "explanation": "Żądane dane wyjściowe reprezentują dni tygodnia za pomocą tylko dwóch liter. Dlatego metoda Calendar.weekheader() musi otrzymać jako argument wartość 2."
                 },
                 {
                     "id": "js-pe2-m4-016",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nimport calendar\nc = calendar.Calendar()\nfor weekday in c.iterweekdays():\n    print(weekday, end=\" \")\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nimport calendar\nc = calendar.Calendar()\nfor weekday in c.iterweekdays():\n    print(weekday, end=\" \")\n```",
                     "options": [
                         "0 1 2 3 4 5 6",
                         "1 2 3 4 5 6 7",
-                        "Mo Tu We Th Fr Sa Su",
-                        "Su Mo Tu We Th Fr Sa"
+                        "Mo Tu We Czw Fr Sa Su",
+                        "Su Mo Tu We Cz Fr Sa"
                     ],
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": "Remember that the bytearray() function creates an array of bytes. Since 3 is specified as an argument, the b bytearray will consist of 3 empty bytes. Then, the print function outputs them to console: bytearray(b'\\x00\\x00\\x00')."
+                    "explanation": "Pamiętaj, że funkcja bytearray() tworzy tablicę bajtów. Ponieważ jako argument podano 3, tablica bajtowa b będzie składać się z 3 pustych bajtów. Następnie funkcja print wysyła je do konsoli: bytearray(b'\\x00\\x00\\x00')."
                 }
             ]
         },
@@ -4598,7 +4598,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-001",
                     "type": "single",
-                    "question": "Knowing that a function named fun() resides in a module named mod , and was imported using the following statement:\n\n```python\nfrom mod import fun\n```",
+                    "question": "Wiedząc, że funkcja o nazwie fun() znajduje się w module o nazwie mod i została zaimportowana przy użyciu następującej instrukcji:\n\n```python\nfrom mod import fun\n```",
                     "options": [
                         "fun()",
                         "mod.fun()",
@@ -4611,12 +4611,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-002",
                     "type": "single",
-                    "question": "Given the Python code snippet below:\n\n```python\nimport random\nprint(len(dir(random)))\n```",
+                    "question": "Biorąc pod uwagę poniższy fragment kodu Pythona:\n\n```python\nimport random\nprint(len(dir(random)))\n```",
                     "options": [
-                        "A list of attributes belonging to the random module.",
-                        "The number of attributes in the random module.",
-                        "A TypeError because dir cannot be used with modules.",
-                        "The documentation string of the random module."
+                        "Lista atrybutów należących do modułu losowego.",
+                        "Liczba atrybutów w module losowym.",
+                        "TypeError, ponieważ dir nie może być używany z modułami.",
+                        "Ciąg dokumentacji modułu losowego."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4624,7 +4624,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-003",
                     "type": "single",
-                    "question": "The compiled Python bytecode is stored in files which have their names ending with:",
+                    "question": "Skompilowany kod bajtowy Pythona jest przechowywany w plikach, których nazwy kończą się na:",
                     "options": [
                         "pyc",
                         "py",
@@ -4637,7 +4637,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-004",
                     "type": "single",
-                    "question": "Assuming that the following three files: a.py , b.py , and c.py reside in the same directory, what will be the output produced after running the c.py file?\n\n```python\n# file a.py\nprint(\"a\", end='')\n# file b.py\nimport a\nprint(\"b\", end='')\n# file c.py\nprint(\"c\", end='')\nimport a\nimport b\n```",
+                    "question": "Zakładając, że następujące trzy pliki: a.py , b.py i c.py znajdują się w tym samym katalogu, jaki będzie wynik działania po uruchomieniu pliku c.py?\n\n```python\n# file a.py\nprint(\"a\", end='')\n# file b.py\nimport a\nprint(\"b\", end='')\n# file c.py\nprint(\"c\", end='')\nimport a\nimport b\n```",
                     "options": [
                         "cab",
                         "bc",
@@ -4650,7 +4650,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-005",
                     "type": "single",
-                    "question": "If the following line of code is at the end of a Python script named calculator.py , what will be the output when this script is run directly?\n\n```python\nprint(__name__)\n```",
+                    "question": "Jeśli następujący wiersz kodu znajduje się na końcu skryptu Pythona o nazwie kalkulator.py , jaki będzie wynik po bezpośrednim uruchomieniu tego skryptu?\n\n```python\nprint(__name__)\n```",
                     "options": [
                         "__calculator__",
                         "calculator",
@@ -4663,12 +4663,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-006",
                     "type": "single",
-                    "question": "Consider the following Python import statement in a script:\n\n```python\nfrom data.processing.analysis.v1 import compute_metrics as cm\n```",
+                    "question": "Rozważ następującą instrukcję importu języka Python w skrypcie:\n\n```python\nfrom data.processing.analysis.v1 import compute_metrics as cm\n```",
                     "options": [
-                        "Imports the compute_metrics function from the v1.py script, which is part of the analysis subpackage in the processing package inside the data package, and renames it to cm .",
-                        "Imports the v1 package from the analysis submodule, which is part of the processing function inside the data module, and renames it to compute_metrics .",
-                        "Imports the data module from the processing package, which is part of the analysis subpackage inside the v1 package, and renames it to cm .",
-                        "Imports the entire data package and renames it to compute_metrics , allowing all functions and classes within to be accessed using the prefix cm ."
+                        "Importuje funkcję compute_metrics ze skryptu v1.py, który jest częścią podpakietu analitycznego w pakiecie przetwarzania wewnątrz pakietu danych, i zmienia jej nazwę na cm .",
+                        "Importuje pakiet v1 z podmodułu analizy, który jest częścią funkcji przetwarzania wewnątrz modułu danych, i zmienia jego nazwę na compute_metrics .",
+                        "Importuje moduł danych z pakietu przetwarzania, który jest częścią podpakietu analizy w pakiecie v1, i zmienia jego nazwę na cm .",
+                        "Importuje cały pakiet danych i zmienia jego nazwę na compute_metrics , umożliwiając dostęp do wszystkich funkcji i klas w ramach pakietu za pomocą przedrostka cm ."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4676,12 +4676,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-007",
                     "type": "single",
-                    "question": "Given the following Python code segment:\n\n```python\ntry:\n   # Code that may raise an exception\n   risky_call()\nexcept ValueError:\n   print(\"Caught ValueError\")\nexcept TypeError:\n   print(\"Caught TypeError\")\nexcept Exception:\n   print(\"Caught a different exception\")\n```",
+                    "question": "Biorąc pod uwagę następujący segment kodu Pythona:\n\n```python\ntry:\n   # Code that may raise an exception\n   risky_call()\nexcept ValueError:\n   print(\"Caught ValueError\")\nexcept TypeError:\n   print(\"Caught TypeError\")\nexcept Exception:\n   print(\"Caught a different exception\")\n```",
                     "options": [
-                        "One or more except: blocks will be executed.",
-                        "Not more than one except: block will be executed.",
-                        "None of the except: blocks will be executed.",
-                        "Exactly one except: block will be executed."
+                        "Jeden lub więcej wyjątków: wykonane zostaną bloki.",
+                        "Nie więcej niż jeden z wyjątkiem: blok zostanie wykonany.",
+                        "Żaden z wyjątkiem: bloków nie zostanie wykonany.",
+                        "Dokładnie jeden z wyjątkiem: blok zostanie wykonany."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4689,12 +4689,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-008",
                     "type": "single",
-                    "question": "Consider the following Python code:\n\n```python\ntry:\n    raise Exception(\"An error occurred\")\nexcept ValueError as ve:\n    print(\"ValueError:\", str(ve))\nexcept BaseException as be:\n    print(\"BaseException:\", str(be))\nexcept:\n    print(\"Caught some other exception\")\n```",
+                    "question": "Rozważ następujący kod Pythona:\n\n```python\ntry:\n    raise Exception(\"An error occurred\")\nexcept ValueError as ve:\n    print(\"ValueError:\", str(ve))\nexcept BaseException as be:\n    print(\"BaseException:\", str(be))\nexcept:\n    print(\"Caught some other exception\")\n```",
                     "options": [
-                        "ValueError: An error occurred",
-                        "BaseException: An error occurred",
-                        "Caught some other exception",
-                        "No output; an unhandled exception will terminate the program"
+                        "ValueError: Wystąpił błąd",
+                        "BaseException: Wystąpił błąd",
+                        "Złapałem inny wyjątek",
+                        "Brak wyjścia; nieobsługiwany wyjątek zakończy działanie programu"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4702,12 +4702,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-009",
                     "type": "single",
-                    "question": "Review the Python code below:\n\n```python\ntry:\n    raise Exception(\"An error has occurred\")\nexcept Exception:\n    print(\"a\")\nexcept:\n    print(\"b\")\nexcept BaseException:\n    print(\"c\")\n```",
+                    "question": "Przejrzyj poniższy kod Pythona:\n\n```python\ntry:\n    raise Exception(\"An error has occurred\")\nexcept Exception:\n    print(\"a\")\nexcept:\n    print(\"b\")\nexcept BaseException:\n    print(\"c\")\n```",
                     "options": [
-                        "The code will print \"c\"",
-                        "The code will print \"a\"",
-                        "The code will print \"b\"",
-                        "The code will cause a syntax error"
+                        "Kod wyświetli „c”",
+                        "Kod wyświetli „a”",
+                        "Kod wyświetli „b”",
+                        "Kod spowoduje błąd składniowy"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4715,12 +4715,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-010",
                     "type": "single",
-                    "question": "Analyze the Python statement below:\n\n```python\nwith open('data.csv', 'r') as file:\n    for record in file:\n```",
+                    "question": "Przeanalizuj poniższą instrukcję Pythona:\n\n```python\nwith open('data.csv', 'r') as file:\n    for record in file:\n```",
                     "options": [
-                        "The code is valid because the open function with 'r' mode returns an iterable file object.",
-                        "The code may be valid if record is predefined as a list before the loop.",
-                        "The code is invalid because the open function with 'r' mode returns nothing.",
-                        "The code is invalid because the open function with 'r' mode returns a non-iterable object."
+                        "Kod jest prawidłowy, ponieważ funkcja open w trybie „r” zwraca iterowalny obiekt pliku.",
+                        "Kod może być ważny, jeśli rekord jest predefiniowany jako lista przed pętlą.",
+                        "Kod jest nieprawidłowy, ponieważ funkcja open w trybie „r” nic nie zwraca.",
+                        "Kod jest nieprawidłowy, ponieważ funkcja open w trybie „r” zwraca obiekt, którego nie można iterować."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4728,12 +4728,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-011",
                     "type": "single",
-                    "question": "Examine the Python assertion statement provided:\n\n```python\nassert var > 0\n```",
+                    "question": "Sprawdź dostarczoną instrukcję asercji Pythona:\n\n```python\nassert var > 0\n```",
                     "options": [
-                        "It will raise an AssertionError if var is less than or equal to 0.",
-                        "It will raise an AssertionError if var is greater than 0.",
-                        "It will do nothing regardless of the value of var .",
-                        "It will output the value of var if it is greater than 0."
+                        "Zgłosi błąd AssertionError, jeśli var jest mniejszy lub równy 0.",
+                        "Zgłosi błąd AssertionError, jeśli var jest większy niż 0.",
+                        "Nic nie zrobi niezależnie od wartości var .",
+                        "Wyświetli wartość var, jeśli jest większa niż 0."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4741,12 +4741,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-012",
                     "type": "single",
-                    "question": "Given the Python code segment below:\n\n```python\nx = r\"\\\"\nprint(len(x))\n```",
+                    "question": "Biorąc pod uwagę poniższy segment kodu Pythona:\n\n```python\nx = r\"\\\"\nprint(len(x))\n```",
                     "options": [
-                        "The code will print 3, as the raw string treats backslashes as literal characters.",
-                        "The code will print 1, as the triple backslash in a raw string represents a single backslash.",
-                        "The code will cause a syntax error due to the unescaped sequence at the end of the raw string.",
-                        "The code will print 4, as the raw string preserves the backslashes and the ending double quote is considered part of the string."
+                        "Kod wyświetli 3, ponieważ surowy ciąg znaków traktuje ukośniki odwrotne jako znaki dosłowne.",
+                        "Kod wyświetli 1, ponieważ potrójny ukośnik odwrotny w surowym ciągu reprezentuje pojedynczy ukośnik odwrotny.",
+                        "Kod spowoduje błąd składni z powodu sekwencji bez zmiany znaczenia na końcu nieprzetworzonego ciągu.",
+                        "Kod wyświetli 4, ponieważ surowy ciąg znaków zachowuje ukośniki odwrotne, a kończący podwójny cudzysłów jest uważany za część ciągu."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4754,12 +4754,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-013",
                     "type": "single",
-                    "question": "Given the Python code segment below:\n\n```python\nx = \"\\//\nprint(len(x))\n```",
+                    "question": "Biorąc pod uwagę poniższy segment kodu Pythona:\n\n```python\nx = \"\\//\nprint(len(x))\n```",
                     "options": [
-                        "The code will output 4, as there are four characters in the string, with the backslash escaping the following forward slash.",
-                        "The code will output 3, recognizing the sequence of two backslashes as a single escaped backslash and two forward slashes.",
-                        "The code will output 2, as the double backslash represents a single backslash and the double forward slashes are combined.",
-                        "The code will cause a syntax error due to an improper sequence of escape characters."
+                        "Kod wyświetli 4, ponieważ w ciągu znajdują się cztery znaki, a ukośnik odwrotny będzie stanowić ucieczkę przed następującym ukośnikiem.",
+                        "Kod wyświetli 3, rozpoznając sekwencję dwóch ukośników odwrotnych jako pojedynczy ukośnik odwrotny i dwa ukośniki do przodu.",
+                        "Kod wyświetli wartość 2, ponieważ podwójny ukośnik odwrotny reprezentuje pojedynczy ukośnik odwrotny, a podwójne ukośniki do przodu są łączone.",
+                        "Kod spowoduje błąd składniowy z powodu nieprawidłowej sekwencji znaków ucieczki."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4767,12 +4767,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-014",
                     "type": "single",
-                    "question": "Consider the Python code provided below:\n\n```python\nprint(chr(ord('a') + 1))\n```",
+                    "question": "Rozważ kod Pythona podany poniżej:\n\n```python\nprint(chr(ord('a') + 1))\n```",
                     "options": [
-                        "The code will print \"b\" as it takes the Unicode code point of 'a', adds 1, and converts it back to a character.",
-                        "The code will print \"A\" because the addition operation converts the lowercase 'a' to an uppercase 'A' without changing its position in the alphabet.",
-                        "The code will print \"a\" because the addition operation does not affect the character.",
-                        "The code will cause a syntax error because you cannot add a number to a character's ord() value."
+                        "Kod wyświetli „b”, ponieważ pobierze punkt kodowy Unicode „a”, doda 1 i zamieni go z powrotem na znak.",
+                        "Kod wyświetli „A”, ponieważ operacja dodawania konwertuje małą literę „a” na wielką literę „A” bez zmiany jej pozycji w alfabecie.",
+                        "Kod wyświetli „a”, ponieważ operacja dodawania nie wpływa na znak.",
+                        "Kod spowoduje błąd składniowy, ponieważ nie można dodać liczby do wartości or() znaku."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4780,12 +4780,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-015",
                     "type": "single",
-                    "question": "Consider the following Python code snippet:\n\n```python\nprint(int(\"1.0\"))\n```",
+                    "question": "Rozważ następujący fragment kodu Pythona:\n\n```python\nprint(int(\"1.0\"))\n```",
                     "options": [
-                        "The code will print 1 because it converts the string \"1.0\" to an integer.",
-                        "The code will print 1.0 as it maintains the floating-point format.",
-                        "The code will cause a ValueError because \"1.0\" is not a valid literal for the int() constructor without prior conversion to a float.",
-                        "The code will cause a TypeError because strings cannot be converted to integers directly when they represent a float."
+                        "Kod wyświetli 1, ponieważ konwertuje ciąg „1.0” na liczbę całkowitą.",
+                        "Kod wydrukuje 1.0, ponieważ zachowuje format zmiennoprzecinkowy.",
+                        "Kod spowoduje błąd wartości, ponieważ „1.0” nie jest prawidłowym literałem dla konstruktora int() bez wcześniejszej konwersji na wartość zmiennoprzecinkową.",
+                        "Kod spowoduje błąd TypeError, ponieważ ciągów znaków nie można bezpośrednio przekonwertować na liczby całkowite, gdy reprezentują one liczbę zmiennoprzecinkową."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4793,7 +4793,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-016",
                     "type": "single",
-                    "question": "If the class constructor is declared in the following way:\n\n```python\nclass Class:\n    def __init__(self, val=0):\n        pass\n```",
+                    "question": "Jeśli konstruktor klasy zostanie zadeklarowany w następujący sposób:\n\n```python\nclass Class:\n    def __init__(self, val=0):\n        pass\n```",
                     "options": [
                         "object = Class(1, 2)",
                         "object = Class(None)",
@@ -4806,12 +4806,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-017",
                     "type": "single",
-                    "question": "Consider the Python class CustomNumber and the subsequent operations performed on its instance:\n\n```python\nclass CustomNumber:\n    def __init__(self, value=1.5):\n        self.value = value\n\n    def increment(self, increase=2):\n        self.value -= increase\n        return self.value\n\nnum_instance = CustomNumber()\nnum_alias = num_instance\nnum_alias.increment()\n\nprint(num_instance.value)\n```",
+                    "question": "Rozważmy klasę Pythona CustomNumber i kolejne operacje wykonywane na jej instancji:\n\n```python\nclass CustomNumber:\n    def __init__(self, value=1.5):\n        self.value = value\n\n    def increment(self, increase=2):\n        self.value -= increase\n        return self.value\n\nnum_instance = CustomNumber()\nnum_alias = num_instance\nnum_alias.increment()\n\nprint(num_instance.value)\n```",
                     "options": [
                         "0.5",
                         "-0.5",
                         "3.5",
-                        "A TypeError is raised."
+                        "Wystąpił błąd TypeError."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4819,7 +4819,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-018",
                     "type": "single",
-                    "question": "What is the expected output of the following code?\n\n```python\nclass A:\n    A = 1\n    def __init__(self):\n        self.a = 0\n\nprint(hasattr(A, 'a'))\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nclass A:\n    A = 1\n    def __init__(self):\n        self.a = 0\n\nprint(hasattr(A, 'a'))\n```",
                     "options": [
                         "False",
                         "True",
@@ -4832,7 +4832,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-019",
                     "type": "single",
-                    "question": "What will the following Python code output?\n\n```python\nclass Parent:\n    pass\n\nclass Uncle(Parent):\n    pass\n\nclass Child(Uncle):\n    pass\n\nclass Cousin(Parent):\n    pass\n\nprint(issubclass(Child, Cousin), issubclass(Cousin, Uncle))\n```",
+                    "question": "Co wyświetli następujący kod Pythona?\n\n```python\nclass Parent:\n    pass\n\nclass Uncle(Parent):\n    pass\n\nclass Child(Uncle):\n    pass\n\nclass Cousin(Parent):\n    pass\n\nprint(issubclass(Child, Cousin), issubclass(Cousin, Uncle))\n```",
                     "options": [
                         "True, True",
                         "True, False",
@@ -4845,12 +4845,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-020",
                     "type": "single",
-                    "question": "What is the sys.stdout stream in Python typically associated with?",
+                    "question": "Z czym zazwyczaj kojarzy się strumień sys.stdout w Pythonie?",
                     "options": [
-                        "The screen",
-                        "The keyboard",
-                        "A null device",
-                        "The printer"
+                        "Ekran",
+                        "Klawiatura",
+                        "Żadne urządzenie",
+                        "Drukarka"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4858,12 +4858,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-021",
                     "type": "single",
-                    "question": "What will be the result of running the following code?\n\n```python\nclass A:\n    def __init__(self, v):\n        self.__a = v + 1\n\nclass B(A):\n    def __init__(self, v):\n        super().__init__(v)\n        self.__a += 1\n\nb = B(0)\nprint(b._A__a)\n```",
+                    "question": "Jaki będzie wynik uruchomienia poniższego kodu?\n\n```python\nclass A:\n    def __init__(self, v):\n        self.__a = v + 1\n\nclass B(A):\n    def __init__(self, v):\n        super().__init__(v)\n        self.__a += 1\n\nb = B(0)\nprint(b._A__a)\n```",
                     "options": [
                         "1",
                         "2",
                         "3",
-                        "AttributeError is raised"
+                        "Zgłoszono błąd atrybutu"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4871,12 +4871,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-022",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\nclass A:\n    def __init__(self):\n        pass\n\na = A(1)\nprint(hasattr(a, 'A'))\n```",
+                    "question": "Jaki jest oczekiwany wynik wykonania poniższego kodu?\n\n```python\nclass A:\n    def __init__(self):\n        pass\n\na = A(1)\nprint(hasattr(a, 'A'))\n```",
                     "options": [
-                        "The code will raise an exception",
-                        "The code will print True",
-                        "The code will print False",
-                        "The code will print 1"
+                        "Kod zgłosi wyjątek",
+                        "Kod wyświetli wartość True",
+                        "Kod wyświetli Fałsz",
+                        "Kod zostanie wydrukowany 1"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4884,12 +4884,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-023",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\nclass A:\n    def a(self):\n        print('a')\n\nclass B:\n    def a(self):\n        print('b')\n\nclass C(B, A):\n    def c(self):\n        self.a()\n\no = C()\no.c()\n```",
+                    "question": "Jaki jest oczekiwany wynik wykonania poniższego kodu?\n\n```python\nclass A:\n    def a(self):\n        print('a')\n\nclass B:\n    def a(self):\n        print('b')\n\nclass C(B, A):\n    def c(self):\n        self.a()\n\no = C()\no.c()\n```",
                     "options": [
-                        "The code will print b",
-                        "The code will print c",
-                        "The code will print a",
-                        "The code will raise an exception"
+                        "Kod zostanie wydrukowany b",
+                        "Kod zostanie wydrukowany c",
+                        "Kod wyświetli a",
+                        "Kod zgłosi wyjątek"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4897,12 +4897,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-024",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ntry:\n    raise Exception(1, 2, 3, (4), \"A\",)\nexcept Exception as e:\n     print(len(e.args))\n```",
+                    "question": "Jaki jest oczekiwany wynik wykonania poniższego kodu?\n\n```python\ntry:\n    raise Exception(1, 2, 3, (4), \"A\",)\nexcept Exception as e:\n     print(len(e.args))\n```",
                     "options": [
                         "5",
                         "4",
                         "6",
-                        "An exception will be raised"
+                        "Zostanie zgłoszony wyjątek"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4910,12 +4910,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-025",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\ndef my_fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n\nfor x in my_fun(2):\n    print(x, end='')\n```",
+                    "question": "Jaki jest oczekiwany wynik wykonania poniższego kodu?\n\n```python\ndef my_fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n\nfor x in my_fun(2):\n    print(x, end='')\n```",
                     "options": [
-                        "The code will print ++++++",
-                        "The code will print +++",
-                        "The code will print ++",
-                        "The code will print +"
+                        "Kod zostanie wydrukowany ++++++",
+                        "Kod zostanie wydrukowany +++",
+                        "Kod wyświetli ++",
+                        "Kod zostanie wydrukowany +"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4923,12 +4923,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-026",
                     "type": "single",
-                    "question": "What is the expected result of executing the following code?\n\n```python\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n\nfor x in I():\n    print(x, end='')\n```",
+                    "question": "Jaki jest oczekiwany wynik wykonania poniższego kodu?\n\n```python\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n\nfor x in I():\n    print(x, end='')\n```",
                     "options": [
-                        "The code will print abc",
-                        "The code will print 012",
-                        "The code will print cba",
-                        "The code will print 210"
+                        "Kod wyświetli abc",
+                        "Kod wyświetli 012",
+                        "Kod wyświetli cba",
+                        "Kod wyświetli 210"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4936,7 +4936,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-027",
                     "type": "single",
-                    "question": "What will be the output of the following code?\n\n```python\ndef generate_pattern(n):\n    def create_pattern():\n        return '**' * n\n\n    return create_pattern\n\npattern1 = generate_pattern(1)\npattern2 = generate_pattern(2)\nprint(pattern1() + pattern2())\n```",
+                    "question": "Jaki będzie wynik poniższego kodu?\n\n```python\ndef generate_pattern(n):\n    def create_pattern():\n        return '**' * n\n\n    return create_pattern\n\npattern1 = generate_pattern(1)\npattern2 = generate_pattern(2)\nprint(pattern1() + pattern2())\n```",
                     "options": [
                         "**",
                         "***",
@@ -4949,12 +4949,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-028",
                     "type": "single",
-                    "question": "If s is a stream opened in read mode, the following line of code do?\n\n```python\nq = s.read(-1)\n```",
+                    "question": "Jeśli s jest strumieniem otwartym w trybie odczytu, co zrobi następujący wiersz kodu?\n\n```python\nq = s.read(-1)\n```",
                     "options": [
-                        "It reads the entire contents of the stream s .",
-                        "It reads nothing from the stream s .",
-                        "It reads one character from the stream s .",
-                        "It raises an error because a negative value is provided as an argument."
+                        "Odczytuje całą zawartość strumienia s .",
+                        "Nie odczytuje niczego ze strumienia s .",
+                        "Odczytuje jeden znak ze strumienia s .",
+                        "Zgłasza błąd, ponieważ jako argument podano wartość ujemną."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4962,12 +4962,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-029",
                     "type": "single",
-                    "question": "Assuming that the open() invocation has gone successfully, the following snippet:\n\n```python\nfor x in open('file', 'rt'):\n    print(x)\n```",
+                    "question": "Zakładając, że wywołanie open() przebiegło pomyślnie, następujący fragment:\n\n```python\nfor x in open('file', 'rt'):\n    print(x)\n```",
                     "options": [
-                        "read the file line by line",
-                        "read the file character by character",
-                        "read the whole file at once",
-                        "cause an exception"
+                        "czytaj plik linia po linii",
+                        "czytaj plik znak po znaku",
+                        "przeczytaj cały plik na raz",
+                        "spowodować wyjątek"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4975,12 +4975,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-030",
                     "type": "single",
-                    "question": "If you want to fill a byte array with data read in from a stream, which method can you use?",
+                    "question": "Jeśli chcesz wypełnić tablicę bajtów danymi wczytanymi ze strumienia, jakiej metody możesz użyć?",
                     "options": [
-                        "The readinto() method",
-                        "The readbytes() method",
-                        "The readfrom() method",
-                        "The read() method"
+                        "Metoda readinto().",
+                        "Metoda readbytes().",
+                        "Metoda readfrom().",
+                        "Metoda read()."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -4988,10 +4988,10 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-031",
                     "type": "single",
-                    "question": "Which of the following commands would you use to check pip 's version? (Select two answers)",
+                    "question": "Którego z poniższych poleceń użyłbyś do sprawdzenia wersji pip? (Wybierz dwie odpowiedzi)",
                     "options": [
                         "pip --version",
-                        "pip3 --version",
+                        "pip3 – wersja",
                         "pip version",
                         "pip-version"
                     ],
@@ -5001,7 +5001,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-032",
                     "type": "single",
-                    "question": "Which of the following commands can be used with pip to uninstall a specific Python package?",
+                    "question": "Którego z poniższych poleceń można użyć z pip, aby odinstalować określony pakiet Pythona?",
                     "options": [
                         "pip uninstall package_name",
                         "pip erase package_name",
@@ -5014,7 +5014,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-033",
                     "type": "single",
-                    "question": "Look at the following code:\n\n```python\nnumbers = [0, 2, 7, 9, 10]\n# Insert line of code here.\nprint(list(foo))\n```",
+                    "question": "Spójrz na następujący kod:\n\n```python\nnumbers = [0, 2, 7, 9, 10]\n# Insert line of code here.\nprint(list(foo))\n```",
                     "options": [
                         "foo = map(lambda num: num ** 2, numbers)",
                         "foo = filter(lambda num: num ** 2, numbers)",
@@ -5027,7 +5027,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-034",
                     "type": "single",
-                    "question": "Look at the following code:\n\n```python\nnumbers = [i*i for i in range(5)]\n# Insert line of code here.\nprint(foo)\n```",
+                    "question": "Spójrz na następujący kod:\n\n```python\nnumbers = [i*i for i in range(5)]\n# Insert line of code here.\nprint(foo)\n```",
                     "options": [
                         "foo = list(filter(lambda x: x % 2, numbers))",
                         "foo = list(map(lambda x: x % 2, numbers))",
@@ -5040,7 +5040,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-035",
                     "type": "single",
-                    "question": "Look at the code below:\n\n```python\nimport random\n#\n# Insert lines of code here.\n#\nprint(a, b, c)\n```",
+                    "question": "Spójrz na poniższy kod:\n\n```python\nimport random\n#\n# Insert lines of code here.\n#\nprint(a, b, c)\n```",
                     "options": [
                         "A",
                         "B",
@@ -5053,12 +5053,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-036",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nimport os\nos.mkdir('pictures')\nos.chdir('pictures')\nprint(os.getcwd())\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nimport os\nos.mkdir('pictures')\nos.chdir('pictures')\nprint(os.getcwd())\n```",
                     "options": [
-                        "The code will print the path to the created directory",
-                        "The code will print the name of the created directory",
-                        "The code will print the content of the created directory",
-                        "The code will print the owner of the created directory"
+                        "Kod wydrukuje ścieżkę do utworzonego katalogu",
+                        "Kod wydrukuje nazwę utworzonego katalogu",
+                        "Kod wydrukuje zawartość utworzonego katalogu",
+                        "Kod wyświetli właściciela utworzonego katalogu"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -5066,12 +5066,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-037",
                     "type": "single",
-                    "question": "What information can be read using the uname function provided by the os module? (Select two answers)",
+                    "question": "Jakie informacje można odczytać korzystając z funkcji uname udostępnianej przez moduł os? (Wybierz dwie odpowiedzi)",
                     "options": [
-                        "Operating system name",
-                        "Hardware identifier",
-                        "Last login date",
-                        "Current path"
+                        "Nazwa systemu operacyjnego",
+                        "Identyfikator sprzętu",
+                        "Ostatnia data logowania",
+                        "Aktualna ścieżka"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -5079,12 +5079,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-038",
                     "type": "single",
-                    "question": "What is the expected result of the following code?\n\n```python\nfrom datetime import datetime\ndatetime_1 = datetime(2019, 11, 27, 11, 27, 22)\ndatetime_2 = datetime(2019, 11, 27, 0, 0, 0)\nprint(datetime_1 - datetime_2)\n```",
+                    "question": "Jaki jest oczekiwany wynik poniższego kodu?\n\n```python\nfrom datetime import datetime\ndatetime_1 = datetime(2019, 11, 27, 11, 27, 22)\ndatetime_2 = datetime(2019, 11, 27, 0, 0, 0)\nprint(datetime_1 - datetime_2)\n```",
                     "options": [
                         "11:27:22",
                         "0 days, 11:27:22",
-                        "11 hours, 27 minutes, 22 seconds",
-                        "0 days"
+                        "11 godzin, 27 minut i 22 sekund",
+                        "0 dni"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -5092,7 +5092,7 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-039",
                     "type": "single",
-                    "question": "If you want to calculate the date that is 30 days after the current date, which of the following code snippets would you use?",
+                    "question": "Jeśli chcesz obliczyć datę przypadającą 30 dni po bieżącej dacie, którego z poniższych fragmentów kodu byś użył?",
                     "options": [
                         "current_date + timedelta(days=30)",
                         "current_date + timedelta(days-=30)",
@@ -5105,12 +5105,12 @@ const jezykiSkryptoweData = {
                 {
                     "id": "js-pe2-final-040",
                     "type": "single",
-                    "question": "What is the expected result of executing the following Python code?\n\n```python\nimport calendar\ncalendar.setfirstweekday(calendar.FRIDAY)\nprint(calendar.weekheader(2))\n```",
+                    "question": "Jaki jest oczekiwany wynik wykonania następującego kodu Pythona?\n\n```python\nimport calendar\ncalendar.setfirstweekday(calendar.FRIDAY)\nprint(calendar.weekheader(2))\n```",
                     "options": [
-                        "It will only print the names of the first two days of the week starting with Friday.",
-                        "It will only print the names of the days of the week from Friday to Sunday.",
-                        "It will raise an error because calendar.weekheader() does not accept arguments.",
-                        "It will print the names of all the days of the week in a shorter format."
+                        "Wydrukuje tylko nazwy pierwszych dwóch dni tygodnia zaczynającego się od piątku.",
+                        "Wydrukuje tylko nazwy dni tygodnia od piątku do niedzieli.",
+                        "Zgłosi błąd, ponieważ Calendar.weekheader() nie akceptuje argumentów.",
+                        "Wydrukuje nazwy wszystkich dni tygodnia w krótszym formacie."
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -5118,5 +5118,5 @@ const jezykiSkryptoweData = {
             ]
         }
     ],
-    "dbVersion": 4
+    "dbVersion": 5
 };
