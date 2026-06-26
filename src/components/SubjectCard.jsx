@@ -8,9 +8,7 @@ function SubjectCard({
   animDelay,
   onTogglePassed,
   onPointerDown,
-  onPointerMove,
   onPointerUp,
-  onPointerCancel,
   isDragging,
   dragStyle
 }) {
@@ -23,9 +21,7 @@ function SubjectCard({
       className={`subject-card animate-fade-in-up ${subject.passed ? 'passed' : ''} ${isDragging ? 'is-dragging' : ''}`}
       onClick={onClick}
       onPointerDown={onPointerDown}
-      onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
-      onPointerCancel={onPointerCancel}
       data-id={subject.id}
       style={{ 
         animationDelay: animDelay,

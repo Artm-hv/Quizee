@@ -152,8 +152,6 @@ function App() {
     if (e.pointerType === 'mouse' && e.button !== 0) return;
     const startX = e.clientX;
     const startY = e.clientY;
-    const target = e.currentTarget;
-    const pointerId = e.pointerId;
     
     const timer = setTimeout(() => {
       if (navigator.vibrate) navigator.vibrate(50);
@@ -161,54 +159,14 @@ function App() {
       setPointerStart({ x: startX, y: startY });
       setPointerCurrent({ x: startX, y: startY });
       setIsDraggingActive(true);
-      try {
-        target.setPointerCapture(pointerId);
-      } catch (err) {}
     }, 400);
     
     pressStateRef.current = {
       timer,
       id,
       startX,
-      startY,
-      target,
-      pointerId
+      startY
     };
-  };
-
-  const handlePointerMove = (e) => {
-    const state = pressStateRef.current;
-    if (!state) return;
-    
-    const dx = e.clientX - state.startX;
-    const dy = e.clientY - state.startY;
-    
-    if (!isDraggingActive && draggedId !== state.id) {
-      if (Math.hypot(dx, dy) > 10) {
-        clearTimeout(state.timer);
-      }
-    }
-    
-    if (draggedId === state.id) {
-      e.preventDefault();
-      setPointerCurrent({ x: e.clientX, y: e.clientY });
-      
-      const el = document.elementFromPoint(e.clientX, e.clientY);
-      const card = el ? el.closest('.subject-card') : null;
-      const targetId = card ? card.getAttribute('data-id') : null;
-      
-      if (targetId && targetId !== state.id) {
-        setSubjects(prev => {
-          const list = [...prev];
-          const idx1 = list.findIndex(s => s.id === state.id);
-          const idx2 = list.findIndex(s => s.id === targetId);
-          if (idx1 !== -1 && idx2 !== -1) {
-            [list[idx1], list[idx2]] = [list[idx2], list[idx1]];
-          }
-          return list;
-        });
-      }
-    }
   };
 
   const handlePointerUp = (e) => {
@@ -217,11 +175,40 @@ function App() {
     
     clearTimeout(state.timer);
     
-    if (draggedId === state.id) {
-      try {
-        state.target.releasePointerCapture(state.pointerId);
-      } catch (err) {}
+    // If dragging has not started yet, it is a normal click
+    if (!isDraggingActive && draggedId !== state.id) {
+      const s = subjects.find(sub => sub.id === state.id);
+      if (s) handleSelectSubject(s);
+    }
+    
+    pressStateRef.current = null;
+  };
+
+  // Robust Drag and Drop window listener effect
+  useEffect(() => {
+    if (!isDraggingActive || !draggedId) return;
+
+    const handleWindowMove = (e) => {
+      setPointerCurrent({ x: e.clientX, y: e.clientY });
       
+      const el = document.elementFromPoint(e.clientX, e.clientY);
+      const card = el ? el.closest('.subject-card') : null;
+      const targetId = card ? card.getAttribute('data-id') : null;
+      
+      if (targetId && targetId !== draggedId) {
+        setSubjects(prev => {
+          const list = [...prev];
+          const idx1 = list.findIndex(s => s.id === draggedId);
+          const idx2 = list.findIndex(s => s.id === targetId);
+          if (idx1 !== -1 && idx2 !== -1) {
+            [list[idx1], list[idx2]] = [list[idx2], list[idx1]];
+          }
+          return list;
+        });
+      }
+    };
+
+    const handleWindowUp = () => {
       setDraggedId(null);
       setIsDraggingActive(false);
       ignoreClickRef.current = true;
@@ -238,10 +225,49 @@ function App() {
         }
         return list;
       });
-    }
-    
-    pressStateRef.current = null;
-  };
+      
+      pressStateRef.current = null;
+    };
+
+    const handleWindowMoveCancel = (e) => {
+      const state = pressStateRef.current;
+      if (state && !isDraggingActive) {
+        const dx = e.clientX - state.startX;
+        const dy = e.clientY - state.startY;
+        if (Math.hypot(dx, dy) > 10) {
+          clearTimeout(state.timer);
+        }
+      }
+    };
+
+    window.addEventListener('pointermove', handleWindowMove, { passive: false });
+    window.addEventListener('pointerup', handleWindowUp);
+    window.addEventListener('pointercancel', handleWindowUp);
+
+    return () => {
+      window.removeEventListener('pointermove', handleWindowMove);
+      window.removeEventListener('pointerup', handleWindowUp);
+      window.removeEventListener('pointercancel', handleWindowUp);
+    };
+  }, [isDraggingActive, draggedId]);
+
+  // Non-dragging pointer move canceler (to cancel drag timer if user scrolls/moves mouse immediately)
+  useEffect(() => {
+    const handleMoveCancelGlobal = (e) => {
+      const state = pressStateRef.current;
+      if (state && !isDraggingActive) {
+        const dx = e.clientX - state.startX;
+        const dy = e.clientY - state.startY;
+        if (Math.hypot(dx, dy) > 10) {
+          clearTimeout(state.timer);
+        }
+      }
+    };
+    window.addEventListener('pointermove', handleMoveCancelGlobal);
+    return () => {
+      window.removeEventListener('pointermove', handleMoveCancelGlobal);
+    };
+  }, [isDraggingActive]);
 
   useEffect(() => { saveToStorage(STORAGE_KEY_SUBJECTS, subjects); }, [subjects]);
   useEffect(() => { if (progressEnabled) saveToStorage(STORAGE_KEY_PROGRESS, progressData); }, [progressData, progressEnabled]);
@@ -571,9 +597,7 @@ function App() {
                   animDelay={idx * 80}
                   onTogglePassed={handleTogglePassed}
                   onPointerDown={(e) => handlePointerDown(e, s.id)}
-                  onPointerMove={handlePointerMove}
                   onPointerUp={handlePointerUp}
-                  onPointerCancel={handlePointerUp}
                   isDragging={isDragged}
                   dragStyle={dragStyle}
                 />
