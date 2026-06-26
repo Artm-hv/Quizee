@@ -1,5 +1,4 @@
-const React = window.React;
-const { useState, useEffect, useCallback } = React;
+const { useState, useEffect, useCallback, useRef } = React;
 
 
 
@@ -105,6 +104,136 @@ function App() {
   const [incorrectData, setIncorrectData] = useState(() => loadFromStorage(STORAGE_KEY_INCORRECT, {}));
   const [quizOnlyDifficult, setQuizOnlyDifficult] = useState(false);
   const [quizOnlyIncorrect, setQuizOnlyIncorrect] = useState(false);
+
+  // Drag and Drop & Subject Completion State
+  const [draggedId, setDraggedId] = useState(null);
+  const [pointerStart, setPointerStart] = useState({ x: 0, y: 0 });
+  const [pointerCurrent, setPointerCurrent] = useState({ x: 0, y: 0 });
+  const [isDraggingActive, setIsDraggingActive] = useState(false);
+  const pressStateRef = useRef(null);
+  const ignoreClickRef = useRef(false);
+
+  const handleTogglePassed = (subjectId) => {
+    setSubjects(prev => {
+      let list = prev.map(s => s.id === subjectId ? { ...s, passed: !s.passed } : s);
+      const target = list.find(s => s.id === subjectId);
+      if (!target) return list;
+      
+      list = list.filter(s => s.id !== subjectId);
+      if (target.passed) {
+        list.push(target);
+      } else {
+        const firstPassedIdx = list.findIndex(s => s.passed);
+        if (firstPassedIdx === -1) {
+          list.push(target);
+        } else {
+          list.splice(firstPassedIdx, 0, target);
+        }
+      }
+      return list;
+    });
+    
+    // Briefly show a success toast if marked as passed
+    const targetSub = subjects.find(s => s.id === subjectId);
+    if (targetSub && !targetSub.passed) {
+      showToast(`Przedmiot "${targetSub.name}" oznaczono jako zdany!`, "success");
+    }
+  };
+
+  const handlePointerDown = (e, id) => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    const startX = e.clientX;
+    const startY = e.clientY;
+    const target = e.currentTarget;
+    const pointerId = e.pointerId;
+    
+    const timer = setTimeout(() => {
+      if (navigator.vibrate) navigator.vibrate(50);
+      setDraggedId(id);
+      setPointerStart({ x: startX, y: startY });
+      setPointerCurrent({ x: startX, y: startY });
+      setIsDraggingActive(true);
+      try {
+        target.setPointerCapture(pointerId);
+      } catch (err) {}
+    }, 400);
+    
+    pressStateRef.current = {
+      timer,
+      id,
+      startX,
+      startY,
+      target,
+      pointerId
+    };
+  };
+
+  const handlePointerMove = (e) => {
+    const state = pressStateRef.current;
+    if (!state) return;
+    
+    const dx = e.clientX - state.startX;
+    const dy = e.clientY - state.startY;
+    
+    if (!isDraggingActive && draggedId !== state.id) {
+      if (Math.hypot(dx, dy) > 10) {
+        clearTimeout(state.timer);
+      }
+    }
+    
+    if (draggedId === state.id) {
+      e.preventDefault();
+      setPointerCurrent({ x: e.clientX, y: e.clientY });
+      
+      const el = document.elementFromPoint(e.clientX, e.clientY);
+      const card = el ? el.closest('.subject-card') : null;
+      const targetId = card ? card.getAttribute('data-id') : null;
+      
+      if (targetId && targetId !== state.id) {
+        setSubjects(prev => {
+          const list = [...prev];
+          const idx1 = list.findIndex(s => s.id === state.id);
+          const idx2 = list.findIndex(s => s.id === targetId);
+          if (idx1 !== -1 && idx2 !== -1) {
+            [list[idx1], list[idx2]] = [list[idx2], list[idx1]];
+          }
+          return list;
+        });
+      }
+    }
+  };
+
+  const handlePointerUp = (e) => {
+    const state = pressStateRef.current;
+    if (!state) return;
+    
+    clearTimeout(state.timer);
+    
+    if (draggedId === state.id) {
+      try {
+        state.target.releasePointerCapture(state.pointerId);
+      } catch (err) {}
+      
+      setDraggedId(null);
+      setIsDraggingActive(false);
+      ignoreClickRef.current = true;
+      
+      setSubjects(prev => {
+        let list = [...prev];
+        let hasActiveLater = false;
+        for (let i = list.length - 1; i >= 0; i--) {
+          if (!list[i].passed) {
+            hasActiveLater = true;
+          } else if (list[i].passed && hasActiveLater) {
+            list[i] = { ...list[i], passed: false };
+          }
+        }
+        return list;
+      });
+    }
+    
+    pressStateRef.current = null;
+  };
 
   useEffect(() => { saveToStorage(STORAGE_KEY_SUBJECTS, subjects); }, [subjects]);
   useEffect(() => { if (progressEnabled) saveToStorage(STORAGE_KEY_PROGRESS, progressData); }, [progressData, progressEnabled]);
@@ -409,10 +538,39 @@ function App() {
           <StatsStrip subjects={subjects} progressData={progressData} progressEnabled={progressEnabled}/>
           
           <div className="subjects-grid">
-            {subjects.map((s, idx) => (
-              <SubjectCard key={s.id} subject={s} progressEnabled={progressEnabled} progressData={progressData}
-                onClick={() => handleSelectSubject(s)} animDelay={idx * 80}/>
-            ))}
+            {subjects.map((s, idx) => {
+              const isDragged = draggedId === s.id;
+              const dragStyle = isDragged ? {
+                position: 'relative',
+                zIndex: 1000,
+                transform: `translate3d(${pointerCurrent.x - pointerStart.x}px, ${pointerCurrent.y - pointerStart.y}px, 0)`,
+                pointerEvents: 'none',
+                boxShadow: 'var(--shadow-lg), 0 0 30px var(--accent-primary-glow)'
+              } : {};
+              return (
+                <SubjectCard 
+                  key={s.id} 
+                  subject={s} 
+                  progressEnabled={progressEnabled} 
+                  progressData={progressData}
+                  onClick={() => {
+                    if (ignoreClickRef.current) {
+                      ignoreClickRef.current = false;
+                      return;
+                    }
+                    handleSelectSubject(s);
+                  }} 
+                  animDelay={idx * 80}
+                  onTogglePassed={handleTogglePassed}
+                  onPointerDown={(e) => handlePointerDown(e, s.id)}
+                  onPointerMove={handlePointerMove}
+                  onPointerUp={handlePointerUp}
+                  onPointerCancel={handlePointerUp}
+                  isDragging={isDragged}
+                  dragStyle={dragStyle}
+                />
+              );
+            })}
           </div>
         </div>
       )}

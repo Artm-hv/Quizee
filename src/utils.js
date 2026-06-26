@@ -13,7 +13,9 @@ function getSubjectQuestions(subject) {
 }
 
 function getAllQuestions(subjectsList) {
-  return subjectsList.reduce((acc, s) => [...acc, ...getSubjectQuestions(s)], []);
+  return subjectsList
+    .filter(s => !s.passed)
+    .reduce((acc, s) => [...acc, ...getSubjectQuestions(s)], []);
 }
 
 function loadFromStorage(key, fallback) {

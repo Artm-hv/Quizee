@@ -143,6 +143,25 @@
   opacity:1
 }
 
+/* Passed Card Styles */
+.subject-card.passed {
+  opacity: 0.5;
+  filter: grayscale(40%);
+  border-color: var(--border-glass);
+}
+
+.subject-card.passed::before {
+  display: none;
+}
+
+.subject-card.passed:hover {
+  transform: translateY(-2px);
+  opacity: 0.7;
+  filter: grayscale(10%);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-glass-active);
+}
+
 .subject-card.empty-card {
   cursor:default;
   opacity:0.55
