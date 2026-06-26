@@ -52,6 +52,14 @@ function App() {
         }
         return s;
       });
+
+      // Append any new subjects from DEFAULT_SUBJECTS that are missing in saved storage
+      DEFAULT_SUBJECTS.forEach(ds => {
+        if (!data.some(s => s.id === ds.id)) {
+          console.log(`Added new subject '${ds.name}' to the active database.`);
+          data.push(ds);
+        }
+      });
     }
 
     const needsMigration = data.some(s => !s.modules);

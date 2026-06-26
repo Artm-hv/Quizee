@@ -3,5 +3,6 @@ const DEFAULT_SUBJECTS = [
   sieciKomputeroweData,
   jezykiSkryptoweData,
   systemyDynamiczneData,
-  podstawyProgramowaniaData
+  podstawyProgramowaniaData,
+  systemyOperacyjneData
 ];
