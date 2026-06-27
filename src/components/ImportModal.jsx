@@ -33,7 +33,7 @@ function ImportModal({ subjectId, moduleId, subjectName, onImport, onClose }) {
               setError(`Moduł "${mod.name}", pytanie #${j+1} — brak pól (id, type, question, correctAnswers).`);
               return;
             }
-            if (!["single","multiple","open"].includes(q.type)) {
+            if (!["single","multiple","open","yn"].includes(q.type)) {
               setError(`Moduł "${mod.name}", pytanie #${j+1} — nieprawidłowy typ: "${q.type}".`);
               return;
             }
@@ -46,7 +46,7 @@ function ImportModal({ subjectId, moduleId, subjectName, onImport, onClose }) {
             setError("Pytanie #" + (i+1) + " — brak wymaganych pól (id, type, question, correctAnswers).");
             return;
           }
-          if (!["single","multiple","open"].includes(q.type)) {
+          if (!["single","multiple","open","yn"].includes(q.type)) {
             setError("Pytanie #" + (i+1) + " — nieprawidłowy typ: \"" + q.type + "\".");
             return;
           }

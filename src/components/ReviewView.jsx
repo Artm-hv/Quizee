@@ -76,6 +76,8 @@ function ReviewView({
     ? "Wybierz jedną odpowiedź:"
     : question.type === "multiple"
     ? "Wybierz jedną lub więcej odpowiedzi:"
+    : question.type === "yn"
+    ? "Dla każdego stwierdzenia wybierz TAK lub NIE:"
     : "Wpisz odpowiedź:";
 
   return (
@@ -137,7 +139,43 @@ function ReviewView({
               <div className="moodle-q-text">{question.question}</div>
               <div className="moodle-q-instruction">{instructionLabel}</div>
 
-              {question.type !== "open" ? (
+              {question.type === "yn" ? (
+                <div className="moodle-options-list yn-mode">
+                  {question.options.map((opt, idx) => {
+                    const savedOptions = ans.selectedOptions || {};
+                    const userVal = savedOptions[idx];
+                    const correctVal = question.correctAnswers.includes(idx);
+                    const isCorrectYN = userVal === correctVal;
+                    let rowClass = "moodle-yn-option-item";
+                    rowClass += isCorrectYN ? " correct" : " incorrect";
+                    return (
+                      <div key={idx} className={rowClass}>
+                        <div className="moodle-yn-button-group">
+                          <button
+                            className={`moodle-yn-btn tak ${userVal === true ? "selected" : ""}`}
+                            disabled
+                            type="button"
+                          >
+                            TAK
+                          </button>
+                          <button
+                            className={`moodle-yn-btn nie ${userVal === false ? "selected" : ""}`}
+                            disabled
+                            type="button"
+                          >
+                            NIE
+                          </button>
+                        </div>
+                        <span className="moodle-option-letter">{getLetterPrefix(idx)}</span>
+                        <span className="moodle-option-text">{opt}</span>
+                        <span className={`yn-row-indicator ${isCorrectYN ? "correct" : "incorrect"}`}>
+                          {isCorrectYN ? " ✔" : " ✘"}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : question.type !== "open" ? (
                 <div className="moodle-options-list">
                   {question.options.map((opt, idx) => (
                     <div
@@ -148,7 +186,7 @@ function ReviewView({
                       <input
                         type={getOptionInputType()}
                         className="moodle-option-input"
-                        checked={ans.selectedOptions.includes(idx)}
+                        checked={Array.isArray(ans.selectedOptions) && ans.selectedOptions.includes(idx)}
                         disabled
                         readOnly
                       />

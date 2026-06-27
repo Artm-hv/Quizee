@@ -931,3 +931,119 @@
   border-color: #1e7e34;
   color: white;
 }
+
+/* Y/N Question Layout Styles */
+.moodle-yn-option-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  min-height: 48px;
+}
+
+.moodle-yn-option-item.correct {
+  background: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.moodle-yn-option-item.incorrect {
+  background: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.moodle-yn-button-group {
+  display: flex;
+  background: #e9ecef;
+  border-radius: 20px;
+  padding: 2px;
+  gap: 2px;
+  flex-shrink: 0;
+  border: 1px solid #ced4da;
+}
+
+.moodle-yn-btn {
+  border: none;
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: #495057;
+}
+
+.moodle-yn-btn:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.moodle-yn-btn.tak.selected {
+  background: #1177d0;
+  color: white;
+}
+
+.moodle-yn-btn.nie.selected {
+  background: #6c757d;
+  color: white;
+}
+
+/* Submitted Y/N styling overrides for visual clarity */
+.moodle-yn-option-item.correct .moodle-yn-btn.tak.selected {
+  background: #28a745;
+}
+
+.moodle-yn-option-item.incorrect .moodle-yn-btn.tak.selected {
+  background: #dc3545;
+}
+
+.moodle-yn-option-item.correct .moodle-yn-btn.nie.selected {
+  background: #28a745;
+}
+
+.moodle-yn-option-item.incorrect .moodle-yn-btn.nie.selected {
+  background: #dc3545;
+}
+
+.yn-row-indicator {
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin-left: auto;
+  flex-shrink: 0;
+  padding-left: 10px;
+}
+
+.yn-row-indicator.correct {
+  color: #28a745;
+}
+
+.yn-row-indicator.incorrect {
+  color: #dc3545;
+}
+
+@media (max-width: 576px) {
+  .moodle-yn-option-item {
+    flex-wrap: wrap;
+    padding: 12px;
+    gap: 8px;
+  }
+  .moodle-yn-button-group {
+    order: 2;
+    margin-top: 4px;
+    width: 100%;
+    justify-content: center;
+  }
+  .moodle-yn-btn {
+    flex: 1;
+    text-align: center;
+  }
+  .yn-row-indicator {
+    order: 3;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+

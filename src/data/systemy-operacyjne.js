@@ -10,7 +10,7 @@ const systemyOperacyjneData = {
                 "questions": [
                         {
                                 "id": "so-m1-001",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Które z poniższych zdań dotyczących algorytmu szeregowania O(1) są prawdziwe?",
                                 "options": [
                                         "Wymiana priorytetów zadań sprowadza się do zamiany wskaźników na tablicę aktywną i",
@@ -26,7 +26,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-002",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Określ które ze zdań dotyczące szeregowania procesów w Linuxie 2.6 są prawdziwe?",
                                 "options": [
                                         "Linux realizuje wielozadaniowość wyłącznie w oparciu o kooperacje",
@@ -40,7 +40,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-003",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Które twierdzenia odnośnie wątków i procesów w systemie Linux są prawdziwe?",
                                 "options": [
                                         "Za szeregowanie wątków odpowiada inny mechanizm jądra niż za szeregowanie procesów",
@@ -54,7 +54,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-004",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które ze zdań dotyczące szeregowania procesorów w Linuksie 2.6 są prawdziwe?",
                                 "options": [
                                         "Linuks realizuje wielozadaniowość wyłącznie w oparciu o kooperację",
@@ -72,7 +72,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-005",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które twierdzenie odnośnie wątków i procesów w systemie Linux są prawdziwe?",
                                 "options": [
                                         "Za szeregowanie wątków odpowiada inny mechanizm jądra niż za szeregowanie procesów",
@@ -89,7 +89,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-006",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z poniższych zdań dotyczących algorytmu szeregowania O(1) jest prawdziwe?",
                                 "options": [
                                         "Wymiana priorytetów zadań sprowadza się do zamiany wsk. na tab. aktywną i przeterminowaną.",
@@ -106,7 +106,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-007",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które ze zdań dot. szeregowania procesów w Linuksie 2.6 są prawdziwe?",
                                 "options": [
                                         "Linux realizuje wielozadaniowość wyłącznie w oparciu o kooperację",
@@ -124,7 +124,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-008",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które ze zadań dotyczących szeregowania procesów w Linuksie 2.6 są prawdziwe?",
                                 "options": [
                                         "Linux realizuje wielozadaniowość wyłącznie w oparci  z kooperacje",
@@ -143,7 +143,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-009",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z poniższych zadań dotyczących algorytmu szeregowania O(1) są prawdziwe ?",
                                 "options": [
                                         "Wymiana priorytetów zadań sprowadza się do zamiany wskaźników na tablicę aktywną i przeterminowaną",
@@ -160,7 +160,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-010",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje odnośnie zarządzania procesami w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "deskryptor procesu jest umieszczony na dnie jego stosu w jądrze systemu.",
@@ -177,7 +177,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-011",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje o planiście O(1) są prawdziwe:",
                                 "options": [
                                         "nowy kwant czasu dla procesu jest ustalany dopiero wtedy, gdy wszystkie procesy w systemie wyczerpią",
@@ -194,7 +194,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-012",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje o planiście CFS są prawdziwe:",
                                 "options": [
                                         "priorytety procesów są prawie niezmienne.",
@@ -211,7 +211,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-013",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące obsługi przestrzeni adresowej procesu w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "wszystkie wątki jądra korzystają z jednego, wspólnego dla nich deskryptora pamięci.",
@@ -229,7 +229,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-014",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z poniszych zda dotyczcych algorytmu szeregowania O(1) s prawdziwe?",
                                 "options": [
                                         "Wymiana priorytetw zada sprowadza si do zamiany wskanikw na tablice aktywn i przeterminowan",
@@ -247,7 +247,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-015",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre ze zda dotyczce szeregowania procesw w linuxie 2.6 s prawdziwe",
                                 "options": [
                                         "Linux realizuje wielozadaniowo w oparciu o kooperacj",
@@ -265,7 +265,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-016",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Czy twierdzenia odnonie wtkw i procesw s prawdziwe?",
                                 "options": [
                                         "Za szeregowanie wtkw odpowiada inny mechanizm ni za szeregowanie procesw",
@@ -281,7 +281,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-017",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre ze zda dotyczce szeregowania procesorw w Linuksie 2.6 s prawdziwe? ;",
                                 "options": [
                                         "Linuks realizuje wielozadaniowo wycznie w oparciu o kooperacj",
@@ -299,7 +299,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-018",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre twierdzenie odnonie wtkw i procesw w systemie Linux s prawdziwe?",
                                 "options": [
                                         "Za szeregowanie wtkw odpowiada inny mechanizm jdra ni za szeregowanie procesw",
@@ -316,7 +316,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-019",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z poniszych zda dotyczcych algorytmu szeregowania O(1) jest prawdziwe?;",
                                 "options": [
                                         "Wymiana priorytetw zada sprowadza si do zamiany wsk. na tab. aktywn i przeterminowan.",
@@ -333,7 +333,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-020",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre ze zda dot. szeregowania procesw w Linuksie 2.6 s prawdziwe?;",
                                 "options": [
                                         "Linux realizuje wielozadaniowo wycznie w oparciu o kooperacj",
@@ -351,7 +351,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-021",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre twierdzenia odnonie wtkw i procesw w systemie Linux s prawdziwe?;",
                                 "options": [
                                         "Za szeregowanie wtkw odpowiada inny mechanizm jdra ni za szeregowanie procesw. (???)",
@@ -368,7 +368,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-022",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Czy twierdzenia odnośnie wątków i procesów są prawdziwe?",
                                 "options": [
                                         "Za szeregowanie wątków odpowiada inny mechanizm niż za szeregowanie procesów",
@@ -384,7 +384,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-023",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje odnonie zarzdzania procesami w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "deskryptor procesu jest umieszczony na dnie jego stosu w jdrze systemu",
@@ -400,7 +400,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-024",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje o planicie O(1) s prawdziwe:",
                                 "options": [
                                         "nowy kwant czasu dla procesu jest ustalany dopiero wtedy, gdy wszystkie procesy w systemie wyczerpi swoje kwanty",
@@ -418,7 +418,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-025",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje o planicie CFS s prawdziwe:",
                                 "options": [
                                         "priorytety procesw s prawie niezmienne",
@@ -435,7 +435,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-026",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce obsugi przestrzeni adresowej procesu w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "wszystkie wtki jdra korzystaj z jednego, wsplnego dla nich deskryptora pamici",
@@ -453,7 +453,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-027",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Plan przedsiwzicia moe obejmowac",
                                 "options": [
                                         "kad i strukture zespou wytwarzajcego oprogramowanie?",
@@ -466,7 +466,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-028",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Dekorator/adapter",
                                 "options": [
                                         "maj taki sam interfejs jak obiekt tworzony?",
@@ -485,7 +485,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-029",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy strategia minimalizacji przy zarzdzaniu zagroeniami",
                                 "options": [
                                         "zapobiega wystpieniu?",
@@ -498,7 +498,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-030",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy w agregacji cakowitej",
                                 "options": [
                                         "jeden obiekt zawiera si w drugim?",
@@ -511,7 +511,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-031",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy + oznacza",
                                 "options": [
                                         "private?",
@@ -524,7 +524,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-032",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy do sterowania scentralizowanego naley",
                                 "options": [
                                         "model wywoanie-powrt?",
@@ -537,7 +537,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-033",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Czy",
                                 "options": [
                                         "metoda zwinna jest programowaniem ekstremalnym i polega na cigym testowaniu?",
@@ -555,7 +555,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-034",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre ze zda dotyczcych kolejek prac s prawdziwe?",
                                 "options": [
                                         "Czynnoci odroczone wykonywane w ramach kolejek prac wykonywane s w kontekcie przerwania",
@@ -574,7 +574,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m1-035",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel ktre twierdzenia dotyczce zarzdzania czasem w Linuxie s prawdziwe? ;",
                                 "options": [
                                         "Staa HZ dla architektury i386 wynosi 1000.",
@@ -597,7 +597,7 @@ const systemyOperacyjneData = {
                 "questions": [
                         {
                                 "id": "so-m2-001",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które ze zdań dotyczących kolejek prac są prawdziwe?",
                                 "options": [
                                         "Czynności odroczone wykonywane w ramach kolejek prac są wykonywane w kontekście",
@@ -616,7 +616,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-002",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Określ które twierdzenia dot. zażądania czasem w Linkusie są prawdziwe?",
                                 "options": [
                                         "Stała HZ dla architektury i386 wynosi 1000",
@@ -630,7 +630,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-003",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Brak pytania",
                                 "options": [
                                         "Zmienna typu „atomic_T” jest 32 bitowa.",
@@ -646,7 +646,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-004",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które za zdań dotyczących kolejek prac są prawdziwe?",
                                 "options": [
                                         "Czynności odroczone wykonywane w ramach kolejek prac są wykonywane w kontekście przerwania",
@@ -663,7 +663,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-005",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Zmienna typu „atomic_T” jest 32 bitowa. |    tak",
                                 "options": [
                                         "Wszystkie architektury, które obsługuje Linux dostarczają rozkazów maszynowych realizujących operacje niepodzielne na wartościach będących liczbami całkowitymi",
@@ -679,7 +679,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-006",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ które twierdzenia dotyczące zarządzania czasem w Linuxie są prawdziwe?",
                                 "options": [
                                         "Stała HZ dla architektury i386 wynosi 1000.",
@@ -696,7 +696,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-007",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z zdań dotyczących kolejek prac są prawdziwe?",
                                 "options": [
                                         "Czynności odroczone wyk. w ramach kolejek prac są wykonywane w kontekście przerwania",
@@ -713,7 +713,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-008",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które stwierdzenia są prawidłowe?",
                                 "options": [
                                         "Programista jądra powinien się posługiwać zmienną printf.",
@@ -731,7 +731,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-009",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które ze zdań dotyczące kolejek prac są  prawidłowe",
                                 "options": [
                                         "Czynności odroczone wykonywane w ramach kolejek prac są wykonywane w kontekście przerwania",
@@ -749,7 +749,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-010",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące dolnych połówek w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "całkowita liczba przerwań programowych jest ograniczona.",
@@ -765,7 +765,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-011",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące zarządzania pamięcią w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "Linux obsługuje systemy wieloprocesorowe o organizacji NUMA.",
@@ -782,7 +782,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-012",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące obsługi urządzeń znakowych i blokowych w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "urządzenia obsługiwane przez Linuksa są wyłącznie urządzeniami fizycznymi.",
@@ -800,7 +800,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-013",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące warstwy operacji blokowych w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "wielkość bloku w Linuksie jest nieograniczona.",
@@ -818,7 +818,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-014",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące obsługi sieci w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "jądro wykonuje czynności związane z obsługą warstwy łącza, sieci i transportowej modelu ISO/OSI.",
@@ -836,7 +836,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-015",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Pytania INNE:",
                                 "options": [
                                         "Algorytm noop realizuje tylko operacje scalania.",
@@ -853,7 +853,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-016",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Planowanie projektu",
                                 "options": [
                                         "obejmuje skad i struktur osob tworzcych program?",
@@ -867,7 +867,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-017",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy przy testowaniu programw obiektowych",
                                 "options": [
                                         "testowanie jednostkowe ogranicza si do testowania metod klasy?",
@@ -880,7 +880,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-018",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Model maszyny abstrakcyjnej",
                                 "options": [
                                         "to model warstwowy?",
@@ -894,7 +894,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-019",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Kontrole",
                                 "options": [
                                         "Czy kontrole s metodami statycznymi v&v?",
@@ -914,7 +914,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-020",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy Abstract Factory",
                                 "options": [
                                         "zwraca obiekty klas strukturalnie podobne?",
@@ -927,7 +927,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-021",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Model kaskadowy",
                                 "options": [
                                         "pozwala atwo i maym nakadem pracy wprowadzi do projektu zmiany?",
@@ -940,7 +940,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-022",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Projektowanie oglne",
                                 "options": [
                                         "czy tworzy si wstpujco?",
@@ -955,7 +955,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-023",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Model interaktywny",
                                 "options": [
                                         "punkt widzenia zewntrzny?",
@@ -968,7 +968,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-024",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Efektywno",
                                 "options": [
                                         "osiga si przez mao gruboziarnistych klas?",
@@ -981,7 +981,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-025",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Zoono cykliczna",
                                 "options": [
                                         "czy jest tyle cieek ile instrukcji warunkowych?",
@@ -997,7 +997,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-026",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy testowanie wstpujce",
                                 "options": [
                                         "jest typem testowania integracyjnego?",
@@ -1010,7 +1010,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-027",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Narzdzia automatycznej analizy statycznej",
                                 "options": [
                                         "przeprowadzaj analize przepywu sterowania w programie?",
@@ -1023,7 +1023,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-028",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy dekorator i proxy",
                                 "options": [
                                         "maj identyczne interfejsy jak obiekt obudowywany?",
@@ -1036,7 +1036,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-029",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Fasada",
                                 "options": [
                                         "warstwowe ograniczenie dostpu? ??",
@@ -1051,7 +1051,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-030",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy punktem widzenia jest",
                                 "options": [
                                         "rdo lub przeznaczenie danych?",
@@ -1064,7 +1064,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-031",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy element static na diagramie UML oznacza si przez",
                                 "options": [
                                         "podkrelenie?",
@@ -1077,7 +1077,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-032",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Czy typem w tworzeniu ewolucyjnym",
                                 "options": [
                                         "jest tworzenie badawcze?",
@@ -1091,7 +1091,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-033",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Inne:",
                                 "options": [
                                         "Testowanie wstpujce w kocowej fazie?",
@@ -1116,7 +1116,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-034",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre za zda dotyczcych kolejek prac s prawdziwe? ;",
                                 "options": [
                                         "Czynnoci odroczone wykonywane w ramach kolejek prac s wykonywane w kontekcie przerwania",
@@ -1133,7 +1133,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m2-035",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z zda dotyczcych kolejek prac s prawdziwe?;",
                                 "options": [
                                         "Czynnoci odroczone wyk. w ramach kolejek prac s wykonywane w kontekcie przerwania",
@@ -1156,7 +1156,7 @@ const systemyOperacyjneData = {
                 "questions": [
                         {
                                 "id": "so-m3-001",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Które z twierdzeń dotyczących obsługi przerwań w Linuxie 2.6 są prawdziwe?",
                                 "options": [
                                         "Obsługa przerwań jest podzielona na górną połówkę i dolną połówkę",
@@ -1170,7 +1170,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-002",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z poniższych twierdzeń dotyczących środków synchronizacji w jądrze Linuksa 2.6 są prawdziwe?",
                                 "options": [
                                         "Wątek wykonania, który przetrzymuje semafor nie może równocześnie przetrzymywać rygla",
@@ -1188,7 +1188,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-003",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Poniżej umieszczono zdania dotyczące obsługi przerwań przez Linuksa 2.6. Które z nich są prawdziwe?",
                                 "options": [
                                         "Częstotliwości pojawiania się wszystkich przerwań są wykorzystywane do inicjalizowania",
@@ -1202,7 +1202,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-004",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Które ze zdań dotyczących synchronizacji są prawdziwe?",
                                 "options": [
                                         "Niektóre operacje niepodzielne mogą  być zrealizowane jako pojedyncze rozkazy procesora",
@@ -1216,7 +1216,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-005",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Które ze stwierdzeń dotyczących obsługi przerwań w Linuksie 2.6 są prawdziwe?",
                                 "options": [
                                         "Obsługa przerwań jest podzielona na górną połówkę i dolną połówkę.",
@@ -1232,7 +1232,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-006",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z poniższych stwierdzeń dotyczących środków synchronizacji w jądrze Linuksa 2.6 są prawdziwe?",
                                 "options": [
                                         "Wątek wykonania, który przytrzymuje semafor nie może równocześnie przetrzymywać rygla pętlowego.",
@@ -1251,7 +1251,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-007",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Poniżej umieszczono zdania dotyczące obsługi przerwań w Linuksie 2.6, które z nich są prawdziwe?",
                                 "options": [
                                         "Częstotliwości pojawienia się wszystkich przerwań są wykorzystywane do inicjalizowania generatowa liczb losowych",
@@ -1269,7 +1269,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-008",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z tw. dot. Obsługi przerwań w Linuksie 2.6 jest prawdziwe?",
                                 "options": [
                                         "Obsługa przerwań podzielona na górną i dolną połówkę",
@@ -1286,7 +1286,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-009",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z poniższych stwierdzeń dot. środków synchronizacji w jądrze Linuksa 2.6 są prawdziwe?",
                                 "options": [
                                         "Wątek wykonania który przetrzymuje semafor nie może równocześnie przetrzymywać rygla pętlowego",
@@ -1304,7 +1304,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-010",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Poniżej umieszczono zdania dotyczące obsługi przerwań przez Linuksa 2.6 – które są prawdziwe?",
                                 "options": [
                                         "Częstotliwość pojawiania się wszystkich przerwań są wykorzystywane do inicjalizowania generatora licz los.",
@@ -1322,7 +1322,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-011",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które zdania dotyczące synchronizacji są prawdziwe?",
                                 "options": [
                                         "Niektóre operacje niepodzielne mogą być realizowanie jako pojedyncze rozkazy procesora",
@@ -1339,7 +1339,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-012",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Poniżej umieszczono zadania dotyczące obsługi przerwań przez Linuksa 2.6. Które z nich są prawdziwe?",
                                 "options": [
                                         "Częstotliwości pojawiania się wszystkich przerwań są wykorzystywane do inicjalizowania generatora liczb losowych",
@@ -1357,7 +1357,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-013",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z poniższych twierdzeń dotyczące środków synchronizacji w jądrze 2.6 są prawidłowe",
                                 "options": [
                                         "Wątek wykonania, który przetrzymuje semafor nie może równocześnie przetrzymywać rygla pętli",
@@ -1376,7 +1376,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-014",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z twierdzeń dotyczących obsługi przerwań w Linuksie 2.6 są prawdziwe",
                                 "options": [
                                         "Obsługo przerwań jest podzielona na górną połówkę i dolną połówkę",
@@ -1393,7 +1393,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-015",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące obsługi przerwań w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "procedury obsługi przerwań w Linuksie są funkcjami napisanymi w języku C.",
@@ -1413,7 +1413,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-016",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące środków synchronizacji w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "funkcje realizujące operacje niepodzielne na liczbach całkowitych działają na zmiennych typu \"int\".",
@@ -1430,7 +1430,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-017",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące pomiaru i synchronizacji względem czasu w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "zegar czasu rzeczywistego (RTC) jest okresowo odczytywany przez jądro systemu.",
@@ -1447,7 +1447,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-018",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z twierdze dotyczcych obsugi przerwa w Linuksie 2.6 S prawdziwe?",
                                 "options": [
                                         "Obsuga przerwa podzielona jest na grn powk i doln powk",
@@ -1464,7 +1464,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-019",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z poniszych stwierdze dotyczcych rodkw synchronizacji w jdrze linuxa 2.6 sprawdziwe??",
                                 "options": [
                                         "Wtek wykonania, ktry przetrzymuje semafor nie moe rwnoczenie przetrzyma rygla ptlowego",
@@ -1483,7 +1483,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-020",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Poniej umieszczono zdania dotyczce obsugi przerwa przez Linuksa 2.6. Ktre z nich s prawdziwe?",
                                 "options": [
                                         "Numery przerwa mog by przydzielane niektrym urzdzeniom dynamicznie",
@@ -1500,7 +1500,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-021",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z poniszych zda dotyczcych synchronizacji s prawdziwe?? (tu mog si nie zgadza odpowiedzi)",
                                 "options": [
                                         "Niektre operacje niepodzielne mog by zrealizowane jak jeden rozkaz",
@@ -1518,7 +1518,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-022",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Ktre ze stwierdze dotyczcych obsugi przerwa w Linuksie 2.6 s prawdziwe? ;",
                                 "options": [
                                         "Obsuga przerwa jest podzielona na grn powk i doln powk.",
@@ -1534,7 +1534,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-023",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z poniszych stwierdze dotyczcych rodkw synchronizacji w jdrze Linuksa 2.6 s prawdziwe? ;",
                                 "options": [
                                         "Wtek wykonania, ktry przytrzymuje semafor nie moe rwnoczenie przetrzymywa rygla ptlowego.",
@@ -1553,7 +1553,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-024",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Poniej umieszczono zdania dotyczce obsugi przerwa w Linuksie 2.6, ktre z nich s prawdziwe? ;",
                                 "options": [
                                         "Czstotliwoci pojawienia si wszystkich przerwa s wykorzystywane do inicjalizowania generatowa liczb losowych",
@@ -1571,7 +1571,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-025",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre ze zda dotyczcych synchronizacji s prawdziwe?",
                                 "options": [
                                         "Niektre operacje niepodzielne mog by zrealizowane jako pojedyncze rozkazy procesora.",
@@ -1590,7 +1590,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-026",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z tw. dot. Obsugi przerwa w Linuksie 2.6 jest prawdziwe?;",
                                 "options": [
                                         "Obsuga przerwa podzielona na grn i doln powk",
@@ -1607,7 +1607,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-027",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z poniszych stwierdze dot. rodkw synchronizacji w jdrze Linuksa 2.6 s prawdziwe?;",
                                 "options": [
                                         "Wtek wykonania ktry przetrzymuje semafor nie moe rwnoczenie przetrzymywa rygla ptlowego",
@@ -1625,7 +1625,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-028",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Poniej umieszczono zdania dotyczce obsugi przerwa przez Linuksa 2.6  ktre s prawdziwe?;",
                                 "options": [
                                         "Czstotliwo pojawiania si wszystkich przerwa s wykorzystywane do inicjalizowania generatora licz los.",
@@ -1643,7 +1643,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-029",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z poniższych stwierdzeń dotyczących środków synchronizacji w jądrze linux’a 2.6 sąprawdziwe??",
                                 "options": [
                                         "Wątek wykonania, który przetrzymuje semafor nie może równocześnie przetrzyma rygla pętlowego",
@@ -1662,7 +1662,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-030",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Poniżej umieszczono zdania dotyczące obsługi przerwań przez Linuksa 2.6. Które z nich są prawdziwe? -Częstotliwości pojawiania się wszystkich przerwań są wykorzystywane do inicjalizowania generatora liczb losowych",
                                 "options": [
                                         "Numery przerwań mogą być przydzielane niektórym urządzeniom dynamicznie",
@@ -1679,7 +1679,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-031",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z poniższych zdań dotyczących synchronizacji są prawdziwe?? (tu mogą się nie zgadzać odpowiedzi)",
                                 "options": [
                                         "Niektóre operacje niepodzielne mogą by zrealizowane jak jeden rozkaz",
@@ -1697,7 +1697,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-032",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce obsugi przerwa w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "procedury obsugi przerwa w Linuksie s funkcjami napisanymi w jzyku C",
@@ -1717,7 +1717,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-033",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce rodkw synchronizacji w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "funkcje realizujce operacje niepodzielne na liczbach cakowitych dziaaj na zmiennych typu \"int\"",
@@ -1734,7 +1734,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-034",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce pomiaru i synchronizacji wzgldem czasu w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "zegar czasu rzeczywistego (RTC) jest okresowo odczytywany przez jdro systemu",
@@ -1751,7 +1751,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m3-035",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel ktre twierdzenia dot. zadania czasem w Linkusie s prawdziwe?;",
                                 "options": [
                                         "Staa HZ dla architektury i386 wynosi 1000",
@@ -1775,7 +1775,7 @@ const systemyOperacyjneData = {
                 "questions": [
                         {
                                 "id": "so-m4-001",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Które ze stwierdzeń dotyczących wywołań systemowych w Linuksie 2.6 są prawdziwe?",
                                 "options": [
                                         "Dodawanie nowych wywołań systemowych nie jest zalecanym przez twórców jądra sposobem",
@@ -1791,7 +1791,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-002",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które stwierdzenie dotyczące wywołać systemowych w Linuksie 2,6 są prawdziwe?",
                                 "options": [
                                         "Dodawanie nowych wywołań systemowych nie jest zalecanym przez twórców jądra  sposobem dodawania nowej funkcjonalności",
@@ -1808,7 +1808,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-003",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące wywołań systemowych w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "wszystkie funkcje z biblioteki \"libc\" korzystają z wywołań systemowych.",
@@ -1825,7 +1825,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-004",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące wirtualnego systemu plików (VFS) w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "VFS napisany jest w języku C++.",
@@ -1842,7 +1842,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-005",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Potoki czy",
                                 "options": [
                                         "nadaj si do systemw interaktywnych?",
@@ -1853,7 +1853,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-006",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "W systemach interaktywnych",
                                 "options": [
                                         "najlepiej stosowac zewnetrze punkty widzenia?",
@@ -1867,7 +1867,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-007",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Podsystem",
                                 "options": [
                                         "moe dziaa niezalenie?",
@@ -1885,7 +1885,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-008",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy systemy z komponentami gruboziarnistymi - uyjemy",
                                 "options": [
                                         "gdy chcemy postawi na szybkosc?",
@@ -1898,7 +1898,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-009",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre z poniszych zda dotyczcych wywoa systemowych w Linuks 2.6 s prawdziwe?",
                                 "options": [
                                         "Dodawanie nowych wywoa systemowych nie jest zalecanym sposobem przez twrcw jdra sposobem dodawania nowej funkcjonalnoci",
@@ -1915,7 +1915,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-010",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre ze stwierdze dotyczcych wywoa systemowych w Linuksie 2.6 s prawdziwe?",
                                 "options": [
                                         "Dodawanie nowych wywoa systemowych nie jest zalecanym przez twrcw jdra sposobem dodawania nowej funkcjonalnoci. |",
@@ -1932,7 +1932,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-011",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Określ, które informacje dotyczące wywołani systemowych w Linuksie 3.0 i nowszych są prawdziwe:",
                                 "options": [
                                         "adresy wszystkich zarejestrowanych wywołań systemowych są przechowywane w specjalnej tablicy",
@@ -1950,7 +1950,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-012",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które z poniższych zdań dotyczących wywołań systemowych w Linuks 2.6 są prawdziwe?",
                                 "options": [
                                         "Dodawanie nowych wywołań systemowych nie jest zalecanym sposobem przez twórców jądra sposobem dodawania nowej funkcjonalności",
@@ -1967,7 +1967,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-013",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce wywoa systemowych w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "wszystkie funkcje z biblioteki \"libc\" korzystaj z wywoa systemowych",
@@ -1984,7 +1984,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-014",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce wywoani systemowych w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "adresy wszystkich zarejestrowanych wywoa systemowych s przechowywane w specjalnej tablicy",
@@ -2002,7 +2002,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-015",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce wirtualnego systemu plikw (VFS) w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "VFS napisany jest w jzyku C++",
@@ -2019,7 +2019,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-016",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy wzorcem strukturalnym jest",
                                 "options": [
                                         "kompozyt?",
@@ -2032,7 +2032,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-017",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Diagram przypadkw uycia",
                                 "options": [
                                         "jest strukturalny?",
@@ -2047,7 +2047,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-018",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Chain of responsibility (acuch zobowiza)",
                                 "options": [
                                         "czy gwarantuje obsuge zapytania przez co najmniej jeden obiekt?",
@@ -2060,7 +2060,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-019",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Punktem widzenia mog by",
                                 "options": [
                                         "odbiorcy usug?",
@@ -2074,7 +2074,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-020",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy inynieria programowania",
                                 "options": [
                                         "zajmuje si wycznie etapem od zakoczenia tworzenia specyfikacji do oddania programu klientowi?",
@@ -2089,7 +2089,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-021",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Diagram klas",
                                 "options": [
                                         "Czy diagram klas jest strukturalny?",
@@ -2103,7 +2103,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-022",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Sie dziaa",
                                 "options": [
                                         "czy pozwala wyznaczy ciek krytyczn?",
@@ -2117,7 +2117,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-023",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Weryfikacj jest",
                                 "options": [
                                         "czy produkt spenia specyfikacje?",
@@ -2130,7 +2130,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-024",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Obserwator",
                                 "options": [
                                         "Obserwator czy przechodzi przez obserwatorw i uaktualnia stan?",
@@ -2143,7 +2143,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-025",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Etnografia",
                                 "options": [
                                         "wymagania wynikajce z rzeczywistego sposobu pracy osb a nie ze sposobu zalecanego przez formalne definicje procesw?",
@@ -2157,7 +2157,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-026",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy model oglny",
                                 "options": [
                                         "budowany metoda wstepujaca, obejmuja zasadnicze charakterystyki rzeczywistych systemw?",
@@ -2170,7 +2170,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-027",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Wzorzec obserwator",
                                 "options": [
                                         "obserwator wizytuje obserwatorw w celu pobrania aktualnego stanu obiektu obserwowanego?",
@@ -2184,7 +2184,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-028",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Czy Stan/Strategia",
                                 "options": [
                                         "pozwalaj na przeczanie w zalenoci od kontekstu lub autorytatywne (normalne przeczanie)?",
@@ -2198,7 +2198,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-029",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Metoda formalna",
                                 "options": [
                                         "moe by wszdzie stosowana?",
@@ -2211,7 +2211,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-030",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Klasy gruboziarniste stosuje si",
                                 "options": [
                                         "w efektywnoci?",
@@ -2224,7 +2224,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-031",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Singleton",
                                 "options": [
                                         "czy moe by tylko jeden taki obiekt?",
@@ -2241,7 +2241,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-032",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Czy include w diagramie przypadkw uycia uywa si",
                                 "options": [
                                         "gdy przypadek uzycia wymaga wykorzystania take innych elementw?",
@@ -2254,7 +2254,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-033",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Testowanie funkcjonalne",
                                 "options": [
                                         "przezroczysta skrzynka?",
@@ -2267,7 +2267,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-034",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Pytania:",
                                 "options": [
                                         "Zmienna typu atomic_T jest 32 bitowa.",
@@ -2285,7 +2285,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-m4-035",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre stwierdzenia s prawidowe?;",
                                 "options": [
                                         "Programista jdra powinien si posugiwa zmienn printf.",
@@ -2309,7 +2309,7 @@ const systemyOperacyjneData = {
                 "questions": [
                         {
                                 "id": "so-final-001",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Ktre stwierdzenia s prawidowe?; Mechanizm RCU posuguje si wskanikami.",
                                 "options": [
                                         "Kod w mechanizmie RCU moe ulec zawieszeniu.",
@@ -2325,7 +2325,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-final-002",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Które stwierdzenia są prawidłowe?; Mechanizm RCU posługuje się wskaźnikami.",
                                 "options": [
                                         "Kod w mechanizmie RCU może ulec zawieszeniu.",
@@ -2341,7 +2341,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-final-003",
-                                "type": "single",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce dolnych powek w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "cakowita liczba przerwa programowych jest ograniczona",
@@ -2357,7 +2357,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-final-004",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce zarzdzania pamici w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "Linux obsuguje systemy wieloprocesorowe o organizacji NUMA",
@@ -2374,7 +2374,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-final-005",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce obsugi urzdze znakowych i blokowych w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "urzdzenia obsugiwane przez Linuksa s wycznie urzdzeniami fizycznymi",
@@ -2392,7 +2392,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-final-006",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce warstwy operacji blokowych w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "wielko bloku w Linuksie jest nieograniczona",
@@ -2410,7 +2410,7 @@ const systemyOperacyjneData = {
                         },
                         {
                                 "id": "so-final-007",
-                                "type": "multiple",
+                                "type": "yn",
                                 "question": "Okrel, ktre informacje dotyczce obsugi sieci w Linuksie 3.0 i nowszych s prawdziwe:",
                                 "options": [
                                         "jdro wykonuje czynnoci zwizane z obsug warstwy cza, sieci i transportowej modelu ISO/OSI",

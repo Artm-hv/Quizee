@@ -20,7 +20,8 @@ function QuestionView({
   onComplete,
   difficultData
 }) {
-  const [selectedOptions, setSelectedOptions] = useState([]);
+   const [selectedOptions, setSelectedOptions] = useState([]);
+  const [selectedYN, setSelectedYN] = useState({});
   const [openAnswer, setOpenAnswer] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -29,12 +30,19 @@ function QuestionView({
   useEffect(() => {
     const saved = sessionAnswers[questionIndex];
     if (saved) {
-      setSelectedOptions(saved.selectedOptions || []);
+      if (question.type === "yn") {
+        setSelectedYN(saved.selectedOptions || {});
+        setSelectedOptions([]);
+      } else {
+        setSelectedOptions(saved.selectedOptions || []);
+        setSelectedYN({});
+      }
       setOpenAnswer(saved.openAnswer || "");
       setIsSubmitted(true);
       setIsCorrect(saved.isCorrect || false);
     } else {
       setSelectedOptions([]);
+      setSelectedYN({});
       setOpenAnswer("");
       setIsSubmitted(false);
       setIsCorrect(false);
@@ -81,21 +89,31 @@ function QuestionView({
     if (question.type === "open") {
       const norm = openAnswer.trim().toLowerCase();
       correct = question.correctAnswers.some(a => a.toLowerCase() === norm);
+    } else if (question.type === "yn") {
+      correct = question.options.every((_, idx) => {
+        const correctVal = question.correctAnswers.includes(idx);
+        const userVal = selectedYN[idx];
+        return userVal === correctVal;
+      });
     } else {
       const ss = [...selectedOptions].sort();
       const sc = [...question.correctAnswers].sort();
       correct = ss.length === sc.length && ss.every((v, i) => v === sc[i]);
     }
     setIsCorrect(correct); setIsSubmitted(true);
-    onRecordAnswer(question.id, selectedOptions, openAnswer, correct);
+    onRecordAnswer(question.id, question.type === "yn" ? selectedYN : selectedOptions, openAnswer, correct);
   };
 
   const handleSkip = () => {
-    onRecordAnswer(question.id, selectedOptions, openAnswer, false);
+    onRecordAnswer(question.id, question.type === "yn" ? selectedYN : selectedOptions, openAnswer, false);
     onNext();
   };
 
-  const canSubmit = question.type === "open" ? openAnswer.trim().length > 0 : selectedOptions.length > 0;
+  const canSubmit = question.type === "open"
+    ? openAnswer.trim().length > 0
+    : question.type === "yn"
+    ? Object.keys(selectedYN).length === question.options.length
+    : selectedOptions.length > 0;
 
   const formatTime = (seconds) => {
     const m = Math.floor(seconds / 60);
@@ -136,6 +154,8 @@ function QuestionView({
     ? "Wybierz jedną odpowiedź:"
     : question.type === "multiple"
     ? "Wybierz jedną lub więcej odpowiedzi:"
+    : question.type === "yn"
+    ? "Dla każdego stwierdzenia wybierz TAK lub NIE:"
     : "Wpisz odpowiedź:";
 
   return (
@@ -202,7 +222,54 @@ function QuestionView({
               <div className="moodle-q-text">{question.question}</div>
               <div className="moodle-q-instruction">{instructionLabel}</div>
 
-              {question.type !== "open" ? (
+              {question.type === "yn" ? (
+                <div className="moodle-options-list yn-mode">
+                  {question.options.map((opt, idx) => {
+                    const userVal = selectedYN[idx];
+                    const correctVal = question.correctAnswers.includes(idx);
+                    const isCorrectYN = isSubmitted ? (userVal === correctVal) : null;
+                    let rowClass = "moodle-yn-option-item";
+                    if (isSubmitted) {
+                      rowClass += isCorrectYN ? " correct" : " incorrect";
+                    }
+                    return (
+                      <div key={idx} className={rowClass}>
+                        <div className="moodle-yn-button-group">
+                          <button
+                            className={`moodle-yn-btn tak ${userVal === true ? "selected" : ""}`}
+                            onClick={() => {
+                              if (isSubmitted) return;
+                              setSelectedYN(prev => ({ ...prev, [idx]: true }));
+                            }}
+                            disabled={isSubmitted}
+                            type="button"
+                          >
+                            TAK
+                          </button>
+                          <button
+                            className={`moodle-yn-btn nie ${userVal === false ? "selected" : ""}`}
+                            onClick={() => {
+                              if (isSubmitted) return;
+                              setSelectedYN(prev => ({ ...prev, [idx]: false }));
+                            }}
+                            disabled={isSubmitted}
+                            type="button"
+                          >
+                            NIE
+                          </button>
+                        </div>
+                        <span className="moodle-option-letter">{getLetterPrefix(idx)}</span>
+                        <span className="moodle-option-text">{opt}</span>
+                        {isSubmitted && (
+                          <span className={`yn-row-indicator ${isCorrectYN ? "correct" : "incorrect"}`}>
+                            {isCorrectYN ? " ✔" : " ✘"}
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : question.type !== "open" ? (
                 <div className="moodle-options-list">
                   {question.options.map((opt, idx) => (
                     <div
