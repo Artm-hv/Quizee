@@ -234,6 +234,8 @@ function QuestionView({
                     }
                     return (
                       <div key={idx} className={rowClass}>
+                        <span className="moodle-option-letter">{getLetterPrefix(idx)}</span>
+                        <span className="moodle-option-text">{opt}</span>
                         <div className="moodle-yn-button-group">
                           <button
                             className={`moodle-yn-btn tak ${userVal === true ? "selected" : ""}`}
@@ -258,8 +260,6 @@ function QuestionView({
                             NIE
                           </button>
                         </div>
-                        <span className="moodle-option-letter">{getLetterPrefix(idx)}</span>
-                        <span className="moodle-option-text">{opt}</span>
                         {isSubmitted && (
                           <span className={`yn-row-indicator ${isCorrectYN ? "correct" : "incorrect"}`}>
                             {isCorrectYN ? " ✔" : " ✘"}

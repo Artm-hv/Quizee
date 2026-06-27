@@ -2429,5 +2429,5 @@ const systemyOperacyjneData = {
                 ]
         }
 ],
-    "dbVersion": 3
+    "dbVersion": 4
 };
