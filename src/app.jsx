@@ -20,14 +20,8 @@ function App() {
 
         if (s.id === "jezyki-skryptowe") {
           const defaultJs = DEFAULT_SUBJECTS.find(ds => ds.id === "jezyki-skryptowe");
-          const m1 = s.modules ? s.modules.find(m => m.id === "js-pe2-m1") : null;
-          const m3 = s.modules ? s.modules.find(m => m.id === "js-pe2-m3") : null;
-          const pe1m1 = s.modules ? s.modules.find(m => m.id === "js-pe1-m1") : null;
-          const pe1m2 = s.modules ? s.modules.find(m => m.id === "js-pe1-m2") : null;
-          const hasExplanations = pe1m1 && pe1m1.questions.some(q => q.explanation && q.explanation.trim());
-          const hasScreenReaders = pe1m2 && pe1m2.questions.some(q => q.options.some(opt => opt.includes("1 of 4")));
-          if (defaultJs && (!s.modules || s.modules.length < 12 || !s.modules.some(m => m.id === "js-pe2-final") || !m1 || m1.questions.length !== 18 || !m3 || m3.questions.length !== 17 || !hasExplanations || hasScreenReaders || versionOutdated)) {
-            console.log("Migrated 'jezyki-skryptowe' module database to include PE1 and PE2 modules with explanations, clean formatting and correct question counts.");
+          if (defaultJs && (!s.modules || s.modules.length < 3 || versionOutdated)) {
+            console.log("Migrated 'jezyki-skryptowe' module database to use consolidated Cisco module and theory questions.");
             return defaultJs;
           }
         }
