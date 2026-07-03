@@ -1,4 +1,4 @@
-const jezykiSkryptoweData = {
+const scriptingLanguagesData = {
     "id": "jezyki-skryptowe",
     "name": "Języki skryptowe",
     "icon": "💻",
@@ -563,6 +563,154 @@ const jezykiSkryptoweData = {
                         "input()"
                     ],
                     "explanation": "Do wczytywania danych od użytkownika służy wbudowana funkcja input(prompt), która pobiera wejście tekstowe z konsoli i zawsze zwraca wartość typu str."
+                },
+                {
+                    "id": "js-wyk-036",
+                    "type": "yn",
+                    "question": "Wybierz zdania prawdziwe na temat operatorów zawierania (ang. membership operators) języka Python (Wersja 2):",
+                    "options": [
+                        "w przypadku typów sekwencyjnych i zbiorów weryfikują obecność pewnego obiektu wśród elementów kolekcji",
+                        "operator not in zwraca prawdę jeśli pewien obiekt zawiera się w innym obiekcie (jest jego członkiem)",
+                        "w przypadku łańcuchów znaków weryfikują, czy pewien łańcuch jest podciągiem innego łańcucha",
+                        "operator not in zwraca fałsz jeśli pewien obiekt nie zawiera się w innym obiekcie (nie jest jego członkiem)",
+                        "w przypadku typów mapujących weryfikują obecność pewnego obiektu wśród kluczy kolekcji"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        2,
+                        4
+                    ],
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Dla list, krotek i zbiorów operatory in/not in sprawdzają przynależność elementu do kolekcji.\n• **Opcja b) (NIE):** not in zwraca True, gdy obiekt NIE zawiera się w innym.\n• **Opcja c) (TAK):** Dla str operatory in/not in sprawdzają, czy jeden napis jest podłańcuchem drugiego.\n• **Opcja d) (NIE):** not in zwraca True (prawdę), gdy elementu nie ma w kolekcji.\n• **Opcja e) (TAK):** W słownikach (dict) sprawdzenie in/not in domyślnie wyszukuje klucze, a не wartości."
+                },
+                {
+                    "id": "js-wyk-037",
+                    "type": "yn",
+                    "question": "Wybierz zdania prawdziwe na temat usuwania zmiennych w języku Python:",
+                    "options": [
+                        "usunięcie zmiennej skutkuje usunięciem z przestrzeni nazw powiązania identyfikatora (nazwy) z referencją do obiektu",
+                        "usunięcie zmiennej następuje na skutek użycia instrukcji del wobec istniejącego identyfikatora (nazwy)",
+                        "usunięcie zmiennej skutkuje usunięciem z zasięgu powiązania identyfikatora (nazwy) z referencją do obiektu",
+                        "usunięcie zmiennej następuje na skutek użycia instrukcji del wobec nieistniejącego identyfikatora (nazwy)"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Instrukcja del usuwa powiązanie nazwy z referencją z przestrzeni nazw (namespace).\n• **Opcja b) (TAK):** del usuwa zdefiniowane wcześniej identyfikatory zmiennych.\n• **Opcja c) (NIE):** del działa na przestrzeni nazw, a nie bezpośrednio na statycznym zasięgu (scope).\n• **Opcja d) (NIE):** Użycie del wobec niezdefiniowanego identyfikatora zgłasza błąd NameError."
+                },
+                {
+                    "id": "js-wyk-038",
+                    "type": "yn",
+                    "question": "Wskaż reguły nazywania zmiennych w języku Python:",
+                    "options": [
+                        "wśród dozwolonych znaków znajdują się wyłącznie małe litery",
+                        "wśród dozwolonych znaków znajdują się zarówno małe jak i wielkie litery",
+                        "małe i wielkie litery są traktowane jako różne znaki",
+                        "małe i wielkie litery są traktowane jako jednakowe znaki",
+                        "nazwa może rozpoczynać się od cyfry",
+                        "wśród dozwolonych znaków znajdują się wyłącznie wielkie litery",
+                        "nazwa musi rozpoczynać się od litery",
+                        "długość nazwy jest nieograniczona"
+                    ],
+                    "correctAnswers": [
+                        1,
+                        2,
+                        6,
+                        7
+                    ],
+                    "explanation": "Wyjaśnienia:\n• **Opcje b) i c) (TAK):** Python rozróżnia wielkość liter (case-sensitive) i dopuszcza znaki A-Z, a-z, cyfry oraz znak podkreślenia _.\n• **Opcja e) (NIE):** Nazwa nie może zaczynać się від cyfry.\n• **Opcja g) (TAK):** Według definicji wykładowej, nazwa musi zaczynać się od litery (lub znaku podkreślenia, który jest traktowany w tej samej kategorii).\n• **Opcja h) (TAK):** Długość identyfikatorów w Pythonie nie jest limitowana standardem języka."
+                },
+                {
+                    "id": "js-wyk-039",
+                    "type": "yn",
+                    "question": "Wskaż wady interpretowanych języków programowania:",
+                    "options": [
+                        "programista musi posiadać wiele interpreterów i musi przeprowadzić proces interpretacji wielokrotnie jeśli chce, aby program można było uruchamiać na wielu platformach sprzętowych",
+                        "interpretacja może być czasochłonnym procesem",
+                        "zarówno programista jak i użytkownik końcowy muszą posiadać interpreter",
+                        "wykonanie kodu interpretowanego jest zazwyczaj wolniejsze"
+                    ],
+                    "correctAnswers": [
+                        2,
+                        3
+                    ],
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** Jedną z głównych zalet języków interpretowanych є przenośność (kod źródłowy jest interpretowany na dowolnym systemie bez dodatkowej pracy programisty).\n• **Opcja b) (NIE):** Sama interpretacja to proces uruchomienia. Według klucza Moodle, ta opcja nie jest uznawana za wadę w tym pytaniu.\n• **Opcja c) (TAK):** Uruchomienie programu wymaga obecności interpretera u klienta docelowego.\n• **Opcja d) (TAK):** Kod interpretowany ma narzut wydajnościowy w locie, co czyni go wolniejszym niż prekompilowany kod maszynowy."
+                },
+                {
+                    "id": "js-wyk-040",
+                    "type": "yn",
+                    "question": "Wskaż binarne operatory bitowe języka Python:",
+                    "options": [
+                        "|",
+                        "+",
+                        "%",
+                        "/",
+                        "<< i >>",
+                        "*",
+                        "&",
+                        "-",
+                        "~",
+                        "**",
+                        "^",
+                        "//"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        4,
+                        6,
+                        10
+                    ],
+                    "explanation": "Wyjaśnienia:\n• **Binarne operatory bitowe** to operatory działające na bitach dwóch argumentów:\n  - `|` (alternatywa bitowa OR - Opcja a)\n  - `<< i >>` (przesunięcia bitowe - Opcja e)\n  - `&` (koniunkcja bitowa AND - Opcja g)\n  - `^` (bitowy XOR - Opcja k)\n• **Opcja i) (NIE):** Operator `~` (negacja bitowa) jest operatorem unitarnym (jednoargumentowym), a nie binarnym."
+                },
+                {
+                    "id": "js-wyk-041",
+                    "type": "yn",
+                    "question": "Wybierz zdania prawdziwe na temat typów danych w języku Python:",
+                    "options": [
+                        "wartość obiektów dowolnych typów danych może ulegać zmianie",
+                        "pobranie typu obiektu jest możliwe z użyciem operatora typeof",
+                        "wszystkie typy danych są reprezentowane z użyciem obiektów klas typu <class 'type'>",
+                        "typ obiektu nigdy nie ulega zmianie"
+                    ],
+                    "correctAnswers": [
+                        2,
+                        3
+                    ],
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** Python posiada obiekty niemutowalne (immutable), takie jak int, float, str, tuple, których wartość nie może zostać zmieniona po utworzeniu.\n• **Opcja b) (NIE):** Do pobrania typu służy funkcja wbudowana type(), w Pythonie nie ma operatora typeof.\n• **Opcja c) (TAK):** Wszystkie typy w Pythonie są pierwszej klasy i są instancjami metaklasy type.\n• **Opcja d) (TAK):** Typ obiektu jest ustalany przy його tworzeniu i nie ulega modyfikacji (tożsamość typu jest stała)."
+                },
+                {
+                    "id": "js-wyk-042",
+                    "type": "yn",
+                    "question": "Wyrażenie lambda (ang. lambda expression) w języku Python to funkcja (Wersja 2):",
+                    "options": [
+                        "anonimowa",
+                        "niejawnie korzystająca z instrukcji return",
+                        "która może zawierać dowolne instrukcje i adnotacje",
+                        "zawierająca pojedyncze wyrażenie, które jest ewaluowane ze względu na swój efekt uboczny",
+                        "będąca semantycznie składniowym cukrem dla normalnej składni definiowania funkcji"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        4
+                    ],
+                    "explanation": "Wyjaśnienia:\n• **Opcje a), b) i e) (TAK):** Wyrażenie lambda tworzy funkcję anonimową (bez nazwy), która niejawnie zwraca wartość pojedynczego wyrażenia (bez słowa kluczowego return) i jest cukrem składniowym dla standardowej definicji def.\n• **Opcja c) (NIE):** Lambdy są ograniczone do pojedynczego wyrażenia, nie mogą zawierać instrukcji (np. instrukcji przypisania, pętli) ani adnotacji typów.\n• **Opcja d) (NIE):** Celem lambdy jest zwrócenie wartości ewaluowanego wyrażenia, a nie wywołanie efektu ubocznego."
+                },
+                {
+                    "id": "js-wyk-043",
+                    "type": "yn",
+                    "question": "Wskaż własności paradygmatu programowania funkcyjnego, którymi cechuje się język Python (Wersja 2):",
+                    "options": [
+                        "obsługa funkcji wyższego rzędu, które operują na innych funkcjach",
+                        "obsługa niezmiennych (niemutowalnych) typów danych",
+                        "obsługa zmiennych pierwszej klasy",
+                        "bezwzględny brak efektów ubocznych wywołania funkcji"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Python w pełni obsługuje przekazywanie i zwracanie funkcji przez inne funkcje (np. map, filter, dekoratory).\n• **Opcja b) (TAK):** Niemutowalne typy danych (np. tuple, frozenset) są kluczowe dla zachowania immutability w programowaniu funkcyjnym.\n• **Opcja c) (NIE):** To funkcje są obiektami pierwszej klasy (first-class functions), a nie zmienne.\n• **Opcja d) (NIE):** Python nie jest czysto funkcyjnym językiem i pozwala na modyfikację stanu globalnego lub mutowalnych obiektów (efekty uboczne)."
                 }
             ]
         },
@@ -3010,5 +3158,5 @@ const jezykiSkryptoweData = {
             ]
         }
     ],
-    "dbVersion": 6
+    "dbVersion": 7
 };
