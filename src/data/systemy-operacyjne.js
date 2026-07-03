@@ -50,7 +50,7 @@ const systemyOperacyjneData = {
                         "Deskryptory procesów powiązane są w listę"
                     ],
                     "correctAnswers": [],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** W przeciwieństwie do wielu innych systemów operacyjnych Linux obsługuje wątki, ale nie odróżnia ich od zwykłych procesów. (Wykład 2)\n• **Opcja b) (NIE):** Wątki jądra nie mają własnej przestrzeni  adresowej,  działają  w obrębie przestrzeni   jądra. (Wykład 2)\n• **Opcja c) (NIE):** W  jądrze  zdefiniowana jest makrodefinicja o nazwie „current”, która pozwala na szybki dostęp do deskryptora bieżącego procesu. (Wykład 2)\n• **Opcja d) (NIE):** Jeśli  proces macierzysty zakończy się przed procesem potomnym, to ten  ostatni pozostanie w stanie zombie. (…) TASK_ZOMBIE  – proces  zakończył   się,  w  systemie  został   jednak  jego deskryptor,  który  jest  usuwany  przez proces macierzysty poprzez wywołanie o nazwie „wait4()”,(Wykład 2)\n• **Opcja e) (NIE):** Deskryptory procesów s  powi zane ze sob  w dwukierunkową listę  procesów. (Wykład 2)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** W przeciwieństwie do wielu innych systemów operacyjnych Linux obsługuje wątki, ale nie odróżnia ich od zwykłych procesów. (Wykład 2)\n• **Opcja b) (NIE):** Wątki jądra nie mają własnej przestrzeni  adresowej,  działają  w obrębie przestrzeni   jądra. (Wykład 2)\n• **Opcja c) (NIE):** W  jądrze  zdefiniowana jest makrodefinicja o nazwie „current”, która pozwala na szybki dostęp do deskryptora bieżącego procesu. (Wykład 2)\n• **Opcja d) (NIE):** Jeśli  proces macierzysty zakończy się przed procesem potomnym, to ten  ostatni pozostanie w stanie zombie. (…) TASK_ZOMBIE  – proces  zakończył   się,  w  systemie  został   jednak  jego deskryptor,  który  jest  usuwany  przez proces macierzysty poprzez wywołanie o nazwie „wait4()”,(Wykład 2)\n• **Opcja e) (NIE):** Deskryptory procesów są  powi zane ze sob  w dwukierunkową listę  procesów. (Wykład 2)"
                 },
                 {
                     "id": "so-m1-004",
@@ -230,13 +230,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-014",
                     "type": "yn",
-                    "question": "Ktre z poniszych zda dotyczcych algorytmu szeregowania O(1) s prawdziwe?",
+                    "question": "Które z poniszych zda dotyczcych algorytmu szeregowania O(1) są prawdziwe?",
                     "options": [
-                        "Wymiana priorytetw zada sprowadza si do zamiany wskanikw na tablice aktywn i przeterminowan",
-                        "Priorytet kadego zadania jest ustalany wycznie na podstawie jego interaktywnoci",
-                        "Promowane s zadania o wysokim stopniu interaktywnoci",
-                        "Mechanizm szeregowania dokonuje zrwnowaenia obcienia procesw wycznie wtedy, kiedy kolejka zada jednego z nich jest pusta",
-                        "Kwanty czasu dla poszczeglnych zada s przeliczane dopiero wwczas, gdy ostatnie z zada znajdujcych si w tablicy priorytetw aktywnych wyczerpie swj kwant czasu."
+                        "Wymiana priorytetw zada sprowadza się do zamiany wskaźników na tablice aktywn i przeterminowaną",
+                        "Priorytet kadego zadania jest ustalany wyłącznie na podstawie jego interaktywnoci",
+                        "Promowane są zadania o wysokim stopniu interaktywnoci",
+                        "Mechanizm szeregowania dokonuje zrwnowaenia obcienia procesw wyłącznie wtedy, kiedy kolejka zada jednego z nich jest pusta",
+                        "Kwanty czasu dla poszczeglnych zada są przeliczane dopiero wwczas, gdy ostatnie z zada znajdujcych się w tablicy priorytetw aktywnych wyczerpie swj kwant czasu."
                     ],
                     "correctAnswers": [
                         0,
@@ -248,10 +248,10 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-015",
                     "type": "yn",
-                    "question": "Okrel, ktre ze zda dotyczce szeregowania procesw w linuxie 2.6 s prawdziwe",
+                    "question": "Okrel, które ze zda dotyczce szeregowania procesw w linuxie 2.6 są prawdziwe",
                     "options": [
                         "Linux realizuje wielozadaniowo w oparciu o kooperacj",
-                        "Dziaanie planisty O(1) oparte jest na schemacie kolejek ze sprzeniem zwrotnym",
+                        "Dziaanie planisty O(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym",
                         "Zadania  interaktywne otrzymuj od planisty O(1) mniejszy kwant czasu ni zadania nieinteraktywne",
                         "Gwn struktura planisty CFS jest drzewo czerwono-czarne",
                         "Linux nie jest rygorystycznym systemem czasu rzeczywistego"
@@ -266,12 +266,12 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-016",
                     "type": "yn",
-                    "question": "Czy twierdzenia odnonie wtkw i procesw s prawdziwe?",
+                    "question": "Czy twierdzenia odnonie wątków i procesw są prawdziwe?",
                     "options": [
-                        "Za szeregowanie wtkw odpowiada inny mechanizm ni za szeregowanie procesw",
-                        "Kady wtek jdra posiada odrbn przestrze adresow",
+                        "Za szeregowanie wątków odpowiada inny mechanizm ni za szeregowanie procesw",
+                        "Kady wtek jądra posiada odrbn przestrzeń adresow",
                         "Makrodefinicja current pozwala na szybki dostp do deskryptora biecego procesu",
-                        "Proces macierzysty, ktrego proces macierzysty si zakoczy przechodzi w stan TASK_ZOMBIE"
+                        "Proces macierzysty, ktrego proces macierzysty się zakoczy przechodzi w stan TASK_ZOMBIE"
                     ],
                     "correctAnswers": [
                         2,
@@ -282,10 +282,10 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-017",
                     "type": "yn",
-                    "question": "Okrel, ktre ze zda dotyczce szeregowania procesorw w Linuksie 2.6 s prawdziwe? ;",
+                    "question": "Okrel, które ze zda dotyczce szeregowania procesorw w Linuksie 2.6 są prawdziwe? ;",
                     "options": [
-                        "Linuks realizuje wielozadaniowo wycznie w oparciu o kooperacj",
-                        "Dziaanie planisty 0(1) oparte jest na schemacie kolejek ze sprzeniem zwrotnym.",
+                        "Linuks realizuje wielozadaniowo wyłącznie w oparciu o kooperacj",
+                        "Dziaanie planisty 0(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym.",
                         "Zadania interaktywne otrzymuj od planisty 0(1) mniejszy kwant czasu ni zadanie nieinteraktywne",
                         "Gwn struktur danych planisty CFS jest drzewo czerwono-czarne.",
                         "Linux nie jest rygorystycznym systemem czasu rzeczywistego."
@@ -300,13 +300,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-018",
                     "type": "yn",
-                    "question": "Ktre twierdzenie odnonie wtkw i procesw w systemie Linux s prawdziwe?",
+                    "question": "Które twierdzenie odnonie wątków i procesw w systemie Linux są prawdziwe?",
                     "options": [
-                        "Za szeregowanie wtkw odpowiada inny mechanizm jdra ni za szeregowanie procesw",
-                        "Kady wtek jdra posada swoj odrbn przestrze adresow      | nie",
+                        "Za szeregowanie wątków odpowiada inny mechanizm jądra ni za szeregowanie procesw",
+                        "Kady wtek jądra posada swoj odrbn przestrzeń adresow      | nie",
                         "Makrodefinicja current pozwala na szybki dostp do deskryptora biecego procesu.",
-                        "Proces macierzysty, ktrego proces potomny si zakoczy przechodzi w stan TASK_ZOMBIE",
-                        "Deskryptory procesw powizane s w list."
+                        "Proces macierzysty, ktrego proces potomny się zakoczy przechodzi w stan TASK_ZOMBIE",
+                        "Deskryptory procesw powizane są w list."
                     ],
                     "correctAnswers": [
                         2,
@@ -317,13 +317,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-019",
                     "type": "yn",
-                    "question": "Ktre z poniszych zda dotyczcych algorytmu szeregowania O(1) jest prawdziwe?;",
+                    "question": "Które z poniszych zda dotyczcych algorytmu szeregowania O(1) jest prawdziwe?;",
                     "options": [
-                        "Wymiana priorytetw zada sprowadza si do zamiany wsk. na tab. aktywn i przeterminowan.",
-                        "Priorytet kadego zadania jest ustalany wycznie na podst. jego poziomu interakt.",
-                        "Promowane s zadania o wysokim stopniu interakt.",
-                        "Mechanizm szeregowania dokonuje zrwnowaenia obcienia procesw wycznie wtedy, gdy kolejka zada 1 z nich jest pusta.",
-                        "Kwanty czasu dla poszcz. zada s przeliczane dopiero gdy ost. z zada w tab wyczerpie swj kwant."
+                        "Wymiana priorytetw zada sprowadza się do zamiany wsk. na tab. aktywn i przeterminowaną.",
+                        "Priorytet kadego zadania jest ustalany wyłącznie na podst. jego poziomu interakt.",
+                        "Promowane są zadania o wysokim stopniu interakt.",
+                        "Mechanizm szeregowania dokonuje zrwnowaenia obcienia procesw wyłącznie wtedy, gdy kolejka zada 1 z nich jest pusta.",
+                        "Kwanty czasu dla poszcz. zada są przeliczane dopiero gdy ost. z zada w tab wyczerpie swj kwant."
                     ],
                     "correctAnswers": [
                         0,
@@ -334,10 +334,10 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-020",
                     "type": "yn",
-                    "question": "Okrel, ktre ze zda dot. szeregowania procesw w Linuksie 2.6 s prawdziwe?;",
+                    "question": "Okrel, które ze zda dot. szeregowania procesw w Linuksie 2.6 są prawdziwe?;",
                     "options": [
-                        "Linux realizuje wielozadaniowo wycznie w oparciu o kooperacj",
-                        "Dziaanie planisty O(1) oparte jest na schemacie kolejek ze sprzeniem zwrotnym",
+                        "Linux realizuje wielozadaniowo wyłącznie w oparciu o kooperacj",
+                        "Dziaanie planisty O(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym",
                         "Zadania interaktywne otrzymuj od planisty O(1) mniejszy kwant czasu ni zadania nieinteraktywne",
                         "Gwn struktur danych planisty jest drzewo czerwono-czarne",
                         "Linux nie jest rygorystycznym systemem czasu rzeczywistego"
@@ -352,13 +352,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-021",
                     "type": "yn",
-                    "question": "Ktre twierdzenia odnonie wtkw i procesw w systemie Linux s prawdziwe?;",
+                    "question": "Które twierdzenia odnonie wątków i procesw w systemie Linux są prawdziwe?;",
                     "options": [
-                        "Za szeregowanie wtkw odpowiada inny mechanizm jdra ni za szeregowanie procesw. (???)",
-                        "Kady wtek jdra posiada swoj odrbn przestrze adresow.",
+                        "Za szeregowanie wątków odpowiada inny mechanizm jądra ni za szeregowanie procesw. (???)",
+                        "Kady wtek jądra posiada swoj odrbn przestrzeń adresow.",
                         "Makrodefinicja \"current\" powala na szybki dostp do deskryptora biecego procesu.",
-                        "Proces macierzysty, ktrego proces potomny si zakoczy przechodzi w stan TASK_ZOMBIE.",
-                        "Deskryptory procesw powizane s w list."
+                        "Proces macierzysty, ktrego proces potomny się zakoczy przechodzi w stan TASK_ZOMBIE.",
+                        "Deskryptory procesw powizane są w list."
                     ],
                     "correctAnswers": [
                         2,
@@ -385,13 +385,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-023",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje odnonie zarzdzania procesami w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje odnonie zarzdzania procesami w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "deskryptor procesu jest umieszczony na dnie jego stosu w jdrze systemu",
+                        "deskryptor procesu jest umieszczony na dnie jego stosu w jądrze systemu",
                         "makrodefinicja \"current\" zwraca adres deskryptora biecego procesu",
-                        "proces w stanie TASK_UNINTERRUPTIBLE moe by ustawiony w stanie gotowoci przez dowolny sygna, ktry otrzyma",
+                        "proces w stanie TASK_UNINTERRUPTIBLE moe być ustawiony w stanie gotowoci przez dowolny sygnał, który otrzyma",
                         "proces zakoczony ma stan TASK_STOPPED",
-                        "proces, ktry jest wykonywany ma stan TASK_RUNNING."
+                        "proces, który jest wykonywany ma stan TASK_RUNNING."
                     ],
                     "correctAnswers": [
                         1
@@ -401,12 +401,12 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-024",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje o planicie O(1) s prawdziwe:",
+                    "question": "Okrel, które informacje o planicie O(1) są prawdziwe:",
                     "options": [
                         "nowy kwant czasu dla procesu jest ustalany dopiero wtedy, gdy wszystkie procesy w systemie wyczerpi swoje kwanty",
-                        "kolejka procesw gotowych zawiera wskaniki na dwie tablice priorytetw",
+                        "kolejka procesw gotowych zawiera wskaźniki na dwie tablice priorytetw",
                         "kady procesor ma swoj kolejk procesw gotowych",
-                        "priorytet zwykych procesw jest ustalany wycznie na podstawie stopnia ich interaktywnoci",
+                        "priorytet zwykych procesw jest ustalany wyłącznie na podstawie stopnia ich interaktywnoci",
                         "im wyszy jest priorytet procesu, tym krtszy kwant czasu on otrzymuje."
                     ],
                     "correctAnswers": [
@@ -419,12 +419,12 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-025",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje o planicie CFS s prawdziwe:",
+                    "question": "Okrel, które informacje o planicie CFS są prawdziwe:",
                     "options": [
-                        "priorytety procesw s prawie niezmienne",
-                        "klasa szeregowania SCHED_BATCH jest obsugiwana za pomoc algorytmu rotacyjnego",
+                        "priorytety procesw są prawie niezmienne",
+                        "klasa szeregowania SCHED_BATCH jest obsługiwana za pomoc algorytmu rotacyjnego",
                         "waga procesu jest odwrotnoci wartoci jego priorytetu",
-                        "zegar wirtualny jest wprost implementowany w jdrze Linuksa",
+                        "zegar wirtualny jest wprost implementowany w jądrze Linuksa",
                         "kolejka procesw gotowych jest zrealizowana w postaci drzewa czerwono-czarnego."
                     ],
                     "correctAnswers": [
@@ -436,13 +436,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-026",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce obsugi przestrzeni adresowej procesu w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce obsługi przestrzeni adresowej procesu w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "wszystkie wtki jdra korzystaj z jednego, wsplnego dla nich deskryptora pamici",
-                        "obiekty zawierajce informacje o obszarach pamici s umieszczone jednoczenie w dwch rnych strukturach danych",
-                        "sekcje tekstu tworzone s nie tylko dla procesw, ale rwnie dla bibliotek wspdzielonych",
-                        "deskryptor pamici przechowuje adres startowy i kocowy obszaru argumentw wywoania programu",
-                        "deskryptory pamici nigdy nie s wspdzielone przez procesy (wtki) uytkownika."
+                        "wszystkie wątki jądra korzystaj z jednego, wspólnego dla nich deskryptora pamięci",
+                        "obiekty zawierajce informacje o obszarach pamięci są umieszczone jednoczenie w dwch rnych strukturach danych",
+                        "sekcje tekstu tworzone są nie tylko dla procesw, ale rwnie dla bibliotek współdzielonych",
+                        "deskryptor pamięci przechowuje adres startowy i kocowy obszaru argumentw wywołania programu",
+                        "deskryptory pamięci nigdy nie są współdzielone przez procesy (wątki) uytkownika."
                     ],
                     "correctAnswers": [
                         1,
@@ -454,7 +454,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-027",
                     "type": "yn",
-                    "question": "Plan przedsiwzicia moe obejmowac",
+                    "question": "Plan przedsięwzięcia moe obejmowac",
                     "options": [
                         "kad i strukture zespou wytwarzajcego oprogramowanie?",
                         "sposb opracowania oferty przetargowej?"
@@ -471,7 +471,7 @@ const systemyOperacyjneData = {
                     "options": [
                         "maj taki sam interfejs jak obiekt tworzony?",
                         "dekorator . zoona?",
-                        "adapter jest uniwersalny jeeli metody klasy bazowej s nieprzesonite? ??",
+                        "adapter jest uniwersalny jeeli metody klasy bazowej są nieprzesonite? ??",
                         "Czy dekorator rozszerza funkfcje klasy bazowej?",
                         "Czy dekorator jest wzorcem czynnociowym?",
                         "Adapter uniwersalny czy jest realizowany przez dziedziczenie?"
@@ -501,7 +501,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Czy w agregacji cakowitej",
                     "options": [
-                        "jeden obiekt zawiera si w drugim?",
+                        "jeden obiekt zawiera się w drugim?",
                         "jeden obiekt moe istnie bez drugiego?"
                     ],
                     "correctAnswers": [
@@ -527,7 +527,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Czy do sterowania scentralizowanego naley",
                     "options": [
-                        "model wywoanie-powrt?",
+                        "model wywołanie-powrt?",
                         "model sterowania z przerwaniami?"
                     ],
                     "correctAnswers": [
@@ -543,7 +543,7 @@ const systemyOperacyjneData = {
                         "metoda zwinna jest programowaniem ekstremalnym i polega na cigym testowaniu?",
                         "porednik zdalny kolejkuje zadania?",
                         "diagram aktywnosci zawiera aktorow?",
-                        "jeden scenariusz jest do jednego przypadku uycia?",
+                        "jeden scenariusz jest do jednego przypadku użycia?",
                         "iterator moze przechodzi po dowolnej kolekcji danych i przeprowadza operacje (dodawanie, usuwanie,pobranie aktualnej danej)?"
                     ],
                     "correctAnswers": [
@@ -556,13 +556,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-034",
                     "type": "yn",
-                    "question": "Ktre ze zda dotyczcych kolejek prac s prawdziwe?",
+                    "question": "Które ze zda dotyczcych kolejek prac są prawdziwe?",
                     "options": [
-                        "Czynnoci odroczone wykonywane w ramach kolejek prac wykonywane s w kontekcie przerwania",
-                        "Kolejki praczastpiy mechanizm dolnych powek znany, jako kolejki zada, ktry by wykorzystywany we wczeniejszych jdra Linuksa",
-                        "Mechanizm kolejek prac pozwala na okrelenie czasu po upywie, ktrego dana czynno moe si rozpocz",
-                        "Jdro systemu linux zawiera specjaln funkcje, ktra pozwala na oprnienie domylnej kolejki prac",
-                        "Jeli w jdrze tworzona jest nowa kolejka prac, to jest rwnoczenie dla niej tworzony nowy odrbny wtek roboczy"
+                        "Czynnoci odroczone wykonywane w ramach kolejek prac wykonywane są w kontekcie przerwania",
+                        "Kolejki praczastpiy mechanizm dolnych połówek znany, jako kolejki zada, który być wykorzystywany we wczeniejszych jądra Linuksa",
+                        "Mechanizm kolejek prac pozwala na okrelenie czasu po upywie, ktrego dana czynno moe się rozpocz",
+                        "Jdro systemu linux zawiera specjaln funkcje, która pozwala na oprnienie domylnej kolejki prac",
+                        "Jeli w jądrze tworzona jest nowa kolejka prac, to jest rwnoczenie dla niej tworzony nowy odrbny wtek roboczy"
                     ],
                     "correctAnswers": [
                         1,
@@ -575,13 +575,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m1-035",
                     "type": "yn",
-                    "question": "Okrel ktre twierdzenia dotyczce zarzdzania czasem w Linuxie s prawdziwe? ;",
+                    "question": "Okrel które twierdzenia dotyczce zarzdzania czasem w Linuxie są prawdziwe? ;",
                     "options": [
                         "Staa HZ dla architektury i386 wynosi 1000.",
-                        "Zawarto zegara czasu rzeczywistego jest odczytywana przez jdro co pewien okrelony przedzia czasu",
+                        "Zawarto zegara czasu rzeczywistego jest odczytywana przez jądro co pewien okrelony przedział czasu",
                         "Zmienna ijffies jest naoona na starsze 32 bity zmiennej ijffies_64.",
-                        "Liczniki dynamiczne ze wzgldu na zbyt ma precyzj nie mog by wykorzystywane w zadaniach czasu rzeczywistego",
-                        "Listy licznikw nie s przez system sortowane."
+                        "Liczniki dynamiczne ze wzgldu na zbyt ma precyzj nie mogą być wykorzystywane w zadaniach czasu rzeczywistego",
+                        "Listy licznikw nie są przez system sortowane."
                     ],
                     "correctAnswers": [
                         0,
@@ -870,7 +870,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Czy przy testowaniu programw obiektowych",
                     "options": [
-                        "testowanie jednostkowe ogranicza si do testowania metod klasy?",
+                        "testowanie jednostkowe ogranicza się do testowania metod klasy?",
                         "wykonuje sie testy integralnoci?"
                     ],
                     "correctAnswers": [
@@ -897,12 +897,12 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Kontrole",
                     "options": [
-                        "Czy kontrole s metodami statycznymi v&v?",
+                        "Czy kontrole są metodami statycznymi v&v?",
                         "Czy automatyczna analiza statyczna zawsze wskazuje dokadne miejsce usterki?",
                         "Czy kontrole pozwalaj wykry wiele defektw podczas sesji?",
                         "Czy cakowicie eliminuj konieczno przeprowadzenia testw?",
                         "Nie pozwalaj okreli cech dynamicznych testowanego programowania?",
-                        "Czy podczas kontroli mona znale wiele bdw?"
+                        "Czy podczas kontroli można znale wiele bdw?"
                     ],
                     "correctAnswers": [
                         0,
@@ -943,8 +943,8 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Projektowanie oglne",
                     "options": [
-                        "czy tworzy si wstpujco?",
-                        "czy pozwala przedstawi projektantom zarys systemu?",
+                        "czy tworzy się wstpujco?",
+                        "czy pozwala przedstawić projektantom zarys systemu?",
                         "czy dostarcza informacji o oglnej architekturze systemu?"
                     ],
                     "correctAnswers": [
@@ -971,8 +971,8 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Efektywno",
                     "options": [
-                        "osiga si przez mao gruboziarnistych klas?",
-                        "osiga si przez duo drobnoziarnistych klas?"
+                        "osiga się przez mao gruboziarnistych klas?",
+                        "osiga się przez duo drobnoziarnistych klas?"
                     ],
                     "correctAnswers": [
                         0
@@ -1065,7 +1065,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m2-031",
                     "type": "yn",
-                    "question": "Czy element static na diagramie UML oznacza si przez",
+                    "question": "Czy element static na diagramie UML oznacza się przez",
                     "options": [
                         "podkrelenie?",
                         "pogrubienie?"
@@ -1096,10 +1096,10 @@ const systemyOperacyjneData = {
                     "options": [
                         "Testowanie wstpujce w kocowej fazie?",
                         "Minimalizacja strat agodzi skutki?",
-                        "Kontroler znajduje w programach bdy pominicia i niespjnoci? TAK (IP_lec_4 s.17)",
+                        "Kontroler znajduje w programach bdy pominicia i niespjnoci? TAK (IP_lec_4 są.17)",
                         "Punkty widzenia? -> KOCOWI UYTKOWNICY?",
-                        "Porednik wirtualny przechowuje w pamici podrcznej informacje o przedmiotach?",
-                        "Porednik ochraniajcy sprawdza czy wywoujcy ma pozwolenie na dostp?",
+                        "Porednik wirtualny przechowuje w pamięci podrcznej informacje o przedmiotach?",
+                        "Porednik ochraniajcy sprawdza czy wywołujący ma pozwolenie na dostp?",
                         "Czy obserwator weryfikuje obserwatorw?",
                         "obserwujcy nie moe ->"
                     ],
@@ -1117,13 +1117,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m2-034",
                     "type": "yn",
-                    "question": "Ktre za zda dotyczcych kolejek prac s prawdziwe? ;",
+                    "question": "Które za zda dotyczcych kolejek prac są prawdziwe? ;",
                     "options": [
-                        "Czynnoci odroczone wykonywane w ramach kolejek prac s wykonywane w kontekcie przerwania",
-                        "Kolejki prac zastpiy mechanizm dolnych powek znany jako kolejki zada, ktry by  wykorzystywany we wczeniejszych wersjach jdra Linuksa.",
-                        "Mechanizm kolejek prac pozwala na okrelenie czasu po upywie ktrego dana czynno moe si  rozpocz",
-                        "Jdro systemu Loniux zawiera specjaln funkcj, ktrej wywoanie pozwala na oprnienie  domylnej kolejki prac",
-                        "Jeli w jdrze tworzona jest nowa kolejka prac, to jest rwnoczenie dla niej tworzony nowy, odrbny wtek roboczy."
+                        "Czynnoci odroczone wykonywane w ramach kolejek prac są wykonywane w kontekcie przerwania",
+                        "Kolejki prac zastpiy mechanizm dolnych połówek znany jako kolejki zada, który być wykorzystywany we wczeniejszych wersjach jądra Linuksa.",
+                        "Mechanizm kolejek prac pozwala na okrelenie czasu po upywie ktrego dana czynno moe się  rozpocz",
+                        "Jdro systemu Loniux zawiera specjaln funkcj, której wywołanie pozwala na oprnienie  domylnej kolejki prac",
+                        "Jeli w jądrze tworzona jest nowa kolejka prac, to jest rwnoczenie dla niej tworzony nowy, odrbny wtek roboczy."
                     ],
                     "correctAnswers": [
                         1,
@@ -1134,13 +1134,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m2-035",
                     "type": "yn",
-                    "question": "Ktre z zda dotyczcych kolejek prac s prawdziwe?;",
+                    "question": "Które z zda dotyczcych kolejek prac są prawdziwe?;",
                     "options": [
-                        "Czynnoci odroczone wyk. w ramach kolejek prac s wykonywane w kontekcie przerwania",
-                        "Kolejki prac zastpiy mechanizm dolnych powek znany jako kolejki zada, ktry by we wcze. Linuxach (???)",
-                        "Mechanizm kolejek prac pozwala na okrelenie czasu po upywie ktrego dana czynno moe si rozpocz",
-                        "Jdro systemu Linux zawiera specjaln funkcj ktrej wywoanie pozwala na oprnienie domylnej kolejki prac",
-                        "Jesli w jdrze tworzona jest nowa kolejka prac to jest rwnoczenie dla niej tworzony nowy odrbny wtek rob."
+                        "Czynnoci odroczone wyk. w ramach kolejek prac są wykonywane w kontekcie przerwania",
+                        "Kolejki prac zastpiy mechanizm dolnych połówek znany jako kolejki zada, który był we wcze. Linuxach (???)",
+                        "Mechanizm kolejek prac pozwala na okrelenie czasu po upywie ktrego dana czynno moe się rozpocz",
+                        "Jdro systemu Linux zawiera specjaln funkcj której wywołanie pozwala na oprnienie domylnej kolejki prac",
+                        "Jesli w jądrze tworzona jest nowa kolejka prac to jest rwnoczenie dla niej tworzony nowy odrbny wtek rob."
                     ],
                     "correctAnswers": [
                         1,
@@ -1448,13 +1448,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-018",
                     "type": "yn",
-                    "question": "Ktre z twierdze dotyczcych obsugi przerwa w Linuksie 2.6 S prawdziwe?",
+                    "question": "Które z twierdze dotyczcych obsługi przerwa w Linuksie 2.6 Są prawdziwe?",
                     "options": [
-                        "Obsuga przerwa podzielona jest na grn powk i doln powk",
-                        "Procedury obsugi przerwa mog by wykonywane dowolnie dugo",
-                        "Do linii obsugi przerwania o okrelonym numerze moe by przypisanych kilka procedur obsugi przerwa",
-                        "W procedurach obsugi przerwa mona wywoa funkcje, ktre ulegaj blokowaniu",
-                        "Procedury obsugi przerwa korzystaj ze stosu jdra, ktry ma nieograniczony rozmiar"
+                        "Obsługa przerwa podzielona jest na grn powk i doln powk",
+                        "Procedury obsługi przerwa mogą być wykonywane dowolnie dugo",
+                        "Do linii obsługi przerwania o okrelonym numerze moe być przypisanych kilka procedur obsługi przerwa",
+                        "W procedurach obsługi przerwa można wywoa funkcje, które ulegaj blokowaniu",
+                        "Procedury obsługi przerwa korzystaj ze stosu jądra, który ma nieograniczony rozmiar"
                     ],
                     "correctAnswers": [
                         0,
@@ -1465,13 +1465,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-019",
                     "type": "yn",
-                    "question": "Ktre z poniszych stwierdze dotyczcych rodkw synchronizacji w jdrze linuxa 2.6 sprawdziwe??",
+                    "question": "Które z poniszych stwierdze dotyczcych rodkw synchronizacji w jądrze linuxa 2.6 sprawdziwe??",
                     "options": [
-                        "Wtek wykonania, ktry przetrzymuje semafor nie moe rwnoczenie przetrzyma rygla ptlowego",
+                        "Wtek wykonania, który przetrzymuje semafor nie moe rwnoczenie przetrzymać rygla pętlowego",
                         "Blokady sekwencyjne pozwalaj ustali czy operacja odczytu nie zostaa przepleciona operacjzapisu",
                         "Blokada BKL jest blokad gruboziarnist",
                         "Blokada BKL nie jest rekurencyjna",
-                        "Rygle ptlowe nie s uywane w systemach jednoprocesorowych w jdrze, ktre nie wycza wtkw"
+                        "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wycza wątków"
                     ],
                     "correctAnswers": [
                         0,
@@ -1484,12 +1484,12 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-020",
                     "type": "yn",
-                    "question": "Poniej umieszczono zdania dotyczce obsugi przerwa przez Linuksa 2.6. Ktre z nich s prawdziwe?",
+                    "question": "Poniej umieszczono zdania dotyczce obsługi przerwa przez Linuksa 2.6. Które z nich są prawdziwe?",
                     "options": [
-                        "Numery przerwa mog by przydzielane niektrym urzdzeniom dynamicznie",
-                        "Aby procedura obsugi przerwania moga by wywoana, musi zosta wczeniej zarejestrowana",
-                        "Procedury obsugi przerwania mog korzysta z wartoci zwracanej przez makrodefinicj current",
-                        "Nie jest wymagane, aby procedury obsugi przerwa byy wielobiene"
+                        "Numery przerwa mogą być przydzielane niektrym urządzeniom dynamicznie",
+                        "Aby procedura obsługi przerwania mogą być wywołana, musi zosta wczeniej zarejestrowana",
+                        "Procedury obsługi przerwania mogą korzysta z wartoci zwracanej przez makrodefinicj current",
+                        "Nie jest wymagane, aby procedury obsługi przerwa byy wielobiene"
                     ],
                     "correctAnswers": [
                         0,
@@ -1501,13 +1501,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-021",
                     "type": "yn",
-                    "question": "Ktre z poniszych zda dotyczcych synchronizacji s prawdziwe?? (tu mog si nie zgadza odpowiedzi)",
+                    "question": "Które z poniszych zda dotyczcych synchronizacji są prawdziwe?? (tu mogą się nie zgadza odpowiedzi)",
                     "options": [
-                        "Niektre operacje niepodzielne mog by zrealizowane jak jeden rozkaz",
+                        "Niektre operacje niepodzielne mogą być zrealizowane jak jeden rozkaz",
                         "Przeplot operacji jest przyczyn wystpowania problemu sekcji krytycznej",
                         "W systemie linux, w przestrzeni uytkownika wywaszczenie procesu moe zaj tylko w cile okrelonym momencie jego dziaania",
-                        "Zadanie nigdy nie moe by wywaszczone po zakoczeniu obsugi przerwania",
-                        "Dostp do zmiennych lokalnych wtkw nie musi podlega synchronizacji"
+                        "Zadanie nigdy nie moe być wywaszczone po zakoczeniu obsługi przerwania",
+                        "Dostp do zmiennych lokalnych wątków nie musi podlega synchronizacji"
                     ],
                     "correctAnswers": [
                         0,
@@ -1519,13 +1519,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-022",
                     "type": "yn",
-                    "question": "Ktre ze stwierdze dotyczcych obsugi przerwa w Linuksie 2.6 s prawdziwe? ;",
+                    "question": "Które ze stwierdze dotyczcych obsługi przerwa w Linuksie 2.6 są prawdziwe? ;",
                     "options": [
-                        "Obsuga przerwa jest podzielona na grn powk i doln powk.",
-                        "Procedury obsugi przerwa mog by wykonywane dowolnie dugo",
-                        "Do linii przerwania o okrelonym numerze moe by przypisanych kilka procedur obsugi przerwa",
-                        "W procedurach obsugi przerwa mona wywoa funkcje, ktre ulegaj blokowaniu",
-                        "Procedury obsugi przerwa korzystaj ze stosu jdra, ktry ma nieograniczony rozmiar"
+                        "Obsługa przerwa jest podzielona na grn powk i doln powk.",
+                        "Procedury obsługi przerwa mogą być wykonywane dowolnie dugo",
+                        "Do linii przerwania o okrelonym numerze moe być przypisanych kilka procedur obsługi przerwa",
+                        "W procedurach obsługi przerwa można wywoa funkcje, które ulegaj blokowaniu",
+                        "Procedury obsługi przerwa korzystaj ze stosu jądra, który ma nieograniczony rozmiar"
                     ],
                     "correctAnswers": [
                         0
@@ -1535,13 +1535,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-023",
                     "type": "yn",
-                    "question": "Ktre z poniszych stwierdze dotyczcych rodkw synchronizacji w jdrze Linuksa 2.6 s prawdziwe? ;",
+                    "question": "Które z poniszych stwierdze dotyczcych rodkw synchronizacji w jądrze Linuksa 2.6 są prawdziwe? ;",
                     "options": [
-                        "Wtek wykonania, ktry przytrzymuje semafor nie moe rwnoczenie przetrzymywa rygla ptlowego.",
+                        "Wtek wykonania, który przytrzymuje semafor nie moe rwnoczenie przetrzymywa rygla pętlowego.",
                         "Blokady sekwencyjne pozwalaj ustali, czy operacja odczytu nie zostaa przepleciona z operacj zapisu.",
                         "Blokada BKL jest blokad gruboziarnist.",
                         "Blokada BKL nie jest rekurencyjna",
-                        "Rygle ptlowe nie s uywane w systemach jednoprocesorowych w jdrze, ktre nie wywaszczaj wtkw."
+                        "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wywaszczaj wątków."
                     ],
                     "correctAnswers": [
                         0,
@@ -1554,13 +1554,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-024",
                     "type": "yn",
-                    "question": "Poniej umieszczono zdania dotyczce obsugi przerwa w Linuksie 2.6, ktre z nich s prawdziwe? ;",
+                    "question": "Poniej umieszczono zdania dotyczce obsługi przerwa w Linuksie 2.6, które z nich są prawdziwe? ;",
                     "options": [
-                        "Czstotliwoci pojawienia si wszystkich przerwa s wykorzystywane do inicjalizowania generatowa liczb losowych",
-                        "Numery przerwa mog by przydzielane niektrym urzdzeniom dynamicznie.",
-                        "Aby procedura obsugi przerwania moga by wywoana, musi zosta wczeniej zarejestrowana.",
-                        "Procedury obsugi przerwania mog korzysta z wartoci zwracanej przez makrodefinicj current",
-                        "Nie jest wymagane, aby funkcje obsugi przerwa byy wielobiene."
+                        "Czstotliwoci pojawienia się wszystkich przerwa są wykorzystywane do inicjalizowania generatowa liczb losowych",
+                        "Numery przerwa mogą być przydzielane niektrym urządzeniom dynamicznie.",
+                        "Aby procedura obsługi przerwania mogą być wywołana, musi zosta wczeniej zarejestrowana.",
+                        "Procedury obsługi przerwania mogą korzysta z wartoci zwracanej przez makrodefinicj current",
+                        "Nie jest wymagane, aby funkcje obsługi przerwa byy wielobiene."
                     ],
                     "correctAnswers": [
                         1,
@@ -1572,13 +1572,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-025",
                     "type": "yn",
-                    "question": "Ktre ze zda dotyczcych synchronizacji s prawdziwe?",
+                    "question": "Które ze zda dotyczcych synchronizacji są prawdziwe?",
                     "options": [
-                        "Niektre operacje niepodzielne mog by zrealizowane jako pojedyncze rozkazy procesora.",
+                        "Niektre operacje niepodzielne mogą być zrealizowane jako pojedyncze rozkazy procesora.",
                         "Przeplot operacji jest przyczyn wystpowania problemu sekcji krytycznej.",
                         "W systemie Linux, w przestrzeni uytkownika wywaszczenie procesu moe zaj tylko w cile okrelonym momencie jego dziaania",
-                        "Zadanie nigdy nie moe by wywaszczone po zakoczeniu obsugi przerwania.",
-                        "Dostp do zmiennych lokalnych wtkw wykonania nie musi podlega synchronizacji."
+                        "Zadanie nigdy nie moe być wywaszczone po zakoczeniu obsługi przerwania.",
+                        "Dostp do zmiennych lokalnych wątków wykonania nie musi podlega synchronizacji."
                     ],
                     "correctAnswers": [
                         0,
@@ -1591,13 +1591,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-026",
                     "type": "yn",
-                    "question": "Ktre z tw. dot. Obsugi przerwa w Linuksie 2.6 jest prawdziwe?;",
+                    "question": "Które z tw. dot. Obsługi przerwa w Linuksie 2.6 jest prawdziwe?;",
                     "options": [
-                        "Obsuga przerwa podzielona na grn i doln powk",
-                        "Procedury ob. Przerwa mog by wykonywane dowolnie dugo, (???)",
-                        "Do linii przerwania o okrelonym numerze moe by przypisanych kilka procedur obsugi przerwa  (???)",
-                        "W procedurach obsugi przerwa mona wywoywa funkcje, ktre ulegaj blokowaniu",
-                        "Procedury obsugi przerwa korzystaj ze stosu jdra, ktry ma nieograniczony rozmiar"
+                        "Obsługa przerwa podzielona na grn i doln powk",
+                        "Procedury ob. Przerwa mogą być wykonywane dowolnie dugo, (???)",
+                        "Do linii przerwania o okrelonym numerze moe być przypisanych kilka procedur obsługi przerwa  (???)",
+                        "W procedurach obsługi przerwa można wywoływać funkcje, które ulegaj blokowaniu",
+                        "Procedury obsługi przerwa korzystaj ze stosu jądra, który ma nieograniczony rozmiar"
                     ],
                     "correctAnswers": [
                         0,
@@ -1608,13 +1608,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-027",
                     "type": "yn",
-                    "question": "Ktre z poniszych stwierdze dot. rodkw synchronizacji w jdrze Linuksa 2.6 s prawdziwe?;",
+                    "question": "Które z poniszych stwierdze dot. rodkw synchronizacji w jądrze Linuksa 2.6 są prawdziwe?;",
                     "options": [
-                        "Wtek wykonania ktry przetrzymuje semafor nie moe rwnoczenie przetrzymywa rygla ptlowego",
+                        "Wtek wykonania który przetrzymuje semafor nie moe rwnoczenie przetrzymywa rygla pętlowego",
                         "Blokady sekwencyjne pozwalaj ustali czy operacja odczytu nie zostaa przepleciona z operacj zapisu (???)",
                         "Blokada BLK jest blokad gruboziarnist.",
                         "Blokada BLK nie jest rekurencyjna",
-                        "Rygle ptlowe nie s uywane w systemach 1-procesorowych w jdrze ktre nie wywaszcza wtkw"
+                        "Rygle pętlowe nie są używane w systemach 1-procesorowych w jądrze które nie wywaszcza wątków"
                     ],
                     "correctAnswers": [
                         1,
@@ -1626,13 +1626,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-028",
                     "type": "yn",
-                    "question": "Poniej umieszczono zdania dotyczce obsugi przerwa przez Linuksa 2.6  ktre s prawdziwe?;",
+                    "question": "Poniej umieszczono zdania dotyczce obsługi przerwa przez Linuksa 2.6  które są prawdziwe?;",
                     "options": [
-                        "Czstotliwo pojawiania si wszystkich przerwa s wykorzystywane do inicjalizowania generatora licz los.",
-                        "Numery przerwa mog by przydzielane niektrym urzdzeniom dynamicznie",
-                        "Aby procedura obsugi przerwania moga by wywoana musi zosta wczeniej zarejestrowana",
-                        "Procedury obsugi przerwania mog korzysta z wartoci zwracanej przez makrodefinicj current",
-                        "Nie jest wymagane aby funkcje obsugi przerwa byy wielobiene"
+                        "Czstotliwo pojawiania się wszystkich przerwa są wykorzystywane do inicjalizowania generatora licz los.",
+                        "Numery przerwa mogą być przydzielane niektrym urządzeniom dynamicznie",
+                        "Aby procedura obsługi przerwania mogą być wywołana musi zosta wczeniej zarejestrowana",
+                        "Procedury obsługi przerwania mogą korzysta z wartoci zwracanej przez makrodefinicj current",
+                        "Nie jest wymagane aby funkcje obsługi przerwa byy wielobiene"
                     ],
                     "correctAnswers": [
                         1,
@@ -1646,7 +1646,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Które z poniższych stwierdzeń dotyczących środków synchronizacji w jądrze linux’a 2.6 sąprawdziwe??",
                     "options": [
-                        "Wątek wykonania, który przetrzymuje semafor nie może równocześnie przetrzyma rygla pętlowego",
+                        "Wątek wykonania, który przetrzymuje semafor nie może równocześnie przetrzymać rygla pętlowego",
                         "Blokady sekwencyjne pozwalają ustalić czy operacja odczytu nie została przepleciona operacjązapisu",
                         "Blokada BKL jest blokadą gruboziarnistą",
                         "Blokada BKL nie jest rekurencyjna",
@@ -1682,7 +1682,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Które z poniższych zdań dotyczących synchronizacji są prawdziwe?? (tu mogą się nie zgadzać odpowiedzi)",
                     "options": [
-                        "Niektóre operacje niepodzielne mogą by zrealizowane jak jeden rozkaz",
+                        "Niektóre operacje niepodzielne mogą być zrealizowane jak jeden rozkaz",
                         "Przeplot operacji jest przyczyną występowania problemu sekcji krytycznej",
                         "W systemie linux, w przestrzeni użytkownika wywłaszczenie procesu może zajść tylko w ściśle określonym momencie jego działania",
                         "Zadanie nigdy nie może być wywłaszczone po zakończeniu obsługi przerwania",
@@ -1698,13 +1698,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-032",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce obsugi przerwa w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce obsługi przerwa w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "procedury obsugi przerwa w Linuksie s funkcjami napisanymi w jzyku C",
-                        "procedury obsugi przerwa s wykonywane w kontekcie przerwania",
-                        "procedury obsugi przerwa s wywoywane w sposb asynchroniczny",
-                        "linie zgaszania przerwa (IRQ) mog by wspdzielone",
-                        "niektre przerwania mog zasila pul entropii jdra."
+                        "procedury obsługi przerwa w Linuksie są funkcjami napisanymi w jzyku C",
+                        "procedury obsługi przerwa są wykonywane w kontekcie przerwania",
+                        "procedury obsługi przerwa są wywoływane w sposb asynchroniczny",
+                        "linie zgaszania przerwa (IRQ) mogą być współdzielone",
+                        "niektre przerwania mogą zasila pul entropii jądra."
                     ],
                     "correctAnswers": [
                         0,
@@ -1718,13 +1718,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-033",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce rodkw synchronizacji w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce rodkw synchronizacji w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
                         "funkcje realizujce operacje niepodzielne na liczbach cakowitych dziaaj na zmiennych typu \"int\"",
-                        "niepodzielne operacje na bitach przeprowadzane s za pomoc tych samych funkcji co niepodzielne operacje na liczbach cakowitych",
-                        "rygle ptlowe wprowadzaj wtki oczekujce na ich zwolnienie w stan aktywnego oczekiwania",
-                        "zwyky rygiel ptlowy moe by przetrzymywany przez kilka wtkw jednoczenie",
-                        "rygle ptlowe nie s uywane w systemach jednoprocesorowych."
+                        "niepodzielne operacje na bitach przeprowadzane są za pomoc tych samych funkcji co niepodzielne operacje na liczbach cakowitych",
+                        "rygle pętlowe wprowadzaj wątki oczekujce na ich zwolnienie w stan aktywnego oczekiwania",
+                        "zwyky rygiel pętlowy moe być przetrzymywany przez kilka wątków jednoczenie",
+                        "rygle pętlowe nie są używane w systemach jednoprocesorowych."
                     ],
                     "correctAnswers": [
                         2,
@@ -1735,13 +1735,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-034",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce pomiaru i synchronizacji wzgldem czasu w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce pomiaru i synchronizacji wzgldem czasu w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "zegar czasu rzeczywistego (RTC) jest okresowo odczytywany przez jdro systemu",
+                        "zegar czasu rzeczywistego (RTC) jest okresowo odczytywany przez jądro systemu",
                         "liczb taktw zegara od uruchomienia systemu przechowuje zmienna \"jiffies\"",
                         "czstotliwo zegara systemowego jest okrelona sta \"HZ\"",
-                        "implementacja procedury obsugi przerwania zegarowego jest cakowicie niezalena od sprztu",
-                        "warto staej \"HZ\" jest taka sama dla wszystkich platform sprztowych."
+                        "implementacja procedury obsługi przerwania zegarowego jest cakowicie niezalena od sprzętu",
+                        "warto staej \"HZ\" jest taka sama dla wszystkich platform sprzętowych."
                     ],
                     "correctAnswers": [
                         1,
@@ -1752,13 +1752,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m3-035",
                     "type": "yn",
-                    "question": "Okrel ktre twierdzenia dot. zadania czasem w Linkusie s prawdziwe?;",
+                    "question": "Okrel które twierdzenia dot. zadania czasem w Linkusie są prawdziwe?;",
                     "options": [
                         "Staa HZ dla architektury i386 wynosi 1000",
-                        "Zawarto zegara czasu rzeczywistego jest odczytywana przez jdro co pewien okrelony przedzia czasu",
+                        "Zawarto zegara czasu rzeczywistego jest odczytywana przez jądro co pewien okrelony przedział czasu",
                         "Zmienna jiffies jest naoona na starsze 32 bity zmiennej jiffies_64",
-                        "Liczniki dynam. ze wzgldu na zbyt maa precyzje nie mog by wykorzystywane w zadaniach czasu rzeczyw.",
-                        "Listy licznikw nie s przez system sortowane"
+                        "Liczniki dynam. ze wzgldu na zbyt maa precyzje nie mogą być wykorzystywane w zadaniach czasu rzeczyw.",
+                        "Listy licznikw nie są przez system sortowane"
                     ],
                     "correctAnswers": [
                         0,
@@ -1845,8 +1845,8 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Potoki czy",
                     "options": [
-                        "nadaj si do systemw interaktywnych?",
-                        "mog by stosowane tylko do systemw sekwencyjnych?"
+                        "nadaj się do systemw interaktywnych?",
+                        "mogą być stosowane tylko do systemw sekwencyjnych?"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -1871,9 +1871,9 @@ const systemyOperacyjneData = {
                     "question": "Podsystem",
                     "options": [
                         "moe dziaa niezalenie?",
-                        "moe ze soba wspdziaa?",
-                        "pojedynczy podsystem moe by traktowany jako samodzielny?",
-                        "funkcje rnych podsystemw mog dziaa wsplnie?"
+                        "moe ze soba współdziała?",
+                        "pojedynczy podsystem moe być traktowany jako samodzielny?",
+                        "funkcje rnych podsystemw mogą dziaa wspólnie?"
                     ],
                     "correctAnswers": [
                         0,
@@ -1899,13 +1899,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-009",
                     "type": "yn",
-                    "question": "Ktre z poniszych zda dotyczcych wywoa systemowych w Linuks 2.6 s prawdziwe?",
+                    "question": "Które z poniszych zda dotyczcych wywołań systemowych w Linuks 2.6 są prawdziwe?",
                     "options": [
-                        "Dodawanie nowych wywoa systemowych nie jest zalecanym sposobem przez twrcw jdra sposobem dodawania nowej funkcjonalnoci",
-                        "Kade wywoanie systemowe zwraca warto typu long",
-                        "Kade wywoanie systemowe musi zawiera, co najmniej 1 argument wywoania",
+                        "Dodawanie nowych wywołań systemowych nie jest zalecanym sposobem przez twrcw jądra sposobem dodawania nowej funkcjonalnoci",
+                        "Kade wywołanie systemowe zwraca warto typu long",
+                        "Kade wywołanie systemowe musi zawiera, co najmniej 1 argument wywołania",
                         "Wszystkie funkcje ze standardowej biblioteki jezyka c korzystaj z woa systemowych",
-                        "Funkcja realizujca wywoania systemowe musi by caoci napisana w asemblerze"
+                        "Funkcja realizujca wywołania systemowe musi być caoci napisana w asemblerze"
                     ],
                     "correctAnswers": [
                         0,
@@ -1916,13 +1916,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-010",
                     "type": "yn",
-                    "question": "Ktre ze stwierdze dotyczcych wywoa systemowych w Linuksie 2.6 s prawdziwe?",
+                    "question": "Które ze stwierdze dotyczcych wywołań systemowych w Linuksie 2.6 są prawdziwe?",
                     "options": [
-                        "Dodawanie nowych wywoa systemowych nie jest zalecanym przez twrcw jdra sposobem dodawania nowej funkcjonalnoci. |",
-                        "Kade wywoywanie systemowe zwraca warto typu long. |    tak",
-                        "Kade wywoanie systemowe musi przyjmowa co najmniej jeden argument wywoania",
-                        "Wszystkie funkcje ze standardowej biblioteki jzyka C korzystaj z wywoa systemowych",
-                        "Funkcja realizujca wywoanie systemowe musi by w caoci napisana w assemblerze"
+                        "Dodawanie nowych wywołań systemowych nie jest zalecanym przez twrcw jądra sposobem dodawania nowej funkcjonalnoci. |",
+                        "Kade wywoływanie systemowe zwraca warto typu long. |    tak",
+                        "Kade wywołanie systemowe musi przyjmowa co najmniej jeden argument wywołania",
+                        "Wszystkie funkcje ze standardowej biblioteki jzyka C korzystaj z wywołań systemowych",
+                        "Funkcja realizujca wywołanie systemowe musi być w caoci napisana w assemblerze"
                     ],
                     "correctAnswers": [
                         0,
@@ -1968,13 +1968,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-013",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce wywoa systemowych w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce wywołań systemowych w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "wszystkie funkcje z biblioteki \"libc\" korzystaj z wywoa systemowych",
-                        "wywoania systemowe mog nie przyjmowa adnych argumentw",
-                        "kade wywoanie systemowe zwraca warto stanowic kod jego wykonania",
-                        "zazwyczaj wywoania systemowe implementowane s w postaci funkcji napisanych w assemblerze",
-                        "dodanie do jdra nowego wywoania systemowego wymaga modyfikacji biblioteki \"libc\", aby umoliwi procesom uytkownika korzystanie z niego."
+                        "wszystkie funkcje z biblioteki \"libc\" korzystaj z wywołań systemowych",
+                        "wywołania systemowe mogą nie przyjmowa adnych argumentw",
+                        "kade wywołanie systemowe zwraca warto stanowic kod jego wykonania",
+                        "zazwyczaj wywołania systemowe implementowane są w postaci funkcji napisanych w assemblerze",
+                        "dodanie do jądra nowego wywołania systemowego wymaga modyfikacji biblioteki \"libc\", aby umoliwi procesom uytkownika korzystanie z niego."
                     ],
                     "correctAnswers": [
                         1,
@@ -1985,13 +1985,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-014",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce wywoani systemowych w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce wywołani systemowych w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "adresy wszystkich zarejestrowanych wywoa systemowych s przechowywane w specjalnej tablicy",
-                        "kod funkcji implementujcej wywoanie systemowe moe by umieszczony w module",
-                        "dodawanie nowych wywoa systemowych jest zalecan przez programistw jdra Linuksa praktyk",
-                        "cz procesorw wymaga, aby argumenty do funkcji implementujcych wywoania systemowe byy przekazywane wycznie przez stos",
-                        "funkcja implementujca wywoanie systemowe musi sprawdza poprawno przekazanych jej argumentw."
+                        "adresy wszystkich zarejestrowanych wywołań systemowych są przechowywane w specjalnej tablicy",
+                        "kod funkcji implementujcej wywołanie systemowe moe być umieszczony w module",
+                        "dodawanie nowych wywołań systemowych jest zalecan przez programistw jądra Linuksa praktyk",
+                        "cz procesorw wymaga, aby argumenty do funkcji implementujcych wywołania systemowe byy przekazywane wyłącznie przez stos",
+                        "funkcja implementujca wywołanie systemowe musi sprawdza poprawno przekazanych jej argumentw."
                     ],
                     "correctAnswers": [
                         0,
@@ -2003,13 +2003,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-015",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce wirtualnego systemu plikw (VFS) w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce wirtualnego systemu plikw (VFS) w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
                         "VFS napisany jest w jzyku C++",
-                        "obiekt superbloku moe by stosowany w obsudze systemw plikw, ktre nie maj fizycznej implementacji",
-                        "obiekty i-wzw zwizane s wycznie z fizycznymi plikami",
-                        "niektre nieuniksowe systemy plikw nie posiadaj wszystkich informacji, ktre musz by umieszczone w obiekcie i-wza",
-                        "obiekty wpisw katalogowych maj swoje odpowiedniki na noniku danych."
+                        "obiekt superbloku moe być stosowany w obsudze systemw plikw, które nie maj fizycznej implementacji",
+                        "obiekty i-wzw zwizane są wyłącznie z fizycznymi plikami",
+                        "niektre nieuniksowe systemy plikw nie posiadaj wszystkich informacji, które musz być umieszczone w obiekcie i-wza",
+                        "obiekty wpisw katalogowych maj swoje odpowiedniki na nośniku danych."
                     ],
                     "correctAnswers": [
                         1,
@@ -2033,7 +2033,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-017",
                     "type": "yn",
-                    "question": "Diagram przypadkw uycia",
+                    "question": "Diagram przypadkw użycia",
                     "options": [
                         "jest strukturalny?",
                         "posiada aktorw?",
@@ -2050,7 +2050,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Chain of responsibility (acuch zobowiza)",
                     "options": [
-                        "czy gwarantuje obsuge zapytania przez co najmniej jeden obiekt?",
+                        "czy gwarantuje obsługę zapytania przez co najmniej jeden obiekt?",
                         "wymiana zmodyfikowanych danych pomidzy obiektami?"
                     ],
                     "correctAnswers": [
@@ -2061,7 +2061,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-019",
                     "type": "yn",
-                    "question": "Punktem widzenia mog by",
+                    "question": "Punktem widzenia mogą być",
                     "options": [
                         "odbiorcy usug?",
                         "rdo lub przeznaczenie danych?"
@@ -2077,8 +2077,8 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Czy inynieria programowania",
                     "options": [
-                        "zajmuje si wycznie etapem od zakoczenia tworzenia specyfikacji do oddania programu klientowi?",
-                        "zajmuje si tylko dostarczeniem programu?",
+                        "zajmuje się wyłącznie etapem od zakoczenia tworzenia specyfikacji do oddania programu klientowi?",
+                        "zajmuje się tylko dostarczeniem programu?",
                         "oznacza tylko program wykonywalny?",
                         "definiuje oprogramowanie jako kad posta zapisu programu komputerowego?"
                     ],
@@ -2147,7 +2147,7 @@ const systemyOperacyjneData = {
                     "question": "Etnografia",
                     "options": [
                         "wymagania wynikajce z rzeczywistego sposobu pracy osb a nie ze sposobu zalecanego przez formalne definicje procesw?",
-                        "wymagania, ktre wynikaja z kooperacji i swiadomowsci czynnoci innych osob?"
+                        "wymagania, które wynikaja z kooperacji i swiadomowsci czynności innych osob?"
                     ],
                     "correctAnswers": [
                         0,
@@ -2187,7 +2187,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Czy Stan/Strategia",
                     "options": [
-                        "pozwalaj na przeczanie w zalenoci od kontekstu lub autorytatywne (normalne przeczanie)?",
+                        "pozwalaj na przełączanie w zalenoci od kontekstu lub autorytatywne (normalne przełączanie)?",
                         "strategia i stan umoliwiaj dokonywanie wybor algorytmu/stanu lub moe on by determinowany samoczynnie w klasie kontekstu?"
                     ],
                     "correctAnswers": [
@@ -2201,7 +2201,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Metoda formalna",
                     "options": [
-                        "moe by wszdzie stosowana?",
+                        "moe być wszdzie stosowana?",
                         "oparta na metodach numerycznych?"
                     ],
                     "correctAnswers": [
@@ -2212,7 +2212,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-030",
                     "type": "yn",
-                    "question": "Klasy gruboziarniste stosuje si",
+                    "question": "Klasy gruboziarniste stosuje się",
                     "options": [
                         "w efektywnoci?",
                         "w konserwacji?"
@@ -2227,9 +2227,9 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Singleton",
                     "options": [
-                        "czy moe by tylko jeden taki obiekt?",
-                        "czy mona utworzy tylko jedn instancje?",
-                        "Czy Singleton jest uywany gdy nie wiadomo na etapie kompilacje jakiej klasy trzeba stworzyc obiekty?",
+                        "czy moe być tylko jeden taki obiekt?",
+                        "czy można utworzy tylko jedn instancje?",
+                        "Czy Singleton jest używany gdy nie wiadomo na etapie kompilacje jakiej klasy trzeba stworzyc obiekty?",
                         "Singleton instancja klasy globalna?"
                     ],
                     "correctAnswers": [
@@ -2242,7 +2242,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-032",
                     "type": "yn",
-                    "question": "Czy include w diagramie przypadkw uycia uywa si",
+                    "question": "Czy include w diagramie przypadkw użycia używa się",
                     "options": [
                         "gdy przypadek uzycia wymaga wykorzystania take innych elementw?",
                         "gdy jeden przypadek jest rozbudowanym innym przypadkiem?"
@@ -2258,7 +2258,7 @@ const systemyOperacyjneData = {
                     "question": "Testowanie funkcjonalne",
                     "options": [
                         "przezroczysta skrzynka?",
-                        "wprowadza si z specyfikacji programu?"
+                        "wprowadza się z specyfikacji programu?"
                     ],
                     "correctAnswers": [
                         1
@@ -2271,10 +2271,10 @@ const systemyOperacyjneData = {
                     "question": "Pytania:",
                     "options": [
                         "Zmienna typu atomic_T jest 32 bitowa.",
-                        "Wszystkie architektury, ktre obsuguje Linux dostarczaj rozkazw maszynowych realizujcych operacje niepodzielne na wartociach bdcych liczbami cakowitymi",
-                        "Rygle ptlowe mog by stosowane we fragmentach kodu wykonywujcych si w kontekcie przerwania",
-                        "Rygle R-W stosujemy w zagadnieniach typu problem czytelnikw i pisarzy, gdzie faworyzowani s pisarze",
-                        "Zmienne sygnaowe s uproszczon wersj semaforw."
+                        "Wszystkie architektury, które obsługuje Linux dostarczaj rozkazw maszynowych realizujcych operacje niepodzielne na wartociach bdcych liczbami cakowitymi",
+                        "Rygle pętlowe mogą być stosowane we fragmentach kodu wykonywujcych się w kontekcie przerwania",
+                        "Rygle R-W stosujemy w zagadnieniach typu problem czytelników i pisarzy, gdzie faworyzowani są pisarze",
+                        "Zmienne sygnałowe są uproszczon wersj semaforów."
                     ],
                     "correctAnswers": [
                         0,
@@ -2286,13 +2286,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-m4-035",
                     "type": "yn",
-                    "question": "Ktre stwierdzenia s prawidowe?;",
+                    "question": "Które stwierdzenia są prawidowe?;",
                     "options": [
-                        "Programista jdra powinien si posugiwa zmienn printf.",
-                        "Programista powinien zwraca uwag na rozmiar stosu jdra.",
-                        "Programista jdra powinien uzywa funkcji rekurencyjnych.",
+                        "Programista jądra powinien się posugiwa zmienn printf.",
+                        "Programista powinien zwraca uwag na rozmiar stosu jądra.",
+                        "Programista jądra powinien uzywa funkcji rekurencyjnych.",
                         "Programista nie powinien uzywac funkcji goto.",
-                        "Architektura NUMA jest obsugiwana od wersji jdra 2.6."
+                        "Architektura NUMA jest obsługiwana od wersji jądra 2.6."
                     ],
                     "correctAnswers": [
                         1,
@@ -2310,12 +2310,12 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-final-001",
                     "type": "yn",
-                    "question": "Ktre stwierdzenia s prawidowe?; Mechanizm RCU posuguje si wskanikami.",
+                    "question": "Które stwierdzenia są prawidowe?; Mechanizm RCU posuguje się wskaźnikami.",
                     "options": [
                         "Kod w mechanizmie RCU moe ulec zawieszeniu.",
                         "Odczyty w mechanizmie RCU powinny byc czste, a zapisy sporadyczne.",
-                        "Rygle ptlowe powinny by stosowane wszdzie tam, gdzie nie mona zawiesi wtku i gdzie czas przeczania kontekstu byby niewspmiernie duszy z czasem aktywnego oczekiwania.",
-                        "Rygle ptlowe s rekurencyjne."
+                        "Rygle pętlowe powinny być stosowane wszdzie tam, gdzie nie można zawiesi wątku i gdzie czas przełączania kontekstu byby niewspmiernie duszy z czasem aktywnego oczekiwania.",
+                        "Rygle pętlowe są rekurencyjne."
                     ],
                     "correctAnswers": [
                         1,
@@ -2342,13 +2342,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-final-003",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce dolnych powek w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce dolnych połówek w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
                         "cakowita liczba przerwa programowych jest ograniczona",
-                        "przerwania programowe s wykonywane w kontekcie procesu",
-                        "tasklety s wykonywane w kontekcie procesu",
-                        "czynnoci z kolejek prac s wykonywane w kontekcie przerwania",
-                        "mona precyzyjne okreli czas, po ktrym przerwanie programowe powinno by wykonane."
+                        "przerwania programowe są wykonywane w kontekcie procesu",
+                        "tasklety są wykonywane w kontekcie procesu",
+                        "czynności z kolejek prac są wykonywane w kontekcie przerwania",
+                        "można precyzyjne okreli czas, po którym przerwanie programowe powinno być wykonane."
                     ],
                     "correctAnswers": [
                         0
@@ -2358,13 +2358,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-final-004",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce zarzdzania pamici w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce zarzdzania pamięci w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "Linux obsuguje systemy wieloprocesorowe o organizacji NUMA",
-                        "domylnie Linux przydziela pami ze strefy DMA (ZONE_DMA)",
-                        "podstawowym mechanizmem sprztowym wykorzystywanym przez Linuksa do obsugi pamici jest segmentacja",
-                        "nie we wszystkich platformach sprztowych musi wystpowa strefa pamici wysokiej (ZONE_HIGHMEM)",
-                        "niskopoziomowy mechanizm obsugi pamici umoliwia przydzielenie obszaru pamici o wielkoci jednego bajta."
+                        "Linux obsługuje systemy wieloprocesorowe o organizacji NUMA",
+                        "domylnie Linux przydziela pamięć ze strefy DMA (ZONE_DMA)",
+                        "podstawowym mechanizmem sprzętowym wykorzystywanym przez Linuksa do obsługi pamięci jest segmentacja",
+                        "nie we wszystkich platformach sprzętowych musi wystpowa strefa pamięci wysokiej (ZONE_HIGHMEM)",
+                        "niskopoziomowy mechanizm obsługi pamięci umoliwia przydzielenie obszaru pamięci o wielkoci jednego bajta."
                     ],
                     "correctAnswers": [
                         0,
@@ -2375,13 +2375,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-final-005",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce obsugi urzdze znakowych i blokowych w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce obsługi urządzeń znakowych i blokowych w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "urzdzenia obsugiwane przez Linuksa s wycznie urzdzeniami fizycznymi",
-                        "w komputerach klasy PC kontroler jest zawsze czci struktury sprztowej czcej szyn wejcia-wyjcia z urzdzeniem",
-                        "rejestr moe peni wicej ni jedn funkcj",
-                        "numer gwny identyfikuje sterownik obsugujcy urzdzenie lub grup urzdze",
-                        "urzdzenia znakowe adresuj dane sekwencyjnie."
+                        "urządzenia obsługiwane przez Linuksa są wyłącznie urządzeniami fizycznymi",
+                        "w komputerach klasy PC kontroler jest zawsze czci struktury sprzętowej czcej szyn wejścia-wyjścia z urządzeniem",
+                        "rejestr moe peni więcej ni jedn funkcj",
+                        "numer gwny identyfikuje sterownik obsługujący urządzenie lub grup urządzeń",
+                        "urządzenia znakowe adresuj dane sekwencyjnie."
                     ],
                     "correctAnswers": [
                         2,
@@ -2393,13 +2393,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-final-006",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce warstwy operacji blokowych w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce warstwy operacji blokowych w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
                         "wielko bloku w Linuksie jest nieograniczona",
-                        "kady bufor zawsze jest zwizany z blokiem na noniku danych",
-                        "bufory s wykorzystywane wycznie do przechowywania danych odczytanych z nonika urzdzenia blokowego",
-                        "kady z buforw wyposaony jest w nagwek zawierajcy dane niezbdne do zarzdzania nim",
-                        "nagwek bufora nie przechowuje informacji o operacjach wejcia-wyjcia z jakimi ten bufor jest zwizany."
+                        "kady bufor zawsze jest związany z blokiem na nośniku danych",
+                        "bufory są wykorzystywane wyłącznie do przechowywania danych odczytanych z nonika urządzenia blokowego",
+                        "kady z buforw wyposaony jest w nagłówek zawierający dane niezbędne do zarzdzania nim",
+                        "nagłówek bufora nie przechowuje informacji o operacjach wejścia-wyjścia z jakimi ten bufor jest związany."
                     ],
                     "correctAnswers": [
                         1,
@@ -2411,13 +2411,13 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-final-007",
                     "type": "yn",
-                    "question": "Okrel, ktre informacje dotyczce obsugi sieci w Linuksie 3.0 i nowszych s prawdziwe:",
+                    "question": "Okrel, które informacje dotyczce obsługi sieci w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "jdro wykonuje czynnoci zwizane z obsug warstwy cza, sieci i transportowej modelu ISO/OSI",
+                        "jądro wykonuje czynności zwizane z obsługą warstwy cza, sieci i transportowej modelu ISO/OSI",
                         "NAPI nigdy nie pozwala na sygnalizowanie odbioru pakietu za pomoc przerwania",
                         "przenoszenie bufora pakietu midzy kolejkami jest czasochonne",
-                        "funkcje zwizane z filtrem sieciowym mog \"wykrada\" niektre pakiety, aby przetworzy je w inny sposb ni pozostae",
-                        "w filtrze sieciowym, z pojedynczym uchwytem nie moe by skojarzona wicej ni jedna funkcja przetwarzajca."
+                        "funkcje zwizane z filtrem sieciowym mogą \"wykrada\" niektre pakiety, aby przetworzyć je w inny sposb ni pozostae",
+                        "w filtrze sieciowym, z pojedynczym uchwytem nie moe być skojarzona więcej ni jedna funkcja przetwarzająca."
                     ],
                     "correctAnswers": [
                         0,
@@ -2437,9 +2437,9 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Które z poniższych zdań dotyczących historii i ogólnej charakterystyki jądra Linuksa są prawdziwe?",
                     "options": [
-                        "Jądro Linuksa powstało w 1991 roku, a jego pracami sterował fiński student Linus Benedict Torvalds.",
-                        "Koncepcja potoków uniksowych (pipes) została oryginalnie zaproпонована przez Kena Thompsona.",
-                        "W 1973 roku znaczna część kodu źródłowego Uniksa została przepisana на język C, opracowany przez Dennisa Ritchie.",
+                        "Jądro Linuksa powstało w 1991 roku, a jego pracami kierował fiński student Linus Benedict Torvalds.",
+                        "Koncepcja potoków uniksowych (pipes) została oryginalnie zaproponowana przez Kena Thompsona.",
+                        "W 1973 roku znaczna część kodu źródłowego Uniksa została przepisana na język C, opracowany przez Dennisa Ritchie.",
                         "Jądro Linuksa charakteryzuje się budową monolityczną."
                     ],
                     "correctAnswers": [
@@ -2447,14 +2447,14 @@ const systemyOperacyjneData = {
                         2,
                         3
                     ],
-                    "explanation": "Wyjaśнения:\n• **Opcja a) (TAK):** Powstanie jądra Linuksa przypada na 1991 rok pod керівництвом Linusa Torvaldsa. (Wykład 1)\n• **Opcja b) (NIE):** Douglas McIlroy zaproponował koncepcję potoków uniksowych. (Wykład 1)\n• **Opcja c) (TAK):** W 1973 roku Unix został przepisany na język C, stworzony przez Dennisa Ritchie. (Wykład 1)\n• **Opcja d) (TAK):** Jądro Linuksa ma architekturę monolityczną. (Wykład 1)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Powstanie jądra Linuksa przypada na 1991 rok pod kierownictwem Linusa Torvaldsa. (Wykład 1)\n• **Opcja b) (NIE):** Douglas McIlroy zaproponował koncepcję potoków uniksowych. (Wykład 1)\n• **Opcja c) (TAK):** W 1973 roku Unix został przepisany na język C, stworzony przez Dennisa Ritchie. (Wykład 1)\n• **Opcja d) (TAK):** Jądro Linuksa ma architekturę monolityczną. (Wykład 1)"
                 },
                 {
                     "id": "so-wyk-002",
                     "type": "yn",
                     "question": "Określ, które zdania na temat budowy jądra Linuksa i programowania w przestrzeni jądra są prawdziwe:",
                     "options": [
-                        "W jądru monolitycznym wszystkie usługi (systemy plików, obsługa sieci тощо) działają w jednym wspólnym segmencie pamięci.",
+                        "W jądru monolitycznym wszystkie usługi (systemy plików, obsługa sieci itp.) działają w jednym wspólnym segmencie pamięci.",
                         "Moduły jądra (LKM) mogą być dynamicznie ładowane i usuwane z pamięci w czasie działania systemu.",
                         "W architekturze 32-bitowej przestrzeń jądra (kernel space) standardowo zajmuje górny 1 GB wirtualnej przestrzeni adresowej.",
                         "Kod działający w przestrzeni jądra (kernel space) może korzystać ze standardowych bibliotek C (np. libc)."
@@ -2464,16 +2464,16 @@ const systemyOperacyjneData = {
                         1,
                         2
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** W jądru monolitycznym wszystkie komponenty i usługi współdzielą tę samą przestrzeń adresową jądra. (Wykład 1)\n• **Opcja b) (TAK):** Moduły LKM są ładowane i rozładowywane w locie za допомогою narzędzi takich як insmod i rmmod. (Wykład 1)\n• **Opcja c) (TAK):** W standardowym podziale 3G/1G, jądro zajmuje najwyższy 1 GB przestrzeni adresowej wirtualnej. (Wykład 1)\n• **Opcja d) (NIE):** Kod jądra nie ma dostępu do bibliotek przestrzeni użytkownika, w tym libc. Używa własnych odpowiedników (np. printk). (Wykład 1)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** W jądru monolitycznym wszystkie komponenty i usługi współdzielą tę samą przestrzeń adresową jądra. (Wykład 1)\n• **Opcja b) (TAK):** Moduły LKM są ładowane i rozładowywane w locie za pomocą narzędzi takich jak insmod i rmmod. (Wykład 1)\n• **Opcja c) (TAK):** W standardowym podziale 3G/1G, jądro zajmuje najwyższy 1 GB wirtualnej przestrzeni adresowej. (Wykład 1)\n• **Opcja d) (NIE):** Kod jądra nie ma dostępu do bibliotek przestrzeni użytkownika, w tym libc. Używa własnych odpowiedników (np. printk). (Wykład 1)"
                 },
                 {
                     "id": "so-wyk-003",
                     "type": "yn",
-                    "question": "Które ze zdań dotyczących deskryptora procesu і stanów procesów w Linuksie są prawdziwe?",
+                    "question": "Które ze zdań dotyczących deskryptora procesu i stanów procesów w Linuksie są prawdziwe?",
                     "options": [
                         "Deskryptor procesu jest reprezentowany przez strukturę struct `task_struct`, zdefiniowaną w nagłówku `<linux/sched.h>`.",
                         "Stan `TASK_INTERRUPTIBLE` oznacza, że proces jest uśpiony, ale może zostać obudzony przez odebranie sygnału.",
-                        "Proces oczekujący na zakończenie operacji I/O jest zazwyczaj wprowadzany w stan `TASK_UNINTERRUPTIBLE`, w якому ignoruje sygnały.",
+                        "Proces oczekujący na zakończenie operacji I/O jest zazwyczaj wprowadzany w stan `TASK_UNINTERRUPTIBLE`, w którym ignoruje sygnały.",
                         "Proces-sierota (orphan process) po zakończeniu działania swojego rodzica zostaje adoptowany przez proces init (PID 1) lub systemd."
                     ],
                     "correctAnswers": [
@@ -2482,7 +2482,7 @@ const systemyOperacyjneData = {
                         2,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** `task_struct` zawiera pełne metadane procesu і jest deskryptorem procesu w Linuksie. (Wykład 2)\n• **Opcja b) (TAK):** Proces w stanie `TASK_INTERRUPTIBLE` oczekuje na zdarzenie lub sygnał i reaguje na nie. (Wykład 2)\n• **Opcja c) (TAK):** `TASK_UNINTERRUPTIBLE` ignoruje sygnały; proces przechodzi w ten stan m.in. podczas bezpośredniej obsługi dysku. (Wykład 2)\n• **Opcja d) (TAK):** Każdy proces musi mieć rodzica, dlatego po śmierci rodzica jądro adoptuje go przez proces o PID 1. (Wykład 2)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** `task_struct` zawiera pełne metadane procesu i jest deskryptorem procesu w Linuksie. (Wykład 2)\n• **Opcja b) (TAK):** Proces w stanie `TASK_INTERRUPTIBLE` oczekuje na zdarzenie lub sygnał i reaguje na nie. (Wykład 2)\n• **Opcja c) (TAK):** `TASK_UNINTERRUPTIBLE` ignoruje sygnały; proces przechodzi w ten stan m.in. podczas bezpośredniej obsługi dysku. (Wykład 2)\n• **Opcja d) (TAK):** Każdy proces must mieć rodzica, dlatego po śmierci rodzica jądro adoptuje go przez proces o PID 1. (Wykład 2)"
                 },
                 {
                     "id": "so-wyk-004",
@@ -2490,9 +2490,9 @@ const systemyOperacyjneData = {
                     "question": "Wskaż prawdziwe zdania na temat tworzenia procesów i wątków w Linuksie:",
                     "options": [
                         "Funkcja `fork()` tworzy nowy proces poprzez skopiowanie deskryptora i zasobów procesu rodzica.",
-                        "Mechanizm Copy-on-Write (COW) pozwala на opóźнение kopiowania stron pamięci fizycznej do momentu zapisu przez jeden z procesów.",
+                        "Mechanizm Copy-on-Write (COW) pozwala na opóźnienie kopiowania stron pamięci fizycznej do momentu zapisu przez jeden z procesów.",
                         "Wywołanie `vfork()` różni się od `fork()` tym, że nie kopiuje tablic stron rodzica, a rodzic jest wstrzymywany do momentu wywołania exec/exit.",
-                        "Wątki w Linuksie są traktowane jako zwykłe procesy współdzielące zasoby і są tworzone za допомогою wywołania systemowego `clone()`."
+                        "Wątki w Linuksie są traktowane jako zwykłe procesy współdzielące zasoby i są tworzone za pomocą wywołania systemowego `clone()`."
                     ],
                     "correctAnswers": [
                         0,
@@ -2500,16 +2500,16 @@ const systemyOperacyjneData = {
                         2,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** `fork()` duplikuje zasoby, tworząc proces potomny. (Wykład 2)\n• **Opcja b) (TAK):** Kopiowanie przy zapisie (COW) pozwala zaoszczędzić czas і pamięć RAM przy klonowaniu procesów. (Wykład 2)\n• **Opcja c) (TAK):** `vfork()` działa bezpośrednio na przestrzeni adresowej rodzica i wymaga, aby dziecko szybko wywołało exec/exit. (Wykład 2)\n• **Opcja d) (TAK):** W Linuksie nie ma ścisłego podziału; wątki to po prostu procesy współdzielące pamięć i pliki przez clone. (Wykład 2)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** `fork()` duplikuje zasoby, tworząc proces potomny. (Wykład 2)\n• **Opcja b) (TAK):** Kopiowanie przy zapisie (COW) pozwala zaoszczędzić czas i pamięć RAM przy klonowaniu procesów. (Wykład 2)\n• **Opcja c) (TAK):** `vfork()` działa bezpośrednio na przestrzeni adresowej rodzica i wymaga, aby dziecko szybko wywołało exec/exit. (Wykład 2)\n• **Opcja d) (TAK):** W Linuksie nie ma ścisłego podziału; wątki to po prostu procesy współdzielące pamięć i pliki przez clone. (Wykład 2)"
                 },
                 {
                     "id": "so-wyk-005",
                     "type": "yn",
-                    "question": "Wskaż zdania prawdziwe dotyczące szeregowania zadań і planisty O(1) w Linuksie:",
+                    "question": "Wskaż zdania prawdziwe dotyczące szeregowania zadań i planisty O(1) w Linuksie:",
                     "options": [
-                        "Wielozadaniowość z wywłaszczaniem (preemptive) oznacza, że jądro kontroluje czas procesora і może przerwać proces bez його zgody.",
+                        "Wielozadaniowość z wywłaszczaniem (preemptive) oznacza, że jądro kontroluje czas procesora i może przerwać proces bez jego zgody.",
                         "Poziom uprzejmości (nice value) procesu przyjmuje wartości od -20 (najwyższy priorytet) do +19 (najniższy priorytet).",
-                        "Planista O(1) utrzymuje дві tablice priorytetów w kolejce runqueue: aktywną (active) і przeterminowaną (expired).",
+                        "Planista O(1) utrzymuje dwie tablice priorytetów w kolejce runqueue: aktywną (active) i przeterminowaną (expired).",
                         "W planiście O(1) kwanty czasu zadań są przeliczane dynamicznie dopiero wtedy, gdy tablica aktywna staje się całkowicie pusta."
                     ],
                     "correctAnswers": [
@@ -2517,16 +2517,16 @@ const systemyOperacyjneData = {
                         1,
                         2
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Wywłaszczanie polega на przerwaniu wątku przez system operacyjny. (Wykład 3)\n• **Opcja b) (TAK):** Wartość nice służy do kontroli priorytetu procesów zwykłych. (Wykład 3)\n• **Opcja c) (TAK):** O(1) korzysta z tablic active i expired dla stałego czasu wyбору zadań. (Wykład 3)\n• **Opcja d) (NIE):** Kwanty czasu są przeliczane odразу, gdy zadanie wykorzysta swój kwant і trafi do tablicy expired, a nie zbiorczo. (Wykład 3)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Wywłaszczanie polega na przerwaniu wątku przez system operacyjny. (Wykład 3)\n• **Opcja b) (TAK):** Wartość nice służy do kontroli priorytetu procesów zwykłych. (Wykład 3)\n• **Opcja c) (TAK):** O(1) korzysta z tablic active i expired dla stałego czasu wyboru zadań. (Wykład 3)\n• **Opcja d) (NIE):** Kwanty czasu są przeliczane od razu, gdy zadanie wykorzysta swój kwant i trafi do tablicy expired, a nie zbiorczo. (Wykład 3)"
                 },
                 {
                     "id": "so-wyk-006",
                     "type": "yn",
-                    "question": "Które z poniższych zdań на temat planisty CFS (Completely Fair Scheduler) są prawdziwe?",
+                    "question": "Które z poniższych zdań na temat planisty CFS (Completely Fair Scheduler) są prawdziwe?",
                     "options": [
-                        "CFS rezygnuje z tradycyjnego pojęcia kwantu czasu na rzecz przydzielania procentowego udziału в czasie procesora.",
+                        "CFS rezygnuje z tradycyjnego pojęcia kwantu czasu na rzecz przydzielania procentowego udziału w czasie procesora.",
                         "Kolejka procesów gotowych do uruchomienia w planiście CFS jest implementowana w postaci drzewa czerwono-czarnego.",
-                        "CFS wybiera do uruchomienia proces o najmniejszej wartości wskaźnika wirtualnego часу (vruntime).",
+                        "CFS wybiera do uruchomienia proces o najmniejszej wartości wskaźnika wirtualnego czasu (vruntime).",
                         "Wartość `vruntime` rośnie szybciej dla procesów o wysokim priorytecie (niska wartość nice)."
                     ],
                     "correctAnswers": [
@@ -2534,7 +2534,7 @@ const systemyOperacyjneData = {
                         1,
                         2
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** CFS dąży do idealnego, sprawiedliwego podziału procesora. (Wykład 3)\n• **Opcja b) (TAK):** Drzewo czerwono-czarne pozwala na operacje wstawiania і wyboru o złożoności O(log N). (Wykład 3)\n• **Opcja c) (TAK):** Proces o najmniejszym vruntime (skrajny lewy liść drzewa) jest wybierany jako następny. (Wykład 3)\n• **Opcja d) (NIE):** Dla wyższych priorytetów vruntime rośnie wolniej, завдяки чому proces spędza більше реального часу на CPU. (Wykład 3)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** CFS dąży do idealnego, sprawiedliwego podziału procesora. (Wykład 3)\n• **Opcja b) (TAK):** Drzewo czerwono-czarne pozwala na operacje wstawiania i wyboru o złożoności O(log N). (Wykład 3)\n• **Opcja c) (TAK):** Proces o najmniejszym vruntime (skrajny lewy liść drzewa) jest wybierany jako następny. (Wykład 3)\n• **Opcja d) (NIE):** Dla wyższych priorytetów vruntime rośnie wolniej, dzięki czemu proces spędza więcej realnego czasu na CPU. (Wykład 3)"
                 },
                 {
                     "id": "so-wyk-007",
@@ -2542,8 +2542,8 @@ const systemyOperacyjneData = {
                     "question": "Które z poniższych zdań opisujących szeregowanie czasu rzeczywistego (real-time) w Linuksie są prawdziwe?",
                     "options": [
                         "Klasa `SCHED_FIFO` implementuje szeregowanie karuzelowe z kwantem czasu.",
-                        "Klasa `SCHED_RR` jest rozszerzeniem `SCHED_FIFO` o przydzielanie kwantu czasu, po wyczerpaniu якого proces trafia na koniec kolejki.",
-                        "Procesy czasu rzeczywistego mają priorytety w zakresie від 0 do 99.",
+                        "Klasa `SCHED_RR` jest rozszerzeniem `SCHED_FIFO` o przydzielanie kwantu czasu, po wyczerpaniu którego proces trafia na koniec kolejki.",
+                        "Procesy czasu rzeczywistego mają priorytety w zakresie od 0 do 99.",
                         "Klasa `SCHED_OTHER` służy do szeregowania zwykłych procesów nie-czasu rzeczywistego."
                     ],
                     "correctAnswers": [
@@ -2551,15 +2551,15 @@ const systemyOperacyjneData = {
                         2,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** SCHED_FIFO nie ma kwantu czasu і wykonuje się aż do wywłaszczenia lub zablokowania. Karuzelowe z kwantem to SCHED_RR. (Wykład 4)\n• **Opcja b) (TAK):** SCHED_RR to karuzela o stałym priorytecie z kwantem czasu. (Wykład 4)\n• **Opcja c) (TAK):** Priorytety RT to 0-99 (0 - najwyższy priorytet RT). (Wykład 4)\n• **Opcja d) (TAK):** SCHED_OTHER (lub SCHED_NORMAL) to klasa dla normalnych procesów CFS. (Wykład 4)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** SCHED_FIFO nie ma kwantu czasu i wykonuje się aż do wywłaszczenia lub zablokowania. Karuzelowe z kwantem to SCHED_RR. (Wykład 4)\n• **Opcja b) (TAK):** SCHED_RR to karuzela o stałym priorytecie z kwantem czasu. (Wykład 4)\n• **Opcja c) (TAK):** Priorytety RT to 0-99 (0 - najwyższy priorytet RT). (Wykład 4)\n• **Opcja d) (TAK):** SCHED_OTHER (lub SCHED_NORMAL) to klasa dla normalnych procesów CFS. (Wykład 4)"
                 },
                 {
                     "id": "so-wyk-008",
                     "type": "yn",
-                    "question": "Określ prawdziwość zdań na temat mechanizmów szeregowania і priorytetów:",
+                    "question": "Określ prawdziwość zdań na temat mechanizmów szeregowania i priorytetów:",
                     "options": [
-                        "Wartości nice (-20 do +19) odpowiadają priorytetom jądra w zakresie від 100 do 139.",
-                        "Standardowe jądro Linuksa (bez nakładki PREEMPT_RT) jest systemem tzv. miękkiego czasu rzeczywistego (soft real-time).",
+                        "Wartości nice (-20 do +19) odpowiadają priorytetom jądra w zakresie od 100 do 139.",
+                        "Standardowe jądro Linuksa (bez nakładki PREEMPT_RT) jest systemem tzw. miękkiego czasu rzeczywistego (soft real-time).",
                         "Wywołanie systemowe `sched_yield()` pozwala procesowi na dobrowolne zrzeczenie się procesora.",
                         "Proces o wyższym priorytecie czasu rzeczywistego może zostać wywłaszczony przez proces o priorytecie dynamicznym CFS."
                     ],
@@ -2575,10 +2575,10 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Które ze zdań opisujących mechanizm wywołań systemowych (syscalls) w Linuksie są prawdziwe?",
                     "options": [
-                        "Przejście з przestrzeni użytkownika do przestrzeni jądra wiąże się ze zmianą trybu pracy procesora (tryb nieuprzywilejowany -> uprzywilejowany).",
+                        "Przejście z przestrzeni użytkownika do przestrzeni jądra wiąże się ze zmianą trybu pracy procesora (tryb nieuprzywilejowany -> uprzywilejowany).",
                         "W architekturze x86 (32-bit) wywołanie systemowe jest inicjowane za pomocą przerwania programowego `int 0x80`.",
-                        "Każdemu wywołaniu systemowemu odpowiada liczba całkowita (numer syscall), яка służy jako indeks w tablicy `sys_call_table`.",
-                        "W jądrze Linuksa funkcja `sys_ni_syscall()` zwraca błąd `ENOSYS` i służy jako handler dla niezaimplementovaných wywołań."
+                        "Każdemu wywołaniu systemowemu odpowiada liczba całkowita (numer syscall), która służy jako indeks w tablicy `sys_call_table`.",
+                        "W jądru Linuksa funkcja `sys_ni_syscall()` zwraca błąd `ENOSYS` i służy jako handler dla niezaimplementowanych wywołań."
                     ],
                     "correctAnswers": [
                         0,
@@ -2591,7 +2591,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-wyk-010",
                     "type": "yn",
-                    "question": "Jak wygląda przekazywanie argumentów і obsługa błędów w wywołaniach systemowych?",
+                    "question": "Jak wygląda przekazywanie argumentów i obsługa błędów w wywołaniach systemowych?",
                     "options": [
                         "Rejestr `%eax` (lub `%rax` na 64-bit) służy do przekazania numeru wywołania systemowego.",
                         "Na architekturze x86 (32-bit) parametry wywołania systemowego są przekazywane przez rejestry (maksymalnie 5 lub 6, np. ebx, ecx, edx).",
@@ -2603,7 +2603,7 @@ const systemyOperacyjneData = {
                         1,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** eax/rax zawiera unikalny identyfikator wywołania systemowego. (Wykład 5)\n• **Opcja b) (TAK):** Rejestry procesora są wykorzystywane do optymalnego przekazywania parametrów. (Wykład 5)\n• **Opcja c) (NIE):** Jądro zwraca wartość ujemну (np. -EFAULT), a wrapper biblioteki C (glibc) zapisuje jej wartość bezwzględną do errno. (Wykład 5)\n• **Opcja d) (TAK):** Funkcje te zapobiegają odczytowi/zapisowi pod nieprawidłowe adresy jądra przez procesy użytkownika. (Wykład 5)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** eax/rax zawiera unikalny identyfikator wywołania systemowego. (Wykład 5)\n• **Opcja b) (TAK):** Rejestry procesora są wykorzystywane do optymalnego przekazywania parametrów. (Wykład 5)\n• **Opcja c) (NIE):** Jądro zwraca wartość ujemną (np. -EFAULT), a wrapper biblioteki C (glibc) zapisuje jej wartość bezwzględną do errno. (Wykład 5)\n• **Opcja d) (TAK):** Funkcje te zapobiegają odczytowi/zapisowi pod nieprawidłowe adresy jądra przez procesy użytkownika. (Wykład 5)"
                 },
                 {
                     "id": "so-wyk-011",
@@ -2613,23 +2613,23 @@ const systemyOperacyjneData = {
                         "Przerwania sprzętowe są generowane asynchronicznie przez urządzenia zewnętrzne.",
                         "Do rejestracji procedury obsługi przerwania służy funkcja `request_irq()`.",
                         "Procedury obsługi przerwania (handlery) działają w kontekście przerwania, co oznacza, że nie mogą wywoływać funkcji uśpiających.",
-                        "Funkcja `request_irq()` może бути bezpiecznie wywołana з poziomu procedury obsługi przerwania."
+                        "Funkcja `request_irq()` może być bezpiecznie wywołana z poziomu procedury obsługi przerwania."
                     ],
                     "correctAnswers": [
                         0,
                         1,
                         2
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Przerwania sprzętowe mogą wystąpić w dowolnym momencie. (Wykład 6)\n• **Opcja b) (TAK):** request_irq przypisuje handler do danej linii IRQ. (Wykład 6)\n• **Opcja c) (TAK):** Kontekst przerwania не posiada skojarzonego procesu, тому nie wolno blokować execution. (Wykład 6)\n• **Opcja d) (NIE):** request_irq może uśpić proces, тому nie wolno jej wyволивати в kontekście przerwania. (Wykład 6)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Przerwania sprzętowe mogą wystąpić w dowolnym momencie. (Wykład 6)\n• **Opcja b) (TAK):** request_irq przypisuje handler do danej linii IRQ. (Wykład 6)\n• **Opcja c) (TAK):** Kontekst przerwania nie posiada skojarzonego procesu, dlatego nie wolno blokować execution. (Wykład 6)\n• **Opcja d) (NIE):** request_irq może uśpić proces, dlatego nie wolno jej wywoływać w kontekście przerwania. (Wykład 6)"
                 },
                 {
                     "id": "so-wyk-012",
                     "type": "yn",
-                    "question": "Które z poniższych zdań na temat linii IRQ і połówek obsługi przerwań są prawdziwe?",
+                    "question": "Które z poniższych zdań na temat linii IRQ i połówek obsługi przerwań są prawdziwe?",
                     "options": [
-                        "Flaga `IRQF_SHARED` informuje jądro, że linia przerwania може бути współdzielona przez wiele urządzeń.",
+                        "Flaga `IRQF_SHARED` informuje jądro, że linia przerwania może być współdzielona przez wiele urządzeń.",
                         "Odrejestrowanie procedury obsługi przerwania następuje za pomocą wywołania `free_irq()`.",
-                        "Górna połówka (top half) wykonuje krytyčne czasowo zadania i działa przy zablokowanych przerwaniach lokalnych.",
+                        "Górna połówka (top half) wykonuje krytyczne czasowo zadania i działa przy zablokowanych przerwaniach lokalnych.",
                         "Dolna połówka (bottom half) przerwania wykonuje mniej krytyczne zadania i jest uruchamiana asynchronicznie w późniejszym czasie."
                     ],
                     "correctAnswers": [
@@ -2638,24 +2638,24 @@ const systemyOperacyjneData = {
                         2,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Umożliwia współdzielenie IRQ na nowoczesnych magistralach (np. PCI). (Wykład 6)\n• **Opcja b) (TAK):** free_irq zwalnia linię IRQ і usuwa powiązany handler. (Wykład 6)\n• **Opcja c) (TAK):** Górna половка musi być jak najkrótsza, щоб nie blokować innych przerwаń. (Wykład 6)\n• **Opcja d) (TAK):** Dolna половка odгружає CPU i działa przy włączonych przerwaniach. (Wykład 6)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Umożliwia współdzielenie IRQ na nowoczesnych magistralach (np. PCI). (Wykład 6)\n• **Opcja b) (TAK):** free_irq zwalnia linię IRQ i usuwa powiązany handler. (Wykład 6)\n• **Opcja c) (TAK):** Górna połówka musi być jak najkrótsza, aby nie blokować innych przerwań. (Wykład 6)\n• **Opcja d) (TAK):** Dolna połówka odciąża CPU i działa przy włączonych przerwaniach. (Wykład 6)"
                 },
                 {
                     "id": "so-wyk-013",
                     "type": "yn",
                     "question": "Określ, które zdania na temat softirqs i taskletów są prawdziwe:",
                     "options": [
-                        "Softirqs (przerwania programowe) mogą бути wykonywane współbieżnie на wielu procesorach jednocześnie.",
+                        "Softirqs (przerwania programowe) mogą być wykonywane współbieżnie na wielu procesorach jednocześnie.",
                         "Tasklety są zbudowane na bazie softirqs, ale ten sam tasklet nie może być wykonywany współbieżnie na różnych procesorach.",
                         "Do dynamicznej deklaracji taskletu służy funkcja `tasklet_init()`.",
-                        "Softirqs są łatwe do napisania і nie wymagają synchronizacji, ponieważ jądro automatycznie zapobiega wyścigom."
+                        "Softirqs są łatwe do napisania i nie wymagają synchronizacji, ponieważ jądro automatycznie zapobiega wyścigom."
                     ],
                     "correctAnswers": [
                         0,
                         1,
                         2
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Softirqs są wysoce wydajne, ale wymagają reentrantności і pełnej synchronizacji. (Wykład 7)\n• **Opcja b) (TAK):** Gwarantuje to uproszczenie pisania kodu dla sterowników w porównaniu do softirqs. (Wykład 7)\n• **Opcja c) (TAK):** dynamiczny tasklet jest rejestrowany za pomocą tasklet_init. (Wykład 7)\n• **Opcja d) (NIE):** Wręcz przeciwnie, softirqs wymagają ścisłego rygoru programowania z racji pełnej współbieżności. (Wykład 7)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Softirqs są wysoce wydajne, ale wymagają reentrantności i pełnej synchronizacji. (Wykład 7)\n• **Opcja b) (TAK):** Gwarantuje to uproszczenie pisania kodu dla sterowników w porównaniu do softirqs. (Wykład 7)\n• **Opcja c) (TAK):** dynamiczny tasklet jest rejestrowany za pomocą tasklet_init. (Wykład 7)\n• **Opcja d) (NIE):** Wręcz przeciwnie, softirqs wymagają ścisłego rygoru programowania z racji pełnej współbieżności. (Wykład 7)"
                 },
                 {
                     "id": "so-wyk-014",
@@ -2664,23 +2664,23 @@ const systemyOperacyjneData = {
                     "options": [
                         "Kolejki robocze (work queues) są wykonywane w kontekście procesu, co oznacza, że ich procedury mogą zasypiać.",
                         "Domyślne wątki jądra obsługujące kolejki robocze noszą nazwę `kworker`.",
-                        "Wątki jądra obsługi przerwań (threaded interrupts) pozwalają на wykonywanie dolnej połówki jako wątku o priorytecie RT.",
-                        "Kolejka robocza działa w kontekście przerwania, dlatego nie wolno в niej wywoływać locków mutex."
+                        "Wątki jądra obsługi przerwań (threaded interrupts) pozwalają na wykonywanie dolnej połówki jako wątku o priorytecie RT.",
+                        "Kolejka robocza działa w kontekście przerwania, dlatego nie wolno w niej wywoływać locków mutex."
                     ],
                     "correctAnswers": [
                         0,
                         1,
                         2
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Ponieważ work queues działają w kontekście wątków jądra, mogą one wходить w stan uśpienia і blocking. (Wykład 7)\n• **Opcja b) (TAK):** Wątki kworker realizują zadania z kolejek roboczych. (Wykład 7)\n• **Opcja c) (TAK):** Threaded interrupts (wątkowane przerwania) ułatwiają programowanie w systemach czasu rzeczywistego. (Wykład 7)\n• **Opcja d) (NIE):** Work queues działają w kontekście procesu (nie przerwania), тому blokady spiace (mutex, semafory) є w pełni dozwolone. (Wykład 7)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Ponieważ work queues działają w kontekście wątków jądra, mogą one wchodzić w stan uśpienia i blokowania. (Wykład 7)\n• **Opcja b) (TAK):** Wątki kworker realizują zadania z kolejek roboczych. (Wykład 7)\n• **Opcja c) (TAK):** Threaded interrupts (wątkowane przerwania) ułatwiają programowanie w systemach czasu rzeczywistego. (Wykład 7)\n• **Opcja d) (NIE):** Work queues działają w kontekście procesu (nie przerwania), dlatego blokady śpiące (mutex, semafory) są w pełni dozwolone. (Wykład 7)"
                 },
                 {
                     "id": "so-wyk-015",
                     "type": "yn",
-                    "question": "Określ prawdziwość zdań na temat blokad wirujących (spinlocks) і wyścigów:",
+                    "question": "Określ prawdziwość zdań na temat blokad wirujących (spinlocks) i wyścigów:",
                     "options": [
                         "Stan wyścigu (race condition) zachodzi wtedy, gdy co najmniej dwa procesy próbują modyfikować współdzielony zasób bez synchronizacji.",
-                        "Spinlocki (blokady wirujące) w przypadku zajętości blokady wprowadzają proces в stan uśpienia.",
+                        "Spinlocki (blokady wirujące) w przypadku zajętości blokady wprowadzają proces w stan uśpienia.",
                         "Zablokowanie spinlocka na danym procesorze powoduje wyłączenie wywłaszczania (preemption) na tym procesorze.",
                         "Procedura obsługi przerwania (handler) nie może ubiegać się o semafor lub mutex, ponieważ próba zablokowania mogłaby uśpić kontekst przerwania."
                     ],
@@ -2696,7 +2696,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Które z poniższych zdań na temat mutexów, semaforów i mechanizmu RCU są prawdziwe?",
                     "options": [
-                        "Semafory i mutexy w Linuksie uspiają wątki oczekujące na blokadę і są przeznaczone do synchronizacji długotrwałej.",
+                        "Semafory i mutexy w Linuksie uspiają wątki oczekujące na blokadę i są przeznaczone do synchronizacji długotrwałej.",
                         "Mutex różni się od semafora tym, że ma licznik o dowolnej wartości i nie posiada pojęcia właściciela.",
                         "Blokady typu czytelnicy-pisarze (reader-writer spinlocks) dopuszczają jednoczesny odczyt przez wielu czytelników.",
                         "Mechanizm RCU (Read-Copy-Update) pozwala czytelnikom na odczyt struktury danych bez żadnej blokady, nawet podczas jej aktualizacji."
@@ -2706,7 +2706,7 @@ const systemyOperacyjneData = {
                         2,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Są to tzw. blokady śpiące (sleeping locks). (Wykład 8)\n• **Opcja b) (NIE):** Mutex jest binarny (wartość 0/1) i ściśle śledzi свого właściciela. Semafor nie ma właściciela і licznik може być > 1. (Wykład 8)\n• **Opcja c) (TAK):** Wiele wątków może jednocześnie odczytywać, ale pisarz musi mieć wyłączność. (Wykład 8)\n• **Opcja d) (TAK):** Pisarz dokonuje modyfikacji na kopii, a następnie w bezpiecznym momencie zamienia wskaźnik. (Wykład 8)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Są to tzw. blokady śpiące (sleeping locks). (Wykład 8)\n• **Opcja b) (NIE):** Mutex jest binarny (wartość 0/1) i ściśle śledzi swojego właściciela. Semafor nie ma właściciela i licznik może być > 1. (Wykład 8)\n• **Opcja c) (TAK):** Wiele wątków może jednocześnie odczytywać, ale pisarz musi mieć wyłączność. (Wykład 8)\n• **Opcja d) (TAK):** Pisarz dokonuje modyfikacji na kopii, a następnie w bezpiecznym momencie zamienia wskaźnik. (Wykład 8)"
                 },
                 {
                     "id": "so-wyk-017",
@@ -2715,7 +2715,7 @@ const systemyOperacyjneData = {
                     "options": [
                         "Licznik `jiffies` przechowuje liczbę taktów zegara systemowego od momentu bootowania systemu.",
                         "Zmienna `HZ` określa częstotliwość przerwań generatora czasu systemowego na sekundę.",
-                        "RTC (Real-Time Clock) jest nieulotnym zegarem zasilanym bateryjnie, з якого system odczytuje czas rzeczywisty przy starcie.",
+                        "RTC (Real-Time Clock) jest nieulotnym zegarem zasilanym bateryjnie, z którego system odczytuje czas rzeczywisty przy starcie.",
                         "Wartość `HZ` wynosi zawsze 1000 na wszystkich architekturach sprzętowych."
                     ],
                     "correctAnswers": [
@@ -2732,7 +2732,7 @@ const systemyOperacyjneData = {
                     "options": [
                         "Dynamiczne timery jądra (struct `timer_list`) są uruchamiane asynchronicznie w kontekście softirq (`TIMER_SOFTIRQ`).",
                         "Alokacja timerów i ich aktywacja odbywa się m.in. za pomocą funkcji `add_timer()` lub `mod_timer()`.",
-                        "Funkcja `mdelay()` wstrzymuje procesor za pomocą aktywного wirowania (busy-loop), a `msleep()` uśpia proces.",
+                        "Funkcja `mdelay()` wstrzymuje procesor za pomocą aktywnego wirowania (busy-loop), a `msleep()` uśpia proces.",
                         "Odczyt `jiffies_64` na systemach 32-bitowych wymaga funkcji helpera `get_jiffies_64()`, aby zapobiec wyścigom odczytu."
                     ],
                     "correctAnswers": [
@@ -2750,7 +2750,7 @@ const systemyOperacyjneData = {
                     "options": [
                         "Każda fizyczna strona pamięci (ramka) jest reprezentowana w jądru przez strukturę struct `page`.",
                         "Strefa `ZONE_DMA` obejmuje pamięć fizyczną, która może być adresowana przez starsze urządzenia DMA (zazwyczaj pierwsze 16 MB).",
-                        "Strefa `ZONE_HIGHMEM` obejmuje pamięć wirtualną jądra Linuksa.",
+                        "Strefa `ZONE_HIGHMEM` obejmuje pamięć fizyczną, która nie jest mapowana na stałe do wirtualnej przestrzeni jądra.",
                         "System bliźniaków (buddy system) służy do zarządzania ciągłymi stronami pamięci fizycznej."
                     ],
                     "correctAnswers": [
@@ -2758,7 +2758,7 @@ const systemyOperacyjneData = {
                         1,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** struct page opisuje atrybuty ramki pamięci fizycznej і nie reprezentuje danych w niej zawartych. (Wykład 10)\n• **Opcja b) (TAK):** Rezerwowana dla wstecznej kompatybilności z urządzeniami DMA ISA 16MB. (Wykład 10)\n• **Opcja c) (NIE):** ZONE_HIGHMEM to strefa pamieci fizycznej, która nie jest mapowana bezpośrednio do jądra. (Wykład 10)\n• **Opcja d) (TAK):** Buddy system dzieli і łączy bloki o rozmiarach będących potęgami dwójki. (Wykład 10)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** struct page opisuje atrybuty ramki pamięci fizycznej i nie reprezentuje danych w niej zawartych. (Wykład 10)\n• **Opcja b) (TAK):** Rezerwowana dla wstecznej kompatybilności z urządzeniami DMA ISA 16MB. (Wykład 10)\n• **Opcja c) (TAK):** ZONE_HIGHMEM to obszar pamięci fizycznej, który nie ma stałego mapowania w przestrzeni adresowej jądra. (Wykład 10)\n• **Opcja d) (TAK):** Buddy system dzieli i łączy bloki o rozmiarach będących potęgami dwójki. (Wykład 10)"
                 },
                 {
                     "id": "so-wyk-020",
@@ -2767,7 +2767,7 @@ const systemyOperacyjneData = {
                     "options": [
                         "Alokator Slab (slab allocator) minimalizuje fragmentację wewnętrzną poprzez cache'owanie obiektów o stałym rozmiarze.",
                         "Funkcja `kmalloc()` alokuje pamięć ciągłą fizycznie i wirtualnie.",
-                        "Funkcja `vmalloc()` alokuje pamięć ciągłą wirtualnie, ale strony fizyczne nie muszą бути ciągłe.",
+                        "Funkcja `vmalloc()` alokuje pamięć ciągłą wirtualnie, ale strony fizyczne nie muszą być ciągłe.",
                         "Alokacja pamięci za pomocą `vmalloc()` jest znacznie szybsza niż za pomocą `kmalloc()`."
                     ],
                     "correctAnswers": [
@@ -2775,7 +2775,7 @@ const systemyOperacyjneData = {
                         1,
                         2
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Slab przydziela pamięć pod specyficzne obiekty jądra (inode, task_struct тощо). (Wykład 10)\n• **Opcja b) (TAK):** kmalloc jest idealny do małych buforów, z których korzystają urządzenia hardware. (Wykład 10)\n• **Opcja c) (TAK):** vmalloc tworzy wirtualną ciągłość za pomocą tablic stron. (Wykład 10)\n• **Opcja d) (NIE):** vmalloc jest wolniejszy, bo musi modyfikować tabele stron i mapować RAM. (Wykład 10)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Slab przydziela pamięć pod specyficzne obiekty jądra (inode, task_struct itp.). (Wykład 10)\n• **Opcja b) (TAK):** kmalloc jest idealny do małych buforów, z których korzystają urządzenia hardware. (Wykład 10)\n• **Opcja c) (TAK):** vmalloc tworzy wirtualną ciągłość za pomocą tablic stron. (Wykład 10)\n• **Opcja d) (NIE):** vmalloc jest wolniejszy, bo musi modyfikować tabele stron i mapować RAM. (Wykład 10)"
                 },
                 {
                     "id": "so-wyk-021",
@@ -2784,22 +2784,22 @@ const systemyOperacyjneData = {
                     "options": [
                         "Wirtualny System Plików (VFS) to warstwa abstrakcji pozwalająca na jednolitą obsługę różnych systemów plików.",
                         "Superblok (struct `super_block`) reprezentuje metadane konkretnego zamontowanego systemu plików.",
-                        "I-węzeł (struct `inode`) przechowuje metadane pliku, w tym jego nazwę.",
-                        "Obiekt dentry (struct `dentry`) reprezentuje konkretny element ścieжки (katalog lub plik) i służy m.in. do przyspieszenia wyszukiwania."
+                        "I-węzeł (struct `inode`) przechowuje metadane pliku, ale nie zawiera jego nazwy.",
+                        "Obiekt dentry (struct `dentry`) reprezentuje konkretny element ścieżki (katalog lub plik) i służy m.in. do przyspieszenia wyszukiwania."
                     ],
                     "correctAnswers": [
                         0,
                         1,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** VFS ujednolica operacje I/O dla plików w systemie. (Wykład 11)\n• **Opcja b) (TAK):** Superblok opisuje fizyczne parametry zamontowanej partycji. (Wykład 11)\n• **Opcja c) (NIE):** inode przechowuje typ pliku, właściciela, rozmiar, ale nazwa pliku leży w dentry. (Wykład 11)\n• **Opcja d) (TAK):** dentry (directory entry) kojarzy i-węzeł z nazwą pliku w strukturze ścieжки. (Wykład 11)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** VFS ujednolica operacje I/O dla plików w systemie. (Wykład 11)\n• **Opcja b) (TAK):** Superblok opisuje fizyczne parametry zamontowanej partycji. (Wykład 11)\n• **Opcja c) (TAK):** inode przechowuje typ pliku, właściciela, rozmiar, ale nazwa pliku leży w dentry. (Wykład 11)\n• **Opcja d) (TAK):** dentry (directory entry) kojarzy i-węzeł z nazwą pliku w strukturze ścieżki. (Wykład 11)"
                 },
                 {
                     "id": "so-wyk-022",
                     "type": "yn",
                     "question": "Jak jądro obsługuje otwarte pliki i operacje VFS?",
                     "options": [
-                        "Obiekt pliku (struct `file`) reprezentuje plik otwarty przez proces i przechowuje pozycję cursora (f_pos).",
+                        "Obiekt pliku (struct `file`) reprezentuje plik otwarty przez proces i przechowuje pozycję kursora (f_pos).",
                         "Struktura `file_operations` zawiera wskaźniki do funkcji realizujących operacje na plikach (np. `read`, `write`, `open`).",
                         "Każdy proces posiada własną tabelę deskryptorów plików, która wskazuje na struktury struct `file`.",
                         "Gdy dwa procesy otwierają ten sam plik, współdzielą one ten sam struct `file`."
@@ -2862,7 +2862,7 @@ const systemyOperacyjneData = {
                         2,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** struct bio reprezentuje operacje I/O na poziomie blokowym. (Wykład 13)\n• **Opcja b) (TAK):** Pozwala na przesyłanie rozproszone (scatter-gather) bez kopiowania buforów. (Wykład 13)\n• **Opcja c) (TAK):** request_queue zarządza kolejnością przesyłania danych do sterownika urządzenia. (Wykład 13)\n• **Opcja d) (TAK):** Jądро łączy sąsiednie bio w jedno żądanie request w celu optymalizacji. (Wykład 13)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** struct bio reprezentuje operacje I/O na poziomie blokowym. (Wykład 13)\n• **Opcja b) (TAK):** Pozwala na przesyłanie rozproszone (scatter-gather) bez kopiowania buforów. (Wykład 13)\n• **Opcja c) (TAK):** request_queue zarządza kolejnością przesyłania danych do sterownika urządzenia. (Wykład 13)\n• **Opcja d) (TAK):** Jądro łączy sąsiednie bio w jedno żądanie request w celu optymalizacji. (Wykład 13)"
                 },
                 {
                     "id": "so-wyk-026",
@@ -2884,12 +2884,12 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-wyk-027",
                     "type": "yn",
-                    "question": "Któре z zdań dotyczących wirtualnej przestrzeni adresowej procesów w Linuksie są prawdziwe?",
+                    "question": "Które z zdań dotyczących wirtualnej przestrzeni adresowej procesów w Linuksie są prawdziwe?",
                     "options": [
                         "Przestrzeń adresowa procesu (pamięć wirtualna) opisana jest przez struct `mm_struct`, wskazywany przez deskryptor `task_struct`.",
                         "Spójne obszary pamięci wirtualnej (np. stos, sterta, kod) są reprezentowane przez obiekty struct `vm_area_struct` (VMA).",
                         "Jądro organizuje struktury `vm_area_struct` procesu w listę jednokierunkową oraz drzewo czerwono-czarne.",
-                        "Wszystkie wątki в obrębie jednego procesu współdzielą tę samą strukturę `mm_struct`."
+                        "Wszystkie wątki w obrębie jednego procesu współdzielą tę samą strukturę `mm_struct`."
                     ],
                     "correctAnswers": [
                         0,
@@ -2907,7 +2907,7 @@ const systemyOperacyjneData = {
                         "Katalog Stron Globalnych (PGD) jest najwyższym poziomem translacji stron pamięci wirtualnej.",
                         "Wywołanie systemowe `mmap()` umożliwia mapowanie plików directly do wirtualnej przestrzeni adresowej procesu.",
                         "Błąd strony (page fault) jest zgłaszany przez procesor, gdy żądana strona wirtualna nie jest obecnie załadowana do RAM-u.",
-                        "Funkcja `malloc()` w bibliotece standardowej C od razu rezerwuje i alokuje ciągłe ramки pamięci fizycznej."
+                        "Funkcja `malloc()` w bibliotece standardowej C od razu rezerwuje i alokuje ciągłe ramki pamięci fizycznej."
                     ],
                     "correctAnswers": [
                         0,
@@ -2939,7 +2939,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Stos sieciowy Linuksa – wskaż prawdziwe zdania:",
                     "options": [
-                        "Odbiór pakietów sieciowych jest wspierany przez przerwания programowe, zwłaszcza `NET_RX_SOFTIRQ`.",
+                        "Odbiór pakietów sieciowych jest wspierany przez przerwania programowe, zwłaszcza `NET_RX_SOFTIRQ`.",
                         "Mechanizm NAPI (New API) pozwala na czasowe wyłączenie przerwań sieciowych na rzecz pollingu przy dużym ruchu, co zmniejsza narzut CPU.",
                         "Stos sieciowy Linuksa nie wspiera protokołu IPv6.",
                         "Funkcja `netif_rx()` służy do przekazania odebranego pakietu sieciowego wyżej do kolejki wejściowej jądra."
@@ -2949,7 +2949,7 @@ const systemyOperacyjneData = {
                         1,
                         3
                     ],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Dolna połówka NET_RX_SOFTIRQ przetwarza ramki sieciowe. (Wykład 15)\n• **Opcja b) (TAK):** NAPI zapobiega przeciążeniu przerwaniami przy gigabitowym transferze (livelock). (Wykład 15)\n• **Opcja c) (NIE):** IPv6 jest w pełni zintegrowany і wspierany. (Wykład 15)\n• **Opcja d) (TAK):** Przekazuje skb do warstwy sieciowej IP. (Wykład 15)"
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Dolna połówka NET_RX_SOFTIRQ przetwarza ramki sieciowe. (Wykład 15)\n• **Opcja b) (TAK):** NAPI zapobiega przeciążeniu przerwaniami przy gigabitowym transferze (livelock). (Wykład 15)\n• **Opcja c) (NIE):** IPv6 jest w pełni zintegrowany i wspierany. (Wykład 15)\n• **Opcja d) (TAK):** Przekazuje skb do warstwy sieciowej IP. (Wykład 15)"
                 }
             ]
         }
