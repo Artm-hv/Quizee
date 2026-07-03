@@ -1,4 +1,4 @@
-const scriptingLanguagesData = {
+const jezykiSkryptoweData = {
     "id": "jezyki-skryptowe",
     "name": "Języki skryptowe",
     "icon": "💻",
