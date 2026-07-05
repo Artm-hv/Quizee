@@ -20,7 +20,8 @@ const systemyOperacyjneData = {
                         "Kwanty czasu dla poszczególnych zadań są przeliczane dopiero wówczas, gdy ostatnie z zadań"
                     ],
                     "correctAnswers": [
-                        0
+                        0,
+                        2
                     ],
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** przeterminowaną Wymiana „starych” priorytetów na „nowe” sprowadza się wyłącznie do wymiany wskaźników na tablicę aktywną i przeterminowaną. (Wykład 3)\n• **Opcja b) (NIE):** Priorytet każdego „zwykłego” zadania jest ustalany na podstawie priorytetu statycznego, jakim jest poziom uprzejmości oraz na podstawie stopnia interaktywności procesu. (Wykład 3)\n• **Opcja c) (NIE):** Jądro Linuksa promuje zadania o dużym stopniu interaktywności. (Wykład 3)\n• **Opcja d) (NIE):** kiedy kolejka zadań jednego z nich jest pusta W systemach wieloprocesorowych zadania są kojarzone z poszczególnymi procesorami, ale czasem może zajść potrzeba zrównoważenia pracy systemu, wówczas część zadań z kolejki  procesów gotowych procesora może zostać przeniesiona do kolejek  innych procesorów lub odwrotnie.  Mogą być dwie przyczyny takiego zdarzenia. Pierwsza zachodzi wtedy, ki edy w kolejce któregoś z procesorów nie ma żadnych zdań,  wówczas mogą one być przeniesione z kolejek innych procesorów. Druga to wywołanie load_balance()  za pomocą przerwania zegarowego. W tym przypadku zadanie równoważenia obciążenia jest bardziej skomp likowane. W skrócie polega ono na znalezieniu najbardziej obciążonej kolejki (ponad 25% obciążenia wszystkich kolejek w systemie) i rozłożeniu tego obciążenia na pozostałe procesory.  (Wykład 3)\n• **Opcja e) (NIE):** znajdujących się w tablicy priorytetów aktywnych wyczerpie swój kwant czasu Kwanty czasu zadań są przeliczane zaraz po ich wyczerpaniu przez zadanie i zanim zadanie trafi do tablicy przeterminowanej. (Wykład 3)"
                 },
@@ -35,7 +36,11 @@ const systemyOperacyjneData = {
                         "Główną strukturą danych planisty CFS jest drzewo czerwono-czarne",
                         "Linux nie jest rygorystycznym systemem czasu rzeczywistego"
                     ],
-                    "correctAnswers": [],
+                    "correctAnswers": [
+                        1,
+                        3,
+                        4
+                    ],
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** Istnieją dwa typy systemów wielozadaniowych: systemy wielozadaniowe z kooperacją (bez wywłaszczania) i systemy wielozadaniowe z wywłaszczaniem. W systemach pierwszego typu proces zawsze dobrowolnie zrzeka się procesora i oddaje sterowanie do systemu operacyjnego. Drugi typ systemów kontroluje wykorzystanie procesora  przez realizowane zadania i może przerywać ich działanie. Zapobieg a to sytuacji, w której pojedynczy proces mógłby zmonopolizować dostęp do procesora. Linux jak  większość współczesnych systemów operacyjnych realizuje wielozadaniowość z wywłaszczaniem. (Wykład 3)\n• **Opcja b) (NIE):** Schemat   szeregowania   jaki   zastosowano  w  tym  systemie  opiera  się na  schemacie wielopoziomowych kolejek  ze sprzężeniem  zwrotnym.  (Wykład 3)\n• **Opcja c) (NIE):** nieinteraktywne Jądro Linuksa promuje zadania o dużym  stopniu interaktywności. Takie zadania po wykorzystaniu swojego kwantu czasu nie trafiają od razu do tablicy przeterminowanej, ale otrzymują drugą szansę i są  umieszczane w tablicy aktywnej, na końcu tej samej listy, na której były poprzednio (dostają ten sam kwant czasu, co przed wykonaniem)  (Wykład 3)\n• **Opcja d) (NIE):** W planiście  CFS  tablice priorytetów zostały zastąpione drzewem czerwono-czarnym. (Wykład 3)"
                 },
                 {
@@ -49,43 +54,11 @@ const systemyOperacyjneData = {
                         "Proces macierzysty, którego proces potomny się zakończył przechodzi w stan TASK_ZOMBIE",
                         "Deskryptory procesów powiązane są w listę"
                     ],
-                    "correctAnswers": [],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** W przeciwieństwie do wielu innych systemów operacyjnych Linux obsługuje wątki, ale nie odróżnia ich od zwykłych procesów. (Wykład 2)\n• **Opcja b) (NIE):** Wątki jądra nie mają własnej przestrzeni  adresowej,  działają  w obrębie przestrzeni   jądra. (Wykład 2)\n• **Opcja c) (NIE):** W  jądrze  zdefiniowana jest makrodefinicja o nazwie „current”, która pozwala na szybki dostęp do deskryptora bieżącego procesu. (Wykład 2)\n• **Opcja d) (NIE):** Jeśli  proces macierzysty zakończy się przed procesem potomnym, to ten  ostatni pozostanie w stanie zombie. (…) TASK_ZOMBIE  – proces  zakończył   się,  w  systemie  został   jednak  jego deskryptor,  który  jest  usuwany  przez proces macierzysty poprzez wywołanie o nazwie „wait4()”,(Wykład 2)\n• **Opcja e) (NIE):** Deskryptory procesów są  powi zane ze sob  w dwukierunkową listę  procesów. (Wykład 2)"
-                },
-                {
-                    "id": "so-m1-004",
-                    "type": "yn",
-                    "question": "Określ, które ze zdań dotyczące szeregowania procesorów w Linuksie 2.6 są prawdziwe?",
-                    "options": [
-                        "Linuks realizuje wielozadaniowość wyłącznie w oparciu o kooperację",
-                        "Działanie planisty 0(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym.",
-                        "Zadania interaktywne otrzymują od planisty 0(1) mniejszy kwant czasu niż zadanie nieinteraktywne",
-                        "Główną strukturą danych planisty CFS jest drzewo czerwono-czarne.",
-                        "Linux nie jest rygorystycznym systemem czasu rzeczywistego."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        3,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-005",
-                    "type": "yn",
-                    "question": "Które twierdzenie odnośnie wątków i procesów w systemie Linux są prawdziwe?",
-                    "options": [
-                        "Za szeregowanie wątków odpowiada inny mechanizm jądra niż za szeregowanie procesów",
-                        "Każdy wątek jądra posada swoją odrębną przestrzeń adresową",
-                        "Makrodefinicja „current” pozwala na szybki dostęp do deskryptora bieżącego procesu.",
-                        "Proces macierzysty, którego proces potomny się zakończył przechodzi w stan TASK_ZOMBIE",
-                        "Deskryptory procesów powiązane są w listę."
-                    ],
                     "correctAnswers": [
                         2,
                         4
                     ],
-                    "explanation": "Wyjaśnienia:\n• Szeregowanie, w kontekście systemów operacyjnych, to podejmowanie decyzji dotyczących\nprzydzielania zasobów procesom. Zazwyczaj, ale nie zawsze, pojęcie to oznacza szeregowanie\nprocesów, czyli decydowanie o przydziale CPU określonemu procesowi. Linux pozwala procesom\nużytkownika tworzyć wątki, ale w przeciwieństwie do innych systemów operacyjnych nie posiada\nżadnych podsystemów, które przeznaczone byłyby wyłącznie do ich obsługi. W przypadku Linuksa\nwątek użytkownika jest po prostu procesem użytkownika, który zawsze współdzieli większość swoich\nzasobów, włącznie z przestrzenią adresową, z innymi procesami-wątkami (jego rodzeństwem).\n• Wątki jądra współdzielą przestrzeń adresową z resztą jądra, nie mają własnej.\n• Makro current, zwraca adres deskryptora bieżącego procesu. W tym przypadku słowo „bieżącego”\nnależy rozumieć jako „tego, który uaktywnił kod jądra”.\n• Proces, którego proces macierzysty się zakończył może utknąć w stanie zombie. Wówczas jest\nadoptowany przez proces init (lub jego nowszy odpowiednik) lub przez proces, który należy do tej\nsamej grupy co rodzic. Czyli w stan TASK_ZOMBIE może przejść proces potomny, a nie proces\nmacierzysty.\n• Deskryptory wszystkich procesów użytkownika są połączone w cykliczną listę dwukierunkową."
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** W przeciwieństwie do wielu innych systemów operacyjnych Linux obsługuje wątki, ale nie odróżnia ich od zwykłych procesów. (Wykład 2)\n• **Opcja b) (NIE):** Wątki jądra nie mają własnej przestrzeni  adresowej,  działają  w obrębie przestrzeni   jądra. (Wykład 2)\n• **Opcja c) (NIE):** W  jądrze  zdefiniowana jest makrodefinicja o nazwie „current”, która pozwala na szybki dostęp do deskryptora bieżącego procesu. (Wykład 2)\n• **Opcja d) (NIE):** Jeśli  proces macierzysty zakończy się przed procesem potomnym, to ten  ostatni pozostanie w stanie zombie. (…) TASK_ZOMBIE  – proces  zakończył   się,  w  systemie  został   jednak  jego deskryptor,  który  jest  usuwany  przez proces macierzysty poprzez wywołanie o nazwie „wait4()”,(Wykład 2)\n• **Opcja e) (NIE):** Deskryptory procesów są  powi zane ze sob  w dwukierunkową listę  procesów. (Wykład 2)"
                 },
                 {
                     "id": "so-m1-006",
@@ -101,60 +74,6 @@ const systemyOperacyjneData = {
                     "correctAnswers": [
                         0,
                         2
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-007",
-                    "type": "yn",
-                    "question": "Określ, które ze zdań dot. szeregowania procesów w Linuksie 2.6 są prawdziwe?",
-                    "options": [
-                        "Linux realizuje wielozadaniowość wyłącznie w oparciu o kooperację",
-                        "Działanie planisty O(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym",
-                        "Zadania interaktywne otrzymują od planisty O(1) mniejszy kwant czasu niż zadania nieinteraktywne",
-                        "Główną strukturą danych planisty jest drzewo czerwono-czarne",
-                        "Linux nie jest rygorystycznym systemem czasu rzeczywistego"
-                    ],
-                    "correctAnswers": [
-                        1,
-                        3,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-008",
-                    "type": "yn",
-                    "question": "Określ, które ze zadań dotyczących szeregowania procesów w Linuksie 2.6 są prawdziwe?",
-                    "options": [
-                        "Linux realizuje wielozadaniowość wyłącznie w oparci  z kooperacje",
-                        "Działanie planisty O(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym",
-                        "Zadania interaktywne otrzymują od planisty O(1) mniejszy kwant czasu niż zadania nieinteraktywne",
-                        "Główną strukturą danych planisty CFS jest drzewo czerwono- czarne",
-                        "Linux nie jest rygorystycznym systemem czasu rzeczywistego"
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2,
-                        3,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-009",
-                    "type": "yn",
-                    "question": "Które z poniższych zadań dotyczących algorytmu szeregowania O(1) są prawdziwe ?",
-                    "options": [
-                        "Wymiana priorytetów zadań sprowadza się do zamiany wskaźników na tablicę aktywną i przeterminowaną",
-                        "Priorytet każdego zadania jest ustalany wyłącznie na podstawie jego poziomu interaktywności",
-                        "Promowane są zadania o wysokim stopniu interaktywności",
-                        "Mechanizm szeregowania dokonuje zrównoważenia obciążenia procesorów wyłącznie, wtedy kiedy kolejka zadań jednych z nich jest pusta",
-                        "Kwanty czasu dla poszczególnych zadań są przeliczane dopiero wówczas, gdy ostatnie z zadań znajdujących się w tablicy priorytetów aktywnych wyczerpie swój kwant czasu"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        4
                     ],
                     "explanation": ""
                 },
@@ -228,42 +147,6 @@ const systemyOperacyjneData = {
                     "explanation": "Wyjaśnienia:\n• Informacje na temat przestrzeni adresowej pojedynczego procesu przechowuje jego deskryptor\npamięci. Wątki jądra nie mają własnej przestrzeni adresowej i własnego deskryptora pamięci. Jednak\nrównież muszą odwoływać się do pamięci operacyjnej, aby móc wykonywać swoje zadania, dlatego\nteż korzystają z deskryptorów pamięci poprzednio zaszeregowanych procesów użytkownika.\n• Dwa pola deskryptora pamięci są związane z osobnymi strukturami danych, które przechowują tę\nsamą informację, ale w różny sposób. Pierwszym z nich jest pole mmap przechowujące adres listy\nzawierającej dane o wszystkich obszarach pamięci. Drugim jest pole mm_rb przechowujące adres\nkorzenia drzewa czerwono-czarnego, które zawiera te same dane co lista, ale oferuje krótszy czas ich\nwyszukiwania, niż lista. Za to listę prościej jest przeglądać sekwencyjnie.\n• Sekcje tekstu i sekcje danych tylko do odczytu mogą być współdzielone zarówno przez procesy, jak i\nbiblioteki współdzielone.\n• Deskryptor pamięci zawiera wiele pól, między innymi pola przechowujące początkowe i końcowe\nadresy sekcji tekstu, danych, stosu, obszaru pamięci przechowującego argumenty wiersza poleceń i\nobszaru pamięci przechowującego zmienne środowiskowe.\n• Wątki przestrzeni jądra, lub po prostu wątki jądra, nie mają swojej własnej przestrzeni adresowej,\nwspółdzielą ją z jądrem. W związku z tym nie mają również deskryptorów pamięci. Wartość pola mm\nw ich deskryptorach procesów wynosi null. Jednakże, aby się mogły wykonywać, wątki jądra muszą\nodwoływać się do pamięci. W tym celu korzystają z deskryptora pamięci procesu użytkownika, który\nkorzystał z CPU tuż przed nimi."
                 },
                 {
-                    "id": "so-m1-014",
-                    "type": "yn",
-                    "question": "Które z poniszych zda dotyczcych algorytmu szeregowania O(1) są prawdziwe?",
-                    "options": [
-                        "Wymiana priorytetw zada sprowadza się do zamiany wskaźników na tablice aktywn i przeterminowaną",
-                        "Priorytet kadego zadania jest ustalany wyłącznie na podstawie jego interaktywnoci",
-                        "Promowane są zadania o wysokim stopniu interaktywnoci",
-                        "Mechanizm szeregowania dokonuje zrwnowaenia obcienia procesw wyłącznie wtedy, kiedy kolejka zada jednego z nich jest pusta",
-                        "Kwanty czasu dla poszczeglnych zada są przeliczane dopiero wwczas, gdy ostatnie z zada znajdujcych się w tablicy priorytetw aktywnych wyczerpie swj kwant czasu."
-                    ],
-                    "correctAnswers": [
-                        0,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-015",
-                    "type": "yn",
-                    "question": "Okrel, które ze zda dotyczce szeregowania procesw w linuxie 2.6 są prawdziwe",
-                    "options": [
-                        "Linux realizuje wielozadaniowo w oparciu o kooperacj",
-                        "Dziaanie planisty O(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym",
-                        "Zadania  interaktywne otrzymuj od planisty O(1) mniejszy kwant czasu ni zadania nieinteraktywne",
-                        "Gwn struktura planisty CFS jest drzewo czerwono-czarne",
-                        "Linux nie jest rygorystycznym systemem czasu rzeczywistego"
-                    ],
-                    "correctAnswers": [
-                        1,
-                        3,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
                     "id": "so-m1-016",
                     "type": "yn",
                     "question": "Czy twierdzenia odnonie wątków i procesw są prawdziwe?",
@@ -275,179 +158,7 @@ const systemyOperacyjneData = {
                     ],
                     "correctAnswers": [
                         2,
-                        3
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-017",
-                    "type": "yn",
-                    "question": "Okrel, które ze zda dotyczce szeregowania procesorw w Linuksie 2.6 są prawdziwe? ;",
-                    "options": [
-                        "Linuks realizuje wielozadaniowo wyłącznie w oparciu o kooperacj",
-                        "Dziaanie planisty 0(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym.",
-                        "Zadania interaktywne otrzymuj od planisty 0(1) mniejszy kwant czasu ni zadanie nieinteraktywne",
-                        "Gwn struktur danych planisty CFS jest drzewo czerwono-czarne.",
-                        "Linux nie jest rygorystycznym systemem czasu rzeczywistego."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        3,
                         4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-018",
-                    "type": "yn",
-                    "question": "Które twierdzenie odnonie wątków i procesw w systemie Linux są prawdziwe?",
-                    "options": [
-                        "Za szeregowanie wątków odpowiada inny mechanizm jądra ni za szeregowanie procesw",
-                        "Kady wtek jądra posada swoj odrbn przestrzeń adresow      | nie",
-                        "Makrodefinicja current pozwala na szybki dostp do deskryptora biecego procesu.",
-                        "Proces macierzysty, ktrego proces potomny się zakoczy przechodzi w stan TASK_ZOMBIE",
-                        "Deskryptory procesw powizane są w list."
-                    ],
-                    "correctAnswers": [
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-019",
-                    "type": "yn",
-                    "question": "Które z poniszych zda dotyczcych algorytmu szeregowania O(1) jest prawdziwe?;",
-                    "options": [
-                        "Wymiana priorytetw zada sprowadza się do zamiany wsk. na tab. aktywn i przeterminowaną.",
-                        "Priorytet kadego zadania jest ustalany wyłącznie na podst. jego poziomu interakt.",
-                        "Promowane są zadania o wysokim stopniu interakt.",
-                        "Mechanizm szeregowania dokonuje zrwnowaenia obcienia procesw wyłącznie wtedy, gdy kolejka zada 1 z nich jest pusta.",
-                        "Kwanty czasu dla poszcz. zada są przeliczane dopiero gdy ost. z zada w tab wyczerpie swj kwant."
-                    ],
-                    "correctAnswers": [
-                        0,
-                        2
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-020",
-                    "type": "yn",
-                    "question": "Okrel, które ze zda dot. szeregowania procesw w Linuksie 2.6 są prawdziwe?;",
-                    "options": [
-                        "Linux realizuje wielozadaniowo wyłącznie w oparciu o kooperacj",
-                        "Dziaanie planisty O(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym",
-                        "Zadania interaktywne otrzymuj od planisty O(1) mniejszy kwant czasu ni zadania nieinteraktywne",
-                        "Gwn struktur danych planisty jest drzewo czerwono-czarne",
-                        "Linux nie jest rygorystycznym systemem czasu rzeczywistego"
-                    ],
-                    "correctAnswers": [
-                        1,
-                        3,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-021",
-                    "type": "yn",
-                    "question": "Które twierdzenia odnonie wątków i procesw w systemie Linux są prawdziwe?;",
-                    "options": [
-                        "Za szeregowanie wątków odpowiada inny mechanizm jądra ni za szeregowanie procesw. (???)",
-                        "Kady wtek jądra posiada swoj odrbn przestrzeń adresow.",
-                        "Makrodefinicja \"current\" powala na szybki dostp do deskryptora biecego procesu.",
-                        "Proces macierzysty, ktrego proces potomny się zakoczy przechodzi w stan TASK_ZOMBIE.",
-                        "Deskryptory procesw powizane są w list."
-                    ],
-                    "correctAnswers": [
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-022",
-                    "type": "yn",
-                    "question": "Czy twierdzenia odnośnie wątków i procesów są prawdziwe?",
-                    "options": [
-                        "Za szeregowanie wątków odpowiada inny mechanizm niż za szeregowanie procesów",
-                        "Każdy wątek jądra posiada odrębną przestrzeń adresową",
-                        "Makrodefinicja current pozwala na szybki dostęp do deskryptora bieżącego procesu",
-                        "Proces macierzysty, którego proces macierzysty się zakończył przechodzi w stan TASK_ZOMBIE"
-                    ],
-                    "correctAnswers": [
-                        2,
-                        3
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-023",
-                    "type": "yn",
-                    "question": "Okrel, które informacje odnonie zarzdzania procesami w Linuksie 3.0 i nowszych są prawdziwe:",
-                    "options": [
-                        "deskryptor procesu jest umieszczony na dnie jego stosu w jądrze systemu",
-                        "makrodefinicja \"current\" zwraca adres deskryptora biecego procesu",
-                        "proces w stanie TASK_UNINTERRUPTIBLE moe być ustawiony w stanie gotowoci przez dowolny sygnał, który otrzyma",
-                        "proces zakoczony ma stan TASK_STOPPED",
-                        "proces, który jest wykonywany ma stan TASK_RUNNING."
-                    ],
-                    "correctAnswers": [
-                        1
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-024",
-                    "type": "yn",
-                    "question": "Okrel, które informacje o planicie O(1) są prawdziwe:",
-                    "options": [
-                        "nowy kwant czasu dla procesu jest ustalany dopiero wtedy, gdy wszystkie procesy w systemie wyczerpi swoje kwanty",
-                        "kolejka procesw gotowych zawiera wskaźniki na dwie tablice priorytetw",
-                        "kady procesor ma swoj kolejk procesw gotowych",
-                        "priorytet zwykych procesw jest ustalany wyłącznie na podstawie stopnia ich interaktywnoci",
-                        "im wyszy jest priorytet procesu, tym krtszy kwant czasu on otrzymuje."
-                    ],
-                    "correctAnswers": [
-                        0,
-                        1,
-                        2
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-025",
-                    "type": "yn",
-                    "question": "Okrel, które informacje o planicie CFS są prawdziwe:",
-                    "options": [
-                        "priorytety procesw są prawie niezmienne",
-                        "klasa szeregowania SCHED_BATCH jest obsługiwana za pomoc algorytmu rotacyjnego",
-                        "waga procesu jest odwrotnoci wartoci jego priorytetu",
-                        "zegar wirtualny jest wprost implementowany w jądrze Linuksa",
-                        "kolejka procesw gotowych jest zrealizowana w postaci drzewa czerwono-czarnego."
-                    ],
-                    "correctAnswers": [
-                        0,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m1-026",
-                    "type": "yn",
-                    "question": "Okrel, które informacje dotyczce obsługi przestrzeni adresowej procesu w Linuksie 3.0 i nowszych są prawdziwe:",
-                    "options": [
-                        "wszystkie wątki jądra korzystaj z jednego, wspólnego dla nich deskryptora pamięci",
-                        "obiekty zawierajce informacje o obszarach pamięci są umieszczone jednoczenie w dwch rnych strukturach danych",
-                        "sekcje tekstu tworzone są nie tylko dla procesw, ale rwnie dla bibliotek współdzielonych",
-                        "deskryptor pamięci przechowuje adres startowy i kocowy obszaru argumentw wywołania programu",
-                        "deskryptory pamięci nigdy nie są współdzielone przez procesy (wątki) uytkownika."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2,
-                        3
                     ],
                     "explanation": ""
                 },
@@ -625,7 +336,10 @@ const systemyOperacyjneData = {
                         "Liczniki dynam. ze względu na zbyt mała precyzje nie mogą być wykorzystywane w zadaniach",
                         "Listy liczników nie są przez system sortowane"
                     ],
-                    "correctAnswers": [],
+                    "correctAnswers": [
+                        0,
+                        4
+                    ],
                     "explanation": "Wyjaśnienia:\n• **Opcja b) (NIE):** czasu Jądro obsługuje również mechanizm zegara czasu rzeczywistego (RTC) z którego pracy korzystają  głównie aplikacje użytkowników. Zegar ten przechowuje i aktualizuje informacje o bieżącej dacie i godzinie. Jego zawartość jest odczytywana i umieszczana w zmiennej  xtime podczas rozruchu systemu. Jądro nie odczytuje już więcej zawartości zegara czasu rzeczywistego, ale samo aktualizuje zawartość tej zmiennej i ewentualnie może  aktualizować zawartość samego RTC. (Wykład 9)\n• **Opcja c) (NIE):** Kiedy od jądra 2.4 zaczęto stosować stałą HZ=1000, to okres ten skrócił się do 49,7 dnia,  dlatego też twórcy jądra zastosowali rozwiązanie polegające na „nałożeniu” 32  – bitowej zmiennej jiffies na zmienną jiffies_64, która ma rozmiar 64 – bitów. Odwołanie się więc do zmiennej jiffies w architekturach 32 – bitowych daje wartość  jej  młodszego słowa ,  w architekturach 64 – bitowych  jej  pełną wartość.   (Wykład 9)\n• **Opcja d) (NIE):** czasu rzeczyw. Liczniki, zwane licznikami dynamicznymi lub licznikami jądra pozwalają opóźnić wykonanie określonych czynności o ustaloną ilość czasu począwszy od chwili bieżącej.  Nie  jest to mechanizm precyzyjny  i  mogą zdarzać się niedokładności  rzędu rozmiaru okresu,  więc nie powinny one być stosowa ne do zadań czasu rzeczywistego, niemniej  większości  przypadków nadają się one do zastosowania. (Wykład 9)\n• **Opcja e) (NIE):** Aby   uniknąć   sortowania   listy   liczników  i  kosztownego  przeglądania   jest   ona   podzielona na pięć grup, pod względem czasu po jakim trzeba będzie wywołać funkcje zgromadzonych na niej liczników. Wykład 9) Systemy Operacyjne 2 – A. Chrobot"
                 },
                 {
@@ -645,23 +359,6 @@ const systemyOperacyjneData = {
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** atomic_t, mimo, że zbudowany  jest na typie „int” ( 32 – bitowym) pozwala na przechowywanie wartości 24 -bitowych (3 bajty). (Wykład 8)\n• **Opcja b) (NIE):** operacje niepodzielne na wartościach będących liczbami całkowitymi. Oprócz operacji niepodzielnych na liczbach całkowitych jądro dostarcza funkcji realizujących niepo dzielne operacje na pojedynczych bitach. (Wykład 8)\n• **Opcja c) (TAK):** przerwania. Rygle pętlowe mogą być używane w procedurach obsługi  przerwań,  ale  tylko wraz z wyłączeniem  lokalnego systemu przerwań,  aby uniknąć  zakleszczeń.  (Wykład 8)\n• **Opcja d) (NIE):** pisarze. Jeśli problem, który chcemy rozwiązać sprowadza się do problemu pisarzy i czytelników, a ściślej do wersji tego problemu, gdzie faworyzowani są czytelnicy, to możemy zastosować rygle pętlowe R-W.\n• **Opcja e) (NIE):** Zmienne sygnałowe służą do synchronizacji pracy zadań i są uproszczoną wersją semaforów.  (Wykład 8)"
                 },
                 {
-                    "id": "so-m2-004",
-                    "type": "yn",
-                    "question": "Które za zdań dotyczących kolejek prac są prawdziwe?",
-                    "options": [
-                        "Czynności odroczone wykonywane w ramach kolejek prac są wykonywane w kontekście przerwania",
-                        "Kolejki prac zastąpiły mechanizm dolnych połówek znany jako „kolejki zadań”, który był wykorzystywany we wcześniejszych wersjach jądra Linuksa.",
-                        "Mechanizm kolejek prac pozwala na określenie czasu po upływie którego dana czynność może się rozpocząć",
-                        "Jądro systemu Loniux zawiera specjalną funkcję, której wywołanie pozwala na opróżnienie domyślnej kolejki prac",
-                        "Jeśli w jądrze tworzona jest nowa kolejka prac, to jest równocześnie dla niej tworzony nowy, odrębny wątek roboczy."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
                     "id": "so-m2-005",
                     "type": "yn",
                     "question": "Zmienna typu „atomic_T” jest 32 bitowa. |    tak",
@@ -674,40 +371,6 @@ const systemyOperacyjneData = {
                     "correctAnswers": [
                         1,
                         3
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m2-006",
-                    "type": "yn",
-                    "question": "Określ które twierdzenia dotyczące zarządzania czasem w Linuxie są prawdziwe?",
-                    "options": [
-                        "Stała HZ dla architektury i386 wynosi 1000.",
-                        "Zawartość zegara czasu rzeczywistego jest odczytywana przez jądro co pewien określony przedział czasu",
-                        "Zmienna ijffies jest nałożona na starsze 32 bity zmiennej ijffies_64.",
-                        "Liczniki dynamiczne ze względu na zbyt małą precyzję nie mogą być wykorzystywane w zadaniach czasu rzeczywistego",
-                        "Listy liczników nie są przez system sortowane."
-                    ],
-                    "correctAnswers": [
-                        0,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m2-007",
-                    "type": "yn",
-                    "question": "Które z zdań dotyczących kolejek prac są prawdziwe?",
-                    "options": [
-                        "Czynności odroczone wyk. w ramach kolejek prac są wykonywane w kontekście przerwania",
-                        "Kolejki prac zastąpiły mechanizm dolnych połówek znany jako „kolejki zadań”, który był we wcześ. Linuxach (???)",
-                        "Mechanizm kolejek prac pozwala na określenie czasu po upływie którego dana czynność może się rozpocząć",
-                        "Jądro systemu Linux zawiera specjalną funkcję której wywołanie pozwala na opróżnienie domyślnej kolejki prac",
-                        "Jesli w jądrze tworzona jest nowa kolejka prac to jest równocześnie dla niej tworzony nowy odrębny wątek rob."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        4
                     ],
                     "explanation": ""
                 },
@@ -741,6 +404,7 @@ const systemyOperacyjneData = {
                         "Jeśli w jądrze tworzona jest nowa kolejka prac, to równocześnie dla niej tworzony nowy odrębny wątek roboczy"
                     ],
                     "correctAnswers": [
+                        1,
                         2,
                         3,
                         4
@@ -1127,23 +791,8 @@ const systemyOperacyjneData = {
                     ],
                     "correctAnswers": [
                         1,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m2-035",
-                    "type": "yn",
-                    "question": "Które z zda dotyczcych kolejek prac są prawdziwe?;",
-                    "options": [
-                        "Czynnoci odroczone wyk. w ramach kolejek prac są wykonywane w kontekcie przerwania",
-                        "Kolejki prac zastpiy mechanizm dolnych połówek znany jako kolejki zada, który był we wcze. Linuxach (???)",
-                        "Mechanizm kolejek prac pozwala na okrelenie czasu po upywie ktrego dana czynno moe się rozpocz",
-                        "Jdro systemu Linux zawiera specjaln funkcj której wywołanie pozwala na oprnienie domylnej kolejki prac",
-                        "Jesli w jądrze tworzona jest nowa kolejka prac to jest rwnoczenie dla niej tworzony nowy odrbny wtek rob."
-                    ],
-                    "correctAnswers": [
-                        1,
+                        2,
+                        3,
                         4
                     ],
                     "explanation": ""
@@ -1165,7 +814,10 @@ const systemyOperacyjneData = {
                         "W procedurach obsługi przerwań można wywołać funkcje, które ulegają blokowaniu",
                         "Procedury obsługi przerwań korzystają ze stosu jądra, który ma nieograniczony rozmiar"
                     ],
-                    "correctAnswers": [],
+                    "correctAnswers": [
+                        0,
+                        2
+                    ],
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** Z tego powodu kod obsługi przerwań jest podzielony na dwie części  zwane  górną  połówką  i  dolną  połówką.(Wykład 5)\n• **Opcja b) (NIE):** Procedura obsługi  przerwania  wywoływana jest w sposób asynchroniczny i dlatego ważnym jest, aby jej wykonanie zostało zakończone w jak najkrótszym czasie (Wykład 5)\n• **Opcja c) (NIE):** SA_SHIRQ – określa możliwość współdzielenia linii przerwania z innymi procedurami obsługi przerwań  (Wykład 5)\n• **Opcja d) (NIE):** Procedury obsługi  przerwań są wywoływane w kontekście przerwania,  co oznacza,  że nie  są dozwolone w nich wywołania funkcji  blokujących oraz nie  jest ważna wartość  (ang.   invalid)  zwracana przez makrodefinicję  current. (Wykład 5)\n• **Opcja e) (NIE):** Procedury obsługi  przerwania muszą wykonywać  się  szybko,  aby nie blokować  kolejnych zgłoszeń  przerwania  na   tej samej   linii.  Korzystają  one  ze  stosu  jądra,  który  jest  ograniczony  do  8KB w 32 –  bitowych  architekturach PC  i  do 16KB w 64  – bitowych architekturach Alpha. (Wykład 5) Systemy Operacyjne 2 – A. Chrobot"
                 },
                 {
@@ -1180,8 +832,8 @@ const systemyOperacyjneData = {
                         "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wywłaszcza"
                     ],
                     "correctAnswers": [
-                        0,
                         1,
+                        2,
                         4
                     ],
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** pętlowego Semafory nie mogą być przetrzymywane przez wątki, które już przetrzymują rygle pętlowe.  (Wykład 8)\n• **Opcja b) (TAK):** zapisu Blokady sekwencyjne w prosty sposób pozwalają określić czy operacja odczytu nie została przepleciona z operacją zapisu. (Wykład 8)\n• **Opcja c) (NIE):** Blokada BKL (ang. Big Kernel Lock)  miała  być   rozwiązaniem przejściowym ,  które miało być   zastąpione blokadami o mniejszej ziarnistości. (Wykład 8)\n• **Opcja d) (NIE):** Ponadto BKL jest rekurencyjna, wyłącza wywłaszczanie jądra i można  wykorzystywać ją jedynie w kontekście procesu. (Wykład 8)\n• **Opcja e) (TAK):** wątków Należy również pamiętać,  że rygle nie są rekurencyjne  i  nie są  stosowane w systemach jednoprocesorowych (kompilator wstawia w ich miejsce puste instrukcje lub jeśli podczas kompilacji włączona jest opcja wywłaszczania jądra  zastępuje je funkcjami włączającymi i wyłączającymi wywłaszczanie jądra, opisanymi niżej).  (Wykład 8)"
@@ -1197,7 +849,11 @@ const systemyOperacyjneData = {
                         "Procedury obsługi przerwania mogą korzystać z wartości zwracanej przez makrodefinicję „current”",
                         "Nie jest wymagane, aby funkcje obsługi przerwań były wielobieżne"
                     ],
-                    "correctAnswers": [],
+                    "correctAnswers": [
+                        1,
+                        2,
+                        4
+                    ],
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** generatora liczb losowych\n• **Opcja b) (NIE):** W komputerach  kompatybilnych z IBM PC część przerwań jest na stałe przypisana pewnym urządzeniom, a część – w szczególności dla tych urządzeń, które są podłączone z systemem  przez magistralę PCI     lub  nowsze  szyny,   takie  jak PCI - Express,  USB –  jest  przydzielana w  sposób dynamiczny. (Wykład 6)\n• **Opcja c) (NIE):** Każda procedura obsługi przerwania musi zostać zarejestrowana za pośrednictwem funkcji request_irq, która kojarzy funkcję z przerwaniem i uaktywnia daną linię (Wykład 6)\n• **Opcja d) (NIE):** Procedury obsługi przerwań  są wywoływane w kontekście przerwania, co oznacza, że nie są dozwolone w nich wywołania funkcji blokujących oraz nie jest poprawna (ang.   invalid)  wartość  zwracana przez makrodefinicję  current.  (Wykład 6)\n• **Opcja e) (NIE):** Funkcje obsługi przerwań są definiowane  według następującego prototypu (…) Nie wymaga się,  aby funkcje te były wielobieżne,  gdyż wywołanie funkcji powoduje zablokowanie linii z nią związanej. (Wykład 6) Systemy Operacyjne 2 – A. Chrobot"
                 },
                 {
@@ -1211,61 +867,12 @@ const systemyOperacyjneData = {
                         "Zadanie nigdy nie może być wywłaszczone po zakończeniu obsługi przerwania",
                         "Dostęp do zmiennych lokalnych wątków wykonania nie musi podlegać synchronizacji"
                     ],
-                    "correctAnswers": [],
-                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** Operacje niepodzielne (atomowe) na zmiennych prostych typów są zazwyczaj realizowane za pomocą instrukcji maszynowych właściwych dla architektury procesora. (Wykład 8)\n• **Opcja b) (NIE):** Sytuację gdy dla współbieżnie działających elementów aplikacji (wątków lub procesów) pewna operacja może być w danym momencie czasu wykonywana jedynie przez jeden z nich, nazywamy wzajemnym wykluczaniem. W przypadku gdy jakiś element wykonuje operację podlegającą wzajemnemu wykluczaniu (tzw. sekcję krytyczną ), inne elementy próbujące w tym samym czasie wykonywać tę operację muszą zostać zablokowane, aż do jej zakończenia przez pierwszy z nich.\n• **Opcja c) (NIE):** określonym momencie jego działania\n• **Opcja e) (NIE):** W przypadkach gdy trzeba chronić dane,  które są widziane przez  jeden procesor przed dostępem współbieżnym można zrezygnować z rygli  pętlowych i  zastosować zwykłe zablokowanie wywłaszczania."
-                },
-                {
-                    "id": "so-m3-005",
-                    "type": "yn",
-                    "question": "Które ze stwierdzeń dotyczących obsługi przerwań w Linuksie 2.6 są prawdziwe?",
-                    "options": [
-                        "Obsługa przerwań jest podzielona na górną połówkę i dolną połówkę.",
-                        "Procedury obsługi przerwań mogą być wykonywane dowolnie długo",
-                        "Do linii przerwania o określonym numerze może być przypisanych kilka procedur obsługi przerwań",
-                        "W procedurach obsługi przerwań można wywołać funkcje, które ulegają blokowaniu",
-                        "Procedury obsługi przerwań korzystają ze stosu jądra, który ma nieograniczony rozmiar"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-006",
-                    "type": "yn",
-                    "question": "Które z poniższych stwierdzeń dotyczących środków synchronizacji w jądrze Linuksa 2.6 są prawdziwe?",
-                    "options": [
-                        "Wątek wykonania, który przytrzymuje semafor nie może równocześnie przetrzymywać rygla pętlowego.",
-                        "Blokady sekwencyjne pozwalają ustalić, czy operacja odczytu nie została przepleciona z operacją zapisu.",
-                        "Blokada BKL jest blokadą gruboziarnistą.",
-                        "Blokada BKL nie jest rekurencyjna",
-                        "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wywłaszczają wątków."
-                    ],
                     "correctAnswers": [
                         0,
                         1,
-                        2,
                         4
                     ],
-                    "explanation": "Wyjaśnienia:\n• Semafory nie mogą być przetrzymywane przez wątki, które już przetrzymują rygle pętlowe.\n• Blokady sekwencyjne w prosty sposób pozwalają określić, czy operacja odczytu nie została\nprzepleciona z operacją zapisu. Przed odczytem jest zapamiętywana wartość licznika. Po wykonaniu\ntej operacji odczytywany jest ponownie licznik i jego wartość porównywana jest z wartością\npoprzednią. Jeśli te wartości są takie same, to można być pewnym, że odczyt nie został przepleciony\nprzez zapis.\n• BKL miała być rozwiązaniem przejściowym, które miało być zastąpione blokadami o mniejszej\nziarnistości.\n• Blokada BKL jest rekurencyjna, wyłącza wywłaszczanie jądra i może być używana tylko w kontekście\nprocesu.\n• Rygle pętlowe nie są rekurencyjne i nie są stosowane w systemach jednoprocesorowych - kompilator\nwstawia w ich miejsce puste instrukcje lub, jeśli podczas kompilacji włączona jest opcja\nwywłaszczania wątków jądra, zastępuje je funkcjami włączającymi i wyłączającymi ich\nwywłaszczanie."
-                },
-                {
-                    "id": "so-m3-007",
-                    "type": "yn",
-                    "question": "Poniżej umieszczono zdania dotyczące obsługi przerwań w Linuksie 2.6, które z nich są prawdziwe?",
-                    "options": [
-                        "Częstotliwości pojawienia się wszystkich przerwań są wykorzystywane do inicjalizowania generatowa liczb losowych",
-                        "Numery przerwań mogą być przydzielane niektórym urządzeniom dynamicznie.",
-                        "Aby procedura obsługi przerwania mogła być wywołana, musi zostać wcześniej zarejestrowana.",
-                        "Procedury obsługi przerwania mogą korzystać z wartości zwracanej przez makrodefinicję „current”",
-                        "Nie jest wymagane, aby funkcje obsługi przerwań były wielobieżne."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
+                    "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** Operacje niepodzielne (atomowe) na zmiennych prostych typów są zazwyczaj realizowane za pomocą instrukcji maszynowych właściwych dla architektury procesora. (Wykład 8)\n• **Opcja b) (NIE):** Sytuację gdy dla współbieżnie działających elementów aplikacji (wątków lub procesów) pewna operacja może być w danym momencie czasu wykonywana jedynie przez jeden z nich, nazywamy wzajemnym wykluczaniem. W przypadku gdy jakiś element wykonuje operację podlegającą wzajemnemu wykluczaniu (tzw. sekcję krytyczną ), inne elementy próbujące w tym samym czasie wykonywać tę operację muszą zostać zablokowane, aż do jej zakończenia przez pierwszy z nich.\n• **Opcja c) (NIE):** określonym momencie jego działania\n• **Opcja e) (NIE):** W przypadkach gdy trzeba chronić dane,  które są widziane przez  jeden procesor przed dostępem współbieżnym można zrezygnować z rygli  pętlowych i  zastosować zwykłe zablokowanie wywłaszczania."
                 },
                 {
                     "id": "so-m3-008",
@@ -1283,113 +890,6 @@ const systemyOperacyjneData = {
                         2
                     ],
                     "explanation": ""
-                },
-                {
-                    "id": "so-m3-009",
-                    "type": "yn",
-                    "question": "Które z poniższych stwierdzeń dot. środków synchronizacji w jądrze Linuksa 2.6 są prawdziwe?",
-                    "options": [
-                        "Wątek wykonania który przetrzymuje semafor nie może równocześnie przetrzymywać rygla pętlowego",
-                        "Blokady sekwencyjne pozwalają ustalić czy operacja odczytu nie została przepleciona z operacją zapisu (???)",
-                        "Blokada BLK jest blokadą gruboziarnistą.",
-                        "Blokada BLK nie jest rekurencyjna",
-                        "Rygle pętlowe nie są używane w systemach 1-procesorowych w jądrze które nie wywłaszcza wątków"
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-010",
-                    "type": "yn",
-                    "question": "Poniżej umieszczono zdania dotyczące obsługi przerwań przez Linuksa 2.6 – które są prawdziwe?",
-                    "options": [
-                        "Częstotliwość pojawiania się wszystkich przerwań są wykorzystywane do inicjalizowania generatora licz los.",
-                        "Numery przerwań mogą być przydzielane niektórym urządzeniom dynamicznie",
-                        "Aby procedura obsługi przerwania mogła być wywołana musi zostać wcześniej zarejestrowana",
-                        "Procedury obsługi przerwania mogą korzystać z wartości zwracanej przez makrodefinicję „current”",
-                        "Nie jest wymagane aby funkcje obsługi przerwań były wielobieżne"
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-011",
-                    "type": "yn",
-                    "question": "Które zdania dotyczące synchronizacji są prawdziwe?",
-                    "options": [
-                        "Niektóre operacje niepodzielne mogą być realizowanie jako pojedyncze rozkazy procesora",
-                        "Przeplot operacji jest przyczyną występowania problemu sekcji krytycznej",
-                        "W systemie Linux, w przestrzeni użytkownika wywłaszczenie procesu może zajść tylko w ściśle określonym monecie jego działania",
-                        "Zadania Nigdy nie może być wywłaszczone po zakończeniu obsługi przerwania",
-                        "Dostęp do zmiennych lokalnych wątków wykonania nie musi podlegać synchronizacji"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-012",
-                    "type": "yn",
-                    "question": "Poniżej umieszczono zadania dotyczące obsługi przerwań przez Linuksa 2.6. Które z nich są prawdziwe?",
-                    "options": [
-                        "Częstotliwości pojawiania się wszystkich przerwań są wykorzystywane do inicjalizowania generatora liczb losowych",
-                        "Numery przerwań mogą być przydzielane niektórym urządzeniom dynamicznie",
-                        "Aby procedura obsługi przerwań mogła być wykonana, musi zostać wcześniej zarejestrowana",
-                        "Procedury obsługi przerwań mogą korzystać z wartości zwracanej przez makrodefinicję „current”",
-                        "Nie jest wymagane, aby funkcje obsługi przerwań były wielobieżne"
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-013",
-                    "type": "yn",
-                    "question": "Które z poniższych twierdzeń dotyczące środków synchronizacji w jądrze 2.6 są prawidłowe",
-                    "options": [
-                        "Wątek wykonania, który przetrzymuje semafor nie może równocześnie przetrzymywać rygla pętli",
-                        "Blokady sekwencyjne pozwalają ustalić, czy operacja odczytu nie została przepleciona z operacją zapisu",
-                        "Blokada BKL jest blokadą gruboziarnistą",
-                        "Blokada BKL nie jest rekurencyjna",
-                        "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wywłaszcza wątków"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-014",
-                    "type": "yn",
-                    "question": "Które z twierdzeń dotyczących obsługi przerwań w Linuksie 2.6 są prawdziwe",
-                    "options": [
-                        "Obsługo przerwań jest podzielona na górną połówkę i dolną połówkę",
-                        "Procedury obsługi przerwań mogą być wykonywane dowolnie długo",
-                        "Do linii przerwania o określonym numerze może być przypisane kilka procedur obsługi przerwań",
-                        "W procedurze obsługi przerwań można wywołać funkcje które ulegają blokowaniu",
-                        "Procedury obsługi przerwań korzystają ze stosu jądra który ma nieograniczony rozmiar"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        2
-                    ],
-                    "explanation": "Wyjaśnienia:\n• Współczesne systemy operacyjne dzielą obsługę przerwań sprzętowych na dwie części: górną i dolną\npołówkę.\n• Górną połówkę stanowią procedury obsługi przerwań, które muszą działać szybko, ponieważ linia\nIRQ z nimi związana, a niekiedy nawet cały system przerwań są wyłączone w trakcie ich\nwykonywania. Zazwyczaj wykonują one tylko niezbędne prace związane z obsługą przerwania, a\npozostałe czynności są odraczane i wykonywane w dolnej połówce.\n• Współczesne urządzenia, używające takich magistral jak USB, PCI, PCI–Express potrzebują dużej\nliczby przerwań, które są przydzielane im dynamicznie (niektóre przerwania są przydzielane\nstatycznie z powodów historycznych). To oznacza, że wiele linii IRQ musi być współdzielone przez te\nurządzenia, co prowadzi do wielu problemów.\n• Procedury obsługi przerwań są wywoływane w kontekście przerwania, co oznacza, że nie są\ndozwolone w nich wywołania funkcji blokujących oraz nie jest przydatna (poza procedurami obsługi\nwyjątków) wartość zwracana przez makrodefinicję current.\n• Procedury obsługi przerwań używają stosu jądra procesu, tak jak inne funkcje jądra. Wielkość stosu\njądra jest ograniczona do dwóch stron, więc w przypadku procesorów x86 ma on rozmiar 8KiB, a dla\nprocesorów Alpha, 16KiB."
                 },
                 {
                     "id": "so-m3-015",
@@ -1446,59 +946,6 @@ const systemyOperacyjneData = {
                     "explanation": "Wyjaśnienia:\n• Zwykle informacja o bieżącym czasie jest dostarczana przez urządzenie sprzętowe, które jest\nodczytywane przez jądro w trakcie startu systemu, a potem tylko aktualizowana przez procedurę\nobsługi przerwania zegarowego.\n• Liczba przerwań zegarowych wygenerowanych od uruchomienia systemu komputerowego jest\nprzechowywana w 64-bitowej zmiennej jiffies.\n• Częstotliwość zegara systemowego jest określana przez stałą HZ (hertz).\n• W przypadku platform, które wymagają oszczędności energii, jak systemy wbudowane i laptopy,\njądro może zostać skonfigurowane w taki sposób, aby ignorowało stałą HZ i generowało zdarzenia\nczasowe tylko wtedy, gdy są one potrzebne.\n• Wartość stałej HZ w przypadku większości platform obsługiwanych przez Linuksa wynosi 100. Do\nwyjątków zaliczają się komputery bazujące na procesorach x86. W ich przypadku ta stała także miała\nwartość 100 (okres 10ms), ale w serii 2.4 jądra zmieniono ją na 1000 (okres 1ms), aby zaspokoić\npotrzeby multimedialnego oprogramowania użytkowego. Niestety, spowodowała ona także wzrost\nobciążenia CPU obsługą większej liczby przerwań zegarowych. Dodatkowo, opisywana zmiana\nspowodowała problemy z obsługą protokołu NTP (ang. Network Time Protocol). Ostatecznie wartość\nstałej HZ dla komputerów z procesorami x86 została ustalona na 250 (okres 4ms). Wymogi aplikacji\nmultimedialnych zostały spełnione przy użyciu liczników czasu wysokiej rozdzielczości."
                 },
                 {
-                    "id": "so-m3-018",
-                    "type": "yn",
-                    "question": "Które z twierdze dotyczcych obsługi przerwa w Linuksie 2.6 Są prawdziwe?",
-                    "options": [
-                        "Obsługa przerwa podzielona jest na grn powk i doln powk",
-                        "Procedury obsługi przerwa mogą być wykonywane dowolnie dugo",
-                        "Do linii obsługi przerwania o okrelonym numerze moe być przypisanych kilka procedur obsługi przerwa",
-                        "W procedurach obsługi przerwa można wywoa funkcje, które ulegaj blokowaniu",
-                        "Procedury obsługi przerwa korzystaj ze stosu jądra, który ma nieograniczony rozmiar"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        2
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-019",
-                    "type": "yn",
-                    "question": "Które z poniszych stwierdze dotyczcych rodkw synchronizacji w jądrze linuxa 2.6 sprawdziwe??",
-                    "options": [
-                        "Wtek wykonania, który przetrzymuje semafor nie moe rwnoczenie przetrzymać rygla pętlowego",
-                        "Blokady sekwencyjne pozwalaj ustali czy operacja odczytu nie zostaa przepleciona operacjzapisu",
-                        "Blokada BKL jest blokad gruboziarnist",
-                        "Blokada BKL nie jest rekurencyjna",
-                        "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wycza wątków"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-020",
-                    "type": "yn",
-                    "question": "Poniej umieszczono zdania dotyczce obsługi przerwa przez Linuksa 2.6. Które z nich są prawdziwe?",
-                    "options": [
-                        "Numery przerwa mogą być przydzielane niektrym urządzeniom dynamicznie",
-                        "Aby procedura obsługi przerwania mogą być wywołana, musi zosta wczeniej zarejestrowana",
-                        "Procedury obsługi przerwania mogą korzysta z wartoci zwracanej przez makrodefinicj current",
-                        "Nie jest wymagane, aby procedury obsługi przerwa byy wielobiene"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        1,
-                        3
-                    ],
-                    "explanation": ""
-                },
-                {
                     "id": "so-m3-021",
                     "type": "yn",
                     "question": "Które z poniszych zda dotyczcych synchronizacji są prawdziwe?? (tu mogą się nie zgadza odpowiedzi)",
@@ -1517,150 +964,6 @@ const systemyOperacyjneData = {
                     "explanation": ""
                 },
                 {
-                    "id": "so-m3-022",
-                    "type": "yn",
-                    "question": "Które ze stwierdze dotyczcych obsługi przerwa w Linuksie 2.6 są prawdziwe? ;",
-                    "options": [
-                        "Obsługa przerwa jest podzielona na grn powk i doln powk.",
-                        "Procedury obsługi przerwa mogą być wykonywane dowolnie dugo",
-                        "Do linii przerwania o okrelonym numerze moe być przypisanych kilka procedur obsługi przerwa",
-                        "W procedurach obsługi przerwa można wywoa funkcje, które ulegaj blokowaniu",
-                        "Procedury obsługi przerwa korzystaj ze stosu jądra, który ma nieograniczony rozmiar"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-023",
-                    "type": "yn",
-                    "question": "Które z poniszych stwierdze dotyczcych rodkw synchronizacji w jądrze Linuksa 2.6 są prawdziwe? ;",
-                    "options": [
-                        "Wtek wykonania, który przytrzymuje semafor nie moe rwnoczenie przetrzymywa rygla pętlowego.",
-                        "Blokady sekwencyjne pozwalaj ustali, czy operacja odczytu nie zostaa przepleciona z operacj zapisu.",
-                        "Blokada BKL jest blokad gruboziarnist.",
-                        "Blokada BKL nie jest rekurencyjna",
-                        "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wywaszczaj wątków."
-                    ],
-                    "correctAnswers": [
-                        0,
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-024",
-                    "type": "yn",
-                    "question": "Poniej umieszczono zdania dotyczce obsługi przerwa w Linuksie 2.6, które z nich są prawdziwe? ;",
-                    "options": [
-                        "Czstotliwoci pojawienia się wszystkich przerwa są wykorzystywane do inicjalizowania generatowa liczb losowych",
-                        "Numery przerwa mogą być przydzielane niektrym urządzeniom dynamicznie.",
-                        "Aby procedura obsługi przerwania mogą być wywołana, musi zosta wczeniej zarejestrowana.",
-                        "Procedury obsługi przerwania mogą korzysta z wartoci zwracanej przez makrodefinicj current",
-                        "Nie jest wymagane, aby funkcje obsługi przerwa byy wielobiene."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-025",
-                    "type": "yn",
-                    "question": "Które ze zda dotyczcych synchronizacji są prawdziwe?",
-                    "options": [
-                        "Niektre operacje niepodzielne mogą być zrealizowane jako pojedyncze rozkazy procesora.",
-                        "Przeplot operacji jest przyczyn wystpowania problemu sekcji krytycznej.",
-                        "W systemie Linux, w przestrzeni uytkownika wywaszczenie procesu moe zaj tylko w cile okrelonym momencie jego dziaania",
-                        "Zadanie nigdy nie moe być wywaszczone po zakoczeniu obsługi przerwania.",
-                        "Dostp do zmiennych lokalnych wątków wykonania nie musi podlega synchronizacji."
-                    ],
-                    "correctAnswers": [
-                        0,
-                        1,
-                        3,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-026",
-                    "type": "yn",
-                    "question": "Które z tw. dot. Obsługi przerwa w Linuksie 2.6 jest prawdziwe?;",
-                    "options": [
-                        "Obsługa przerwa podzielona na grn i doln powk",
-                        "Procedury ob. Przerwa mogą być wykonywane dowolnie dugo, (???)",
-                        "Do linii przerwania o okrelonym numerze moe być przypisanych kilka procedur obsługi przerwa  (???)",
-                        "W procedurach obsługi przerwa można wywoływać funkcje, które ulegaj blokowaniu",
-                        "Procedury obsługi przerwa korzystaj ze stosu jądra, który ma nieograniczony rozmiar"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        2
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-027",
-                    "type": "yn",
-                    "question": "Które z poniszych stwierdze dot. rodkw synchronizacji w jądrze Linuksa 2.6 są prawdziwe?;",
-                    "options": [
-                        "Wtek wykonania który przetrzymuje semafor nie moe rwnoczenie przetrzymywa rygla pętlowego",
-                        "Blokady sekwencyjne pozwalaj ustali czy operacja odczytu nie zostaa przepleciona z operacj zapisu (???)",
-                        "Blokada BLK jest blokad gruboziarnist.",
-                        "Blokada BLK nie jest rekurencyjna",
-                        "Rygle pętlowe nie są używane w systemach 1-procesorowych w jądrze które nie wywaszcza wątków"
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-028",
-                    "type": "yn",
-                    "question": "Poniej umieszczono zdania dotyczce obsługi przerwa przez Linuksa 2.6  które są prawdziwe?;",
-                    "options": [
-                        "Czstotliwo pojawiania się wszystkich przerwa są wykorzystywane do inicjalizowania generatora licz los.",
-                        "Numery przerwa mogą być przydzielane niektrym urządzeniom dynamicznie",
-                        "Aby procedura obsługi przerwania mogą być wywołana musi zosta wczeniej zarejestrowana",
-                        "Procedury obsługi przerwania mogą korzysta z wartoci zwracanej przez makrodefinicj current",
-                        "Nie jest wymagane aby funkcje obsługi przerwa byy wielobiene"
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-029",
-                    "type": "yn",
-                    "question": "Które z poniższych stwierdzeń dotyczących środków synchronizacji w jądrze linux’a 2.6 sąprawdziwe??",
-                    "options": [
-                        "Wątek wykonania, który przetrzymuje semafor nie może równocześnie przetrzymać rygla pętlowego",
-                        "Blokady sekwencyjne pozwalają ustalić czy operacja odczytu nie została przepleciona operacjązapisu",
-                        "Blokada BKL jest blokadą gruboziarnistą",
-                        "Blokada BKL nie jest rekurencyjna",
-                        "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wyłącza wątków"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        1,
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
                     "id": "so-m3-030",
                     "type": "yn",
                     "question": "Poniżej umieszczono zdania dotyczące obsługi przerwań przez Linuksa 2.6. Które z nich są prawdziwe? -Częstotliwości pojawiania się wszystkich przerwań są wykorzystywane do inicjalizowania generatora liczb losowych",
@@ -1671,81 +974,9 @@ const systemyOperacyjneData = {
                         "Nie jest wymagane, aby procedury obsługi przerwań były wielobieżne"
                     ],
                     "correctAnswers": [
-                        0,
-                        1,
-                        3
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-031",
-                    "type": "yn",
-                    "question": "Które z poniższych zdań dotyczących synchronizacji są prawdziwe?? (tu mogą się nie zgadzać odpowiedzi)",
-                    "options": [
-                        "Niektóre operacje niepodzielne mogą być zrealizowane jak jeden rozkaz",
-                        "Przeplot operacji jest przyczyną występowania problemu sekcji krytycznej",
-                        "W systemie linux, w przestrzeni użytkownika wywłaszczenie procesu może zajść tylko w ściśle określonym momencie jego działania",
-                        "Zadanie nigdy nie może być wywłaszczone po zakończeniu obsługi przerwania",
-                        "Dostęp do zmiennych lokalnych wątków nie musi podlega synchronizacji"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        3,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-032",
-                    "type": "yn",
-                    "question": "Okrel, które informacje dotyczce obsługi przerwa w Linuksie 3.0 i nowszych są prawdziwe:",
-                    "options": [
-                        "procedury obsługi przerwa w Linuksie są funkcjami napisanymi w jzyku C",
-                        "procedury obsługi przerwa są wykonywane w kontekcie przerwania",
-                        "procedury obsługi przerwa są wywoływane w sposb asynchroniczny",
-                        "linie zgaszania przerwa (IRQ) mogą być współdzielone",
-                        "niektre przerwania mogą zasila pul entropii jądra."
-                    ],
-                    "correctAnswers": [
-                        0,
                         1,
                         2,
-                        3,
                         4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-033",
-                    "type": "yn",
-                    "question": "Okrel, które informacje dotyczce rodkw synchronizacji w Linuksie 3.0 i nowszych są prawdziwe:",
-                    "options": [
-                        "funkcje realizujce operacje niepodzielne na liczbach cakowitych dziaaj na zmiennych typu \"int\"",
-                        "niepodzielne operacje na bitach przeprowadzane są za pomoc tych samych funkcji co niepodzielne operacje na liczbach cakowitych",
-                        "rygle pętlowe wprowadzaj wątki oczekujce na ich zwolnienie w stan aktywnego oczekiwania",
-                        "zwyky rygiel pętlowy moe być przetrzymywany przez kilka wątków jednoczenie",
-                        "rygle pętlowe nie są używane w systemach jednoprocesorowych."
-                    ],
-                    "correctAnswers": [
-                        2,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m3-034",
-                    "type": "yn",
-                    "question": "Okrel, które informacje dotyczce pomiaru i synchronizacji wzgldem czasu w Linuksie 3.0 i nowszych są prawdziwe:",
-                    "options": [
-                        "zegar czasu rzeczywistego (RTC) jest okresowo odczytywany przez jądro systemu",
-                        "liczb taktw zegara od uruchomienia systemu przechowuje zmienna \"jiffies\"",
-                        "czstotliwo zegara systemowego jest okrelona sta \"HZ\"",
-                        "implementacja procedury obsługi przerwania zegarowego jest cakowicie niezalena od sprzętu",
-                        "warto staej \"HZ\" jest taka sama dla wszystkich platform sprzętowych."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2
                     ],
                     "explanation": ""
                 },
@@ -1762,7 +993,6 @@ const systemyOperacyjneData = {
                     ],
                     "correctAnswers": [
                         0,
-                        2,
                         4
                     ],
                     "explanation": ""
@@ -1785,26 +1015,10 @@ const systemyOperacyjneData = {
                         "Funkcja realizująca wywołanie systemowe musi być w całości napisana w assemblerze"
                     ],
                     "correctAnswers": [
-                        0
+                        0,
+                        1
                     ],
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** dodawania nowej funkcjonalności Dodanie do jądra nowych wywołań systemowych jest kuszącym pomysłem, jednakże wśród twórców jądra Linuksa panuje silna tendencja, aby t ego nie robić. Po dokładnych  rozważaniach można określić następującą listę wad i zalet tworzenia nowych wywołań jądra (Wykład 5)\n• **Opcja b) (NIE):** Każde wywołanie systemowe zwraca wartość typu long, która  stanowi kod błędu. Najczęściej poprawne zakończenie wywołania sygnalizowane jest wartością zero, a wykonanie błędne wartością ujemną.  (Wykład 5)\n• **Opcja c) (NIE):** Wywołania systemowe podobnie jak zwykłe funkcje mogą przyjmować pewną liczbę argumentów wywołania,  lub nie przyjmować ich w ogóle. (Wykład 5)\n• **Opcja e) (NIE):** Zadania  użytkownika nie  wywołują najczęściej bezpośrednio wywołań systemowych lecz robią to za pomocą podprogramów języka wysokiego poziomu. (Wykład 5) Systemy Operacyjne 2 – A. Chrobot"
-                },
-                {
-                    "id": "so-m4-002",
-                    "type": "yn",
-                    "question": "Które stwierdzenie dotyczące wywołać systemowych w Linuksie 2,6 są prawdziwe?",
-                    "options": [
-                        "Dodawanie nowych wywołań systemowych nie jest zalecanym przez twórców jądra  sposobem dodawania nowej funkcjonalności",
-                        "Każde wywołanie systemowe zwraca wartość typu „long”",
-                        "Każde wywołanie systemowe musi przyjmować co najmniej jeden argument wywołania",
-                        "Wszystkie funkcje ze standardowej biblioteki języka C korzystają z wywołań systemowych  ???",
-                        "Funkcja realizująca wywołania systemowe musi być w całości napisana w asemblerze"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        2
-                    ],
-                    "explanation": ""
                 },
                 {
                     "id": "so-m4-003",
@@ -1897,23 +1111,6 @@ const systemyOperacyjneData = {
                     "explanation": ""
                 },
                 {
-                    "id": "so-m4-009",
-                    "type": "yn",
-                    "question": "Które z poniszych zda dotyczcych wywołań systemowych w Linuks 2.6 są prawdziwe?",
-                    "options": [
-                        "Dodawanie nowych wywołań systemowych nie jest zalecanym sposobem przez twrcw jądra sposobem dodawania nowej funkcjonalnoci",
-                        "Kade wywołanie systemowe zwraca warto typu long",
-                        "Kade wywołanie systemowe musi zawiera, co najmniej 1 argument wywołania",
-                        "Wszystkie funkcje ze standardowej biblioteki jezyka c korzystaj z woa systemowych",
-                        "Funkcja realizujca wywołania systemowe musi być caoci napisana w asemblerze"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        1
-                    ],
-                    "explanation": ""
-                },
-                {
                     "id": "so-m4-010",
                     "type": "yn",
                     "question": "Które ze stwierdze dotyczcych wywołań systemowych w Linuksie 2.6 są prawdziwe?",
@@ -1945,75 +1142,6 @@ const systemyOperacyjneData = {
                         0,
                         3,
                         4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m4-012",
-                    "type": "yn",
-                    "question": "Które z poniższych zdań dotyczących wywołań systemowych w Linuks 2.6 są prawdziwe?",
-                    "options": [
-                        "Dodawanie nowych wywołań systemowych nie jest zalecanym sposobem przez twórców jądra sposobem dodawania nowej funkcjonalności",
-                        "Każde wywołanie systemowe zwraca wartość typu long",
-                        "Każde wywołanie systemowe musi zawiera, co najmniej 1 argument wywołania",
-                        "Wszystkie funkcje ze standardowej biblioteki jezyka c korzystają z wołań systemowych",
-                        "Funkcja realizująca wywołania systemowe musi być całości napisana w asemblerze"
-                    ],
-                    "correctAnswers": [
-                        0,
-                        1
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m4-013",
-                    "type": "yn",
-                    "question": "Okrel, które informacje dotyczce wywołań systemowych w Linuksie 3.0 i nowszych są prawdziwe:",
-                    "options": [
-                        "wszystkie funkcje z biblioteki \"libc\" korzystaj z wywołań systemowych",
-                        "wywołania systemowe mogą nie przyjmowa adnych argumentw",
-                        "kade wywołanie systemowe zwraca warto stanowic kod jego wykonania",
-                        "zazwyczaj wywołania systemowe implementowane są w postaci funkcji napisanych w assemblerze",
-                        "dodanie do jądra nowego wywołania systemowego wymaga modyfikacji biblioteki \"libc\", aby umoliwi procesom uytkownika korzystanie z niego."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m4-014",
-                    "type": "yn",
-                    "question": "Okrel, które informacje dotyczce wywołani systemowych w Linuksie 3.0 i nowszych są prawdziwe:",
-                    "options": [
-                        "adresy wszystkich zarejestrowanych wywołań systemowych są przechowywane w specjalnej tablicy",
-                        "kod funkcji implementujcej wywołanie systemowe moe być umieszczony w module",
-                        "dodawanie nowych wywołań systemowych jest zalecan przez programistw jądra Linuksa praktyk",
-                        "cz procesorw wymaga, aby argumenty do funkcji implementujcych wywołania systemowe byy przekazywane wyłącznie przez stos",
-                        "funkcja implementujca wywołanie systemowe musi sprawdza poprawno przekazanych jej argumentw."
-                    ],
-                    "correctAnswers": [
-                        0,
-                        3,
-                        4
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-m4-015",
-                    "type": "yn",
-                    "question": "Okrel, które informacje dotyczce wirtualnego systemu plikw (VFS) w Linuksie 3.0 i nowszych są prawdziwe:",
-                    "options": [
-                        "VFS napisany jest w jzyku C++",
-                        "obiekt superbloku moe być stosowany w obsudze systemw plikw, które nie maj fizycznej implementacji",
-                        "obiekty i-wzw zwizane są wyłącznie z fizycznymi plikami",
-                        "niektre nieuniksowe systemy plikw nie posiadaj wszystkich informacji, które musz być umieszczone w obiekcie i-wza",
-                        "obiekty wpisw katalogowych maj swoje odpowiedniki na nośniku danych."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        3
                     ],
                     "explanation": ""
                 },
@@ -2315,22 +1443,6 @@ const systemyOperacyjneData = {
                         "Kod w mechanizmie RCU moe ulec zawieszeniu.",
                         "Odczyty w mechanizmie RCU powinny byc czste, a zapisy sporadyczne.",
                         "Rygle pętlowe powinny być stosowane wszdzie tam, gdzie nie można zawiesi wątku i gdzie czas przełączania kontekstu byby niewspmiernie duszy z czasem aktywnego oczekiwania.",
-                        "Rygle pętlowe są rekurencyjne."
-                    ],
-                    "correctAnswers": [
-                        1,
-                        2
-                    ],
-                    "explanation": ""
-                },
-                {
-                    "id": "so-final-002",
-                    "type": "yn",
-                    "question": "Które stwierdzenia są prawidłowe?; Mechanizm RCU posługuje się wskaźnikami.",
-                    "options": [
-                        "Kod w mechanizmie RCU może ulec zawieszeniu.",
-                        "Odczyty w mechanizmie RCU powinny byc częste, a zapisy sporadyczne.",
-                        "Rygle pętlowe powinny być stosowane wszędzie tam, gdzie nie można zawiesić wątku i gdzie czas przełączania kontekstu byłby niewspółmiernie dłuższy z czasem aktywnego oczekiwania.",
                         "Rygle pętlowe są rekurencyjne."
                     ],
                     "correctAnswers": [
@@ -2954,5 +2066,5 @@ const systemyOperacyjneData = {
             ]
         }
     ],
-    "dbVersion": 5
+    "dbVersion": 6
 };
