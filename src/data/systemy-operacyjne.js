@@ -4787,5 +4787,5 @@ const systemyOperacyjneData = {
             ]
         }
     ],
-    "dbVersion": 14
+    "dbVersion": 15
 };
