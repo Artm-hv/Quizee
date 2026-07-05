@@ -2064,7 +2064,1146 @@ const systemyOperacyjneData = {
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Dolna połówka NET_RX_SOFTIRQ przetwarza ramki sieciowe. (Wykład 15)\n• **Opcja b) (TAK):** NAPI zapobiega przeciążeniu przerwaniami przy gigabitowym transferze (livelock). (Wykład 15)\n• **Opcja c) (NIE):** IPv6 jest w pełni zintegrowany i wspierany. (Wykład 15)\n• **Opcja d) (TAK):** Przekazuje skb do warstwy sieciowej IP. (Wykład 15)"
                 }
             ]
+        },
+        {
+            "id": "so-wyk-dodatkowe",
+            "name": "Wykłady - Dodatkowe pytania",
+            "questions": [
+                {
+                    "id": "so-wyk-dodatkowe-001",
+                    "question": "implementacja funkcji przełączającej kontekst (\"context_switch()\") zależy od architektury platformy sprzętowej, na której działa Linux",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-002",
+                    "question": "równoważenie obciążenia procesorów następuje wyłącznie wtedy, gdy kolejka procesów gotowych któregoś z nich jest pusta.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-003",
+                    "question": "semafor nie może być przetrzymywany przez wątek, który już przetrzymuje rygiel pętlowy",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-004",
+                    "question": "deskryptory procesów są powiązane w dwukierunkową listę nazywaną listą procesów.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-005",
+                    "question": "dla każdego zamontowanego systemu plików tworzona jest zmienna opisująca jego punkt montowania.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-006",
+                    "question": "funkcje związane z licznikami niskiej rozdzielczości wykonywane są w kontekście przerwania",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-007",
+                    "question": "istnieje możliwość stworzenia kolejki prac, która będzie obsługiwana na platformach wieloprocesorowych przez pojedynczy wątek roboczy.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-008",
+                    "question": "stosowanie blokady BKL nie jest zalecane",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-009",
+                    "question": "adresowanie stron w Linuksie jest domyślnie czteropoziomowe",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-010",
+                    "question": "pamięć na obiekty wpisów katalogowych jest przydzielana i zwalniana przez alokator plastrowy",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-011",
+                    "question": "obiekty wpisu katalogowego, które są w stanie ujemnym, nie są niszczone, jeśli nie zachodzi taka potrzeba",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-012",
+                    "question": "planista terminowy przydziela domyślnie dłuższy termin realizacji operacji odczytu niż operacji zapisu",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-013",
+                    "question": "wszystkie procedury obsługi przerwań wymagają wyłączenia wszystkich linii zgłaszania przerwań na czas ich wykonywania",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-014",
+                    "question": "niskopoziomowy mechanizm obsługi pamięci działa w oparciu o algorytm bliźniaków",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-015",
+                    "question": "rygiel pętlowy czytelnika może być jednocześnie przetrzymywany przez więcej niż jeden wątek wykonania",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-016",
+                    "question": "stos z którego korzystają procedury obsługi przerwań ma nieograniczoną wielkość",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-017",
+                    "question": "przerwania programowe są alokowane statycznie podczas kompilacji jądra",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-018",
+                    "question": "semafory mogą być stosowane w procedurach obsługi przerwań",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-019",
+                    "question": "sterowniki urządzeń znakowych korzystają z niektórych struktur związanych z wirtualnym systemem plików (VFS)",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-020",
+                    "question": "sterownik urządzenia może być dołączony do systemu w postaci modułu",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-021",
+                    "question": "proces użytkownika może być wywłaszczony w ramach powrotu z wywołania systemowego lub procedury obsługi przerwania",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-022",
+                    "question": "czas wybierania procesów przez planistę CFS jest zawsze krótszy w porównaniu z analogicznym czasem dla planisty O(1)",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-023",
+                    "question": "większość procedur obsługi przerwań korzysta z makrodefinicji \"current\"",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-024",
+                    "question": "w komputerach klasy PC wszystkie numery przerwań są przydzielane statycznie",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-025",
+                    "question": "te same tasklety mogą być wykonywane współbieżnie na platformach wieloprocesorowych",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-026",
+                    "question": "mechanizm liczników wysokiej rozdzielczości korzysta z drzewa czerwonoczarnego",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-027",
+                    "question": "zadanie o dużym stopniu interaktywności może, po wyczerpaniu swojego kwantu czasu, ponownie trafić do tablicy priorytetów aktywnych",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-028",
+                    "question": "wielkość segmentu jest zawsze równa wielkości bufora",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-029",
+                    "question": "metody obsługujące urządzenia znakowe muszą działać według określonego protokołu",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-030",
+                    "question": "czas wirtualny procesu zależy od jego wagi",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-031",
+                    "question": "mechanizm RCU niszczy oryginalną informację w momencie, kiedy wątek-pisarz opublikuje wskaźnik na jej zmodyfikowaną kopię.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-032",
+                    "question": "liczniki wysokiej rozdzielczości mogą być cykliczne",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-033",
+                    "question": "planista CFQ nie stosuje przewidywania.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-034",
+                    "question": "proces, który jest gotów do wykonania znajduje się w stanie TASK_RUNNING",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-035",
+                    "question": "alokator plastrowy jest rozwiązaniem zapożyczonym z systemu operacyjnego firmy Sun Microsystems",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-036",
+                    "question": "obiekt wpisu katalogowego, który nie jest w użyciu, ale któremu odpowiada prawidłowy i-węzeł, jest w stanie ujemnym",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-037",
+                    "question": "jeśli platforma sprzętowa nie dostarcza zegarów o nanosekundowej precyzji, to mechanizm liczników wysokiej rozdzielczości nie jest dla niej wogóle dostępny.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-038",
+                    "question": "czas fizyczny jest mierzony z dokładnością nanosekundową",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-039",
+                    "question": "struktury \"bio\" ułatwiają realizację operacji wejścia-wyjścia o rozproszonym źródle",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-040",
+                    "question": "wątek \"ksoftirqd\" odpowiedzialny jest zarówno za obsługę przerwań programowych, jak i kolejek prac",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-041",
+                    "question": "wątki w Linuksie są tworzone za pomocą innego wywołania systemowego niż procesy",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-042",
+                    "question": "programista piszący sterownik urządzenia znakowego musi oprogramować metody obiektu i-węzła",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-043",
+                    "question": "liczniki niskiej rozdzielczości są cykliczne",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-044",
+                    "question": "można określićminimalny czas o jaki zostanie opóźnione wykonanie czynności w kolejkach prac",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-045",
+                    "question": "obiekty plików związane są ze wszystkimi plikami zapisanymi w systemie plików",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-046",
+                    "question": "w trakcie tworzenia nowy proces otrzymuje osobny obszar tekstu i danych",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-047",
+                    "question": "alokator plastrowy przedziela pamięć na struktury często alokowane i zwalniane przez jądro systemu.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-048",
+                    "question": "proces \"init\" może zostać nowym rodzicem procesu, któregoproces macierzysty już się zakończył",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-049",
+                    "question": "dodanie do jądranowego wywołania systemowego wymaga modyfikacji biblioteki \"libc\",aby umożliwić procesom użytkownika korzystanie z niego.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-050",
+                    "question": "planista przydziela procesor temu procesowi, który najdłużej z niego korzystał.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-051",
+                    "question": "struktury \"bio\" reprezentują operacje wejścia-wyjścia podczas ich trwania",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-052",
+                    "question": "alokator plastrowy wykorzystuje do własnych celów dedykowane pamięci podręczne",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-053",
+                    "question": "dla procesów z priorytetem równym 0 czas wirtualny jest taki sam jak czas fizyczny",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-054",
+                    "question": "sterowniki wszystkich urządzeń blokowych muszą tworzyć kolejki żądań.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-055",
+                    "question": "czas wykonania procedur obsługi przerwań (górnych połówek) może być dowolnie długi",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-056",
+                    "question": "Struktura bio może być wykorzystywana w macierzach RAID (czy coś w ten deseń).",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-057",
+                    "question": "Struktura thread_struct jest deskryptorem procesu.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-058",
+                    "question": "Plik jest powiązany z wpisem katalogowym.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-059",
+                    "question": "Planista CFS przelicza priorytety procesów na wagi.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-060",
+                    "question": "Kwanty czasu dla poszczególnych zadań są przeliczane dopiero wówczas ,gdy ostatnie z zadań znajdujących się w tablicy priorytetów aktywnych wyczerpie swój kwant czasu.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-061",
+                    "question": "Przy wywołaniach systemowych jest używany sys_",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-062",
+                    "question": "Planista CFS korzysta z tablicy odwrotności priorytetów.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-063",
+                    "question": "Obsługa struktury bio jest mniej skomplikowana niż obsługa nagłówków buforów.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-064",
+                    "question": "Zmienna jiffies przechowuje informacje o czasie rzeczywistym systemu",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-065",
+                    "question": "Każde urządzenie musi mieć inny numer przerwania",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-066",
+                    "question": "Przerwania programowe są wykorzystywane przy taskletach",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-067",
+                    "question": "Urządzenie znakowe jest zwykłym plikiem.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-068",
+                    "question": "Każda ramka jest określona strukturą struct page",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-069",
+                    "question": "Wirtualny system plików jest modelem obiektowym.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-070",
+                    "question": "Liczniki wysokiej rozdzielczości pozwalają na ich regulowanie z nanosekundową precyzją",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-071",
+                    "question": "Jądro może przydzielić dodatkową przestrzeń adresową dla procesu podczas jego wykonywania.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-072",
+                    "question": "Użytkownik uprzywilejowany może dowolnie zmieniać wartość stałej HZ",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-073",
+                    "question": "Procesy które nie korzystają z procesora, są przesuwane w lewą stronę drzewa czerwono-czarnego.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-074",
+                    "question": "W 64-bitowych procesorach pamięć wysoka jest oznaczona jako HIGHMEM",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-075",
+                    "question": "Maksymalna ilość przerwań programowych wynosi 32",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-076",
+                    "question": "Struktura bio korzysta z listy offsetów.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-077",
+                    "question": "Planista CFS całkowicie zastąpił planistę O(1).",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-078",
+                    "question": "Wszystkie pliki na dysku są reprezentowane przez VFS (czy coś takiego).",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-079",
+                    "question": "Programista może napisać dedykowaną pamięć podręczną dla alokatora plastrowego",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-080",
+                    "question": "Przerwanie składa się z dwóch połówek.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-081",
+                    "question": "PID może być ujemny.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-082",
+                    "question": "Procesy UNINTERRUPTIBLE mogą zostać ustawione w stan gotowości przez inne zdarzenie niż to, na które oczekują.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-083",
+                    "question": "Procesy mogą współdzielić deskryptor pamięci",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-084",
+                    "question": "Mechanizm RCU posługuje się wskaźnikami.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-085",
+                    "question": "Pamięć fizyczna nieciągła jest przydzielana za pomocą algorytmu bliźniaków.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-086",
+                    "question": "Licznik monotoniczny jest wysokiej rozdzielczości",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-087",
+                    "question": "Urządzenia znakowe mają dostęp sekwencyjny.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-088",
+                    "question": "Deskryptory pamięci są połączone w listę i drzewo czerwono-czarne",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-089",
+                    "question": "Jądro cyklicznie odczytuje wartości z zegara czasu rzeczywistego (RTC)",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-090",
+                    "question": "W wersji 2.6 deskryptor pamięci jest przechowywany na stosie.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-091",
+                    "question": "Stronicowanie nigdy nie korzysta z segmentacji.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-092",
+                    "question": "Niektóre pola struktury dotyczącej plików mogą być wypełniane dowolnymi wartościami.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-093",
+                    "question": "Rygle pętlowe są użyteczne w systemach jednoprocesorowych z wywłaszczaniem jądra.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-094",
+                    "question": "Rozmiar sektora dla urządzeń blokowych wynosi zazwyczaj 1024 bajty.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-095",
+                    "question": "Deskryptor procesu jest opisywany strukturą struct thread_info.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-096",
+                    "question": "VFS jest zapożyczony od Microsoftu.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-097",
+                    "question": "Zwiększenie wartości stałej HZ powoduje zmniejszenie częstotliwości przerwań zegarowych",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-098",
+                    "question": "Stan procesów po zakończeniu jest przechowywany w tym samym polu deskryptora.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-099",
+                    "question": "Liczniki bazują na taskletach",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-100",
+                    "question": "Wątki jądra mają sekcję tekstu.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-101",
+                    "question": "Coś o obiekcie wpisu katalogowego (dentry) i jego stanach: używany, nieużywany lub ujemny",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-102",
+                    "question": "Deskryptory procesów są połączone w listę dwukierunkową",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
+                    "id": "so-wyk-dodatkowe-103",
+                    "question": "Czy liczniki niskiej rozdzielczości działają z mikrosekundową precyzją",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                }
+            ]
         }
     ],
-    "dbVersion": 6
+    "dbVersion": 7
 };
