@@ -95,10 +95,10 @@ const systemyOperacyjneData = {
                         "Testowanie wstpujce w kocowej fazie?",
                         "Minimalizacja strat agodzi skutki?",
                         "Kontroler znajduje w programach bdy pominicia i niespójności? TAK (IP_lec_4 są.17)",
-                        "Punkty widzenia? -> KOCOWI UYTKOWNICY?",
+                        "Punkty widzenia? -> KOŃCOWI UŻYTKOWNICY?",
                         "Porednik wirtualny przechowuje w pamięci podrcznej informacje o przedmiotach?",
-                        "Porednik ochraniajcy sprawdza czy wywołujący ma pozwolenie na dostp?",
-                        "Czy obserwator weryfikuje obserwatorw?",
+                        "Porednik ochraniajcy sprawdza czy wywołujący ma pozwolenie na dostęp?",
+                        "Czy obserwator weryfikuje obserwatorów?",
                         "obserwujcy nie moe ->"
                     ],
                     "correctAnswers": [
@@ -134,10 +134,10 @@ const systemyOperacyjneData = {
                     "question": "Okrel które twierdzenia dotyczce zarzdzania czasem w Linuxie są prawdziwe? ;",
                     "options": [
                         "Staa HZ dla architektury i386 wynosi 1000.",
-                        "Zawarto zegara czasu rzeczywistego jest odczytywana przez jądro co pewien okrelony przedział czasu",
+                        "Zawartość zegara czasu rzeczywistego jest odczytywana przez jądro co pewien określony przedział czasu",
                         "Zmienna ijffies jest naoona na starsze 32 bity zmiennej ijffies_64.",
-                        "Liczniki dynamiczne ze wzgldu na zbyt ma precyzj nie mogą być wykorzystywane w zadaniach czasu rzeczywistego",
-                        "Listy licznikw nie są przez system sortowane."
+                        "Liczniki dynamiczne ze względu na zbyt ma precyzję nie mogą być wykorzystywane w zadaniach czasu rzeczywistego",
+                        "Listy liczników nie są przez system sortowane."
                     ],
                     "correctAnswers": [
                         0,
@@ -169,10 +169,10 @@ const systemyOperacyjneData = {
                     "question": "Okrel które twierdzenia dot. zadania czasem w Linkusie są prawdziwe?;",
                     "options": [
                         "Staa HZ dla architektury i386 wynosi 1000",
-                        "Zawarto zegara czasu rzeczywistego jest odczytywana przez jądro co pewien okrelony przedział czasu",
+                        "Zawartość zegara czasu rzeczywistego jest odczytywana przez jądro co pewien określony przedział czasu",
                         "Zmienna jiffies jest naoona na starsze 32 bity zmiennej jiffies_64",
-                        "Liczniki dynam. ze wzgldu na zbyt maa precyzje nie mogą być wykorzystywane w zadaniach czasu rzeczyw.",
-                        "Listy licznikw nie są przez system sortowane"
+                        "Liczniki dynam. ze względu na zbyt małą precyzję nie mogą być wykorzystywane w zadaniach czasu rzeczyw.",
+                        "Listy liczników nie są przez system sortowane"
                     ],
                     "correctAnswers": [
                         0,
@@ -192,7 +192,7 @@ const systemyOperacyjneData = {
                     "question": "Pytania:",
                     "options": [
                         "Zmienna typu atomic_T jest 32 bitowa.",
-                        "Wszystkie architektury, które obsługuje Linux dostarczaj rozkazw maszynowych realizujcych operacje niepodzielne na wartociach bdcych liczbami cakowitymi",
+                        "Wszystkie architektury, które obsługuje Linux dostarczaj rozkazów maszynowych realizujcych operacje niepodzielne na wartociach bdcych liczbami cakowitymi",
                         "Rygle pętlowe mogą być stosowane we fragmentach kodu wykonywujcych się w kontekcie przerwania",
                         "Rygle R-W stosujemy w zagadnieniach typu problem czytelników i pisarzy, gdzie faworyzowani są pisarze",
                         "Zmienne sygnałowe są uproszczon wersj semaforów."
@@ -578,11 +578,11 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-pytania-2-txt-002",
                     "type": "yn",
-                    "question": "Czy twierdzenia odnonie wątków i procesw są prawdziwe?",
+                    "question": "Czy twierdzenia odnonie wątków i procesów są prawdziwe?",
                     "options": [
-                        "Za szeregowanie wątków odpowiada inny mechanizm ni za szeregowanie procesw",
+                        "Za szeregowanie wątków odpowiada inny mechanizm ni za szeregowanie procesów",
                         "Kady wtek jądra posiada odrbn przestrzeń adresow",
-                        "Makrodefinicja current pozwala na szybki dostp do deskryptora biecego procesu",
+                        "Makrodefinicja current pozwala na szybki dostęp do deskryptora biecego procesu",
                         "Proces macierzysty, ktrego proces macierzysty się zakoczy przechodzi w stan TASK_ZOMBIE"
                     ],
                     "correctAnswers": [
@@ -613,11 +613,11 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Które ze stwierdze dotyczcych wywołań systemowych w Linuksie 2.6 są prawdziwe?",
                     "options": [
-                        "Dodawanie nowych wywołań systemowych nie jest zalecanym przez twrcw jądra sposobem dodawania nowej funkcjonalności. |",
+                        "Dodawanie nowych wywołań systemowych nie jest zalecanym przez twórców jądra sposobem dodawania nowej funkcjonalności. |",
                         "Kade wywoływanie systemowe zwraca warto typu long. |    tak",
                         "Kade wywołanie systemowe musi przyjmowa co najmniej jeden argument wywołania",
                         "Wszystkie funkcje ze standardowej biblioteki jzyka C korzystaj z wywołań systemowych",
-                        "Funkcja realizujca wywołanie systemowe musi być w caoci napisana w assemblerze"
+                        "Funkcja realizujca wywołanie systemowe musi być w całości napisana w assemblerze"
                     ],
                     "correctAnswers": [
                         0,
@@ -687,7 +687,7 @@ const systemyOperacyjneData = {
                         "Przeplot operacji jest przyczyn wystpowania problemu sekcji krytycznej",
                         "W systemie linux, w przestrzeni użytkownika wywaszczenie procesu moe zaj tylko w cile okrelonym momencie jego dziaania",
                         "Zadanie nigdy nie moe być wywaszczone po zakoczeniu obsługi przerwania",
-                        "Dostp do zmiennych lokalnych wątków nie musi podlega synchronizacji"
+                        "dostęp do zmiennych lokalnych wątków nie musi podlega synchronizacji"
                     ],
                     "correctAnswers": [
                         0,
@@ -814,7 +814,7 @@ const systemyOperacyjneData = {
                         "domylnie Linux przydziela pamięć ze strefy DMA (ZONE_DMA)",
                         "podstawowym mechanizmem sprzętowym wykorzystywanym przez Linuksa do obsługi pamięci jest segmentacja",
                         "nie we wszystkich platformach sprzętowych musi wystpowa strefa pamięci wysokiej (ZONE_HIGHMEM)",
-                        "niskopoziomowy mechanizm obsługi pamięci umożliwia przydzielenie obszaru pamięci o wielkoci jednego bajta."
+                        "niskopoziomowy mechanizm obsługi pamięci umożliwia przydzielenie obszaru pamięci o wielkości jednego bajta."
                     ],
                     "correctAnswers": [
                         0,
@@ -883,7 +883,7 @@ const systemyOperacyjneData = {
                         "wielko bloku w Linuksie jest nieograniczona",
                         "kady bufor zawsze jest związany z blokiem na nośniku danych",
                         "bufory są wykorzystywane wyłącznie do przechowywania danych odczytanych z nonika urządzenia blokowego",
-                        "kady z buforw wyposaony jest w nagłówek zawierający dane niezbędne do zarzdzania nim",
+                        "kady z buforów wyposaony jest w nagłówek zawierający dane niezbędne do zarzdzania nim",
                         "nagłówek bufora nie przechowuje informacji o operacjach wejścia-wyjścia z jakimi ten bufor jest związany."
                     ],
                     "correctAnswers": [
@@ -943,7 +943,7 @@ const systemyOperacyjneData = {
                         "moe dziaa niezależnie?",
                         "moe ze soba współdziała?",
                         "pojedynczy podsystem moe być traktowany jako samodzielny?",
-                        "funkcje rnych podsystemw mogą dziaa wspólnie?"
+                        "funkcje rnych podsystemów mogą dziaa wspólnie?"
                     ],
                     "correctAnswers": [
                         0,
@@ -964,7 +964,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Planowanie projektu",
                     "options": [
-                        "obejmuje skad i struktur osob tworzcych program?",
+                        "obejmuje skład i struktur osób tworzących program?",
                         "obejmuje koszty projektu"
                     ],
                     "correctAnswers": [
@@ -1007,7 +1007,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-str1-txt-004",
                     "type": "yn",
-                    "question": "Czy przy testowaniu programw obiektowych",
+                    "question": "Czy przy testowaniu programów obiektowych",
                     "options": [
                         "testowanie jednostkowe ogranicza się do testowania metod klasy?",
                         "wykonuje sie testy integralności?"
@@ -1064,8 +1064,8 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Potoki czy",
                     "options": [
-                        "nadaj się do systemw interaktywnych?",
-                        "mogą być stosowane tylko do systemw sekwencyjnych?"
+                        "nadaj się do systemów interaktywnych?",
+                        "mogą być stosowane tylko do systemów sekwencyjnych?"
                     ],
                     "correctAnswers": [],
                     "explanation": ""
@@ -1077,8 +1077,8 @@ const systemyOperacyjneData = {
                     "options": [
                         "Czy kontrole są metodami statycznymi v&v?",
                         "Czy automatyczna analiza statyczna zawsze wskazuje dokadne miejsce usterki?",
-                        "Czy kontrole pozwalaj wykry wiele defektw podczas sesji?",
-                        "Czy cakowicie eliminuj konieczno przeprowadzenia testw?",
+                        "Czy kontrole pozwalaj wykry wiele defektów podczas sesji?",
+                        "Czy cakowicie eliminuj konieczno przeprowadzenia testów?",
                         "Nie pozwalaj okreli cech dynamicznych testowanego programowania?",
                         "Czy podczas kontroli można znale wiele bdw?"
                     ],
@@ -1232,8 +1232,8 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Obserwator",
                     "options": [
-                        "Obserwator czy przechodzi przez obserwatorw i uaktualnia stan?",
-                        "Obserwowany dynamicznie dodaje i usuwa obserwatorw?"
+                        "Obserwator czy przechodzi przez obserwatorów i uaktualnia stan?",
+                        "Obserwowany dynamicznie dodaje i usuwa obserwatorów?"
                     ],
                     "correctAnswers": [
                         1
@@ -1275,8 +1275,8 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Etnografia",
                     "options": [
-                        "wymagania wynikajce z rzeczywistego sposobu pracy osb a nie ze sposobu zalecanego przez formalne definicje procesw?",
-                        "wymagania, które wynikaja z kooperacji i swiadomowsci czynności innych osob?"
+                        "wymagania wynikające z rzeczywistego sposobu pracy osób a nie ze sposobu zalecanego przez formalne definicje procesów?",
+                        "wymagania, które wynikaja z kooperacji i swiadomowsci czynności innych osób?"
                     ],
                     "correctAnswers": [
                         0,
@@ -1302,7 +1302,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Czy model oglny",
                     "options": [
-                        "budowany metoda wstepujaca, obejmuja zasadnicze charakterystyki rzeczywistych systemw?",
+                        "budowany metoda wstępująca, obejmują zasadnicze charakterystyki rzeczywistych systemów?",
                         "dostarcza informacji o oglnej architekturze systemu?"
                     ],
                     "correctAnswers": [
@@ -1341,9 +1341,9 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Wzorzec obserwator",
                     "options": [
-                        "obserwator wizytuje obserwatorw w celu pobrania aktualnego stanu obiektu obserwowanego?",
+                        "obserwator wizytuje obserwatorów w celu pobrania aktualnego stanu obiektu obserwowanego?",
                         "obserwator umożliwia obserwowanemu na dynamiczne odczanie i doczanie obserwatorow?",
-                        "czy obserwator weryfikuje obserwatorw?"
+                        "czy obserwator weryfikuje obserwatorów?"
                     ],
                     "correctAnswers": [
                         1
@@ -1414,7 +1414,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Fasada",
                     "options": [
-                        "warstwowe ograniczenie dostpu? ??",
+                        "warstwowe ograniczenie dostępu? ??",
                         "reprezentuje zoony system?",
                         "ukrywa cz systemu?"
                     ],
@@ -1456,7 +1456,7 @@ const systemyOperacyjneData = {
                     "question": "Czy punktem widzenia jest",
                     "options": [
                         "rdo lub przeznaczenie danych?",
-                        "co na temat pomiarw"
+                        "co na temat pomiarów"
                     ],
                     "correctAnswers": [
                         0
@@ -1564,7 +1564,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Czy include w diagramie przypadków użycia używa się",
                     "options": [
-                        "gdy przypadek uzycia wymaga wykorzystania take innych elementw?",
+                        "gdy przypadek uzycia wymaga wykorzystania take innych elementów?",
                         "gdy jeden przypadek jest rozbudowanym innym przypadkiem?"
                     ],
                     "correctAnswers": [
@@ -2276,7 +2276,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-016"
                 },
                 {
-                    "question": "adresowanie stronw Linuksie jest domyślnie czteropoziomowe,",
+                    "question": "adresowanie stron w Linuksie jest domyślnie czteropoziomowe,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2749,7 +2749,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-059"
                 },
                 {
-                    "question": "nie we wszystkichplatformach sprzętowych musi występować strefa pamięci wysokiej (ZONE_HIGHMEM),",
+                    "question": "nie we wszystkich platformach sprzętowych musi występować strefa pamięci wysokiej (ZONE_HIGHMEM),",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3536,7 +3536,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-002"
                 },
                 {
-                    "question": "W procedurach obsługi przerwań można wywoła funkcje, które ulegająblokowaniu",
+                    "question": "W procedurach obsługi przerwań można wywoła funkcje, które ulegają blokowaniu",
                     "options": [
                         "Tak",
                         "Nie"
