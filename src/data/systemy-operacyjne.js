@@ -940,7 +940,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Podsystem",
                     "options": [
-                        "moe dziaa niezalenie?",
+                        "moe dziaa niezależnie?",
                         "moe ze soba współdziała?",
                         "pojedynczy podsystem moe być traktowany jako samodzielny?",
                         "funkcje rnych podsystemw mogą dziaa wspólnie?"
@@ -1020,7 +1020,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-str1-txt-005",
                     "type": "yn",
-                    "question": "Diagram przypadkw użycia",
+                    "question": "Diagram przypadków użycia",
                     "options": [
                         "jest strukturalny?",
                         "posiada aktorów?",
@@ -1562,7 +1562,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-str1-txt-044",
                     "type": "yn",
-                    "question": "Czy include w diagramie przypadkw użycia używa się",
+                    "question": "Czy include w diagramie przypadków użycia używa się",
                     "options": [
                         "gdy przypadek uzycia wymaga wykorzystania take innych elementw?",
                         "gdy jeden przypadek jest rozbudowanym innym przypadkiem?"
