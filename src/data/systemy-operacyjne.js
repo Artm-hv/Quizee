@@ -31,7 +31,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Które ze zda dotyczcych kolejek prac są prawdziwe?",
                     "options": [
-                        "Czynnoci odroczone wykonywane w ramach kolejek prac wykonywane są w kontekcie przerwania",
+                        "Czynności odroczone wykonywane w ramach kolejek prac wykonywane są w kontekcie przerwania",
                         "Kolejki praczastpiy mechanizm dolnych połówek znany, jako kolejki zada, który być wykorzystywany we wczeniejszych jądra Linuksa",
                         "Mechanizm kolejek prac pozwala na okrelenie czasu po upywie, ktrego dana czynno moe się rozpocz",
                         "Jdro systemu linux zawiera specjaln funkcje, która pozwala na oprnienie domylnej kolejki prac",
@@ -50,7 +50,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Które za zda dotyczcych kolejek prac są prawdziwe? ;",
                     "options": [
-                        "Czynnoci odroczone wykonywane w ramach kolejek prac są wykonywane w kontekcie przerwania",
+                        "Czynności odroczone wykonywane w ramach kolejek prac są wykonywane w kontekcie przerwania",
                         "Kolejki prac zastpiy mechanizm dolnych połówek znany jako kolejki zada, który być wykorzystywany we wczeniejszych wersjach jądra Linuksa.",
                         "Mechanizm kolejek prac pozwala na okrelenie czasu po upywie ktrego dana czynno moe się  rozpocz",
                         "Jdro systemu Loniux zawiera specjaln funkcj, której wywołanie pozwala na oprnienie  domylnej kolejki prac",
@@ -94,7 +94,7 @@ const systemyOperacyjneData = {
                     "options": [
                         "Testowanie wstpujce w kocowej fazie?",
                         "Minimalizacja strat agodzi skutki?",
-                        "Kontroler znajduje w programach bdy pominicia i niespjnoci? TAK (IP_lec_4 są.17)",
+                        "Kontroler znajduje w programach bdy pominicia i niespójności? TAK (IP_lec_4 są.17)",
                         "Punkty widzenia? -> KOCOWI UYTKOWNICY?",
                         "Porednik wirtualny przechowuje w pamięci podrcznej informacje o przedmiotach?",
                         "Porednik ochraniajcy sprawdza czy wywołujący ma pozwolenie na dostp?",
@@ -613,7 +613,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Które ze stwierdze dotyczcych wywołań systemowych w Linuksie 2.6 są prawdziwe?",
                     "options": [
-                        "Dodawanie nowych wywołań systemowych nie jest zalecanym przez twrcw jądra sposobem dodawania nowej funkcjonalnoci. |",
+                        "Dodawanie nowych wywołań systemowych nie jest zalecanym przez twrcw jądra sposobem dodawania nowej funkcjonalności. |",
                         "Kade wywoływanie systemowe zwraca warto typu long. |    tak",
                         "Kade wywołanie systemowe musi przyjmowa co najmniej jeden argument wywołania",
                         "Wszystkie funkcje ze standardowej biblioteki jzyka C korzystaj z wywołań systemowych",
@@ -685,7 +685,7 @@ const systemyOperacyjneData = {
                     "options": [
                         "Niektre operacje niepodzielne mogą być zrealizowane jak jeden rozkaz",
                         "Przeplot operacji jest przyczyn wystpowania problemu sekcji krytycznej",
-                        "W systemie linux, w przestrzeni uytkownika wywaszczenie procesu moe zaj tylko w cile okrelonym momencie jego dziaania",
+                        "W systemie linux, w przestrzeni użytkownika wywaszczenie procesu moe zaj tylko w cile okrelonym momencie jego dziaania",
                         "Zadanie nigdy nie moe być wywaszczone po zakoczeniu obsługi przerwania",
                         "Dostp do zmiennych lokalnych wątków nie musi podlega synchronizacji"
                     ],
@@ -814,7 +814,7 @@ const systemyOperacyjneData = {
                         "domylnie Linux przydziela pamięć ze strefy DMA (ZONE_DMA)",
                         "podstawowym mechanizmem sprzętowym wykorzystywanym przez Linuksa do obsługi pamięci jest segmentacja",
                         "nie we wszystkich platformach sprzętowych musi wystpowa strefa pamięci wysokiej (ZONE_HIGHMEM)",
-                        "niskopoziomowy mechanizm obsługi pamięci umoliwia przydzielenie obszaru pamięci o wielkoci jednego bajta."
+                        "niskopoziomowy mechanizm obsługi pamięci umożliwia przydzielenie obszaru pamięci o wielkoci jednego bajta."
                     ],
                     "correctAnswers": [
                         0,
@@ -916,10 +916,10 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Okrel, które informacje dotyczce obsługi sieci w Linuksie 3.0 i nowszych są prawdziwe:",
                     "options": [
-                        "jądro wykonuje czynności zwizane z obsługą warstwy cza, sieci i transportowej modelu ISO/OSI",
+                        "jądro wykonuje czynności związane z obsługą warstwy cza, sieci i transportowej modelu ISO/OSI",
                         "NAPI nigdy nie pozwala na sygnalizowanie odbioru pakietu za pomoc przerwania",
                         "przenoszenie bufora pakietu midzy kolejkami jest czasochonne",
-                        "funkcje zwizane z filtrem sieciowym mogą \"wykrada\" niektre pakiety, aby przetworzyć je w inny sposb ni pozostae",
+                        "funkcje związane z filtrem sieciowym mogą \"wykrada\" niektre pakiety, aby przetworzyć je w inny sposb ni pozostae",
                         "w filtrze sieciowym, z pojedynczym uchwytem nie moe być skojarzona więcej ni jedna funkcja przetwarzająca."
                     ],
                     "correctAnswers": [
@@ -982,7 +982,7 @@ const systemyOperacyjneData = {
                         "porednik zdalny kolejkuje zadania?",
                         "diagram aktywnosci zawiera aktorow?",
                         "jeden scenariusz jest do jednego przypadku użycia?",
-                        "iterator moze przechodzi po dowolnej kolekcji danych i przeprowadza operacje (dodawanie, usuwanie,pobranie aktualnej danej)?"
+                        "iterator moze przechodzi po dowolnej kolekcji danych i przeprowadza operacje (dodawanie, usuwanie, pobranie aktualnej danej)?"
                     ],
                     "correctAnswers": [
                         0,
@@ -1010,7 +1010,7 @@ const systemyOperacyjneData = {
                     "question": "Czy przy testowaniu programw obiektowych",
                     "options": [
                         "testowanie jednostkowe ogranicza się do testowania metod klasy?",
-                        "wykonuje sie testy integralnoci?"
+                        "wykonuje sie testy integralności?"
                     ],
                     "correctAnswers": [
                         1
@@ -1023,8 +1023,8 @@ const systemyOperacyjneData = {
                     "question": "Diagram przypadkw użycia",
                     "options": [
                         "jest strukturalny?",
-                        "posiada aktorw?",
-                        "umoliwia zamodelowanie funkcjonalnoci systemu?"
+                        "posiada aktorów?",
+                        "umożliwia zamodelowanie funkcjonalności systemu?"
                     ],
                     "correctAnswers": [
                         1,
@@ -1049,7 +1049,7 @@ const systemyOperacyjneData = {
                 {
                     "id": "so-str1-txt-007",
                     "type": "yn",
-                    "question": "Chain of responsibility (acuch zobowiza)",
+                    "question": "Chain of responsibility (acuch zobowiązań)",
                     "options": [
                         "czy gwarantuje obsługę zapytania przez co najmniej jeden obiekt?",
                         "wymiana zmodyfikowanych danych pomidzy obiektami?"
@@ -1151,7 +1151,7 @@ const systemyOperacyjneData = {
                     "question": "Diagram klas",
                     "options": [
                         "Czy diagram klas jest strukturalny?",
-                        "Czy diagram klas przedstawia zalenoci midzy klasami?"
+                        "Czy diagram klas przedstawia zależności midzy klasami?"
                     ],
                     "correctAnswers": [
                         0,
@@ -1290,7 +1290,7 @@ const systemyOperacyjneData = {
                     "question": "Czy testowanie wstpujce",
                     "options": [
                         "jest typem testowania integracyjnego?",
-                        "umoliwia okrelenie projektu architektonicznego we wczesnej fazie?"
+                        "umożliwia okrelenie projektu architektonicznego we wczesnej fazie?"
                     ],
                     "correctAnswers": [
                         0
@@ -1342,7 +1342,7 @@ const systemyOperacyjneData = {
                     "question": "Wzorzec obserwator",
                     "options": [
                         "obserwator wizytuje obserwatorw w celu pobrania aktualnego stanu obiektu obserwowanego?",
-                        "obserwator umoliwia obserwowanemu na dynamiczne odczanie i doczanie obserwatorow?",
+                        "obserwator umożliwia obserwowanemu na dynamiczne odczanie i doczanie obserwatorow?",
                         "czy obserwator weryfikuje obserwatorw?"
                     ],
                     "correctAnswers": [
@@ -1359,7 +1359,7 @@ const systemyOperacyjneData = {
                         "dekorator . zoona?",
                         "adapter jest uniwersalny jeeli metody klasy bazowej są nieprzesonite? ??",
                         "Czy dekorator rozszerza funkfcje klasy bazowej?",
-                        "Czy dekorator jest wzorcem czynnociowym?",
+                        "Czy dekorator jest wzorcem czynnościowym?",
                         "Adapter uniwersalny czy jest realizowany przez dziedziczenie?"
                     ],
                     "correctAnswers": [
@@ -1387,8 +1387,8 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Czy Stan/Strategia",
                     "options": [
-                        "pozwalaj na przełączanie w zalenoci od kontekstu lub autorytatywne (normalne przełączanie)?",
-                        "strategia i stan umoliwiaj dokonywanie wybor algorytmu/stanu lub moe on by determinowany samoczynnie w klasie kontekstu?"
+                        "pozwalaj na przełączanie w zależności od kontekstu lub autorytatywne (normalne przełączanie)?",
+                        "strategia i stan umożliwiają dokonywanie wybor algorytmu/stanu lub moe on by determinowany samoczynnie w klasie kontekstu?"
                     ],
                     "correctAnswers": [
                         0,
@@ -1468,7 +1468,7 @@ const systemyOperacyjneData = {
                     "type": "yn",
                     "question": "Klasy gruboziarniste stosuje się",
                     "options": [
-                        "w efektywnoci?",
+                        "w efektywności?",
                         "w konserwacji?"
                     ],
                     "correctAnswers": [
@@ -2100,7 +2100,7 @@ const systemyOperacyjneData = {
             "name": "Word_pyt_1",
             "questions": [
                 {
-                    "question": "implementacjafunkcji przełączającej kontekst (\"context_switch()\") zależy odarchitektury platformy sprzętowej, na której działa Linux,",
+                    "question": "implementacja funkcji przełączającej kontekst (\"context_switch()\") zależy odarchitektury platformy sprzętowej, na której działa Linux,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2133,7 +2133,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-003"
                 },
                 {
-                    "question": "semafor nie może być przetrzymywany przez wątek, który już przetrzymujerygiel pętlowy,",
+                    "question": "semafor nie może być przetrzymywany przez wątek, który już przetrzymuje rygiel pętlowy,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2144,7 +2144,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-004"
                 },
                 {
-                    "question": "deskryptorypamięci nigdy nie są współdzielone przez procesy (wątki) użytkownika.",
+                    "question": "deskryptory pamięci nigdy nie są współdzielone przez procesy (wątki) użytkownika.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2166,7 +2166,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-006"
                 },
                 {
-                    "question": "waga procesu jestodwrotnością wartości jego priorytetu,",
+                    "question": "waga procesu jest odwrotnością wartości jego priorytetu,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2177,7 +2177,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-007"
                 },
                 {
-                    "question": "deskryptoryprocesów są powiązane w dwukierunkową listę nazywaną listą procesów.",
+                    "question": "deskryptory procesów są powiązane w dwukierunkową listę nazywaną listą procesów.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2221,7 +2221,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-011"
                 },
                 {
-                    "question": "zazwyczaj wywołania systemowe implementowane są w postaci funkcjinapisanych w assemblerze",
+                    "question": "zazwyczaj wywołania systemowe implementowane są w postaci funkcji napisanych w assemblerze",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2309,7 +2309,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-019"
                 },
                 {
-                    "question": "dodawanie nowych wywołań systemowych jest zalecaną przez programistówjądra Linuksa praktyką,",
+                    "question": "dodawanie nowych wywołań systemowych jest zalecaną przez programistów jądra Linuksa praktyką,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2320,7 +2320,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-020"
                 },
                 {
-                    "question": "obiekty wpisu katalogowego, które są w stanie ujemnym, nie są niszczone,jeśli nie zachodzi taka potrzeba,",
+                    "question": "obiekty wpisu katalogowego, które są w stanie ujemnym, nie są niszczone, jeśli nie zachodzi taka potrzeba,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2342,7 +2342,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-022"
                 },
                 {
-                    "question": "wszystkieprocedury obsługi przerwań wymagają wyłączenia wszystkich linii zgłaszaniaprzerwań na czas ich wykonywania,",
+                    "question": "wszystkie procedury obsługi przerwań wymagają wyłączenia wszystkich linii zgłaszania przerwań na czas ich wykonywania,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2397,7 +2397,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-027"
                 },
                 {
-                    "question": "stos z którego korzystają procedury obsługi przerwań ma nieograniczonąwielkość",
+                    "question": "stos z którego korzystają procedury obsługi przerwań ma nieograniczoną wielkość",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2408,7 +2408,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-028"
                 },
                 {
-                    "question": "przerwaniaprogramowe są alokowane statycznie podczas kompilacji jądra,",
+                    "question": "przerwania programowe są alokowane statycznie podczas kompilacji jądra,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2419,7 +2419,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-029"
                 },
                 {
-                    "question": "każde wywołaniesystemowe zwraca wartość stanowiącą kod jego wykonania,",
+                    "question": "każde wywołanie systemowe zwraca wartość stanowiącą kod jego wykonania,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2430,7 +2430,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-030"
                 },
                 {
-                    "question": "procedury obsługiprzerwań w Linuksie są funkcjami napisanymi w języku C,",
+                    "question": "procedury obsługi przerwań w Linuksie są funkcjami napisanymi w języku C,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2463,7 +2463,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-033"
                 },
                 {
-                    "question": "Linux obsługujesystemy wieloprocesorowe o organizacji NUMA,",
+                    "question": "Linux obsługuje systemy wieloprocesorowe o organizacji NUMA,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2518,7 +2518,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-038"
                 },
                 {
-                    "question": "część procesorów wymaga, aby argumenty do funkcji implementującychwywołania systemowe były przekazywane wyłącznie przez stos",
+                    "question": "część procesorów wymaga, aby argumenty do funkcji implementujących wywołania systemowe były przekazywane wyłącznie przez stos",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2540,7 +2540,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-040"
                 },
                 {
-                    "question": "-linie zgłaszaniaprzerwań (IRQ) mogą być współdzielone,",
+                    "question": "-linie zgłaszania przerwań (IRQ) mogą być współdzielone,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2584,7 +2584,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-044"
                 },
                 {
-                    "question": "proces użytkownika może być wywłaszczony w ramach powrotu z wywołaniasystemowego lub procedury obsługi przerwania",
+                    "question": "proces użytkownika może być wywłaszczony w ramach powrotu z wywołania systemowego lub procedury obsługi przerwania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2639,7 +2639,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-049"
                 },
                 {
-                    "question": "większość procedurobsługi przerwań korzysta z makrodefinicji \"current\",",
+                    "question": "większość procedur obsługi przerwań korzysta z makrodefinicji \"current\",",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2650,7 +2650,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-050"
                 },
                 {
-                    "question": "w komputerachklasy PC wszystkie numery przerwań są przydzielane statycznie,",
+                    "question": "w komputerach klasy PC wszystkie numery przerwań są przydzielane statycznie,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2661,7 +2661,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-051"
                 },
                 {
-                    "question": "niektóre nieuniksowe systemy plików nie posiadają wszystkich informacji ,które muszą być umieszczone w obiekcie i-węzła,",
+                    "question": "niektóre nieuniksowe systemy plików nie posiadają wszystkich informacji , które muszą być umieszczone w obiekcie i-węzła,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2793,7 +2793,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-063"
                 },
                 {
-                    "question": "-klasaszeregowania SCHED_BATCH jest obsługiwana za pomocą algorytmu rotacyjnego,",
+                    "question": "-klasa szeregowania SCHED_BATCH jest obsługiwana za pomocą algorytmu rotacyjnego,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2804,7 +2804,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-064"
                 },
                 {
-                    "question": "-niektóreprzerwania mogą zasilać pulę entropii jądra.",
+                    "question": "-niektóre przerwania mogą zasilać pulę entropii jądra.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2837,7 +2837,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-067"
                 },
                 {
-                    "question": "funkcjaimplementująca wywołanie systemowe musi sprawdzać poprawność przekazanych jejargumentów.",
+                    "question": "funkcja implementująca wywołanie systemowe musi sprawdzać poprawność przekazanych jejargumentów.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2958,7 +2958,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-078"
                 },
                 {
-                    "question": "-jeśli platforma sprzętowa nie dostarcza zegarów o nanosekundowejprecyzji, to mechanizm liczników wysokiej rozdzielczości nie jest dla niej wogóle dostępny.",
+                    "question": "-jeśli platforma sprzętowa nie dostarcza zegarów o nanosekundowej precyzji, to mechanizm liczników wysokiej rozdzielczości nie jest dla niej wogóle dostępny.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2969,7 +2969,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-079"
                 },
                 {
-                    "question": "wszystkie wątki jądra korzystają z jednego, wspólnego dla nichdeskryptora pamięci,",
+                    "question": "wszystkie wątki jądra korzystają z jednego, wspólnego dla nich deskryptora pamięci,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3035,7 +3035,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-085"
                 },
                 {
-                    "question": "w filtrze sieciowym, z pojedynczym uchwytem nie może być skojarzonawięcej niż jedna funkcja przetwarzająca",
+                    "question": "w filtrze sieciowym, z pojedynczym uchwytem nie może być skojarzona więcej niż jedna funkcja przetwarzająca",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3046,7 +3046,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-086"
                 },
                 {
-                    "question": "wątek \"ksoftirqd\" odpowiedzialny jest zarówno za obsługęprzerwań programowych, jak i kolejek prac,",
+                    "question": "wątek \"ksoftirqd\" odpowiedzialny jest zarówno za obsługę przerwań programowych, jak i kolejek prac,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3134,7 +3134,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-094"
                 },
                 {
-                    "question": "nowy kwant czasu dla procesu jest ustalany dopiero wtedy, gdy wszystkieprocesy w systemie wyczerpią swoje kwanty,",
+                    "question": "nowy kwant czasu dla procesu jest ustalany dopiero wtedy, gdy wszystkie procesy w systemie wyczerpią swoje kwanty,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3156,7 +3156,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-096"
                 },
                 {
-                    "question": "można określićminimalny czas o jaki zostanie opóźnione wykonanie czynności w kolejkach prac,",
+                    "question": "można określić minimalny czas o jaki zostanie opóźnione wykonanie czynności w kolejkach prac,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3222,7 +3222,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-102"
                 },
                 {
-                    "question": "procedury obsługiprzerwań są wykonywane w kontekście przerwania,",
+                    "question": "procedury obsługi przerwań są wykonywane w kontekście przerwania,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3255,7 +3255,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-105"
                 },
                 {
-                    "question": "niepodzielneoperacje na bitach przeprowadzane są za pomocą tych samych funkcji coniepodzielne operacje na liczbach całkowitych,",
+                    "question": "niepodzielne operacje na bitach przeprowadzane są za pomocą tych samych funkcji coniepodzielne operacje na liczbach całkowitych,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3266,7 +3266,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-106"
                 },
                 {
-                    "question": "przerwaniaprogramowe są wykonywane w kontekście procesu,",
+                    "question": "przerwania programowe są wykonywane w kontekście procesu,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3321,7 +3321,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-111"
                 },
                 {
-                    "question": "priorytet zwykłychprocesów jest ustalany wyłącznie na podstawie stopnia ich interaktywności,",
+                    "question": "priorytet zwykłych procesów jest ustalany wyłącznie na podstawie stopnia ich interaktywności,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3354,7 +3354,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-114"
                 },
                 {
-                    "question": "-dodanie do jądranowego wywołania systemowego wymaga modyfikacji biblioteki \"libc\",aby umożliwić procesom użytkownika korzystanie z niego.",
+                    "question": "-dodanie do jądranowego wywołania systemowego wymaga modyfikacji biblioteki \"libc\", aby umożliwić procesom użytkownika korzystanie z niego.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3420,7 +3420,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-120"
                 },
                 {
-                    "question": "domyślnie Linuxprzydziela pamięć ze strefy DMA (ZONE_DMA),",
+                    "question": "domyślnie Linux przydziela pamięć ze strefy DMA (ZONE_DMA),",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3497,7 +3497,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt-1-127"
                 },
                 {
-                    "question": "-funkcje realizujące operacje niepodzielne na liczbach całkowitychdziałają na zmiennych typu \"int\",",
+                    "question": "-funkcje realizujące operacje niepodzielne na liczbach całkowitych działają na zmiennych typu \"int\",",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3525,7 +3525,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-001"
                 },
                 {
-                    "question": "Procedury obsługi przerwań korzystają ze stosu jądra, który manieograniczony rozmiar",
+                    "question": "Procedury obsługi przerwań korzystają ze stosu jądra, który ma nieograniczony rozmiar",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3602,7 +3602,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-008"
                 },
                 {
-                    "question": "Kwanty czasu dla poszczególnych zadań są przeliczane dopiero wówczas ,gdy ostatnie z zadań znajdujących się w tablicy priorytetów aktywnych wyczerpie swój kwant czasu.",
+                    "question": "Kwanty czasu dla poszczególnych zadań są przeliczane dopiero wówczas , gdy ostatnie z zadań znajdujących się w tablicy priorytetów aktywnych wyczerpie swój kwant czasu.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4020,7 +4020,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-046"
                 },
                 {
-                    "question": "W 64-bitowychprocesorach pamięć wysoka jest oznaczona jako HIGHMEM",
+                    "question": "W 64-bitowych procesorach pamięć wysoka jest oznaczona jako HIGHMEM",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4152,7 +4152,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-058"
                 },
                 {
-                    "question": "Wątek wykonania ,który przetrzymuje semafor nie może równocześnie przetrzyma rygla pętlowego",
+                    "question": "Wątek wykonania , który przetrzymuje semafor nie może równocześnie przetrzyma rygla pętlowego",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4207,7 +4207,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-063"
                 },
                 {
-                    "question": "W systemie linux,w przestrzeni użytkownika wywłaszczenie procesu może zajść tylko w ściśleokreślonym momencie jego działania",
+                    "question": "W systemie linux, w przestrzeni użytkownika wywłaszczenie procesu może zajść tylko w ściśle określonym momencie jego działania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4218,7 +4218,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-064"
                 },
                 {
-                    "question": "Główną strukturaplanisty CFS jest drzewo czerwono-czarne",
+                    "question": "Główną struktura planisty CFS jest drzewo czerwono-czarne",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4317,7 +4317,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-073"
                 },
                 {
-                    "question": "Procedury obsługiprzerwań mogą by wykonywane dowolnie długo",
+                    "question": "Procedury obsługi przerwań mogą by wykonywane dowolnie długo",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4405,7 +4405,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-081"
                 },
                 {
-                    "question": "Priorytet każdego zadania jest ustalany wyłącznie na podstawie jegointeraktywności",
+                    "question": "Priorytet każdego zadania jest ustalany wyłącznie na podstawie jego interaktywności",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4537,7 +4537,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt2-093"
                 },
                 {
-                    "question": "Za szeregowanie wątków odpowiada inny mechanizm niż za szeregowanieprocesów",
+                    "question": "Za szeregowanie wątków odpowiada inny mechanizm niż za szeregowanie procesów",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4741,7 +4741,7 @@ const systemyOperacyjneData = {
                     "id": "so-word-pyt3-008"
                 },
                 {
-                    "question": "Częstotliwość pojawiania się wszystkich przerwań są wykorzystywane doinicjalizowania generatora licz los.",
+                    "question": "Częstotliwość pojawiania się wszystkich przerwań są wykorzystywane do inicjalizowania generatora licz los.",
                     "options": [
                         "Tak",
                         "Nie"
