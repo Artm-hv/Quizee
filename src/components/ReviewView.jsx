@@ -8,9 +8,20 @@ function ReviewView({
   difficultData,
   onToggleDifficult,
   subjectName,
-  moduleName
+  moduleName,
+  onQuitToHome,
+  onQuitToModules
 }) {
   const [currentRI, setCurrentRI] = useState(0);
+  
+  const ITEMS_PER_PAGE = 40;
+  const totalQuestions = questions.length;
+  const totalPages = Math.ceil(totalQuestions / ITEMS_PER_PAGE);
+  const [navPage, setNavPage] = useState(0);
+
+  useEffect(() => {
+    setNavPage(Math.floor(currentRI / ITEMS_PER_PAGE));
+  }, [currentRI]);
 
   useEffect(() => {
     const handleKey = (e) => {
@@ -83,11 +94,9 @@ function ReviewView({
   return (
     <div className="moodle-quiz-view">
       <div className="moodle-breadcrumbs" style={{ marginBottom: "20px" }}>
-        <a href="#" onClick={(e) => { e.preventDefault(); onBack(); }}>Pulpit</a>
+        <a href="#" onClick={(e) => { e.preventDefault(); onQuitToHome(); }}>Pulpit</a>
         <span>/</span>
-        <span>Moje kursy</span>
-        <span>/</span>
-        <span>{subjectName}</span>
+        <a href="#" onClick={(e) => { e.preventDefault(); onQuitToModules(); }}>{subjectName}</a>
         <span>/</span>
         <span>{moduleName}</span>
         <span>/</span>
@@ -99,19 +108,42 @@ function ReviewView({
           <div className="moodle-card">
             <div className="moodle-card-title">Nawigacja w teście</div>
             <div className="moodle-nav-grid">
-              {questions.map((_, idx) => (
-                <button
-                  key={idx}
-                  className={getNavBtnClass(idx)}
-                  onClick={() => {
-                    setCurrentRI(idx);
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
-                >
-                  {idx + 1}
-                </button>
-              ))}
+              {questions.map((_, idx) => {
+                if (idx < navPage * ITEMS_PER_PAGE || idx >= (navPage + 1) * ITEMS_PER_PAGE) return null;
+                return (
+                  <button
+                    key={idx}
+                    className={getNavBtnClass(idx)}
+                    onClick={() => {
+                      setCurrentRI(idx);
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    {idx + 1}
+                  </button>
+                );
+              })}
             </div>
+            
+            {totalPages > 1 && (
+              <div style={{ display: "flex", justifyContent: "space-between", marginTop: "8px", marginBottom: "16px" }}>
+                <button 
+                  className="moodle-btn" 
+                  style={{ padding: "4px 12px", fontSize: "0.8rem", minWidth: "40px" }}
+                  onClick={() => setNavPage(p => Math.max(0, p - 1))}
+                  disabled={navPage === 0}
+                >←</button>
+                <span style={{ fontSize: "0.8rem", color: "var(--text-secondary)", alignSelf: "center", fontWeight: 600 }}>
+                  {navPage + 1} / {totalPages}
+                </span>
+                <button 
+                  className="moodle-btn" 
+                  style={{ padding: "4px 12px", fontSize: "0.8rem", minWidth: "40px" }}
+                  onClick={() => setNavPage(p => Math.min(totalPages - 1, p + 1))}
+                  disabled={navPage === totalPages - 1}
+                >→</button>
+              </div>
+            )}
             
             <a href="#" className="moodle-finish-link" onClick={(e) => { e.preventDefault(); onBack(); }}>
               Koniec podglądu

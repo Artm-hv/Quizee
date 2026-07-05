@@ -10,14 +10,90 @@ function SubjectModulesView({
   onStartSubjectExam, 
   onStartIncorrectExam, 
   onStartModuleIncorrectQuiz, 
-  onBack 
+  onBack,
+  onReorderModules
 }) {
+  const { useRef } = React;
   const subjectQs = getSubjectQuestions(subject);
   const totalQuestions = subjectQs.length;
   const incorrectQuestions = subjectQs.filter(q => incorrectData[q.id]);
   const totalIncorrect = incorrectQuestions.length;
   const [examMode, setExamMode] = useState("random");
   const [activeTab, setActiveTab] = useState("modules");
+
+  // Drag and drop state
+  const [draggedModId, setDraggedModId] = useState(null);
+  const [pointerStart, setPointerStart] = useState({ x: 0, y: 0 });
+  const [pointerCurrent, setPointerCurrent] = useState({ x: 0, y: 0 });
+  const [isDraggingActive, setIsDraggingActive] = useState(false);
+  const pressStateRef = useRef(null);
+
+  const handlePointerDown = (e, id) => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    const startX = e.clientX;
+    const startY = e.clientY;
+    
+    const timer = setTimeout(() => {
+      if (navigator.vibrate) navigator.vibrate(50);
+      setDraggedModId(id);
+      setPointerStart({ x: startX, y: startY });
+      setPointerCurrent({ x: startX, y: startY });
+      setIsDraggingActive(true);
+    }, 400);
+
+    pressStateRef.current = { timer, id, startX, startY };
+  };
+
+  const handlePointerUp = (e) => {
+    const state = pressStateRef.current;
+    if (!state) return;
+    clearTimeout(state.timer);
+    
+    if (!isDraggingActive && draggedModId !== state.id) {
+      // Normal click
+      const mod = subject.modules.find(m => m.id === state.id);
+      if (mod && mod.questions.length > 0) {
+        onSelectModule(mod);
+      }
+    }
+    pressStateRef.current = null;
+  };
+
+  useEffect(() => {
+    if (!isDraggingActive || !draggedModId) return;
+
+    const handleWindowMove = (e) => {
+      setPointerCurrent({ x: e.clientX, y: e.clientY });
+      const el = document.elementFromPoint(e.clientX, e.clientY);
+      const card = el ? el.closest('.module-card') : null;
+      const targetId = card ? card.getAttribute('data-id') : null;
+
+      if (targetId && targetId !== draggedModId) {
+        const list = [...subject.modules];
+        const idx1 = list.findIndex(m => m.id === draggedModId);
+        const idx2 = list.findIndex(m => m.id === targetId);
+        if (idx1 !== -1 && idx2 !== -1) {
+          [list[idx1], list[idx2]] = [list[idx2], list[idx1]];
+          onReorderModules(list);
+        }
+      }
+    };
+
+    const handleWindowUp = () => {
+      setDraggedModId(null);
+      setIsDraggingActive(false);
+    };
+
+    window.addEventListener('pointermove', handleWindowMove, { passive: false });
+    window.addEventListener('pointerup', handleWindowUp);
+    window.addEventListener('pointercancel', handleWindowUp);
+
+    return () => {
+      window.removeEventListener('pointermove', handleWindowMove);
+      window.removeEventListener('pointerup', handleWindowUp);
+      window.removeEventListener('pointercancel', handleWindowUp);
+    };
+  }, [isDraggingActive, draggedModId, subject.modules, onReorderModules]);
 
   // Reset active tab to modules if there are no incorrect questions
   useEffect(() => {
@@ -88,11 +164,22 @@ function SubjectModulesView({
                 const modCorrect = progressEnabled ? modQs.filter(q => progressData[q.id]).length : 0;
                 const isEmpty = modTotal === 0;
                 
+                const isDragged = draggedModId === mod.id && isDraggingActive;
+                const dragStyle = isDragged ? {
+                  transform: `translate(${pointerCurrent.x - pointerStart.x}px, ${pointerCurrent.y - pointerStart.y}px) scale(1.02)`,
+                  zIndex: 100,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
+                  cursor: "grabbing"
+                } : {};
+
                 return (
                   <div 
                     key={mod.id} 
-                    className={"module-card animate-fade-in-up" + (isEmpty ? " empty-card" : "")}
-                    onClick={isEmpty ? undefined : () => onSelectModule(mod)}
+                    data-id={mod.id}
+                    className={"module-card animate-fade-in-up" + (isEmpty ? " empty-card" : "") + (isDragged ? " dragged" : "")}
+                    style={{ ...dragStyle, touchAction: 'none' }}
+                    onPointerDown={(e) => handlePointerDown(e, mod.id)}
+                    onPointerUp={handlePointerUp}
                   >
                     <div>
                       <h4 className="module-name">{mod.name}</h4>

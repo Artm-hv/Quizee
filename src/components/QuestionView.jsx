@@ -12,7 +12,8 @@ function QuestionView({
   isAlreadyCorrect,
   isDifficult,
   onToggleDifficult,
-  onQuit,
+  onQuitToHome,
+  onQuitToModules,
   sessionAnswers,
   setCurrentQI,
   subjectName,
@@ -26,6 +27,14 @@ function QuestionView({
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [timeLeft, setTimeLeft] = useState(2700); // 45 minutes in seconds
+
+  const ITEMS_PER_PAGE = 40;
+  const totalPages = Math.ceil(totalQuestions / ITEMS_PER_PAGE);
+  const [navPage, setNavPage] = useState(0);
+
+  useEffect(() => {
+    setNavPage(Math.floor(questionIndex / ITEMS_PER_PAGE));
+  }, [questionIndex]);
 
   useEffect(() => {
     const saved = sessionAnswers[questionIndex];
@@ -161,11 +170,9 @@ function QuestionView({
   return (
     <div className="moodle-quiz-view">
       <div className="moodle-breadcrumbs" style={{ marginBottom: "20px" }}>
-        <a href="#" onClick={(e) => { e.preventDefault(); onQuit(); }}>Pulpit</a>
+        <a href="#" onClick={(e) => { e.preventDefault(); onQuitToHome(); }}>Pulpit</a>
         <span>/</span>
-        <span>Moje kursy</span>
-        <span>/</span>
-        <span>{subjectName}</span>
+        <a href="#" onClick={(e) => { e.preventDefault(); onQuitToModules(); }}>{subjectName}</a>
         <span>/</span>
         <span>{moduleName}</span>
       </div>
@@ -175,16 +182,39 @@ function QuestionView({
           <div className="moodle-card">
             <div className="moodle-card-title">Nawigacja w teście</div>
             <div className="moodle-nav-grid">
-              {Array.from({ length: totalQuestions }).map((_, idx) => (
-                <button
-                  key={idx}
-                  className={getNavBtnClass(idx)}
-                  onClick={() => setCurrentQI(idx)}
-                >
-                  {idx + 1}
-                </button>
-              ))}
+              {Array.from({ length: totalQuestions }).map((_, idx) => {
+                if (idx < navPage * ITEMS_PER_PAGE || idx >= (navPage + 1) * ITEMS_PER_PAGE) return null;
+                return (
+                  <button
+                    key={idx}
+                    className={getNavBtnClass(idx)}
+                    onClick={() => setCurrentQI(idx)}
+                  >
+                    {idx + 1}
+                  </button>
+                );
+              })}
             </div>
+            
+            {totalPages > 1 && (
+              <div style={{ display: "flex", justifyContent: "space-between", marginTop: "8px", marginBottom: "16px" }}>
+                <button 
+                  className="moodle-btn" 
+                  style={{ padding: "4px 12px", fontSize: "0.8rem", minWidth: "40px" }}
+                  onClick={() => setNavPage(p => Math.max(0, p - 1))}
+                  disabled={navPage === 0}
+                >←</button>
+                <span style={{ fontSize: "0.8rem", color: "var(--text-secondary)", alignSelf: "center", fontWeight: 600 }}>
+                  {navPage + 1} / {totalPages}
+                </span>
+                <button 
+                  className="moodle-btn" 
+                  style={{ padding: "4px 12px", fontSize: "0.8rem", minWidth: "40px" }}
+                  onClick={() => setNavPage(p => Math.min(totalPages - 1, p + 1))}
+                  disabled={navPage === totalPages - 1}
+                >→</button>
+              </div>
+            )}
             
             <div className={`moodle-timer ${timeLeft < 300 ? "warning" : ""}`} style={{ marginBottom: "12px" }}>
               Pozostały czas: {formatTime(timeLeft)}

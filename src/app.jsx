@@ -408,6 +408,14 @@ function App() {
     else setView("home");
   };
 
+  const handleGoBackFromComplete = () => {
+    if (quizType === "module" || quizType === "subject_exam") {
+      setView("subject-modules");
+    } else {
+      setView("home");
+    }
+  };
+
   const handleQuitQuiz = () => {
     if (confirm("Czy na pewno chcesz przerwać test? Twój postęp w tej sesji zostanie utracony.")) {
       if (quizType === "module" || quizType === "subject_exam") {
@@ -415,6 +423,29 @@ function App() {
       } else {
         setView("home");
       }
+    }
+  };
+
+  const handleQuitToHome = () => {
+    if (view === "quiz") {
+      if (!confirm("Czy na pewno chcesz przerwać test? Twój postęp w tej sesji zostanie utracony.")) return;
+    }
+    setSelectedSubject(null);
+    setSelectedModule(null);
+    setView("home");
+  };
+
+  const handleQuitToModules = () => {
+    if (view === "quiz") {
+      if (!confirm("Czy na pewno chcesz przerwać test? Twój postęp w tej sesji zostanie utracony.")) return;
+    }
+    setView("subject-modules");
+  };
+
+  const handleReorderModules = (subjectId, newModulesList) => {
+    setSubjects(prev => prev.map(s => s.id === subjectId ? { ...s, modules: newModulesList } : s));
+    if (selectedSubject && selectedSubject.id === subjectId) {
+      setSelectedSubject(prev => ({ ...prev, modules: newModulesList }));
     }
   };
 
@@ -541,6 +572,8 @@ function App() {
 
   const importSubject = importTarget ? subjects.find(s => s.id === importTarget.subjectId) : null;
   const sessionCorrect = sessionAnswers.filter(a => a && a.isCorrect).length;
+  const sessionIncorrect = sessionAnswers.filter(a => a && a.isCorrect === false).length;
+  const sessionUnanswered = questions.length - sessionCorrect - sessionIncorrect;
 
   return (
     <div className="app-container">
@@ -612,6 +645,7 @@ function App() {
           onStartIncorrectExam={handleStartIncorrectExam}
           onStartModuleIncorrectQuiz={handleStartModuleIncorrectQuiz}
           onBack={handleGoHome}
+          onReorderModules={(newMods) => handleReorderModules(selectedSubject.id, newMods)}
         />
       )}
 
@@ -643,7 +677,7 @@ function App() {
       )}
       
       {view === "quiz" && questions.length > 0 && (
-        <QuestionView question={questions[currentQI]} questionIndex={currentQI} totalQuestions={questions.length}
+        <QuestionView question={questions[currentQI]} questionIndex={currentQI} totalQuestions={questions.length} 
           questions={questions}
           onNext={handleNextQuestion} onRecordAnswer={handleRecordAnswer} progressEnabled={progressEnabled}
           isAlreadyCorrect={progressData[questions[currentQI] && questions[currentQI].id]}
@@ -658,7 +692,8 @@ function App() {
               return next;
             });
           }}
-          onQuit={handleQuitQuiz}
+          onQuitToHome={handleQuitToHome}
+          onQuitToModules={handleQuitToModules}
           sessionAnswers={sessionAnswers}
           setCurrentQI={setCurrentQI}
           subjectName={selectedSubject ? selectedSubject.name : ""}
@@ -669,7 +704,15 @@ function App() {
       )}
       
       {view === "complete" && (
-        <CompletionScreen correctCount={sessionCorrect} totalCount={questions.length} onRestart={handleRestart} onHome={handleGoHome} onReview={() => setView("review")}/>
+        <CompletionScreen 
+          correctCount={sessionCorrect} 
+          incorrectCount={sessionIncorrect}
+          unansweredCount={sessionUnanswered}
+          totalCount={questions.length} 
+          onRestart={handleRestart} 
+          onHome={handleGoBackFromComplete} 
+          onReview={() => setView("review")}
+        />
       )}
 
       {view === "review" && questions.length > 0 && (
@@ -686,6 +729,8 @@ function App() {
               return next;
             });
           }}
+          onQuitToHome={handleQuitToHome}
+          onQuitToModules={handleQuitToModules}
           subjectName={selectedSubject ? selectedSubject.name : ""}
           moduleName={selectedModule ? selectedModule.name : ""}
         />
