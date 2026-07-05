@@ -2105,7 +2105,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-001"
@@ -2116,7 +2116,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-002"
@@ -2127,7 +2127,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-003"
@@ -2138,7 +2138,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-004"
@@ -2149,7 +2149,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-005"
@@ -2160,7 +2160,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-006"
@@ -2171,7 +2171,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-007"
@@ -2182,7 +2182,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-008"
@@ -2193,7 +2193,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-009"
@@ -2204,7 +2204,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-010"
@@ -2215,7 +2215,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-011"
@@ -2226,7 +2226,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-012"
@@ -2237,7 +2237,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-013"
@@ -2248,7 +2248,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-014"
@@ -2259,7 +2259,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-015"
@@ -2270,7 +2270,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-016"
@@ -2281,7 +2281,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-017"
@@ -2292,7 +2292,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-018"
@@ -2303,7 +2303,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-019"
@@ -2314,7 +2314,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-020"
@@ -2325,7 +2325,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-021"
@@ -2336,7 +2336,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-022"
@@ -2347,7 +2347,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-023"
@@ -2358,7 +2358,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-024"
@@ -2369,7 +2369,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-025"
@@ -2380,7 +2380,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-026"
@@ -2391,7 +2391,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-027"
@@ -2402,7 +2402,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-028"
@@ -2413,7 +2413,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-029"
@@ -2424,7 +2424,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-030"
@@ -2435,7 +2435,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-031"
@@ -2446,7 +2446,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-032"
@@ -2457,7 +2457,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-033"
@@ -2468,7 +2468,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-034"
@@ -2479,7 +2479,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-035"
@@ -2490,7 +2490,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-036"
@@ -2501,7 +2501,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-037"
@@ -2512,7 +2512,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-038"
@@ -2523,7 +2523,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-039"
@@ -2534,7 +2534,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-040"
@@ -2545,7 +2545,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-041"
@@ -2556,7 +2556,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-042"
@@ -2567,7 +2567,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-043"
@@ -2578,7 +2578,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-044"
@@ -2589,7 +2589,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-045"
@@ -2600,7 +2600,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-046"
@@ -2611,7 +2611,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-047"
@@ -2622,7 +2622,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-048"
@@ -2633,7 +2633,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-049"
@@ -2644,7 +2644,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-050"
@@ -2655,7 +2655,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-051"
@@ -2666,7 +2666,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-052"
@@ -2677,7 +2677,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-053"
@@ -2688,7 +2688,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-054"
@@ -2699,7 +2699,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-055"
@@ -2710,7 +2710,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-056"
@@ -2721,7 +2721,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-057"
@@ -2732,7 +2732,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-058"
@@ -2743,7 +2743,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-059"
@@ -2754,7 +2754,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-060"
@@ -2765,7 +2765,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-061"
@@ -2776,7 +2776,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-062"
@@ -2787,7 +2787,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-063"
@@ -2798,7 +2798,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-064"
@@ -2809,7 +2809,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-065"
@@ -2820,7 +2820,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-066"
@@ -2831,7 +2831,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-067"
@@ -2842,7 +2842,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-068"
@@ -2853,7 +2853,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-069"
@@ -2864,7 +2864,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-070"
@@ -2875,7 +2875,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-071"
@@ -2886,7 +2886,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-072"
@@ -2897,7 +2897,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-073"
@@ -2908,7 +2908,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-074"
@@ -2919,7 +2919,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-075"
@@ -2930,7 +2930,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-076"
@@ -2941,7 +2941,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-077"
@@ -2952,7 +2952,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-078"
@@ -2963,7 +2963,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-079"
@@ -2974,7 +2974,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-080"
@@ -2985,7 +2985,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-081"
@@ -2996,7 +2996,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-082"
@@ -3007,7 +3007,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-083"
@@ -3018,7 +3018,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-084"
@@ -3029,7 +3029,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-085"
@@ -3040,7 +3040,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-086"
@@ -3051,7 +3051,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-087"
@@ -3062,7 +3062,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-088"
@@ -3073,7 +3073,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-089"
@@ -3084,7 +3084,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-090"
@@ -3095,7 +3095,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-091"
@@ -3106,7 +3106,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-092"
@@ -3117,7 +3117,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-093"
@@ -3128,7 +3128,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-094"
@@ -3139,7 +3139,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-095"
@@ -3150,7 +3150,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-096"
@@ -3161,7 +3161,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-097"
@@ -3172,7 +3172,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-098"
@@ -3183,7 +3183,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-099"
@@ -3194,7 +3194,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-100"
@@ -3205,7 +3205,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-101"
@@ -3216,7 +3216,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-102"
@@ -3227,7 +3227,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-103"
@@ -3238,7 +3238,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-104"
@@ -3249,7 +3249,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-105"
@@ -3260,7 +3260,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-106"
@@ -3271,7 +3271,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-107"
@@ -3282,7 +3282,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-108"
@@ -3293,7 +3293,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-109"
@@ -3304,7 +3304,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-110"
@@ -3315,7 +3315,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-111"
@@ -3326,7 +3326,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-112"
@@ -3337,7 +3337,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-113"
@@ -3348,7 +3348,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-114"
@@ -3359,7 +3359,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-115"
@@ -3370,7 +3370,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-116"
@@ -3381,7 +3381,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-117"
@@ -3392,7 +3392,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-118"
@@ -3403,7 +3403,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-119"
@@ -3414,7 +3414,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-120"
@@ -3425,7 +3425,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-121"
@@ -3436,7 +3436,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-122"
@@ -3447,7 +3447,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-123"
@@ -3458,7 +3458,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-124"
@@ -3469,7 +3469,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt-1-125"
@@ -3480,7 +3480,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-126"
@@ -3491,7 +3491,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-127"
@@ -3502,7 +3502,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt-1-128"
@@ -3519,7 +3519,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-001"
@@ -3530,7 +3530,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-002"
@@ -3541,7 +3541,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-003"
@@ -3552,7 +3552,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-004"
@@ -3563,7 +3563,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-005"
@@ -3574,7 +3574,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-006"
@@ -3585,7 +3585,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-007"
@@ -3596,7 +3596,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-008"
@@ -3607,7 +3607,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-009"
@@ -3618,7 +3618,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-010"
@@ -3629,7 +3629,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-011"
@@ -3640,7 +3640,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-012"
@@ -3651,7 +3651,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-013"
@@ -3662,7 +3662,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-014"
@@ -3673,7 +3673,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-015"
@@ -3684,7 +3684,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-016"
@@ -3695,7 +3695,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-017"
@@ -3706,7 +3706,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-018"
@@ -3717,7 +3717,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-019"
@@ -3728,7 +3728,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-020"
@@ -3739,7 +3739,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-021"
@@ -3750,7 +3750,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-022"
@@ -3761,7 +3761,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-023"
@@ -3772,7 +3772,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-024"
@@ -3783,7 +3783,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-025"
@@ -3794,7 +3794,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-026"
@@ -3805,7 +3805,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-027"
@@ -3816,7 +3816,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-028"
@@ -3827,7 +3827,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-029"
@@ -3838,7 +3838,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-030"
@@ -3849,7 +3849,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-031"
@@ -3860,7 +3860,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-032"
@@ -3871,7 +3871,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-033"
@@ -3882,7 +3882,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-034"
@@ -3893,7 +3893,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-035"
@@ -3904,7 +3904,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-036"
@@ -3915,7 +3915,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-037"
@@ -3926,7 +3926,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-038"
@@ -3937,7 +3937,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-039"
@@ -3948,7 +3948,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-040"
@@ -3959,7 +3959,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-041"
@@ -3970,7 +3970,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-042"
@@ -3981,7 +3981,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-043"
@@ -3992,7 +3992,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-044"
@@ -4003,7 +4003,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-045"
@@ -4014,7 +4014,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-046"
@@ -4025,7 +4025,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-047"
@@ -4036,7 +4036,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-048"
@@ -4047,7 +4047,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-049"
@@ -4058,7 +4058,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-050"
@@ -4069,7 +4069,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-051"
@@ -4080,7 +4080,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-052"
@@ -4091,7 +4091,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-053"
@@ -4102,7 +4102,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-054"
@@ -4113,7 +4113,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-055"
@@ -4124,7 +4124,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-056"
@@ -4135,7 +4135,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-057"
@@ -4146,7 +4146,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-058"
@@ -4157,7 +4157,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-059"
@@ -4168,7 +4168,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-060"
@@ -4179,7 +4179,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-061"
@@ -4190,7 +4190,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-062"
@@ -4201,7 +4201,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-063"
@@ -4212,7 +4212,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-064"
@@ -4223,7 +4223,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-065"
@@ -4234,7 +4234,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-066"
@@ -4245,7 +4245,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-067"
@@ -4256,7 +4256,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-068"
@@ -4267,7 +4267,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-069"
@@ -4278,7 +4278,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-070"
@@ -4289,7 +4289,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-071"
@@ -4300,7 +4300,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-072"
@@ -4311,7 +4311,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-073"
@@ -4322,7 +4322,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-074"
@@ -4333,7 +4333,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-075"
@@ -4344,7 +4344,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-076"
@@ -4355,7 +4355,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-077"
@@ -4366,7 +4366,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-078"
@@ -4377,7 +4377,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-079"
@@ -4388,7 +4388,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-080"
@@ -4399,7 +4399,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-081"
@@ -4410,7 +4410,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-082"
@@ -4421,7 +4421,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-083"
@@ -4432,7 +4432,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-084"
@@ -4443,7 +4443,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-085"
@@ -4454,7 +4454,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-086"
@@ -4465,7 +4465,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-087"
@@ -4476,7 +4476,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-088"
@@ -4487,7 +4487,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-089"
@@ -4498,7 +4498,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-090"
@@ -4509,7 +4509,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-091"
@@ -4520,7 +4520,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-092"
@@ -4531,7 +4531,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-093"
@@ -4542,7 +4542,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-094"
@@ -4553,7 +4553,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-095"
@@ -4564,7 +4564,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-096"
@@ -4575,7 +4575,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-097"
@@ -4586,8 +4586,8 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
-                        0
+                    "correctAnswers": [
+                        1
                     ],
                     "id": "so-word-pyt2-098"
                 },
@@ -4597,7 +4597,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-099"
@@ -4608,7 +4608,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-100"
@@ -4619,7 +4619,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-101"
@@ -4630,7 +4630,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt2-102"
@@ -4641,7 +4641,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt2-103"
@@ -4658,7 +4658,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt3-001"
@@ -4669,7 +4669,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt3-002"
@@ -4680,7 +4680,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt3-003"
@@ -4691,7 +4691,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt3-004"
@@ -4702,7 +4702,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt3-005"
@@ -4713,7 +4713,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt3-006"
@@ -4724,7 +4724,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         1
                     ],
                     "id": "so-word-pyt3-007"
@@ -4735,7 +4735,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt3-008"
@@ -4746,7 +4746,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt3-009"
@@ -4757,7 +4757,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt3-010"
@@ -4768,7 +4768,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt3-011"
@@ -4779,7 +4779,7 @@ const systemyOperacyjneData = {
                         "Tak",
                         "Nie"
                     ],
-                    "correctAnswer": [
+                    "correctAnswers": [
                         0
                     ],
                     "id": "so-word-pyt3-012"
@@ -4787,5 +4787,5 @@ const systemyOperacyjneData = {
             ]
         }
     ],
-    "dbVersion": 11
+    "dbVersion": 12
 };
