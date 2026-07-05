@@ -2071,18 +2071,7 @@ const systemyOperacyjneData = {
             "questions": [
                 {
                     "id": "so-word-pyt-1-001",
-                    "question": "implementacjafunkcji przełączającej kontekst (\"context_switch()\") zależy odarchitektury platformy sprzętowej, na której działa Linux",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-002",
-                    "question": "równoważenie obciążenia procesorów następuje wyłącznie wtedy, gdykolejka procesów gotowych któregoś z nich jest pusta.",
+                    "question": "Nie równoważenie obciążenia procesorów następuje wyłącznie wtedy, gdykolejka procesów gotowych któregoś z nich jest pusta.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2092,8 +2081,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-003",
-                    "question": "przenoszenie bufora pakietu między kolejkami jest czasochłonne",
+                    "id": "so-word-pyt-1-002",
+                    "question": "Nie przenoszenie bufora pakietu między kolejkami jest czasochłonne",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2103,7 +2092,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-004",
+                    "id": "so-word-pyt-1-003",
                     "question": "semafor nie może być przetrzymywany przez wątek, który już przetrzymujerygiel pętlowy",
                     "options": [
                         "Tak",
@@ -2114,8 +2103,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-005",
-                    "question": "deskryptorypamięci nigdy nie są współdzielone przez procesy (wątki) użytkownika.",
+                    "id": "so-word-pyt-1-004",
+                    "question": "SO2 1/28 Tak deskryptorypamięci nigdy nie są współdzielone przez procesy (wątki) użytkownika.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2125,8 +2114,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-005",
+                    "question": "Nie czynności zkolejek prac są wykonywane w kontekście przerwania",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-006",
-                    "question": "czynności zkolejek prac są wykonywane w kontekście przerwania",
+                    "question": "Nie waga procesu jestodwrotnością wartości jego priorytetu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2137,7 +2137,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-007",
-                    "question": "waga procesu jestodwrotnością wartości jego priorytetu",
+                    "question": "Nie deskryptoryprocesów są powiązane w dwukierunkową listę nazywaną listą procesów.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2148,17 +2148,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-008",
-                    "question": "deskryptoryprocesów są powiązane w dwukierunkową listę nazywaną listą procesów.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-009",
                     "question": "dla każdego zamontowanego systemu plików tworzona jest zmienna opisująca jego punkt montowania.",
                     "options": [
                         "Tak",
@@ -2169,8 +2158,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-009",
+                    "question": "SO2 2/28 Nie Nie funkcje związane z licznikami niskiej rozdzielczości wykonywane są w kontekście przerwania",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-010",
-                    "question": "funkcje związane z licznikami niskiej rozdzielczości wykonywane są w kontekście przerwania",
+                    "question": "Nie tasklety są wykonywane w kontekście procesu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2181,7 +2181,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-011",
-                    "question": "tasklety są wykonywane w kontekście procesu",
+                    "question": "Nie zazwyczaj wywołania systemowe implementowane są w postaci funkcjinapisanych w assemblerze",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2192,7 +2192,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-012",
-                    "question": "zazwyczaj wywołania systemowe implementowane są w postaci funkcjinapisanych w assemblerze",
+                    "question": "Nie obiekt superblokumoże być stosowany w obsłudze systemów plików, które nie mają fizycznej implementacji",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2203,7 +2203,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-013",
-                    "question": "obiekt superblokumoże być stosowany w obsłudze systemów plików, które nie mają fizycznej implementacji",
+                    "question": "SO2 3/28 Nie zegar czasu rzeczywistego (RTC) jest okresowo odczytywany przez jądrosystemu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2214,18 +2214,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-014",
-                    "question": "zegar czasu rzeczywistego (RTC) jest okresowo odczytywany przez jądrosystemu",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-015",
-                    "question": "istnieje możliwość stworzenia kolejki prac, która będzie obsługiwana naplatformach wieloprocesorowych przez pojedynczy wątek roboczy.",
+                    "question": "Nie istnieje możliwość stworzenia kolejki prac, która będzie obsługiwana naplatformach wieloprocesorowych przez pojedynczy wątek roboczy.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2235,8 +2224,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-015",
+                    "question": "Nie stosowanie blokady BKL nie jest zalecane",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-016",
-                    "question": "stosowanie blokady BKL nie jest zalecane",
+                    "question": "Nie adresowanie stronw Linuksie jest domyślnie czteropoziomowe",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2247,17 +2247,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-017",
-                    "question": "adresowanie stronw Linuksie jest domyślnie czteropoziomowe",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-018",
                     "question": "wszystkie funkcjez biblioteki \"libc\" korzystają z wywołań systemowych",
                     "options": [
                         "Tak",
@@ -2268,8 +2257,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-018",
+                    "question": "SO2 4/28 Tak pamięć na obiekty wpisów katalogowych jest przydzielana i zwalnianaprzez alokator plastrowy",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-019",
-                    "question": "pamięć na obiekty wpisów katalogowych jest przydzielana i zwalnianaprzez alokator plastrowy",
+                    "question": "Nie dodawanie nowych wywołań systemowych jest zalecaną przez programistówjądra Linuksa praktyką",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2280,7 +2280,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-020",
-                    "question": "dodawanie nowych wywołań systemowych jest zalecaną przez programistówjądra Linuksa praktyką",
+                    "question": "Nie obiekty wpisu katalogowego, które są w stanie ujemnym, nie są niszczone,jeśli zachodzi taka potrzeba",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2291,18 +2291,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-021",
-                    "question": "obiekty wpisu katalogowego, które są w stanie ujemnym, nie są niszczone,jeśli nie zachodzi taka potrzeba",
+                    "question": "Nie planista terminowy przydziela domyślnie dłuższy termin realizacji operacji odczytu niż operacji zapisu",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-022",
-                    "question": "planista terminowy przydziela domyślnie dłuższy termin realizacji operacji odczytu niż operacji zapisu",
+                    "question": "SO2 5/28 Nie wszystkieprocedury obsługi przerwań wymagają wyłączenia wszystkich linii zgłaszaniaprzerwań na czas ich wykonywania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2313,18 +2313,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-023",
-                    "question": "wszystkieprocedury obsługi przerwań wymagają wyłączenia wszystkich linii zgłaszaniaprzerwań na czas ich wykonywania",
+                    "question": "Nie niskopoziomowy mechanizm obsługi pamięci działa w oparciu o algorytm bliźniaków",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        1
+                        0
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-024",
-                    "question": "niskopoziomowy mechanizm obsługi pamięci działa w oparciu o algorytm bliźniaków",
+                    "question": "Nie rygiel pętlowy czytelnika może być jednocześnie przetrzymywany przezwięcej niż jeden wątek wykonania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2335,7 +2335,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-025",
-                    "question": "rygiel pętlowy czytelnika może być jednocześnie przetrzymywany przezwięcej niż jeden wątek wykonania",
+                    "question": "Nie proces, który jest wykonywany ma stan TASK_RUNNING.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2346,17 +2346,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-026",
-                    "question": "proces, który jest wykonywany ma stan TASK_RUNNING.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-027",
                     "question": "funkcje związane z filtrem sieciowym mogą \"wykradać\" niektóre pakiety, aby przetworzyć je w inny sposób niż pozostałe",
                     "options": [
                         "Tak",
@@ -2367,19 +2356,30 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-028",
-                    "question": "stos z którego korzystają procedury obsługi przerwań ma nieograniczonąwielkość",
+                    "id": "so-word-pyt-1-027",
+                    "question": "SO2 6/28 Tak stos z którego korzystają procedury obsługi przerwań ma ograniczonąwielkość",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        1
+                        0
+                    ]
+                },
+                {
+                    "id": "so-word-pyt-1-028",
+                    "question": "Nie przerwaniaprogramowe są alokowane statycznie podczas kompilacji jądra",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-029",
-                    "question": "przerwaniaprogramowe są alokowane statycznie podczas kompilacji jądra",
+                    "question": "Nie każde wywołaniesystemowe zwraca wartość stanowiącą kod jego wykonania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2390,7 +2390,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-030",
-                    "question": "każde wywołaniesystemowe zwraca wartość stanowiącą kod jego wykonania",
+                    "question": "Nie procedury obsługiprzerwań w Linuksie są funkcjami napisanymi w języku C",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2401,17 +2401,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-031",
-                    "question": "procedury obsługiprzerwań w Linuksie są funkcjami napisanymi w języku C",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-032",
                     "question": "każdy z buforów wyposażony jest w nagłówek zawierający dane niezbędne do zarządzania nim",
                     "options": [
                         "Tak",
@@ -2422,8 +2411,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-032",
+                    "question": "SO2 7/28 Nie Nie semafory mogą byćstosowane w procedurach obsługi przerwań",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-033",
-                    "question": "semafory mogą byćstosowane w procedurach obsługi przerwań",
+                    "question": "Nie Linux obsługujesystemy wieloprocesorowe o organizacji NUMA",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2434,7 +2434,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-034",
-                    "question": "Linux obsługujesystemy wieloprocesorowe o organizacji NUMA",
+                    "question": "Nie niskopoziomowy mechanizm obsługi pamięci umożliwia przydzielenie obszaru pamięci o wielkości jednego bajta",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2445,18 +2445,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-035",
-                    "question": "niskopoziomowy mechanizm obsługi pamięci umożliwia przydzielenie obszaru pamięci o wielkości jednego bajta",
+                    "question": "Nie urządzenia obsługiwane przez Linuksa są wyłącznie urządzeniami fizycznymi",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-036",
-                    "question": "urządzenia obsługiwane przez Linuksa są wyłącznie urządzeniami fizycznymi",
+                    "question": "SO2 8/28 Nie wielkość bloku w Linuksie jest nieograniczona",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2467,7 +2467,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-037",
-                    "question": "wielkość bloku w Linuksie jest nieograniczona",
+                    "question": "Nie sterowniki urządzeń znakowych korzystają z niektórych struktur związanych z wirtualnym systemem plików (VFS)",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2478,7 +2478,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-038",
-                    "question": "sterowniki urządzeń znakowych korzystają z niektórych struktur związanych z wirtualnym systemem plików (VFS)",
+                    "question": "Nie część procesorów wymaga, aby argumenty do funkcji implementującychwywołania systemowe były przekazywane wyłącznie przez stos",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2489,18 +2489,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-039",
-                    "question": "część procesorów wymaga, aby argumenty do funkcji implementującychwywołania systemowe były przekazywane wyłącznie przez stos",
+                    "question": "Nie nagłówek bufora nie przechowuje informacji o operacjach wejścia-wyjściaz jakimi ten bufor jest związany.",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        1
+                        0
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-040",
-                    "question": "nagłówek bufora nie przechowuje informacji o operacjach wejścia-wyjściaz jakimi ten bufor jest związany.",
+                    "question": "-linie zgłaszaniaprzerwań (IRQ) mogą być współdzielone",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2511,7 +2511,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-041",
-                    "question": "linie zgłaszaniaprzerwań (IRQ) mogą być współdzielone",
+                    "question": "SO2 9/28 Tak adresy wszystkich zarejestrowanych wywołań systemowych są przechowywanew specjalnej tablicy",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2522,7 +2522,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-042",
-                    "question": "adresy wszystkich zarejestrowanych wywołań systemowych są przechowywanew specjalnej tablicy",
+                    "question": "Nie kod funkcji implementującej wywołanie systemowe może być umieszczony wmodule",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2533,7 +2533,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-043",
-                    "question": "kod funkcji implementującej wywołanie systemowe może być umieszczony wmodule",
+                    "question": "Nie sterownik urządzenia może być dołączony do systemu w postaci modułu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2544,7 +2544,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-044",
-                    "question": "sterownik urządzenia może być dołączony do systemu w postaci modułu",
+                    "question": "Nie proces użytkownika może być wywłaszczony w ramach powrotu z wywołaniasystemowego lub procedury obsługi przerwania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2555,17 +2555,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-045",
-                    "question": "proces użytkownika może być wywłaszczony w ramach powrotu z wywołaniasystemowego lub procedury obsługi przerwania",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-046",
                     "question": "jądro wykonuje czynności związane z obsługą warstwy łącza, sieci itransportowej modelu ISO/OSI",
                     "options": [
                         "Tak",
@@ -2576,8 +2565,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-046",
+                    "question": "SO2 10/28 Nie Nie kolejka procesów gotowych zawiera wskaźniki na dwie tablice priorytetów",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-047",
-                    "question": "kolejka procesów gotowych zawiera wskaźniki na dwie tablice priorytetów",
+                    "question": "Nie kolejka procesów gotowych jest zrealizowana w postaci drzewaczerwonoczarnego.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2588,18 +2588,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-048",
-                    "question": "kolejka procesów gotowych jest zrealizowana w postaci drzewaczerwonoczarnego.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-049",
-                    "question": "czas wybierania procesów przez planistę CFS jest zawsze krótszy wporównaniu z analogicznym czasem dla planisty O(1)",
+                    "question": "Nie czas wybierania procesów przez planistę CFS jest zawsze krótszy wporównaniu z analogicznym czasem dla planisty O(1)",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2609,8 +2598,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-050",
-                    "question": "większość procedurobsługi przerwań korzysta z makrodefinicji \"current\"",
+                    "id": "so-word-pyt-1-049",
+                    "question": "Nie większość procedurobsługi przerwań korzysta z makrodefinicji \"current\"",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2620,7 +2609,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-051",
+                    "id": "so-word-pyt-1-050",
                     "question": "w komputerachklasy PC wszystkie numery przerwań są przydzielane statycznie",
                     "options": [
                         "Tak",
@@ -2631,8 +2620,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-052",
-                    "question": "które nieuniksowe systemy plików nie posiadają wszystkich informacji ,które muszą być umieszczone w obiekcie i-węzła",
+                    "id": "so-word-pyt-1-051",
+                    "question": "SO2 11/28 Nie Nie które nieuniksowe systemy plików nie posiadają wszystkich informacji ,które muszą być umieszczone w obiekcie i-węzła",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2642,8 +2631,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-053",
-                    "question": "te same tasklety mogą być wykonywane współbieżnie na platformach wieloprocesorowych",
+                    "id": "so-word-pyt-1-052",
+                    "question": "Nie te same tasklety mogą być wykonywane współbieżnie na platformach wieloprocesorowych",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2653,8 +2642,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-054",
-                    "question": "mechanizm liczników wysokiej rozdzielczości korzysta z drzewa czerwonoczarnego",
+                    "id": "so-word-pyt-1-053",
+                    "question": "Nie -mechanizm liczników wysokiej rozdzielczości korzysta z drzewa czerwonoczarnego",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2664,7 +2653,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-055",
+                    "id": "so-word-pyt-1-054",
                     "question": "zadanie o dużym stopniu interaktywności może, po wyczerpaniu swojegokwantu czasu, ponownie trafić do tablicy priorytetów aktywnych",
                     "options": [
                         "Tak",
@@ -2675,8 +2664,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-055",
+                    "question": "SO2 12/28 Tak wywołania systemowe mogą nie przyjmować żadnych argumentów",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-056",
-                    "question": "wywołania systemowe mogą nie przyjmować żadnych argumentów",
+                    "question": "Nie każdy procesor ma swoją kolejkę procesów gotowych",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2687,7 +2687,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-057",
-                    "question": "każdy procesor ma swoją kolejkę procesów gotowych",
+                    "question": "Nie wartość stałej \"HZ\" jest taka sama dla wszystkich platform sprzętowych",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2698,18 +2698,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-058",
-                    "question": "wartość stałej \"HZ\" jest taka sama dla wszystkich platform sprzętowych",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-059",
-                    "question": "wielkość segmentu jest zawsze równa wielkości bufora",
+                    "question": "Nie wielkość segmentu jest zawsze równa wielkości bufora",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2719,7 +2708,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-060",
+                    "id": "so-word-pyt-1-059",
                     "question": "nie we wszystkichplatformach sprzętowych musi występować strefa pamięci wysokiej (ZONE_HIGHMEM)",
                     "options": [
                         "Tak",
@@ -2730,8 +2719,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-061",
-                    "question": "zegar wirtualny jest wprost implementowany w jądrze Linuksa",
+                    "id": "so-word-pyt-1-060",
+                    "question": "SO2 13/28 Tak zegar wirtualny jest wprost implementowany w jądrze Linuksa",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2741,8 +2730,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-062",
-                    "question": "metody obsługujące urządzenia znakowe muszą działać według określonego protokołu",
+                    "id": "so-word-pyt-1-061",
+                    "question": "Nie -metody obsługujące urządzenia znakowe muszą działać według określonego protokołu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2752,8 +2741,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-062",
+                    "question": "Nie czas wirtualny procesu zależy od jego wagi",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-063",
-                    "question": "czas wirtualny procesu zależy od jego wagi",
+                    "question": "Nie -klasaszeregowania SCHED_BATCH jest obsługiwana za pomocą algorytmu rotacyjnego",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2764,7 +2764,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-064",
-                    "question": "klasaszeregowania SCHED_BATCH jest obsługiwana za pomocą algorytmu rotacyjnego",
+                    "question": "-niektóreprzerwania mogą zasilać pulę entropii jądra.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2775,7 +2775,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-065",
-                    "question": "niektóreprzerwania mogą zasilać pulę entropii jądra.",
+                    "question": "SO2 14/28 Tak im wyższy jest priorytet procesu, tym krótszy kwant czasu on otrzymuje",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2786,29 +2786,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-066",
-                    "question": "im wyższy jest priorytet procesu, tym krótszy kwant czasu on otrzymuje",
+                    "question": "Nie mechanizm RCU niszczy oryginalną informację w momencie, kiedy wątek-pisarz opublikuje wskaźnik na jej zmodyfikowaną kopię.",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-067",
-                    "question": "mechanizm RCU niszczy oryginalną informację w momencie, kiedy wątek-pisarz opublikuje wskaźnik na jej zmodyfikowaną kopię.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        1
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-068",
-                    "question": "funkcjaimplementująca wywołanie systemowe musi sprawdzać poprawność przekazanych jejargumentów.",
+                    "question": "Nie funkcjaimplementująca wywołanie systemowe musi sprawdzać poprawność przekazanych jejargumentów.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2818,8 +2807,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-069",
-                    "question": "liczniki wysokiej rozdzielczości mogą być cykliczne",
+                    "id": "so-word-pyt-1-068",
+                    "question": "Nie liczniki wysokiej rozdzielczości mogą być cykliczne",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2829,7 +2818,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-070",
+                    "id": "so-word-pyt-1-069",
                     "question": "obiekty wpisów katalogowych mają swoje odpowiedniki na nośniku danych.",
                     "options": [
                         "Tak",
@@ -2840,8 +2829,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-071",
-                    "question": "obiekty zawierające informacje o obszarach pamięci są umieszczone jednocześnie w dwóch różnych strukturach danych,",
+                    "id": "so-word-pyt-1-070",
+                    "question": "SO2 15/28 Tak obiekty zawierające informacje o obszarach pamięci są umieszczone jednocześnie w dwóch różnych strukturach danych,",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2851,8 +2840,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-071",
+                    "question": "Nie planista CFQ nie stosuje przewidywania.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-072",
-                    "question": "planista CFQ nie stosuje przewidywania.",
+                    "question": "Nie obiekty i-węzłów związane są wyłącznie z fizycznymi plikami",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2863,7 +2863,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-073",
-                    "question": "obiekty i-węzłów związane są wyłącznie z fizycznymi plikami",
+                    "question": "Nie NAPI nigdy nie pozwala na sygnalizowanie odbioru pakietu za pomocą przerwania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2874,17 +2874,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-074",
-                    "question": "NAPI nigdy nie pozwala na sygnalizowanie odbioru pakietu za pomocą przerwania",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        1
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-075",
                     "question": "proces, który jest gotów do wykonania znajduje się w stanie TASK_RUNNING",
                     "options": [
                         "Tak",
@@ -2895,8 +2884,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-075",
+                    "question": "SO2 16/28 NIe Nie alokator plastrowy jest rozwiązaniem zapożyczonym z systemu operacyjnego firmy Sun Microsystems",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-076",
-                    "question": "alokator plastrowy jest rozwiązaniem zapożyczonym z systemu operacyjnego firmy Sun Microsystems",
+                    "question": "Nie proces zakończony ma stan TASK_STOPPED",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2907,7 +2907,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-077",
-                    "question": "proces zakończony ma stan TASK_STOPPED",
+                    "question": "Nie obiekt wpisu katalogowego, który nie jest w użyciu, ale któremu odpowiada prawidłowyi-węzeł, jest w stanie ujemnym",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2918,7 +2918,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-078",
-                    "question": "obiekt wpisu katalogowego, który nie jest w użyciu, ale któremu odpowiada prawidłowyi-węzeł, jest w stanie ujemnym",
+                    "question": "Nie -jeśli platforma sprzętowa nie dostarcza zegarów o nanosekundowejprecyzji, to mechanizm liczników wysokiej rozdzielczości nie jest dla niej wogóle dostępny.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2929,7 +2929,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-079",
-                    "question": "jeśli platforma sprzętowa nie dostarcza zegarów o nanosekundowejprecyzji, to mechanizm liczników wysokiej rozdzielczości nie jest dla niej wogóle dostępny.",
+                    "question": "SO2 17/28 Nie wszystkie wątki jądra korzystają z jednego, wspólnego dla nichdeskryptora pamięci",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2940,7 +2940,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-080",
-                    "question": "wszystkie wątki jądra korzystają z jednego, wspólnego dla nichdeskryptora pamięci",
+                    "question": "Nie czas fizyczny jestmierzony z dokładnością nanosekundową",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2951,7 +2951,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-081",
-                    "question": "czas fizyczny jestmierzony z dokładnością nanosekundową",
+                    "question": "Nie całkowita liczbaprzerwań programowych jest ograniczona",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2962,7 +2962,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-082",
-                    "question": "całkowita liczbaprzerwań programowych jest ograniczona",
+                    "question": "Nie struktury \"bio\" ułatwiają realizację operacji wejścia-wyjścia o rozproszonym źródle",
                     "options": [
                         "Tak",
                         "Nie"
@@ -2973,17 +2973,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-083",
-                    "question": "struktury \"bio\" ułatwiają realizację operacji wejścia-wyjścia o rozproszonym źródle",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-084",
                     "question": "deskryptor procesu jest umieszczony na dnie jego stosu w jądrze systemu",
                     "options": [
                         "Tak",
@@ -2994,8 +2983,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-084",
+                    "question": "SO2 18/28 Tak sekcje tekstutworzone są nie tylko dla procesów, ale również dla bibliotek współdzielonych",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-085",
-                    "question": "sekcje tekstutworzone są nie tylko dla procesów, ale również dla bibliotek współdzielonych",
+                    "question": "Nie w filtrze sieciowym, z pojedynczym uchwytem nie może być skojarzonawięcej niż jedna funkcja przetwarzająca",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3006,7 +3006,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-086",
-                    "question": "w filtrze sieciowym, z pojedynczym uchwytem nie może być skojarzonawięcej niż jedna funkcja przetwarzająca",
+                    "question": "Nie wątek \"ksoftirqd\" odpowiedzialny jest zarówno za obsługęprzerwań programowych, jak i kolejek prac",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3017,18 +3017,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-087",
-                    "question": "wątek \"ksoftirqd\" odpowiedzialny jest zarówno za obsługęprzerwań programowych, jak i kolejek prac",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-088",
-                    "question": "wątki w Linuksie są tworzone za pomocą innego wywołania systemowego niżprocesy",
+                    "question": "Nie wątki w Linuksie są tworzone za pomocą innego wywołania systemowego niżprocesy",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3038,7 +3027,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-089",
+                    "id": "so-word-pyt-1-088",
                     "question": "procedury obsługi przerwań są wywoływane w sposób asynchroniczny",
                     "options": [
                         "Tak",
@@ -3049,8 +3038,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-089",
+                    "question": "SO2 19/28 Nie Nie programista piszący sterownik urządzenia znakowego musi oprogramować metody obiektu i-węzła",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-090",
-                    "question": "programista piszący sterownik urządzenia znakowego musi oprogramować metody obiektu i-węzła",
+                    "question": "Nie -każdy bufor zawsze jest związany z blokiem na nośniku danych",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3061,18 +3061,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-091",
-                    "question": "każdy bufor zawsze jest związany z blokiem na nośniku danych",
+                    "question": "Nie rejestr może pełnić więcej niż jedną funkcję",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        1
+                        0
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-092",
-                    "question": "rejestr może pełnić więcej niż jedną funkcję",
+                    "question": "Nie im wyższy jest priorytet procesu, tym krótszy kwant czasu on otrzymuje",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3083,17 +3083,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-093",
-                    "question": "im wyższy jest priorytet procesu, tym krótszy kwant czasu on otrzymuje",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-094",
                     "question": "rygle pętlowe nie są używane w systemach jednoprocesorowych.",
                     "options": [
                         "Tak",
@@ -3104,8 +3093,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-094",
+                    "question": "SO2 20/28 Nie Nie nowy kwant czasu dla procesu jest ustalany dopiero wtedy, gdy wszystkieprocesy w systemie wyczerpią swoje kwanty",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-095",
-                    "question": "nowy kwant czasu dla procesu jest ustalany dopiero wtedy, gdy wszystkieprocesy w systemie wyczerpią swoje kwanty",
+                    "question": "Nie liczniki niskiej rozdzielczości są cykliczne",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3116,7 +3116,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-096",
-                    "question": "liczniki niskiej rozdzielczości są cykliczne",
+                    "question": "Nie można określićminimalny czas o jaki zostanie opóźnione wykonanie czynności w kolejkach prac",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3127,29 +3127,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-097",
-                    "question": "można określićminimalny czas o jaki zostanie opóźnione wykonanie czynności w kolejkach prac",
+                    "question": "Nie obiekty plików związane są ze wszystkimi plikami zapisanymi w systemie plików",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-098",
-                    "question": "obiekty plików związane są ze wszystkimi plikami zapisanymi w systemie plików",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        1
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-099",
-                    "question": "rygle pętlowe wprowadzają wątki oczekujące na ich zwolnienie w stanaktywnego oczekiwania",
+                    "question": "SO2 21/28 Nie rygle pętlowe wprowadzają wątki oczekujące na ich zwolnienie w stanaktywnego oczekiwania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3159,8 +3148,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-100",
-                    "question": "w trakcie tworzenia nowy proces otrzymuje osobny obszar tekstu i danych",
+                    "id": "so-word-pyt-1-099",
+                    "question": "Nie w trakcie tworzenia nowy proces otrzymuje osobny obszar tekstu i danych",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3170,8 +3159,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-100",
+                    "question": "Nie zwykły rygiel pętlowy może być przetrzymywany przez kilka wątków jednocześnie",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-101",
-                    "question": "zwykły rygiel pętlowy może być przetrzymywany przez kilka wątków jednocześnie",
+                    "question": "Nie alokator plastrowy przedziela pamięć na struktury często alokowane i zwalniane przez jądro systemu.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3182,17 +3182,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-102",
-                    "question": "alokator plastrowy przedziela pamięć na struktury często alokowane i zwalniane przez jądro systemu.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-103",
                     "question": "procedury obsługiprzerwań są wykonywane w kontekście przerwania",
                     "options": [
                         "Tak",
@@ -3203,8 +3192,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-103",
+                    "question": "SO2 22/28 Tak numer główny identyfikuje sterownik obsługujący urządzenie lub grupę urządzeń",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-104",
-                    "question": "numer główny identyfikuje sterownik obsługujący urządzenie lub grupę urządzeń",
+                    "question": "Nie liczbę taktów zegara od uruchomienia systemu przechowuje zmienna \"jiffies\"",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3215,7 +3215,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-105",
-                    "question": "liczbę taktów zegara od uruchomienia systemu przechowuje zmienna \"jiffies\"",
+                    "question": "Nie podzielneoperacje na bitach przeprowadzane są za pomocą tych samych funkcji coniepodzielne operacje na liczbach całkowitych",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3226,7 +3226,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-106",
-                    "question": "niepodzielneoperacje na bitach przeprowadzane są za pomocą tych samych funkcji coniepodzielne operacje na liczbach całkowitych",
+                    "question": "Nie przerwaniaprogramowe są wykonywane w kontekście procesu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3237,17 +3237,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-107",
-                    "question": "przerwaniaprogramowe są wykonywane w kontekście procesu",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-108",
                     "question": "VFS napisany jest w języku C++",
                     "options": [
                         "Tak",
@@ -3258,8 +3247,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-108",
+                    "question": "SO2 23/28 Nie Nie proces \"init\" może zostać nowym rodzicem procesu, któregoproces macierzysty już się zakończył",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-109",
-                    "question": "proces \"init\" może zostać nowym rodzicem procesu, któregoproces macierzysty już się zakończył",
+                    "question": "Nie podstawowym mechanizmem sprzętowym wykorzystywanym przez Linuksa doobsługi pamięci jest segmentacja",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3270,7 +3270,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-110",
-                    "question": "podstawowym mechanizmem sprzętowym wykorzystywanym przez Linuksa doobsługi pamięci jest segmentacja",
+                    "question": "Nie deskryptor pamięci przechowuje adres startowy i końcowy obszaru argumentów wywołania programu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3281,29 +3281,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-111",
-                    "question": "deskryptor pamięci przechowuje adres startowy i końcowy obszaru argumentów wywołania programu",
+                    "question": "Nie priorytet zwykłychprocesów jest ustalany wyłącznie na podstawie stopnia ich interaktywności",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-112",
-                    "question": "priorytet zwykłychprocesów jest ustalany wyłącznie na podstawie stopnia ich interaktywności",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        1
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-113",
-                    "question": "priorytety procesów są prawie niezmienne",
+                    "question": "SO2 24/28 Nie priorytety procesów są prawie niezmienne",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3313,8 +3302,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt-1-114",
-                    "question": "w komputerach klasy PC kontroler jest zawsze częścią struktury sprzętowej łączącej szynę wejścia-wyjścia z urządzeniem",
+                    "id": "so-word-pyt-1-113",
+                    "question": "Nie w komputerach klasy PC kontroler jest zawsze częścią struktury sprzętowej łączącej szynę wejścia-wyjścia z urządzeniem",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3324,8 +3313,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-114",
+                    "question": "Nie -dodanie do jądranowego wywołania systemowego wymaga modyfikacji biblioteki \"libc\",aby umożliwić procesom użytkownika korzystanie z niego.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-115",
-                    "question": "dodanie do jądranowego wywołania systemowego wymaga modyfikacji biblioteki \"libc\",aby umożliwić procesom użytkownika korzystanie z niego.",
+                    "question": "Nie planista przydziela procesor temu procesowi, który najdłużej z niegokorzystał.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3336,7 +3336,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-116",
-                    "question": "planista przydziela procesor temu procesowi, który najdłużej z niegokorzystał.",
+                    "question": "implementacja procedury obsługi przerwania zegarowego jest całkowicie zależna od sprzętu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3347,18 +3347,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-117",
-                    "question": "implementacja procedury obsługi przerwania zegarowego jest całkowicie niezależna od sprzętu",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-118",
-                    "question": "bufory są wykorzystywane wyłącznie do przechowywania danych odczytanych z nośnika urządzenia blokowego",
+                    "question": "SO2 25/28 Tak bufory są wykorzystywane wyłącznie do przechowywania danych odczytanych z nośnika urządzenia blokowego",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3368,8 +3357,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-118",
+                    "question": "Nie częstotliwość zegara systemowego jest określona stałą \"HZ\"",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-119",
-                    "question": "częstotliwość zegara systemowego jest określona stałą \"HZ\"",
+                    "question": "Nie struktury \"bio\" reprezentują operacje wejścia-wyjścia podczasich trwania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3380,7 +3380,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-120",
-                    "question": "struktury \"bio\" reprezentują operacje wejścia-wyjścia podczasich trwania",
+                    "question": "Nie domyślnie Linuxprzydziela pamięć ze strefy DMA (ZONE_DMA)",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3391,17 +3391,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-121",
-                    "question": "domyślnie Linuxprzydziela pamięć ze strefy DMA (ZONE_DMA)",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt-1-122",
                     "question": "alokator plastrowy wykorzystuje do własnych celów dedykowane pamięci podręczne",
                     "options": [
                         "Tak",
@@ -3412,8 +3401,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt-1-122",
+                    "question": "SO2 26/28 Nie Nie dla procesów z priorytetem równym 0 czas wirtualny jest taki sam jakczas fizyczny",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt-1-123",
-                    "question": "dla procesów z priorytetem równym 0 czas wirtualny jest taki sam jakczas fizyczny",
+                    "question": "Nie -można precyzyjne określić czas, po którym przerwanie programowe powinnobyć wykonane",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3424,7 +3424,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-124",
-                    "question": "można precyzyjne określić czas, po którym przerwanie programowe powinnobyć wykonane",
+                    "question": "Nie urządzenia znakowe adresują dane sekwencyjnie.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3435,18 +3435,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-125",
-                    "question": "urządzenia znakowe adresują dane sekwencyjnie.",
+                    "question": "Nie sterowniki wszystkich urządzeń blokowych muszą tworzyć kolejki żądań.",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-126",
-                    "question": "sterowniki wszystkich urządzeń blokowych muszą tworzyć kolejki żądań.",
+                    "question": "SO2 27/28 Nie czas wykonania procedur obsługi przerwań (górnych połówek) może byćdowolnie długi",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3457,18 +3457,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt-1-127",
-                    "question": "czas wykonania procedur obsługi przerwań (górnych połówek) może byćdowolnie długi",
+                    "question": "Nie -funkcje realizujące operacje niepodzielne na liczbach całkowitychdziałają na zmiennych typu \"int\"",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        1
+                        0
                     ]
                 },
                 {
                     "id": "so-word-pyt-1-128",
-                    "question": "funkcje realizujące operacje niepodzielne na liczbach całkowitychdziałają na zmiennych typu \"int\"",
+                    "question": "SO2 28/28",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3485,29 +3485,18 @@ const systemyOperacyjneData = {
             "questions": [
                 {
                     "id": "so-word-pyt2-001",
-                    "question": "Struktura bio możebyć wykorzystywana w macierzach RAID (czy coś w ten deseń).",
+                    "question": "Nie Procedury obsługi przerwań korzystają ze stosu jądra, który manieograniczony rozmiar",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt2-002",
-                    "question": "Procedury obsługi przerwań korzystają ze stosu jądra, który manieograniczony rozmiar",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        1
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-003",
-                    "question": "W procedurach obsługi przerwań można wywoła funkcje, które ulegająblokowaniu",
+                    "question": "Nie W procedurach obsługi przerwań można wywoła funkcje, które ulegająblokowaniu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3517,8 +3506,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-004",
-                    "question": "Struktura thread_struct jest deskryptorem procesu.",
+                    "id": "so-word-pyt2-003",
+                    "question": "Nie Struktura thread_struct jest deskryptorem procesu.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3528,8 +3517,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-004",
+                    "question": "SO2-2 1/21 Nie Czynności odroczone wykonywane w ramach kolejek prac wykonywane są w kontekście przerwania",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-005",
-                    "question": "Czynności odroczone wykonywane w ramach kolejek prac wykonywane są w kontekście przerwania",
+                    "question": "Nie Plik jest powiązany z wpisem katalogowym.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3540,29 +3540,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-006",
-                    "question": "Plik jest powiązany z wpisem katalogowym.",
+                    "question": "Nie Planista CFS przelicza priorytety procesów na wagi.",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt2-007",
-                    "question": "Planista CFS przelicza priorytety procesów na wagi.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        1
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-008",
-                    "question": "Programista jądra powinien używać funkcji rekurencyjnych.",
+                    "question": "Nie Programista jądra powinien używać funkcji rekurencyjnych.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3572,8 +3561,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-009",
-                    "question": "Kwanty czasu dla poszczególnych zadań są przeliczane dopiero wówczas ,gdy ostatnie z zadań znajdujących się w tablicy priorytetów aktywnych wyczerpie swój kwant czasu.",
+                    "id": "so-word-pyt2-008",
+                    "question": "Nie Kwanty czasu dla poszczególnych zadań są przeliczane dopiero wówczas ,gdy ostatnie z zadań znajdujących się w tablicy priorytetów aktywnych wyczerpie swój kwant czasu.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3583,8 +3572,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-009",
+                    "question": "SO2-2 2/21 Nie Przy wywołaniach systemowych jest używany sys_",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-010",
-                    "question": "Przy wywołaniach systemowych jest używany sys_",
+                    "question": "Nie Każdy wątek jądra posiada odrębną przestrzeń adresową",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3595,7 +3595,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-011",
-                    "question": "Każdy wątek jądra posiada odrębną przestrzeń adresową",
+                    "question": "Nie Funkcja realizująca wywołania systemowe musi być całości napisana w asemblerze",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3606,18 +3606,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-012",
-                    "question": "Funkcja realizująca wywołania systemowe musi być całości napisana w asemblerze",
+                    "question": "Nie Mechanizm szeregowania dokonuje zrównoważenia obciążenia procesów wyłącznie wtedy, kiedy kolejka zadań jednego z nich jest pusta",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt2-013",
-                    "question": "Mechanizm szeregowania dokonuje zrównoważenia obciążenia procesów wyłącznie wtedy, kiedy kolejka zadań jednego z nich jest pusta",
+                    "question": "Nie Planista CFS korzysta z tablicy odwrotności priorytetów.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3628,7 +3628,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-014",
-                    "question": "Planista CFS korzysta z tablicy odwrotności priorytetów.",
+                    "question": "SO2-2 3/21 Nie Obsługa struktury bio jest mniej skomplikowana niż obsługa nagłówków buforów.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3639,18 +3639,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-015",
-                    "question": "Obsługa struktury bio jest mniej skomplikowana niż obsługa nagłówków buforów.",
+                    "question": "Nie Rygle pętlowe powinny być stosowane wszędzie tam, gdzie nie można zawiesić wątku i gdzie czas przełączania kontekstu byłby niewspółmiernie dłuższy z czasem aktywnego oczekiwania.",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        1
+                        0
                     ]
                 },
                 {
                     "id": "so-word-pyt2-016",
-                    "question": "Rygle pętlowe powinny być stosowane wszędzie tam, gdzie nie można zawiesić wątku i gdzie czas przełączania kontekstu byłby niewspółmiernie dłuższy z czasem aktywnego oczekiwania.",
+                    "question": "Nie Mechanizm kolejek prac pozwala na określenie czasu po upływie, którego dana czynność może się rozpocząć",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3661,18 +3661,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-017",
-                    "question": "Mechanizm kolejek prac pozwala na określenie czasu po upływie, którego dana czynność może się rozpocząć",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-018",
-                    "question": "Zmienna jiffies przechowuje informacje o czasie rzeczywistym systemu",
+                    "question": "Nie Zmienna jiffies przechowuje informacje o czasie rzeczywistym systemu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3682,8 +3671,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-018",
+                    "question": "Nie Listy liczników nie są przez system sortowane",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-019",
-                    "question": "Listy liczników nie są przez system sortowane",
+                    "question": "SO2-2 4/21 Nie Procedury obsługi przerwania mogą korzystać z wartości zwracanej przez makrodefinicję current",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3694,18 +3694,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-020",
-                    "question": "Procedury obsługi przerwania mogą korzystać z wartości zwracanej przez makrodefinicję current",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-021",
-                    "question": "Każde urządzenie musi mieć inny numer przerwania",
+                    "question": "Nie Każde urządzenie musi mieć inny numer przerwania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3715,8 +3704,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-021",
+                    "question": "Nie Przerwania programowe są wykorzystywane przy taskletach",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-022",
-                    "question": "Przerwania programowe są wykorzystywane przy taskletach",
+                    "question": "Nie które operacje niepodzielne mogą by zrealizowane jak jeden rozkaz",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3727,7 +3727,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-023",
-                    "question": "Niektóre operacje niepodzielne mogą by zrealizowane jak jeden rozkaz",
+                    "question": "Nie Programista powinien zwracać uwagę na rozmiar stosu jądra",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3738,7 +3738,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-024",
-                    "question": "Programista powinien zwracać uwagę na rozmiar stosu jądra",
+                    "question": "SO2-2 5/21 Nie Kolejki prac zastąpiły mechanizm dolnych połówek znany, jako ”kolejki zadań”, który był wykorzystywany we wcześniejszych jądra Linuksa",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3749,7 +3749,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-025",
-                    "question": "Kolejki prac zastąpiły mechanizm dolnych połówek znany, jako ”kolejki zadań”, który był wykorzystywany we wcześniejszych jądra Linuksa",
+                    "question": "Nie Kod w mechanizmie RCU może ulec zawieszeniu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3760,18 +3760,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-026",
-                    "question": "Kod w mechanizmie RCU może ulec zawieszeniu",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-027",
-                    "question": "Zadanie nigdy nie może być wywłaszczone po zakończeniu obsługi przerwania",
+                    "question": "Nie Zadanie nigdy nie może być wywłaszczone po zakończeniu obsługi przerwania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3781,8 +3770,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-027",
+                    "question": "Nie Jądro systemu linux zawiera specjalną funkcje, która pozwala na opróżnienie domyślnej kolejki prac",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-028",
-                    "question": "Jądro systemu linux zawiera specjalną funkcje, która pozwala na opróżnienie domyślnej kolejki prac",
+                    "question": "Nie Makrodefinicja current pozwala na szybki dostęp do deskryptora bieżącego procesu",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3793,7 +3793,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-029",
-                    "question": "Makrodefinicja current pozwala na szybki dostęp do deskryptora bieżącego procesu",
+                    "question": "SO2-2 6/21 Nie Jeśli w jądrzetworzona jest nowa kolejka prac, to jest równocześnie dla niej tworzony nowyodrębny wątek roboczy",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3804,7 +3804,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-030",
-                    "question": "Jeśli w jądrzetworzona jest nowa kolejka prac, to jest równocześnie dla niej tworzony nowyodrębny wątek roboczy",
+                    "question": "Nie Odczyty w mechanizmie RCU powinny byc częste, a zapisy sporadyczne.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3815,7 +3815,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-031",
-                    "question": "Odczyty w mechanizmie RCU powinny byc częste, a zapisy sporadyczne.",
+                    "question": "Nie Alokator plastrowy przydziela pamięć na deskryptor.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3826,18 +3826,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-032",
-                    "question": "Alokator plastrowy przydziela pamięć na deskryptor.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-033",
-                    "question": "Urządzenie znakowe jest zwykłym plikiem.",
+                    "question": "Nie Urządzenie znakowe jest zwykłym plikiem.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3847,8 +3836,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-033",
+                    "question": "Nie Alokator plastrowy przydziela w pierwszej kolejności pamięć z plastrów pustych",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-034",
-                    "question": "Alokator plastrowy przydziela w pierwszej kolejności pamięć z plastrów pustych",
+                    "question": "SO2-2 7/21 Nie Zmienna\"jiffies\" jest nałożona na starsze 32 bity zmiennej\"jiffies_64\"",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3859,7 +3859,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-035",
-                    "question": "Zmienna\"jiffies\" jest nałożona na starsze 32 bity zmiennej\"jiffies_64\"",
+                    "question": "Nie Każda ramka jest określona strukturą struct page",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3870,7 +3870,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-036",
-                    "question": "Każda ramka jest określona strukturą struct page",
+                    "question": "Nie Wirtualny system plików jest modelem obiektowym.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3881,7 +3881,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-037",
-                    "question": "Wirtualny system plików jest modelem obiektowym.",
+                    "question": "Nie Rygle pętlowe są rekurencyjne.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3892,7 +3892,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-038",
-                    "question": "Rygle pętlowe są rekurencyjne.",
+                    "question": "Nie Liczniki wysokiej rozdzielczości pozwalają na ich regulowanie z nanosekundową precyzją",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3903,7 +3903,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-039",
-                    "question": "Liczniki wysokiej rozdzielczości pozwalają na ich regulowanie z nanosekundową precyzją",
+                    "question": "SO2-2 8/21 Nie Jądro może przydzielić dodatkową przestrzeń adresową dla procesu podczas jego wykonywania.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3914,18 +3914,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-040",
-                    "question": "Jądro może przydzielić dodatkową przestrzeń adresową dla procesu podczas jego wykonywania.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-041",
-                    "question": "Użytkownik uprzywilejowany może dowolnie zmieniać wartość stałej HZ",
+                    "question": "Nie Użytkownik uprzywilejowany może dowolnie zmieniać wartość stałej HZ",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3935,8 +3924,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-041",
+                    "question": "Nie Linux nie jest rygorystycznym systemem czasu rzeczywistego",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-042",
-                    "question": "Linux nie jest rygorystycznym systemem czasu rzeczywistego",
+                    "question": "Nie Zadania interaktywne otrzymują od planisty O(1) mniejszy kwant czasu niż zadania nieinteraktywne",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3947,18 +3947,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-043",
-                    "question": "Zadania interaktywne otrzymują od planisty O(1) mniejszy kwant czasu niż zadania nieinteraktywne",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-044",
-                    "question": "Procesy które nie korzystają z procesora, są przesuwane w lewą stronę drzewa czerwono-czarnego.",
+                    "question": "Nie Procesy które nie korzystają z procesora, są przesuwane w lewą stronę drzewa czerwono-czarnego.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3968,8 +3957,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-044",
+                    "question": "SO2-2 9/21 Nie Obsługa przerwań podzielona jest na górną połówkę i dolną połówkę",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-045",
-                    "question": "Obsługa przerwań podzielona jest na górną połówkę i dolną połówkę",
+                    "question": "Nie Blokada BKL jest blokadą gruboziarnistą",
                     "options": [
                         "Tak",
                         "Nie"
@@ -3980,18 +3980,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-046",
-                    "question": "Blokada BKL jest blokadą gruboziarnistą",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-047",
-                    "question": "W 64-bitowychprocesorach pamięć wysoka jest oznaczona jako HIGHMEM",
+                    "question": "Nie W 64-bitowychprocesorach pamięć wysoka jest oznaczona jako HIGHMEM",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4001,8 +3990,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-047",
+                    "question": "Nie Blokady sekwencyjne pozwalają ustalić czy operacja odczytu nie została przepleciona operacją zapisu",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-048",
-                    "question": "Blokady sekwencyjne pozwalają ustalić czy operacja odczytu nie została przepleciona operacją zapisu",
+                    "question": "Nie Maksymalna ilość przerwań programowych wynosi 32",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4013,7 +4013,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-049",
-                    "question": "Maksymalna ilość przerwań programowych wynosi 32",
+                    "question": "SO2-2 10/21 Nie Linux realizuje wielozadaniowość w oparciu o kooperację",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4024,18 +4024,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-050",
-                    "question": "Linux realizuje wielozadaniowość w oparciu o kooperację",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-051",
-                    "question": "Struktura bio korzysta z listy offsetów.",
+                    "question": "Nie Struktura bio korzysta z listy offsetów.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4045,8 +4034,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-051",
+                    "question": "Nie Planista CFS całkowicie zastąpił planistę O(1).",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-052",
-                    "question": "Planista CFS całkowicie zastąpił planistę O(1).",
+                    "question": "Nie Wszystkie pliki na dysku są reprezentowane przez VFS (czy coś takiego).",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4057,7 +4057,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-053",
-                    "question": "Wszystkie pliki na dysku są reprezentowane przez VFS (czy coś takiego).",
+                    "question": "Nie Programista może napisać dedykowaną pamięć podręczną dla alokatora plastrowego",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4068,17 +4068,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-054",
-                    "question": "Programista może napisać dedykowaną pamięć podręczną dla alokatora plastrowego",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-055",
                     "question": "Przerwanie składa się z dwóch połówek.",
                     "options": [
                         "Tak",
@@ -4089,8 +4078,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-055",
+                    "question": "SO2-2 11/21 Nie Nie PID może być ujemny.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-056",
-                    "question": "PID może być ujemny.",
+                    "question": "Nie Procesy UNINTERRUPTIBLE mogą zostać ustawione w stan gotowości przez inne zdarzenie niż to, na które oczekują.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4101,18 +4101,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-057",
-                    "question": "Procesy UNINTERRUPTIBLE mogą zostać ustawione w stan gotowości przez inne zdarzenie niż to, na które oczekują.",
+                    "question": "Nie Blokada BKL nie jest rekurencyjna",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        1
+                        0
                     ]
                 },
                 {
                     "id": "so-word-pyt2-058",
-                    "question": "Blokada BKL nie jest rekurencyjna",
+                    "question": "Nie Wątek wykonania ,który przetrzymuje semafor nie może równocześnie przetrzyma rygla pętlowego",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4123,17 +4123,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-059",
-                    "question": "Wątek wykonania ,który przetrzymuje semafor nie może równocześnie przetrzyma rygla pętlowego",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-060",
                     "question": "Proces macierzysty, którego proces macierzysty się zakończył przechodzi w stan TASK_ZOMBIE",
                     "options": [
                         "Tak",
@@ -4144,8 +4133,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-060",
+                    "question": "SO2-2 12/21 Tak Procesy mogą współdzielić deskryptor pamięci",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-061",
-                    "question": "Procesy mogą współdzielić deskryptor pamięci",
+                    "question": "Nie Mechanizm RCU posługuje się wskaźnikami.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4156,18 +4156,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-062",
-                    "question": "Mechanizm RCU posługuje się wskaźnikami.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-063",
-                    "question": "Pamięć fizyczna nieciągła jest przydzielana za pomocą algorytmu bliźniaków.",
+                    "question": "Nie Pamięć fizyczna nieciągła jest przydzielana za pomocą algorytmu bliźniaków.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4177,8 +4166,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-064",
-                    "question": "W systemie linux,w przestrzeni użytkownika wywłaszczenie procesu może zajść tylko w ściśleokreślonym momencie jego działania",
+                    "id": "so-word-pyt2-063",
+                    "question": "Nie W systemie linux,w przestrzeni użytkownika wywłaszczenie procesu może zajść tylko w ściśleokreślonym momencie jego działania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4188,7 +4177,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-065",
+                    "id": "so-word-pyt2-064",
                     "question": "Główną strukturaplanisty CFS jest drzewo czerwono-czarne",
                     "options": [
                         "Tak",
@@ -4199,8 +4188,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-065",
+                    "question": "SO2-2 13/21 Tak Promowane są zadania o wysokim stopniu interaktywności",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-066",
-                    "question": "Promowane są zadania o wysokim stopniu interaktywności",
+                    "question": "Nie Programista jądra powinien się posługiwać zmienną printf.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4211,29 +4211,18 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-067",
-                    "question": "Programista jądra powinien się posługiwać zmienną printf.",
+                    "question": "Nie -Licznik monotoniczny jest wysokiej rozdzielczości",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        0
+                        1
                     ]
                 },
                 {
                     "id": "so-word-pyt2-068",
-                    "question": "Licznik monotoniczny jest wysokiej rozdzielczości",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        1
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-069",
-                    "question": "Urządzenia znakowe mają dostęp sekwencyjny.",
+                    "question": "Nie Urządzenia znakowe mają dostęp sekwencyjny.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4243,8 +4232,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-070",
-                    "question": "Deskryptory pamięci są połączone w listę i drzewo czerwono-czarne",
+                    "id": "so-word-pyt2-069",
+                    "question": "Nie Deskryptory pamięci są połączone w listę i drzewo czerwono-czarne",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4254,8 +4243,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-070",
+                    "question": "SO2-2 14/21 Nie Do linii obsługi przerwania o określonym numerze może by przypisanych kilka procedur obsługi przerwań",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-071",
-                    "question": "Do linii obsługi przerwania o określonym numerze może by przypisanych kilka procedur obsługi przerwań",
+                    "question": "Nie Algorytm noop realizuje tylko operacje scalania.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4266,18 +4266,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-072",
-                    "question": "Algorytm noop realizuje tylko operacje scalania.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-073",
-                    "question": "Jądro cyklicznie odczytuje wartości z zegara czasu rzeczywistego (RTC)",
+                    "question": "Nie Jądro cyklicznie odczytuje wartości z zegara czasu rzeczywistego (RTC)",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4287,8 +4276,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-073",
+                    "question": "Nie Procedury obsługiprzerwań mogą by wykonywane dowolnie długo",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-074",
-                    "question": "Procedury obsługiprzerwań mogą by wykonywane dowolnie długo",
+                    "question": "Nie -W wersji 2.6 deskryptor pamięci jest przechowywany na stosie.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4299,7 +4299,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-075",
-                    "question": "W wersji 2.6 deskryptor pamięci jest przechowywany na stosie.",
+                    "question": "SO2-2 15/21 Nie Aby procedura obsługi przerwania mogła być wywołana, musi zostać wcześniej zarejestrowana",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4310,7 +4310,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-076",
-                    "question": "Aby procedura obsługi przerwania mogła być wywołana, musi zostać wcześniej zarejestrowana",
+                    "question": "Nie Wszystkie funkcje ze standardowej biblioteki jezyka c korzystają z wołań systemowych",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4321,7 +4321,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-077",
-                    "question": "Wszystkie funkcje ze standardowej biblioteki jezyka c korzystają z wołań systemowych",
+                    "question": "Nie Numery przerwań mogą być przydzielane niektórym urządzeniom dynamicznie",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4332,7 +4332,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-078",
-                    "question": "Numery przerwań mogą być przydzielane niektórym urządzeniom dynamicznie",
+                    "question": "Nie Alokator plastrowy przechowuje własne struktury w pamięci dedykowanej",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4343,18 +4343,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-079",
-                    "question": "Alokator plastrowy przechowuje własne struktury w pamięci dedykowanej",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-080",
-                    "question": "Stronicowanie nigdy nie korzysta z segmentacji.",
+                    "question": "Nie Stronicowanie nigdy nie korzysta z segmentacji.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4364,8 +4353,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-081",
-                    "question": "Działanie planisty O(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym",
+                    "id": "so-word-pyt2-080",
+                    "question": "SO2-2 16/21 Nie Działanie planisty O(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4375,8 +4364,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-081",
+                    "question": "Nie Priorytet każdego zadania jest ustalany wyłącznie na podstawie jegointeraktywności",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-082",
-                    "question": "Priorytet każdego zadania jest ustalany wyłącznie na podstawie jegointeraktywności",
+                    "question": "Nie które pola struktury dotyczącej plików mogą być wypełniane dowolnymi wartościami.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4387,18 +4387,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-083",
-                    "question": "Niektóre pola struktury dotyczącej plików mogą być wypełniane dowolnymi wartościami.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        1
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-084",
-                    "question": "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wyłącza wątków",
+                    "question": "Nie Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które wyłącza wątków",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4408,7 +4397,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-085",
+                    "id": "so-word-pyt2-084",
                     "question": "Rygle pętlowe są użyteczne w systemach jednoprocesorowych z wywłaszczaniem jądra.",
                     "options": [
                         "Tak",
@@ -4419,8 +4408,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-085",
+                    "question": "SO2-2 17/21 Tak Każde wywołanie systemowe zwraca wartość typu long",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-086",
-                    "question": "Każde wywołanie systemowe zwraca wartość typu long",
+                    "question": "Nie Dodawanie nowych wywołań systemowych nie jest zalecanym sposobem przeztwórców jądra sposobem dodawania nowej funkcjonalności",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4431,7 +4431,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-087",
-                    "question": "Dodawanie nowych wywołań systemowych nie jest zalecanym sposobem przeztwórców jądra sposobem dodawania nowej funkcjonalności",
+                    "question": "Nie Każde wywołanie systemowe musi zawiera, co najmniej 1 argument wywołania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4442,7 +4442,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-088",
-                    "question": "Każde wywołanie systemowe musi zawiera, co najmniej 1 argument wywołania",
+                    "question": "Nie Dostęp do zmiennych lokalnych wątków nie musi podlega synchronizacji",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4453,17 +4453,6 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-089",
-                    "question": "Dostęp do zmiennych lokalnych wątków nie musi podlega synchronizacji",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-090",
                     "question": "Rozmiar sektora dla urządzeń blokowych wynosi zazwyczaj 1024 bajty.",
                     "options": [
                         "Tak",
@@ -4474,30 +4463,30 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-091",
-                    "question": "Deskryptor procesu jest opisywany strukturą struct thread_info.",
+                    "id": "so-word-pyt2-090",
+                    "question": "SO2-2 18/21 Tak Deskryptor procesu jest opisywany strukturą struct thread_info.",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
                         1
+                    ]
+                },
+                {
+                    "id": "so-word-pyt2-091",
+                    "question": "Nie Zawartość zegara czasu rzeczywistego jest odczytywana przez jądro co pewien okres czasu.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
                     ]
                 },
                 {
                     "id": "so-word-pyt2-092",
-                    "question": "Zawartość zegara czasu rzeczywistego jest odczytywana przez jądro co pewien okres czasu.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-093",
-                    "question": "VFS jest zapożyczony od Microsoftu.",
+                    "question": "Nie VFS jest zapożyczony od Microsoftu.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4507,8 +4496,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-094",
-                    "question": "Za szeregowanie wątków odpowiada inny mechanizm niż za szeregowanieprocesów",
+                    "id": "so-word-pyt2-093",
+                    "question": "Nie Za szeregowanie wątków odpowiada inny mechanizm niż za szeregowanieprocesów",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4518,7 +4507,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-095",
+                    "id": "so-word-pyt2-094",
                     "question": "Wymiana priorytetów zadań sprowadza się do zamiany wskaźników na tablice aktywną i przeterminowaną",
                     "options": [
                         "Tak",
@@ -4529,8 +4518,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-095",
+                    "question": "SO2-2 19/21 Tak Argumenty wywołań systemowych są przekazywane tylko przez rejestry programowe",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-096",
-                    "question": "Argumenty wywołań systemowych są przekazywane tylko przez rejestry programowe",
+                    "question": "Nie Stała \"HZ\" dla architektury i386 wynosi 1000",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4541,18 +4541,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-097",
-                    "question": "Stała \"HZ\" dla architektury i386 wynosi 1000",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt2-098",
-                    "question": "Zwiększenie wartości stałej HZ powoduje zmniejszenie częstotliwości przerwań zegarowych",
+                    "question": "Nie Zwiększenie wartości stałej HZ powoduje zmniejszenie częstotliwości przerwań zegarowych",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4562,7 +4551,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-099",
+                    "id": "so-word-pyt2-098",
                     "question": "Nie jest wymagane, aby procedury obsługi przerwań były wielobieżne",
                     "options": [
                         "Tak",
@@ -4573,7 +4562,7 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-100",
+                    "id": "so-word-pyt2-099",
                     "question": "Przeplot operacji jest przyczyną występowania problemu sekcji krytycznej",
                     "options": [
                         "Tak",
@@ -4584,8 +4573,8 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
-                    "id": "so-word-pyt2-101",
-                    "question": "Liczniki dynamiczne ze względu na zbyt małą precyzje nie mogą być wykorzystywane w zadaniach czasu rzeczywistego",
+                    "id": "so-word-pyt2-100",
+                    "question": "SO2-2 20/21 Tak -Liczniki dynamiczne ze względu na zbyt małą precyzje nie mogą być wykorzystywane w zadaniach czasu rzeczywistego",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4595,8 +4584,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt2-101",
+                    "question": "Nie Stan procesów po zakończeniu jest przechowywany w tym samym polu deskryptora.",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        1
+                    ]
+                },
+                {
                     "id": "so-word-pyt2-102",
-                    "question": "Stan procesów po zakończeniu jest przechowywany w tym samym polu deskryptora.",
+                    "question": "Nie Liczniki bazują na taskletach",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4607,13 +4607,13 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt2-103",
-                    "question": "Liczniki bazują na taskletach",
+                    "question": "SO2-2 21/21",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        1
+                        0
                     ]
                 }
             ]
@@ -4624,18 +4624,18 @@ const systemyOperacyjneData = {
             "questions": [
                 {
                     "id": "so-word-pyt3-001",
-                    "question": "Wątki jądra mają sekcję tekstu.",
+                    "question": "Nie Coś o obiekciewpisu katalogowego (dentry) i jego stanach: używany, używany lub ujemny",
                     "options": [
                         "Tak",
                         "Nie"
                     ],
                     "correctAnswers": [
-                        1
+                        0
                     ]
                 },
                 {
                     "id": "so-word-pyt3-002",
-                    "question": "Coś o obiekciewpisu katalogowego (dentry) i jego stanach: używany, nieużywany lub ujemny",
+                    "question": "Nie Programista nie powinien uzywac funkcji goto.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4646,7 +4646,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt3-003",
-                    "question": "Programista nie powinien uzywac funkcji goto.",
+                    "question": "Nie Deskryptory procesów są połączone w listę dwukierunkową",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4657,7 +4657,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt3-004",
-                    "question": "Deskryptory procesów są połączone w listę dwukierunkową",
+                    "question": "SO2-3 1/3 Nie Wszystkie architektury, które obsługuje Linux dostarczają rozkazów maszynowych realizujących operacje niepodzielne na wartościach będących liczbami całkowitymi",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4668,7 +4668,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt3-005",
-                    "question": "Wszystkie architektury, które obsługuje Linux dostarczają rozkazów maszynowych realizujących operacje niepodzielne na wartościach będących liczbami całkowitymi",
+                    "question": "Nie Zmienne sygnałowe są uproszczoną wersją semaforów.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4679,18 +4679,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt3-006",
-                    "question": "Zmienne sygnałowe są uproszczoną wersją semaforów.",
-                    "options": [
-                        "Tak",
-                        "Nie"
-                    ],
-                    "correctAnswers": [
-                        0
-                    ]
-                },
-                {
-                    "id": "so-word-pyt3-007",
-                    "question": "Czy liczniki niskiej rozdzielczości działają z mikrosekundową precyzją",
+                    "question": "Nie Czy liczniki niskiej rozdzielczości działają z mikrosekundową precyzją",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4700,8 +4689,19 @@ const systemyOperacyjneData = {
                     ]
                 },
                 {
+                    "id": "so-word-pyt3-007",
+                    "question": "Nie Rygle R-W stosujemy w zagadnieniach typu problem czytelników i pisarzy, gdzie faworyzowani są pisarze",
+                    "options": [
+                        "Tak",
+                        "Nie"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ]
+                },
+                {
                     "id": "so-word-pyt3-008",
-                    "question": "Rygle R-W stosujemy w zagadnieniach typu problem czytelników i pisarzy, gdzie faworyzowani są pisarze",
+                    "question": "Nie Częstotliwość pojawiania się wszystkich przerwań są wykorzystywane doinicjalizowania generatora licz los.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4712,7 +4712,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt3-009",
-                    "question": "Częstotliwość pojawiania się wszystkich przerwań są wykorzystywane doinicjalizowania generatora licz los.",
+                    "question": "SO2-3 2/3 Nie Deskryptory procesów powiązane są w listę.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4723,7 +4723,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt3-010",
-                    "question": "Deskryptory procesów powiązane są w listę.",
+                    "question": "Nie Rygle pętlowe mogą być stosowane we fragmentach kodu wykonywujących się w kontekście przerwania",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4734,7 +4734,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt3-011",
-                    "question": "Rygle pętlowe mogą być stosowane we fragmentach kodu wykonywujących się w kontekście przerwania",
+                    "question": "Nie Architektura NUMA jest obsługiwana od wersji jądra 2.6.",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4745,7 +4745,7 @@ const systemyOperacyjneData = {
                 },
                 {
                     "id": "so-word-pyt3-012",
-                    "question": "Architektura NUMA jest obsługiwana od wersji jądra 2.6.",
+                    "question": "SO2-3 3/3",
                     "options": [
                         "Tak",
                         "Nie"
@@ -4757,5 +4757,5 @@ const systemyOperacyjneData = {
             ]
         }
     ],
-    "dbVersion": 8
+    "dbVersion": 9
 };
