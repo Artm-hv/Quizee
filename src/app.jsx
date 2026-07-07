@@ -576,7 +576,7 @@ function App() {
   const sessionUnanswered = questions.length - sessionCorrect - sessionIncorrect;
 
   return (
-    <div className="app-container">
+    <div className={`app-container${view === "quiz" || view === "review" ? " quiz-mode" : ""}`}>
       <header className="app-header">
         <div className="app-logo">
           <div className="logo-icon">📖</div>

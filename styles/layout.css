@@ -861,3 +861,12 @@
   }
 
 }
+
+/* Quiz mode layout optimizations */
+.app-container.quiz-mode {
+  padding-top: 12px;
+}
+
+.app-container.quiz-mode .app-header {
+  display: none !important;
+}
