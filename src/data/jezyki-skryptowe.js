@@ -1,4 +1,4 @@
-const jezykiSkryptoweData = const jezykiSkryptoweData = const jezykiSkryptoweData = {
+const jezykiSkryptoweData = {
     "id": "jezyki-skryptowe",
     "name": "Języki skryptowe",
     "icon": "💻",
