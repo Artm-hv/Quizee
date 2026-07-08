@@ -3088,8 +3088,139 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 }
             ]
+        },
+        {
+            "id": "js-kolegi-zad",
+            "name": "Kolegi zad",
+            "questions": [
+                {
+                    "id": "js-kolegi-zad-001",
+                    "type": "single",
+                    "question": "Który z poniższych jest unarnym operatorem bitowym w języku Python?",
+                    "options": [
+                        "~",
+                        "&",
+                        "|",
+                        "^"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Operator ~ (tylda) jest unarnym operatorem bitowym, który wykonuje operację negacji bitowej (NOT). Pozostałe operatory (&, |, ^) są operatorami binarnymi (dwuargumentowymi)."
+                },
+                {
+                    "id": "js-kolegi-zad-002",
+                    "type": "single",
+                    "question": "Czy język Python obsługuje operatory inkrementacji (++) i dekrementacji (--) w wersjach prefiksowej (np. ++x) i sufiksowej (np. x++)?",
+                    "options": [
+                        "Nie, Python nie posiada tych operatorów.",
+                        "Tak, obsługuje oba rodzaje.",
+                        "Obsługuje tylko wersję prefiksową.",
+                        "Obsługuje tylko wersję sufiksową."
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "W Pythonie nie ma operatorów ++ ani --. Zamiast tego stosuje się operatory przypisania, np. x += 1. Zapis ++x jest interpretowany jako podwójny unarny plus, co nie modyfikuje wartości zmiennej."
+                },
+                {
+                    "id": "js-kolegi-zad-003",
+                    "type": "single",
+                    "question": "Do czego służy instrukcja assert w języku Python?",
+                    "options": [
+                        "Służy do testowania warunków; jeśli warunek jest fałszywy, zgłaszany jest wyjątek AssertionError.",
+                        "Służy do automatycznego zgłaszania dowolnego typu wyjątku.",
+                        "Służy do definiowania bloków obsługi błędów w sekcji try-except.",
+                        "Służy do ignorowania błędów wykonania programu."
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Instrukcja assert sprawdza podany warunek logiczny. Jeśli warunek jest spełniony (True), program działa dalej. W przeciwnym wypadku zgłaszany jest wyjątek AssertionError."
+                },
+                {
+                    "id": "js-kolegi-zad-004",
+                    "type": "single",
+                    "question": "Które z poniższych są popularnymi implementacjami języka Python?",
+                    "options": [
+                        "CPython, Jython, PyPy, IronPython",
+                        "JPython, CPlusPython, PyCore, PyJava",
+                        "PythonJS, PyJava, PyNet, SwiftPython",
+                        "RustPython, GoPython, WebPython, SharpPython"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "CPython to standardowa implementacja w C. Jython integruje się z platformą Java (JVM). PyPy cechuje się wysoką wydajnością dzięki kompilacji JIT. IronPython działa na platformie .NET."
+                },
+                {
+                    "id": "js-kolegi-zad-005",
+                    "type": "multiple",
+                    "question": "Wskaż prawidłowe operatory porównania (relacyjne) w języku Python:",
+                    "options": [
+                        "==",
+                        "!=",
+                        "<",
+                        ">",
+                        "=",
+                        "==="
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ],
+                    "explanation": "Operatory ==, !=, <, > (oraz <=, >=) służą do porównywania wartości. Operator = służy do przypisania, a operator === nie istnieje w języku Python."
+                },
+                {
+                    "id": "js-kolegi-zad-006",
+                    "type": "single",
+                    "question": "Czym jest pakiet (package) w języku Python?",
+                    "options": [
+                        "Jest to folder zawierający moduły (pliki .py) oraz opcjonalnie plik __init__.py, służący do strukturyzacji przestrzeni nazw.",
+                        "Jest to centralne repozytorium (np. PyPI), z którego pobiera się pakiety instalatorem pip.",
+                        "Jest to pojedynczy plik kodu zawierający definicje klas i funkcji.",
+                        "Jest to plik archiwum skompilowanego kodu wykonywalnego Pythona."
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Pakiet w Pythonie to katalog, który grupuje powiązane moduły. Tradycyjnie zawiera plik __init__.py (wymagany przed wersją 3.3), co pozwala na importowanie modułów z użyciem kropki."
+                },
+                {
+                    "id": "js-kolegi-zad-007",
+                    "type": "single",
+                    "question": "Załóżmy, że mamy listę L = [10, 20, 30, 40, 50, 60]. Jaki będzie wynik operacji wycinania (slicingu) L[1::2]?",
+                    "options": [
+                        "[20, 40, 60]",
+                        "[10, 30, 50]",
+                        "[20, 30]",
+                        "[20, 50]"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Wycięcie L[1::2] rozpoczyna się od indeksu 1 (wartość 20) i pobiera elementy z krokiem 2 do końca listy. Są to elementy o indeksach 1 (20), 3 (40) oraz 5 (60)."
+                },
+                {
+                    "id": "js-kolegi-zad-008",
+                    "type": "single",
+                    "question": "Wskaż prawidłowe zasady działania bloków obsługi wyjątków try-except-else-finally w języku Python:",
+                    "options": [
+                        "Blok else wykonuje się tylko wtedy, gdy w bloku try nie wystąpił żaden wyjątek; blok finally wykonuje się zawsze.",
+                        "Blok else wykonuje się zawsze, gdy wystąpi błąd; blok finally wykonuje się tylko przy braku błędów.",
+                        "Blok except wykonuje się zawsze, bez względu na wystąpienie wyjątku.",
+                        "Blok finally wykonuje się tylko wtedy, gdy wyjątek został pomyślnie obsłużony."
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Blok else uruchamia się wyłącznie, gdy kod w sekcji try nie zgłosi żadnego wyjątku. Blok finally wykonuje się zawsze na koniec obsługi bloku try-except (niezależnie od tego, czy błąd wystąpił czy nie)."
+                }
+            ]
         }
     ],
-    "dbVersion": 9
+    "dbVersion": 10
 };
 ;
