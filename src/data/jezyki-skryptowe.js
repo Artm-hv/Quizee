@@ -443,130 +443,8 @@ const jezykiSkryptoweData = {
                     "explanation": "Słowo kluczowe return nie może wystąpić w lambda expression (ciało musi być pojedynczym wyrażeniem, a return to instrukcja). Pozostałe formy są syntaktycznie poprawne."
                 },
                 {
-                    "id": "js-wyk-027",
-                    "type": "open",
-                    "question": "Opisz mechanizm zawierania przez wyjątki w języku Python dodatkowych informacji nazywanych notatkami. Przedstaw jego zastosowanie. Jak można z niego skorzystać, zarówno w celu zapisywania zdarzeń, jak i ich odczytywania? Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
-                    "options": [],
-                    "correctAnswers": [
-                        "__notes__",
-                        "add_note",
-                        "note",
-                        "notatki",
-                        "notatki wyjątków"
-                    ],
-                    "explanation": "W Pythonie 3.11+ wyjątki posiadają atrybut __notes__ (listę notatek tekstowych). Notatki można dodawać za pomocą metody add_note(text) na instancji wyjątku (np. e.add_note('szczegóły')) i odczytywać iterując po e.__notes__."
-                },
-                {
-                    "id": "js-wyk-028",
-                    "type": "open",
-                    "question": "Opisz składnię mechanizmu interpolacji literałów łańcuchów znaków (ang. literal string interpolation). Ponadto wyjaśnij jego działanie i wskaż jego zastosowania. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
-                    "options": [],
-                    "correctAnswers": [
-                        "f-string",
-                        "fstring",
-                        "f-str",
-                        "interpolacja",
-                        "literal string interpolation"
-                    ],
-                    "explanation": "Formatowane literały znakowe (f-strings) deklaruje się prefiksem 'f' lub 'F' (np. f'Tekst {zmienna}'). Python w czasie wykonywania kodu ewaluuje wyrażenia wewnątrz klamer {} i wstawia ich reprezentację tekstową do napisu."
-                },
-                {
-                    "id": "js-wyk-029",
-                    "type": "open",
-                    "question": "Wymień i scharakteryzuj 3 podstawowe cechy, które posiadają wszystkie obiekty w języku Python. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
-                    "options": [],
-                    "correctAnswers": [
-                        "identyfikator, typ, wartość",
-                        "id, typ, wartość",
-                        "id, type, value",
-                        "identyfikator, wartość, typ",
-                        "typ, identyfikator, wartość",
-                        "wartość, typ, identyfikator",
-                        "identyfikator, typ, wartosc"
-                    ],
-                    "explanation": "Każdy obiekt ma: 1. Identyfikator (funkcja id() zwraca unikalny adres pamięci), 2. Typ (funkcja type() określa dostępne operacje i zachowanie), 3. Wartość (dane przechowywane przez obiekt)."
-                },
-                {
-                    "id": "js-wyk-030",
-                    "type": "open",
-                    "question": "Opisz co najmniej dwa sposoby zastępowania w języku Python fragmentów łańcuchów znaków innymi znakami/łańcuchami. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
-                    "options": [],
-                    "correctAnswers": [
-                        "replace, sub",
-                        "replace i sub",
-                        "replace",
-                        "sub",
-                        "replace() i sub()",
-                        "replace(), sub()"
-                    ],
-                    "explanation": "Fragmenty tekstu można zastępować metodą str.replace(stary, nowy) na obiektach tekstowych lub za pomocą biblioteki re i funkcji re.sub(wzorzec, zamiennik, tekst) w celu dopasowywania wzorców wyrażeń regularnych."
-                },
-                {
-                    "id": "js-wyk-031",
-                    "type": "open",
-                    "question": "Podaj definicję i scharakteryzuj obiekt iterowalny (ang. iterable object) w języku Python. Przedstaw jego zastosowania. Wymień co najmniej 3 przykładowe typy danych, których obiekty instancji są obiektami iterowalnymi. Ponadto wskaż dwa przypadki, w których obiekty instancji klas zdefiniowanych przez użytkownika mogą być traktowane jako obiekty iterowalne.",
-                    "options": [],
-                    "correctAnswers": [
-                        "__iter__, __getitem__",
-                        "__iter__",
-                        "iter",
-                        "iterable"
-                    ],
-                    "explanation": "Obiekt iterowalny pozwala na pobranie iteratora (np. przez iter(obj)). Przykłady to list, tuple, str, dict, set. Klasa użytkownika jest iterowalna, jeśli implementuje metodę __iter__() (zwracającą iterator) lub __getitem__() (obsługującą indeksowanie od 0)."
-                },
-                {
-                    "id": "js-wyk-032",
-                    "type": "open",
-                    "question": "Scharakteryzuj typ danych <class 'list'> dostępny w języku Python. Przedstaw co najmniej 2 sposoby deklarowania list oraz podstawowe operacje wspierane przez ten typ danych. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
-                    "options": [],
-                    "correctAnswers": [
-                        "list",
-                        "lista",
-                        "class 'list'",
-                        "<class 'list'>"
-                    ],
-                    "explanation": "Lista (list) to modyfikowalna, uporządkowana sekwencja elementów. Deklaracja: przez nawiasy kwadratowe l = [1, 2] lub konstruktor list(). Podstawowe operacje: dodawanie (append(), extend()), usuwanie (remove(), pop()), indeksowanie i wycinanie."
-                },
-                {
-                    "id": "js-wyk-033",
-                    "type": "open",
-                    "question": "Opisz mechanizm zawierania przez wyjątki w języku Python informacji nazywanych argumentami wyjątków. Przedstaw jak można z niego skorzystać, zarówno w celu przekazania argumentów do wyjątku, jak i późniejszego ich odczytywania. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
-                    "options": [],
-                    "correctAnswers": [
-                        "args",
-                        "e.args",
-                        "e.args[]"
-                    ],
-                    "explanation": "Argumenty przekazane do konstruktora wyjątku (np. raise Exception('komunikat', 404)) są zapisywane w krotce args na instancji wyjątku. Można je odczytać poprzez właściwość e.args."
-                },
-                {
-                    "id": "js-wyk-034",
-                    "type": "open",
-                    "question": "Wymień i scharakteryzuj przesłanki przemawiające za stosowaniem modułów w języku Python.",
-                    "options": [],
-                    "correctAnswers": [
-                        "moduł",
-                        "moduły",
-                        "module",
-                        "modules",
-                        "import"
-                    ],
-                    "explanation": "Główne zalety modułów to: modularność (podział kodu na logiczne części), enkapsulacja (podział przestrzeni nazw i unikanie kolizji nazw) oraz ponowne użycie kodu (reusability) w różnych częściach projektu."
-                },
-                {
-                    "id": "js-wyk-035",
-                    "type": "open",
-                    "question": "Przedstaw podstawowy sposób wczytywania w języku Python wartości od użytkownika. Omawiane rzeczy zilustruj przykładowymi fragmentami kodu.",
-                    "options": [],
-                    "correctAnswers": [
-                        "input",
-                        "input()"
-                    ],
-                    "explanation": "Do wczytywania danych od użytkownika służy wbudowana funkcja input(prompt), która pobiera wejście tekstowe z konsoli i zawsze zwraca wartość typu str."
-                },
-                {
                     "id": "js-wyk-036",
-                    "type": "yn",
+                    "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat operatorów zawierania (ang. membership operators) języka Python (Wersja 2):",
                     "options": [
                         "w przypadku typów sekwencyjnych i zbiorów weryfikują obecność pewnego obiektu wśród elementów kolekcji",
@@ -584,7 +462,7 @@ const jezykiSkryptoweData = {
                 },
                 {
                     "id": "js-wyk-037",
-                    "type": "yn",
+                    "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat usuwania zmiennych w języku Python:",
                     "options": [
                         "usunięcie zmiennej skutkuje usunięciem z przestrzeni nazw powiązania identyfikatora (nazwy) z referencją do obiektu",
@@ -600,7 +478,7 @@ const jezykiSkryptoweData = {
                 },
                 {
                     "id": "js-wyk-038",
-                    "type": "yn",
+                    "type": "multiple",
                     "question": "Wskaż reguły nazywania zmiennych w języku Python:",
                     "options": [
                         "wśród dozwolonych znaków znajdują się wyłącznie małe litery",
@@ -622,7 +500,7 @@ const jezykiSkryptoweData = {
                 },
                 {
                     "id": "js-wyk-039",
-                    "type": "yn",
+                    "type": "multiple",
                     "question": "Wskaż wady interpretowanych języków programowania:",
                     "options": [
                         "programista musi posiadać wiele interpreterów i musi przeprowadzić proces interpretacji wielokrotnie jeśli chce, aby program można było uruchamiać na wielu platformach sprzętowych",
@@ -638,7 +516,7 @@ const jezykiSkryptoweData = {
                 },
                 {
                     "id": "js-wyk-040",
-                    "type": "yn",
+                    "type": "multiple",
                     "question": "Wskaż binarne operatory bitowe języka Python:",
                     "options": [
                         "|",
@@ -664,7 +542,7 @@ const jezykiSkryptoweData = {
                 },
                 {
                     "id": "js-wyk-041",
-                    "type": "yn",
+                    "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat typów danych w języku Python:",
                     "options": [
                         "wartość obiektów dowolnych typów danych może ulegać zmianie",
@@ -680,7 +558,7 @@ const jezykiSkryptoweData = {
                 },
                 {
                     "id": "js-wyk-042",
-                    "type": "yn",
+                    "type": "multiple",
                     "question": "Wyrażenie lambda (ang. lambda expression) w języku Python to funkcja (Wersja 2):",
                     "options": [
                         "anonimowa",
@@ -698,7 +576,7 @@ const jezykiSkryptoweData = {
                 },
                 {
                     "id": "js-wyk-043",
-                    "type": "yn",
+                    "type": "multiple",
                     "question": "Wskaż własności paradygmatu programowania funkcyjnego, którymi cechuje się język Python (Wersja 2):",
                     "options": [
                         "obsługa funkcji wyższego rzędu, które operują na innych funkcjach",
@@ -3158,5 +3036,5 @@ const jezykiSkryptoweData = {
             ]
         }
     ],
-    "dbVersion": 7
+    "dbVersion": 8
 };
