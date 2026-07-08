@@ -26,6 +26,7 @@ function QuestionView({
   const [openAnswer, setOpenAnswer] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [showExplanation, setShowExplanation] = useState(false);
   const [timeLeft, setTimeLeft] = useState(2700); // 45 minutes in seconds
 
   const ITEMS_PER_PAGE = 40;
@@ -37,6 +38,7 @@ function QuestionView({
   }, [questionIndex]);
 
   useEffect(() => {
+    setShowExplanation(false);
     const saved = sessionAnswers[questionIndex];
     if (saved) {
       if (question.type === "yn") {
@@ -345,8 +347,29 @@ function QuestionView({
                   </div>
                   {question.explanation && (
                     <div className="moodle-explanation">
-                      <div className="moodle-explanation-title">Wyjaśnienie:</div>
-                      <div className="moodle-explanation-text">{question.explanation}</div>
+                      {!showExplanation ? (
+                        <button 
+                          className="moodle-btn" 
+                          style={{ padding: "6px 12px", fontSize: "0.8rem", width: "auto" }}
+                          onClick={() => setShowExplanation(true)}
+                        >
+                          💡 Pokaż wyjaśnienie
+                        </button>
+                      ) : (
+                        <div className="animate-slide-down">
+                          <div className="moodle-explanation-title" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                            <span>💡 Wyjaśnienie:</span>
+                            <button 
+                              className="moodle-btn" 
+                              style={{ padding: "2px 8px", fontSize: "0.75rem", minHeight: "auto" }}
+                              onClick={() => setShowExplanation(false)}
+                            >
+                              Ukryj
+                            </button>
+                          </div>
+                          <div className="moodle-explanation-text">{question.explanation}</div>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
