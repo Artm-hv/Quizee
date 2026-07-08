@@ -1,4 +1,4 @@
-const jezykiSkryptoweData = {
+const jezykiSkryptoweData = const jezykiSkryptoweData = {
     "id": "jezyki-skryptowe",
     "name": "Języki skryptowe",
     "icon": "💻",
@@ -2032,11 +2032,11 @@ const jezykiSkryptoweData = {
             ]
         },
         {
-            "id": "js-pe-theory",
-            "name": "Cisco: Pytania teoretyczne",
+            "id": "js-pe1-m1",
+            "name": "PE1: Moduł 1 — Wprowadzenie",
             "questions": [
                 {
-                    "id": "js-pe-theory-001",
+                    "id": "js-pe1-m1-001",
                     "type": "single",
                     "question": "Czym jest kod maszynowy?",
                     "options": [
@@ -2051,7 +2051,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Kod maszynowy to program napisany w języku maszynowym, który składa się z sekwencji liczb binarnych: 0 i 1."
                 },
                 {
-                    "id": "js-pe-theory-002",
+                    "id": "js-pe1-m1-002",
                     "type": "single",
                     "question": "Jakie są cztery podstawowe elementy, które składają się na język?",
                     "options": [
@@ -2066,7 +2066,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Każdy język, czy to język maszynowy, czy język naturalny, składa się z alfabetu, leksyki, składni i semantyki."
                 },
                 {
-                    "id": "js-pe-theory-003",
+                    "id": "js-pe1-m1-003",
                     "type": "single",
                     "question": "Jak nazywa się plik zawierający program napisany w języku programowania wysokiego poziomu?",
                     "options": [
@@ -2081,7 +2081,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Plik źródłowy to plik, który zawiera kod źródłowy, czyli instrukcje programu."
                 },
                 {
-                    "id": "js-pe-theory-004",
+                    "id": "js-pe1-m1-004",
                     "type": "multiple",
                     "question": "Które stwierdzenia na temat kompilacji są prawdziwe ? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2097,7 +2097,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Kompilator tłumaczy (kompiluje) program źródłowy (zbiór instrukcji w języku wysokiego poziomu) na kod maszynowy (niższy poziom reprezentacji programu źródłowego). Sekwencja 0s i 1s może być następnie wykonana przez procesor. Wykonanie skompilowanego kodu jest zazwyczaj szybsze niż interpretacja."
                 },
                 {
-                    "id": "js-pe-theory-005",
+                    "id": "js-pe1-m1-005",
                     "type": "single",
                     "question": "Jaka jest najlepsza definicja skryptu?",
                     "options": [
@@ -2112,7 +2112,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Skrypt to zestaw poleceń w języku wysokiego poziomu zapisanych w pliku, zorganizowanych w sposób umożliwiający ich wykonanie jak programu. Skrypt w języku Python to plik zawierający kod napisany w języku Python."
                 },
                 {
-                    "id": "js-pe-theory-006",
+                    "id": "js-pe1-m1-006",
                     "type": "multiple",
                     "question": "Które stwierdzenia są prawdziwe ? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2128,7 +2128,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Python to darmowy język programowania typu open source, dostępny dla każdego. Jest to język wieloplatformowy, co oznacza, że program napisany w Pythonie na systemie Linux będzie działał na Macu i odwrotnie. Ponieważ Python jest stosunkowo łatwy do nauczenia i posiada prostą składnię, jest dobrym wyborem dla testerów."
                 },
                 {
-                    "id": "js-pe-theory-007",
+                    "id": "js-pe1-m1-007",
                     "type": "single",
                     "question": "Czym jest CPython ?",
                     "options": [
@@ -2143,7 +2143,7 @@ const jezykiSkryptoweData = {
                     "explanation": "CPython to oryginalna (tradycyjna) implementacja w języku Python napisana w języku C, w przeciwieństwie do innych, niedomyślnych implementacji, takich jak Jython, implementowanych w języku Java, które pojawiły się później. CPython jest implementacją języka Python dostępną do pobrania ze strony www.python.org i pierwszą, w której wprowadzono nowe funkcje. Pojawia się ona we wszystkich kolejnych wersjach Pythona."
                 },
                 {
-                    "id": "js-pe-theory-008",
+                    "id": "js-pe1-m1-008",
                     "type": "single",
                     "question": "Jak nazywa się interpreter wiersza poleceń, który umożliwia interakcję z systemem operacyjnym i wykonywanie poleceń i skryptów Pythona?",
                     "options": [
@@ -2158,7 +2158,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Konsola Pythona to interpreter wiersza poleceń, który umożliwia wykonywanie poleceń, instrukcji i skryptów Pythona wiersz po wierszu. Dokładnie tak, jak tutaj:www.python.org/shell."
                 },
                 {
-                    "id": "js-pe-theory-009",
+                    "id": "js-pe1-m1-009",
                     "type": "single",
                     "question": "Jakie jest oczekiwane zachowanie następującego programu? print(\"Hello!\")",
                     "options": [
@@ -2173,7 +2173,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Program wyświetli „Hello!”. Funkcja print wypisuje sprecyzowaną przez nas wiadomość, w tym przypadku„Hello!”."
                 },
                 {
-                    "id": "js-pe-theory-010",
+                    "id": "js-pe1-m1-010",
                     "type": "single",
                     "question": "Jakie jest oczekiwane zachowanie następującego programu? prin(\"Goodbye\")",
                     "options": [
@@ -2186,9 +2186,15 @@ const jezykiSkryptoweData = {
                         2
                     ],
                     "explanation": "Program zgłosi wyjątek NameError, ponieważ Python nie rozpoznaje nazwy prin. Python nie rozpoznaje, że najprawdopodobniej próbujesz użyć słowa print, a nie prin."
-                },
+                }
+            ]
+        },
+        {
+            "id": "js-pe1-m2",
+            "name": "PE1: Moduł 2 — Typy danych, zmienne, operatory, wejście-wyjście",
+            "questions": [
                 {
-                    "id": "js-pe-theory-011",
+                    "id": "js-pe1-m2-001",
                     "type": "single",
                     "question": "Znak \\n powoduje, że funkcja print() :",
                     "options": [
@@ -2203,7 +2209,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Dwuznak, zwany znakiem nowej linii, powoduje, że bieżący wiersz kończy się w punkcie przez niego wskazanym i tworzy nowy wiersz, który zaczyna się zaraz za nim."
                 },
                 {
-                    "id": "js-pe-theory-012",
+                    "id": "js-pe1-m2-002",
                     "type": "single",
                     "question": "Znaczenie parametru kluczowego jest określone przez:",
                     "options": [
@@ -2218,7 +2224,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Parametry słowa kluczowego (zwane także parametrami nazwanymi) to parametry, których wartości są określane przez słowo kluczowe, po którym następuje znak równości (=) i wartość domyślna przypisana do tego słowa kluczowego. Przykład argumentu słowa kluczowego: def my_function(x=1):"
                 },
                 {
-                    "id": "js-pe-theory-013",
+                    "id": "js-pe1-m2-003",
                     "type": "single",
                     "question": "Wartość dwadzieścia przecinek dwanaście razy dziesięć podniesioną do potęgi ósmej należy zapisać jako:",
                     "options": [
@@ -2233,7 +2239,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętając, że Python wybiera najbardziej efektywny format do przedstawiania liczb, a litera E oznacza\"razy dziesięć do potęgi\"w notacji naukowej, prawidłowy sposób zapisywania liczby 20.12 × 10^8 to 20.12E8."
                 },
                 {
-                    "id": "js-pe-theory-014",
+                    "id": "js-pe1-m2-004",
                     "type": "single",
                     "question": "Przedrostek 0o oznacza, że liczba po nim jest zapisana w systemie:",
                     "options": [
@@ -2248,7 +2254,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Jeśli liczba całkowita jest poprzedzona 0o lub 0O, będzie ona traktowana jako wartość ósemkowa. Na przykład: 0o246 to liczba ósemkowa, której wartość dziesiętna to 166. Jeśli liczba całkowita jest poprzedzona 0x lub 0X, będzie ona traktowana jako wartość szesnastkowa. Na przykład: 0x246 to liczba szesnastkowa, której wartość dziesiętna to 582. Na koniec, jeśli liczba całkowita jest poprzedzona przez 0b lub 0B, będzie ona traktowana jako wartość binarna. Na przykład: 0b1111 to liczba binarna, której wartość dziesiętna to 15."
                 },
                 {
-                    "id": "js-pe-theory-015",
+                    "id": "js-pe1-m2-005",
                     "type": "single",
                     "question": "Operator ** :",
                     "options": [
@@ -2263,7 +2269,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Operator ** wykonuje operację potęgowania w Pythonie. Jest on również nazywany operatorem potęgowania."
                 },
                 {
-                    "id": "js-pe-theory-016",
+                    "id": "js-pe1-m2-006",
                     "type": "multiple",
                     "question": "Które z następujących stwierdzeń są prawdziwe ? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2279,7 +2285,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Operator % (modulo) zwraca resztę z dzielenia, a ponieważ nie można dzielić przez zero, prawy operand musi być liczbą różną od zera. W przeciwnym razie zostanie zgłoszony ZeroDivisionException.Operator**wykorzystuje prawostronne wiązanie, co oznacza, że wyrażenie 2**2**3jest obliczane od prawej do lewej:2**3 = 8 i 2**8 = 256."
                 },
                 {
-                    "id": "js-pe-theory-017",
+                    "id": "js-pe1-m2-007",
                     "type": "multiple",
                     "question": "Które z poniższych nazw zmiennych są niedozwolone ? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2295,7 +2301,7 @@ const jezykiSkryptoweData = {
                     "explanation": "True oraz and to słowa kluczowe w Pythonie (słowa zastrzeżone) i nie mogą być używane jako nazwy zmiennych. Ponieważ Python rozróżnia wielkość liter, nazwyTrue i TRUE są całkowicie dozwolone, ale nie są one najlepszym wyborem."
                 },
                 {
-                    "id": "js-pe-theory-018",
+                    "id": "js-pe1-m2-008",
                     "type": "single",
                     "question": "Funkcja print() może wyświetlać następujące wartości:",
                     "options": [
@@ -2308,9 +2314,15 @@ const jezykiSkryptoweData = {
                         0
                     ],
                     "explanation": "Funkcja print() może nie przyjmować żadnych argumentów (np. print()), trzy argumenty (np. print(„one”, „two”, „three”) lub trzy tysiące trzysta trzydzieści trzy... (choć tak naprawdę tego nie sprawdziliśmy!)."
-                },
+                }
+            ]
+        },
+        {
+            "id": "js-pe1-m3",
+            "name": "PE1: Moduł 3 — Wartości logiczne, pętle, listy",
+            "questions": [
                 {
-                    "id": "js-pe-theory-019",
+                    "id": "js-pe1-m3-001",
                     "type": "single",
                     "question": "Operator, który może sprawdzić, czy dwie wartości są sobie równe, jest zapisywany jako:",
                     "options": [
@@ -2325,7 +2337,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-020",
+                    "id": "js-pe1-m3-002",
                     "type": "single",
                     "question": "Jaka wartość zostanie przypisana do zmiennejx?",
                     "options": [
@@ -2340,7 +2352,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-021",
+                    "id": "js-pe1-m3-003",
                     "type": "single",
                     "question": "Drugie przypisanie:",
                     "options": [
@@ -2355,7 +2367,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-022",
+                    "id": "js-pe1-m3-004",
                     "type": "multiple",
                     "question": "Spójrz na fragment i wybierz stwierdzenie które sąprawdziwe: (Wybierzdwieodpowiedzi)",
                     "options": [
@@ -2371,7 +2383,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-023",
+                    "id": "js-pe1-m3-005",
                     "type": "multiple",
                     "question": "Wybierz które stwierdzenia sąprawdziwe(Wybierzdwieodpowiedzi)",
                     "options": [
@@ -2387,7 +2399,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-024",
+                    "id": "js-pe1-m3-006",
                     "type": "single",
                     "question": "Z ilu elementów składa się listamy_list?",
                     "options": [
@@ -2400,9 +2412,15 @@ const jezykiSkryptoweData = {
                         0
                     ],
                     "explanation": ""
-                },
+                }
+            ]
+        },
+        {
+            "id": "js-pe1-m4",
+            "name": "PE1: Moduł 4 — Funkcje, krotki, słowniki, wyjątki",
+            "questions": [
                 {
-                    "id": "js-pe-theory-025",
+                    "id": "js-pe1-m4-001",
                     "type": "single",
                     "question": "Który z poniższych wierszy prawidłowo rozpoczyna definicję funkcji bezparametrowej?",
                     "options": [
@@ -2417,7 +2435,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Poprawny sposób deklaracji funkcji w Pythonie polega na użyciu zastrzeżonego słowa kluczowego def , po którym następuje nazwa funkcji, nawiasy () oraz dwukropek :. Ponieważ nie ma parametrów, nawiasy są puste."
                 },
                 {
-                    "id": "js-pe-theory-026",
+                    "id": "js-pe1-m4-002",
                     "type": "single",
                     "question": "Funkcja wbudowana to taka funkcja, która:",
                     "options": [
@@ -2432,7 +2450,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Funkcje wbudowane są zintegrowane z Pythonem. Po zainstalowaniu Pythona są dostępne i mogą być używane."
                 },
                 {
-                    "id": "js-pe-theory-027",
+                    "id": "js-pe1-m4-003",
                     "type": "single",
                     "question": "Przynależność krotek do typów danych sekwencyjnych oznacza, że:",
                     "options": [
@@ -2447,7 +2465,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Krotki są obiektami niemodyfikowalnymi, dlatego mogą być indeksowane i dzielone (slicing) w sposób analogiczny do list. Jednak w trakcie działania nie można ich rozszerzać ani modyfikować. TO NIE są listy."
                 },
                 {
-                    "id": "js-pe-theory-028",
+                    "id": "js-pe1-m4-004",
                     "type": "single",
                     "question": "Która z poniższych linii poprawnie inicjuje funkcję z dwoma parametrami, oba z domyślnymi wartościami równymi zero?",
                     "options": [
@@ -2462,7 +2480,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Poprawny sposób definiowania parametrów z wartościami domyślnymi polega na wskazaniu nazwy zmiennej, znaku przypisania (=) oraz wartości domyślnej, np. a=0. Jeśli istnieje więcej wartości domyślnych, oddziel je przecinkami."
                 },
                 {
-                    "id": "js-pe-theory-029",
+                    "id": "js-pe1-m4-005",
                     "type": "multiple",
                     "question": "Które z poniższych stwierdzeń jest prawdziwe? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2476,9 +2494,15 @@ const jezykiSkryptoweData = {
                         1
                     ],
                     "explanation": "Wartość None może zostać przypisana do dowolnej zmiennej, zarówno wewnątrz, jak i na zewnątrz funkcji. Może być również używana w wyrażeniach warunkowych i pętlach. Nie można jej jednak używać w operacjach arytmetycznych."
-                },
+                }
+            ]
+        },
+        {
+            "id": "js-pe1-final",
+            "name": "PE1: Test końcowy",
+            "questions": [
                 {
-                    "id": "js-pe-theory-030",
+                    "id": "js-pe1-final-001",
                     "type": "single",
                     "question": "W kontekście wywołania funkcji w Pythonie, co decyduje o znaczeniu argumentu pozycyjnego?",
                     "options": [
@@ -2491,7 +2515,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-031",
+                    "id": "js-pe1-final-002",
                     "type": "single",
                     "question": "Operator sprawdzający czy dwie wartości nie są sobie równe jest zapisywany jako:",
                     "options": [
@@ -2504,7 +2528,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-032",
+                    "id": "js-pe1-final-003",
                     "type": "single",
                     "question": "Przejrzyj następujące identyfikatory i wybierz te, które są zarezerwowanymi słowami kluczowymi w Pythonie i spowodowałyby błąd składniowy, jeśli zostałyby użyte jako nazwy zmiennych. (wybierz dwie odpowiedzi)",
                     "options": [
@@ -2515,9 +2539,15 @@ const jezykiSkryptoweData = {
                     ],
                     "correctAnswers": [],
                     "explanation": ""
-                },
+                }
+            ]
+        },
+        {
+            "id": "js-pe2-m1",
+            "name": "PE2: Moduł 1 — Pakiety, PIP, charakterystyka i wyjątki",
+            "questions": [
                 {
-                    "id": "js-pe-theory-033",
+                    "id": "js-pe2-m1-001",
                     "type": "single",
                     "question": "Wiedząc, że funkcja o nazwie fun() znajduje się w module o nazwie mod, wybierz właściwy sposób jej zaimportowania.",
                     "options": [
@@ -2532,7 +2562,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że aby zaimportować określone funkcje z modułu, używane jest słowo kluczowe from, po którym następuje nazwa modułu. Następnie po słowie kluczowym import podaj nazwy funkcji, oddzielając je przecinkami."
                 },
                 {
-                    "id": "js-pe-theory-034",
+                    "id": "js-pe2-m1-002",
                     "type": "single",
                     "question": "Wiedząc, że funkcja o nazwie fun() znajduje się w module o nazwie mod i została zaimportowana przy użyciu następującej linii: \n zaimportuj mod\n Wybierz sposób, w jaki można go wywołać w kodzie.",
                     "options": [
@@ -2547,7 +2577,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Jeśli importowany jest cały moduł, wywołanie funkcji musi mieć następującą składnię nazwa_modułu.nazwa_funkcji()."
                 },
                 {
-                    "id": "js-pe-theory-035",
+                    "id": "js-pe2-m1-003",
                     "type": "single",
                     "question": "Funkcja zwracająca listę wszystkich obiektów dostępnych w module nazywa się:",
                     "options": [
@@ -2562,7 +2592,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że funkcja dir() zwraca wszystkie właściwości i metody określonego obiektu, łącznie z właściwościami wbudowanymi."
                 },
                 {
-                    "id": "js-pe-theory-036",
+                    "id": "js-pe2-m1-004",
                     "type": "single",
                     "question": "Plik pyc zawiera:",
                     "options": [
@@ -2577,7 +2607,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że pliki pyc są tworzone przez interpreter Pythona przy użyciu plików py. Zawierają skompilowany kod bajtowy kodu źródłowego."
                 },
                 {
-                    "id": "js-pe-theory-037",
+                    "id": "js-pe2-m1-005",
                     "type": "single",
                     "question": "Po zaimportowaniu modułu jego zawartość:",
                     "options": [
@@ -2592,7 +2622,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Kiedy importowany jest moduł w Pythonie, cały plik jest wykonywany jednokrotnie, niejawnie, aby mieć pewność, że w module nie ma żadnych błędów."
                 },
                 {
-                    "id": "js-pe-theory-038",
+                    "id": "js-pe2-m1-006",
                     "type": "single",
                     "question": "Predefiniowana zmienna Pythona, która przechowuje bieżącą nazwę modułu, nazywa się:",
                     "options": [
@@ -2607,7 +2637,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Zmienna __name__ (dwa podkreślenia przed i po) jest specjalną zmienną Pythona. Po zaimportowaniu modułu będzie on zawierał nazwę pliku modułu."
                 },
                 {
-                    "id": "js-pe-theory-039",
+                    "id": "js-pe2-m1-007",
                     "type": "single",
                     "question": "Poniższe oświadczenie: \n z a.b import c \n powoduje import:",
                     "options": [
@@ -2622,7 +2652,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Używając notacji z a.b import c, c identyfikuje importowaną jednostkę lub funkcję, b identyfikuje moduł (plik źródłowy) i pakiet (folder)."
                 },
                 {
-                    "id": "js-pe-theory-040",
+                    "id": "js-pe2-m1-008",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe. (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2638,7 +2668,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Moduł platformy odzyskuje informacje o systemie operacyjnym z Twojego systemu. Funkcja wersji zwraca ciąg znaków z wersją systemu operacyjnego, a funkcja systemowa zwraca ciąg znaków z nazwą systemu operacyjnego."
                 },
                 {
-                    "id": "js-pe-theory-041",
+                    "id": "js-pe2-m1-009",
                     "type": "single",
                     "question": "Podczas pierwszego importu modułu Python instaluje pliki pyc w katalogu o nazwie:",
                     "options": [
@@ -2653,7 +2683,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że __pycache__ to katalog zawierający pliki pamięci podręcznej w kodzie bajtowym (.pyc), które są automatycznie generowane przez Python."
                 },
                 {
-                    "id": "js-pe-theory-042",
+                    "id": "js-pe2-m1-010",
                     "type": "single",
                     "question": "Dwuznak zapisany jako #! jest przyzwyczajony do:",
                     "options": [
@@ -2668,7 +2698,7 @@ const jezykiSkryptoweData = {
                     "explanation": "#! pomaga określić typ programu, który należy wywołać w celu uruchomienia całego pliku skryptu w systemach typu Unix. Jest zawsze używany w pierwszej linii dowolnego pliku."
                 },
                 {
-                    "id": "js-pe-theory-043",
+                    "id": "js-pe2-m1-011",
                     "type": "single",
                     "question": "Listę zależności pakietów można uzyskać z pip za pomocą polecenia o nazwie:",
                     "options": [
@@ -2683,7 +2713,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Polecenie show wyświetla informacje o metadanych pakietu, takie jak wersja, opis, autor, informacje o licencji, podsumowanie i zależności."
                 },
                 {
-                    "id": "js-pe-theory-044",
+                    "id": "js-pe2-m1-012",
                     "type": "single",
                     "question": "Polecenie pip list wyświetla listę:",
                     "options": [
@@ -2698,7 +2728,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że polecenie pip list zwraca listę pakietów zainstalowanych w bieżącym środowisku lokalnym."
                 },
                 {
-                    "id": "js-pe-theory-045",
+                    "id": "js-pe2-m1-013",
                     "type": "multiple",
                     "question": "Jaka jest prawda w przypadku polecenia wyszukiwania pip? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2714,7 +2744,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że polecenie pip search służy do przeszukiwania indeksu i identyfikowania pakietów pasujących do wyszukiwanych haseł we wszystkich pakietach PyPI. Dlatego do działania wymagane jest połączenie z Internetem."
                 },
                 {
-                    "id": "js-pe-theory-046",
+                    "id": "js-pe2-m1-014",
                     "type": "multiple",
                     "question": "Jaka jest prawda w przypadku polecenia pip install? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2730,7 +2760,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że aby zainstalować konkretną wersję pakietu Pythona, możesz użyć pip install nazwa_pakietu==wersja_pakietu. Opcja --user zmienia zakres instalacji na katalog domowy użytkownika, a nie na domyślną instalację ogólnosystemową."
                 },
                 {
-                    "id": "js-pe-theory-047",
+                    "id": "js-pe2-m1-015",
                     "type": "single",
                     "question": "Jaka jest prawda o aktualizowaniu już zainstalowanych pakietów Pythona?",
                     "options": [
@@ -2745,7 +2775,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że opcja -U, --upgrade aktualizuje wszystkie zainstalowane pakiety do najnowszej dostępnej wersji."
                 },
                 {
-                    "id": "js-pe-theory-048",
+                    "id": "js-pe2-m1-016",
                     "type": "single",
                     "question": "Którego polecenia możesz użyć pip, aby usunąć zainstalowany pakiet?",
                     "options": [
@@ -2758,9 +2788,15 @@ const jezykiSkryptoweData = {
                         0
                     ],
                     "explanation": "Pamiętaj, że opcja usuwa zainstalowany pakiet ze środowiska."
-                },
+                }
+            ]
+        },
+        {
+            "id": "js-pe2-m2",
+            "name": "PE2: Moduł 2 — Łańcuchy znaków, operacje na znakach, metody",
+            "questions": [
                 {
-                    "id": "js-pe-theory-049",
+                    "id": "js-pe2-m2-001",
                     "type": "single",
                     "question": "Wprowadzenie bloku try: oznacza, że:",
                     "options": [
@@ -2775,7 +2811,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że instrukcje wewnątrz bloku try są wykonywane sekwencyjnie. Jeśli instrukcja generuje wyjątek, wykonanie przechodzi do instrukcji z wyjątkiem. Dlatego pozostałe instrukcje w bloku try nie są wykonywane."
                 },
                 {
-                    "id": "js-pe-theory-050",
+                    "id": "js-pe2-m2-002",
                     "type": "single",
                     "question": "Nienazwany blok z wyjątkiem:",
                     "options": [
@@ -2790,7 +2826,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyjątki w bloku try require powinny być wymienione spośród konkretnych wyjątków od ogólnych wyjątków. Gwarantuje to, że w przypadku błędu będzie on objęty odpowiednim wyjątkiem. Nienazwany wyjątek musi być ostatnim wyjątkiem na liście, ponieważ jest to najbardziej ogólny wyjątek."
                 },
                 {
-                    "id": "js-pe-theory-051",
+                    "id": "js-pe2-m2-003",
                     "type": "single",
                     "question": "Najwyższy wyjątek w Pythonie nazywa się:",
                     "options": [
@@ -2805,7 +2841,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że klasa BaseException jest, jak sama nazwa wskazuje, klasą bazową dla wszystkich wbudowanych wyjątków w Pythonie."
                 },
                 {
-                    "id": "js-pe-theory-052",
+                    "id": "js-pe2-m2-004",
                     "type": "multiple",
                     "question": "Które z poniższych są przykładami wbudowanych konkretnych wyjątków w języku Python? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2821,7 +2857,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że konkretne wyjątki w Pythonie są wyjątkami wbudowanymi, które dziedziczą bezpośrednio z klasy wyjątków. IndexError i ImportError są takimi przypadkami."
                 },
                 {
-                    "id": "js-pe-theory-053",
+                    "id": "js-pe2-m2-005",
                     "type": "single",
                     "question": "ASCII to:",
                     "options": [
@@ -2836,7 +2872,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że ASCII oznacza amerykański standardowy kod wymiany informacji. Jest to 7-bitowy kod znakowy opracowany w latach 19-60 XX wieku w celu reprezentowania znaków anglojęzycznych."
                 },
                 {
-                    "id": "js-pe-theory-054",
+                    "id": "js-pe2-m2-006",
                     "type": "single",
                     "question": "UTF-8 to:",
                     "options": [
@@ -2851,7 +2887,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że UTF-8 jest najpopularniejszym typem kodowania Unicode. Używa 1 bitu dla znaków angielskich, 2 bity dla znaków łacińskich i bliskowschodnich oraz 3 bity dla znaków azjatyckich."
                 },
                 {
-                    "id": "js-pe-theory-055",
+                    "id": "js-pe2-m2-007",
                     "type": "single",
                     "question": "UNICODE to standard:",
                     "options": [
@@ -2864,9 +2900,15 @@ const jezykiSkryptoweData = {
                         0
                     ],
                     "explanation": "Pamiętaj, że UNICODE to uniwersalny standard kodowania znaków. Obsługuje znaki ze wszystkich języków świata."
-                },
+                }
+            ]
+        },
+        {
+            "id": "js-pe2-m3",
+            "name": "PE2: Moduł 3 — Programowanie zorientowane obiektowo (OOP)",
+            "questions": [
                 {
-                    "id": "js-pe-theory-056",
+                    "id": "js-pe2-m3-001",
                     "type": "single",
                     "question": "Struktura danych opisana jako LIFO to w rzeczywistości:",
                     "options": [
@@ -2879,9 +2921,15 @@ const jezykiSkryptoweData = {
                         0
                     ],
                     "explanation": "Stos to obiekt przeznaczony do przechowywania danych z wykorzystaniem modelu LIFO (ang. Last-In-First-Out), natomiast LIFO to metoda obsługi struktur danych, w której pierwszy element przetwarzany jest jako ostatni, a ostatni element przetwarzany jest jako pierwszy."
-                },
+                }
+            ]
+        },
+        {
+            "id": "js-pe2-m4",
+            "name": "PE2: Moduł 4 — Generatory, domknięcia i operacje na plikach",
+            "questions": [
                 {
-                    "id": "js-pe-theory-057",
+                    "id": "js-pe2-m4-001",
                     "type": "single",
                     "question": "Jakiego słowa kluczowego użyłbyś do zdefiniowania funkcji anonimowej?",
                     "options": [
@@ -2896,7 +2944,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że w Pythonie funkcja lambda to funkcja jednoliniowa zadeklarowana bez nazwy – innymi słowy anonimowa."
                 },
                 {
-                    "id": "js-pe-theory-058",
+                    "id": "js-pe2-m4-002",
                     "type": "multiple",
                     "question": "Wybierz stwierdzenia Prawdziwe. (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2912,7 +2960,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Pamiętaj, że funkcja lambda może mieć dowolną liczbę argumentów, ale może ocenić tylko jedno wyrażenie."
                 },
                 {
-                    "id": "js-pe-theory-059",
+                    "id": "js-pe2-m4-003",
                     "type": "multiple",
                     "question": "Który z poniższych trybów otwartych umożliwia wykonywanie operacji odczytu? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2928,7 +2976,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Oto tryby otwarcia w Pythonie:r - otwiera plik do odczytu.w - otwiera plik do zapisu.a - otwiera plik do dołączenia na końcu. Tworzy nowy plik jeśli nie istnieje.t - otwiera się w trybie tekstowym.b - otwiera się w trybie binarnym.+ - otwiera plik do aktualizacji (odczytu i zapisu)."
                 },
                 {
-                    "id": "js-pe-theory-060",
+                    "id": "js-pe2-m4-004",
                     "type": "single",
                     "question": "Jakie jest znaczenie wartości reprezentowanej przez errno.EEXIST?",
                     "options": [
@@ -2941,9 +2989,15 @@ const jezykiSkryptoweData = {
                         0
                     ],
                     "explanation": "Pamiętaj, że errno.EEXIST oznacza, że ​​plik lub katalog, który chcesz utworzyć, już istnieje."
-                },
+                }
+            ]
+        },
+        {
+            "id": "js-pe2-final",
+            "name": "PE2: Test końcowy",
+            "questions": [
                 {
-                    "id": "js-pe-theory-061",
+                    "id": "js-pe2-final-001",
                     "type": "single",
                     "question": "Skompilowany kod bajtowy Pythona jest przechowywany w plikach, których nazwy kończą się na:",
                     "options": [
@@ -2956,7 +3010,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-062",
+                    "id": "js-pe2-final-002",
                     "type": "single",
                     "question": "Z czym zazwyczaj kojarzy się strumień sys.stdout w Pythonie?",
                     "options": [
@@ -2969,7 +3023,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-063",
+                    "id": "js-pe2-final-003",
                     "type": "single",
                     "question": "Jeśli chcesz wypełnić tablicę bajtów danymi wczytanymi ze strumienia, jakiej metody możesz użyć?",
                     "options": [
@@ -2982,7 +3036,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-064",
+                    "id": "js-pe2-final-004",
                     "type": "single",
                     "question": "Którego z poniższych poleceń użyłbyś do sprawdzenia wersji pip? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -2995,7 +3049,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-065",
+                    "id": "js-pe2-final-005",
                     "type": "single",
                     "question": "Którego z poniższych poleceń można użyć z pip, aby odinstalować określony pakiet Pythona?",
                     "options": [
@@ -3008,7 +3062,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-066",
+                    "id": "js-pe2-final-006",
                     "type": "single",
                     "question": "Jakie informacje można odczytać korzystając z funkcji uname udostępnianej przez moduł os? (Wybierz dwie odpowiedzi)",
                     "options": [
@@ -3021,7 +3075,7 @@ const jezykiSkryptoweData = {
                     "explanation": ""
                 },
                 {
-                    "id": "js-pe-theory-067",
+                    "id": "js-pe2-final-007",
                     "type": "single",
                     "question": "Jeśli chcesz obliczyć datę przypadającą 30 dni po bieżącej dacie, którego z poniższych fragmentów kodu byś użył?",
                     "options": [
@@ -3036,5 +3090,6 @@ const jezykiSkryptoweData = {
             ]
         }
     ],
-    "dbVersion": 8
+    "dbVersion": 9
 };
+;
