@@ -1,4 +1,4 @@
-const jezykiSkryptoweData = {
+const jezykiSkryptoweData = const jezykiSkryptoweData = {
     "id": "jezyki-skryptowe",
     "name": "Języki skryptowe",
     "icon": "💻",
@@ -9,7 +9,7 @@ const jezykiSkryptoweData = {
             "name": "Wyk zadania",
             "questions": [
                 {
-                    "id": "js-wyk-001",
+                    "id": "js-wyk-zadania-v3-001",
                     "type": "multiple",
                     "question": "W języku Python cechą każdego obiektu jest:",
                     "options": [
@@ -26,7 +26,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Każdy obiekt w Pythonie posiada unikalny identyfikator (funkcja id()), typ (klasę) określający jego zachowanie oraz wartość. Nazwa (zmienna) nie jest cechą samego obiektu."
                 },
                 {
-                    "id": "js-wyk-002",
+                    "id": "js-wyk-zadania-v3-002",
                     "type": "multiple",
                     "question": "Język Python posiada typowanie:",
                     "options": [
@@ -42,7 +42,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Python ma typowanie dynamiczne (typy są sprawdzane w czasie wykonania) oraz silne (brak niejawnej konwersji typów)."
                 },
                 {
-                    "id": "js-wyk-003",
+                    "id": "js-wyk-zadania-v3-003",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat identyfikatorów obiektów w języku Python:",
                     "options": [
@@ -58,7 +58,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Identyfikatory (adresy pamięci) są unikalne dla obiektów istniejących jednocześnie. Obiekty o rozłącznych czasach życia mogą współdzielić ten sam identyfikator."
                 },
                 {
-                    "id": "js-wyk-004",
+                    "id": "js-wyk-zadania-v3-004",
                     "type": "single",
                     "question": "Zmienne w języku Python przechowują:",
                     "options": [
@@ -73,7 +73,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wszystkie zmienne w Pythonie przechowują wskaźniki (referencje) do obiektów umieszczonych w stercie pamięci."
                 },
                 {
-                    "id": "js-wyk-005",
+                    "id": "js-wyk-zadania-v3-005",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat typu danych <class 'tuple'> języka Python:",
                     "options": [
@@ -92,7 +92,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Krotka (tuple) to niemodyfikowalny (immutable) typ sekwencyjny pozwalający na elementy heterogeniczne (różnych typów). Indeksowanie zaczyna się od 0, a składnia dopuszcza nawiasy okrągłe."
                 },
                 {
-                    "id": "js-wyk-006",
+                    "id": "js-wyk-zadania-v3-006",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat typu danych <class 'dict'> języka Python:",
                     "options": [
@@ -108,7 +108,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Klucze w dict muszą być hashowalne (immutable), wartości mogą być dowolne. W nowoczesnym Pythonie kolejność wstawiania elementów jest zachowywana podczas iteracji."
                 },
                 {
-                    "id": "js-wyk-007",
+                    "id": "js-wyk-zadania-v3-007",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat typu danych <class 'list'> języka Python:",
                     "options": [
@@ -127,7 +127,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Lista (list) to modyfikowalny (mutable) typ sekwencyjny. Pozwala na elementy heterogeniczne, indeksowanie zaczyna się od 0, a do deklarowania używa się nawiasów kwadratowych."
                 },
                 {
-                    "id": "js-wyk-008",
+                    "id": "js-wyk-zadania-v3-008",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat mechanizmu rozpakowywania sekwencyjnych typów danych (ang. sequence unpacking) w języku Python:",
                     "options": [
@@ -143,7 +143,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Rozpakowywanie przypisuje elementy sekwencji do zmiennych po lewej stronie przypisania. Liczba zmiennych po lewej stronie musi odpowiadać liczbie elementów rozpakowywanej sekwencji po prawej."
                 },
                 {
-                    "id": "js-wyk-009",
+                    "id": "js-wyk-zadania-v3-009",
                     "type": "multiple",
                     "question": "Zastosowaniami operatora indeksowania w kontekście sekwencyjnych typów danych języka Python są:",
                     "options": [
@@ -159,7 +159,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Operator indeksowania [] pozwala na odczyt i modyfikację (dla list) elementów pod konkretnym indeksem, oraz na wycinanie podsekwencji (slicing) za pomocą składni [start:stop:step]."
                 },
                 {
-                    "id": "js-wyk-010",
+                    "id": "js-wyk-zadania-v3-010",
                     "type": "multiple",
                     "question": "Mechanizmowi niejawnej konkatenacji (ang. implicit concatenation) łańcuchów znaków podlegają w języku Python:",
                     "options": [
@@ -178,7 +178,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Niejawna konkatenacja dotyczy wyłącznie literale (string literals) oddzielonych spacjami lub innymi białymi znakami (np. w nawiasach). Zmienne i ogólne wyrażenia string nie podlegają temu mechanizmowi."
                 },
                 {
-                    "id": "js-wyk-011",
+                    "id": "js-wyk-zadania-v3-011",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat instrukcji warunkowej języka Python:",
                     "options": [
@@ -194,7 +194,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Formatowanie PEP 8 zaleca 4 spacje do wcięć. Bloki instrukcji warunkowych otwierane są znakiem dwukropka (:). Kaskada warunków korzysta z elif, a końcowy blok z else."
                 },
                 {
-                    "id": "js-wyk-012",
+                    "id": "js-wyk-zadania-v3-012",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat instrukcji warunkowej języka Python:",
                     "options": [
@@ -210,7 +210,7 @@ const jezykiSkryptoweData = {
                     "explanation": "W Pythonie elif realizuje kaskadę warunków, a else jest blokiem domyślnym. Bloki kodu otwiera się dwukropkiem, a wcięcia formatuje spacjami."
                 },
                 {
-                    "id": "js-wyk-013",
+                    "id": "js-wyk-zadania-v3-013",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat wyrażenia warunkowego (ang. conditional expression) języka Python:",
                     "options": [
@@ -226,7 +226,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyrażenie warunkowe w Pythonie (operator trójargumentowy) ma postać 'x if condition else y' i zwraca jedną z dwóch wartości. Ma niski priorytet, ale wyższy niż przypisanie."
                 },
                 {
-                    "id": "js-wyk-014",
+                    "id": "js-wyk-zadania-v3-014",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat wyrażenia warunkowego (ang. conditional expression) języka Python:",
                     "options": [
@@ -242,7 +242,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyrażenie warunkowe to operator trójargumentowy. Pomijając przypisanie, ma najniższy priorytet (niższy niż operatory logiczne and/or)."
                 },
                 {
-                    "id": "js-wyk-015",
+                    "id": "js-wyk-zadania-v3-015",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat typu danych <class 'range'> języka Python:",
                     "options": [
@@ -258,7 +258,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Klasa range reprezentuje niezmienną sekwencję liczb całkowitych, bardzo popularną w pętlach for. Parametry to range(start, stop, step) i nie obsługuje ona liczb zmiennoprzecinkowych."
                 },
                 {
-                    "id": "js-wyk-016",
+                    "id": "js-wyk-zadania-v3-016",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat operatorów zawierania (ang. membership operators) języka Python:",
                     "options": [
@@ -275,7 +275,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Operator not in zwraca True, jeśli elementu nie ma w kolekcji, a False w przeciwnym wypadku. W słownikach (dict) operator 'in'/'not in' sprawdza klucze, a nie wartości. Sekwencje i zbiory nie posiadają kluczy, sprawdzana jest obecność elementu."
                 },
                 {
-                    "id": "js-wyk-017",
+                    "id": "js-wyk-zadania-v3-017",
                     "type": "multiple",
                     "question": "Wskaż własności paradygmatu programowania funkcyjnego, którymi cechuje się język Python:",
                     "options": [
@@ -291,7 +291,7 @@ const jezykiSkryptoweData = {
                     "explanation": "W Pythonie funkcje są obiektami pierwszej klasy (first-class functions) i można stosować rekurencję. Zmienne mutowalne należą do programowania imperatywnego, a funkcje operujące na innych funkcjach to funkcje wyższego (a nie niższego) rzędu."
                 },
                 {
-                    "id": "js-wyk-018",
+                    "id": "js-wyk-zadania-v3-018",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat mechanizmu obsługi wyjątków w języku Python:",
                     "options": [
@@ -307,7 +307,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Blok else w try-except wykonuje się przy braku błędów, a finally zawsze. Bare except (bez typu) musi być na samym końcu. Do łapania wielu wyjątków służy krotka (tuple), a nie lista. Blok except łapie wyjątek danego typu oraz typy podrzędne (subclasses), więc wyrażenie w except reprezentuje typ nadrzędny (superclass) w stosunku do podniesionego wyjątku."
                 },
                 {
-                    "id": "js-wyk-019",
+                    "id": "js-wyk-zadania-v3-019",
                     "type": "multiple",
                     "question": "Pamiętając o tym, że:\n- suite to blok kodu,\n- nawiasy kwadratowe oznaczają część opcjonalną,\n- znak plus informuje o tym, że fragment w nawiasach okrągłych może zostać powtórzony,\nwskaż składnię mechanizmu obsługi wyjątków w języku Python:",
                     "options": [
@@ -326,7 +326,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Poprawna składnia to albo try-finally (opcja b), albo try followed by one or more except blocks, optional else, and optional finally (opcja c)."
                 },
                 {
-                    "id": "js-wyk-020",
+                    "id": "js-wyk-zadania-v3-020",
                     "type": "multiple",
                     "question": "Wyrażenie lambda (ang. lambda expression) w języku Python to funkcja:",
                     "options": [
@@ -344,7 +344,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Funkcje lambda są anonimowe, definiowane inline, zawierają jedno wyrażenie zwracające wartość i nie mogą zawierać instrukcji złożonych (np. pętli) ani adnotacji typów."
                 },
                 {
-                    "id": "js-wyk-021",
+                    "id": "js-wyk-zadania-v3-021",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat procesów kompilacji i interpretacji kodu źródłowego programu:",
                     "options": [
@@ -360,7 +360,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Kompilacja do bytecode zachodzi przed wykonaniem programu. Interpretacja (wykonywanie instrukcji bytecode przez maszynę wirtualną) zachodzi przy każdym uruchomieniu."
                 },
                 {
-                    "id": "js-wyk-022",
+                    "id": "js-wyk-zadania-v3-022",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat identyfikatorów obiektów w języku Python:",
                     "options": [
@@ -376,7 +376,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Identyfikatory (adresy) obiektów istniejących jednocześnie muszą być unikalne. Obiekty o rozłącznych czasach życia mogą współdzielić ten sam identyfikator."
                 },
                 {
-                    "id": "js-wyk-023",
+                    "id": "js-wyk-zadania-v3-023",
                     "type": "multiple",
                     "question": "W języku Python cechą każdego obiektu jest:",
                     "options": [
@@ -393,7 +393,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Każdy obiekt w Pythonie ma identyfikator, typ i wartość. Nazwa jest etykietą przypisaną w danej przestrzeni nazw."
                 },
                 {
-                    "id": "js-wyk-024",
+                    "id": "js-wyk-zadania-v3-024",
                     "type": "multiple",
                     "question": "Wskaż prawdziwe zdania na temat operatora wycinania (slicing) w języku Python:",
                     "options": [
@@ -409,7 +409,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wycinanie tworzy nową sekwencję. Składnia [start:stop:step] wyznacza zakres prawostronnie otwarty (bez elementu pod indeksem stop). Krok może być ujemny."
                 },
                 {
-                    "id": "js-wyk-025",
+                    "id": "js-wyk-zadania-v3-025",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat operatora not in w języku Python:",
                     "options": [
@@ -426,7 +426,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Operator not in zwraca True, jeśli sprawdzany obiekt nie znajduje się w kolekcji, a False, jeśli się w niej znajduje. Jest operatorem dwuargumentowym i nie rzuca błędu na pustej kolekcji."
                 },
                 {
-                    "id": "js-wyk-026",
+                    "id": "js-wyk-zadania-v3-026",
                     "type": "multiple",
                     "question": "Wskaż przykłady poprawnego i syntaktycznie prawidłowego użycia wyrażeń lambda w języku Python:",
                     "options": [
@@ -443,7 +443,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Słowo kluczowe return nie może wystąpić w lambda expression (ciało musi być pojedynczym wyrażeniem, a return to instrukcja). Pozostałe formy są syntaktycznie poprawne."
                 },
                 {
-                    "id": "js-wyk-036",
+                    "id": "js-wyk-zadania-v3-027",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat operatorów zawierania (ang. membership operators) języka Python (Wersja 2):",
                     "options": [
@@ -461,7 +461,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Dla list, krotek i zbiorów operatory in/not in sprawdzają przynależność elementu do kolekcji.\n• **Opcja b) (NIE):** not in zwraca True, gdy obiekt NIE zawiera się w innym.\n• **Opcja c) (TAK):** Dla str operatory in/not in sprawdzają, czy jeden napis jest podłańcuchem drugiego.\n• **Opcja d) (NIE):** not in zwraca True (prawdę), gdy elementu nie ma w kolekcji.\n• **Opcja e) (TAK):** W słownikach (dict) sprawdzenie in/not in domyślnie wyszukuje klucze, a не wartości."
                 },
                 {
-                    "id": "js-wyk-037",
+                    "id": "js-wyk-zadania-v3-028",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat usuwania zmiennych w języku Python:",
                     "options": [
@@ -477,7 +477,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Instrukcja del usuwa powiązanie nazwy z referencją z przestrzeni nazw (namespace).\n• **Opcja b) (TAK):** del usuwa zdefiniowane wcześniej identyfikatory zmiennych.\n• **Opcja c) (NIE):** del działa na przestrzeni nazw, a nie bezpośrednio na statycznym zasięgu (scope).\n• **Opcja d) (NIE):** Użycie del wobec niezdefiniowanego identyfikatora zgłasza błąd NameError."
                 },
                 {
-                    "id": "js-wyk-038",
+                    "id": "js-wyk-zadania-v3-029",
                     "type": "multiple",
                     "question": "Wskaż reguły nazywania zmiennych w języku Python:",
                     "options": [
@@ -499,7 +499,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyjaśnienia:\n• **Opcje b) i c) (TAK):** Python rozróżnia wielkość liter (case-sensitive) i dopuszcza znaki A-Z, a-z, cyfry oraz znak podkreślenia _.\n• **Opcja e) (NIE):** Nazwa nie może zaczynać się від cyfry.\n• **Opcja g) (TAK):** Według definicji wykładowej, nazwa musi zaczynać się od litery (lub znaku podkreślenia, który jest traktowany w tej samej kategorii).\n• **Opcja h) (TAK):** Długość identyfikatorów w Pythonie nie jest limitowana standardem języka."
                 },
                 {
-                    "id": "js-wyk-039",
+                    "id": "js-wyk-zadania-v3-030",
                     "type": "multiple",
                     "question": "Wskaż wady interpretowanych języków programowania:",
                     "options": [
@@ -515,7 +515,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** Jedną z głównych zalet języków interpretowanych є przenośność (kod źródłowy jest interpretowany na dowolnym systemie bez dodatkowej pracy programisty).\n• **Opcja b) (NIE):** Sama interpretacja to proces uruchomienia. Według klucza Moodle, ta opcja nie jest uznawana za wadę w tym pytaniu.\n• **Opcja c) (TAK):** Uruchomienie programu wymaga obecności interpretera u klienta docelowego.\n• **Opcja d) (TAK):** Kod interpretowany ma narzut wydajnościowy w locie, co czyni go wolniejszym niż prekompilowany kod maszynowy."
                 },
                 {
-                    "id": "js-wyk-040",
+                    "id": "js-wyk-zadania-v3-031",
                     "type": "multiple",
                     "question": "Wskaż binarne operatory bitowe języka Python:",
                     "options": [
@@ -541,7 +541,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyjaśnienia:\n• **Binarne operatory bitowe** to operatory działające na bitach dwóch argumentów:\n  - `|` (alternatywa bitowa OR - Opcja a)\n  - `<< i >>` (przesunięcia bitowe - Opcja e)\n  - `&` (koniunkcja bitowa AND - Opcja g)\n  - `^` (bitowy XOR - Opcja k)\n• **Opcja i) (NIE):** Operator `~` (negacja bitowa) jest operatorem unitarnym (jednoargumentowym), a nie binarnym."
                 },
                 {
-                    "id": "js-wyk-041",
+                    "id": "js-wyk-zadania-v3-032",
                     "type": "multiple",
                     "question": "Wybierz zdania prawdziwe na temat typów danych w języku Python:",
                     "options": [
@@ -557,7 +557,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (NIE):** Python posiada obiekty niemutowalne (immutable), takie jak int, float, str, tuple, których wartość nie może zostać zmieniona po utworzeniu.\n• **Opcja b) (NIE):** Do pobrania typu służy funkcja wbudowana type(), w Pythonie nie ma operatora typeof.\n• **Opcja c) (TAK):** Wszystkie typy w Pythonie są pierwszej klasy i są instancjami metaklasy type.\n• **Opcja d) (TAK):** Typ obiektu jest ustalany przy його tworzeniu i nie ulega modyfikacji (tożsamość typu jest stała)."
                 },
                 {
-                    "id": "js-wyk-042",
+                    "id": "js-wyk-zadania-v3-033",
                     "type": "multiple",
                     "question": "Wyrażenie lambda (ang. lambda expression) w języku Python to funkcja (Wersja 2):",
                     "options": [
@@ -575,7 +575,7 @@ const jezykiSkryptoweData = {
                     "explanation": "Wyjaśnienia:\n• **Opcje a), b) i e) (TAK):** Wyrażenie lambda tworzy funkcję anonimową (bez nazwy), która niejawnie zwraca wartość pojedynczego wyrażenia (bez słowa kluczowego return) i jest cukrem składniowym dla standardowej definicji def.\n• **Opcja c) (NIE):** Lambdy są ograniczone do pojedynczego wyrażenia, nie mogą zawierać instrukcji (np. instrukcji przypisania, pętli) ani adnotacji typów.\n• **Opcja d) (NIE):** Celem lambdy jest zwrócenie wartości ewaluowanego wyrażenia, a nie wywołanie efektu ubocznego."
                 },
                 {
-                    "id": "js-wyk-043",
+                    "id": "js-wyk-zadania-v3-034",
                     "type": "multiple",
                     "question": "Wskaż własności paradygmatu programowania funkcyjnego, którymi cechuje się język Python (Wersja 2):",
                     "options": [
@@ -589,6 +589,584 @@ const jezykiSkryptoweData = {
                         1
                     ],
                     "explanation": "Wyjaśnienia:\n• **Opcja a) (TAK):** Python w pełni obsługuje przekazywanie i zwracanie funkcji przez inne funkcje (np. map, filter, dekoratory).\n• **Opcja b) (TAK):** Niemutowalne typy danych (np. tuple, frozenset) są kluczowe dla zachowania immutability w programowaniu funkcyjnym.\n• **Opcja c) (NIE):** To funkcje są obiektami pierwszej klasy (first-class functions), a nie zmienne.\n• **Opcja d) (NIE):** Python nie jest czysto funkcyjnym językiem i pozwala na modyfikację stanu globalnego lub mutowalnych obiektów (efekty uboczne)."
+                },
+                {
+                    "id": "js-wyk-zadania-v3-035",
+                    "type": "multiple",
+                    "question": "Wybierz zdania prawdziwe na temat typów danych w języku Python: Wybierz wszystkie poprawne:",
+                    "options": [
+                        "pobranie typu obiektu jest możliwe z użyciem wbudowanej funkcji type()",
+                        "wartość obiektów niektórych typów danych może ulegać zmianie",
+                        "typ obiektu może ulegać zmianie",
+                        "wszystkie typy danych są reprezentowane z użyciem obiektu klasy typu <class 'object'>"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-036",
+                    "type": "multiple",
+                    "question": "Wybierz zdania prawdziwe na temat operatorów zawierania (ang. membership operators) języka Python: Wybierz wszystkie poprawne:",
+                    "options": [
+                        "w przypadku typów sekwencyjnych i zbiorów weryfikują obecność pewnego obiektu wśród elementów kolekcji",
+                        "w przypadku ciągów znaków weryfikują, czy pewien ciąg jest podciągiem innego ciągu",
+                        "w przypadku typów mapujących weryfikują obecność pewnego obiektu wśród kluczy kolekcji",
+                        "operator not in zwraca prawdę jeśli pewien obiekt zawiera się w innym obiekcie (jest jego członkiem)",
+                        "operator not in zwraca fałsz jeśli pewien obiekt nie zawiera się w innym obiekcie (nie jest jego członkiem)"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-037",
+                    "type": "multiple",
+                    "question": "Wybierz zdania prawdziwe na temat typu dictionary danych języka Python:",
+                    "options": [
+                        "jest typem zmiennym (mutowalnym)",
+                        "może przechowywać informacje wyłącznie homogeniczne pod względem typu danych",
+                        "jest typem sekwencyjnym",
+                        "jego składnia deklarowania korzysta z nawiasów kwadratowych",
+                        "indeksowanie elementów odbywa się z użyciem kluczy",
+                        "w jego składni deklarowania klucze i wartości są od siebie oddzielone dwukropkami"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        4,
+                        5
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-038",
+                    "type": "multiple",
+                    "question": "Następujące wycinanie (ang. slicing expression) z obiektu instancji sekwencyjnego typu danych języka Python, który posiada 9 elementów: sequence[2:8:3] odczyta wartości elementów:",
+                    "options": [
+                        "począwszy od trzeciego",
+                        "łącznie trzech elementów",
+                        "co drugiego",
+                        "co trzeciego",
+                        "kończąc na ostatnim, włącznie z nim",
+                        "począwszy od drugiego",
+                        "kończąc na ostatnim, ale bez niego",
+                        "łącznie dwóch elementów"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        3,
+                        6,
+                        7
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-039",
+                    "type": "multiple",
+                    "question": "Następujące wycinanie (ang: slicing expression) z obiektu instancji sekwencyjnego typu danych języka Python, który posiada 5 elementów: sequence[:0:-1] odczyta wartości elementów:",
+                    "options": [
+                        "począwszy od ostatniego",
+                        "łącznie pięciu elementów",
+                        "za krajem (jeden po drugim)",
+                        "kończąc na pierwszym, włącznie z nim",
+                        "kończąc na pierwszym, ale bez niego",
+                        "począwszy od przedostatniego",
+                        "łącznie czterech elementów",
+                        "co drugiego"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        2,
+                        4,
+                        6
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-040",
+                    "type": "multiple",
+                    "question": "Wskaż niezmienne typy danych języka Python",
+                    "options": [
+                        "int",
+                        "frozenset",
+                        "bytearray",
+                        "dict",
+                        "tuple",
+                        "list",
+                        "bytes",
+                        "float",
+                        "set",
+                        "bool",
+                        "complex",
+                        "str"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        4,
+                        6,
+                        7,
+                        9,
+                        10,
+                        11
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-041",
+                    "type": "multiple",
+                    "question": "Wskaż składnię mechanizmu składania jednowymiarowych list (ang. list comprehension) w języku Python:",
+                    "options": [
+                        "List_name = [operations for x in sequence if condition]",
+                        "List_name = [return operations for x in sequence]",
+                        "List_name = [for x in sequence return operations if condition]",
+                        "List_name = [return operations for x in sequence if condition]",
+                        "List_name = [operations for x in sequence]",
+                        "List_name = [for x in sequence return operations]"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        4
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-042",
+                    "type": "multiple",
+                    "question": "Wybierz zdania prawdziwe na temat asercji (ang. assertion) w języku Python",
+                    "options": [
+                        "w przypadku niepowodzenia asercji jest podnoszony wyjątek AssertionError",
+                        "jest to wygodny sposób na umieszczanie w programie instrukcji debugujących kod",
+                        "asercje są uwzgledniane, jeśli interpreter został uruchomiony z opcją -O",
+                        "jest to instrukcja języka postaci: assert expression_1[, expression_2]",
+                        "wymaga wyrażenia boolowskiego, które co do zasady powinno być prawdziwe - w przeciwnym razie asercja nie powiedzie się"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        3
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-043",
+                    "type": "multiple",
+                    "question": "Wybierz zdania prawdziwe na temat wyrażenia warunkowego (ang. conditional expression) języka Python: Wybierz wszystkie poprawne:",
+                    "options": [
+                        "ma najniższy priorytet wśród operatorów",
+                        "jest nazywane inczej operatorem dwuargumentowym",
+                        "zwraca jedną z dwóch wartości, w zależności od tego czy warunek w wyrażeniu jest prawdziwy, czy fałszywy",
+                        "jego postać wygłada następująco: x if condition else y"
+                    ],
+                    "correctAnswers": [
+                        2,
+                        3
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-044",
+                    "type": "multiple",
+                    "question": "Wybierz zdania prawdziwe na temat pętli while języka Python: Wybierz wszystkie poprawne:",
+                    "options": [
+                        "w ciele pętli można korystać z operatorów break i continue",
+                        "ciało pętli nie może być puste",
+                        "wykonóje się póki warunek pętli jest prawdziwy",
+                        "może posiadać zestaw instrukcji umieszczony pod klauzulą else, który zostanie wykonany w przypadku przerwania pętli",
+                        "wykonanie się pętli iterator nie jest wyczerpany"
+                    ],
+                    "correctAnswers": [
+                        1,
+                        2
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-045",
+                    "type": "multiple",
+                    "question": "Wskaż wady kompilowanego języka programowania: Wybierz wszystkie poprawne:",
+                    "options": [
+                        "programista musi posiadać kompilator i musi przeprowadzić proces kompilacji wielokrotnie jeśli chce, aby program można było uruchamiać na wielu platformach sprzętowych",
+                        "każdy programista jak i użytkownik końcowy musi posiadać kompilator",
+                        "wykonanie kodu skompilowanego jest zawsze wolniejsze",
+                        "kompilacja może być czasochłonnym procesem"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        3
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-046",
+                    "type": "multiple",
+                    "question": "Wybierz zdania prawdziwe na temat asercji (ang. assertion) w języku Python:",
+                    "options": [
+                        "asercje są uwzględniane, jeśli interpreter został uruchomiony z opcji",
+                        "w przypadku niepowodzenia asercji jest podnoszony wyjątek AssertionError",
+                        "zawiera wyrażenie boolowskie, które co do zasady powinno być fałszywe - w przeciwnym razie asercja nie powodzi się",
+                        "jest to wygodny sposób na umieszczenie w programie instrukcji debugujących kod",
+                        "jest to instrukcja języka postaci: assert expression_1[, expression_2]"
+                    ],
+                    "correctAnswers": [
+                        1,
+                        3,
+                        4
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-047",
+                    "type": "multiple",
+                    "question": "Wskaż instrukcje iteracyjne języka Python:",
+                    "options": [
+                        "while",
+                        "for (klasyczna)",
+                        "do...while",
+                        "repeat...until",
+                        "for...in",
+                        "for...of"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        4
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-048",
+                    "type": "multiple",
+                    "question": "Python Software Foundation: Wybierz wszystkie poprawne:",
+                    "options": [
+                        "rozwija dystrybucję CPython języka Python",
+                        "promuje, chroni i rozwija język Python",
+                        "zarządza główną, referencyjną dystrybucją języka Python",
+                        "rozwija dystrybucję Cyphon języka Python",
+                        "chuj mnie to obchodzi"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-049",
+                    "type": "multiple",
+                    "question": "Wybierz zdania prawdziwe na temat kodu bajtowego (ang. bytecode) języka Python: Wybierz wszystkie poprawne:",
+                    "options": [
+                        "jest zapisywany na dysku w katalogach o nazwie pycache",
+                        "jest zapisywany na dysku w plikach binarnych o rozszerzeniu .pyc",
+                        "jest tworzony za każdym razem gdy interpreter importuje dany moduł",
+                        "interpreter jest traktowany jako wirtualna maszyna, która odczytuje kod maszynowy i wykonuje odpowiadający im kod bajtowy",
+                        "może zostać utworzony niedawno dzięki wykorzystaniu funkcji z modułu py_compile",
+                        "jest to skompilowany do kodu maszynowego kod źródłowy programu"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        4
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-050",
+                    "type": "multiple",
+                    "question": "Wskaż składnię wyrażenia lambda (ang. lambda expression) w języku Python:",
+                    "options": [
+                        "lambda parameters: { expression }",
+                        "lambda parameters: { return expression }",
+                        "lambda: { return expression }",
+                        "lambda: { expression }",
+                        "lambda: return expression",
+                        "lambda: expression",
+                        "lambda parameters: expression",
+                        "lambda parameters: return expression"
+                    ],
+                    "correctAnswers": [
+                        5,
+                        6
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-051",
+                    "type": "multiple",
+                    "question": "Wskaż binarne operatory arytmetyczne języka Python:",
+                    "options": [
+                        "&",
+                        "~",
+                        "/",
+                        "*",
+                        "-",
+                        "//",
+                        "|",
+                        "<< oraz >>",
+                        "%",
+                        "+",
+                        "^",
+                        ""
+                    ],
+                    "correctAnswers": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        8,
+                        9
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-052",
+                    "type": "multiple",
+                    "question": "Wskaż operatory zawierania (ang. membership operators) języka Python:",
+                    "options": [
+                        "not in",
+                        "inside",
+                        "in",
+                        "has not",
+                        "not inside",
+                        "has"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        2
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-053",
+                    "type": "single",
+                    "question": "Wskaż operatory porównania języka Python:",
+                    "options": [
+                        "= i ==",
+                        "==, === i Object.is()",
+                        "==",
+                        "== i ==="
+                    ],
+                    "correctAnswers": [
+                        2
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-054",
+                    "type": "single",
+                    "question": "Wskaż binarny operator języka Python, który posiada prawostronne wiązanie (ang. binding):",
+                    "options": [
+                        "+",
+                        "|",
+                        "/",
+                        "-",
+                        "^",
+                        "~",
+                        "%",
+                        "**",
+                        "<< i >>",
+                        "*",
+                        "//",
+                        "&"
+                    ],
+                    "correctAnswers": [
+                        7
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-055",
+                    "type": "multiple",
+                    "question": "Wskaż arytmetyczne operatory języka Python:",
+                    "options": [
+                        "|",
+                        "+",
+                        "^",
+                        "*",
+                        "-",
+                        "**",
+                        "<< i >>",
+                        "/",
+                        "~",
+                        "%",
+                        "//",
+                        "&"
+                    ],
+                    "correctAnswers": [
+                        1,
+                        3,
+                        4,
+                        5,
+                        7,
+                        9,
+                        10
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-056",
+                    "type": "multiple",
+                    "question": "Wskaż operatory logiczne języka Python:",
+                    "options": [
+                        "or",
+                        "not",
+                        "and",
+                        "&&",
+                        "!",
+                        "||"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-057",
+                    "type": "multiple",
+                    "question": "Wskaż operatory bitowe binarne języka Python:",
+                    "options": [
+                        "+",
+                        "|",
+                        "&",
+                        "//",
+                        "~",
+                        "%",
+                        "**",
+                        "-"
+                    ],
+                    "correctAnswers": [
+                        1,
+                        2
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-058",
+                    "type": "single",
+                    "question": "W języku Python cechą każdej zmiennej jest:",
+                    "options": [
+                        "nazwa",
+                        "typ",
+                        "identyfikator",
+                        "wartość"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-059",
+                    "type": "multiple",
+                    "question": "Wskaż poprawne reguły nazywania zmiennych w języku Python:",
+                    "options": [
+                        "wśród dozwolonych znaków znajdują się wyłącznie małe litery",
+                        "wśród dozwolonych znaków znajdują się zarówno małe jak i wielkie litery",
+                        "wśród dozwolonych znaków znajdują się wyłącznie wielkie litery",
+                        "nazwa musi rozpoczynać się od litery",
+                        "małe i wielkie litery są traktowane jako różne znaki",
+                        "długość nazwy jest nieograniczona",
+                        "nazwa może rozpoczynać się od cyfry",
+                        "małe i wielkie litery są traktowane jako jednakowe znaki"
+                    ],
+                    "correctAnswers": [
+                        1,
+                        4,
+                        5
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-060",
+                    "type": "multiple",
+                    "question": "Język Python implementuje zarządzanie pamięcią oparte o:",
+                    "options": [
+                        "metodę oznaczaj i zamiataj (ang. mark and sweep)",
+                        "zliczanie referencji (ang. reference counting)",
+                        "ręczną alokację i dealokację wykonywane przez programistę",
+                        "odśmiecanie pamięci (ang. garbage collection)"
+                    ],
+                    "correctAnswers": [
+                        1,
+                        3
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-061",
+                    "type": "multiple",
+                    "question": "Wskaż zalety interpretowanych języków programowania:",
+                    "options": [
+                        "program jest przechowywany z użyciem kodu maszynowego, dzięki czemu jego dokładna implementacja jest ukryta przed użytkownikiem końcowym",
+                        "wykonanie kodu interpretowanego jest zazwyczaj szybsze",
+                        "program jest przechowywany z użyciem języka programowania, dzięki czemu może być uruchamiany na komputerach wykorzystujących różne języki maszynowe",
+                        "kod może zostać uruchomiony bezpośrednio po jego napisaniu, ponieważ żadne dodatkowe etapy translacji nie są wymagane",
+                        "użytkownik końcowy może uruchamiać program bez posiadania interpretera"
+                    ],
+                    "correctAnswers": [
+                        2,
+                        3
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-062",
+                    "type": "multiple",
+                    "question": "Wskaż poprawne nazwy implementacji języka Python:",
+                    "options": [
+                        "MicroPython",
+                        "Jython",
+                        "IronPython",
+                        "JPython",
+                        "MegaPython",
+                        "PyPI",
+                        "SteelPython",
+                        "PyPy"
+                    ],
+                    "correctAnswers": [
+                        0,
+                        1,
+                        2,
+                        7
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-063",
+                    "type": "single",
+                    "question": "Jak się nazywa twórca Pythona",
+                    "options": [
+                        "Guido van Rossum",
+                        "Adolf Hitler",
+                        "Gud von Rosolnikov",
+                        "Józef Ciosmak"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
+                },
+                {
+                    "id": "js-wyk-zadania-v3-064",
+                    "type": "single",
+                    "question": "Kiedy przestano wspierac Pythona 2",
+                    "options": [
+                        "2020 roku",
+                        "2002 roku",
+                        "1999 roku",
+                        "2023 roku"
+                    ],
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": ""
                 }
             ]
         },
@@ -3221,6 +3799,7 @@ const jezykiSkryptoweData = {
             ]
         }
     ],
-    "dbVersion": 10
+    "dbVersion": 11
 };
+;
 ;
