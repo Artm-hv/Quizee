@@ -1068,7 +1068,7 @@ const systemyOperacyjneData = {
                         "mogą być stosowane tylko do systemów sekwencyjnych?"
                     ],
                     "correctAnswers": [],
-                    "explanation": ""
+                    "explanation": "Potoki nie nadają się bezpośrednio do systemów interaktywnych (ze względu na sekwencyjny i blokujący charakter przetwarzania strumienia danych), ani nie ograniczają się wyłącznie do systemów sekwencyjnych."
                 },
                 {
                     "id": "so-str1-txt-009",
@@ -4787,5 +4787,5 @@ const systemyOperacyjneData = {
             ]
         }
     ],
-    "dbVersion": 15
+    "dbVersion": 16
 };

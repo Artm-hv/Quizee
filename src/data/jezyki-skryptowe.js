@@ -3525,8 +3525,10 @@ const jezykiSkryptoweData = {
                         "Nazwa argumentu podana wraz z jego wartością",
                         "Jego powiązanie z istniejącymi zmiennymi"
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "W kontekście wywołań funkcji w Pythonie, o znaczeniu argumentu pozycyjnego decyduje jego pozycja na liście argumentów przekazywanych podczas wywołania funkcji."
                 },
                 {
                     "id": "js-pe1-final-002",
@@ -3538,12 +3540,14 @@ const jezykiSkryptoweData = {
                         "not ==",
                         "=/="
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        1
+                    ],
+                    "explanation": "Operator != jest standardowym operatorem nierówności w języku Python."
                 },
                 {
                     "id": "js-pe1-final-003",
-                    "type": "single",
+                    "type": "multiple",
                     "question": "Przejrzyj następujące identyfikatory i wybierz te, które są zarezerwowanymi słowami kluczowymi w Pythonie i spowodowałyby błąd składniowy, jeśli zostałyby użyte jako nazwy zmiennych. (wybierz dwie odpowiedzi)",
                     "options": [
                         "class",
@@ -3551,8 +3555,11 @@ const jezykiSkryptoweData = {
                         "continue",
                         "function"
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        0,
+                        2
+                    ],
+                    "explanation": "Słowa 'class' oraz 'continue' są zarezerwowanymi słowami kluczowymi w Pythonie (tak jak 'True' w nowszych wersjach, jednak w tradycyjnych pytaniach testowych z tego zestawu poprawnymi odpowiedziami są zazwyczaj 'class' i 'continue'). Słowo 'function' nie jest zarezerwowanym słowem kluczowym w Pythonie."
                 }
             ]
         },
@@ -4020,8 +4027,10 @@ const jezykiSkryptoweData = {
                         "pyb",
                         "pc"
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Skompilowane pliki kodu bajtowego Pythona mają rozszerzenie .pyc."
                 },
                 {
                     "id": "js-pe2-final-002",
@@ -4033,8 +4042,10 @@ const jezykiSkryptoweData = {
                         "Żadne urządzenie",
                         "Drukarka"
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Standardowy strumień wyjściowy sys.stdout jest domyślnie powiązany z ekranem konsoli/terminala."
                 },
                 {
                     "id": "js-pe2-final-003",
@@ -4046,12 +4057,14 @@ const jezykiSkryptoweData = {
                         "Metoda readfrom().",
                         "Metoda read()."
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Metoda readinto() służy do wczytywania danych bezpośrednio do istniejącego (mutowalnego) bufora bajtów (np. bytearray) w celu zaoszczędzenia alokacji pamięci."
                 },
                 {
                     "id": "js-pe2-final-004",
-                    "type": "single",
+                    "type": "multiple",
                     "question": "Którego z poniższych poleceń użyłbyś do sprawdzenia wersji pip? (Wybierz dwie odpowiedzi)",
                     "options": [
                         "pip --version",
@@ -4059,8 +4072,11 @@ const jezykiSkryptoweData = {
                         "pip version",
                         "pip-version"
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Wersję narzędzia pip można sprawdzić za pomocą flagi --version (np. pip --version lub pip3 --version. W tym pytaniu druga opcja została przetłumaczona jako 'pip3 – wersja')."
                 },
                 {
                     "id": "js-pe2-final-005",
@@ -4072,12 +4088,14 @@ const jezykiSkryptoweData = {
                         "pip delete package_name",
                         "pip --remove package_name"
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Polecenie pip uninstall służy do odinstalowania wskazanego pakietu."
                 },
                 {
                     "id": "js-pe2-final-006",
-                    "type": "single",
+                    "type": "multiple",
                     "question": "Jakie informacje można odczytać korzystając z funkcji uname udostępnianej przez moduł os? (Wybierz dwie odpowiedzi)",
                     "options": [
                         "Nazwa systemu operacyjnego",
@@ -4085,8 +4103,11 @@ const jezykiSkryptoweData = {
                         "Ostatnia data logowania",
                         "Aktualna ścieżka"
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        0,
+                        1
+                    ],
+                    "explanation": "Funkcja os.uname() zwraca obiekt zawierający m.in. sysname (nazwę systemu operacyjnego) oraz machine (identyfikator sprzętowy architekury procesora)."
                 },
                 {
                     "id": "js-pe2-final-007",
@@ -4098,8 +4119,10 @@ const jezykiSkryptoweData = {
                         "current_date + timedelta(30)",
                         "current_date + timedelta(-30)"
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        0
+                    ],
+                    "explanation": "Aby dodać 30 dni, należy dodać obiekt timedelta z argumentem days ustawionym na 30."
                 }
             ]
         },
@@ -4235,7 +4258,7 @@ const jezykiSkryptoweData = {
             ]
         }
     ],
-    "dbVersion": 13
+    "dbVersion": 14
 };
 ;
 ;

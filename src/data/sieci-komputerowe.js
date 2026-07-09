@@ -6767,8 +6767,12 @@ const sieciKomputeroweData = {
                         "Do przełącznika podłączone są dwa urządzenia.",
                         "Skonfigurowano domyślny SVI."
                     ],
-                    "correctAnswers": [],
-                    "explanation": ""
+                    "correctAnswers": [
+                        1,
+                        2,
+                        5
+                    ],
+                    "explanation": "Na podstawie polecenia 'show ip interface brief' można stwierdzić, że switch posiada skonfigurowany wirtualny interfejs (SVI), co pozwala na zdalne zarządzanie urządzeniem przez IP (np. telnet/ssh). Dodatkowo, stan interfejsów fizycznych (up/up) wskazuje, czy podłączone są urządzenia."
                 },
                 {
                     "id": "sk-final-cisco-099",
@@ -9198,5 +9202,5 @@ const sieciKomputeroweData = {
             ]
         }
     ],
-    "dbVersion": 4
+    "dbVersion": 5
 };
