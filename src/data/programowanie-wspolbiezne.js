@@ -29,7 +29,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Blok finally wykonywany jest zawsze, niezależnie od tego, czy wyjątek wystąpił, czy nie."
                 },
                 {
                     "id": "pw-lab3-002",
@@ -42,7 +42,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Blok finally wykonuje się zawsze, również po przechwyceniu i obsłużeniu wyjątku w bloku catch."
                 },
                 {
                     "id": "pw-lab3-003",
@@ -55,7 +55,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Enum w C# to typ wyliczeniowy, który należy do typów wartościowych (Value types), a nie referencyjnych."
                 },
                 {
                     "id": "pw-lab3-004",
@@ -68,7 +68,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Struktury (struct) w C# nie obsługują dziedziczenia po innych klasach ani strukturach."
                 },
                 {
                     "id": "pw-lab3-005",
@@ -81,7 +81,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Struktura w C# jest typem wartościowym (skalarnym) i jest trzymana na stosie (stack)."
                 },
                 {
                     "id": "pw-lab3-006",
@@ -94,7 +94,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Klasa System.Timers.Timer nie przyjmuje metody callback w konstruktorze (używa zdarzenia Elapsed)."
                 },
                 {
                     "id": "pw-lab3-007",
@@ -107,7 +107,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Konstruktor klasy System.Threading.Timer przyjmuje delegat TimerCallback jako swój pierwszy parametr."
                 },
                 {
                     "id": "pw-lab3-008",
@@ -120,7 +120,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Delegaty w C# można łączyć (multicast delegate) za pomocą operatorów + oraz +=, przypisując wiele metod o tej samej sygnaturze."
                 },
                 {
                     "id": "pw-lab3-009",
@@ -133,7 +133,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "W sekcji using można tworzyć aliasy dla przestrzeni nazw lub typów, np. using T = System.Threading;."
                 },
                 {
                     "id": "pw-lab3-010",
@@ -146,7 +146,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Słowo kluczowe var tworzy zmienną niejawnie typizowaną, której dokładny typ jest określany przez kompilator na etapie kompilacji."
                 },
                 {
                     "id": "pw-lab3-011",
@@ -159,7 +159,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Typ zmiennej dynamic jest sprawdzany dopiero podczas wykonywania programu (runtime), więc może ona zmieniać typ przechowywanej wartości."
                 },
                 {
                     "id": "pw-lab3-012",
@@ -172,7 +172,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Właściwości obiektów typów anonimowych w C# są zawsze tylko do odczytu (read-only) i nie można ich modyfikować po utworzeniu."
                 },
                 {
                     "id": "pw-lab3-013",
@@ -185,7 +185,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Tablica tablic (Jagged array) przechowuje odwołania do osobnych tablic, z których każda może mieć inną długość."
                 },
                 {
                     "id": "pw-lab3-014",
@@ -198,7 +198,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "W języku C# wszystkie typy proste są zaimplementowane jako struktury (np. System.Int32, System.Double)."
                 },
                 {
                     "id": "pw-lab3-015",
@@ -211,7 +211,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Domyślnie właściwość AutoReset ma wartość true (timer działa cyklicznie), a ustawienie jej na false zmienia go w jednorazowy budzik."
                 },
                 {
                     "id": "pw-lab3-016",
@@ -226,7 +226,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Kombinacja Ctrl+F5 uruchamia program bez dołączonego debuggera, natomiast klawisz F5 uruchamia program w trybie debugowania."
                 },
                 {
                     "id": "pw-lab3-017",
@@ -241,7 +241,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Solucja (Solution) jest głównym kontenerem w Visual Studio, który może grupować jeden lub wiele projektów."
                 },
                 {
                     "id": "pw-lab3-018",
@@ -256,7 +256,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Klawisz F5 służy do kompilacji i uruchomienia programu w trybie debugowania z obsługą punktów przerwań."
                 },
                 {
                     "id": "pw-lab3-019",
@@ -271,7 +271,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Opcja Set as Startup Project ustawia wybrany projekt jako domyślny projekt startowy w solucji."
                 },
                 {
                     "id": "pw-lab3-020",
@@ -286,7 +286,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Metoda int.Parse rzuca wyjątek FormatException, gdy przekazany ciąg znaków nie ma poprawnego formatu liczby całkowitej."
                 },
                 {
                     "id": "pw-lab3-021",
@@ -301,7 +301,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Typ całkowity int (oraz uint) zajmuje w pamięci 32 bity (4 bajty)."
                 },
                 {
                     "id": "pw-lab3-022",
@@ -316,7 +316,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Typ całkowity long (oraz ulong) zajmuje w pamięci 64 bity (8 bajtów)."
                 },
                 {
                     "id": "pw-lab3-023",
@@ -331,7 +331,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Typ zmiennoprzecinkowy wysokiej precyzji decimal zajmuje w pamięci 128 bitów (16 bajtów)."
                 },
                 {
                     "id": "pw-lab3-024",
@@ -346,7 +346,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Typ byte jest 8-bitowym typem bez znaku (0..255), natomiast sbyte (signed byte) jest 8-bitowym typem ze znakiem (-128..127)."
                 },
                 {
                     "id": "pw-lab3-025",
@@ -361,7 +361,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Znak @ przed ciągiem znaków wyłącza interpretację sekwencji specjalnych ze znakiem \\, co ułatwia np. zapis ścieżek do plików."
                 },
                 {
                     "id": "pw-lab3-026",
@@ -376,7 +376,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Domyślny konstruktor new DateTime() inicjalizuje obiekt wartością początkową 01/01/0001 00:00:00."
                 },
                 {
                     "id": "pw-lab3-027",
@@ -391,7 +391,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Jeden Tick w strukturze DateTime oznacza przedział czasowy równy 100 nanosekundom, liczony od 1 stycznia 0001 roku."
                 },
                 {
                     "id": "pw-lab3-028",
@@ -406,7 +406,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Wynikiem odjęcia dwóch obiektów DateTime jest struktura TimeSpan reprezentująca przedział czasu pomiędzy tymi datami."
                 },
                 {
                     "id": "pw-lab3-029",
@@ -421,7 +421,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "W przeciwieństwie do var, typ zmiennej dynamic jest weryfikowany dopiero podczas wykonywania programu (runtime)."
                 },
                 {
                     "id": "pw-lab3-030",
@@ -436,7 +436,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Typy anonimowe posiadają właściwości tylko do odczytu (read-only), więc próba ich zmiany skutkuje błędem kompilacji."
                 },
                 {
                     "id": "pw-lab3-031",
@@ -451,7 +451,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Zapis int[][] deklaruje tablicę tablic (Jagged array), natomiast zapis z przecinkiem int[,] deklaruje wielowymiarową tablicę 2D."
                 },
                 {
                     "id": "pw-lab3-032",
@@ -466,7 +466,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Struktury jako typy wartościowe trafiają na stos (stack), natomiast obiekty klas jako typy referencyjne alokowane są na stercie (heap)."
                 },
                 {
                     "id": "pw-lab3-033",
@@ -481,7 +481,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Konstruktor w strukturze nie może być niepełny i musi przypisać wartości do wszystkich jej pól."
                 },
                 {
                     "id": "pw-lab3-034",
@@ -496,7 +496,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Dziedziczenie po konstruktorze domyślnym (: this()) automatycznie inicjalizuje wszystkie pozostałe pola struktury wartościami domyślnymi."
                 },
                 {
                     "id": "pw-lab3-035",
@@ -511,7 +511,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Klasą bazową dla wszystkich wyjątków w .NET jest klasa Exception, która dziedziczy bezpośrednio po klasie Object."
                 },
                 {
                     "id": "pw-lab3-036",
@@ -526,7 +526,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Wyjątek DivideByZeroException dziedziczy bezpośrednio po klasie ArithmeticException (która dziedziczy po SystemException)."
                 },
                 {
                     "id": "pw-lab3-037",
@@ -541,7 +541,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Bloki catch umieszcza się od najbardziej szczegółowych do najbardziej ogólnego (Exception), aby ogólny blok nie przechwycił wcześniej wszystkich błędów."
                 },
                 {
                     "id": "pw-lab3-038",
@@ -556,7 +556,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Nawiasy <T> oznaczają deklarację typu generycznego, który nie jest powiązany ze ściśle określonym typem danych aż do momentu utworzenia obiektu."
                 },
                 {
                     "id": "pw-lab3-039",
@@ -571,7 +571,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Delegat to typ referencyjny określający sygnaturę metody (odpowiednik bezpiecznego, silnie typizowanego wskaźnika do funkcji z języka C)."
                 },
                 {
                     "id": "pw-lab3-040",
@@ -586,7 +586,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Operator += dodaje nową metodę do listy wywołań delegata, natomiast operator -= usuwa metodę z tej listy."
                 },
                 {
                     "id": "pw-lab3-041",
@@ -601,7 +601,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Delegat Func zawsze musi zwracać wartość (TResult), natomiast delegat Action reprezentuje metody, które nie zwracają żadnej wartości (void)."
                 },
                 {
                     "id": "pw-lab3-042",
@@ -616,7 +616,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Metoda rozszerzająca jest wywoływana jako metoda statyczna Extensions.IsNullOrEmpty(s3), dlatego dla wartości null warunek (str == null) bezpiecznie zwraca true."
                 },
                 {
                     "id": "pw-lab3-043",
@@ -631,7 +631,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Metoda GetInvocationList() zwraca tablicę delegatów reprezentujących wszystkie metody przypisane aktualnie do danego delegata."
                 },
                 {
                     "id": "pw-lab3-044",
@@ -646,7 +646,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Program nie kończy pracy, ponieważ czeka na zakończenie wątku potomnego, który domyślnie działa jako wątek pierwszoplanowy."
                 },
                 {
                     "id": "pw-lab3-045",
@@ -661,7 +661,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Ustawienie IsBackground na true sprawia, że wątek działa w tle i nie blokuje zamknięcia programu po zakończeniu metody Main."
                 },
                 {
                     "id": "pw-lab3-046",
@@ -676,7 +676,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Interfejs IDisposable wymaga zaimplementowania bezparametrowej metody public void Dispose() służącej do zwalniania zasobów."
                 },
                 {
                     "id": "pw-lab3-047",
@@ -691,7 +691,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Metoda Interrupt() wybudza wątek ze stanu oczekiwania (WaitSleepJoin) i rzuca w nim wyjątek ThreadInterruptedException."
                 },
                 {
                     "id": "pw-lab3-048",
@@ -706,7 +706,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Wywołanie Interrupt() na wątku generuje wyjątek ThreadInterruptedException, który należy przechwycić w bloku catch wewnątrz wątku."
                 },
                 {
                     "id": "pw-lab3-049",
@@ -721,7 +721,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         0
                     ],
-                    "explanation": ""
+                    "explanation": "Przeciążenie (overloading) konstruktorów i metod SetAlarm pozwala na wywołanie ich zarówno ze starym zestawem parametrów (1000 ms), jak i z nowym parametrem checkingInterval."
                 },
                 {
                     "id": "pw-lab3-050",
@@ -736,7 +736,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Właściwość tylko do odczytu (read-only property) definiuje się poprzez umieszczenie w niej wyłącznie bloku get."
                 },
                 {
                     "id": "pw-lab3-051",
@@ -751,7 +751,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Do deklaracji zdarzenia w klasie używa się słowa kluczowego event przed typem delegata."
                 },
                 {
                     "id": "pw-lab3-052",
@@ -766,7 +766,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Ustawienie AutoReset = false sprawia, że timer zgłasza zdarzenie Elapsed tylko jeden raz po upływie zadanego czasu."
                 },
                 {
                     "id": "pw-lab3-053",
@@ -781,7 +781,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Klasa Interlocked zapewnia atomową (bezpieczną wątkowo) inkrementację zmiennej współdzielonej pomiędzy wątkami puli wątków."
                 },
                 {
                     "id": "pw-lab3-054",
@@ -796,7 +796,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Delegat TimerCallback wymaga metody przyjmującej pojedynczy parametr typu object (który następnie rzutujemy np. za pomocą operatora as na klasę TimerState)."
                 },
                 {
                     "id": "pw-lab3-055",
@@ -811,7 +811,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Klasę System.Threading.Timer zatrzymujemy wywołując metodę Change z czasem opóźnienia ustawionym na Timeout.Infinite."
                 },
                 {
                     "id": "pw-lab3-056",
@@ -826,7 +826,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Pierwszy parametr metody Change (dueTime) określa opóźnienie przed uruchomieniem, a drugi (period) odstęp czasu między kolejnymi wywołaniami."
                 },
                 {
                     "id": "pw-lab3-057",
@@ -841,7 +841,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Licząc od 0 (0, 1, 2, 3, 4), piąte wywołanie następuje wtedy, gdy licznik osiągnie wartość 4 przed inkrementacją (lub 5 po inkrementacji)."
                 },
                 {
                     "id": "pw-lab3-058",
@@ -856,7 +856,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "System.Windows.Forms.Timer to składnik Windows Forms bez interfejsu użytkownika przeznaczony do pracy w środowisku jednowątkowym."
                 },
                 {
                     "id": "pw-lab3-059",
@@ -871,7 +871,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "System.Web.UI.Timer to składnik ASP.NET służący do wykonywania operacji zwrotnych (postback) stron internetowych w regularnych odstępach czasu."
                 },
                 {
                     "id": "pw-lab3-060",
@@ -886,7 +886,7 @@ const programowanieWspolbiezneData = {
                     "correctAnswers": [
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "System.Windows.Threading.DispatcherTimer to czasomierz zintegrowany z kolejką Dispatcher, przetwarzany z określonym interwałem i priorytetem."
                 },
                 {
                     "id": "pw-lab3-061",
@@ -904,7 +904,7 @@ const programowanieWspolbiezneData = {
                         4,
                         5
                     ],
-                    "explanation": ""
+                    "explanation": "Gdy konwersja w metodzie int.TryParse się nie powiedzie, metoda nie rzuca wyjątku, lecz zwraca false i przypisuje parametrowi wyjściowemu out b wartość domyślną 0."
                 },
                 {
                     "id": "pw-lab3-062",
@@ -922,7 +922,7 @@ const programowanieWspolbiezneData = {
                         1,
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Do krokowego wykonywania programu w Visual Studio służą klawisze F10 (Step Over), F11 (Step Into) oraz Shift+F11 (Step Out)."
                 },
                 {
                     "id": "pw-lab3-063",
@@ -939,7 +939,7 @@ const programowanieWspolbiezneData = {
                         1,
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "C# umożliwia wyświetlanie zmiennych poprzez konkatenację (+), indeksowane znaczniki formatowania ({0}, {1}) oraz interpolację ciągów ze znakiem $ ($\"{zmienna}\")."
                 },
                 {
                     "id": "pw-lab3-064",
@@ -961,7 +961,7 @@ const programowanieWspolbiezneData = {
                         2,
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Do typów wartościowych (Value types) w C# należą typy proste, typy wyliczeniowe (enum), struktury (struct) oraz typy Nullable."
                 },
                 {
                     "id": "pw-lab3-065",
@@ -981,7 +981,7 @@ const programowanieWspolbiezneData = {
                         2,
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Do typów referencyjnych (Reference types) w C# należą klasy, interfejsy, tablice oraz delegaty."
                 },
                 {
                     "id": "pw-lab3-066",
@@ -1003,7 +1003,7 @@ const programowanieWspolbiezneData = {
                         2,
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Typami całkowitymi bez znaku (przechowującymi wartości od 0 wzwyż) są byte, ushort, uint oraz ulong."
                 },
                 {
                     "id": "pw-lab3-067",
@@ -1022,7 +1022,7 @@ const programowanieWspolbiezneData = {
                         2,
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Struktury są typami wartościowymi zalecanymi dla małych obiektów i nie obsługują dziedziczenia, natomiast klasy są typami referencyjnymi zalecanymi dla większych struktur danych."
                 },
                 {
                     "id": "pw-lab3-068",
@@ -1038,7 +1038,7 @@ const programowanieWspolbiezneData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Bezpośrednio po klasie bazowej Exception dziedziczą dwie główne klasy: SystemException oraz ApplicationException."
                 },
                 {
                     "id": "pw-lab3-069",
@@ -1054,7 +1054,7 @@ const programowanieWspolbiezneData = {
                         0,
                         1
                     ],
-                    "explanation": ""
+                    "explanation": "Zgodnie z hierarchią wyjątków .NET po klasie ArgumentException dziedziczą klasy ArgumentNullException oraz ArgumentOutOfRangeException."
                 },
                 {
                     "id": "pw-lab3-070",
@@ -1073,7 +1073,7 @@ const programowanieWspolbiezneData = {
                         2,
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Instancję delegata można utworzyć przez konstruktor new, bezpośrednie przypisanie nazwy metody, metodę anonimową lub wyrażenie lambda."
                 },
                 {
                     "id": "pw-lab3-071",
@@ -1091,7 +1091,7 @@ const programowanieWspolbiezneData = {
                         1,
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Standardowa biblioteka C# udostępnia trzy główne wbudowane typy delegatów generycznych: Func, Action oraz Predicate."
                 },
                 {
                     "id": "pw-lab3-072",
@@ -1110,7 +1110,7 @@ const programowanieWspolbiezneData = {
                         2,
                         3
                     ],
-                    "explanation": ""
+                    "explanation": "Delegat Func przyjmuje od 0 do 16 parametrów wejściowych, zawsze zwraca wartość typu TResult, obsługuje wyrażenia lambda i nie pozwala na parametry ref oraz out."
                 },
                 {
                     "id": "pw-lab3-073",
@@ -1127,7 +1127,7 @@ const programowanieWspolbiezneData = {
                         1,
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Delegat Predicate<T> to funkcja sprawdzająca warunek, która przyjmuje dokładnie jeden parametr i zawsze zwraca wartość logiczną bool."
                 },
                 {
                     "id": "pw-lab3-074",
@@ -1144,7 +1144,7 @@ const programowanieWspolbiezneData = {
                         1,
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "Metoda rozszerzająca musi być metodą statyczną zdefiniowaną w klasie statycznej, a jej pierwszy parametr musi zawierać modyfikator this."
                 },
                 {
                     "id": "pw-lab3-075",
@@ -1161,7 +1161,7 @@ const programowanieWspolbiezneData = {
                         1,
                         2
                     ],
-                    "explanation": ""
+                    "explanation": "W projekcie TimerExample timerThreading startuje po 5 s co 1 s i przyjmuje TimerCallback w konstruktorze, natomiast timerSystem startuje od razu co 1,5 s."
                 }
             ]
         },
@@ -1201,5 +1201,5 @@ const programowanieWspolbiezneData = {
             "questions": []
         }
     ],
-    "dbVersion": 2
+    "dbVersion": 3
 };
