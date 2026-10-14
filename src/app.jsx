@@ -10,36 +10,20 @@ function App() {
     const saved = loadFromStorage(STORAGE_KEY_SUBJECTS, null);
     let data = saved || DEFAULT_SUBJECTS;
     
-    // Auto-migration: update 'jezyki-skryptowe', 'sieci-komputerowe' and 'systemy-dynamiczne' if they have been updated in DEFAULT_SUBJECTS
+    // Filter out obsolete subjects and auto-migrate updated subjects
     if (saved) {
+      // Retain only subjects present in DEFAULT_SUBJECTS
+      data = data.filter(s => DEFAULT_SUBJECTS.some(ds => ds.id === s.id));
+      if (data.length === 0) {
+        data = [...DEFAULT_SUBJECTS];
+      }
+
       data = data.map(s => {
         const defaultSubject = DEFAULT_SUBJECTS.find(ds => ds.id === s.id);
         const currentVer = s.dbVersion || 0;
         const defaultVer = defaultSubject ? (defaultSubject.dbVersion || 0) : 0;
         const versionOutdated = defaultVer > currentVer;
 
-        if (s.id === "jezyki-skryptowe") {
-          const defaultJs = DEFAULT_SUBJECTS.find(ds => ds.id === "jezyki-skryptowe");
-          if (defaultJs && (!s.modules || s.modules.length < 3 || versionOutdated)) {
-            console.log("Migrated 'jezyki-skryptowe' module database to use consolidated Cisco module and theory questions.");
-            return defaultJs;
-          }
-        }
-        if (s.id === "sieci-komputerowe") {
-          const defaultSk = DEFAULT_SUBJECTS.find(ds => ds.id === "sieci-komputerowe");
-          const hasSkScreenReaders = s.modules && s.modules.some(m => m.questions.some(q => q.options.some(opt => opt.includes("1 of 4"))));
-          if (defaultSk && (!s.modules || s.modules.length < 5 || hasSkScreenReaders || versionOutdated)) {
-            console.log("Migrated 'sieci-komputerowe' module database with clean formatting.");
-            return defaultSk;
-          }
-        }
-        if (s.id === "systemy-dynamiczne") {
-          const defaultSd = DEFAULT_SUBJECTS.find(ds => ds.id === "systemy-dynamiczne");
-          if (defaultSd && (!s.modules || s.modules.length < 7 || !s.modules.some(m => m.id === "sd-mod-w1") || versionOutdated)) {
-            console.log("Migrated 'systemy-dynamiczne' module database to include Wykład 1 and 2.");
-            return defaultSd;
-          }
-        }
         if (versionOutdated && defaultSubject) {
           console.log(`Migrated '${s.id}' module database due to version bump.`);
           return defaultSubject;

@@ -4,3 +4,9 @@
 
 # Subject source materials and OCR results
 src/data/sources/
+
+# Scratch & temporary files
+temp_js.js
+added_questions.json
+words.txt
+
